@@ -19,20 +19,53 @@ function displayValue(value: unknown) {
   if (value === "unknown") return "Unknown — verify with the official source";
   if (value === "indirect") return "Indirect pathway";
   if (value === "limited") return "Limited or conditional";
+  if (value === undefined || value === null || value === "") return "Not stated";
   return String(value);
 }
+
+const pathwayLabel =
+  program.filter.pathway_type === "direct_pr"
+    ? "Direct permanent residence"
+    : program.filter.pathway_type.replaceAll("_", " ");
+const hasFundsTable = program.funds.proof_of_funds.length > 0;
+const applicationFees = program.funds.application_fees ?? [];
 ---
 
-<Layout title={`${program.official_names.en} — World Immigrant`}>
+<Layout
+  title={`${program.official_names.en} — World Immigrant`}
+  description={program.summary_md.en}
+>
   <main>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/countries">Countries</a>
+      <span aria-hidden="true">/</span>
+      <a href={`/countries/${country.id}`}>{country.names.en}</a>
+      <span aria-hidden="true">/</span>
+      <span>{program.official_names.en}</span>
+    </nav>
+
     <section class="hero">
-      <p class="eyebrow">{country.names.en} · {categories.map(({ names }) => names.en).join(" · ")}</p>
+      <p class="eyebrow">
+        {country.names.en} · {categories.map(({ names }) => names.en).join(" · ")}
+      </p>
       <h1>{program.official_names.en}</h1>
       <p>{program.summary_md.en}</p>
+      <div class="action-row">
+        <a class="btn btn-primary" href={`/compare?programs=${program.id}`}>Compare this pathway</a>
+        <a class="btn" href="/filter">Check local fit</a>
+        <a class="btn btn-ghost" href={`/countries/${country.id}`}>Back to {country.names.en}</a>
+      </div>
       <div class="badge-row">
         <span class="badge">{program.status}</span>
-        <span class="badge">direct permanent residence</span>
+        <span class="badge">{pathwayLabel}</span>
         <span class="badge">checked {program.freshness.last_checked_at.slice(0, 10)}</span>
+        {
+          program.freshness.needs_human_review && (
+            <span class="badge badge-warning">needs human review</span>
+          )
+        }
       </div>
     </section>
 
@@ -42,6 +75,14 @@ function displayValue(value: unknown) {
       <TrustBadge label={`${sources.length} official sources`} tone="neutral" />
     </div>
 
+    {
+      program.status_note_md?.en && (
+        <section class="panel panel-note" aria-label="Status note">
+          <p><strong>Status note.</strong> {program.status_note_md.en}</p>
+        </section>
+      )
+    }
+
     <section class="section" aria-labelledby="fit-heading">
       <div class="section-heading">
         <div>
@@ -49,14 +90,14 @@ function displayValue(value: unknown) {
           <h2 id="fit-heading">Who this pathway serves</h2>
         </div>
       </div>
-      <div class="card-grid">
+      <div class="card-grid two">
         <article class="card">
           <h3>Good fit</h3>
-          <p>{program.good_for_md.en}</p>
+          <p class="prose">{program.good_for_md.en}</p>
         </article>
         <article class="card">
           <h3>Important limits</h3>
-          <p>{program.not_good_for_md?.en}</p>
+          <p class="prose">{program.not_good_for_md?.en ?? "No separate limit summary is recorded."}</p>
         </article>
       </div>
     </section>
@@ -70,24 +111,60 @@ function displayValue(value: unknown) {
       </div>
       <div class="card-grid">
         <article class="card">
+          <h3>Age</h3>
+          <p>
+            {
+              program.eligibility.age.max !== undefined
+                ? `Maximum modeled invitation age: under ${program.eligibility.age.max + 1}`
+                : "No hard age floor or ceiling is modeled as a universal minimum."
+            }
+          </p>
+          <p class="prose muted">{program.eligibility.age.note_md?.en}</p>
+        </article>
+        <article class="card">
           <h3>Work experience</h3>
-          <p>Minimum: {program.eligibility.work_experience.min_years} year</p>
-          <p>{program.eligibility.work_experience.note_md?.en}</p>
+          <p>
+            Minimum years modeled: {displayValue(program.eligibility.work_experience.min_years)}
+          </p>
+          <p class="prose muted">{program.eligibility.work_experience.note_md?.en}</p>
         </article>
         <article class="card">
           <h3>Language</h3>
-          <p>{program.eligibility.language[0]?.minimum_level}</p>
-          <p>{program.eligibility.language[0]?.note_md?.en}</p>
+          <p>{program.eligibility.language[0]?.minimum_level ?? "Not stated"}</p>
+          <p class="prose muted">{program.eligibility.language[0]?.note_md?.en}</p>
         </article>
         <article class="card">
-          <h3>Education</h3>
+          <h3>Education and assessment</h3>
           <p>Minimum level: {displayValue(program.eligibility.education.required_level)}</p>
-          <p>{program.eligibility.education.note_md?.en}</p>
+          <p>
+            Credential / skills assessment: {
+              displayValue(program.eligibility.education.credential_assessment_required)
+            }
+          </p>
+          <p class="prose muted">{program.eligibility.education.note_md?.en}</p>
         </article>
         <article class="card">
           <h3>Selection threshold</h3>
-          <p>{displayValue(program.eligibility.points_threshold)} out of 100 selection-factor points</p>
-          <p>Invitation competition: {displayValue(program.eligibility.invitation_competition_level)}</p>
+          <p>
+            Points threshold: {displayValue(program.eligibility.points_threshold)}
+            {
+              typeof program.eligibility.points_threshold === "number"
+                ? " program-specific points"
+                : ""
+            }
+          </p>
+          <p>
+            Invitation competition: {
+              displayValue(program.eligibility.invitation_competition_level)
+            }
+          </p>
+        </article>
+        <article class="card">
+          <h3>Health and character</h3>
+          <p>Health check: {displayValue(program.eligibility.health_check_required)}</p>
+          <p>
+            Police certificate: {displayValue(program.eligibility.police_certificate_required)}
+          </p>
         </article>
       </div>
     </section>
@@ -95,29 +172,68 @@ function displayValue(value: unknown) {
     <section class="section" aria-labelledby="funds-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Current official table</p>
-          <h2 id="funds-heading">Settlement funds</h2>
+          <p class="eyebrow">Money and charges</p>
+          <h2 id="funds-heading">Funds and application charges</h2>
         </div>
       </div>
-      <div class="panel">
-        <table class="table">
-          <thead><tr><th>Family size</th><th>Minimum funds</th></tr></thead>
-          <tbody>
-            {
-              program.funds.proof_of_funds.map((requirement) => (
-                <tr>
-                  <td>
-                    {requirement.calculation === "increment_per_additional_member"
-                      ? `Each member after ${requirement.family_size_above}`
-                      : requirement.family_size}
-                  </td>
-                  <td>{displayValue(requirement.amount)} {requirement.currency}</td>
-                </tr>
-              ))
-            }
-          </tbody>
-        </table>
-        <p>{program.funds.exemption_note_md?.en}</p>
+      <div class="card-grid two">
+        <article class="card">
+          <h3>Settlement funds</h3>
+          {
+            hasFundsTable ? (
+              <div class="table-wrap">
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>Family size</th>
+                      <th>Minimum funds</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    {program.funds.proof_of_funds.map((requirement) => (
+                      <tr>
+                        <td>
+                          {requirement.calculation === "increment_per_additional_member"
+                            ? `Each member after ${requirement.family_size_above}`
+                            : requirement.family_size}
+                        </td>
+                        <td>
+                          {displayValue(requirement.amount)} {requirement.currency}
+                        </td>
+                      </tr>
+                    ))}
+                  </tbody>
+                </table>
+              </div>
+            ) : (
+              <p class="prose">No fixed settlement-fund table is published in this record.</p>
+            )
+          }
+          <p class="prose muted">
+            {program.funds.exemption_note_md?.en}
+          </p>
+        </article>
+        <article class="card">
+          <h3>Application charges</h3>
+          {
+            applicationFees.length ? (
+              <ul class="detail-list">
+                {applicationFees.map((fee) => (
+                  <li>
+                    <strong>
+                      {displayValue(fee.amount)} {fee.currency}
+                    </strong>
+                    <span>
+                      {fee.label?.en ?? fee.applies_to}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <p class="prose">No application-charge table is published in this record.</p>
+            )
+          }
+        </article>
       </div>
     </section>
 
@@ -125,23 +241,43 @@ function displayValue(value: unknown) {
       <div class="section-heading">
         <div>
           <p class="eyebrow">Outcome and family</p>
-          <h2 id="outcome-heading">What permanent residence provides</h2>
+          <h2 id="outcome-heading">Residence, work, and family</h2>
         </div>
       </div>
       <div class="card-grid">
         <article class="card">
           <h3>Permanent residence</h3>
-          <p>{program.pr_pathway.summary_md?.en}</p>
-          <p>Work: {displayValue(program.rights.work_allowed)} · Study: {displayValue(program.rights.study_allowed)}</p>
+          <p class="prose">{program.pr_pathway.summary_md?.en}</p>
+          <p>
+            Work: {displayValue(program.rights.work_allowed)} · Study: {
+              displayValue(program.rights.study_allowed)
+            }
+          </p>
+          <p class="prose muted">{program.rights.healthcare_access_md?.en}</p>
         </article>
         <article class="card">
           <h3>Family</h3>
-          <p>{program.family.note_md?.en}</p>
+          <p class="prose">{program.family.note_md?.en}</p>
+          <p>
+            Partner: {displayValue(program.family.spouse_or_partner_allowed)} · Children: {
+              displayValue(program.family.children_allowed)
+            }
+          </p>
         </article>
         <article class="card">
           <h3>Citizenship</h3>
-          <p>{program.citizenship_pathway.summary_md?.en}</p>
-          <p>{program.citizenship_pathway.physical_presence_requirement_md?.en}</p>
+          <p class="prose">{program.citizenship_pathway.summary_md?.en}</p>
+          <p class="prose muted">
+            {program.citizenship_pathway.physical_presence_requirement_md?.en}
+          </p>
+        </article>
+        <article class="card">
+          <h3>Processing time</h3>
+          <p class="prose">{program.timeline.application_processing_time_md?.en}</p>
+          <p>
+            Modeled range: {displayValue(program.timeline.processing_time_months_min)}
+            –{displayValue(program.timeline.processing_time_months_max)} months
+          </p>
         </article>
       </div>
     </section>
@@ -152,15 +288,22 @@ function displayValue(value: unknown) {
           <p class="eyebrow">Primary evidence</p>
           <h2 id="sources-heading">Official sources</h2>
         </div>
+        <a class="btn btn-ghost" href="/sources">Source registry</a>
       </div>
       <div class="card-grid">
         {
           sources.map((source) => (
             <article class="card">
-              <p class="eyebrow">Priority {source.priority} · {source.source_type}</p>
-              <h3><a href={source.url} rel="external">{source.title}</a></h3>
+              <p class="eyebrow">
+                Priority {source.priority} · {source.source_type}
+              </p>
+              <h3>
+                <a href={source.url} rel="noopener noreferrer" target="_blank">
+                  {source.title}
+                </a>
+              </h3>
               <p>{source.publisher}</p>
-              <p>Checked {source.last_checked_at?.slice(0, 10)}</p>
+              <p class="muted">Checked {source.last_checked_at?.slice(0, 10)}</p>
             </article>
           ))
         }
@@ -178,12 +321,16 @@ function displayValue(value: unknown) {
         {
           citations.map(({ path, citations: refs }) => (
             <article class="card">
-              <p class="eyebrow">{path}</p>
+              <p class="eyebrow mono">{path}</p>
               {refs.map((ref) => (
-                <>
-                  <h3><a href={ref.url} rel="external">{ref.section ?? ref.source_id}</a></h3>
-                  {ref.quote_md && <p>“{ref.quote_md}”</p>}
-                </>
+                <div class="citation-block">
+                  <h3>
+                    <a href={ref.url} rel="noopener noreferrer" target="_blank">
+                      {ref.section ?? ref.source_id}
+                    </a>
+                  </h3>
+                  {ref.quote_md && <p class="quote">“{ref.quote_md}”</p>}
+                </div>
               ))}
             </article>
           ))
@@ -192,7 +339,11 @@ function displayValue(value: unknown) {
     </section>
 
     <section class="panel" aria-label="Informational disclaimer">
-      <p><strong>Preliminary information, not legal advice.</strong> Verify current requirements on the linked official pages before acting. Express Entry invitations and final admissibility decisions remain with IRCC.</p>
+      <p>
+        <strong>Information only, not legal advice.</strong> Rules, fees, invitation rounds, and
+        processing times change. Verify the linked official pages before acting. Final decisions
+        remain with the responsible government authority.
+      </p>
     </section>
   </main>
 </Layout>

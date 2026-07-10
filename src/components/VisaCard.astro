@@ -5,18 +5,31 @@ interface Props {
   category: string;
   summary: string;
   href?: string;
+  status?: string;
+  needsReview?: boolean;
+  checkedAt?: string;
 }
 
-const { title, country, category, summary, href = "#" } = Astro.props;
+const {
+  title,
+  country,
+  category,
+  summary,
+  href = "#",
+  status = "active",
+  needsReview = false,
+  checkedAt,
+} = Astro.props;
 ---
 
-<article class="card">
-  <p class="eyebrow">{country} · {category}</p>
-  <h3><a href={href}>{title}</a></h3>
-  <p>{summary}</p>
+<article class="card card-linkable">
+  <p class="eyebrow">{country} · {category.replaceAll("_", " ")}</p>
+  <h3 class="card-title"><a href={href}>{title}</a></h3>
+  <p class="card-description">{summary}</p>
   <div class="badge-row">
-    <span class="badge">source-first</span>
-    <span class="badge">structured data</span>
-    <span class="badge">needs review</span>
+    <span class="badge">{status}</span>
+    {needsReview ? <span class="badge badge-warning">needs review</span> : <span class="badge badge-success">reviewed</span>}
+    {checkedAt && <span class="badge">checked {checkedAt.slice(0, 10)}</span>}
   </div>
+  <p class="card-cta"><a href={href}>View pathway details →</a></p>
 </article>

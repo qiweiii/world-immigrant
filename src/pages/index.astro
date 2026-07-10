@@ -1,33 +1,35 @@
 ---
 import Layout from "../components/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
+import VisaCard from "../components/VisaCard.astro";
 import { loadCanonicalData } from "../lib/data";
+import { buildCountryPageModels } from "../lib/site-model";
 
-const { categories } = await loadCanonicalData();
+const dataset = await loadCanonicalData();
+const { categories, programs, countries, sources } = dataset;
+const countryModels = buildCountryPageModels(dataset);
+const programCards = programs.map((program) => {
+  const country = countries.find((item) => item.id === program.country_id);
+  return { program, country };
+});
 ---
 
 <Layout
-  title="World Immigrant — source-cited global mobility options"
+  title="World Immigrant — source-cited immigration pathways"
   description="Compare lawful immigration pathways across countries with citations, freshness, and local-first filtering."
 >
   <main>
     <section class="hero">
-      <p class="eyebrow">Public-good global mobility infrastructure</p>
-      <h1>Build your Plan A,<br />Plan B, and Plan C.</h1>
+      <p class="eyebrow">Source-cited pathway information</p>
+      <h1>Find immigration pathways you can verify.</h1>
       <p>
-        Source-cited, multilingual, AI-readable immigration pathway database for people who need
-        realistic multi-destination options in a changing world.
+        Browse official-source pathways by country, compare decision fields side by side, and filter
+        against a private local profile. No account. No server-side profile storage.
       </p>
-      <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;">
-        <a class="btn btn-primary" href="/filter">
-          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/></svg>
-          Start filtering
-        </a>
-        <a class="btn" href="/compare">
-          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
-          Compare pathways
-        </a>
-        <a class="btn btn-ghost" href="/sources">Source model</a>
+      <div class="action-row">
+        <a class="btn btn-primary" href="/countries">Browse countries</a>
+        <a class="btn" href="/filter">Check fit locally</a>
+        <a class="btn btn-ghost" href="/compare">Compare pathways</a>
       </div>
       <div class="badge-row">
         <TrustBadge label="official-source first" tone="success" />
@@ -36,28 +38,134 @@ const { categories } = await loadCanonicalData();
       </div>
     </section>
 
-    <section class="section-header">
-      <p class="eyebrow">Browse by category</p>
-      <h2>Every pathway, sourced and structured.</h2>
-      <p>Each category links to country-specific programs with eligibility, costs, timelines, and official citations.</p>
+    <section class="stats-row" aria-label="Coverage summary">
+      <div class="stat">
+        <strong>{countries.length}</strong>
+        <span>countries</span>
+      </div>
+      <div class="stat">
+        <strong>{programs.length}</strong>
+        <span>programs</span>
+      </div>
+      <div class="stat">
+        <strong>{sources.length}</strong>
+        <span>official sources</span>
+      </div>
+      <div class="stat">
+        <strong>{categories.length}</strong>
+        <span>categories</span>
+      </div>
     </section>
 
-    <section class="grid stagger" aria-label="Core categories">
-      {
-        categories.map((cat) => (
-          <article class="card">
-            <div class="card-header">
-              <p class="eyebrow" style="margin:0 0 4px;">Global pathways</p>
-              <h3 class="card-title"><a href={`/categories/${cat.id}`}>{cat.names.en}</a></h3>
-            </div>
-            <p class="card-description">{cat.description_md.en}</p>
-            <div class="badge-row">
-              <span class="badge">source-first</span>
-              <span class="badge">structured</span>
-            </div>
-          </article>
-        ))
-      }
+    <section class="section" aria-labelledby="start-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Start here</p>
+          <h2 id="start-heading">Three simple ways in</h2>
+        </div>
+      </div>
+      <div class="card-grid three">
+        <article class="card">
+          <p class="eyebrow">1</p>
+          <h3><a href="/countries">Browse by country</a></h3>
+          <p>Read country summaries, open a pathway page, and follow the official sources.</p>
+        </article>
+        <article class="card">
+          <p class="eyebrow">2</p>
+          <h3><a href="/compare">Compare pathways</a></h3>
+          <p>Put two or three programs side by side on funds, family, rights, and confidence.</p>
+        </article>
+        <article class="card">
+          <p class="eyebrow">3</p>
+          <h3><a href="/filter">Filter privately</a></h3>
+          <p>Your profile stays in this browser. Results explain matches with cited reasons.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="countries-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Countries</p>
+          <h2 id="countries-heading">Where coverage exists today</h2>
+        </div>
+        <a class="btn btn-ghost" href="/countries">All countries</a>
+      </div>
+      <div class="card-grid">
+        {
+          countryModels.map(({ country, programs: countryPrograms }) => (
+            <article class="card">
+              <p class="eyebrow">
+                {country.iso2} · {country.region}
+              </p>
+              <h3 class="card-title">
+                <a href={`/countries/${country.id}`}>{country.names.en}</a>
+              </h3>
+              <p class="card-description">{country.summary_md.en}</p>
+              <div class="badge-row">
+                <span class="badge">
+                  {countryPrograms.length} program{countryPrograms.length === 1 ? "" : "s"}
+                </span>
+                <span class="badge">checked {country.freshness.last_checked_at.slice(0, 10)}</span>
+              </div>
+              <p class="card-cta">
+                <a href={`/countries/${country.id}`}>Open country →</a>
+              </p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="programs-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Programs</p>
+          <h2 id="programs-heading">Validated pathways</h2>
+        </div>
+        <a class="btn btn-ghost" href="/compare">Compare</a>
+      </div>
+      <div class="card-grid">
+        {
+          programCards.map(({ program, country }) => (
+            <VisaCard
+              title={program.official_names.en}
+              country={country?.names.en ?? program.country_id}
+              category={program.category_ids.join(", ")}
+              summary={program.summary_md.en}
+              href={`/programs/${program.id}`}
+              status={program.status}
+              needsReview={program.freshness.needs_human_review}
+              checkedAt={program.freshness.last_checked_at}
+            />
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="categories-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Categories</p>
+          <h2 id="categories-heading">Browse by pathway type</h2>
+        </div>
+        <a class="btn btn-ghost" href="/categories">All categories</a>
+      </div>
+      <div class="card-grid">
+        {
+          categories.map((cat) => (
+            <article class="card">
+              <h3 class="card-title">
+                <a href={`/categories/${cat.id}`}>{cat.names.en}</a>
+              </h3>
+              <p class="card-description">{cat.description_md.en}</p>
+              <p class="card-cta">
+                <a href={`/categories/${cat.id}`}>Open category →</a>
+              </p>
+            </article>
+          ))
+        }
+      </div>
     </section>
   </main>
 </Layout>

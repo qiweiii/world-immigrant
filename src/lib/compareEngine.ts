@@ -110,7 +110,11 @@ const rowDefinitions: Array<{
 
 export function buildComparison(programs: CompareProgram[], selectedIds: string[]): ComparisonView {
   const byId = new Map(programs.map((program) => [program.program_id, program]));
-  const selected = selectedIds.map((id) => {
+  const uniqueIds = [...new Set(selectedIds)];
+  if (uniqueIds.length > 3) {
+    throw new Error("Compare supports at most three distinct programs");
+  }
+  const selected = uniqueIds.map((id) => {
     const program = byId.get(id);
     if (!program) throw new Error(`Unknown program: ${id}`);
     return program;
@@ -119,7 +123,7 @@ export function buildComparison(programs: CompareProgram[], selectedIds: string[
   return {
     columns: selected.map((program) => ({
       id: program.program_id,
-      title: program.official_names.en,
+      title: `${program.official_names.en}${program.status === "active" ? "" : ` (${program.status})`}`,
       country_id: program.country_id,
     })),
     rows: rowDefinitions.map((row) => ({

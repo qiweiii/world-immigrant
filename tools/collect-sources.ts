@@ -1,5 +1,7 @@
+import { resolve as resolveDns } from "node:dns/promises";
 import { constants } from "node:fs";
 import { access, mkdir, open, readFile, rename, rm, writeFile } from "node:fs/promises";
+import { isIP } from "node:net";
 import { resolve } from "node:path";
 import { loadCanonicalData } from "../src/lib/data";
 import type { Source } from "../src/lib/schema";
@@ -74,7 +76,9 @@ const dryRun = hasFlag("--dry-run");
 const jsonOnly = hasFlag("--json");
 const limit = Number.parseInt(argument("--limit") ?? "5", 10);
 const timeoutMs = Number.parseInt(argument("--timeout-ms") ?? "30000", 10);
-const maxBytes = Number.parseInt(argument("--max-bytes") ?? "10000000", 10);
+const maxBytes = Number.parseInt(argument("--max-bytes") ?? "2000000", 10);
+const maxRedirects = Number.parseInt(argument("--max-redirects") ?? "5", 10);
+const staleLockMs = Number.parseInt(argument("--stale-lock-ms") ?? "900000", 10);
 const root = process.cwd();
 const stateDir = resolve(
   argument("--state-dir") ??
@@ -92,6 +96,15 @@ if (!Number.isInteger(limit) || limit < 1 || limit > 100) {
 }
 if (!Number.isInteger(timeoutMs) || timeoutMs < 1000 || timeoutMs > 120000) {
   throw new Error("--timeout-ms must be an integer from 1000 to 120000");
+}
+if (!Number.isInteger(maxBytes) || maxBytes < 1024 || maxBytes > 10_000_000) {
+  throw new Error("--max-bytes must be an integer from 1024 to 10000000");
+}
+if (!Number.isInteger(maxRedirects) || maxRedirects < 0 || maxRedirects > 10) {
+  throw new Error("--max-redirects must be an integer from 0 to 10");
+}
+if (!Number.isInteger(staleLockMs) || staleLockMs < 60_000 || staleLockMs > 86_400_000) {
+  throw new Error("--stale-lock-ms must be an integer from 60000 to 86400000");
 }
 
 async function exists(path: string) {
@@ -116,14 +129,58 @@ function activeSources(sources: Source[]) {
     .sort((left, right) => left.priority - right.priority || left.id.localeCompare(right.id));
 }
 
-function allowedFinalHost(source: Source, finalUrl: URL) {
-  if (finalUrl.protocol !== "https:") return false;
-  const domains = source.expected_domains?.length
-    ? source.expected_domains
-    : [new URL(source.url).hostname];
-  return domains.some(
-    (domain) => finalUrl.hostname === domain || finalUrl.hostname.endsWith(`.${domain}`),
+function expectedDomains(source: Source) {
+  return source.expected_domains?.length ? source.expected_domains : [new URL(source.url).hostname];
+}
+
+function isBlockedHostname(hostname: string) {
+  const host = hostname.toLowerCase().replace(/\.$/, "");
+  if (
+    host === "localhost" ||
+    host.endsWith(".localhost") ||
+    host.endsWith(".local") ||
+    host.endsWith(".internal") ||
+    host.endsWith(".lan") ||
+    host === "0.0.0.0" ||
+    host === "::" ||
+    host === "[::]"
+  ) {
+    return true;
+  }
+
+  const ip = isIP(host.replace(/^\[|\]$/g, "")) ? host.replace(/^\[|\]$/g, "") : null;
+  if (!ip) return false;
+  if (ip === "127.0.0.1" || ip === "::1") return true;
+  if (ip.startsWith("10.") || ip.startsWith("192.168.") || ip.startsWith("169.254.")) return true;
+  if (/^172\.(1[6-9]|2\d|3[0-1])\./.test(ip)) return true;
+  if (ip.startsWith("fc") || ip.startsWith("fd") || ip.startsWith("fe80")) return true;
+  return false;
+}
+
+function hostAllowed(source: Source, url: URL) {
+  if (url.protocol !== "https:") return false;
+  if (isBlockedHostname(url.hostname)) return false;
+  return expectedDomains(source).some(
+    (domain) => url.hostname === domain || url.hostname.endsWith(`.${domain}`),
   );
+}
+
+async function assertPublicResolvableHost(hostname: string) {
+  if (isBlockedHostname(hostname)) {
+    throw new Error(`Blocked host ${hostname}`);
+  }
+  const bare = hostname.replace(/^\[|\]$/g, "");
+  if (isIP(bare)) {
+    if (isBlockedHostname(bare)) throw new Error(`Blocked address ${bare}`);
+    return;
+  }
+  const records = await resolveDns(hostname);
+  if (!records.length) throw new Error(`Host ${hostname} did not resolve`);
+  for (const address of records) {
+    if (isBlockedHostname(address)) {
+      throw new Error(`Host ${hostname} resolves to blocked address ${address}`);
+    }
+  }
 }
 
 function headerValue(headers: Headers, name: string) {
@@ -136,6 +193,31 @@ async function atomicJson(path: string, value: unknown) {
   await rename(temporary, path);
 }
 
+async function readBodyLimited(response: Response, limitBytes: number) {
+  if (!response.body) return new Uint8Array();
+  const reader = response.body.getReader();
+  const chunks: Uint8Array[] = [];
+  let total = 0;
+  while (true) {
+    const { done, value } = await reader.read();
+    if (done) break;
+    if (!value) continue;
+    total += value.byteLength;
+    if (total > limitBytes) {
+      await reader.cancel();
+      throw new Error(`Response exceeds ${limitBytes} bytes`);
+    }
+    chunks.push(value);
+  }
+  const out = new Uint8Array(total);
+  let offset = 0;
+  for (const chunk of chunks) {
+    out.set(chunk, offset);
+    offset += chunk.byteLength;
+  }
+  return out;
+}
+
 async function retainSnapshot(
   source: Source,
   raw: Uint8Array,
@@ -143,67 +225,109 @@ async function retainSnapshot(
   state: SourceState,
 ) {
   const directory = resolve(stateDir, "snapshots", state.snapshot_id);
-  if (await exists(directory)) return;
-  await mkdir(directory, { recursive: true });
+  const completeMarker = resolve(directory, "metadata.json");
+  if (await exists(completeMarker)) return;
+
+  const temporary = resolve(stateDir, "snapshots", `.tmp-${state.snapshot_id}-${process.pid}`);
+  await rm(temporary, { recursive: true, force: true });
+  await mkdir(temporary, { recursive: true });
   await Promise.all([
-    writeFile(resolve(directory, "raw.bin"), raw),
-    writeFile(resolve(directory, "normalized.txt"), normalized),
-    atomicJson(resolve(directory, "metadata.json"), {
+    writeFile(resolve(temporary, "raw.bin"), raw),
+    writeFile(resolve(temporary, "normalized.txt"), normalized),
+    atomicJson(resolve(temporary, "metadata.json"), {
       version: 1,
       canonical_url: source.url,
       ...state,
       normalizer: "world-immigrant-html-v1",
     }),
   ]);
+  await rm(directory, { recursive: true, force: true });
+  await rename(temporary, directory);
+}
+
+async function acquireLock() {
+  await mkdir(stateDir, { recursive: true });
+  try {
+    const lock = await open(lockPath, "wx");
+    await lock.writeFile(`${process.pid}\n${startedAt}\n`);
+    return lock;
+  } catch (error) {
+    if (!(error instanceof Error) || !("code" in error) || error.code !== "EEXIST") throw error;
+    const existing = await readFile(lockPath, "utf8").catch(() => "");
+    const stampedAt = existing.split("\n")[1]?.trim();
+    const age = stampedAt ? Date.now() - new Date(stampedAt).getTime() : Number.POSITIVE_INFINITY;
+    if (Number.isFinite(age) && age < staleLockMs) {
+      throw new Error(`Source monitor already running (lock age ${Math.round(age / 1000)}s)`);
+    }
+    await rm(lockPath, { force: true });
+    const lock = await open(lockPath, "wx");
+    await lock.writeFile(`${process.pid}\n${startedAt}\n`);
+    return lock;
+  }
+}
+
+async function fetchWithValidatedRedirects(source: Source, previous: SourceState | undefined) {
+  let currentUrl = new URL(source.url);
+  if (!hostAllowed(source, currentUrl)) {
+    throw Object.assign(new Error("Initial URL host is outside expected_domains"), {
+      result: "domain_rejected" as const,
+    });
+  }
+  await assertPublicResolvableHost(currentUrl.hostname);
+
+  for (let hop = 0; hop <= maxRedirects; hop += 1) {
+    const headers = new Headers({
+      Accept: "text/html,application/xhtml+xml,application/xml;q=0.9,text/plain;q=0.8,*/*;q=0.1",
+      "Accept-Language": "en-AU,en;q=0.9",
+      "User-Agent":
+        process.env.SOURCE_MONITOR_USER_AGENT ??
+        "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36",
+    });
+    if (previous?.etag) headers.set("If-None-Match", previous.etag);
+    if (previous?.last_modified) headers.set("If-Modified-Since", previous.last_modified);
+
+    const response = await fetch(currentUrl, {
+      headers,
+      redirect: "manual",
+      signal: AbortSignal.timeout(timeoutMs),
+    });
+
+    if ([301, 302, 303, 307, 308].includes(response.status)) {
+      const location = response.headers.get("location");
+      if (!location) throw new Error(`Redirect ${response.status} without Location`);
+      const nextUrl = new URL(location, currentUrl);
+      if (!hostAllowed(source, nextUrl)) {
+        throw Object.assign(
+          new Error(`Redirect host is outside expected_domains: ${nextUrl.hostname}`),
+          {
+            result: "domain_rejected" as const,
+            finalUrl: nextUrl.toString(),
+            status: response.status,
+          },
+        );
+      }
+      await assertPublicResolvableHost(nextUrl.hostname);
+      currentUrl = nextUrl;
+      continue;
+    }
+
+    return { response, finalUrl: currentUrl };
+  }
+
+  throw new Error(`Exceeded ${maxRedirects} redirects`);
 }
 
 async function fetchSource(source: Source, previous: SourceState | undefined): Promise<SourceRun> {
   const checkedAt = new Date().toISOString();
   try {
-    const sourceUrl = new URL(source.url);
-    if (sourceUrl.protocol !== "https:") {
-      return {
-        source_id: source.id,
-        source_url: source.url,
-        result: "domain_rejected",
-        checked_at: checkedAt,
-        error: "Only HTTPS sources are permitted",
-      };
-    }
-
-    const headers = new Headers({
-      Accept: "text/html,application/xhtml+xml,application/pdf,text/plain;q=0.9,*/*;q=0.1",
-      "User-Agent":
-        process.env.SOURCE_MONITOR_USER_AGENT ??
-        "WorldImmigrantSourceMonitor/1.0 (+https://world-immigrant.com/sources)",
-    });
-    if (previous?.etag) headers.set("If-None-Match", previous.etag);
-    if (previous?.last_modified) headers.set("If-Modified-Since", previous.last_modified);
-
-    const response = await fetch(sourceUrl, {
-      headers,
-      redirect: "follow",
-      signal: AbortSignal.timeout(timeoutMs),
-    });
-    const finalUrl = new URL(response.url);
-    if (!allowedFinalHost(source, finalUrl)) {
-      return {
-        source_id: source.id,
-        source_url: source.url,
-        result: "domain_rejected",
-        checked_at: checkedAt,
-        final_url: response.url,
-        status_code: response.status,
-        error: "Final redirect host is outside expected_domains",
-      };
-    }
+    const { response, finalUrl } = await fetchWithValidatedRedirects(source, previous);
 
     if (response.status === 304 && previous) {
       if (!dryRun) {
         state.sources[source.id] = {
           ...previous,
           checked_at: checkedAt,
-          final_url: response.url,
+          final_url: finalUrl.toString(),
           status_code: response.status,
         };
       }
@@ -212,7 +336,7 @@ async function fetchSource(source: Source, previous: SourceState | undefined): P
         source_url: source.url,
         result: "not_modified",
         checked_at: checkedAt,
-        final_url: response.url,
+        final_url: finalUrl.toString(),
         status_code: response.status,
         content_type: previous.content_type,
         raw_hash: previous.raw_hash,
@@ -225,8 +349,7 @@ async function fetchSource(source: Source, previous: SourceState | undefined): P
 
     const declaredLength = Number.parseInt(response.headers.get("content-length") ?? "0", 10);
     if (declaredLength > maxBytes) throw new Error(`Response exceeds ${maxBytes} bytes`);
-    const raw = new Uint8Array(await response.arrayBuffer());
-    if (raw.byteLength > maxBytes) throw new Error(`Response exceeds ${maxBytes} bytes`);
+    const raw = await readBodyLimited(response, maxBytes);
 
     const contentType =
       response.headers.get("content-type")?.split(";")[0] ?? "application/octet-stream";
@@ -238,7 +361,7 @@ async function fetchSource(source: Source, previous: SourceState | undefined): P
         source_url: source.url,
         result: "extraction_required",
         checked_at: checkedAt,
-        final_url: response.url,
+        final_url: finalUrl.toString(),
         status_code: response.status,
         content_type: contentType,
         raw_hash: rawHash,
@@ -257,7 +380,7 @@ async function fetchSource(source: Source, previous: SourceState | undefined): P
     const nextState: SourceState = {
       source_id: source.id,
       checked_at: checkedAt,
-      final_url: response.url,
+      final_url: finalUrl.toString(),
       status_code: response.status,
       content_type: contentType,
       raw_hash: rawHash,
@@ -276,7 +399,7 @@ async function fetchSource(source: Source, previous: SourceState | undefined): P
       source_url: source.url,
       result: change,
       checked_at: checkedAt,
-      final_url: response.url,
+      final_url: finalUrl.toString(),
       status_code: response.status,
       content_type: contentType,
       raw_hash: rawHash,
@@ -286,11 +409,23 @@ async function fetchSource(source: Source, previous: SourceState | undefined): P
       expected_hint_misses: expectedHintMisses,
     };
   } catch (error) {
+    const result =
+      error && typeof error === "object" && "result" in error
+        ? (error as { result: SourceRun["result"] }).result
+        : "fetch_failed";
     return {
       source_id: source.id,
       source_url: source.url,
-      result: "fetch_failed",
+      result,
       checked_at: checkedAt,
+      final_url:
+        error && typeof error === "object" && "finalUrl" in error
+          ? String((error as { finalUrl: string }).finalUrl)
+          : undefined,
+      status_code:
+        error && typeof error === "object" && "status" in error
+          ? Number((error as { status: number }).status)
+          : undefined,
       error: error instanceof Error ? error.message : "Unknown fetch failure",
     };
   }
@@ -300,8 +435,7 @@ await mkdir(stateDir, { recursive: true });
 let lock: Awaited<ReturnType<typeof open>> | undefined;
 let state: MonitorState = { version: 1, sources: {} };
 try {
-  lock = await open(lockPath, "wx");
-  await lock.writeFile(`${process.pid}\n${startedAt}\n`);
+  lock = await acquireLock();
   state = await readState();
   const dataset = await loadCanonicalData(root);
   const dueSources = dataset.sources.map((source) => {

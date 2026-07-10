@@ -55,3 +55,24 @@ test("compare engine rejects unknown program IDs", async () => {
   const programs = await comparePrograms();
   assert.throws(() => buildComparison(programs, ["missing"]), /Unknown program/);
 });
+
+test("compare engine deduplicates program IDs and rejects more than three distinct programs", async () => {
+  const programs = await comparePrograms();
+  const view = buildComparison(programs, ["canada-express-entry-fsw", "canada-express-entry-fsw"]);
+  assert.equal(view.columns.length, 1);
+
+  const clones = Array.from({ length: 3 }, (_, index) => {
+    const program = structuredClone(programs[0]);
+    program.program_id = `extra-${index}`;
+    program.official_names = { en: `Extra ${index}` };
+    return program;
+  });
+  assert.throws(
+    () =>
+      buildComparison(
+        [...programs, ...clones],
+        ["canada-express-entry-fsw", "extra-0", "extra-1", "extra-2"],
+      ),
+    /at most three/,
+  );
+});

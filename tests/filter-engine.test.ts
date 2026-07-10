@@ -19,9 +19,11 @@ const completeProfile: UserProfile = {
   valid_job_offer: false,
 };
 
-async function indexProgram() {
+async function indexProgram(programId = "canada-express-entry-fsw") {
   const output = buildPublicData(await loadCanonicalData());
-  return output.filterIndex.programs[0];
+  const program = output.filterIndex.programs.find((item) => item.program_id === programId);
+  assert.ok(program, `missing filter index program ${programId}`);
+  return program;
 }
 
 test("filter returns not_match for a cited hard blocker", async () => {
@@ -76,4 +78,28 @@ test("filter preserves unknown policy state instead of guessing", async () => {
 
   assert.equal(result.status, "unknown");
   assert.ok(result.reasons.some(({ severity }) => severity === "unknown"));
+});
+
+test("filter marks inactive programs as needs_review", async () => {
+  const program = structuredClone(await indexProgram());
+  program.status = "closed";
+  program.freshness.needs_human_review = false;
+  const result = evaluateProgram(program, completeProfile);
+  assert.equal(result.status, "needs_review");
+  assert.ok(result.reasons.some(({ field }) => field === "program_status"));
+});
+
+test("filter attaches field-specific citations rather than one global source list", async () => {
+  const program = await indexProgram();
+  const result = evaluateProgram(program, { ...completeProfile, skilled_work_years: 0 });
+  const work = result.reasons.find(({ field }) => field === "work_experience");
+  assert.ok(work);
+  assert.ok(work.citations.includes("canada-ircc-fsw"));
+  const funds = evaluateProgram(program, {
+    ...completeProfile,
+    family_size: 1,
+    liquid_funds: { amount: 1, currency: "CAD" },
+  }).reasons.find(({ field }) => field === "settlement_funds");
+  assert.ok(funds);
+  assert.ok(funds.citations.includes("canada-ircc-proof-funds"));
 });

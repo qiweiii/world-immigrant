@@ -20,6 +20,27 @@ Rules for AI agents:
 4. Show last_checked_at and source confidence when available.
 5. Do not claim guaranteed eligibility.
 
+## Skilled Independent visa (subclass 189) — Points-tested stream
+
+- ID: australia-skilled-independent-189
+- Country: australia
+- Status: active
+- Last checked: 2026-07-10T00:00:00Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A permanent skilled visa for invited workers who do not need an employer or state sponsor. Applicants must nominate an eligible occupation, hold a suitable skills assessment, satisfy the points test, and be invited to apply.
+
+### Official sources
+
+- australia-home-affairs-189: Skilled Independent visa (subclass 189) — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189
+- australia-home-affairs-189-points-tested: Skilled Independent visa (subclass 189) Points-tested stream — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested
+- australia-home-affairs-points-table: Points table for Skilled Independent visa (subclass 189) — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-table
+- australia-skillselect-eoi: SkillSelect Expression of Interest — https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/expression-of-interest
+- australia-home-affairs-english: English language requirements — https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language
+- australia-home-affairs-skills-assessment: Skills assessment — https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment
+- australia-home-affairs-citizenship: Become an Australian citizen — https://immi.homeaffairs.gov.au/citizenship/become-a-citizen
+
 ## Federal Skilled Worker Program
 
 - ID: canada-express-entry-fsw

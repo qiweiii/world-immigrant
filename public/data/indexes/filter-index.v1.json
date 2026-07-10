@@ -2,6 +2,200 @@
   "schema_version": 1,
   "programs": [
     {
+      "program_id": "australia-skilled-independent-189",
+      "country_id": "australia",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Skilled Independent visa (subclass 189) — Points-tested stream"
+      },
+      "status": "active",
+      "criteria": {
+        "min_work_experience_years": 0,
+        "min_language_benchmark": 6,
+        "min_education_level": "unknown",
+        "credential_assessment_required": true,
+        "min_program_selection_points": 65,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": []
+      },
+      "freshness": {
+        "created_at": "2026-07-10T00:00:00Z",
+        "updated_at": "2026-07-10T00:00:00Z",
+        "last_checked_at": "2026-07-10T00:00:00Z",
+        "update_frequency_days": 7,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "Overview",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "About this visa",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "You must",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "australia-skillselect-eoi",
+            "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/expression-of-interest",
+            "section": "Check you will meet or exceed the points threshold",
+            "snapshot_id": "1c6541a53f81c1cad6b58ec025cb89fbd3850ccb83180f49e9ab620990df4c64",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "You must",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "australia-home-affairs-points-table",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-table",
+            "section": "Points table",
+            "snapshot_id": "be0c735ef99aa880acd2e0af816e46bfdc54245962ae0c3baf19a6b3679a0e72",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "australia-home-affairs-skills-assessment",
+            "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment",
+            "section": "Skills assessment",
+            "snapshot_id": "28bc00e77d7511aa91fb735a8ef78b075df92a9310a7e8906ce9454b3faf7165",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "australia-home-affairs-english",
+            "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language",
+            "section": "English language",
+            "snapshot_id": "a334ffb306ea0aa0e01b02380f7b4cf0b644646e776d320642f176473691dc50",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "Cost",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "About this visa",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "Processing times",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "With this visa, you can",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "Include family",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "How long you can stay",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "australia-home-affairs-citizenship",
+            "url": "https://immi.homeaffairs.gov.au/citizenship/become-a-citizen",
+            "section": "Become an Australian citizen",
+            "snapshot_id": "fd76d163ab67913f4db1040ce5d22a2d4a25d10f4d5ea29e9aa33e18ff946803",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "You must",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "australia-skillselect-eoi",
+            "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/expression-of-interest",
+            "section": "points threshold of 65",
+            "snapshot_id": "1c6541a53f81c1cad6b58ec025cb89fbd3850ccb83180f49e9ab620990df4c64",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ]
+      },
+      "pathway_type": "direct_pr",
+      "max_age": 44,
+      "min_liquid_funds_usd": "unknown",
+      "accepts_remote_income": "unknown",
+      "accepts_self_employment": "unknown",
+      "requires_degree": "unknown",
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": true,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": true,
+      "leads_to_citizenship": "indirect",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 4,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-10T00:00:00Z"
+    },
+    {
       "program_id": "canada-express-entry-fsw",
       "country_id": "canada",
       "category_ids": [
@@ -97,6 +291,164 @@
         "needs_human_review": true
       },
       "field_citations": {
+        "/status": [
+          {
+            "source_id": "canada-ircc-fsw",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+            "quote_md": "The Federal Skilled Worker Program is for skilled workers who have foreign work experience and want to become permanent residents.",
+            "section": "Federal Skilled Worker Program",
+            "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
+            "quote_hash": "8678a16ca7a18bd693f1440319193862dc9faac778100a27e7104b3cca958383",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "canada-ircc-fsw",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+            "section": "Minimum requirements and selection factors",
+            "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "canada-ircc-fsw",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+            "quote_md": "We choose skilled workers based on education, work experience, language skills, and other criteria.",
+            "section": "Minimum requirements",
+            "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
+            "quote_hash": "4a18e50ad54eda05c723ef8a00925a2307df7e75baf751a464aec17a01896d58",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "canada-ircc-rounds",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
+            "quote_md": "We identify the highest-ranking candidates from the pool who are eligible for the chosen round type.",
+            "section": "How the rounds work",
+            "snapshot_id": "4359b182e2403d8f5da9bfec850c7ecd4d1fbb7190675f17d9d438808e1b2bf1",
+            "quote_hash": "c2d41005613757c104f67256f51442cf2649dbdb4c0ca754996f8d9c91e1ad42",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "canada-ircc-fsw",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+            "section": "Minimum requirements and selection factors",
+            "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "canada-ircc-language-tests",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+            "section": "Federal Skilled Worker Program",
+            "snapshot_id": "49a30ed7eace3803a70063a068b8692175ef07f93fbed1cb34da46f968ac134f",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "canada-ircc-eca",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html",
+            "section": "Who needs an ECA",
+            "snapshot_id": "7f30c834da22db5064d2dc94f2b1ec28ee11d3d77567bc658a99259d0da826d5",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "canada-ircc-police-certificates",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/police-certificates.html",
+            "section": "Police certificates",
+            "snapshot_id": "fd646f47552987832e98cd0d6a961360742b7eb6d5356fc50a643adb0632f58a",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "canada-ircc-medical-exams",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html",
+            "section": "Permanent residence applicants",
+            "snapshot_id": "a0b3a00d6aa57033a9783427459e28971cb108708e83adad164406629ebcfe73",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "canada-ircc-proof-funds",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+            "section": "How much money you need",
+            "snapshot_id": "cbfc58425d58f7d935426f122f4fb5d9b95b1a2051c81bf80176b0fda962a73f",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "canada-ircc-fees",
+            "url": "https://ircc.canada.ca/english/information/fees/fees.asp",
+            "section": "Economic immigration (including Express Entry)",
+            "snapshot_id": "0f6dce57d6b5c1180025783417a6eb73a12c6eeae89ade8accf88998034a4723",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "canada-ircc-proof-funds",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+            "section": "Who needs proof of funds",
+            "snapshot_id": "cbfc58425d58f7d935426f122f4fb5d9b95b1a2051c81bf80176b0fda962a73f",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "canada-ircc-processing-times",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+            "section": "Current processing times",
+            "snapshot_id": "0e6f5b1e07ef4cc6f8016e7d407be1a9d2e83836565744e33078e641ad78e357",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "canada-ircc-pr-rights",
+            "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
+            "quote_md": "As a permanent resident, you have the right to live, work or study anywhere in Canada.",
+            "section": "Permanent resident rights",
+            "snapshot_id": "82ee40826dbf95931477d61a12dd10867729123a2b114eb7f888e79d1fba5c63",
+            "quote_hash": "16d1babd2e5d9f818e74821f1bcf90e3fac726c440866b5959cb12c49e3388be",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "canada-ircc-family-inclusion",
+            "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28",
+            "section": "Who should I include",
+            "snapshot_id": "039579798e31c030da1c90fa4967f61c05ad3f71a002c16062b27fd4e523a037",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "canada-ircc-pr-rights",
+            "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
+            "section": "Permanent resident rights",
+            "snapshot_id": "82ee40826dbf95931477d61a12dd10867729123a2b114eb7f888e79d1fba5c63",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "canada-ircc-fsw",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+            "section": "Federal Skilled Worker Program",
+            "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "canada-ircc-citizenship",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/who.html",
+            "section": "Eligibility for adults",
+            "snapshot_id": "71d38956f91d34e513c253c9ddc58488e6d29aeefaa100cd555377c87bcc4e5b",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
         "/filter": [
           {
             "source_id": "canada-ircc-fsw",

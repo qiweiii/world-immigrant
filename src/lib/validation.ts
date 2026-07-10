@@ -182,6 +182,31 @@ function overdueMessage(id: string, lastCheckedAt: string, frequencyDays: number
   return `${id} is overdue: last checked ${lastCheckedAt}, frequency ${frequencyDays} days`;
 }
 
+function chronologyErrors(
+  label: string,
+  timestamps: Array<{ name: string; value?: string }>,
+  now: Date,
+): string[] {
+  const errors: string[] = [];
+  let previousMs = Number.NEGATIVE_INFINITY;
+  for (const { name, value } of timestamps) {
+    if (!value) continue;
+    const ms = new Date(value).getTime();
+    if (!Number.isFinite(ms)) {
+      errors.push(`${label} has invalid ${name}`);
+      continue;
+    }
+    if (ms > now.getTime() + 60_000) {
+      errors.push(`${label} ${name} is in the future`);
+    }
+    if (ms + 1 < previousMs) {
+      errors.push(`${label} timestamps are out of order around ${name}`);
+    }
+    previousMs = Math.max(previousMs, ms);
+  }
+  return errors;
+}
+
 export function evaluateFreshness(
   dataset: CanonicalDataset,
   options: FreshnessOptions = {},
@@ -260,6 +285,18 @@ export function validateDataset(
   const sourceById = new Map(dataset.sources.map((source) => [source.id, source]));
 
   for (const country of dataset.countries) {
+    errors.push(
+      ...chronologyErrors(
+        `Country ${country.id}`,
+        [
+          { name: "created_at", value: country.freshness.created_at },
+          { name: "updated_at", value: country.freshness.updated_at },
+          { name: "last_checked_at", value: country.freshness.last_checked_at },
+          { name: "last_changed_at", value: country.freshness.last_changed_at },
+        ],
+        options.now ?? new Date(),
+      ),
+    );
     for (const categoryId of country.categories) {
       if (!categoryIds.has(categoryId)) {
         errors.push(`Country ${country.id} references missing category ${categoryId}`);
@@ -292,6 +329,19 @@ export function validateDataset(
     if (source.status === "active" && !source.last_checked_at) {
       errors.push(`Active source ${source.id} requires last_checked_at`);
     }
+    if (source.status === "active" && !source.last_success_at) {
+      errors.push(`Active source ${source.id} requires last_success_at`);
+    }
+    errors.push(
+      ...chronologyErrors(
+        `Source ${source.id}`,
+        [
+          { name: "last_success_at", value: source.last_success_at },
+          { name: "last_checked_at", value: source.last_checked_at },
+        ],
+        options.now ?? new Date(),
+      ),
+    );
     for (const programId of source.program_ids) {
       const program = programById.get(programId);
       if (!program) errors.push(`Source ${source.id} references missing program ${programId}`);
@@ -321,6 +371,18 @@ export function validateDataset(
         );
       }
     }
+    errors.push(
+      ...chronologyErrors(
+        `Program ${program.id}`,
+        [
+          { name: "created_at", value: program.freshness.created_at },
+          { name: "updated_at", value: program.freshness.updated_at },
+          { name: "last_checked_at", value: program.freshness.last_checked_at },
+          { name: "last_changed_at", value: program.freshness.last_changed_at },
+        ],
+        options.now ?? new Date(),
+      ),
+    );
     for (const sourceId of program.source_ids) {
       const source = sourceById.get(sourceId);
       if (!source) errors.push(`Program ${program.id} references missing source ${sourceId}`);

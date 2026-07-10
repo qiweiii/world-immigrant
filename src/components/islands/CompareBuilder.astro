@@ -99,11 +99,18 @@
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
       const payload = (await response.json()) as { programs: CompareIndex };
       programs = payload.programs;
-      const requested = new URL(window.location.href).searchParams
-        .get("programs")
-        ?.split(",")
-        .filter((id) => programs.some(({ program_id }) => program_id === id));
-      const initial = requested?.length ? requested.slice(0, 3) : programs.slice(0, 1).map(({ program_id }) => program_id);
+      const requested = [
+        ...new Set(
+          new URL(window.location.href).searchParams
+            .get("programs")
+            ?.split(",")
+            .map((id) => id.trim())
+            .filter(Boolean) ?? [],
+        ),
+      ].filter((id) => programs.some(({ program_id }) => program_id === id));
+      const initial = requested.length
+        ? requested.slice(0, 3)
+        : programs.slice(0, 1).map(({ program_id }) => program_id);
 
       for (const program of programs) {
         const field = document.createElement("label");
@@ -118,7 +125,8 @@
           renderTable();
         });
         const name = document.createElement("span");
-        name.textContent = `${program.official_names.en} · ${program.country_id}`;
+        const statusLabel = program.status === "active" ? "" : ` · ${program.status}`;
+        name.textContent = `${program.official_names.en} · ${program.country_id}${statusLabel}`;
         field.append(checkbox, name);
         options.append(field);
       }

@@ -1,0 +1,35 @@
+{
+  "id": "australia",
+  "iso2": "AU",
+  "iso3": "AUS",
+  "names": {
+    "en": "Australia"
+  },
+  "region": "Oceania",
+  "summary_md": {
+    "en": "Australia offers points-tested permanent skilled migration pathways through SkillSelect, including the Skilled Independent visa (subclass 189). Candidates usually submit an expression of interest, meet a points threshold, and wait for an invitation before applying."
+  },
+  "official_source_ids": [
+    "australia-home-affairs-189",
+    "australia-home-affairs-189-points-tested",
+    "australia-home-affairs-points-table",
+    "australia-skillselect-eoi",
+    "australia-home-affairs-english",
+    "australia-home-affairs-skills-assessment",
+    "australia-home-affairs-citizenship"
+  ],
+  "categories": [
+    "skilled_worker"
+  ],
+  "program_ids": [
+    "australia-skilled-independent-189"
+  ],
+  "freshness": {
+    "created_at": "2026-07-10T00:00:00Z",
+    "updated_at": "2026-07-10T00:00:00Z",
+    "last_checked_at": "2026-07-10T00:00:00Z",
+    "update_frequency_days": 7,
+    "confidence": "medium",
+    "needs_human_review": true
+  }
+}

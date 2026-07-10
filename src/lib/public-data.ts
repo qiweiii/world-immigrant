@@ -42,9 +42,7 @@ export function buildPublicData(dataset: CanonicalDataset, generatedAt = new Dat
         proof_of_funds_exemptions: program.funds.proof_of_funds_exemptions ?? [],
       },
       freshness: program.freshness,
-      field_citations: Object.fromEntries(
-        Object.entries(program.field_citations).filter(([path]) => path.startsWith("/filter")),
-      ),
+      field_citations: program.field_citations,
       ...program.filter,
     })),
   };

@@ -33,6 +33,14 @@ const { model } = Astro.props as { model: CategoryModel };
 
 <Layout title={`${model.category.names.en} pathways — World Immigrant`}>
   <main>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <a href="/categories">Categories</a>
+      <span aria-hidden="true">/</span>
+      <span>{model.category.names.en}</span>
+    </nav>
+
     <section class="hero">
       <p class="eyebrow">Pathway category</p>
       <h1>{model.category.names.en}</h1>
@@ -55,6 +63,9 @@ const { model } = Astro.props as { model: CategoryModel };
                 category={model.category.names.en}
                 summary={program.summary_md.en}
                 href={`/programs/${program.id}`}
+                status={program.status}
+                needsReview={program.freshness.needs_human_review}
+                checkedAt={program.freshness.last_checked_at}
               />
             ))}
           </div>

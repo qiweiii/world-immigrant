@@ -8,15 +8,27 @@ test("country and program page models resolve canonical relationships", async ()
 
   const countries = buildCountryPageModels(dataset);
   const programs = buildProgramPageModels(dataset);
+  const byId = Object.fromEntries(countries.map((model) => [model.country.id, model]));
 
-  assert.equal(countries.length, 1);
-  assert.equal(countries[0].country.id, "canada");
+  assert.equal(countries.length, 2);
+  assert.ok(byId.canada);
+  assert.ok(byId.australia);
   assert.deepEqual(
-    countries[0].programs.map(({ id }) => id),
+    byId.canada.programs.map(({ id }) => id),
     ["canada-express-entry-fsw"],
   );
-  assert.equal(programs.length, 1);
-  assert.equal(programs[0].country.names.en, "Canada");
-  assert.equal(programs[0].sources.length, 12);
-  assert.ok(programs[0].citations.some(({ path }) => path === "/eligibility"));
+  assert.deepEqual(
+    byId.australia.programs.map(({ id }) => id),
+    ["australia-skilled-independent-189"],
+  );
+  assert.equal(programs.length, 2);
+  const canadaProgram = programs.find((model) => model.program.id === "canada-express-entry-fsw");
+  const australiaProgram = programs.find(
+    (model) => model.program.id === "australia-skilled-independent-189",
+  );
+  assert.equal(canadaProgram?.country.names.en, "Canada");
+  assert.equal(canadaProgram?.sources.length, 12);
+  assert.equal(australiaProgram?.country.names.en, "Australia");
+  assert.equal(australiaProgram?.sources.length, 7);
+  assert.ok(canadaProgram?.citations.some(({ path }) => path === "/eligibility"));
 });

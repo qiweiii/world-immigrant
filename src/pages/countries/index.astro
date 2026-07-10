@@ -9,13 +9,23 @@ const countries = buildCountryPageModels(await loadCanonicalData());
 
 <Layout title="Countries — World Immigrant">
   <main>
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">/</span>
+      <span>Countries</span>
+    </nav>
+
     <section class="hero">
       <p class="eyebrow">Country pages</p>
-      <h1>Explore immigration pathways<br />country by country.</h1>
+      <h1>Explore pathways country by country</h1>
       <p>
-        Country records connect structured pathways with official-source citations, freshness,
-        and category-specific requirements.
+        Each country page links structured programs with official-source citations, freshness, and
+        category coverage.
       </p>
+      <div class="action-row">
+        <a class="btn btn-primary" href="/filter">Filter locally</a>
+        <a class="btn" href="/compare">Compare programs</a>
+      </div>
     </section>
 
     <section class="section" aria-labelledby="countries-heading">
@@ -29,13 +39,22 @@ const countries = buildCountryPageModels(await loadCanonicalData());
         {
           countries.map(({ country, programs }) => (
             <article class="card">
-              <p class="eyebrow">{country.iso2} · {country.region}</p>
-              <h3><a href={`/countries/${country.id}`}>{country.names.en}</a></h3>
-              <p>{country.summary_md.en}</p>
+              <p class="eyebrow">
+                {country.iso2} · {country.region}
+              </p>
+              <h3 class="card-title">
+                <a href={`/countries/${country.id}`}>{country.names.en}</a>
+              </h3>
+              <p class="card-description">{country.summary_md.en}</p>
               <div class="badge-row">
-                <span class="badge">{programs.length} verified program</span>
+                <span class="badge">
+                  {programs.length} verified program{programs.length === 1 ? "" : "s"}
+                </span>
                 <span class="badge">checked {country.freshness.last_checked_at.slice(0, 10)}</span>
               </div>
+              <p class="card-cta">
+                <a href={`/countries/${country.id}`}>Open country →</a>
+              </p>
             </article>
           ))
         }
@@ -59,6 +78,9 @@ const countries = buildCountryPageModels(await loadCanonicalData());
                 category={program.category_ids.join(", ")}
                 summary={program.summary_md.en}
                 href={`/programs/${program.id}`}
+                status={program.status}
+                needsReview={program.freshness.needs_human_review}
+                checkedAt={program.freshness.last_checked_at}
               />
             )),
           )

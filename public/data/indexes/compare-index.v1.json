@@ -2,6 +2,249 @@
   "schema_version": 1,
   "programs": [
     {
+      "program_id": "australia-skilled-independent-189",
+      "country_id": "australia",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Skilled Independent visa (subclass 189) — Points-tested stream"
+      },
+      "status": "active",
+      "summary_md": {
+        "en": "A permanent skilled visa for invited workers who do not need an employer or state sponsor. Applicants must nominate an eligible occupation, hold a suitable skills assessment, satisfy the points test, and be invited to apply."
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": [
+          {
+            "label": {
+              "en": "Main applicant charge, from official materials"
+            },
+            "amount": 6135,
+            "currency": "AUD",
+            "applies_to": "primary"
+          }
+        ]
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "Use the official visa processing times tool for current indications. Invitation timing is separate from post-application processing."
+        },
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "renewable": false
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": "unknown",
+        "study_allowed": true,
+        "business_allowed": "unknown",
+        "healthcare_access_md": {
+          "en": "Permanent residents may access Medicare if eligible."
+        },
+        "tax_residency_note_md": {
+          "en": "Tax residence depends on Australian tax rules and personal circumstances."
+        }
+      },
+      "family": {
+        "spouse_or_partner_allowed": true,
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": true,
+        "spouse_work_allowed": true,
+        "dependent_parents_allowed": "not_applicable",
+        "note_md": {
+          "en": "Members of the family unit can be included in the application and must meet health and character requirements."
+        }
+      },
+      "pr_pathway": {
+        "available": true,
+        "summary_md": {
+          "en": "A successful application grants Australian permanent residence directly."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "indirect",
+        "min_residence_years": "unknown",
+        "summary_md": {
+          "en": "Permanent residents may later apply for Australian citizenship if they meet the separate citizenship requirements."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 4,
+        "cost_score": 4,
+        "permanence_score": 5,
+        "family_friendliness_score": 4,
+        "source_confidence_score": 4,
+        "policy_stability_score": 4
+      },
+      "source_ids": [
+        "australia-home-affairs-189",
+        "australia-home-affairs-189-points-tested",
+        "australia-home-affairs-points-table",
+        "australia-skillselect-eoi",
+        "australia-home-affairs-english",
+        "australia-home-affairs-skills-assessment",
+        "australia-home-affairs-citizenship"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "Overview",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "About this visa",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "You must",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "australia-skillselect-eoi",
+            "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/expression-of-interest",
+            "section": "Check you will meet or exceed the points threshold",
+            "snapshot_id": "1c6541a53f81c1cad6b58ec025cb89fbd3850ccb83180f49e9ab620990df4c64",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "You must",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "australia-home-affairs-points-table",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-table",
+            "section": "Points table",
+            "snapshot_id": "be0c735ef99aa880acd2e0af816e46bfdc54245962ae0c3baf19a6b3679a0e72",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "australia-home-affairs-skills-assessment",
+            "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment",
+            "section": "Skills assessment",
+            "snapshot_id": "28bc00e77d7511aa91fb735a8ef78b075df92a9310a7e8906ce9454b3faf7165",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "australia-home-affairs-english",
+            "url": "https://immi.homeaffairs.gov.au/help-support/meeting-our-requirements/english-language",
+            "section": "English language",
+            "snapshot_id": "a334ffb306ea0aa0e01b02380f7b4cf0b644646e776d320642f176473691dc50",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "Cost",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "About this visa",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "Processing times",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "With this visa, you can",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "Include family",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "How long you can stay",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "australia-home-affairs-citizenship",
+            "url": "https://immi.homeaffairs.gov.au/citizenship/become-a-citizen",
+            "section": "Become an Australian citizen",
+            "snapshot_id": "fd76d163ab67913f4db1040ce5d22a2d4a25d10f4d5ea29e9aa33e18ff946803",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "australia-home-affairs-189-points-tested",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
+            "section": "You must",
+            "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "australia-skillselect-eoi",
+            "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/expression-of-interest",
+            "section": "points threshold of 65",
+            "snapshot_id": "1c6541a53f81c1cad6b58ec025cb89fbd3850ccb83180f49e9ab620990df4c64",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-10T00:00:00Z",
+        "updated_at": "2026-07-10T00:00:00Z",
+        "last_checked_at": "2026-07-10T00:00:00Z",
+        "update_frequency_days": 7,
+        "confidence": "medium",
+        "needs_human_review": true
+      }
+    },
+    {
       "program_id": "canada-express-entry-fsw",
       "country_id": "canada",
       "category_ids": [

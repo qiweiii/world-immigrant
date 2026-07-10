@@ -61,7 +61,27 @@ const educationRank: Record<EducationLevel, number> = {
   professional_license: 6,
 };
 
-function citationIds(program: FilterIndexProgram): string[] {
+const FIELD_CITATION_PATHS: Record<string, string[]> = {
+  goal: ["/pr_pathway", "/citizenship_pathway", "/filter"],
+  work_experience: ["/eligibility", "/eligibility/work_experience", "/filter"],
+  language_test: ["/eligibility", "/eligibility/language", "/filter"],
+  language_benchmark: ["/eligibility", "/eligibility/language", "/filter"],
+  education: ["/eligibility", "/eligibility/education", "/filter"],
+  credential_assessment: ["/eligibility", "/eligibility/education", "/filter"],
+  program_selection_points: ["/eligibility", "/filter"],
+  settlement_funds: ["/funds", "/filter"],
+  content_review: ["/filter", "/status"],
+  program_status: ["/status", "/filter"],
+};
+
+function citationsForField(program: FilterIndexProgram, field: string): string[] {
+  const preferred = FIELD_CITATION_PATHS[field] ?? ["/filter"];
+  const matches = preferred.flatMap((path) =>
+    Object.entries(program.field_citations)
+      .filter(([citationPath]) => citationPath === path || citationPath.startsWith(`${path}/`))
+      .flatMap(([, citations]) => citations.map(({ source_id }) => source_id)),
+  );
+  if (matches.length) return [...new Set(matches)];
   return [
     ...new Set(
       Object.values(program.field_citations)
@@ -120,7 +140,6 @@ function exemptionState(program: FilterIndexProgram, profile: UserProfile) {
 }
 
 export function evaluateProgram(program: FilterIndexProgram, profile: UserProfile): FilterResult {
-  const citations = citationIds(program);
   const reasons: FilterReason[] = [];
   let blocking = false;
   let possible = false;
@@ -128,8 +147,17 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
   let unknownPolicy = false;
 
   const add = (reason: Omit<FilterReason, "citations">) => {
-    reasons.push({ ...reason, citations });
+    reasons.push({ ...reason, citations: citationsForField(program, reason.field) });
   };
+
+  if (program.status !== "active") {
+    needsReview = true;
+    add({
+      field: "program_status",
+      severity: "warning",
+      message: `This program is currently marked ${program.status} and is not treated as an open pathway.`,
+    });
+  }
 
   const pathwayValue =
     profile.goal === "citizenship" ? program.leads_to_citizenship : program.leads_to_pr;
@@ -185,7 +213,14 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     }
   }
 
-  if (program.requires_language_test === true) {
+  if (program.requires_language_test === "unknown") {
+    unknownPolicy = true;
+    add({
+      field: "language_test",
+      severity: "unknown",
+      message: "Whether an approved language test is required is unknown in the current record.",
+    });
+  } else if (program.requires_language_test === true) {
     if (profile.has_approved_language_test === false) {
       blocking = true;
       add({
@@ -229,7 +264,14 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
   }
 
   const minEducation = program.criteria.min_education_level;
-  if (minEducation && minEducation !== "unknown") {
+  if (minEducation === "unknown") {
+    unknownPolicy = true;
+    add({
+      field: "education",
+      severity: "unknown",
+      message: "The official education minimum is unknown in the current record.",
+    });
+  } else if (minEducation) {
     if (!profile.education_level) {
       possible = true;
       add({
@@ -237,7 +279,9 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
         severity: "warning",
         message: `Add education to check the ${minEducation} minimum.`,
       });
-    } else if (educationRank[profile.education_level] < educationRank[minEducation]) {
+    } else if (
+      educationRank[profile.education_level] < educationRank[minEducation as EducationLevel]
+    ) {
       blocking = true;
       add({
         field: "education",
@@ -253,10 +297,16 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     }
   }
 
-  if (
-    program.criteria.credential_assessment_condition === "foreign_education" &&
-    profile.foreign_education === true
-  ) {
+  const assessmentRequired = program.criteria.credential_assessment_required;
+  const assessmentCondition = program.criteria.credential_assessment_condition;
+  if (assessmentRequired === "unknown") {
+    unknownPolicy = true;
+    add({
+      field: "credential_assessment",
+      severity: "unknown",
+      message: "Credential-assessment policy is unknown in the current record.",
+    });
+  } else if (assessmentCondition === "foreign_education" && profile.foreign_education === true) {
     if (profile.has_eca === false) {
       blocking = true;
       add({
@@ -278,10 +328,39 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
         message: "The profile confirms a foreign credential assessment.",
       });
     }
+  } else if (assessmentRequired === true) {
+    if (profile.has_eca === false) {
+      blocking = true;
+      add({
+        field: "credential_assessment",
+        severity: "blocking",
+        message: "A suitable skills or credential assessment is required.",
+      });
+    } else if (profile.has_eca === undefined) {
+      possible = true;
+      add({
+        field: "credential_assessment",
+        severity: "warning",
+        message: "Confirm the required skills or credential assessment.",
+      });
+    } else {
+      add({
+        field: "credential_assessment",
+        severity: "positive",
+        message: "The profile confirms the required skills or credential assessment.",
+      });
+    }
   }
 
   const minProgramPoints = program.criteria.min_program_selection_points;
-  if (typeof minProgramPoints === "number") {
+  if (minProgramPoints === "unknown") {
+    unknownPolicy = true;
+    add({
+      field: "program_selection_points",
+      severity: "unknown",
+      message: "The official program-specific score threshold is unknown in the current record.",
+    });
+  } else if (typeof minProgramPoints === "number") {
     if (profile.program_selection_points === undefined) {
       needsReview = true;
       add({
@@ -306,7 +385,14 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
   }
 
   const fundsExemption = exemptionState(program, profile);
-  if (fundsExemption === "met") {
+  if (!program.criteria.proof_of_funds.length) {
+    add({
+      field: "settlement_funds",
+      severity: "positive",
+      message:
+        "No fixed settlement-fund table is published for this program in the current record.",
+    });
+  } else if (fundsExemption === "met") {
     add({
       field: "settlement_funds",
       severity: "positive",

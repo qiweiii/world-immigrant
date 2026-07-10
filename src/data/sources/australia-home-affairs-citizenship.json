@@ -1,0 +1,18 @@
+{
+  "id": "australia-home-affairs-citizenship",
+  "country_id": "australia",
+  "program_ids": ["australia-skilled-independent-189"],
+  "url": "https://immi.homeaffairs.gov.au/citizenship/become-a-citizen",
+  "title": "Become an Australian citizen",
+  "publisher": "Australian Department of Home Affairs",
+  "source_type": "official",
+  "language": "en",
+  "priority": 3,
+  "update_frequency_days": 90,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["Australian citizen", "permanent resident"],
+  "expected_domains": ["immi.homeaffairs.gov.au", "homeaffairs.gov.au"],
+  "last_checked_at": "2026-07-10T00:00:00Z",
+  "last_success_at": "2026-07-10T00:00:00Z",
+  "status": "active"
+}
