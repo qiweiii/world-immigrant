@@ -103,19 +103,26 @@
     justify-content: space-between;
     gap: 16px;
   }
-  .brand {
+  .wordmark {
     display: inline-flex;
     align-items: center;
-    gap: 8px;
-    font-weight: 600;
-    letter-spacing: -0.03em;
-    font-size: 15px;
-  }
-  .brand-dot {
-    width: 8px; height: 8px;
-    border-radius: 999px;
-    background: var(--accent);
+    width: 164px;
+    height: 30px;
+    color: var(--foreground);
     flex-shrink: 0;
+  }
+  .wordmark-mark {
+    width: 100%;
+    height: 100%;
+    display: block;
+    background: currentColor;
+    -webkit-mask: url("/brand/world-immigrant.svg") center / contain no-repeat;
+    mask: url("/brand/world-immigrant.svg") center / contain no-repeat;
+  }
+  .wordmark-footer {
+    width: 186px;
+    height: 34px;
+    margin-bottom: 12px;
   }
   .nav-links {
     display: flex;

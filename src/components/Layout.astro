@@ -10,6 +10,10 @@ const {
   title = "World Immigrant",
   description = "Source-cited global immigration pathway comparison.",
 } = Astro.props;
+
+const siteUrl = Astro.site ?? new URL("https://world-immigrant.com");
+const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const socialImageUrl = new URL("/og.png", siteUrl).href;
 ---
 
 <!doctype html>
@@ -18,6 +22,23 @@ const {
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0e0f14" />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="canonical" href={canonicalUrl} />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="World Immigrant" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={canonicalUrl} />
+    <meta property="og:image" content={socialImageUrl} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="World Immigrant — source-cited immigration pathways" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={socialImageUrl} />
     <title>{title}</title>
     <script is:inline>
       const saved = localStorage.getItem("theme");
@@ -29,9 +50,8 @@ const {
   <body>
     <header class="appbar">
       <div class="appbar-inner">
-        <a class="brand" href="/">
-          <span class="brand-dot" aria-hidden="true"></span>
-          <span>World Immigrant</span>
+        <a class="wordmark" href="/" aria-label="World Immigrant home">
+          <span class="wordmark-mark" aria-hidden="true"></span>
         </a>
         <nav class="nav-links" aria-label="Primary">
           <a href="/countries">Countries</a>
@@ -108,10 +128,9 @@ const {
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-col">
-            <div class="brand" style="margin-bottom:10px;">
-              <span class="brand-dot" aria-hidden="true"></span>
-              <span>World Immigrant</span>
-            </div>
+            <a class="wordmark wordmark-footer" href="/" aria-label="World Immigrant home">
+              <span class="wordmark-mark" aria-hidden="true"></span>
+            </a>
             <p>
               Source-cited immigration pathway information. Local-first filtering. Not legal advice.
             </p>
