@@ -1,0 +1,44 @@
+<section class="panel" aria-labelledby="filter-heading" data-eligibility-filter>
+  <p class="eyebrow">Local-first profile</p>
+  <h2 id="filter-heading">Start with a lightweight profile.</h2>
+  <p>
+    MVP filtering runs in the browser, explains every result, and avoids sending sensitive
+    profile data to a backend.
+  </p>
+  <div class="field-grid">
+    <div class="field">
+      <label class="field-label" for="income">Monthly income, USD</label>
+      <input class="input" id="income" data-income value="4000" inputmode="numeric" />
+    </div>
+    <div class="field">
+      <label class="field-label" for="goal">Goal</label>
+      <select class="input" id="goal" data-goal>
+        <option value="temporary_stay">Temporary stay</option>
+        <option value="renewable_residence">Renewable residence</option>
+        <option value="permanent_residence" selected>Permanent residence</option>
+        <option value="citizenship">Citizenship</option>
+  </select>
+    </div>
+  </div>
+  <div class="card" style="margin-top:16px;">
+    <h3 class="card-title">Current scaffold result</h3>
+    <p class="card-description" data-summary>Input: $4000/month · goal: permanent residence</p>
+    <div class="separator"></div>
+    <p class="card-description" style="color:var(--warning);">Needs review: add official-source program data before eligibility matching is enabled.</p>
+  </div>
+</section>
+
+<script>
+  const root = document.querySelector("[data-eligibility-filter]");
+  const income = root?.querySelector<HTMLInputElement>("[data-income]");
+  const goal = root?.querySelector<HTMLSelectElement>("[data-goal]");
+  const summary = root?.querySelector<HTMLElement>("[data-summary]");
+
+  function renderSummary() {
+    if (!income || !goal || !summary) return;
+    summary.textContent = `Input: $${income.value || "0"}/month · goal: ${goal.value.replaceAll("_", " ")}`;
+  }
+
+  income?.addEventListener("input", renderSummary);
+  goal?.addEventListener("change", renderSummary);
+</script>

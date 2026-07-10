@@ -1,0 +1,12 @@
+flowchart LR
+  S[Source registry] --> C[Fetch/extract source]
+  C --> H[Hash + snapshot metadata]
+  H --> D{Changed?}
+  D -- no --> F[Update last_checked_at]
+  D -- yes --> X[Extract structured facts]
+  X --> Q[Attach field citations]
+  Q --> V[Schema + citation validation]
+  V --> G[Generate public JSON + llms.txt]
+  G --> B[Astro build + Pagefind index]
+  V --> P[Open PR for review]
+  P --> M[Merge after human review]

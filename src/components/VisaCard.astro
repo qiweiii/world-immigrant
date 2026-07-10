@@ -1,0 +1,22 @@
+---
+interface Props {
+  title: string;
+  country: string;
+  category: string;
+  summary: string;
+  href?: string;
+}
+
+const { title, country, category, summary, href = "#" } = Astro.props;
+---
+
+<article class="card">
+  <p class="eyebrow">{country} · {category}</p>
+  <h3><a href={href}>{title}</a></h3>
+  <p>{summary}</p>
+  <div class="badge-row">
+    <span class="badge">source-first</span>
+    <span class="badge">structured data</span>
+    <span class="badge">needs review</span>
+  </div>
+</article>

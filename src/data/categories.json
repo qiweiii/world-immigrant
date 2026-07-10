@@ -1,0 +1,59 @@
+{
+  "categories": [
+    {
+      "id": "digital_nomad",
+      "names": {
+        "en": "Digital Nomad / Remote Work",
+        "zh-Hans": "数字游民 / 远程工作"
+      },
+      "description": {
+        "en": "Routes for remote workers earning income outside the destination country.",
+        "zh-Hans": "面向收入来自目的地国家以外的远程工作者的路径。"
+      }
+    },
+    {
+      "id": "skilled_worker",
+      "names": {
+        "en": "Skilled Worker",
+        "zh-Hans": "技术移民"
+      },
+      "description": {
+        "en": "Employment, occupation-list, and points-based skilled migration routes.",
+        "zh-Hans": "就业、职业清单和打分制相关的技术移民路径。"
+      }
+    },
+    {
+      "id": "study_to_pr",
+      "names": {
+        "en": "Study to PR",
+        "zh-Hans": "留学到永居"
+      },
+      "description": {
+        "en": "Education pathways that may lead to work authorization and permanent residence.",
+        "zh-Hans": "可能衔接工作许可和永居的教育路径。"
+      }
+    },
+    {
+      "id": "startup_entrepreneur",
+      "names": {
+        "en": "Startup / Entrepreneur",
+        "zh-Hans": "创业 / 企业家"
+      },
+      "description": {
+        "en": "Founder, startup, innovation, and entrepreneur routes.",
+        "zh-Hans": "创始人、初创、创新和企业家路径。"
+      }
+    },
+    {
+      "id": "investor",
+      "names": {
+        "en": "Investor / Golden Visa",
+        "zh-Hans": "投资 / 黄金签证"
+      },
+      "description": {
+        "en": "Residence or citizenship routes connected to investment, funds, or business creation.",
+        "zh-Hans": "与投资、资金或企业创建相关的居留或公民身份路径。"
+      }
+    }
+  ]
+}

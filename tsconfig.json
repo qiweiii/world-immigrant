@@ -1,0 +1,9 @@
+{
+  "extends": "astro/tsconfigs/strict",
+  "compilerOptions": {
+    "resolveJsonModule": true,
+    "allowJs": false,
+    "noEmit": true
+  },
+  "include": [".astro/types.d.ts", "src/**/*", "tools/**/*", "astro.config.mjs"]
+}

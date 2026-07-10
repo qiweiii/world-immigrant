@@ -1,0 +1,48 @@
+---
+const rows = [
+  {
+    field: "Path to permanence",
+    meaning: "Temporary only, renewable residence, PR, citizenship, or direct citizenship.",
+    whyItMatters: "Avoids spending years on a dead-end route.",
+  },
+  {
+    field: "Family fit",
+    meaning: "Spouse/partner, children, parents, and spouse work rights.",
+    whyItMatters: "Most immigration decisions are household decisions.",
+  },
+  {
+    field: "Source freshness",
+    meaning: "Last checked, last changed, confidence, and official-source status.",
+    whyItMatters: "Immigration rules change quickly and stale data is dangerous.",
+  },
+];
+---
+
+<section class="panel" aria-labelledby="compare-heading">
+  <p class="eyebrow">Compare island</p>
+  <h2 id="compare-heading">Compare the fields that change decisions.</h2>
+  <p>
+    This frameworkless Astro island will load a compact compare index from
+    <code>/data/indexes</code> once source-cited program data exists.
+  </p>
+  <table class="table">
+    <thead>
+      <tr>
+        <th>Field</th>
+        <th>Meaning</th>
+        <th>Why it matters</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rows.map((row) => (
+          <tr>
+            <td style="color:var(--foreground);font-weight:500;">{row.field}</td>
+            <td>{row.meaning}</td>
+            <td>{row.whyItMatters}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</section>

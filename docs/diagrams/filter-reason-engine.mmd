@@ -1,0 +1,16 @@
+flowchart TD
+  P[Local user profile] --> N[Normalize profile]
+  I[Filter index] --> E[Eligibility predicates]
+  N --> E
+  E --> C{Classify program}
+  C --> LM[likely_match]
+  C --> PM[possible_match]
+  C --> NM[not_match]
+  C --> NR[needs_review]
+  C --> UN[unknown]
+
+  E --> R[Reason builder]
+  R --> CIT[Attach citations]
+  CIT --> UI[Explainable result cards]
+  UI --> FU[Follow-up questions]
+  UI --> SL[Shortlist export]

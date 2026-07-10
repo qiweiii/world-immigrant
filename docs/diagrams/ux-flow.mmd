@@ -1,0 +1,22 @@
+flowchart TD
+  Start[User arrives] --> Choice{How do they think?}
+  Choice --> Profile[Profile first]
+  Choice --> Compare[Compare first]
+  Choice --> Country[Country first]
+  Choice --> PlanB[Plan B builder]
+
+  Profile --> Q[8-12 local-only questions]
+  Q --> Results[Likely / possible / blocked / needs review]
+  Results --> Reasons[Cited reasons + missing info]
+  Reasons --> Shortlist[Exportable shortlist]
+
+  Compare --> Category[Pick category]
+  Category --> Table[Side-by-side table]
+  Table --> Shortlist
+
+  Country --> Pages[Country + program pages]
+  Pages --> Sources[Official sources + freshness]
+
+  PlanB --> Timeline[3 months / 1 year / 3 years / 5 years]
+  Timeline --> Buckets[Immediate stay / medium residence / long-term PR or citizenship]
+  Buckets --> Shortlist

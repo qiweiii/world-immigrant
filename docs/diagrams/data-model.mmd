@@ -1,0 +1,35 @@
+erDiagram
+  COUNTRY ||--o{ PROGRAM : offers
+  CATEGORY ||--o{ PROGRAM_CATEGORY : groups
+  PROGRAM ||--o{ PROGRAM_CATEGORY : belongs_to
+  PROGRAM ||--o{ FIELD_CITATION : cites
+  SOURCE ||--o{ FIELD_CITATION : supports
+  PROGRAM ||--|| FILTER_INDEX_ENTRY : generates
+  PROGRAM ||--|| COMPARE_INDEX_ENTRY : generates
+
+  COUNTRY {
+    string id
+    string iso2
+    string iso3
+    string region
+  }
+  PROGRAM {
+    string id
+    string country_id
+    string status
+    string pathway_type
+    datetime last_checked_at
+  }
+  SOURCE {
+    string id
+    string url
+    string source_type
+    int priority
+    string extraction_method
+  }
+  FIELD_CITATION {
+    string field_path
+    string source_id
+    string quote_md
+    datetime retrieved_at
+  }

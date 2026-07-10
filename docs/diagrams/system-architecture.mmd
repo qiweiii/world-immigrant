@@ -1,0 +1,28 @@
+flowchart TD
+  OS[Official immigration sources]
+  HE[Hermes scheduled updater]
+  PR[Human-reviewed PR]
+  SD[Structured canonical data JSON / YAML]
+  LF[Localized markdown fields]
+  ASTRO[Astro static site build]
+  P[Pagefind static search index]
+  H[Static HTML pages]
+  I[TypeScript compare/filter islands]
+  L[llms.txt + static JSON endpoints]
+  U[Human users]
+  A[AI agents / search crawlers]
+
+  OS --> HE
+  HE --> PR
+  PR --> SD
+  SD --> LF
+  SD --> ASTRO
+  LF --> ASTRO
+  ASTRO --> H
+  ASTRO --> P
+  ASTRO --> I
+  ASTRO --> L
+  H --> U
+  P --> U
+  I --> U
+  L --> A

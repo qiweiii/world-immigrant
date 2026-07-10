@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "generated_at": "2026-07-10T05:38:40.350Z",
+  "endpoints": {
+    "categories": "/data/categories.json",
+    "countries": "/data/countries.json",
+    "programs": "/data/programs.json",
+    "sources": "/data/sources.json",
+    "filter_index": "/data/indexes/filter-index.v1.json"
+  }
+}
