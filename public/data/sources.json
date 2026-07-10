@@ -1,3 +1,310 @@
 {
-  "sources": []
+  "sources": [
+    {
+      "id": "canada-ircc-citizenship",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/who.html",
+      "title": "Canadian citizenship: Who can apply",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "permanent resident",
+        "1,095 days",
+        "5-year eligibility period"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-eca",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html",
+      "title": "Express Entry: Educational credential assessment",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Who needs an ECA",
+        "Federal Skilled Workers Program",
+        "less than 5 years"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-family-inclusion",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28",
+      "title": "Who to include on a permanent residence application",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "spouse or partner",
+        "dependent children"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-fees",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://ircc.canada.ca/english/information/fees/fees.asp",
+      "title": "Citizenship and immigration application fees",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Economic immigration (including Express Entry)",
+        "1,590.00",
+        "990.00"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-fsw",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+      "title": "Express Entry: Federal Skilled Worker Program",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 3,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Minimum requirements",
+        "67 points",
+        "Proof of funds"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-language-tests",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+      "title": "Express Entry: Language test results",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Federal Skilled Worker Program",
+        "CLB 7",
+        "NCLC 7"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-medical-exams",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html",
+      "title": "Medical examination for permanent residence applicants",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "permanent residence",
+        "medical exam"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-police-certificates",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/police-certificates.html",
+      "title": "Express Entry: Police certificates",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "police certificates",
+        "18 years old"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-pr-rights",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
+      "title": "Permanent resident right to live, work or study in Canada",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 3,
+      "update_frequency_days": 90,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "right to live, work or study anywhere in Canada"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-processing-times",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+      "title": "Check current IRCC processing times",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 7,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "processing time",
+        "Express Entry"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-proof-funds",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+      "title": "Express Entry: Proof of funds",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 7,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "How much money you need",
+        "15,263",
+        "family members"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-rounds",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-fsw"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
+      "title": "Express Entry: Rounds of invitations",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 3,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Latest round",
+        "CRS score",
+        "highest-ranking candidates"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-10T00:00:00Z",
+      "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    }
+  ]
 }

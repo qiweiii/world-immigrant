@@ -1,0 +1,30 @@
+---
+import Layout from "../../components/Layout.astro";
+import { loadCanonicalData } from "../../lib/data";
+
+const { categories, programs } = await loadCanonicalData();
+---
+
+<Layout title="Immigration pathway categories — World Immigrant">
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Browse by purpose</p>
+      <h1>Immigration pathway categories</h1>
+      <p>Categories organize verified country programs without flattening their legal differences.</p>
+    </section>
+    <section class="card-grid" aria-label="Pathway categories">
+      {
+        categories.map((category) => {
+          const count = programs.filter(({ category_ids }) => category_ids.includes(category.id)).length;
+          return (
+            <article class="card">
+              <p class="eyebrow">{count} verified program{count === 1 ? "" : "s"}</p>
+              <h2><a href={`/categories/${category.id}`}>{category.names.en}</a></h2>
+              <p>{category.description_md.en}</p>
+            </article>
+          );
+        })
+      }
+    </section>
+  </main>
+</Layout>

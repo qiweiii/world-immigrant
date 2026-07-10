@@ -1,0 +1,69 @@
+---
+import Layout from "../../components/Layout.astro";
+import VisaCard from "../../components/VisaCard.astro";
+import { loadCanonicalData, type CanonicalDataset } from "../../lib/data";
+import type { Category, Country, Program } from "../../lib/schema";
+
+type CategoryModel = {
+  category: Category;
+  programs: Array<{ program: Program; country: Country }>;
+};
+
+export async function getStaticPaths() {
+  const dataset: CanonicalDataset = await loadCanonicalData();
+  const countries = new Map(dataset.countries.map((country) => [country.id, country]));
+  return dataset.categories.map((category) => ({
+    params: { category: category.id },
+    props: {
+      model: {
+        category,
+        programs: dataset.programs
+          .filter(({ category_ids }) => category_ids.includes(category.id))
+          .flatMap((program) => {
+            const country = countries.get(program.country_id);
+            return country ? [{ program, country }] : [];
+          }),
+      } satisfies CategoryModel,
+    },
+  }));
+}
+
+const { model } = Astro.props as { model: CategoryModel };
+---
+
+<Layout title={`${model.category.names.en} pathways — World Immigrant`}>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Pathway category</p>
+      <h1>{model.category.names.en}</h1>
+      <p>{model.category.description_md.en}</p>
+    </section>
+    <section class="section" aria-labelledby="programs-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Validated coverage</p>
+          <h2 id="programs-heading">Programs</h2>
+        </div>
+      </div>
+      {
+        model.programs.length ? (
+          <div class="card-grid">
+            {model.programs.map(({ program, country }) => (
+              <VisaCard
+                title={program.official_names.en}
+                country={country.names.en}
+                category={model.category.names.en}
+                summary={program.summary_md.en}
+                href={`/programs/${program.id}`}
+              />
+            ))}
+          </div>
+        ) : (
+          <div class="panel">
+            <p>No validated programs are published in this category yet.</p>
+          </div>
+        )
+      }
+    </section>
+  </main>
+</Layout>

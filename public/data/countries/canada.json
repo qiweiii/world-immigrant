@@ -1,0 +1,40 @@
+{
+  "id": "canada",
+  "iso2": "CA",
+  "iso3": "CAN",
+  "names": {
+    "en": "Canada"
+  },
+  "region": "North America",
+  "summary_md": {
+    "en": "Canada operates federal and provincial immigration pathways. This first verified coverage focuses on the Federal Skilled Worker Program managed through Express Entry."
+  },
+  "official_source_ids": [
+    "canada-ircc-fsw",
+    "canada-ircc-proof-funds",
+    "canada-ircc-language-tests",
+    "canada-ircc-eca",
+    "canada-ircc-fees",
+    "canada-ircc-rounds",
+    "canada-ircc-citizenship",
+    "canada-ircc-pr-rights",
+    "canada-ircc-family-inclusion",
+    "canada-ircc-police-certificates",
+    "canada-ircc-medical-exams",
+    "canada-ircc-processing-times"
+  ],
+  "categories": [
+    "skilled_worker"
+  ],
+  "program_ids": [
+    "canada-express-entry-fsw"
+  ],
+  "freshness": {
+    "created_at": "2026-07-10T00:00:00Z",
+    "updated_at": "2026-07-10T00:00:00Z",
+    "last_checked_at": "2026-07-10T00:00:00Z",
+    "update_frequency_days": 3,
+    "confidence": "high",
+    "needs_human_review": true
+  }
+}

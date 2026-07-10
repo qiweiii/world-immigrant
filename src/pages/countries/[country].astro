@@ -1,0 +1,70 @@
+---
+import Layout from "../../components/Layout.astro";
+import VisaCard from "../../components/VisaCard.astro";
+import { loadCanonicalData } from "../../lib/data";
+import { buildCountryPageModels, type CountryPageModel } from "../../lib/site-model";
+
+export async function getStaticPaths() {
+  const models = buildCountryPageModels(await loadCanonicalData());
+  return models.map((model) => ({ params: { country: model.country.id }, props: { model } }));
+}
+
+const { model } = Astro.props as { model: CountryPageModel };
+const { country, programs, categories } = model;
+---
+
+<Layout title={`${country.names.en} immigration pathways — World Immigrant`}>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">{country.iso2} · {country.region}</p>
+      <h1>{country.names.en}</h1>
+      <p>{country.summary_md.en}</p>
+      <div class="badge-row">
+        <span class="badge">{programs.length} verified program</span>
+        <span class="badge">checked {country.freshness.last_checked_at.slice(0, 10)}</span>
+        <span class="badge">{country.freshness.confidence} confidence</span>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="pathways-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Structured pathways</p>
+          <h2 id="pathways-heading">Programs</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        {
+          programs.map((program) => (
+            <VisaCard
+              title={program.official_names.en}
+              country={country.names.en}
+              category={program.category_ids.join(", ")}
+              summary={program.summary_md.en}
+              href={`/programs/${program.id}`}
+            />
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="categories-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Coverage</p>
+          <h2 id="categories-heading">Categories</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        {
+          categories.map((category) => (
+            <article class="card">
+              <h3>{category.names.en}</h3>
+              <p>{category.description_md.en}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</Layout>

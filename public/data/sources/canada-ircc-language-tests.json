@@ -1,0 +1,26 @@
+{
+  "id": "canada-ircc-language-tests",
+  "country_id": "canada",
+  "program_ids": [
+    "canada-express-entry-fsw"
+  ],
+  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+  "title": "Express Entry: Language test results",
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Federal Skilled Worker Program",
+    "CLB 7",
+    "NCLC 7"
+  ],
+  "expected_domains": [
+    "canada.ca"
+  ],
+  "last_checked_at": "2026-07-10T00:00:00Z",
+  "last_success_at": "2026-07-10T00:00:00Z",
+  "status": "active"
+}

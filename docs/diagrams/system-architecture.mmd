@@ -1,8 +1,10 @@
 flowchart TD
   OS[Official immigration sources]
-  HE[Hermes scheduled updater]
+  DC[Deterministic source collector + hash report]
+  HE[Hermes evidence reviewer]
   PR[Human-reviewed PR]
-  SD[Structured canonical data JSON / YAML]
+  SD[One-file-per-entity canonical JSON]
+  V[Schema + reference + citation validation]
   LF[Localized markdown fields]
   ASTRO[Astro static site build]
   P[Pagefind static search index]
@@ -12,11 +14,13 @@ flowchart TD
   U[Human users]
   A[AI agents / search crawlers]
 
-  OS --> HE
+  OS --> DC
+  DC --> HE
   HE --> PR
   PR --> SD
+  SD --> V
   SD --> LF
-  SD --> ASTRO
+  V --> ASTRO
   LF --> ASTRO
   ASTRO --> H
   ASTRO --> P

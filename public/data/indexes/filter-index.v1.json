@@ -1,4 +1,144 @@
 {
   "schema_version": 1,
-  "programs": []
+  "programs": [
+    {
+      "program_id": "canada-express-entry-fsw",
+      "country_id": "canada",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Federal Skilled Worker Program"
+      },
+      "status": "active",
+      "criteria": {
+        "min_work_experience_years": 1,
+        "min_language_benchmark": 7,
+        "min_education_level": "secondary",
+        "credential_assessment_required": "not_applicable",
+        "credential_assessment_condition": "foreign_education",
+        "min_program_selection_points": 67,
+        "proof_of_funds": [
+          {
+            "amount": 15263,
+            "currency": "CAD",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 1
+          },
+          {
+            "amount": 19001,
+            "currency": "CAD",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 2
+          },
+          {
+            "amount": 23360,
+            "currency": "CAD",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 3
+          },
+          {
+            "amount": 28362,
+            "currency": "CAD",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 4
+          },
+          {
+            "amount": 32168,
+            "currency": "CAD",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 5
+          },
+          {
+            "amount": 36280,
+            "currency": "CAD",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 6
+          },
+          {
+            "amount": 40392,
+            "currency": "CAD",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 7
+          },
+          {
+            "amount": 4112,
+            "currency": "CAD",
+            "applies_to": "per_dependent",
+            "calculation": "increment_per_additional_member",
+            "family_size_above": 7
+          }
+        ],
+        "proof_of_funds_exemptions": [
+          {
+            "all_of": [
+              "authorized_to_work_in_country",
+              "valid_job_offer"
+            ],
+            "note_md": {
+              "en": "Proof of funds is not required when both conditions are met."
+            }
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-10T00:00:00Z",
+        "updated_at": "2026-07-10T00:00:00Z",
+        "last_checked_at": "2026-07-10T00:00:00Z",
+        "update_frequency_days": 3,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/filter": [
+          {
+            "source_id": "canada-ircc-fsw",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+            "section": "Minimum requirements",
+            "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "canada-ircc-proof-funds",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+            "section": "Who needs proof of funds",
+            "snapshot_id": "cbfc58425d58f7d935426f122f4fb5d9b95b1a2051c81bf80176b0fda962a73f",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          },
+          {
+            "source_id": "canada-ircc-rounds",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
+            "section": "How the rounds work",
+            "snapshot_id": "4359b182e2403d8f5da9bfec850c7ecd4d1fbb7190675f17d9d438808e1b2bf1",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ]
+      },
+      "pathway_type": "direct_pr",
+      "min_liquid_funds_usd": "variable",
+      "accepts_remote_income": "not_applicable",
+      "accepts_self_employment": true,
+      "requires_degree": false,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": true,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": true,
+      "leads_to_pr": true,
+      "leads_to_citizenship": "indirect",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 4,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-10T00:00:00Z"
+    }
+  ]
 }

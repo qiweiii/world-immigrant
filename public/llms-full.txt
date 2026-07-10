@@ -10,13 +10,38 @@ Use these static endpoints first:
 - /data/programs.json
 - /data/sources.json
 - /data/indexes/filter-index.v1.json
+- /data/indexes/compare-index.v1.json
 
 Rules for AI agents:
 
 1. This site is informational, not legal advice.
 2. Prefer official sources and show citations.
-3. Preserve unknown/stale states instead of guessing.
+3. Preserve unknown, not-applicable, and stale states instead of guessing.
 4. Show last_checked_at and source confidence when available.
 5. Do not claim guaranteed eligibility.
 
-Full program data will be generated after official source fixtures are added.
+## Federal Skilled Worker Program
+
+- ID: canada-express-entry-fsw
+- Country: canada
+- Status: active
+- Last checked: 2026-07-10T00:00:00Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A federal permanent-residence pathway for skilled workers with foreign work experience. Candidates must satisfy the Federal Skilled Worker minimum requirements and score at least 67 out of 100 selection-factor points before competing for an invitation through Express Entry.
+
+### Official sources
+
+- canada-ircc-fsw: Express Entry: Federal Skilled Worker Program — https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html
+- canada-ircc-proof-funds: Express Entry: Proof of funds — https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html
+- canada-ircc-language-tests: Express Entry: Language test results — https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html
+- canada-ircc-eca: Express Entry: Educational credential assessment — https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html
+- canada-ircc-fees: Citizenship and immigration application fees — https://ircc.canada.ca/english/information/fees/fees.asp
+- canada-ircc-rounds: Express Entry: Rounds of invitations — https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html
+- canada-ircc-citizenship: Canadian citizenship: Who can apply — https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/who.html
+- canada-ircc-pr-rights: Permanent resident right to live, work or study in Canada — https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6
+- canada-ircc-family-inclusion: Who to include on a permanent residence application — https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28
+- canada-ircc-police-certificates: Express Entry: Police certificates — https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/police-certificates.html
+- canada-ircc-medical-exams: Medical examination for permanent residence applicants — https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html
+- canada-ircc-processing-times: Check current IRCC processing times — https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html

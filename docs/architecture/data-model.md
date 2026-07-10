@@ -6,10 +6,11 @@ See `docs/implementation/ux-filter-fields.md` for the deeper profile/filter fiel
 
 1. Data should be structured enough for comparison/filtering.
 2. Text fields can use Markdown for nuance, examples, and links.
-3. Every material claim must be traceable through `citations`.
+3. Every material claim must be traceable through `field_citations`, keyed by JSON Pointer.
 4. Keep numeric/enum values separate from prose.
 5. Track freshness per object and per source.
-6. Never overwrite old data without retaining a change log/snapshot.
+6. Never overwrite changed facts without a changelog entry; source hashes and local snapshots support review.
+7. Omission means a field is structurally inapplicable. If a fact applies but cannot be established, store explicit `unknown`.
 
 ## 2. Top-level Entities
 
@@ -38,9 +39,9 @@ type Country = {
  names: LocalizedText;    // { en: "Canada", "zh-Hans": "Canada (zh translation sample)" }
  region: string;       // "North America"
  summary_md: LocalizedMarkdown;
- official_immigration_urls: SourceRef[];
+ official_source_ids: string[]; // references the canonical source registry
  categories: string[];    // category IDs available in this country
- visa_program_ids: string[];
+ program_ids: string[];
  freshness: Freshness;
 };
 ```
@@ -95,7 +96,7 @@ type VisaProgram = {
  comparison: ComparisonFields;
  filter: FilterFields;
 
- sources: SourceRef[];
+ source_ids: string[];
  field_citations: Record<string, CitationRef[]>;
  freshness: Freshness;
  changelog: ChangeLogEntry[];
@@ -151,7 +152,6 @@ type MoneyRequirement = {
  period?: "one_time" | "monthly" | "annual";
  applies_to: "primary" | "family" | "per_dependent" | "business" | "unknown";
  note_md?: LocalizedMarkdown;
- citations: CitationRef[];
 };
 ```
 
@@ -248,8 +248,8 @@ type FilterFields = {
  requires_job_offer?: boolean;
  requires_investment?: boolean;
  allows_family?: boolean;
- leads_to_pr?: boolean;
- leads_to_citizenship?: boolean;
+ leads_to_pr?: boolean | "indirect" | "unknown";
+ leads_to_citizenship?: boolean | "indirect" | "unknown";
  requires_language_test?: boolean;
  notes_md?: LocalizedMarkdown;
 };
@@ -260,7 +260,7 @@ Filter engine should return reasons, not only matches:
 ```ts
 type FilterResult = {
  visa_program_id: string;
- status: "eligible" | "maybe" | "not_eligible" | "needs_review";
+ status: "likely_match" | "possible_match" | "not_match" | "needs_review" | "unknown";
  score: number;
  reasons: Array<{
   field: string;
@@ -283,7 +283,7 @@ type SourceRef = {
  language: string;
  retrieved_at: string;    // ISO datetime
  content_hash?: string;
- archived_snapshot_path?: string;
+ status: "active" | "broken" | "needs_attention" | "deprecated";
 };
 
 type CitationRef = {
@@ -294,6 +294,8 @@ type CitationRef = {
  retrieved_at: string;
 };
 ```
+
+`field_citations` uses RFC 6901 JSON Pointer paths such as `/eligibility/language/0/minimum_level`. Each key points to one or more `CitationRef` values. A material field has exactly one provenance path; nested value objects do not carry duplicate citation arrays.
 
 ## 14. Freshness Model
 
@@ -309,64 +311,35 @@ type Freshness = {
 };
 ```
 
-## 15. Example Minimal Visa Object
+## 15. Citation Example
 
 ```json
 {
- "id": "example-country-digital-nomad",
- "country_id": "example-country",
- "category_ids": ["digital_nomad"],
- "official_names": {
-  "en": "Example Digital Nomad Visa",
-  "zh-Hans": "Example Digital Nomad Visa (zh translation sample)"
- },
- "status": "active",
- "summary_md": {
-  "en": "A temporary residence route for remote workers. [Source](https://example.gov/visa)",
-  "zh-Hans": "A temporary residence route for remote workers. [Source](https://example.gov/visa) (zh translation sample)"
- },
- "income": {
-  "required": true,
-  "min_income": [
-   {
-    "amount": 3000,
-    "currency": "EUR",
-    "period": "monthly",
-    "applies_to": "primary",
-    "citations": [{ "source_id": "example-gov-visa", "url": "https://example.gov/visa", "retrieved_at": "2026-07-08T00:00:00Z" }]
-   }
-  ],
-  "accepted_sources": ["remote_employment", "self_employment"]
- },
- "sources": [
-  {
-   "id": "example-gov-visa",
-   "title": "Example Government Visa Page",
-   "url": "https://example.gov/visa",
-   "publisher": "Example Immigration Department",
-   "source_type": "official",
-   "language": "en",
-   "retrieved_at": "2026-07-08T00:00:00Z"
+  "source_ids": ["example-gov-visa"],
+  "field_citations": {
+    "/income/min_income/0/amount": [
+      {
+        "source_id": "example-gov-visa",
+        "url": "https://example.gov/visa",
+        "section": "Income requirement",
+        "quote_md": "Applicants must show monthly income of EUR 3,000.",
+        "retrieved_at": "2026-07-08T00:00:00Z"
+      }
+    ]
   }
- ],
- "freshness": {
-  "created_at": "2026-07-08T00:00:00Z",
-  "updated_at": "2026-07-08T00:00:00Z",
-  "last_checked_at": "2026-07-08T00:00:00Z",
-  "update_frequency_days": 3,
-  "confidence": "medium",
-  "needs_human_review": true
- }
 }
 ```
 
+The source itself is stored once in `src/data/sources/example-gov-visa.json`. Program data references it by stable ID, and every cited URL must match that registry entry or an approved canonical subpage.
+
 ## 16. Validation Rules
 
-Validator must fail if:
+Integrity validation fails if:
 
 - Any active visa lacks sources.
-- Any material Markdown field lacks at least one citation link or field citation.
-- Any numeric threshold has no citation.
-- `last_checked_at` is older than allowed update frequency for high-priority programs.
+- Any material Markdown field lacks at least one field citation.
+- Any numeric threshold has no field citation.
 - Localized text exists without canonical English/canonical fact source.
 - Filter-critical fields are silently omitted; use `unknown` where unknown.
+
+The normal validation command reports overdue countries, programs, and sources as warnings. `pnpm data:freshness` enforces the same findings as errors for updater and release audits. This separation keeps stale data visible without preventing unrelated corrective changes from building.

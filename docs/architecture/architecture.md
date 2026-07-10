@@ -33,12 +33,15 @@ See `docs/diagrams/system-architecture.mmd` for the canonical system architectur
 {
   "scripts": {
     "dev": "astro dev --host 0.0.0.0",
-    "build": "astro build && pagefind --site dist",
+    "build": "pnpm data:validate && pnpm data:generate && pnpm llms:generate && astro build && pagefind --site dist",
     "preview": "astro preview --host 0.0.0.0",
-    "check": "astro check && tsc --noEmit",
+    "check": "astro sync && tsc --noEmit --pretty false",
+    "biome:check": "biome check .",
     "data:validate": "tsx tools/validate-data.ts",
     "data:generate": "tsx tools/generate-public-data.ts",
-    "llms:generate": "tsx tools/generate-llms.ts"
+    "llms:generate": "tsx tools/generate-llms.ts",
+    "deploy:preview": "pnpm build && wrangler deploy --dry-run",
+    "deploy": "pnpm build && wrangler deploy"
   }
 }
 ```
@@ -51,10 +54,12 @@ Use smaller checks during development:
 
 ## 4. Data Loading Strategy
 
-- Build-time: Astro reads `src/data/**` and generates pages.
+- Canonical countries, programs, and sources use one JSON file per entity under `src/data/{countries,programs,sources}/`; categories remain one controlled taxonomy file.
+- Build-time: a shared loader validates canonical entities before Astro and generators consume them.
 - Client-time: compare/filter islands load compressed indexes from `/data/indexes/*.json`.
 - Each visa page is pre-rendered for SEO and AI crawlers.
 - Data objects include Markdown fields; render via a Markdown renderer at build time for pages, and optionally client-side for dynamic compare snippets.
+- Generated files under `public/data/` are outputs, never hand-edited sources.
 
 ## 5. Search and Filtering
 
@@ -67,9 +72,10 @@ Pagefind indexes static HTML after build. It supports multilingual sites via `ht
 Eligibility logic lives in a dedicated `filterEngine.ts`:
 
 - Convert visa criteria into normalized predicates.
-- Classify result as `eligible`, `maybe`, `not_eligible`, `needs_review`.
+- Classify result as `likely_match`, `possible_match`, `not_match`, `needs_review`, or `unknown`.
 - Return exact reasons and citations.
 - Keep all thresholds in data, not hardcoded UI.
+- Treat results as preliminary matching guidance, never a legal eligibility decision.
 
 ## 6. i18n Strategy
 
@@ -131,6 +137,11 @@ No backend secrets are needed in frontend hosting.
 | ARCH-006 | Use shadcn/ui base variant (CSS-only) + Tailwind CSS v4 | Provides design tokens and component patterns without Radix runtime; keeps JS footprint zero for UI components |
 | ARCH-007 | MCP is optional/generated, not runtime dependency | Pure static site cannot host MCP server without runtime |
 | ARCH-008 | Deploy as static site to Cloudflare Workers | Static output fits content-first product; Workers Static Assets serves `dist/` directly without SSR adapter |
+| ARCH-009 | Use one canonical JSON file per country, program, and source | Narrow diffs reduce review conflicts and let scheduled updates target one policy object at a time |
+| ARCH-010 | Use JSON Pointer keys in `field_citations` as the sole factual-field provenance mechanism | One citation system avoids drift between inline and object-level citations and supports deterministic coverage checks |
+| ARCH-011 | Keep freshness reporting separate from build-blocking integrity validation | Stale data must be visible and escalated without blocking unrelated corrections; strict freshness audits run explicitly and in automation |
+| ARCH-012 | Store full source snapshots in a gitignored cache and retain hashes, retrieval metadata, and quoted evidence in canonical data | Keeps the public repository reviewable while preserving enough provenance for change detection and human review |
+| ARCH-013 | Make Hermes propose reviewed branches/PRs only | Deterministic scripts collect and validate; the agent interprets evidence, but never auto-merges or pushes directly to `main` |
 
 ### See also
 

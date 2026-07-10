@@ -1,48 +1,132 @@
----
-const rows = [
-  {
-    field: "Path to permanence",
-    meaning: "Temporary only, renewable residence, PR, citizenship, or direct citizenship.",
-    whyItMatters: "Avoids spending years on a dead-end route.",
-  },
-  {
-    field: "Family fit",
-    meaning: "Spouse/partner, children, parents, and spouse work rights.",
-    whyItMatters: "Most immigration decisions are household decisions.",
-  },
-  {
-    field: "Source freshness",
-    meaning: "Last checked, last changed, confidence, and official-source status.",
-    whyItMatters: "Immigration rules change quickly and stale data is dangerous.",
-  },
-];
----
-
-<section class="panel" aria-labelledby="compare-heading">
-  <p class="eyebrow">Compare island</p>
-  <h2 id="compare-heading">Compare the fields that change decisions.</h2>
+<section class="panel" aria-labelledby="compare-heading" data-compare-builder>
+  <p class="eyebrow">Local compare</p>
+  <h2 id="compare-heading">Compare verified pathway facts.</h2>
   <p>
-    This frameworkless Astro island will load a compact compare index from
-    <code>/data/indexes</code> once source-cited program data exists.
+    Select up to three programs. The browser reads the static compare index; no profile or selection
+    data is sent to a server.
   </p>
-  <table class="table">
-    <thead>
-      <tr>
-        <th>Field</th>
-        <th>Meaning</th>
-        <th>Why it matters</th>
-      </tr>
-    </thead>
-    <tbody>
-      {
-        rows.map((row) => (
-          <tr>
-            <td style="color:var(--foreground);font-weight:500;">{row.field}</td>
-            <td>{row.meaning}</td>
-            <td>{row.whyItMatters}</td>
-          </tr>
-        ))
-      }
-    </tbody>
-  </table>
+  <div class="field-grid" data-program-options aria-label="Programs"></div>
+  <p class="card-description" data-compare-status>Loading verified programs…</p>
+  <div style="overflow-x:auto;" data-compare-table></div>
 </section>
+
+<script>
+  import { buildComparison } from "../../lib/compareEngine";
+
+  type CompareIndex = Parameters<typeof buildComparison>[0];
+
+  const root = document.querySelector<HTMLElement>("[data-compare-builder]");
+  const options = root?.querySelector<HTMLElement>("[data-program-options]");
+  const status = root?.querySelector<HTMLElement>("[data-compare-status]");
+  const tableRoot = root?.querySelector<HTMLElement>("[data-compare-table]");
+  let programs: CompareIndex = [];
+
+  function selectedIds() {
+    if (!options) return [];
+    return [...options.querySelectorAll<HTMLInputElement>("input:checked")].map(
+      ({ value }) => value,
+    );
+  }
+
+  function setQuery(ids: string[]) {
+    const url = new URL(window.location.href);
+    if (ids.length) url.searchParams.set("programs", ids.join(","));
+    else url.searchParams.delete("programs");
+    history.replaceState(null, "", url);
+  }
+
+  function renderTable() {
+    if (!tableRoot || !status) return;
+    tableRoot.replaceChildren();
+    const ids = selectedIds();
+    if (!ids.length) {
+      status.textContent = "Select at least one program.";
+      setQuery([]);
+      return;
+    }
+
+    const view = buildComparison(programs, ids);
+    status.textContent = `${ids.length} verified program${ids.length === 1 ? "" : "s"} selected.`;
+    setQuery(ids);
+
+    const table = document.createElement("table");
+    table.className = "table";
+    const head = document.createElement("thead");
+    const headRow = document.createElement("tr");
+    const fieldHead = document.createElement("th");
+    fieldHead.textContent = "Decision field";
+    headRow.append(fieldHead);
+    for (const column of view.columns) {
+      const cell = document.createElement("th");
+      const link = document.createElement("a");
+      link.href = `/programs/${column.id}`;
+      link.textContent = column.title;
+      cell.append(link);
+      headRow.append(cell);
+    }
+    head.append(headRow);
+
+    const body = document.createElement("tbody");
+    for (const row of view.rows) {
+      const rowElement = document.createElement("tr");
+      const label = document.createElement("td");
+      label.textContent = row.label;
+      label.style.color = "var(--foreground)";
+      label.style.fontWeight = "500";
+      rowElement.append(label);
+      for (const cell of row.cells) {
+        const value = document.createElement("td");
+        const text = document.createElement("p");
+        text.textContent = cell.display;
+        value.append(text);
+        if (cell.citations.length) {
+          const evidence = document.createElement("small");
+          evidence.textContent = `Sources: ${cell.citations.join(", ")}`;
+          value.append(evidence);
+        }
+        rowElement.append(value);
+      }
+      body.append(rowElement);
+    }
+    table.append(head, body);
+    tableRoot.append(table);
+  }
+
+  async function init() {
+    if (!root || !options || !status) return;
+    try {
+      const response = await fetch("/data/indexes/compare-index.v1.json");
+      if (!response.ok) throw new Error(`HTTP ${response.status}`);
+      const payload = (await response.json()) as { programs: CompareIndex };
+      programs = payload.programs;
+      const requested = new URL(window.location.href).searchParams
+        .get("programs")
+        ?.split(",")
+        .filter((id) => programs.some(({ program_id }) => program_id === id));
+      const initial = requested?.length ? requested.slice(0, 3) : programs.slice(0, 1).map(({ program_id }) => program_id);
+
+      for (const program of programs) {
+        const field = document.createElement("label");
+        field.className = "field";
+        const checkbox = document.createElement("input");
+        checkbox.type = "checkbox";
+        checkbox.value = program.program_id;
+        checkbox.checked = initial.includes(program.program_id);
+        checkbox.addEventListener("change", () => {
+          const checked = selectedIds();
+          if (checked.length > 3) checkbox.checked = false;
+          renderTable();
+        });
+        const name = document.createElement("span");
+        name.textContent = `${program.official_names.en} · ${program.country_id}`;
+        field.append(checkbox, name);
+        options.append(field);
+      }
+      renderTable();
+    } catch (error) {
+      status.textContent = `Compare data could not be loaded: ${error instanceof Error ? error.message : "unknown error"}`;
+    }
+  }
+
+  void init();
+</script>

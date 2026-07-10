@@ -1,0 +1,18 @@
+{
+  "country_id": "canada",
+  "program_ids": ["canada-express-entry-fsw"],
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "extraction_method": "web_extract",
+  "expected_domains": ["canada.ca"],
+  "last_checked_at": "2026-07-10T00:00:00Z",
+  "last_success_at": "2026-07-10T00:00:00Z",
+  "status": "active",
+  "id": "canada-ircc-fsw",
+  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+  "title": "Express Entry: Federal Skilled Worker Program",
+  "priority": 1,
+  "update_frequency_days": 3,
+  "expected_content_hints": ["Minimum requirements", "67 points", "Proof of funds"]
+}

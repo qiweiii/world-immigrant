@@ -1,0 +1,25 @@
+{
+  "id": "canada-ircc-medical-exams",
+  "country_id": "canada",
+  "program_ids": [
+    "canada-express-entry-fsw"
+  ],
+  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html",
+  "title": "Medical examination for permanent residence applicants",
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "permanent residence",
+    "medical exam"
+  ],
+  "expected_domains": [
+    "canada.ca"
+  ],
+  "last_checked_at": "2026-07-10T00:00:00Z",
+  "last_success_at": "2026-07-10T00:00:00Z",
+  "status": "active"
+}

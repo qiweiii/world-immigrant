@@ -1,11 +1,18 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-10T05:38:40.350Z",
+  "generated_at": "2026-07-10T00:00:00.000Z",
+  "counts": {
+    "categories": 5,
+    "countries": 1,
+    "programs": 1,
+    "sources": 12
+  },
   "endpoints": {
     "categories": "/data/categories.json",
     "countries": "/data/countries.json",
     "programs": "/data/programs.json",
     "sources": "/data/sources.json",
-    "filter_index": "/data/indexes/filter-index.v1.json"
+    "filter_index": "/data/indexes/filter-index.v1.json",
+    "compare_index": "/data/indexes/compare-index.v1.json"
   }
 }

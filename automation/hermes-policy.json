@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "mode": "scan_only",
+  "base_branch": "main",
+  "branch_prefix": "automation/source-update",
+  "max_sources_per_run": 5,
+  "draft_pull_requests": true,
+  "auto_merge": false,
+  "allowed_write_paths": [
+    "src/data/countries/",
+    "src/data/programs/",
+    "src/data/sources/",
+    "public/data/",
+    "public/llms.txt",
+    "public/llms-full.txt"
+  ],
+  "required_checks": [
+    "pnpm data:validate",
+    "pnpm data:freshness",
+    "pnpm sources:verify -- --require-snapshot-ids",
+    "pnpm test",
+    "pnpm biome:check",
+    "pnpm check",
+    "pnpm build"
+  ]
+}

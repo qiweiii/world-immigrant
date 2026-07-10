@@ -1,0 +1,25 @@
+{
+  "id": "canada-ircc-family-inclusion",
+  "country_id": "canada",
+  "program_ids": [
+    "canada-express-entry-fsw"
+  ],
+  "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28",
+  "title": "Who to include on a permanent residence application",
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "spouse or partner",
+    "dependent children"
+  ],
+  "expected_domains": [
+    "canada.ca"
+  ],
+  "last_checked_at": "2026-07-10T00:00:00Z",
+  "last_success_at": "2026-07-10T00:00:00Z",
+  "status": "active"
+}

@@ -1,0 +1,18 @@
+{
+  "country_id": "canada",
+  "program_ids": ["canada-express-entry-fsw"],
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "extraction_method": "web_extract",
+  "expected_domains": ["canada.ca"],
+  "last_checked_at": "2026-07-10T00:00:00Z",
+  "last_success_at": "2026-07-10T00:00:00Z",
+  "status": "active",
+  "id": "canada-ircc-pr-rights",
+  "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
+  "title": "Permanent resident right to live, work or study in Canada",
+  "priority": 3,
+  "update_frequency_days": 90,
+  "expected_content_hints": ["right to live, work or study anywhere in Canada"]
+}

@@ -1,16 +1,69 @@
 ---
 import Layout from "../../components/Layout.astro";
+import VisaCard from "../../components/VisaCard.astro";
+import { loadCanonicalData } from "../../lib/data";
+import { buildCountryPageModels } from "../../lib/site-model";
+
+const countries = buildCountryPageModels(await loadCanonicalData());
 ---
 
 <Layout title="Countries — World Immigrant">
   <main>
     <section class="hero">
       <p class="eyebrow">Country pages</p>
-      <h1>Country coverage starts after<br />source registry validation.</h1>
+      <h1>Explore immigration pathways<br />country by country.</h1>
       <p>
-        MVP country pages will be generated from structured data with official-source citations,
-        freshness, and category-specific pathways.
+        Country records connect structured pathways with official-source citations, freshness,
+        and category-specific requirements.
       </p>
+    </section>
+
+    <section class="section" aria-labelledby="countries-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Verified coverage</p>
+          <h2 id="countries-heading">Countries with validated programs</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        {
+          countries.map(({ country, programs }) => (
+            <article class="card">
+              <p class="eyebrow">{country.iso2} · {country.region}</p>
+              <h3><a href={`/countries/${country.id}`}>{country.names.en}</a></h3>
+              <p>{country.summary_md.en}</p>
+              <div class="badge-row">
+                <span class="badge">{programs.length} verified program</span>
+                <span class="badge">checked {country.freshness.last_checked_at.slice(0, 10)}</span>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="programs-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">All programs</p>
+          <h2 id="programs-heading">Validated pathways</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        {
+          countries.flatMap(({ country, programs }) =>
+            programs.map((program) => (
+              <VisaCard
+                title={program.official_names.en}
+                country={country.names.en}
+                category={program.category_ids.join(", ")}
+                summary={program.summary_md.en}
+                href={`/programs/${program.id}`}
+              />
+            )),
+          )
+        }
+      </div>
     </section>
   </main>
 </Layout>

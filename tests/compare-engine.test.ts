@@ -1,0 +1,57 @@
+import assert from "node:assert/strict";
+import test from "node:test";
+import { buildComparison } from "../src/lib/compareEngine";
+import { loadCanonicalData } from "../src/lib/data";
+import { buildPublicData } from "../src/lib/public-data";
+
+async function comparePrograms() {
+  return buildPublicData(await loadCanonicalData()).compareIndex.programs;
+}
+
+test("compare engine resolves stable rows and preserves evidence metadata", async () => {
+  const programs = await comparePrograms();
+  const view = buildComparison(programs, ["canada-express-entry-fsw"]);
+
+  assert.deepEqual(
+    view.columns.map(({ id }) => id),
+    ["canada-express-entry-fsw"],
+  );
+  assert.deepEqual(
+    view.rows.map(({ id }) => id),
+    [
+      "pathway",
+      "settlement_funds",
+      "processing_time",
+      "work_rights",
+      "family",
+      "citizenship",
+      "source_confidence",
+      "last_checked",
+    ],
+  );
+  assert.match(view.rows[0].cells[0].display, /Direct permanent residence/);
+  assert.ok(view.rows[0].cells[0].citations.length > 0);
+});
+
+test("compare engine aligns a synthetic second program and displays unknown explicitly", async () => {
+  const programs = await comparePrograms();
+  const synthetic = structuredClone(programs[0]);
+  synthetic.program_id = "test-program";
+  synthetic.official_names = { en: "Test Program" };
+  synthetic.timeline.processing_time_months_min = "unknown";
+  synthetic.timeline.processing_time_months_max = "unknown";
+
+  const view = buildComparison(
+    [...programs, synthetic],
+    ["canada-express-entry-fsw", "test-program"],
+  );
+
+  const processing = view.rows.find(({ id }) => id === "processing_time");
+  assert.equal(processing?.cells.length, 2);
+  assert.match(processing?.cells[1].display ?? "", /Unknown/);
+});
+
+test("compare engine rejects unknown program IDs", async () => {
+  const programs = await comparePrograms();
+  assert.throws(() => buildComparison(programs, ["missing"]), /Unknown program/);
+});

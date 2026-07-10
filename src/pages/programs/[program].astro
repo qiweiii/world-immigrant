@@ -1,0 +1,198 @@
+---
+import Layout from "../../components/Layout.astro";
+import TrustBadge from "../../components/TrustBadge.astro";
+import { loadCanonicalData } from "../../lib/data";
+import { buildProgramPageModels, type ProgramPageModel } from "../../lib/site-model";
+
+export async function getStaticPaths() {
+  const models = buildProgramPageModels(await loadCanonicalData());
+  return models.map((model) => ({ params: { program: model.program.id }, props: { model } }));
+}
+
+const { model } = Astro.props as { model: ProgramPageModel };
+const { program, country, categories, sources, citations } = model;
+
+function displayValue(value: unknown) {
+  if (value === true) return "Yes";
+  if (value === false) return "No";
+  if (value === "not_applicable") return "Not applicable";
+  if (value === "unknown") return "Unknown — verify with the official source";
+  if (value === "indirect") return "Indirect pathway";
+  if (value === "limited") return "Limited or conditional";
+  return String(value);
+}
+---
+
+<Layout title={`${program.official_names.en} — World Immigrant`}>
+  <main>
+    <section class="hero">
+      <p class="eyebrow">{country.names.en} · {categories.map(({ names }) => names.en).join(" · ")}</p>
+      <h1>{program.official_names.en}</h1>
+      <p>{program.summary_md.en}</p>
+      <div class="badge-row">
+        <span class="badge">{program.status}</span>
+        <span class="badge">direct permanent residence</span>
+        <span class="badge">checked {program.freshness.last_checked_at.slice(0, 10)}</span>
+      </div>
+    </section>
+
+    <div class="badge-row" aria-label="Trust information">
+      <TrustBadge label={`Checked ${program.freshness.last_checked_at.slice(0, 10)}`} tone="success" />
+      <TrustBadge label={`${program.freshness.confidence} confidence`} tone="neutral" />
+      <TrustBadge label={`${sources.length} official sources`} tone="neutral" />
+    </div>
+
+    <section class="section" aria-labelledby="fit-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Decision fit</p>
+          <h2 id="fit-heading">Who this pathway serves</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Good fit</h3>
+          <p>{program.good_for_md.en}</p>
+        </article>
+        <article class="card">
+          <h3>Important limits</h3>
+          <p>{program.not_good_for_md?.en}</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="eligibility-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Program minimums</p>
+          <h2 id="eligibility-heading">Eligibility signals</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Work experience</h3>
+          <p>Minimum: {program.eligibility.work_experience.min_years} year</p>
+          <p>{program.eligibility.work_experience.note_md?.en}</p>
+        </article>
+        <article class="card">
+          <h3>Language</h3>
+          <p>{program.eligibility.language[0]?.minimum_level}</p>
+          <p>{program.eligibility.language[0]?.note_md?.en}</p>
+        </article>
+        <article class="card">
+          <h3>Education</h3>
+          <p>Minimum level: {displayValue(program.eligibility.education.required_level)}</p>
+          <p>{program.eligibility.education.note_md?.en}</p>
+        </article>
+        <article class="card">
+          <h3>Selection threshold</h3>
+          <p>{displayValue(program.eligibility.points_threshold)} out of 100 selection-factor points</p>
+          <p>Invitation competition: {displayValue(program.eligibility.invitation_competition_level)}</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="funds-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Current official table</p>
+          <h2 id="funds-heading">Settlement funds</h2>
+        </div>
+      </div>
+      <div class="panel">
+        <table class="table">
+          <thead><tr><th>Family size</th><th>Minimum funds</th></tr></thead>
+          <tbody>
+            {
+              program.funds.proof_of_funds.map((requirement) => (
+                <tr>
+                  <td>
+                    {requirement.calculation === "increment_per_additional_member"
+                      ? `Each member after ${requirement.family_size_above}`
+                      : requirement.family_size}
+                  </td>
+                  <td>{displayValue(requirement.amount)} {requirement.currency}</td>
+                </tr>
+              ))
+            }
+          </tbody>
+        </table>
+        <p>{program.funds.exemption_note_md?.en}</p>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="outcome-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Outcome and family</p>
+          <h2 id="outcome-heading">What permanent residence provides</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Permanent residence</h3>
+          <p>{program.pr_pathway.summary_md?.en}</p>
+          <p>Work: {displayValue(program.rights.work_allowed)} · Study: {displayValue(program.rights.study_allowed)}</p>
+        </article>
+        <article class="card">
+          <h3>Family</h3>
+          <p>{program.family.note_md?.en}</p>
+        </article>
+        <article class="card">
+          <h3>Citizenship</h3>
+          <p>{program.citizenship_pathway.summary_md?.en}</p>
+          <p>{program.citizenship_pathway.physical_presence_requirement_md?.en}</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="sources-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Primary evidence</p>
+          <h2 id="sources-heading">Official sources</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        {
+          sources.map((source) => (
+            <article class="card">
+              <p class="eyebrow">Priority {source.priority} · {source.source_type}</p>
+              <h3><a href={source.url} rel="external">{source.title}</a></h3>
+              <p>{source.publisher}</p>
+              <p>Checked {source.last_checked_at?.slice(0, 10)}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="evidence-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Field provenance</p>
+          <h2 id="evidence-heading">Citation coverage</h2>
+        </div>
+      </div>
+      <div class="card-grid">
+        {
+          citations.map(({ path, citations: refs }) => (
+            <article class="card">
+              <p class="eyebrow">{path}</p>
+              {refs.map((ref) => (
+                <>
+                  <h3><a href={ref.url} rel="external">{ref.section ?? ref.source_id}</a></h3>
+                  {ref.quote_md && <p>“{ref.quote_md}”</p>}
+                </>
+              ))}
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="panel" aria-label="Informational disclaimer">
+      <p><strong>Preliminary information, not legal advice.</strong> Verify current requirements on the linked official pages before acting. Express Entry invitations and final admissibility decisions remain with IRCC.</p>
+    </section>
+  </main>
+</Layout>

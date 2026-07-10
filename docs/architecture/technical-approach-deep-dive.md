@@ -60,7 +60,9 @@ src/data/
 │  ├── canada-express-entry-fsw.json
 │  └── portugal-d8-digital-nomad.json
 ├── categories.json
-├── sources.json
+├── sources/
+│  ├── canada-ircc-fsw.json
+│  └── canada-ircc-proof-of-funds.json
 ├── taxonomies/
 │  ├── countries.json
 │  ├── occupations.json
@@ -93,16 +95,9 @@ public/
 
 The source data can contain internal validation details; public data should be generated and normalized for consumers.
 
-### 4.3 Astro collections
+### 4.3 Canonical loader
 
-Use Astro content/data collections for:
-
-- countries;
-- programs;
-- categories;
-- editorial docs if any.
-
-Astro content collections support structured entries, schema validation, local JSON/YAML/Markdown, and build-time querying. This is a good fit for a mostly static, structured knowledge base.
+A shared TypeScript loader reads one-file-per-entity directories, validates each entry with Zod, sorts by stable ID, and feeds the validator, generators, and Astro routes. Keeping this logic outside Astro prevents build tools from interpreting the same dataset differently.
 
 ## 5. Static search vs structured filtering
 
@@ -182,7 +177,7 @@ Fail if an active program lacks citations for:
 
 ### 7.3 Freshness validation
 
-Warn or fail depending on priority:
+The normal build warns; the explicit strict freshness audit fails. Both report:
 
 - Tier 1 source overdue > 3 days;
 - Tier 2 overdue > 7 days;
@@ -428,10 +423,10 @@ Avoid Next.js/Turbopack and memory-heavy workflows.
 
 ## 17. Architecture decisions to carry forward
 
-| ID | Decision | Rationale | Status |
-| --- | --- | --- | --- |
-| ARCH-007 | Use compact generated indexes for compare/filter instead of loading all source data | Keeps browser fast and separates canonical data from UX data | DECIDED |
-| ARCH-008 | Treat user profile filtering as local-only | Privacy and public-good trust | DECIDED |
-| ARCH-009 | Separate factual fields from interpretive scores | Avoid mixing official facts with product opinions | DECIDED |
-| ARCH-010 | Generate AI-readable outputs | AI agents/search are first-class users | DECIDED |
-| ARCH-011 | Keep MCP optional and external to static site runtime | Static hosting cannot serve MCP directly | DECIDED |
+| ID | Decision | Rationale |
+| --- | --- | --- |
+| ARCH-014 | Use compact generated indexes for compare/filter instead of loading all source data | Keeps browser fast and separates canonical data from UX data |
+| ARCH-015 | Treat user profile filtering as local-only | Privacy and public-good trust |
+| ARCH-016 | Separate factual fields from interpretive scores | Avoid mixing official facts with product opinions |
+| ARCH-017 | Generate AI-readable outputs | AI agents/search are first-class users |
+| ARCH-018 | Keep MCP optional and external to static site runtime | Static hosting cannot serve MCP directly |

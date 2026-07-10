@@ -1,0 +1,481 @@
+{
+  "id": "canada-express-entry-fsw",
+  "country_id": "canada",
+  "category_ids": ["skilled_worker"],
+  "official_names": {
+    "en": "Federal Skilled Worker Program"
+  },
+  "aliases": ["FSWP", "Federal Skilled Worker", "Express Entry FSW"],
+  "status": "active",
+  "status_note_md": {
+    "en": "The program accepts profiles through Express Entry. Meeting the program minimums permits entry to the pool but does not guarantee an invitation to apply."
+  },
+  "summary_md": {
+    "en": "A federal permanent-residence pathway for skilled workers with foreign work experience. Candidates must satisfy the Federal Skilled Worker minimum requirements and score at least 67 out of 100 selection-factor points before competing for an invitation through Express Entry."
+  },
+  "good_for_md": {
+    "en": "Skilled workers with qualifying experience, an approved language test, recognized education, and a competitive Express Entry profile who intend to settle outside Quebec."
+  },
+  "not_good_for_md": {
+    "en": "People who cannot meet the language, skilled-work, education, admissibility, or settlement-fund rules. Passing the 67-point Federal Skilled Worker threshold does not itself guarantee an invitation because Express Entry invitations are competitive."
+  },
+  "eligibility": {
+    "age": {
+      "points_sensitive": true,
+      "note_md": {
+        "en": "There is no stated hard maximum age, but selection-factor points decline after age 35 and reach zero at age 47."
+      }
+    },
+    "education": {
+      "required_level": "secondary",
+      "credential_assessment_required": "not_applicable",
+      "credential_assessment_condition": "foreign_education",
+      "note_md": {
+        "en": "A Canadian secondary or post-secondary credential qualifies. Foreign education requires an immigration-purpose Educational Credential Assessment showing equivalence to a completed Canadian credential."
+      }
+    },
+    "work_experience": {
+      "min_years": 1,
+      "occupation_list_required": true,
+      "note_md": {
+        "en": "At least 1,560 hours of qualifying paid skilled work are required. The work must align with an eligible National Occupational Classification occupation and satisfy the program's continuity and timing rules. Self-employed and qualifying student work may count under the stated conditions."
+      }
+    },
+    "language": [
+      {
+        "language": "en-or-fr",
+        "test": "IRCC-approved English or French test",
+        "minimum_level": "CLB 7 or NCLC 7 in all four abilities",
+        "minimum_benchmark": 7,
+        "note_md": {
+          "en": "Approved results must be less than two years old when the Express Entry profile and permanent-residence application are submitted."
+        }
+      }
+    ],
+    "health_check_required": true,
+    "police_certificate_required": true,
+    "points_based": true,
+    "points_threshold": 67,
+    "invitation_competition_level": "high"
+  },
+  "funds": {
+    "proof_of_funds": [
+      {
+        "amount": 15263,
+        "currency": "CAD",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 1
+      },
+      {
+        "amount": 19001,
+        "currency": "CAD",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 2
+      },
+      {
+        "amount": 23360,
+        "currency": "CAD",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 3
+      },
+      {
+        "amount": 28362,
+        "currency": "CAD",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 4
+      },
+      {
+        "amount": 32168,
+        "currency": "CAD",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 5
+      },
+      {
+        "amount": 36280,
+        "currency": "CAD",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 6
+      },
+      {
+        "amount": 40392,
+        "currency": "CAD",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 7
+      },
+      {
+        "amount": 4112,
+        "currency": "CAD",
+        "applies_to": "per_dependent",
+        "calculation": "increment_per_additional_member",
+        "family_size_above": 7
+      }
+    ],
+    "proof_of_funds_exemptions": [
+      {
+        "all_of": ["authorized_to_work_in_country", "valid_job_offer"],
+        "note_md": {
+          "en": "Proof of funds is not required when both conditions are met."
+        }
+      }
+    ],
+    "exemption_note_md": {
+      "en": "Proof of funds is not required when the applicant is authorized to work in Canada and has a valid Canadian job offer. Family size includes the applicant, spouse or common-law partner, and dependent children, including family members who are not accompanying the applicant."
+    },
+    "application_fees": [
+      {
+        "label": {
+          "en": "Principal applicant, including right of permanent residence fee"
+        },
+        "amount": 1590,
+        "currency": "CAD",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Principal applicant, without right of permanent residence fee"
+        },
+        "amount": 990,
+        "currency": "CAD",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Spouse or partner, including right of permanent residence fee"
+        },
+        "amount": 1590,
+        "currency": "CAD",
+        "applies_to": "family"
+      },
+      {
+        "label": {
+          "en": "Dependent child"
+        },
+        "amount": 270,
+        "currency": "CAD",
+        "applies_to": "per_dependent"
+      }
+    ]
+  },
+  "income": {
+    "required": false,
+    "accepted_sources": [],
+    "stability_requirement_md": {
+      "en": "The program uses settlement funds rather than a recurring-income threshold."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Processing time is dynamic and depends on the application and current IRCC inventory. Use the cited official processing-times tool for the current estimate."
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "renewable": false
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": true,
+    "study_allowed": true,
+    "business_allowed": "unknown",
+    "healthcare_access_md": {
+      "en": "Permanent residents may qualify for public health coverage, but enrollment and waiting rules are provincial or territorial."
+    },
+    "tax_residency_note_md": {
+      "en": "Tax residence depends on facts and Canadian tax rules; permanent-resident status alone is not a complete tax-residency determination."
+    }
+  },
+  "family": {
+    "spouse_or_partner_allowed": true,
+    "unmarried_partner_allowed": true,
+    "children_allowed": true,
+    "max_child_age": "unknown",
+    "spouse_work_allowed": true,
+    "dependent_parents_allowed": "not_applicable",
+    "note_md": {
+      "en": "A spouse or common-law partner and dependent children must be declared and may accompany the principal applicant. Each family member must satisfy the applicable admissibility and document requirements."
+    }
+  },
+  "pr_pathway": {
+    "available": true,
+    "summary_md": {
+      "en": "A successful application grants Canadian permanent residence directly."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "indirect",
+    "min_residence_years": 3,
+    "physical_presence_requirement_md": {
+      "en": "Adult citizenship applicants generally need at least 1,095 days of physical presence during the five-year eligibility period, including at least 730 days as a permanent resident."
+    },
+    "language_requirement_md": {
+      "en": "Applicants aged 18 to 54 generally need to demonstrate adequate English or French and take the citizenship test, subject to the official exemptions and waiver rules."
+    },
+    "summary_md": {
+      "en": "Permanent residence can lead to citizenship after the separate citizenship requirements are met."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 4,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The program is established and documented by IRCC. Settlement-fund amounts, fees, invitation patterns, processing times, and category priorities can change and need scheduled checks."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 3,
+    "permanence_score": 5,
+    "family_friendliness_score": 4,
+    "source_confidence_score": 5,
+    "policy_stability_score": 4
+  },
+  "filter": {
+    "pathway_type": "direct_pr",
+    "min_liquid_funds_usd": "variable",
+    "accepts_remote_income": "not_applicable",
+    "accepts_self_employment": true,
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": true,
+    "allows_family": true,
+    "work_allowed": true,
+    "remote_work_allowed": true,
+    "leads_to_pr": true,
+    "leads_to_citizenship": "indirect",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 4,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-10T00:00:00Z"
+  },
+  "source_ids": [
+    "canada-ircc-fsw",
+    "canada-ircc-proof-funds",
+    "canada-ircc-language-tests",
+    "canada-ircc-eca",
+    "canada-ircc-fees",
+    "canada-ircc-rounds",
+    "canada-ircc-citizenship",
+    "canada-ircc-pr-rights",
+    "canada-ircc-family-inclusion",
+    "canada-ircc-police-certificates",
+    "canada-ircc-medical-exams",
+    "canada-ircc-processing-times"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "canada-ircc-fsw",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+        "section": "Federal Skilled Worker Program",
+        "quote_md": "The Federal Skilled Worker Program is for skilled workers who have foreign work experience and want to become permanent residents.",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
+        "quote_hash": "8678a16ca7a18bd693f1440319193862dc9faac778100a27e7104b3cca958383"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "canada-ircc-fsw",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+        "section": "Minimum requirements and selection factors",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "canada-ircc-fsw",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+        "section": "Minimum requirements",
+        "quote_md": "We choose skilled workers based on education, work experience, language skills, and other criteria.",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
+        "quote_hash": "4a18e50ad54eda05c723ef8a00925a2307df7e75baf751a464aec17a01896d58"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "canada-ircc-rounds",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
+        "section": "How the rounds work",
+        "quote_md": "We identify the highest-ranking candidates from the pool who are eligible for the chosen round type.",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "4359b182e2403d8f5da9bfec850c7ecd4d1fbb7190675f17d9d438808e1b2bf1",
+        "quote_hash": "c2d41005613757c104f67256f51442cf2649dbdb4c0ca754996f8d9c91e1ad42"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "canada-ircc-fsw",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+        "section": "Minimum requirements and selection factors",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860"
+      },
+      {
+        "source_id": "canada-ircc-language-tests",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+        "section": "Federal Skilled Worker Program",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "49a30ed7eace3803a70063a068b8692175ef07f93fbed1cb34da46f968ac134f"
+      },
+      {
+        "source_id": "canada-ircc-eca",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/education-assessment.html",
+        "section": "Who needs an ECA",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "7f30c834da22db5064d2dc94f2b1ec28ee11d3d77567bc658a99259d0da826d5"
+      },
+      {
+        "source_id": "canada-ircc-police-certificates",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/police-certificates.html",
+        "section": "Police certificates",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "fd646f47552987832e98cd0d6a961360742b7eb6d5356fc50a643adb0632f58a"
+      },
+      {
+        "source_id": "canada-ircc-medical-exams",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html",
+        "section": "Permanent residence applicants",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "a0b3a00d6aa57033a9783427459e28971cb108708e83adad164406629ebcfe73"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "canada-ircc-proof-funds",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+        "section": "How much money you need",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "cbfc58425d58f7d935426f122f4fb5d9b95b1a2051c81bf80176b0fda962a73f"
+      },
+      {
+        "source_id": "canada-ircc-fees",
+        "url": "https://ircc.canada.ca/english/information/fees/fees.asp",
+        "section": "Economic immigration (including Express Entry)",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "0f6dce57d6b5c1180025783417a6eb73a12c6eeae89ade8accf88998034a4723"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "canada-ircc-proof-funds",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+        "section": "Who needs proof of funds",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "cbfc58425d58f7d935426f122f4fb5d9b95b1a2051c81bf80176b0fda962a73f"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "canada-ircc-processing-times",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+        "section": "Current processing times",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "0e6f5b1e07ef4cc6f8016e7d407be1a9d2e83836565744e33078e641ad78e357"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "canada-ircc-pr-rights",
+        "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
+        "section": "Permanent resident rights",
+        "quote_md": "As a permanent resident, you have the right to live, work or study anywhere in Canada.",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "82ee40826dbf95931477d61a12dd10867729123a2b114eb7f888e79d1fba5c63",
+        "quote_hash": "16d1babd2e5d9f818e74821f1bcf90e3fac726c440866b5959cb12c49e3388be"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "canada-ircc-family-inclusion",
+        "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28",
+        "section": "Who should I include",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "039579798e31c030da1c90fa4967f61c05ad3f71a002c16062b27fd4e523a037"
+      },
+      {
+        "source_id": "canada-ircc-pr-rights",
+        "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
+        "section": "Permanent resident rights",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "82ee40826dbf95931477d61a12dd10867729123a2b114eb7f888e79d1fba5c63"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "canada-ircc-fsw",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+        "section": "Federal Skilled Worker Program",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "canada-ircc-citizenship",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/who.html",
+        "section": "Eligibility for adults",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "71d38956f91d34e513c253c9ddc58488e6d29aeefaa100cd555377c87bcc4e5b"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "canada-ircc-fsw",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+        "section": "Minimum requirements",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860"
+      },
+      {
+        "source_id": "canada-ircc-proof-funds",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+        "section": "Who needs proof of funds",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "cbfc58425d58f7d935426f122f4fb5d9b95b1a2051c81bf80176b0fda962a73f"
+      },
+      {
+        "source_id": "canada-ircc-rounds",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
+        "section": "How the rounds work",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "4359b182e2403d8f5da9bfec850c7ecd4d1fbb7190675f17d9d438808e1b2bf1"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-10T00:00:00Z",
+    "updated_at": "2026-07-10T00:00:00Z",
+    "last_checked_at": "2026-07-10T00:00:00Z",
+    "update_frequency_days": 3,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-10T00:00:00Z",
+      "summary": "Added the first complete official-source Federal Skilled Worker Program fixture.",
+      "source_ids": [
+        "canada-ircc-fsw",
+        "canada-ircc-proof-funds",
+        "canada-ircc-language-tests",
+        "canada-ircc-eca",
+        "canada-ircc-fees",
+        "canada-ircc-rounds",
+        "canada-ircc-citizenship"
+      ]
+    }
+  ]
+}

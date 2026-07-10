@@ -1,333 +1,175 @@
-# World Immigrant — Hermes Automation
+# Hermes Source Update Automation
 
-Use Hermes Agent to periodically gather official immigration information, structure it, translate it, validate it, and open PRs for review.
+## Purpose
 
-## 1. Why Automation Needs Human Review
+Hermes monitors registered immigration sources, detects evidence changes, and prepares reviewable updates without silently publishing high-stakes policy changes.
 
-Immigration policy is high-stakes. The automation should **assist**, not silently publish.
+The workflow has two operating modes controlled by `automation/hermes-policy.json`:
 
-Recommended workflow:
+- `scan_only`: fetch, normalize, hash, retain local snapshots, and report evidence changes. No canonical edits, commits, pushes, or pull requests.
+- `draft_pr`: prepare and validate evidence-backed canonical changes in a dedicated automation clone, then open or update one draft pull request. This mode also requires an explicit unattended-updater exception in `AGENTS.md`.
 
-1. Hermes checks official sources on a schedule.
-2. Hermes extracts source text and snapshots metadata.
-3. Hermes compares against current structured data.
-4. Hermes proposes JSON/Markdown changes.
-5. Validation scripts enforce citations and schema.
-6. Hermes opens a GitHub PR.
-7. Human reviews and merges.
-8. Static site deploys from main.
+The repository is configured for `scan_only` until the baseline implementation is committed, pushed, and installed in a dedicated automation clone.
 
-No direct auto-merge.
+## Components
 
-## 2. Hermes Capabilities to Use
+### Source registry
 
-### 2.1 Web extraction first
+Canonical source records live one per file in `src/data/sources/`.
 
-Use `web_extract` for normal official HTML/PDF pages when possible:
+Each active source defines:
 
-- Lower overhead than a browser.
-- Clean markdown/text output.
-- Good for official policy pages and PDFs.
+- Stable source, country, and program IDs.
+- Canonical HTTPS URL.
+- Expected redirect domains.
+- Publisher, source type, language, and extraction method.
+- Priority and review cadence.
+- Expected content hints that detect incomplete or wrong extraction.
+- Public last-checked and last-success metadata.
 
-### 2.2 Browser rendering when needed
+Operational hashes and full snapshots do not live in canonical JSON.
 
-Use browser tools only when:
+### Deterministic collector
 
-- Official page is JS-rendered and `web_extract` misses content.
-- There is a dynamic selector/form that reveals policy text.
-- Need screenshots/visual confirmation for source pages.
+`tools/collect-sources.ts`:
 
-Browser output should not be the only citation; still store final URL, retrieved time, and text/quote.
+1. Loads and validates the canonical registry.
+2. Selects due active sources in priority and source-ID order.
+3. Uses local monitor state rather than public timestamps to avoid repeatedly fetching an unchanged overdue record.
+4. Sends conditional ETag and Last-Modified requests when available.
+5. Allows only HTTPS and registered final domains.
+6. Applies bounded timeout, response-size, and source-count limits.
+7. Removes common HTML page chrome and normalizes policy text.
+8. Computes SHA-256 hashes for raw bytes and normalized text.
+9. Retains immutable, content-addressed local snapshots.
+10. Classifies each source as first seen, unchanged, not modified, content changed, extraction required, fetch failed, or domain rejected.
+11. Produces a machine-readable run report.
 
-### 2.3 Terminal/scripts for deterministic checks
+The default state location is `.source-monitor/`, which is gitignored. A dedicated automation clone may set `WORLD_IMMIGRANT_SOURCE_STATE_DIR` to a persistent local path.
 
-Use scripts for:
+Useful commands:
 
-- URL fetch status checks.
-- Hashing source snapshots.
-- Schema validation.
-- JSON normalization/sorting.
-- Citation coverage checks.
-- Git diff and PR branch setup.
-
-### 2.4 Skills
-
-Create project-specific skills :
-
-```text
-.hermes/ or repo skills/
-└── skills/
-  ├── immigration-source-update/
-  │  └── SKILL.md
-  ├── immigration-data-validation/
-  │  └── SKILL.md
-  └── immigration-translation/
-    └── SKILL.md
+```bash
+pnpm sources:scan
+pnpm sources:scan:all -- --limit 12
+pnpm sources:scan:all -- --limit 2 --dry-run
 ```
 
-Skill responsibilities:
+A first-seen result establishes a baseline and is not itself a policy change. An immediate repeat run must report only unchanged or not-modified sources and `requires_ai_review: false`.
 
-- `immigration-source-update`: source priority, extraction protocol, citation rules.
-- `immigration-data-validation`: schema and citation coverage workflow.
-- `immigration-translation`: canonical facts vs localized prose rules.
+### Evidence verification
 
-For public AI consumers, separately generate a website-facing skill:
+Canonical citations may carry:
 
-```text
-public/skills/use-world-immigrant/SKILL.md
-```
+- Registered source ID and URL.
+- JSON Pointer ownership through `field_citations`.
+- Section or locator.
+- Optional verbatim quote.
+- Snapshot ID.
+- Optional quote hash.
+- Retrieval time.
 
-This public skill should teach external agents how to use static JSON data and cite sources. It should not contain private automation credentials.
+`pnpm sources:annotate -- --write` attaches current snapshot IDs. It keeps and hashes a `quote_md` value only when that text appears verbatim in the retained normalized snapshot. Unsupported paraphrases are removed while the section locator remains.
 
-## 3. Cron / Scheduling
+`pnpm sources:verify -- --require-snapshot-ids` fails when:
 
-### 3.1 Recommended cadence
+- A referenced snapshot is missing.
+- A citation lacks its required snapshot ID.
+- A `quote_md` value is not present in the retained evidence.
+- A quote hash does not match its quote.
 
-- Tier 1 programs (popular / volatile): every 3 days.
-- Tier 2 programs: weekly.
-- Tier 3 programs: monthly.
-- Full source audit: monthly.
+Snapshots are local operational evidence and are not served publicly by default.
 
-### 3.2 Hermes cron shape
+### Project updater skill
 
-Use Hermes cron jobs with `workdir` set to this repo so `AGENTS.md` and project instructions load.
+The installed Hermes skill is `world-immigrant-updater`.
 
-Cron concept:
+Its versioned source is `automation/skills/world-immigrant-updater/SKILL.md`. The installed copy lives in the active Hermes profile's skill directory.
 
-```json
-{
-  "name": "world-immigrant-source-update",
-  "schedule": "0 8 */3 * *",
-  "workdir": "/absolute/path/to/world-immigrant",
-  "enabled_toolsets": ["web", "browser", "terminal", "file", "skills"],
-  "skills": ["immigration-source-update"],
-  "prompt": "Update Tier 1 immigration sources, validate data, and open a PR. Never push to main. Include source citations for every changed field."
-}
-```
+The skill enforces:
 
-Use the absolute path of your local clone.
+- Untrusted-source handling.
+- No inference from missing evidence.
+- Dedicated clean automation checkout.
+- Approved write paths only.
+- Snapshot-backed changed-field citations.
+- Full validation and build gates.
+- No branch for unchanged canonical data.
+- No base-branch push, force push, merge, or auto-merge.
+- No commit or draft pull request without explicit policy and repository authorization.
+- Deterministic branch and duplicate-pull-request handling after authorization.
 
-Important TUI note: cron jobs scheduled from this Hermes TUI are local-only by default; output is saved but not delivered back into the live TUI. If notifications are wanted, configure Hermes Gateway and use a gateway delivery target such as Telegram/all.
+## Daily Run Contract
 
-## 4. Source Update Pipeline
+1. Validate canonical data.
+2. Select and scan at most five due sources, using the configured source cap.
+3. Stop cleanly if no source is due.
+4. Stop cleanly if normalized evidence is unchanged.
+5. On a changed hash, compare the prior and current retained evidence.
+6. Ignore page-template noise.
+7. Retain existing policy facts on fetch, extraction, domain, or ambiguity failures.
+8. In scan-only mode, report the evidence change and stop.
+9. In authorized draft-pull-request mode, create a candidate patch from evidence only.
+10. Attach snapshot IDs and verify every verbatim quote.
+11. Validate schema, reciprocal references, material citation coverage, and strict freshness.
+12. Regenerate public JSON and AI-readable outputs.
+13. Run tests, Biome, TypeScript, full Astro/Pagefind build, diff checks, secret checks, and allowed-path checks.
+14. Exit without a branch if canonical data has no semantic change.
+15. Otherwise open or update one draft pull request and wait for human review.
 
-### Step 0: Source registry
+## Git Safety
 
-Maintain `src/data/sources.json`:
+The cron agent must not edit a person's active worktree.
 
-```json
-{
- "sources": [
-  {
-   "id": "canada-ircc-express-entry",
-   "country_id": "canada",
-   "program_ids": ["canada-express-entry-fsw"],
-   "url": "https://www.canada.ca/...",
-   "source_type": "official",
-   "priority": 1,
-   "update_frequency_days": 3,
-   "extraction_method": "web_extract",
-   "language": "en"
-  }
- ]
-}
-```
+Draft-pull-request mode requires:
 
-### Step 1: Collect source snapshots
+- A separate automation clone or disposable worktree based on freshly fetched `origin/main`.
+- A repository-level lock.
+- Recorded base SHA.
+- Protected `main`.
+- Least-privilege token supplied as `WORLD_IMMIGRANT_TOKEN` outside the repository.
+- No force push.
+- Matching open-pull-request detection.
+- Cleanup on success, failure, or interruption.
 
-For each due source:
+The current repository instruction says not to commit or push without explicit user approval. `scan_only` complies with that instruction. Enabling unattended draft pull requests requires a narrow documented exception; it must still prohibit merge and direct base-branch writes.
 
-- Fetch URL.
-- Extract clean text/markdown.
-- Record HTTP status, final URL, retrieved time.
-- Compute hash.
-- Store a snapshot in git only if it is small and useful; otherwise store metadata and relevant quoted excerpts.
+## Required Verification
 
-Possible local path:
-
-```text
-src/data/source-snapshots/{source_id}/{YYYY-MM-DD}.md
-```
-
-If snapshots grow too much, keep snapshots outside repo and only keep citation quotes in JSON.
-
-### Step 2: Change detection
-
-- If content hash unchanged: update `last_checked_at` only.
-- If changed: ask Hermes to diff old vs new and list impacted fields.
-- If extraction failed: mark source as `needs_attention`, do not alter policy fields.
-
-### Step 3: Structured extraction
-
-Prompt requirements:
-
-- Extract only claims supported by source text.
-- Every field must include citation source id + quote/section.
-- Unknown is allowed and preferred over guessing.
-- Preserve official program names.
-- Separate factual fields from interpretation scores.
-
-### Step 4: Translation/localization
-
-- Generate localized Markdown for user-facing descriptions.
-- Keep numbers, dates, official names, and URLs consistent.
-- Do not translate legal terms if it would reduce precision; use parenthetical explanation instead.
-- All localized text inherits citations from canonical facts.
-
-### Step 5: Validation
-
-Run:
+Every candidate update must pass:
 
 ```bash
 pnpm data:validate
-pnpm llms:generate
-pnpm build
-```
-
-On the , use this sequence during iteration:
-
-```bash
-pnpm data:validate
+pnpm data:freshness
+pnpm sources:verify -- --require-snapshot-ids
+pnpm test
+pnpm biome:check
 pnpm check
+pnpm build
+git diff --check
 ```
 
-Only run full build before PR if feasible.
+The diff must also be scanned for secrets, local home paths, private hostnames, and writes outside the policy allowlist.
 
-### Step 6: PR branch
+## Cron Activation
 
-Branch naming:
+The Hermes cron job is created paused and local-only. This is intentional because:
 
-```text
-data/update-{YYYY-MM-DD}-{country-or-tier}
-```
+- The implementation currently exists as uncommitted work in the human checkout.
+- A dedicated automation clone cannot contain it until the baseline is committed and pushed.
+- Draft pull requests are not yet authorized by repository policy.
+- CLI sessions have no delivery channel; local cron output is retrieved from the cron-job list.
 
-Commit message:
+Before enabling the job:
 
-```text
-data: update immigration sources for {country/tier}
-```
+1. Review and commit the baseline implementation.
+2. Push it to the protected base branch.
+3. Create a dedicated automation clone.
+4. Move the cron job's `workdir` to that clone.
+5. Keep policy in `scan_only` for several manual runs.
+6. Test unchanged, changed, fetch-failure, validation-failure, duplicate-run, and cleanup paths.
+7. Configure a gateway delivery target if proactive notifications are wanted.
+8. Add a narrow updater authorization to `AGENTS.md` and change policy to `draft_pr` only if unattended draft pull requests are approved.
+9. Enable the job.
 
-PR body should include:
-
-- Sources checked.
-- Sources changed.
-- Programs changed.
-- Validation results.
-- Fields needing human review.
-- Token/cost summary if available.
-
-## 5. Secure Git Push
-
-This repo uses HTTPS with environment-based auth. Credentials are stored outside the repo (e.g., in environment variables or agent config). Per-dev auth setup lives in `local-notes/` which is gitignored.
-
-Do not write credentials into any repo file.
-
-## 6. Opening PRs
-
-PRs are opened via git push and GitHub API (no `gh` CLI or SSH keys required).
-
-Options:
-
-1. Push branch, then manually open PR in browser.
-2. Use GitHub REST API to open PR programmatically.
-
-Script concept:
-
-```bash
-curl -sS -X POST \
- -H "Authorization: Bearer $GITHUB_TOKEN" \
- -H "Accept: application/vnd.github+json" \
- https://api.github.com/repos/qiweiii/world-immigrant/pulls \
- -d '{"title":"data: update immigration sources","head":"data/update-...","base":"main","body":"..."}'
-```
-
-Use a `GITHUB_TOKEN` environment variable. Never print or store credentials in repo files.
-
-## 7. Prompt Contract for Updater
-
-Core prompt requirements for every updater run:
-
-```md
-You are updating high-stakes immigration policy data.
-
-Rules:
-- Official/government sources are preferred.
-- Do not invent or infer eligibility criteria beyond the source.
-- If a field is unclear, write unknown and add a note.
-- Every changed factual field must include citation refs.
-- Use Markdown for explanatory fields.
-- Preserve source URLs and retrieved timestamps.
-- Output must pass schema validation.
-- Open a PR; never push directly to main; never auto-merge.
-```
-
-## 8. Handling Difficult Sources
-
-### PDFs
-
-Use `web_extract` on PDF URL first. If tables are important, consider a PDF extraction skill/tool.
-
-### JavaScript-heavy pages
-
-Use browser rendering:
-
-- Navigate to page.
-- Wait for content.
-- Extract visible text.
-- Save URL and date.
-- Prefer official downloadable PDF/HTML if available.
-
-### Rate limits / blocking
-
-- Respect robots and terms.
-- Use low frequency.
-- Prefer official feeds/API if available.
-- Do not bypass authentication or paywalls.
-
-### Conflicting sources
-
-Priority order:
-
-1. Official immigration department page.
-2. Official legal/regulatory text.
-3. Official embassy/consulate page.
-4. Official PDF/forms/guides.
-5. Reputable secondary source only as a pointer, never as primary fact if official source exists.
-
-If sources conflict, mark `needs_human_review: true` and include both citations.
-
-## 9. AI-native Outputs
-
-Generated each build:
-
-```text
-public/llms.txt
-public/llms-full.txt or public/llms/chunks/*.md
-public/data/index.json
-public/data/countries/{country}.json
-public/data/programs/{program}.json
-public/schema/visa.schema.json
-public/skills/use-world-immigrant/SKILL.md
-```
-
-Optional Phase 2:
-
-```text
-packages/world-immigrant-mcp/
-```
-
-This package can run a local MCP server over the static data. It is not part of pure frontend runtime.
-
-## 10. Review Checklist
-
-Before any PR:
-
-- [ ] Data schema validates.
-- [ ] Every changed field has citations.
-- [ ] `last_checked_at` updated.
-- [ ] No token/secrets in diff.
-- [ ] No source claims without official URL.
-- [ ] Unknown fields explicitly marked.
-- [ ] Localized fields do not introduce new facts.
-- [ ] Build or at least data validation passes.
-- [ ] PR body lists human-review items.
+The updater never schedules another cron job from inside a cron run.

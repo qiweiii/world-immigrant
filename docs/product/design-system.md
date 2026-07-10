@@ -2,13 +2,14 @@
 
 ## Iconography
 
-General icons come from [Simple Icons](https://simpleicons.org/). Load them via the CDN at `https://cdn.simpleicons.org/{slug}/{color}` or use the SVG source directly.
+Brand and service marks come from [Simple Icons](https://simpleicons.org/). Load them via the CDN at `https://cdn.simpleicons.org/{slug}/{color}` or use the SVG source directly. Generic interface icons use small inline SVGs with `currentColor` and the same stroke conventions.
 
 Rules:
 
-- Use Simple Icons for country flags, social platforms, payment providers, and official service marks when available.
-- Keep icon usage consistent: one stroke weight, one sizing scale.
-- Fallback to a custom SVG only when the icon is missing from the Simple Icons library.
+- Use Simple Icons for social platforms, payment providers, and official service marks when available.
+- Use inline SVGs for generic actions such as filter, compare, verify, navigation, and theme controls.
+- Keep interface icons consistent at a `2px` stroke with round caps and joins.
+- Keep icons decorative when adjacent text already provides the label (`aria-hidden="true"`).
 
 ## Motion
 

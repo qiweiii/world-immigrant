@@ -2,28 +2,17 @@
 
 ## 1. Repository Setup
 
-**Tech Stack:** pnpm v11, Astro, TypeScript, Zod/JSON Schema, Biome, Pagefind, Markdown rendering, GitHub Actions, Cloudflare Workers, Hermes cron/updater scripts.
+**Tech Stack:** pnpm v11, Astro, TypeScript, Zod, Biome, Pagefind, Tailwind CSS v4, Cloudflare Workers, Hermes cron/updater scripts.
 
 ---
 
 ## Phase 0 — Project Ground Rules
 
-### Task 0.1: Keep docs local
+### Task 0.1: Maintain project documentation
 
-**Objective:** Maintain docs in `docs/` and commit/push only with explicit approval.
+**Objective:** Keep product, architecture, implementation, research, and diagram docs organized under `docs/`. Commit or push only with explicit approval.
 
-**Files:**
-- Created: `docs/product/product-brief.md`
-- Created: `docs/research/competitor-analysis.md`
-- Created: `docs/research/source-and-field-examples.md`
-
-**Verification:**
-
-```bash
-git status --short
-```
-
-Expected: docs appear as uncommitted changes; no commit is created.
+**Verification:** Check internal doc references after moving or renaming files.
 
 ### Task 0.2: Update `AGENTS.md`
 
@@ -32,25 +21,27 @@ Expected: docs appear as uncommitted changes; no commit is created.
 **Files:**
 - Update: `AGENTS.md`
 
-**Suggested content:**
-- Link to the project docs.
-- Document the architecture, tooling, and .
+**Content:**
+- Tell agents to read relevant files under `docs/`.
+- Document architecture, tooling, and verification commands.
 - Tell agents to ask before commit/push.
 
 ---
 
 ## Phase 1 — Scaffold Static Site
 
+Current state: the Astro/TypeScript/Biome/Tailwind/Pagefind foundation is implemented. Maintain this section as the baseline contract.
+
 ### Task 1.1: Initialize Astro + TypeScript + Biome
 
 **Objective:** Create a static frontend foundation.
 
 **Files:**
-- Create: `package.json`
-- Create: `astro.config.mjs`
-- Create: `tsconfig.json`
-- Create: `src/pages/index.astro`
-- Create: `src/components/`
+- Maintain: `package.json`
+- Maintain: `astro.config.mjs`
+- Maintain: `tsconfig.json`
+- Maintain: `src/pages/index.astro`
+- Maintain: `src/components/`
 
 **Command:**
 
@@ -99,27 +90,25 @@ Do not commit or push without explicit approval.
 
 ## Phase 2 — Data Schema and Validation
 
-### Task 2.1: Define JSON schemas
+Current state: executable Zod schemas and cross-file validation live in `src/lib/schema.ts` and `tools/validate-data.ts`.
 
-**Objective:** Make data structure strict before adding lots of content.
+### Task 2.1: Define canonical Zod schemas
 
-**Files:**
-- Create: `src/data/schemas/country.schema.json`
-- Create: `src/data/schemas/visa.schema.json`
-- Create: `src/data/schemas/source.schema.json`
-
-**Content:** Based on `docs/architecture/data-model.md`.
-
-**Verification:** schema files exist and are valid JSON.
-
-### Task 2.2: Add TypeScript types and Zod validators
-
-**Objective:** Validate data in dev and CI.
+**Objective:** Keep the executable data contract aligned with `docs/architecture/data-model.md` before adding country coverage.
 
 **Files:**
-- Create: `src/lib/schema.ts`
-- Create: `tools/validate-data.ts`
-- Modify: `package.json`
+- Maintain: `src/lib/schema.ts`
+
+**Verification:** `pnpm data:validate` parses every canonical data file.
+
+### Task 2.2: Maintain TypeScript types and Zod validation
+
+**Objective:** Validate data during development and every production build.
+
+**Files:**
+- Maintain: `src/lib/schema.ts`
+- Maintain: `tools/validate-data.ts`
+- Maintain: `package.json`
 
 Script:
 
@@ -137,7 +126,7 @@ Script:
 pnpm data:validate
 ```
 
-Expected initially: passes with empty data or fixtures.
+Expected: validates schemas and cross-file references; empty canonical datasets remain valid until the first complete fixture is added.
 
 ### Task 2.3: Add citation coverage validation
 
@@ -159,12 +148,14 @@ Rules:
 
 ## Phase 3 — Seed Data the site
 
+Current state: category taxonomy exists; country, program, and source datasets are empty.
+
 ### Task 3.1: Create source registry
 
 **Objective:** List official source URLs to monitor.
 
 **Files:**
-- Create: `src/data/sources.json`
+- Maintain: `src/data/sources.json`
 
 Initial countries:
 
@@ -238,14 +229,16 @@ Initial countries:
 
 ## Phase 5 — Compare and Filter
 
+Current state: page and island shells exist. Complete data-driven comparison and eligibility logic against the first validated fixture.
+
 ### Task 5.1: Build compare engine
 
 **Objective:** Normalize selected visa programs into comparison rows.
 
 **Files:**
 - Create: `src/lib/compareEngine.ts`
-- Create: `src/components/islands/CompareBuilder.astro`
-- Create: `src/pages/compare.astro`
+- Maintain: `src/components/islands/CompareBuilder.astro`
+- Maintain: `src/pages/compare.astro`
 
 **Verification:** user can select multiple programs and see key fields side-by-side.
 
@@ -254,11 +247,11 @@ Initial countries:
 **Objective:** Match user profile against structured criteria.
 
 **Files:**
-- Create: `src/lib/filterEngine.ts`
-- Create: `src/components/islands/EligibilityFilter.astro`
-- Create: `src/pages/filter.astro`
+- Maintain: `src/lib/filterEngine.ts`
+- Maintain: `src/components/islands/EligibilityFilter.astro`
+- Maintain: `src/pages/filter.astro`
 
-**Verification:** filter returns `eligible/maybe/not_eligible/needs_review` with reasons and citations.
+**Verification:** filter returns `likely_match/possible_match/not_match/needs_review/unknown` with reasons and citations.
 
 ### Task 5.3: URL search params
 
@@ -275,6 +268,8 @@ Initial countries:
 
 ## Phase 6 — Search, i18n, AI-native Output
 
+Current state: Pagefind indexing, public JSON generation, and AI-readable output generation exist. Search UI and i18n routing remain.
+
 ### Task 6.1: Add i18n routing
 
 **Objective:** Support at least `en` and `zh-Hans`.
@@ -285,13 +280,13 @@ Initial countries:
 
 **Verification:** pages render with correct `<html lang="...">` so Pagefind multilingual indexing works.
 
-### Task 6.2: Add Pagefind
+### Task 6.2: Add Pagefind search UI
 
-**Objective:** Static full-text multilingual search.
+**Objective:** Expose the Pagefind index through a multilingual search interface. Pagefind generation is already part of the build.
 
 **Files:**
 - Create: `src/components/Search.astro` or TypeScript island
-- Modify: build script
+- Maintain: build script
 
 Script:
 
@@ -305,27 +300,27 @@ Script:
 
 **Verification:** after build, search works in preview.
 
-### Task 6.3: Generate `llms.txt`
+### Task 6.3: Expand generated AI-readable output
 
-**Objective:** Make site agent-friendly.
+**Objective:** Keep the existing `llms.txt` output synchronized with complete country and program data.
 
 **Files:**
-- Create: `tools/generate-llms.ts`
+- Maintain: `tools/generate-llms.ts`
 - Generate: `public/llms.txt`
 - Generate: `public/llms-full.txt` or chunked files
 
 **Verification:** `public/llms.txt` lists key data entry points and citation policy.
 
-### Task 6.4: Generate static JSON API
+### Task 6.4: Expand the static JSON API
 
-**Objective:** Let agents and frontend consume data directly.
+**Objective:** Keep existing generated endpoints synchronized and add per-country/program artifacts after the first complete fixture.
 
 **Files:**
-- Create: `tools/generate-public-data.ts`
+- Maintain: `tools/generate-public-data.ts`
 - Generate: `public/data/index.json`
-- Generate: `public/data/countries/*.json`
-- Generate: `public/data/programs/*.json`
-- Generate: `public/schema/*.json`
+- Generate: `public/data/countries.json` and per-country files
+- Generate: `public/data/programs.json` and per-program files
+- Generate: public schemas when the canonical Zod contract stabilizes
 
 **Verification:** JSON files exist after generation and match schema.
 
@@ -379,31 +374,26 @@ Use the absolute path of your local clone. Hermes uses it as the working directo
 
 ## Phase 8 — Deployment
 
-### Task 8.1: GitHub Actions static build
+### Task 8.1: Connect Cloudflare Workers to GitHub
 
-**Objective:** Build on GitHub after merge.
+**Objective:** Let Cloudflare build and deploy automatically on pushes to `main`.
 
-**Files:**
-- Create: `.github/workflows/deploy.yml`
+**Configuration:**
+- Build command: `pnpm build`
+- Output directory: `dist`
+- Workers Static Assets config: `wrangler.jsonc`
 
-**Verification:** action builds static output.
+**Verification:** a push to `main` triggers a successful Cloudflare build and deployment. No GitHub Actions workflow is required.
 
-### Task 8.2: Choose hosting
+### Task 8.2: Configure the custom domain
 
-**Decision:** Cloudflare Workers via Workers Static Assets.
-
-No runtime server needed. Workers serves `dist/` directly, supports custom domains, and provides global CDN.
-
-**Files:**
-
-- Create: `wrangler.jsonc`
-- Optional: `.github/workflows/deploy.yml` for CI/CD
+Connect `world-immigrant.com` in Cloudflare after the domain is purchased.
 
 ---
 
 ## Decisions
 
-1. Brand/name/domain: “World Immigrant” or choose a more polished name?
+1. Brand/name: World Immigrant
 2. Domain: `world-immigrant.com`
 3. Framework/library: Astro
 4. Styling: Tailwind CSS v4
@@ -412,19 +402,15 @@ No runtime server needed. Workers serves `dist/` directly, supports custom domai
 7. Linting/formatting: Biome
 8. Search: Pagefind
 9. Hosting: Cloudflare Workers
-10. CMS/updater: Hermes scripts + PR workflow
+10. CMS/updater: Hermes scripts + human-reviewed PR workflow
 11. Public-good license: CC BY-SA 4.0 + MIT for code
 12. Package manager: pnpm v11
 
 ## Recommended Next Step
 
-Execute Phase 1 + Phase 2:
-
-1. Scaffold Astro/TS/Biome.
-2. Add data schema + validation.
-3. Add one real country/program fixture.
-4. Verify with checks.
-
-Then seed Tier 1 countries and move to design/comparison pages.
-
-Then seed Tier 1 countries and run first Hermes updater.
+1. Reconcile the architecture, data-model specification, and executable Zod schemas.
+2. Define canonical filter states, unknown semantics, and citation rules.
+3. Implement deterministic reference, citation, and freshness validation.
+4. Add one complete country/program fixture from official sources.
+5. Generate and verify pages, public artifacts, compare/filter behavior, and Hermes updates against that fixture.
+6. Scale country coverage only after the complete vertical slice works.

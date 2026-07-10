@@ -1,0 +1,18 @@
+{
+  "country_id": "canada",
+  "program_ids": ["canada-express-entry-fsw"],
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "extraction_method": "web_extract",
+  "expected_domains": ["canada.ca"],
+  "last_checked_at": "2026-07-10T00:00:00Z",
+  "last_success_at": "2026-07-10T00:00:00Z",
+  "status": "active",
+  "id": "canada-ircc-fees",
+  "url": "https://ircc.canada.ca/english/information/fees/fees.asp",
+  "title": "Citizenship and immigration application fees",
+  "priority": 2,
+  "update_frequency_days": 14,
+  "expected_content_hints": ["Economic immigration (including Express Entry)", "1,590.00", "990.00"]
+}

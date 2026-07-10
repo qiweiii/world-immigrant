@@ -1,65 +1,38 @@
-import { mkdir, readFile, writeFile } from "node:fs/promises";
+import { mkdir, rm, writeFile } from "node:fs/promises";
 import { join } from "node:path";
+import { loadCanonicalData } from "../src/lib/data";
+import { buildPublicData, canonicalGenerationTime } from "../src/lib/public-data";
 
 const root = process.cwd();
 const publicDataDir = join(root, "public/data");
 
-async function readJson(path: string) {
-  return JSON.parse(await readFile(join(root, path), "utf8"));
+async function writeJson(path: string, value: unknown) {
+  await writeFile(path, `${JSON.stringify(value, null, 2)}\n`);
+}
+
+async function writeEntityFiles<T extends { id: string }>(directory: string, entities: T[]) {
+  await rm(directory, { recursive: true, force: true });
+  await mkdir(directory, { recursive: true });
+  await Promise.all(
+    entities.map((entity) => writeJson(join(directory, `${entity.id}.json`), entity)),
+  );
 }
 
 await mkdir(join(publicDataDir, "indexes"), { recursive: true });
+const dataset = await loadCanonicalData(root);
+const output = buildPublicData(dataset, canonicalGenerationTime(dataset));
 
-const [categories, countries, programs, sources] = await Promise.all([
-  readJson("src/data/categories.json"),
-  readJson("src/data/countries.json"),
-  readJson("src/data/programs.json"),
-  readJson("src/data/sources.json"),
+await Promise.all([
+  writeJson(join(publicDataDir, "index.json"), output.index),
+  writeJson(join(publicDataDir, "categories.json"), output.categories),
+  writeJson(join(publicDataDir, "countries.json"), output.countries),
+  writeJson(join(publicDataDir, "programs.json"), output.programs),
+  writeJson(join(publicDataDir, "sources.json"), output.sources),
+  writeJson(join(publicDataDir, "indexes/filter-index.v1.json"), output.filterIndex),
+  writeJson(join(publicDataDir, "indexes/compare-index.v1.json"), output.compareIndex),
+  writeEntityFiles(join(publicDataDir, "countries"), dataset.countries),
+  writeEntityFiles(join(publicDataDir, "programs"), dataset.programs),
+  writeEntityFiles(join(publicDataDir, "sources"), dataset.sources),
 ]);
-
-await writeFile(
-  join(publicDataDir, "index.json"),
-  `${JSON.stringify(
-    {
-      schema_version: 1,
-      generated_at: new Date().toISOString(),
-      endpoints: {
-        categories: "/data/categories.json",
-        countries: "/data/countries.json",
-        programs: "/data/programs.json",
-        sources: "/data/sources.json",
-        filter_index: "/data/indexes/filter-index.v1.json",
-      },
-    },
-    null,
-    2,
-  )}
-`,
-);
-await writeFile(
-  join(publicDataDir, "categories.json"),
-  `${JSON.stringify(categories, null, 2)}
-`,
-);
-await writeFile(
-  join(publicDataDir, "countries.json"),
-  `${JSON.stringify(countries, null, 2)}
-`,
-);
-await writeFile(
-  join(publicDataDir, "programs.json"),
-  `${JSON.stringify(programs, null, 2)}
-`,
-);
-await writeFile(
-  join(publicDataDir, "sources.json"),
-  `${JSON.stringify(sources, null, 2)}
-`,
-);
-await writeFile(
-  join(publicDataDir, "indexes/filter-index.v1.json"),
-  `${JSON.stringify({ schema_version: 1, programs: [] }, null, 2)}
-`,
-);
 
 console.log(`Generated static data in ${publicDataDir}`);

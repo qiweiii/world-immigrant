@@ -1,5 +1,8 @@
 ---
 import Layout from "../components/Layout.astro";
+import { loadCanonicalData } from "../lib/data";
+
+const { sources } = await loadCanonicalData();
 ---
 
 <Layout title="Sources — World Immigrant">
@@ -8,33 +11,46 @@ import Layout from "../components/Layout.astro";
       <p class="eyebrow">Trust surface</p>
       <h1>Freshness and citations<br />are part of the product.</h1>
       <p>
-        Source registry pages will show official URLs, last checked dates, extraction methods,
-        source confidence, and change history.
+        The source registry exposes official URLs, check cadence, extraction method, status, and
+        the programs each source supports.
       </p>
     </section>
-    <section class="grid stagger">
-      <article class="card">
-        <div class="card-header">
-          <img src="https://cdn.simpleicons.org/verified/2563eb" alt="" width="20" height="20" style="width:20px;height:20px;margin-bottom:8px;" />
-          <h3 class="card-title">Source hierarchy</h3>
+
+    <section class="section" aria-labelledby="registry-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Registry</p>
+          <h2 id="registry-heading">{sources.length} official sources</h2>
         </div>
-        <ul style="color:var(--muted-foreground);font-size:14px;line-height:1.8;padding-left:18px;margin:8px 0 0;">
-          <li>Law/regulation text</li>
-          <li>Official immigration department pages</li>
-          <li>Official application portals and calculators</li>
-          <li>Embassy/consulate pages</li>
-          <li>Labeled reputable secondary sources</li>
-        </ul>
+      </div>
+      <div class="card-grid">
+        {
+          sources.map((source) => (
+            <article class="card">
+              <p class="eyebrow">Priority {source.priority} · {source.status}</p>
+              <h3><a href={source.url} rel="external">{source.title}</a></h3>
+              <p>{source.publisher}</p>
+              <div class="badge-row">
+                <span class="badge">checked {source.last_checked_at?.slice(0, 10)}</span>
+                <span class="badge">every {source.update_frequency_days} days</span>
+                <span class="badge">{source.extraction_method}</span>
+              </div>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="card-grid" aria-label="Source policy">
+      <article class="card">
+        <p class="eyebrow">Hierarchy</p>
+        <h3>Official evidence first</h3>
+        <p>Law and regulation text, immigration-department pages, official portals and calculators, then clearly labeled supporting sources.</p>
       </article>
       <article class="card">
-        <div class="card-header">
-          <img src="https://cdn.simpleicons.org/shieldcheck/2563eb" alt="" width="20" height="20" style="width:20px;height:20px;margin-bottom:8px;" />
-          <h3 class="card-title">Validation rule</h3>
-        </div>
-        <p class="card-description">
-          Active programs should fail validation when material fields lack source citations
-          or freshness metadata.
-        </p>
+        <p class="eyebrow">Validation</p>
+        <h3>No uncited material claims</h3>
+        <p>Active program records fail integrity validation when a material fact cannot be traced to a registered source.</p>
       </article>
     </section>
   </main>

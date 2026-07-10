@@ -1,9 +1,9 @@
 ---
 import Layout from "../components/Layout.astro";
 import TrustBadge from "../components/TrustBadge.astro";
-import { getCategories } from "../lib/data";
+import { loadCanonicalData } from "../lib/data";
 
-const categories = getCategories();
+const { categories } = await loadCanonicalData();
 ---
 
 <Layout
@@ -20,11 +20,11 @@ const categories = getCategories();
       </p>
       <div style="display:flex;flex-wrap:wrap;gap:10px;margin-top:24px;">
         <a class="btn btn-primary" href="/filter">
-          <img src="https://cdn.simpleicons.org/sliders/ffffff" alt="" width="16" height="16" style="width:16px;height:16px;" />
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 21v-7"/><path d="M4 10V3"/><path d="M12 21v-9"/><path d="M12 8V3"/><path d="M20 21v-5"/><path d="M20 12V3"/><path d="M1 14h6"/><path d="M9 8h6"/><path d="M17 16h6"/></svg>
           Start filtering
         </a>
         <a class="btn" href="/compare">
-          <img src="https://cdn.simpleicons.org/gitcompare/71717a" alt="" width="16" height="16" style="width:16px;height:16px;" />
+          <svg aria-hidden="true" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 3 4 4-4 4"/><path d="M20 7H4"/><path d="m8 21-4-4 4-4"/><path d="M4 17h16"/></svg>
           Compare pathways
         </a>
         <a class="btn btn-ghost" href="/sources">Source model</a>
@@ -47,10 +47,10 @@ const categories = getCategories();
         categories.map((cat) => (
           <article class="card">
             <div class="card-header">
-              <p class="eyebrow" style="margin:0 0 4px;">Global · MVP</p>
-              <h3 class="card-title"><a href="/compare">{cat.names.en}</a></h3>
+              <p class="eyebrow" style="margin:0 0 4px;">Global pathways</p>
+              <h3 class="card-title"><a href={`/categories/${cat.id}`}>{cat.names.en}</a></h3>
             </div>
-            <p class="card-description">{cat.description.en}</p>
+            <p class="card-description">{cat.description_md.en}</p>
             <div class="badge-row">
               <span class="badge">source-first</span>
               <span class="badge">structured</span>

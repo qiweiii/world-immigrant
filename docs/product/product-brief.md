@@ -88,10 +88,11 @@ Users enter their profile to filter:
 
 Filter outputs:
 
-- Eligible
-- Possibly eligible but missing information
-- Ineligible (with explicit reason)
+- Likely match (no known blocker, still preliminary)
+- Possible match (missing profile or policy information)
+- Not a match (with explicit blocking reasons)
 - Needs human / lawyer confirmation
+- Unknown (data missing or stale)
 
 ### 4.4 AI / SEO / GEO / AEO
 

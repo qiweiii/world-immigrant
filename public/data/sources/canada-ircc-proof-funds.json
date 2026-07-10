@@ -1,0 +1,26 @@
+{
+  "id": "canada-ircc-proof-funds",
+  "country_id": "canada",
+  "program_ids": [
+    "canada-express-entry-fsw"
+  ],
+  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/proof-funds.html",
+  "title": "Express Entry: Proof of funds",
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 7,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "How much money you need",
+    "15,263",
+    "family members"
+  ],
+  "expected_domains": [
+    "canada.ca"
+  ],
+  "last_checked_at": "2026-07-10T00:00:00Z",
+  "last_success_at": "2026-07-10T00:00:00Z",
+  "status": "active"
+}
