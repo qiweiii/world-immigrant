@@ -1,0 +1,115 @@
+---
+/**
+ * CustomDropdown.astro -- a styled dropdown that replaces native <select>.
+ *
+ * Renders a button trigger + a popup list of options. Keeps a hidden
+ * <select> in sync so FormData still works in forms.
+ *
+ * Props:
+ *   id: string        -- id for the hidden select + label association
+ *   name: string      -- form field name
+ *   label: string     -- visible label text
+ *   options: { value: string; label: string; selected?: boolean }[]
+ *   class?: string    -- optional extra class on the wrapper
+ */
+interface Option {
+  value: string;
+  label: string;
+  selected?: boolean;
+}
+interface Props {
+  id: string;
+  name: string;
+  label: string;
+  options: Option[];
+  class?: string;
+}
+const { id, name, label, options, class: extraClass = "" } = Astro.props;
+const selected = options.find((o) => o.selected) ?? options[0];
+---
+
+<div class={`dropdown ${extraClass}`} data-dropdown>
+  <label class="field-label" for={id}>{label}</label>
+  <button
+    type="button"
+    class="dropdown-trigger select"
+    data-dropdown-trigger
+    aria-haspopup="listbox"
+    aria-expanded="false"
+  >
+    <span data-dropdown-label>{selected?.label}</span>
+  </button>
+  <ul class="dropdown-menu" data-dropdown-menu role="listbox" aria-label={label}>
+    {
+      options.map((option) => (
+        <li
+          role="option"
+          aria-selected={option.selected ? "true" : "false"}
+          data-value={option.value}
+          data-dropdown-option
+        >
+          {option.label}
+        </li>
+      ))
+    }
+  </ul>
+  <select class="dropdown-native" id={id} name={name} aria-hidden="true" tabindex="-1">
+    {options.map((option) => <option value={option.value} selected={option.selected}>{option.label}</option>)}
+  </select>
+</div>
+
+<script>
+  document.querySelectorAll<HTMLElement>("[data-dropdown]").forEach((root) => {
+    if (root.dataset.bound === "1") return;
+    root.dataset.bound = "1";
+
+    const trigger = root.querySelector<HTMLButtonElement>("[data-dropdown-trigger]");
+    const menu = root.querySelector<HTMLElement>("[data-dropdown-menu]");
+    const labelSpan = root.querySelector<HTMLElement>("[data-dropdown-label]");
+    const nativeSelect = root.querySelector<HTMLSelectElement>(".dropdown-native");
+    const options = root.querySelectorAll<HTMLElement>("[data-dropdown-option]");
+    if (!trigger || !menu || !labelSpan || !nativeSelect) return;
+
+    function close() {
+      menu.removeAttribute("data-open");
+      trigger.setAttribute("aria-expanded", "false");
+    }
+
+    function open() {
+      menu.setAttribute("data-open", "true");
+      trigger.setAttribute("aria-expanded", "true");
+    }
+
+    function toggle() {
+      if (menu.hasAttribute("data-open")) close();
+      else open();
+    }
+
+    trigger.addEventListener("click", (e) => {
+      e.preventDefault();
+      toggle();
+    });
+
+    options.forEach((opt) => {
+      opt.addEventListener("click", () => {
+        const value = opt.dataset.value ?? "";
+        const text = opt.textContent ?? "";
+        labelSpan.textContent = text;
+        nativeSelect.value = value;
+        options.forEach((o) => o.setAttribute("aria-selected", "false"));
+        opt.setAttribute("aria-selected", "true");
+        close();
+        nativeSelect.dispatchEvent(new Event("input", { bubbles: true }));
+        nativeSelect.dispatchEvent(new Event("change", { bubbles: true }));
+      });
+    });
+
+    document.addEventListener("click", (e) => {
+      if (!root.contains(e.target as Node)) close();
+    });
+
+    document.addEventListener("keydown", (e) => {
+      if (e.key === "Escape") close();
+    });
+  });
+</script>

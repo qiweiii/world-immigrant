@@ -1,4 +1,5 @@
 ---
+import CustomDropdown from "./CustomDropdown.astro";
 import {
   localeLabels,
   locales,
@@ -19,44 +20,32 @@ const barePath = stripLocalePrefix(pathname);
 const routes = Object.fromEntries(
   locales.map((item) => [item, withLocale(barePath, item)]),
 ) as Record<Locale, string>;
+const localeOptions = locales.map((item) => ({
+  value: item,
+  label: localeLabels[item].short,
+  selected: item === locale,
+}));
 ---
 
-<label class="locale-switcher">
-  <span class="sr-only">{t("nav.language", locale)}</span>
-  <select
-    class="locale-select"
+<div class="locale-switcher" data-locale-switcher data-locale-routes={JSON.stringify(routes)}>
+  <CustomDropdown
+    id="locale-select"
     name="locale"
-    aria-label={t("nav.language", locale)}
-    data-locale-select
-    data-locale-routes={JSON.stringify(routes)}
-  >
-    {
-      locales.map((item) => (
-        <option value={item} selected={item === locale} title={localeLabels[item].native}>
-          {localeLabels[item].short}
-        </option>
-      ))
-    }
-  </select>
-  <svg class="locale-select-chevron" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
-    <path
-      d="M4 6l4 4 4-4"
-      fill="none"
-      stroke="currentColor"
-      stroke-width="1.5"
-      stroke-linecap="round"
-      stroke-linejoin="round"></path>
-  </svg>
-</label>
+    label={t("nav.language", locale)}
+    options={localeOptions}
+  />
+</div>
 
 <script define:vars={{ storageKey: LOCALE_STORAGE_KEY }}>
-  document.querySelectorAll("select[data-locale-select]").forEach((node) => {
-    const select = /** @type {HTMLSelectElement} */ (node);
-    if (select.dataset.bound === "1") return;
-    select.dataset.bound = "1";
+  document.querySelectorAll("[data-locale-switcher]").forEach((root) => {
+    if (root.dataset.bound === "1") return;
+    root.dataset.bound = "1";
 
-    select.addEventListener("change", () => {
-      const next = select.value;
+    const nativeSelect = root.querySelector("select.dropdown-native");
+    if (!nativeSelect) return;
+
+    nativeSelect.addEventListener("change", () => {
+      const next = nativeSelect.value;
       if (!next) return;
       try {
         localStorage.setItem(storageKey, next);
@@ -66,7 +55,7 @@ const routes = Object.fromEntries(
 
       let routes = {};
       try {
-        routes = JSON.parse(select.dataset.localeRoutes || "{}");
+        routes = JSON.parse(root.dataset.localeRoutes || "{}");
       } catch {
         routes = {};
       }

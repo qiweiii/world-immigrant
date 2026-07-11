@@ -1,3 +1,6 @@
+---
+import CustomDropdown from "../CustomDropdown.astro";
+---
 <section class="filter-shell" aria-labelledby="filter-heading" data-eligibility-filter>
   <div class="filter-intro">
     <p class="eyebrow">Fit tool</p>
@@ -11,11 +14,15 @@
   <form class="filter-form" data-profile-form>
     <div class="field-grid">
       <div class="field">
-        <label class="field-label" for="goal">Goal</label>
-        <select class="input" id="goal" name="goal">
-          <option value="permanent_residence" selected>Permanent residence</option>
-          <option value="citizenship">Citizenship pathway</option>
-        </select>
+        <CustomDropdown
+          id="goal"
+          name="goal"
+          label="Goal"
+          options={[
+            { value: "permanent_residence", label: "Permanent residence", selected: true },
+            { value: "citizenship", label: "Citizenship pathway" },
+          ]}
+        />
       </div>
       <div class="field">
         <label class="field-label" for="work-years">Qualifying skilled-work years</label>
@@ -26,15 +33,19 @@
         <input class="input" id="language-benchmark" name="language_benchmark" value="8" inputmode="numeric" />
       </div>
       <div class="field">
-        <label class="field-label" for="education">Highest completed education</label>
-        <select class="input" id="education" name="education_level">
-          <option value="secondary">Secondary</option>
-          <option value="vocational">Vocational</option>
-          <option value="associate">Associate</option>
-          <option value="bachelor" selected>Bachelor</option>
-          <option value="master">Master</option>
-          <option value="doctorate">Doctorate</option>
-        </select>
+        <CustomDropdown
+          id="education"
+          name="education_level"
+          label="Highest completed education"
+          options={[
+            { value: "secondary", label: "Secondary" },
+            { value: "vocational", label: "Vocational" },
+            { value: "associate", label: "Associate" },
+            { value: "bachelor", label: "Bachelor", selected: true },
+            { value: "master", label: "Master" },
+            { value: "doctorate", label: "Doctorate" },
+          ]}
+        />
       </div>
       <div class="field">
         <label class="field-label" for="program-points">Program selection-factor points</label>
@@ -180,7 +191,19 @@
           if (reason.citations.length) {
             const src = document.createElement("span");
             src.className = "filter-reason-sources";
-            src.textContent = reason.citations.join(" · ");
+            const links = reason.citations.map((citation) => {
+              const a = document.createElement("a");
+              a.href = citation.url;
+              a.target = "_blank";
+              a.rel = "noopener";
+              const label = citation.section || new URL(citation.url).hostname;
+              a.textContent = label;
+              return a;
+            });
+            for (let i = 0; i < links.length; i++) {
+              if (i > 0) src.append(" · ");
+              src.append(links[i]);
+            }
             item.append(src);
           }
           posList.append(item);
@@ -206,7 +229,19 @@
           if (reason.citations.length) {
             const src = document.createElement("span");
             src.className = "filter-reason-sources";
-            src.textContent = reason.citations.join(" · ");
+            const links = reason.citations.map((citation) => {
+              const a = document.createElement("a");
+              a.href = citation.url;
+              a.target = "_blank";
+              a.rel = "noopener";
+              const label = citation.section || new URL(citation.url).hostname;
+              a.textContent = label;
+              return a;
+            });
+            for (let i = 0; i < links.length; i++) {
+              if (i > 0) src.append(" · ");
+              src.append(links[i]);
+            }
             item.append(src);
           }
           otherList.append(item);

@@ -94,12 +94,12 @@ test("filter attaches field-specific citations rather than one global source lis
   const result = evaluateProgram(program, { ...completeProfile, skilled_work_years: 0 });
   const work = result.reasons.find(({ field }) => field === "work_experience");
   assert.ok(work);
-  assert.ok(work.citations.includes("canada-ircc-fsw"));
+  assert.ok(work.citations.some((c) => c.source_id === "canada-ircc-fsw"));
   const funds = evaluateProgram(program, {
     ...completeProfile,
     family_size: 1,
     liquid_funds: { amount: 1, currency: "CAD" },
   }).reasons.find(({ field }) => field === "settlement_funds");
   assert.ok(funds);
-  assert.ok(funds.citations.includes("canada-ircc-proof-funds"));
+  assert.ok(funds.citations.some((c) => c.source_id === "canada-ircc-proof-funds"));
 });

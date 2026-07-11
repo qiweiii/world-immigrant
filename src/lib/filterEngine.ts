@@ -7,11 +7,17 @@ export type FilterResultStatus =
   | "needs_review"
   | "unknown";
 
+export type CitationRef = {
+  source_id: string;
+  url: string;
+  section?: string;
+};
+
 export type FilterReason = {
   field: string;
   severity: "positive" | "warning" | "blocking" | "unknown";
   message: string;
-  citations: string[];
+  citations: CitationRef[];
 };
 
 export type FilterResult = {
@@ -78,21 +84,32 @@ const FIELD_CITATION_PATHS: Record<string, string[]> = {
   program_status: ["/status", "/filter"],
 };
 
-function citationsForField(program: FilterIndexProgram, field: string): string[] {
+function citationsForField(program: FilterIndexProgram, field: string): CitationRef[] {
   const preferred = FIELD_CITATION_PATHS[field] ?? ["/filter"];
   const matches = preferred.flatMap((path) =>
     Object.entries(program.field_citations)
       .filter(([citationPath]) => citationPath === path || citationPath.startsWith(`${path}/`))
-      .flatMap(([, citations]) => citations.map(({ source_id }) => source_id)),
+      .flatMap(([, citations]) =>
+        citations.map(({ source_id, url, section }) => ({ source_id, url, section })),
+      ),
   );
-  if (matches.length) return [...new Set(matches)];
-  return [
-    ...new Set(
-      Object.values(program.field_citations)
-        .flat()
-        .map(({ source_id }) => source_id),
-    ),
-  ];
+  if (matches.length) {
+    const seen = new Set<string>();
+    return matches.filter((c) => {
+      if (seen.has(c.source_id)) return false;
+      seen.add(c.source_id);
+      return true;
+    });
+  }
+  const fallback = Object.values(program.field_citations)
+    .flat()
+    .map(({ source_id, url, section }) => ({ source_id, url, section }));
+  const seen = new Set<string>();
+  return fallback.filter((c) => {
+    if (seen.has(c.source_id)) return false;
+    seen.add(c.source_id);
+    return true;
+  });
 }
 
 function requiredFunds(program: FilterIndexProgram, familySize: number) {

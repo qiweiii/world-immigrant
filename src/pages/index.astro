@@ -10,7 +10,7 @@ interface Props {
 
 const { locale = defaultLocale } = Astro.props as Props;
 const dataset = await loadCanonicalData();
-const { programs, countries, sources } = dataset;
+const { programs, countries, sources, categories } = dataset;
 const countryModels = buildCountryPageModels(dataset);
 const programCards = programs.map((program) => {
   const country = countries.find((item) => item.id === program.country_id);
@@ -24,6 +24,52 @@ const shorten = (value: string, maxLength: number) => {
   return `${value.slice(0, maxLength).replace(/\s+\S*$/, "")}…`;
 };
 const L = (path: string) => withLocale(path, locale);
+const visibleCount = 4;
+
+const categoryColors: Record<string, string> = {
+  digital_nomad: "#0ea5e9",
+  skilled_worker: "#2563eb",
+  study_to_pr: "#8b5cf6",
+  startup_entrepreneur: "#f59e0b",
+  investor: "#10b981",
+  family: "#ec4899",
+  retirement: "#14b8a6",
+  e_residency: "#6366f1",
+  humanitarian: "#ef4444",
+  other: "#64748b",
+};
+
+// Popular countries first on the home page
+const popularCountryIds = [
+  "canada",
+  "australia",
+  "united-kingdom",
+  "united-states",
+  "germany",
+  "japan",
+  "singapore",
+  "uae",
+  "netherlands",
+  "new-zealand",
+  "portugal",
+  "spain",
+  "hong-kong",
+  "croatia",
+  "estonia",
+];
+const popularityOrder = (id: string) => {
+  const idx = popularCountryIds.indexOf(id);
+  return idx === -1 ? 999 : idx;
+};
+const sortedCountryModels = [...countryModels].sort(
+  (a, b) => popularityOrder(a.country.id) - popularityOrder(b.country.id),
+);
+// Sort pathway cards to match country popularity
+const pathwayPopularity = (card: { program: { country_id: string } }) =>
+  popularityOrder(card.program.country_id);
+const sortedProgramCards = [...programCards].sort(
+  (a, b) => pathwayPopularity(a) - pathwayPopularity(b),
+);
 ---
 
 <Layout locale={locale} title={t("home.title", locale)} description={t("home.description", locale)}>
@@ -31,8 +77,8 @@ const L = (path: string) => withLocale(path, locale);
     <section class="landing-hero" aria-labelledby="home-title">
       <div class="landing-hero-copy">
         <p class="eyebrow">World Immigrant</p>
-        <h1 id="home-title">{t("home.h1", locale)}</h1>
-        <p class="landing-lede">{t("home.lede", locale)}</p>
+        <h1 id="home-title">The world is your home. <span class="hero-globe" aria-hidden="true">🌍</span></h1>
+        <p class="landing-lede">{t("home.h1", locale)}</p>
         <div class="action-row">
           <a class="btn btn-primary" href="#pathways">{t("home.viewPathways", locale)}</a>
           <a class="btn btn-ghost" href={compareHref}>{t("home.compareArrow", locale)}</a>
@@ -46,15 +92,14 @@ const L = (path: string) => withLocale(path, locale);
           {" "}
           {programs.length === 1 ? t("home.pathwayCount", locale) : t("home.pathwaysCount", locale)}
         </p>
-        <div class="coverage-country-list">
-          {
-            countryModels.map(({ country, programs: countryPrograms }) => (
-              <a
-                class="coverage-country"
-                href={L(`/countries/${country.id}`)}
-                style={`--country-color: ${country.brand.color}`}
-              >
-                <span class="coverage-country-main">
+        <div class="coverage-marquee" aria-hidden="true">
+          <div class="coverage-marquee-track">
+            {
+              [...sortedCountryModels, ...sortedCountryModels].map(({ country, programs: countryPrograms }) => (
+                <div
+                  class="coverage-marquee-item"
+                  style={`--country-color: ${country.brand.color}`}
+                >
                   <span class="country-swatch" aria-hidden="true"></span>
                   <span>
                     <strong>{pickLocalized(country.names, locale)}</strong>
@@ -65,10 +110,10 @@ const L = (path: string) => withLocale(path, locale);
                         : t("home.pathwaysCount", locale)}
                     </small>
                   </span>
-                </span>
-              </a>
-            ))
-          }
+                </div>
+              ))
+            }
+          </div>
         </div>
         <div class="coverage-footnote">
           <span>{sources.length} {t("home.sourcesCount", locale)}</span>
@@ -79,14 +124,11 @@ const L = (path: string) => withLocale(path, locale);
 
     <nav class="quick-actions" aria-label={t("home.startHere", locale)}>
       <a class="quick-action" href={L("/countries")}
-        ><span>01</span> {t("home.browseDestinations", locale)}</a
-      >
+        ><span>01</span> {t("home.browseDestinations", locale)}</a>
       <a class="quick-action" href={compareHref}
-        ><span>02</span> {t("home.comparePathways", locale)}</a
-      >
+        ><span>02</span> {t("home.comparePathways", locale)}</a>
       <a class="quick-action" href={L("/filter")}
-        ><span>03</span> {t("home.checkFit", locale)}</a
-      >
+        ><span>03</span> {t("home.checkFit", locale)}</a>
     </nav>
 
     <section class="section pathway-section" id="pathways" aria-labelledby="pathways-heading">
@@ -95,56 +137,40 @@ const L = (path: string) => withLocale(path, locale);
           <p class="eyebrow">{t("home.availableNow", locale)}</p>
           <h2 id="pathways-heading">{t("home.pathways", locale)}</h2>
         </div>
-        <a class="text-action" href={L("/countries")}>{t("home.allDestinations", locale)}</a>
       </div>
-      <div class="pathway-list">
+      <section class="category-list" aria-label={t("home.pathways", locale)}>
         {
-          programCards.map(({ program, country }) => (
-            <article class="pathway-row">
-              <div class="pathway-row-main">
-                <p class="card-meta">
-                  {country
-                    ? pickLocalized(country.names, locale)
-                    : program.country_id} · {program.category_ids.join(" ").replaceAll("_", " ")}
-                </p>
-                <h3>
-                  <a href={L(`/programs/${program.id}`)}
-                    >{pickLocalized(program.official_names, locale)}</a
-                  >
-                </h3>
-                <p>{shorten(pickLocalized(program.summary_md, locale), 155)}</p>
-              </div>
-              <dl class="pathway-facts">
-                <div>
-                  <dt>{t("home.residence", locale)}</dt>
-                  <dd>
-                    {program.pr_pathway.available === true
-                      ? t("home.directPr", locale)
-                      : t("home.seePathway", locale)}
-                  </dd>
-                </div>
-                <div>
-                  <dt>{t("home.family", locale)}</dt>
-                  <dd>
-                    {program.family.spouse_or_partner_allowed === true
-                      ? t("home.yes", locale)
-                      : t("home.seeRules", locale)}
-                  </dd>
-                </div>
-                <div>
-                  <dt>{t("home.checked", locale)}</dt>
-                  <dd>{program.freshness.last_checked_at.slice(0, 10)}</dd>
-                </div>
-              </dl>
-              <a class="btn btn-ghost pathway-row-action" href={L(`/programs/${program.id}`)}
-                >{t("home.read", locale)}</a
+          categories.map((category, index) => {
+            const count = programs.filter(({ category_ids }) =>
+              category_ids.includes(category.id),
+            ).length;
+            const color = categoryColors[category.id] ?? categoryColors.other;
+            return (
+              <a
+                class="category-list-item"
+                href={L(`/categories/${category.id}`)}
+                style={`--item-color: ${color}; --item-delay: ${index * 30}ms`}
               >
-            </article>
-          ))
+                <span class="category-list-index" aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span class="category-list-body">
+                  <span class="category-list-title">{pickLocalized(category.names, locale)}</span>
+                  <span class="category-list-desc">
+                    {pickLocalized(category.description_md, locale)}
+                  </span>
+                </span>
+                <span class="category-list-meta">
+                  {count}{" "}
+                  {count === 1 ? t("home.pathwayCount", locale) : t("home.pathwaysCount", locale)}
+                </span>
+              </a>
+            );
+          })
         }
-      </div>
+      </section>
       <div class="section-actions">
-        <a class="btn" href={compareHref}>{t("home.compareBoth", locale)}</a>
+        <a class="btn btn-ghost" href={compareHref}>{t("home.compareBoth", locale)}</a>
         <a class="btn btn-ghost" href={L("/filter")}>{t("home.checkFitArrow", locale)}</a>
       </div>
     </section>
@@ -158,7 +184,7 @@ const L = (path: string) => withLocale(path, locale);
       </div>
       <div class="country-list">
         {
-          countryModels.map(({ country, programs: countryPrograms }) => (
+          sortedCountryModels.slice(0, visibleCount).map(({ country, programs: countryPrograms }) => (
             <article class="country-row" style={`--country-color: ${country.brand.color}`}>
               <div>
                 <p class="card-meta">
@@ -166,9 +192,9 @@ const L = (path: string) => withLocale(path, locale);
                   {country.iso2} · {country.region}
                 </p>
                 <h3>
-                  <a href={L(`/countries/${country.id}`)}
-                    >{pickLocalized(country.names, locale)}</a
-                  >
+                  <a href={L(`/countries/${country.id}`)}>
+                    {pickLocalized(country.names, locale)}
+                  </a>
                 </h3>
               </div>
               <p>{shorten(pickLocalized(country.summary_md, locale), 140)}</p>
@@ -179,17 +205,64 @@ const L = (path: string) => withLocale(path, locale);
                     ? t("home.pathwayCount", locale)
                     : t("home.pathwaysCount", locale)}
                 </span>
-                <span
-                  >{t("home.checkedLabel", locale)}{" "}
-                  {country.freshness.last_checked_at.slice(0, 10)}</span
-                >
+                <span>
+                  {t("home.checkedLabel", locale)}{" "}
+                  {country.freshness.last_checked_at.slice(0, 10)}
+                </span>
               </div>
-              <a class="btn btn-ghost" href={L(`/countries/${country.id}`)}
-                >{t("home.open", locale)}</a
-              >
+              <a class="btn btn-ghost" href={L(`/countries/${country.id}`)}>
+                {t("home.open", locale)}
+              </a>
             </article>
           ))
         }
+        {
+          sortedCountryModels.length > visibleCount && (
+            <div class="country-list-rest" data-hidden="true">
+              {sortedCountryModels.slice(visibleCount).map(({ country, programs: countryPrograms }) => (
+                <article class="country-row" style={`--country-color: ${country.brand.color}`}>
+                  <div>
+                    <p class="card-meta">
+                      <span class="country-swatch" aria-hidden="true"></span>
+                      {country.iso2} · {country.region}
+                    </p>
+                    <h3>
+                      <a href={L(`/countries/${country.id}`)}>
+                        {pickLocalized(country.names, locale)}
+                      </a>
+                    </h3>
+                  </div>
+                  <p>{shorten(pickLocalized(country.summary_md, locale), 140)}</p>
+                  <div class="country-row-meta">
+                    <span>
+                      {countryPrograms.length}{" "}
+                      {countryPrograms.length === 1
+                        ? t("home.pathwayCount", locale)
+                        : t("home.pathwaysCount", locale)}
+                    </span>
+                    <span>
+                      {t("home.checkedLabel", locale)}{" "}
+                      {country.freshness.last_checked_at.slice(0, 10)}
+                    </span>
+                  </div>
+                  <a class="btn btn-ghost" href={L(`/countries/${country.id}`)}>
+                    {t("home.open", locale)}
+                  </a>
+                </article>
+              ))}
+            </div>
+          )
+        }
+      </div>
+      <div class="section-actions">
+        {
+          sortedCountryModels.length > visibleCount && (
+            <button class="btn btn-primary" type="button" data-toggle="country-list-rest">
+              {t("home.viewMore", locale)}
+            </button>
+          )
+        }
+        <a class="btn btn-ghost" href={L("/countries")}>{t("home.allDestinations", locale)}</a>
       </div>
     </section>
 
@@ -202,4 +275,20 @@ const L = (path: string) => withLocale(path, locale);
       <a class="btn btn-ghost" href={L("/sources")}>{t("home.inspectSources", locale)}</a>
     </section>
   </main>
+
+  <script>
+    document.querySelectorAll("[data-toggle]").forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const target = btn.getAttribute("data-toggle");
+        if (!target) return;
+        const rest = document.querySelector(`.${target}`);
+        if (!rest) return;
+        const hidden = rest.getAttribute("data-hidden") === "true";
+        rest.setAttribute("data-hidden", hidden ? "false" : "true");
+        btn.textContent = hidden
+          ? btn.getAttribute("data-label-less") || btn.textContent
+          : btn.getAttribute("data-label-more") || btn.textContent;
+      });
+    });
+  </script>
 </Layout>

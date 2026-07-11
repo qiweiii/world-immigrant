@@ -35,6 +35,21 @@ const compareHref = withLocale("/compare", locale);
 const filterHref = withLocale("/filter", locale);
 const sourcesHref = withLocale("/sources", locale);
 const htmlLang = localeHtmlLang[locale];
+
+// Determine which nav section is active based on the current path
+const isActive = (href: string) => {
+  const cleanPath = pathname.replace(/\/$/, "") || "/";
+  const cleanHref = href.replace(/\/$/, "") || "/";
+  if (cleanHref === cleanPath) return true;
+  return cleanPath.startsWith(cleanHref + "/");
+};
+const navItems = [
+  { href: categoriesHref, key: "nav.categories" },
+  { href: countriesHref, key: "nav.countries" },
+  { href: compareHref, key: "nav.compare" },
+  { href: filterHref, key: "nav.filter" },
+  { href: sourcesHref, key: "nav.sources" },
+];
 ---
 
 <!doctype html>
@@ -109,13 +124,15 @@ const htmlLang = localeHtmlLang[locale];
           <span class="wordmark-mark" aria-hidden="true"></span>
         </a>
         <nav class="nav-links" aria-label={t("nav.primary", locale)}>
-          <a href={countriesHref}>{t("nav.countries", locale)}</a>
-          <a href={categoriesHref}>{t("nav.categories", locale)}</a>
-          <a href={compareHref}>{t("nav.compare", locale)}</a>
-          <a href={filterHref}>{t("nav.filter", locale)}</a>
-          <a href={sourcesHref}>{t("nav.sources", locale)}</a>
+          {
+            navItems.map((item) => (
+              <a href={item.href} aria-current={isActive(item.href) ? "page" : undefined}>
+                {t(item.key as any, locale)}
+              </a>
+            ))
+          }
         </nav>
-        <div class="appbar-actions">
+        <div class="appbar-actions" role="group" aria-label={t("nav.controls", locale)}>
           <LanguageSwitcher locale={locale} pathname={pathname} />
           <button class="theme-toggle" id="theme-toggle" aria-label={t("nav.theme", locale)}>
             <svg
@@ -179,11 +196,13 @@ const htmlLang = localeHtmlLang[locale];
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
           </summary>
           <nav aria-label={t("nav.mobile", locale)}>
-            <a href={countriesHref}>{t("nav.countries", locale)}</a>
-            <a href={categoriesHref}>{t("nav.categories", locale)}</a>
-            <a href={compareHref}>{t("nav.compare", locale)}</a>
-            <a href={filterHref}>{t("nav.filter", locale)}</a>
-            <a href={sourcesHref}>{t("nav.sources", locale)}</a>
+            {
+              navItems.map((item) => (
+                <a href={item.href} aria-current={isActive(item.href) ? "page" : undefined}>
+                  {t(item.key as any, locale)}
+                </a>
+              ))
+            }
             <div class="mobile-nav-divider"></div>
             <div class="mobile-locale">
               <LanguageSwitcher locale={locale} pathname={pathname} />
