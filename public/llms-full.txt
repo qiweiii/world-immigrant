@@ -336,6 +336,38 @@ Spain's UGE describes an international-teleworker route for third-country nation
 
 - spain-uge-international-teleworkers: International teleworkers — https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores
 
+## Residence authorisation for highly qualified professionals
+
+- ID: spain-highly-qualified-professionals
+- Country: spain
+- Status: active
+- Last updated: 2026-07-11T12:31:40.915Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+An employer-linked Spanish residence-and-work route for a foreign professional who will perform work requiring higher-education qualifications or, exceptionally, equivalent professional experience.
+
+### Official sources
+
+- spain-inclusion-highly-qualified-initial: Initial residence and work authorisation for highly qualified professionals — https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados
+- spain-inclusion-highly-qualified-renewal: Renewal of temporary residence and work authorisation for highly qualified professionals — https://www.inclusion.gob.es/web/migraciones/w/67.-renovacion-de-la-autorizacion-de-residencia-temporal-y-trabajo-de-profesionales-altamente-cualificados
+
+## Long-stay study authorisation
+
+- ID: spain-study-stay
+- Country: spain
+- Status: active
+- Last updated: 2026-07-11T12:31:40.915Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A temporary study-stay route for higher education, post-compulsory secondary education, student mobility, volunteering, and specified training activities lasting more than 90 days.
+
+### Official sources
+
+- spain-inclusion-study-stay: Long-stay authorisation for studies — https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios
+- spain-exteriores-study-visa: Study visa — https://www.exteriores.gob.es/Consulados/londres/en/ServiciosConsulares/Paginas/Consular/Visado-de-estudios.aspx
+
 ## Free-zone company and Green Residence — partner/investor
 
 - ID: uae-free-zone-investor
