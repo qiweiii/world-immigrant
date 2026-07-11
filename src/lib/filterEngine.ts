@@ -1,3 +1,4 @@
+import { defaultLocale, type Locale, tf, type UiKey } from "../i18n";
 import type { buildPublicData } from "./public-data";
 
 export type FilterResultStatus =
@@ -160,8 +161,44 @@ function exemptionState(program: FilterIndexProgram, profile: UserProfile) {
   return uncertain ? ("uncertain" as const) : ("not_met" as const);
 }
 
-export function evaluateProgram(program: FilterIndexProgram, profile: UserProfile): FilterResult {
+export function evaluateProgram(
+  program: FilterIndexProgram,
+  profile: UserProfile,
+  locale: Locale = defaultLocale,
+): FilterResult {
   const reasons: FilterReason[] = [];
+  const message = (key: UiKey, values: Record<string, string | number> = {}) =>
+    tf(key, locale, values);
+  const enumLabel = (value: string) => {
+    if (locale === "en") return value.replaceAll("_", " ");
+    return (
+      {
+        permanent_residence: "永久居留",
+        citizenship: "公民身份",
+        employer_sponsored: "雇主担保",
+        self_sponsored: "自助申请",
+        own_company: "自有公司",
+        points_invitation: "打分邀请",
+        investment: "投资",
+        remote_income: "境外远程收入",
+        talent_pass: "人才准证",
+        e_residency: "电子居民身份",
+        secondary: "中学",
+        vocational: "职业教育",
+        associate: "副学士",
+        bachelor: "学士",
+        master: "硕士",
+        doctorate: "博士",
+        active: "开放",
+        under_review: "待复核",
+        paused: "暂停",
+        closed: "关闭",
+        annual: "每年",
+        monthly: "每月",
+        weekly: "每周",
+      }[value] ?? value.replaceAll("_", " ")
+    );
+  };
   let blocking = false;
   let possible = false;
   let needsReview = false;
@@ -176,7 +213,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "program_status",
       severity: "warning",
-      message: `This program is currently marked ${program.status} and is not treated as an open pathway.`,
+      message: message("filter.reason.programStatus", { status: enumLabel(program.status) }),
     });
   }
 
@@ -189,10 +226,9 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "settlement_track",
       severity: "blocking",
-      message:
-        settlementTrack === "e_status_only"
-          ? "This status does not grant residence or permanent settlement rights."
-          : "This pathway is temporary and does not lead to permanent residence in the modeled rules.",
+      message: message(
+        settlementTrack === "e_status_only" ? "filter.reason.eStatus" : "filter.reason.temporary",
+      ),
     });
   }
 
@@ -200,7 +236,9 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "pathway_mechanism",
       severity: "positive",
-      message: `Entry mechanism: ${program.pathway_mechanism.replaceAll("_", " ")}.`,
+      message: message("filter.reason.mechanism", {
+        mechanism: enumLabel(program.pathway_mechanism),
+      }),
     });
   }
 
@@ -212,42 +250,40 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "goal",
         severity: "blocking",
-        message: `This program does not lead to the requested ${profile.goal.replaceAll("_", " ")} outcome.`,
+        message: message("filter.reason.goalNo", { goal: enumLabel(profile.goal) }),
       });
     } else if (pathwayValue === "unknown") {
       unknownPolicy = true;
       add({
         field: "goal",
         severity: "unknown",
-        message: "The pathway outcome is unknown in the current official evidence.",
+        message: message("filter.reason.goalUnknown"),
       });
     } else {
       add({
         field: "goal",
         severity: "positive",
-        message:
-          pathwayValue === "indirect"
-            ? "The requested outcome is available through a separate later pathway."
-            : "The program matches the requested pathway outcome.",
+        message: message(
+          pathwayValue === "indirect" ? "filter.reason.goalIndirect" : "filter.reason.goalMatch",
+        ),
       });
     }
   }
 
-  const jobOfferRequired =
-    program.criteria.job_offer_required ?? program.requires_job_offer;
+  const jobOfferRequired = program.criteria.job_offer_required ?? program.requires_job_offer;
   if (jobOfferRequired === true && profile.valid_job_offer === false) {
     blocking = true;
     add({
       field: "job_offer",
       severity: "blocking",
-      message: "This pathway requires a job offer that is not present in the profile.",
+      message: message("filter.reason.jobNo"),
     });
   } else if (jobOfferRequired === true && profile.valid_job_offer === undefined) {
     possible = true;
     add({
       field: "job_offer",
       severity: "warning",
-      message: "Add whether you have a qualifying job offer for this pathway.",
+      message: message("filter.reason.jobMissing"),
     });
   }
 
@@ -258,7 +294,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "income",
         severity: "unknown",
-        message: "An income minimum applies, but the structured threshold is incomplete.",
+        message: message("filter.reason.incomeUnknown"),
       });
     } else {
       // Profile income is not collected yet; keep the requirement visible.
@@ -266,7 +302,11 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "income",
         severity: "warning",
-        message: `This pathway models a minimum income of ${minIncome.amount} ${minIncome.currency}${minIncome.period ? ` (${minIncome.period})` : ""}. Add income details when available.`,
+        message: message("filter.reason.incomeMissing", {
+          amount: minIncome.amount,
+          currency: minIncome.currency,
+          period: minIncome.period ? ` (${enumLabel(minIncome.period)})` : "",
+        }),
       });
     }
   }
@@ -278,20 +318,23 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "work_experience",
         severity: "warning",
-        message: `Add skilled-work experience for the ${minWorkYears}-year minimum.`,
+        message: message("filter.reason.workMissing", { minimum: minWorkYears }),
       });
     } else if (profile.skilled_work_years < minWorkYears) {
       blocking = true;
       add({
         field: "work_experience",
         severity: "blocking",
-        message: `The profile has ${profile.skilled_work_years} qualifying years; the minimum is ${minWorkYears}.`,
+        message: message("filter.reason.workBelow", {
+          actual: profile.skilled_work_years,
+          minimum: minWorkYears,
+        }),
       });
     } else {
       add({
         field: "work_experience",
         severity: "positive",
-        message: "The stated skilled-work duration meets the program minimum.",
+        message: message("filter.reason.workMet"),
       });
     }
   }
@@ -301,7 +344,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "language_test",
       severity: "unknown",
-      message: "Whether an approved language test is required is unknown in the current record.",
+      message: message("filter.reason.languageUnknown"),
     });
   } else if (program.requires_language_test === true) {
     if (profile.has_approved_language_test === false) {
@@ -309,14 +352,14 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "language_test",
         severity: "blocking",
-        message: "An approved language test is required.",
+        message: message("filter.reason.languageRequired"),
       });
     } else if (profile.has_approved_language_test === undefined) {
       possible = true;
       add({
         field: "language_test",
         severity: "warning",
-        message: "Confirm whether the profile has a valid approved language test.",
+        message: message("filter.reason.languageConfirm"),
       });
     }
   }
@@ -328,20 +371,23 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "language_benchmark",
         severity: "warning",
-        message: `Add the language benchmark for the level ${minBenchmark} minimum.`,
+        message: message("filter.reason.benchmarkMissing", { minimum: minBenchmark }),
       });
     } else if (profile.language_benchmark < minBenchmark) {
       blocking = true;
       add({
         field: "language_benchmark",
         severity: "blocking",
-        message: `The stated benchmark is ${profile.language_benchmark}; the minimum is ${minBenchmark}.`,
+        message: message("filter.reason.benchmarkBelow", {
+          actual: profile.language_benchmark,
+          minimum: minBenchmark,
+        }),
       });
     } else {
       add({
         field: "language_benchmark",
         severity: "positive",
-        message: "The stated language benchmark meets the program minimum.",
+        message: message("filter.reason.benchmarkMet"),
       });
     }
   }
@@ -352,7 +398,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "education",
       severity: "unknown",
-      message: "The official education minimum is unknown in the current record.",
+      message: message("filter.reason.educationUnknown"),
     });
   } else if (minEducation) {
     if (!profile.education_level) {
@@ -360,7 +406,9 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "education",
         severity: "warning",
-        message: `Add education for the ${minEducation} minimum.`,
+        message: message("filter.reason.educationMissing", {
+          minimum: enumLabel(minEducation),
+        }),
       });
     } else if (
       educationRank[profile.education_level] < educationRank[minEducation as EducationLevel]
@@ -369,13 +417,15 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "education",
         severity: "blocking",
-        message: `The stated education is below the ${minEducation} minimum.`,
+        message: message("filter.reason.educationBelow", {
+          minimum: enumLabel(minEducation),
+        }),
       });
     } else {
       add({
         field: "education",
         severity: "positive",
-        message: "The stated education level meets the program minimum.",
+        message: message("filter.reason.educationMet"),
       });
     }
   }
@@ -387,7 +437,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "credential_assessment",
       severity: "unknown",
-      message: "Credential-assessment policy is unknown in the current record.",
+      message: message("filter.reason.assessmentUnknown"),
     });
   } else if (assessmentCondition === "foreign_education" && profile.foreign_education === true) {
     if (profile.has_eca === false) {
@@ -395,20 +445,20 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "credential_assessment",
         severity: "blocking",
-        message: "Foreign education requires a valid immigration-purpose credential assessment.",
+        message: message("filter.reason.foreignAssessmentRequired"),
       });
     } else if (profile.has_eca === undefined) {
       possible = true;
       add({
         field: "credential_assessment",
         severity: "warning",
-        message: "Confirm the foreign credential assessment.",
+        message: message("filter.reason.foreignAssessmentConfirm"),
       });
     } else {
       add({
         field: "credential_assessment",
         severity: "positive",
-        message: "The profile confirms a foreign credential assessment.",
+        message: message("filter.reason.foreignAssessmentMet"),
       });
     }
   } else if (assessmentRequired === true) {
@@ -417,20 +467,20 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "credential_assessment",
         severity: "blocking",
-        message: "A suitable skills or credential assessment is required.",
+        message: message("filter.reason.assessmentRequired"),
       });
     } else if (profile.has_eca === undefined) {
       possible = true;
       add({
         field: "credential_assessment",
         severity: "warning",
-        message: "Confirm the required skills or credential assessment.",
+        message: message("filter.reason.assessmentConfirm"),
       });
     } else {
       add({
         field: "credential_assessment",
         severity: "positive",
-        message: "The profile confirms the required skills or credential assessment.",
+        message: message("filter.reason.assessmentMet"),
       });
     }
   }
@@ -441,7 +491,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "program_selection_points",
       severity: "unknown",
-      message: "The official program-specific score threshold is unknown in the current record.",
+      message: message("filter.reason.pointsUnknown"),
     });
   } else if (typeof minProgramPoints === "number") {
     if (profile.program_selection_points === undefined) {
@@ -449,20 +499,23 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "program_selection_points",
         severity: "warning",
-        message: `Calculate the program-specific score; the minimum is ${minProgramPoints}.`,
+        message: message("filter.reason.pointsMissing", { minimum: minProgramPoints }),
       });
     } else if (profile.program_selection_points < minProgramPoints) {
       blocking = true;
       add({
         field: "program_selection_points",
         severity: "blocking",
-        message: `The stated program score is ${profile.program_selection_points}; the minimum is ${minProgramPoints}.`,
+        message: message("filter.reason.pointsBelow", {
+          actual: profile.program_selection_points,
+          minimum: minProgramPoints,
+        }),
       });
     } else {
       add({
         field: "program_selection_points",
         severity: "positive",
-        message: "The stated program-specific score meets the minimum.",
+        message: message("filter.reason.pointsMet"),
       });
     }
   }
@@ -472,22 +525,20 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "settlement_funds",
       severity: "positive",
-      message:
-        "No fixed settlement-fund table is published for this program in the current record.",
+      message: message("filter.reason.noFundsTable"),
     });
   } else if (fundsExemption === "met") {
     add({
       field: "settlement_funds",
       severity: "positive",
-      message:
-        "The profile states that all documented proof-of-funds exemption conditions are met.",
+      message: message("filter.reason.fundsExempt"),
     });
   } else if (profile.family_size === undefined || !profile.liquid_funds) {
     possible = true;
     add({
       field: "settlement_funds",
       severity: "warning",
-      message: "Add family size and liquid funds for the current settlement-fund table.",
+      message: message("filter.reason.fundsMissing"),
     });
   } else {
     const required = requiredFunds(program, profile.family_size);
@@ -496,14 +547,14 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "settlement_funds",
         severity: "unknown",
-        message: "The current data cannot calculate settlement funds for this family size.",
+        message: message("filter.reason.fundsUnknown"),
       });
     } else if (profile.liquid_funds.currency !== required.currency) {
       needsReview = true;
       add({
         field: "settlement_funds",
         severity: "warning",
-        message: `Convert the profile funds to ${required.currency} using a current rate before comparing.`,
+        message: message("filter.reason.fundsCurrency", { currency: required.currency }),
       });
     } else if (profile.liquid_funds.amount < required.amount) {
       if (fundsExemption === "uncertain") {
@@ -511,21 +562,31 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
         add({
           field: "settlement_funds",
           severity: "warning",
-          message: `Funds are below ${required.amount} ${required.currency}, but exemption details are incomplete.`,
+          message: message("filter.reason.fundsExemptionUnknown", {
+            amount: required.amount,
+            currency: required.currency,
+          }),
         });
       } else {
         blocking = true;
         add({
           field: "settlement_funds",
           severity: "blocking",
-          message: `The profile states ${profile.liquid_funds.amount} ${required.currency}; the current minimum is ${required.amount}.`,
+          message: message("filter.reason.fundsBelow", {
+            actual: profile.liquid_funds.amount,
+            currency: required.currency,
+            minimum: required.amount,
+          }),
         });
       }
     } else {
       add({
         field: "settlement_funds",
         severity: "positive",
-        message: `The stated funds meet the current ${required.amount} ${required.currency} minimum for this family size.`,
+        message: message("filter.reason.fundsMet", {
+          amount: required.amount,
+          currency: required.currency,
+        }),
       });
     }
   }
@@ -535,7 +596,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "content_review",
       severity: "warning",
-      message: "The underlying program record is flagged for human review.",
+      message: message("filter.reason.review"),
     });
   }
 
@@ -565,9 +626,10 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
 export function evaluatePrograms(
   programs: FilterIndexProgram[],
   profile: UserProfile,
+  locale: Locale = defaultLocale,
 ): FilterResult[] {
   return programs
-    .map((program) => evaluateProgram(program, profile))
+    .map((program) => evaluateProgram(program, profile, locale))
     .sort(
       (left, right) => right.score - left.score || left.program_id.localeCompare(right.program_id),
     );

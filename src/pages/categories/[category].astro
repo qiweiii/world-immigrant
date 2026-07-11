@@ -69,6 +69,7 @@ const categoryName = pickLocalized(model.category.names, locale);
           <div class="card-grid">
             {model.programs.map(({ program, country }) => (
               <VisaCard
+                locale={locale}
                 title={pickLocalized(program.official_names, locale)}
                 country={pickLocalized(country.names, locale)}
                 category={categoryName}

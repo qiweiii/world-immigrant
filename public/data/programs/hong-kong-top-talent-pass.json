@@ -5,7 +5,8 @@
     "skilled_worker"
   ],
   "official_names": {
-    "en": "Top Talent Pass Scheme"
+    "en": "Top Talent Pass Scheme",
+    "zh-Hans": "顶尖人才通行证计划"
   },
   "aliases": [
     "Hong Kong TTPS",
@@ -13,16 +14,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "Hong Kong Immigration Department publishes category, stay, dependant, extension, and right-of-abode information for TTPS. Eligibility and policy details remain under human review."
+    "en": "Hong Kong Immigration Department publishes category, stay, dependant, extension, and right-of-abode information for TTPS. Eligibility and policy details remain under human review.",
+    "zh-Hans": "香港入境事务处公布 TTPS 的类别、逗留、受养人、延期和居留权信息。资格和政策细节仍在人工审查中。"
   },
   "summary_md": {
-    "en": "A Hong Kong talent admission route with Category A for high annual income, Categories B and C for graduates of eligible universities, and no Hong Kong job offer required at initial application."
+    "en": "A Hong Kong talent admission route with Category A for high annual income, Categories B and C for graduates of eligible universities, and no Hong Kong job offer required at initial application.",
+    "zh-Hans": "香港人才录取途径，A类适用于高年收入，B类和C类适用于符合条件的大学毕业生，首次申请时无需提供香港工作机会。"
   },
   "good_for_md": {
-    "en": "High-income applicants and graduates of eligible universities who meet the relevant work-experience or recent-graduation category, and applicants who value flexible employment or business activity after admission."
+    "en": "High-income applicants and graduates of eligible universities who meet the relevant work-experience or recent-graduation category, and applicants who value flexible employment or business activity after admission.",
+    "zh-Hans": "符合相关工作经验或应届毕业生类别的高收入申请人和符合条件的大学毕业生，以及入学后重视灵活就业或商业活动的申请人。"
   },
   "not_good_for_md": {
-    "en": "Applicants who do not fit Category A, B, or C, or who need a guaranteed permanent outcome. Category C is quota-limited and extension requires evidence of Hong Kong employment with stable income or a Hong Kong business."
+    "en": "Applicants who do not fit Category A, B, or C, or who need a guaranteed permanent outcome. Category C is quota-limited and extension requires evidence of Hong Kong employment with stable income or a Hong Kong business.",
+    "zh-Hans": "不适合 A、B 或 C 类的申请人，或者需要有保证的永久结果的申请人。 C类有配额限制，延期需要提供在香港就业并有稳定收入或在香港经营业务的证据。"
   },
   "pathway_mechanism": "talent_pass",
   "eligibility": {
@@ -31,12 +36,14 @@
       "required_level": "unknown",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "Categories B and C require a bachelor's degree from an eligible university; Category A is income-based."
+        "en": "Categories B and C require a bachelor's degree from an eligible university; Category A is income-based.",
+        "zh-Hans": "B 类和 C 类要求拥有符合条件的大学的学士学位； A 类是基于收入的。"
       }
     },
     "work_experience": {
       "note_md": {
-        "en": "Category B requires at least three years of work experience over the preceding five years; Category C covers less than three years and has an annual quota."
+        "en": "Category B requires at least three years of work experience over the preceding five years; Category C covers less than three years and has an annual quota.",
+        "zh-Hans": "B类要求在过去五年中至少有三年的工作经验； C类期限不超过三年，每年有配额。"
       }
     },
     "language": [],
@@ -51,7 +58,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "Non-refundable TTPS application fee"
+          "en": "Non-refundable TTPS application fee",
+          "zh-Hans": "不可退还的 TTPS 申请费"
         },
         "amount": "unknown",
         "currency": "HKD",
@@ -69,7 +77,8 @@
         "applies_to": "primary",
         "calculation": "minimum_total",
         "note_md": {
-          "en": "Category A threshold; Categories B and C use academic and work-history criteria instead."
+          "en": "Category A threshold; Categories B and C use academic and work-history criteria instead.",
+          "zh-Hans": "A类门槛； B 类和 C 类使用学术和工作经历标准。"
         }
       }
     ],
@@ -81,12 +90,14 @@
     "income_location": "unknown",
     "proof_history_months": 12,
     "stability_requirement_md": {
-      "en": "Category A uses taxable employment or business income in the preceding year. Extension requires Hong Kong employment with stable income or an established/joined Hong Kong business."
+      "en": "Category A uses taxable employment or business income in the preceding year. Extension requires Hong Kong employment with stable income or an established/joined Hong Kong business.",
+      "zh-Hans": "A 类使用上一年的应税就业或营业收入。延期要求在香港就业并有稳定收入或已在香港成立/加盟企业。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "Entry applications normally take four weeks after all required documents and the relevant fee are received; extensions are normally processed in two to three weeks."
+      "en": "Entry applications normally take four weeks after all required documents and the relevant fee are received; extensions are normally processed in two to three weeks.",
+      "zh-Hans": "入学申请通常在收到所有所需文件和相关费用后需要四个星期；延期通常会在两到三周内得到处理。"
     },
     "initial_validity_months": "variable",
     "renewable": true,
@@ -107,20 +118,23 @@
     "spouse_work_allowed": true,
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The TTPS dependant policy covers a spouse or qualifying civil partner and unmarried dependent children under 18; dependants are not prohibited from employment or study."
+      "en": "The TTPS dependant policy covers a spouse or qualifying civil partner and unmarried dependent children under 18; dependants are not prohibited from employment or study.",
+      "zh-Hans": "TTPS 受养人政策涵盖配偶或合格的民事伴侣以及 18 岁以下的未婚受抚养子女；不禁止家属就业或学习。"
     }
   },
   "pr_pathway": {
     "available": true,
     "min_residence_years": 7,
     "summary_md": {
-      "en": "Persons admitted under TTPS who have ordinarily resided in Hong Kong for a continuous period of not less than seven years may apply for right of abode under the law."
+      "en": "Persons admitted under TTPS who have ordinarily resided in Hong Kong for a continuous period of not less than seven years may apply for right of abode under the law.",
+      "zh-Hans": "根据TTPS来港人士在香港通常居住连续满七年，可依法申请居留权。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained Immigration Department pages establish a right-of-abode route but do not establish a citizenship route."
+      "en": "The retained Immigration Department pages establish a right-of-abode route but do not establish a citizenship route.",
+      "zh-Hans": "保留的移民局页面建立了居留权途径，但没有建立公民身份途径。"
     }
   },
   "risk": {
@@ -129,7 +143,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "Core TTPS categories, stay periods, dependant rights, flexible work conditions, extension requirements, and right-of-abode timing are stated on current official Immigration Department pages; fee amounts and broader settlement/citizenship rules remain outside the fixture."
+      "en": "Core TTPS categories, stay periods, dependant rights, flexible work conditions, extension requirements, and right-of-abode timing are stated on current official Immigration Department pages; fee amounts and broader settlement/citizenship rules remain outside the fixture.",
+      "zh-Hans": "TTPS 的核心类别、停留期限、家属权利、灵活的工作条件、延期要求和居留权时间均在最新的移民局官方页面上说明；费用金额和更广泛的定居/公民身份规则仍然不在固定范围内。"
     }
   },
   "comparison": {

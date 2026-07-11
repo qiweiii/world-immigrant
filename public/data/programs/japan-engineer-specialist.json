@@ -5,7 +5,8 @@
     "skilled_worker"
   ],
   "official_names": {
-    "en": "Engineer / Specialist in Humanities / International Services"
+    "en": "Engineer / Specialist in Humanities / International Services",
+    "zh-Hans": "工程师/人文专家/国际服务"
   },
   "aliases": [
     "Japan Engineer/Specialist in Humanities/International Services",
@@ -13,16 +14,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "Japan's Immigration Services Agency publishes the status and application-document requirements in Japanese. This fixture is limited to the retained status page and remains under human review."
+    "en": "Japan's Immigration Services Agency publishes the status and application-document requirements in Japanese. This fixture is limited to the retained status page and remains under human review.",
+    "zh-Hans": "日本移民厅以日语发布身份和申请文件要求。本数据记录仅限于保留的状态页面，并仍在人工审核中。"
   },
   "summary_md": {
-    "en": "A Japan work residence status for technical, humanities, and certain foreign-culture-based activities performed under a contract with a public or private institution in Japan."
+    "en": "A Japan work residence status for technical, humanities, and certain foreign-culture-based activities performed under a contract with a public or private institution in Japan.",
+    "zh-Hans": "根据与日本公共或私人机构签订的合同进行的技术、人文和某些外国文化活动的日本工作居留身份。"
   },
   "good_for_md": {
-    "en": "Professionals whose proposed role fits the listed engineering, humanities, translation, design, language-teaching, marketing, or related activities and who have a qualifying contract with an institution in Japan."
+    "en": "Professionals whose proposed role fits the listed engineering, humanities, translation, design, language-teaching, marketing, or related activities and who have a qualifying contract with an institution in Japan.",
+    "zh-Hans": "拟议职位符合所列工程、人文、翻译、设计、语言教学、营销或相关活动，并且与日本机构签订了合格合同的专业人员。"
   },
   "not_good_for_md": {
-    "en": "Applicants seeking a general self-sponsored or remote-income status. The retained ISA page describes institution-based work and does not establish a universal salary, family, PR, or citizenship rule."
+    "en": "Applicants seeking a general self-sponsored or remote-income status. The retained ISA page describes institution-based work and does not establish a universal salary, family, PR, or citizenship rule.",
+    "zh-Hans": "寻求一般自费或远程收入状态的申请人。保留的 ISA 页面描述了基于机构的工作，并未建立普遍的工资、家庭、PR 或公民身份规则。"
   },
   "pathway_mechanism": "employer_sponsored",
   "eligibility": {
@@ -31,12 +36,14 @@
       "required_level": "unknown",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "The ISA application materials distinguish education and relevant-work-experience evidence by activity and applicant category; this fixture does not generalize one universal threshold."
+        "en": "The ISA application materials distinguish education and relevant-work-experience evidence by activity and applicant category; this fixture does not generalize one universal threshold.",
+        "zh-Hans": "ISA 申请材料按活动和申请人类别区分教育和相关工作经验证据；本数据记录并没有概括出一个通用阈值。"
       }
     },
     "work_experience": {
       "note_md": {
-        "en": "Relevant education or work-history evidence is required in the application materials, with conditions varying by the activity and applicant."
+        "en": "Relevant education or work-history evidence is required in the application materials, with conditions varying by the activity and applicant.",
+        "zh-Hans": "申请材料中需要提供相关的教育或工作经历证据，条件因活动和申请人而异。"
       }
     },
     "language": [],
@@ -58,12 +65,14 @@
     "income_location": "inside_destination",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The status is based on paid activity under a contract with an institution in Japan; the retained page does not state a universal salary minimum."
+      "en": "The status is based on paid activity under a contract with an institution in Japan; the retained page does not state a universal salary minimum.",
+      "zh-Hans": "该状态基于与日本机构签订的合同下的付费活动；保留的页面没有规定普遍最低工资。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The ISA page provides application procedures and document categories but no single processing-time value in the retained text."
+      "en": "The ISA page provides application procedures and document categories but no single processing-time value in the retained text.",
+      "zh-Hans": "ISA 页面提供了申请程序和文档类别，但保留文本中没有单个处理时间值。"
     },
     "initial_validity_months": "variable",
     "renewable": true,
@@ -86,13 +95,15 @@
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained ISA status page does not establish a permanent-residence pathway."
+      "en": "The retained ISA status page does not establish a permanent-residence pathway.",
+      "zh-Hans": "保留的 ISA 状态页面不会建立永久居留途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained ISA status page does not establish a citizenship pathway."
+      "en": "The retained ISA status page does not establish a citizenship pathway.",
+      "zh-Hans": "保留的 ISA 状态页面并未建立公民身份途径。"
     }
   },
   "risk": {
@@ -101,7 +112,8 @@
     "extraction_confidence_score": 4,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The official ISA page clearly states covered activities, institution-based contracts, status periods, and application materials, but much of the evidence is Japanese and role/category-specific."
+      "en": "The official ISA page clearly states covered activities, institution-based contracts, status periods, and application materials, but much of the evidence is Japanese and role/category-specific.",
+      "zh-Hans": "ISA 官方页面清楚地说明了涵盖的活动、基于机构的合同、状态期限和申请材料，但大部分证据都是日语的且针对特定角色/类别。"
     }
   },
   "comparison": {

@@ -5,7 +5,8 @@
     "study_to_pr"
   ],
   "official_names": {
-    "en": "Residence Permit for an Orientation Year"
+    "en": "Residence Permit for an Orientation Year",
+    "zh-Hans": "求职年居留许可"
   },
   "aliases": [
     "Netherlands Orientation Year",
@@ -13,16 +14,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "This is a one-year residence permit for highly educated persons seeking employment after qualifying study, doctorate, research, or related education."
+    "en": "This is a one-year residence permit for highly educated persons seeking employment after qualifying study, doctorate, research, or related education.",
+    "zh-Hans": "这是为在合格学习、博士学位、研究或相关教育后寻求就业的受过高等教育的人提供的一年期居留许可。"
   },
   "summary_md": {
-    "en": "A one-year Netherlands residence permit for qualifying graduates, PhD holders, researchers, and other highly educated applicants to seek work after recent study or research."
+    "en": "A one-year Netherlands residence permit for qualifying graduates, PhD holders, researchers, and other highly educated applicants to seek work after recent study or research.",
+    "zh-Hans": "为符合资格的毕业生、博士持有者、研究人员和其他受过高等教育的申请人在最近的学习或研究后寻找工作提供一年期的荷兰居留许可。"
   },
   "good_for_md": {
-    "en": "Recent graduates or researchers who completed a qualifying programme or research route within the previous three years and want time to find Dutch employment."
+    "en": "Recent graduates or researchers who completed a qualifying programme or research route within the previous three years and want time to find Dutch employment.",
+    "zh-Hans": "在过去三年内完成资格课程或研究途径并希望有时间在荷兰找到工作的应届毕业生或研究人员。"
   },
   "not_good_for_md": {
-    "en": "Applicants outside the three-year qualification window or without one of the listed Dutch, Erasmus Mundus, research, policy, or designated foreign-education grounds."
+    "en": "Applicants outside the three-year qualification window or without one of the listed Dutch, Erasmus Mundus, research, policy, or designated foreign-education grounds.",
+    "zh-Hans": "申请人超出三年资格期限或没有列出的荷兰、伊拉斯谟世界、研究、政策或指定的外国教育理由之一。"
   },
   "pathway_mechanism": "other",
   "eligibility": {
@@ -31,7 +36,8 @@
       "required_level": "bachelor",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "The retained January 2026 IND form lists accredited Dutch bachelor’s/master’s study, qualifying post-master study or PhD, research permits, Erasmus Mundus, certain policy programmes, and qualifying designated foreign institutions completed within the previous three years."
+        "en": "The retained January 2026 IND form lists accredited Dutch bachelor’s/master’s study, qualifying post-master study or PhD, research permits, Erasmus Mundus, certain policy programmes, and qualifying designated foreign institutions completed within the previous three years.",
+        "zh-Hans": "保留的 2026 年 1 月 IND 表格列出了经过认可的荷兰学士/硕士学习、合格的硕士后学习或博士学位、研究许可、伊拉斯谟世界计划、某些政策项目以及过去三年内完成的合格指定外国机构。"
       }
     },
     "work_experience": {},
@@ -39,7 +45,8 @@
       {
         "language": "English",
         "note_md": {
-          "en": "For the designated foreign-institution route, the form lists IELTS 6.0 or a comparable English-language condition, with alternatives for English- or Dutch-taught study."
+          "en": "For the designated foreign-institution route, the form lists IELTS 6.0 or a comparable English-language condition, with alternatives for English- or Dutch-taught study.",
+          "zh-Hans": "对于指定的外国院校途径，表格列出了雅思 6.0 或类似的英语语言条件，以及英语或荷兰语授课学习的替代方案。"
         }
       }
     ],
@@ -61,12 +68,14 @@
     "income_location": "not_applicable",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The retained form is an admission and residence application based on qualifying education or research, not a personal-income route."
+      "en": "The retained form is an admission and residence application based on qualifying education or research, not a personal-income route.",
+      "zh-Hans": "保留的表格是基于合格教育或研究的入学和居住申请，而不是个人收入途径。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The permit is an orientation year: one year to look for work in the Netherlands. The retained form does not establish a processing duration."
+      "en": "The permit is an orientation year: one year to look for work in the Netherlands. The retained form does not establish a processing duration.",
+      "zh-Hans": "该许可证是一个求职年：在荷兰寻找工作的一年。保留的表格不规定处理期限。"
     },
     "initial_validity_months": 12,
     "renewable": false,
@@ -86,19 +95,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The retained orientation-year form does not establish dependant conditions."
+      "en": "The retained orientation-year form does not establish dependant conditions.",
+      "zh-Hans": "保留的求职年表格不设定附属条件。"
     }
   },
   "pr_pathway": {
     "available": "indirect",
     "summary_md": {
-      "en": "The permit provides one year to find work; the IND highly skilled migrant guide identifies the orientation year as one route to the reduced salary criterion for a later highly skilled migrant application."
+      "en": "The permit provides one year to find work; the IND highly skilled migrant guide identifies the orientation year as one route to the reduced salary criterion for a later highly skilled migrant application.",
+      "zh-Hans": "该许可证提供一年的找工作时间； IND 高技术移民指南将求职年确定为以后高技术移民申请降低工资标准的一种途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained orientation-year form does not establish citizenship eligibility."
+      "en": "The retained orientation-year form does not establish citizenship eligibility.",
+      "zh-Hans": "保留的求职年表格并不确定公民资格。"
     }
   },
   "risk": {
@@ -107,7 +119,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The current official IND application form directly lists the qualification routes and three-year window. Work-right and later-route details are kept conditional where the retained form does not state them fully."
+      "en": "The current official IND application form directly lists the qualification routes and three-year window. Work-right and later-route details are kept conditional where the retained form does not state them fully.",
+      "zh-Hans": "目前官方的IND申请表直接列出了资格途径和三年窗口。如果保留的表格没有完整说明，工作权和后续途径的详细信息将受到条件限制。"
     }
   },
   "comparison": {

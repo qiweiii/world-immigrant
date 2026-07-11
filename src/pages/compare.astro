@@ -17,6 +17,6 @@ const { locale = defaultLocale } = Astro.props as Props;
       <h1>{t("compare.h1", locale)}</h1>
       <p>{t("compare.lede", locale)}</p>
     </section>
-    <CompareBuilder />
+    <CompareBuilder locale={locale} />
   </main>
 </Layout>

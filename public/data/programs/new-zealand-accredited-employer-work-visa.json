@@ -5,23 +5,28 @@
     "skilled_worker"
   ],
   "official_names": {
-    "en": "Accredited Employer Work Visa (AEWV)"
+    "en": "Accredited Employer Work Visa (AEWV)",
+    "zh-Hans": "认可雇主工作签证（AEWV）"
   },
   "aliases": [
     "New Zealand AEWV"
   ],
   "status": "active",
   "status_note_md": {
-    "en": "AEWV is an employer-linked temporary work visa. The Immigration New Zealand page states that it can lead to a resident visa depending on the job, but does not make residence automatic."
+    "en": "AEWV is an employer-linked temporary work visa. The Immigration New Zealand page states that it can lead to a resident visa depending on the job, but does not make residence automatic.",
+    "zh-Hans": "AEWV 是与雇主相关的临时工作签证。新西兰移民局页面指出，它可以根据工作获得居民签证，但不会自动获得居留权。"
   },
   "summary_md": {
-    "en": "A New Zealand work visa for a full-time job offer from an accredited employer, with job-specific conditions, up to five years for most jobs, and possible residence options depending on the occupation."
+    "en": "A New Zealand work visa for a full-time job offer from an accredited employer, with job-specific conditions, up to five years for most jobs, and possible residence options depending on the occupation.",
+    "zh-Hans": "新西兰工作签证，由认可的雇主提供全职工作机会，具有特定于工作的条件，大多数工作最长可达五年，并根据职业提供可能的居留选择。"
   },
   "good_for_md": {
-    "en": "Skilled workers with a genuine full-time offer from an accredited New Zealand employer who can show at least two years of relevant experience or an accepted qualification."
+    "en": "Skilled workers with a genuine full-time offer from an accredited New Zealand employer who can show at least two years of relevant experience or an accepted qualification.",
+    "zh-Hans": "拥有新西兰认可雇主真正全职工作邀请的技术工人，可以证明至少两年相关经验或认可的资格。"
   },
   "not_good_for_md": {
-    "en": "Applicants without an accredited-employer job offer, applicants seeking open work rights unrelated to the offered job, or applicants treating AEWV alone as automatic residence."
+    "en": "Applicants without an accredited-employer job offer, applicants seeking open work rights unrelated to the offered job, or applicants treating AEWV alone as automatic residence.",
+    "zh-Hans": "没有获得认可雇主工作邀请的申请人、寻求与所提供工作无关的开放式工作权利的申请人或仅将 AEWV 视为自动居留的申请人。"
   },
   "pathway_mechanism": "employer_sponsored",
   "eligibility": {
@@ -30,13 +35,15 @@
       "required_level": "unknown",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "The skill requirement can be met through at least two years of relevant job experience or a qualification at New Zealand Qualification Framework level 4 or higher."
+        "en": "The skill requirement can be met through at least two years of relevant job experience or a qualification at New Zealand Qualification Framework level 4 or higher.",
+        "zh-Hans": "通过至少两年的相关工作经验或新西兰资格框架 4 级或更高级别的资格可以满足技能要求。"
       }
     },
     "work_experience": {
       "min_years": 2,
       "note_md": {
-        "en": "Relevant experience or the alternative qualification route must be in the same field or industry as the offered job, subject to the visa rules."
+        "en": "Relevant experience or the alternative qualification route must be in the same field or industry as the offered job, subject to the visa rules.",
+        "zh-Hans": "根据签证规则，相关经验或替代资格途径必须与所提供的工作属于同一领域或行业。"
       }
     },
     "language": [],
@@ -51,7 +58,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "AEWV application fee from"
+          "en": "AEWV application fee from",
+          "zh-Hans": "AEWV 申请费从"
         },
         "amount": 1540,
         "currency": "NZD",
@@ -67,12 +75,14 @@
     "income_location": "inside_destination",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The retained AEWV page ties eligibility to the offered job and employment agreement; it does not establish one universal personal-income threshold in this fixture."
+      "en": "The retained AEWV page ties eligibility to the offered job and employment agreement; it does not establish one universal personal-income threshold in this fixture.",
+      "zh-Hans": "保留的 AEWV 页面将资格与所提供的工作和就业协议联系起来；它没有在此规定中设定普遍的个人收入门槛。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "Immigration New Zealand lists 80% processing within seven weeks. The visa can be up to five years based on the job; most jobs have a five-year maximum continuous stay and ANZSCO skill-level 4 or 5 jobs generally have three years."
+      "en": "Immigration New Zealand lists 80% processing within seven weeks. The visa can be up to five years based on the job; most jobs have a five-year maximum continuous stay and ANZSCO skill-level 4 or 5 jobs generally have three years.",
+      "zh-Hans": "新西兰移民局列出 80% 的处理时间为七周内。根据工作情况，签证最长可达五年；大多数工作的最长连续停留期限为五年，ANZSCO 技能级别 4 或 5 工作的最长连续停留期限为三年。"
     },
     "initial_validity_months": "unknown",
     "renewable": true,
@@ -92,19 +102,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": false,
     "note_md": {
-      "en": "Partner and dependent-child visas may be supported, but the exact visa type depends on earnings, occupation skill level, NOL/ANZSCO status, Green List or approved transport/care-workforce status, and other conditions."
+      "en": "Partner and dependent-child visas may be supported, but the exact visa type depends on earnings, occupation skill level, NOL/ANZSCO status, Green List or approved transport/care-workforce status, and other conditions.",
+      "zh-Hans": "可能支持伴侣和受抚养子女签证，但确切的签证类型取决于收入、职业技能水平、NOL/ANZSCO 状态、绿名单或批准的交通/护理劳动力状态以及其他条件。"
     }
   },
   "pr_pathway": {
     "available": "indirect",
     "summary_md": {
-      "en": "The AEWV page says the visa can lead to a resident visa depending on the job and points applicants to New Zealand skilled-residence pathways."
+      "en": "The AEWV page says the visa can lead to a resident visa depending on the job and points applicants to New Zealand skilled-residence pathways.",
+      "zh-Hans": "AEWV 页面称，该签证可以根据工作获得居民签证，并为申请人提供新西兰技术居留途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "AEWV alone does not establish citizenship eligibility."
+      "en": "AEWV alone does not establish citizenship eligibility.",
+      "zh-Hans": "AEWV 本身并不能确定公民资格。"
     }
   },
   "risk": {
@@ -113,7 +126,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "Direct Immigration New Zealand sources establish the employer link, skill evidence, duration, processing time, family conditions, and indirect residence option. Job-specific wage, occupation, and family outcomes remain conditional."
+      "en": "Direct Immigration New Zealand sources establish the employer link, skill evidence, duration, processing time, family conditions, and indirect residence option. Job-specific wage, occupation, and family outcomes remain conditional.",
+      "zh-Hans": "新西兰直接移民来源确定了雇主联系、技能证据、持续时间、处理时间、家庭条件和间接居留选择。特定工作的工资、职业和家庭成果仍然是有条件的。"
     }
   },
   "comparison": {

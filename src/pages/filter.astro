@@ -17,6 +17,6 @@ const { locale = defaultLocale } = Astro.props as Props;
       <h1>{t("filter.h1", locale)}</h1>
       <p>{t("filter.lede", locale)}</p>
     </section>
-    <EligibilityFilter />
+    <EligibilityFilter locale={locale} />
   </main>
 </Layout>

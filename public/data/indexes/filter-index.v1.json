@@ -8,7 +8,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Skilled Independent visa (subclass 189) — Points-tested stream"
+        "en": "Skilled Independent visa (subclass 189) — Points-tested stream",
+        "zh-Hans": "独立技术移民签证（189 子类）- 积分测试类别"
       },
       "status": "active",
       "criteria": {
@@ -221,7 +222,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Federal Skilled Worker Program"
+        "en": "Federal Skilled Worker Program",
+        "zh-Hans": "联邦技术工人计划"
       },
       "status": "active",
       "criteria": {
@@ -298,7 +300,8 @@
               "valid_job_offer"
             ],
             "note_md": {
-              "en": "Proof of funds is not required when both conditions are met."
+              "en": "Proof of funds is not required when both conditions are met.",
+              "zh-Hans": "当满足这两个条件时，不需要资金证明。"
             }
           }
         ],
@@ -537,7 +540,8 @@
         "digital_nomad"
       ],
       "official_names": {
-        "en": "Temporary Stay of Digital Nomads"
+        "en": "Temporary Stay of Digital Nomads",
+        "zh-Hans": "数字游牧民的暂时停留"
       },
       "status": "active",
       "criteria": {
@@ -731,7 +735,8 @@
         "digital_nomad"
       ],
       "official_names": {
-        "en": "Digital Nomad Visa"
+        "en": "Digital Nomad Visa",
+        "zh-Hans": "数字游牧签证"
       },
       "status": "active",
       "criteria": {
@@ -924,7 +929,8 @@
         "startup_entrepreneur"
       ],
       "official_names": {
-        "en": "e-Residency"
+        "en": "e-Residency",
+        "zh-Hans": "电子居住"
       },
       "status": "active",
       "criteria": {
@@ -1107,7 +1113,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Top Talent Pass Scheme"
+        "en": "Top Talent Pass Scheme",
+        "zh-Hans": "顶尖人才通行证计划"
       },
       "status": "active",
       "criteria": {
@@ -1126,7 +1133,8 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "Category A threshold; Categories B and C use academic and work-history criteria instead."
+              "en": "Category A threshold; Categories B and C use academic and work-history criteria instead.",
+              "zh-Hans": "A类门槛； B 类和 C 类使用学术和工作经历标准。"
             }
           }
         ],
@@ -1304,7 +1312,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Engineer / Specialist in Humanities / International Services"
+        "en": "Engineer / Specialist in Humanities / International Services",
+        "zh-Hans": "工程师/人文专家/国际服务"
       },
       "status": "active",
       "criteria": {
@@ -1487,7 +1496,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Residence Permit for Highly Skilled Migrants"
+        "en": "Residence Permit for Highly Skilled Migrants",
+        "zh-Hans": "高技术移民居留许可"
       },
       "status": "active",
       "criteria": {
@@ -1670,7 +1680,8 @@
         "study_to_pr"
       ],
       "official_names": {
-        "en": "Residence Permit for an Orientation Year"
+        "en": "Residence Permit for an Orientation Year",
+        "zh-Hans": "求职年居留许可"
       },
       "status": "active",
       "criteria": {
@@ -1853,7 +1864,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Accredited Employer Work Visa (AEWV)"
+        "en": "Accredited Employer Work Visa (AEWV)",
+        "zh-Hans": "认可雇主工作签证（AEWV）"
       },
       "status": "active",
       "criteria": {
@@ -2037,7 +2049,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Skilled Migrant Category Resident Visa"
+        "en": "Skilled Migrant Category Resident Visa",
+        "zh-Hans": "技术移民类别居民签证"
       },
       "status": "active",
       "criteria": {
@@ -2221,7 +2234,8 @@
         "digital_nomad"
       ],
       "official_names": {
-        "en": "Temporary stay visa and residence permit for digital nomads"
+        "en": "Temporary stay visa and residence permit for digital nomads",
+        "zh-Hans": "数字游牧民的临时居留签证和居留许可"
       },
       "status": "active",
       "criteria": {
@@ -2240,7 +2254,8 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "The official article states an average monthly income over the last three months of at least four Portuguese minimum wages; the current monetary amount is not fixed in this record."
+              "en": "The official article states an average monthly income over the last three months of at least four Portuguese minimum wages; the current monetary amount is not fixed in this record.",
+              "zh-Hans": "官方文章指出，过去三个月的平均月收入至少达到葡萄牙最低工资的四倍；当前的货币金额在此记录中并未固定。"
             }
           }
         ],
@@ -2418,7 +2433,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Employment Pass"
+        "en": "Employment Pass",
+        "zh-Hans": "就业准证"
       },
       "status": "active",
       "criteria": {
@@ -2438,7 +2454,8 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "Current minimum for all sectors except financial services; the threshold increases progressively with age and financial services has a higher threshold."
+              "en": "Current minimum for all sectors except financial services; the threshold increases progressively with age and financial services has a higher threshold.",
+              "zh-Hans": "目前除金融服务业外所有行业的最低标准；随着年龄的增长，门槛逐渐提高，金融服务的门槛也更高。"
             }
           }
         ],
@@ -2614,7 +2631,8 @@
         "startup_entrepreneur"
       ],
       "official_names": {
-        "en": "EntrePass"
+        "en": "EntrePass",
+        "zh-Hans": "创业通行证"
       },
       "status": "active",
       "criteria": {
@@ -2808,7 +2826,8 @@
         "digital_nomad"
       ],
       "official_names": {
-        "en": "International teleworker residence authorisation"
+        "en": "International teleworker residence authorisation",
+        "zh-Hans": "国际远程工作者居留许可"
       },
       "status": "active",
       "criteria": {
@@ -2994,7 +3013,8 @@
         "investor"
       ],
       "official_names": {
-        "en": "Free-zone company and Green Residence — partner/investor"
+        "en": "Free-zone company and Green Residence — partner/investor",
+        "zh-Hans": "自由区公司和绿色居留——合作伙伴/投资者"
       },
       "status": "active",
       "criteria": {
@@ -3179,7 +3199,8 @@
         "startup_entrepreneur"
       ],
       "official_names": {
-        "en": "Golden Residence — entrepreneur"
+        "en": "Golden Residence — entrepreneur",
+        "zh-Hans": "黄金居留——企业家"
       },
       "status": "active",
       "criteria": {
@@ -3365,7 +3386,8 @@
         "investor"
       ],
       "official_names": {
-        "en": "Golden Residence — real estate investor"
+        "en": "Golden Residence — real estate investor",
+        "zh-Hans": "Golden Residence — 房地产投资者"
       },
       "status": "active",
       "criteria": {
@@ -3549,7 +3571,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Golden Residence — talented geniuses"
+        "en": "Golden Residence — talented geniuses",
+        "zh-Hans": "黄金居留——杰出人才"
       },
       "status": "active",
       "criteria": {
@@ -3732,7 +3755,8 @@
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Green Residence — self-employment"
+        "en": "Green Residence — self-employment",
+        "zh-Hans": "绿色居留——自营职业"
       },
       "status": "active",
       "criteria": {
@@ -3751,7 +3775,8 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "Self-employment income over the two preceding years; the page also permits proof of financial solvency throughout the stay as an alternative."
+              "en": "Self-employment income over the two preceding years; the page also permits proof of financial solvency throughout the stay as an alternative.",
+              "zh-Hans": "前两年的自营职业收入；作为替代方案，该页面还允许在整个住宿期间提供财务偿付能力证明。"
             }
           }
         ],
@@ -3927,7 +3952,8 @@
         "digital_nomad"
       ],
       "official_names": {
-        "en": "Virtual Work Residence"
+        "en": "Virtual Work Residence",
+        "zh-Hans": "虚拟工作居留"
       },
       "status": "active",
       "criteria": {

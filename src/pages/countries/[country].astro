@@ -3,7 +3,7 @@ import Layout from "../../components/Layout.astro";
 import VisaCard from "../../components/VisaCard.astro";
 import { loadCanonicalData } from "../../lib/data";
 import { buildCountryPageModels, type CountryPageModel } from "../../lib/site-model";
-import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../../i18n";
+import { defaultLocale, pickLocalized, regionLabel, t, withLocale, type Locale } from "../../i18n";
 
 interface Props {
   model: CountryPageModel;
@@ -37,7 +37,7 @@ const countryName = pickLocalized(country.names, locale);
     <section class="hero country-hero" style={`--country-color: ${country.brand.color}`}>
       <p class="eyebrow">
         <span class="country-swatch" aria-hidden="true"></span>
-        {country.iso2} · {country.region}
+        {country.iso2} · {regionLabel(country.region, locale)}
       </p>
       <h1>{countryName}</h1>
       <p>{pickLocalized(country.summary_md, locale)}</p>
@@ -58,9 +58,14 @@ const countryName = pickLocalized(country.names, locale);
         {
           programs.map((program) => (
             <VisaCard
+              locale={locale}
               title={pickLocalized(program.official_names, locale)}
               country={countryName}
-              category={program.category_ids.join(", ")}
+              category={program.category_ids
+                .map((id) => categories.find((category) => category.id === id))
+                .filter((category) => category !== undefined)
+                .map((category) => pickLocalized(category.names, locale))
+                .join(", ")}
               summary={pickLocalized(program.summary_md, locale)}
               href={L(`/programs/${program.id}`)}
               status={program.status}

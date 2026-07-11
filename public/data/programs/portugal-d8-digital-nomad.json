@@ -5,7 +5,8 @@
     "digital_nomad"
   ],
   "official_names": {
-    "en": "Temporary stay visa and residence permit for digital nomads"
+    "en": "Temporary stay visa and residence permit for digital nomads",
+    "zh-Hans": "数字游牧民的临时居留签证和居留许可"
   },
   "aliases": [
     "Portugal D8",
@@ -14,16 +15,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "The retained official government article describes the route and documentary conditions but is dated 2022. Current amounts, procedural details, and residence outcomes require a fresh check."
+    "en": "The retained official government article describes the route and documentary conditions but is dated 2022. Current amounts, procedural details, and residence outcomes require a fresh check.",
+    "zh-Hans": "保留的官方政府文章描述了途径和文件条件，但日期为 2022 年。当前金额、程序细节和居留结果需要重新检查。"
   },
   "summary_md": {
-    "en": "Portugal's official government portal describes a temporary-stay visa and residence-permit route for digital nomads, with separate documentary conditions for employees and independent workers."
+    "en": "Portugal's official government portal describes a temporary-stay visa and residence-permit route for digital nomads, with separate documentary conditions for employees and independent workers.",
+    "zh-Hans": "葡萄牙官方政府门户网站描述了数字游牧民的临时居留签证和居留许可途径，并为雇员和独立工人提供了单独的文件条件。"
   },
   "good_for_md": {
-    "en": "Remote employees or independent workers who can document tax residence, the required recent income level, and an employment or service relationship."
+    "en": "Remote employees or independent workers who can document tax residence, the required recent income level, and an employment or service relationship.",
+    "zh-Hans": "可以记录税务居住地、所需的近期收入水平以及雇佣或服务关系的远程员工或独立工人。"
   },
   "not_good_for_md": {
-    "en": "Applicants who cannot document the stated income history, tax residence, or employment/service relationship. Current fees, duration, family rights, and settlement outcomes are not established by the retained source."
+    "en": "Applicants who cannot document the stated income history, tax residence, or employment/service relationship. Current fees, duration, family rights, and settlement outcomes are not established by the retained source.",
+    "zh-Hans": "无法记录所述收入历史、税务居住地或雇佣/服务关系的申请人。目前的费用、期限、家庭权利和和解结果不是由保留的来源确定的。"
   },
   "pathway_mechanism": "remote_income",
   "eligibility": {
@@ -54,7 +59,8 @@
         "applies_to": "primary",
         "calculation": "minimum_total",
         "note_md": {
-          "en": "The official article states an average monthly income over the last three months of at least four Portuguese minimum wages; the current monetary amount is not fixed in this record."
+          "en": "The official article states an average monthly income over the last three months of at least four Portuguese minimum wages; the current monetary amount is not fixed in this record.",
+          "zh-Hans": "官方文章指出，过去三个月的平均月收入至少达到葡萄牙最低工资的四倍；当前的货币金额在此记录中并未固定。"
         }
       }
     ],
@@ -66,7 +72,8 @@
     "income_location": "unknown",
     "proof_history_months": 3,
     "stability_requirement_md": {
-      "en": "The government article requires average monthly income over the last three months and different employment or independent-activity documents."
+      "en": "The government article requires average monthly income over the last three months and different employment or independent-activity documents.",
+      "zh-Hans": "政府文章要求过去三个月的平均月收入以及不同的就业或独立活动文件。"
     }
   },
   "timeline": {
@@ -91,13 +98,15 @@
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained government article does not establish a permanent-residence outcome for this route."
+      "en": "The retained government article does not establish a permanent-residence outcome for this route.",
+      "zh-Hans": "保留的政府条款并未确定这条途径的永久居留结果。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained government article does not establish a citizenship outcome for this route."
+      "en": "The retained government article does not establish a citizenship outcome for this route.",
+      "zh-Hans": "保留的政府文章并未确定这条途径的公民身份结果。"
     }
   },
   "risk": {
@@ -106,7 +115,8 @@
     "extraction_confidence_score": 4,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The source is an official government article and the remote-work documentary conditions are explicit, but it was published in 2022 and does not cover every current program field."
+      "en": "The source is an official government article and the remote-work documentary conditions are explicit, but it was published in 2022 and does not cover every current program field.",
+      "zh-Hans": "来源是政府官方文章，远程工作文件条件很明确，但它发表于 2022 年，并未涵盖当前的每个项目领域。"
     }
   },
   "comparison": {

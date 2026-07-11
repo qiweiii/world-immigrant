@@ -5,7 +5,8 @@
     "digital_nomad"
   ],
   "official_names": {
-    "en": "Virtual Work Residence"
+    "en": "Virtual Work Residence",
+    "zh-Hans": "虚拟工作居留"
   },
   "aliases": [
     "UAE Virtual Work Residence",
@@ -14,16 +15,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "Official UAE sources describe a remote-work residence route. The source record remains under human review because service details and fees can change."
+    "en": "Official UAE sources describe a remote-work residence route. The source record remains under human review because service details and fees can change.",
+    "zh-Hans": "阿联酋官方消息人士描述了一条远程工作居住途径。由于服务详细信息和费用可能会发生变化，源记录仍在接受人工审核。"
   },
   "summary_md": {
-    "en": "A UAE remote-work residence route for people working remotely for an organization outside the UAE. The Dubai authority describes a one-year permit subject to renewal, while federal and Dubai sources state a USD 3,500 monthly income condition."
+    "en": "A UAE remote-work residence route for people working remotely for an organization outside the UAE. The Dubai authority describes a one-year permit subject to renewal, while federal and Dubai sources state a USD 3,500 monthly income condition.",
+    "zh-Hans": "阿联酋远程工作居住途径，适用于为阿联酋以外的组织远程工作的人员。迪拜当局描述了为期一年的许可证，可以续签，而联邦和迪拜消息人士称，每月收入为 3,500 美元。"
   },
   "good_for_md": {
-    "en": "Remote employees with an overseas organization, documented monthly income of at least USD 3,500, health insurance, and the documents required by the issuing authority."
+    "en": "Remote employees with an overseas organization, documented monthly income of at least USD 3,500, health insurance, and the documents required by the issuing authority.",
+    "zh-Hans": "海外机构的远程员工、有记录的月收入至少 3,500 美元、健康保险以及发证机关要求的文件。"
   },
   "not_good_for_md": {
-    "en": "Applicants who cannot document remote work for an organization outside the UAE or the stated monthly income condition. Family, local-employment, and settlement outcomes require separate official confirmation."
+    "en": "Applicants who cannot document remote work for an organization outside the UAE or the stated monthly income condition. Family, local-employment, and settlement outcomes require separate official confirmation.",
+    "zh-Hans": "无法记录为阿联酋以外的组织进行远程工作或规定的月收入状况的申请人。家庭、当地就业和定居结果需要单独的官方确认。"
   },
   "pathway_mechanism": "remote_income",
   "eligibility": {
@@ -61,7 +66,8 @@
     "income_location": "outside_destination",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The UAE sources require proof of remote work for an organization outside the UAE and a salary certificate or equivalent showing at least USD 3,500."
+      "en": "The UAE sources require proof of remote work for an organization outside the UAE and a salary certificate or equivalent showing at least USD 3,500.",
+      "zh-Hans": "阿联酋消息人士要求提供阿联酋境外组织的远程工作证明以及至少显示 3,500 美元的工资证明或同等文件。"
     }
   },
   "timeline": {
@@ -86,13 +92,15 @@
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained virtual-work residence sources do not establish a permanent-residence route."
+      "en": "The retained virtual-work residence sources do not establish a permanent-residence route.",
+      "zh-Hans": "保留的虚拟工作居留来源不建立永久居住途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained virtual-work residence sources do not establish a citizenship route."
+      "en": "The retained virtual-work residence sources do not establish a citizenship route.",
+      "zh-Hans": "保留的虚拟工作居留来源不建立公民身份途径。"
     }
   },
   "risk": {
@@ -101,7 +109,8 @@
     "extraction_confidence_score": 4,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The route and core remote-work condition are stated on official UAE authority pages, but family rights, local-employment limits, fees, and longer-term settlement are not fully represented by this source set."
+      "en": "The route and core remote-work condition are stated on official UAE authority pages, but family rights, local-employment limits, fees, and longer-term settlement are not fully represented by this source set.",
+      "zh-Hans": "阿联酋官方权威页面上说明了途径和核心远程工作条件，但该源集并未完全代表家庭权利、当地就业限制、费用和长期定居。"
     }
   },
   "comparison": {

@@ -3,21 +3,26 @@
   "country_id": "estonia",
   "category_ids": ["startup_entrepreneur"],
   "official_names": {
-    "en": "e-Residency"
+    "en": "e-Residency",
+    "zh-Hans": "电子居住"
   },
   "aliases": ["Estonia e-Residency", "Estonian e-Resident Digital ID"],
   "status": "active",
   "status_note_md": {
-    "en": "e-Residency is a digital identity and business-access status, not a residence permit, visa, citizenship status, or travel right."
+    "en": "e-Residency is a digital identity and business-access status, not a residence permit, visa, citizenship status, or travel right.",
+    "zh-Hans": "电子居留权是一种数字身份和商业访问身份，而不是居留许可、签证、公民身份或旅行权。"
   },
   "summary_md": {
-    "en": "A Republic of Estonia digital identity that lets global entrepreneurs authenticate online, sign documents, and establish or manage an Estonian company remotely; it does not grant residence or travel rights."
+    "en": "A Republic of Estonia digital identity that lets global entrepreneurs authenticate online, sign documents, and establish or manage an Estonian company remotely; it does not grant residence or travel rights.",
+    "zh-Hans": "爱沙尼亚共和国数字身份，让全球企业家可以在线验证、签署文件以及远程建立或管理爱沙尼亚公司；它不授予居住或旅行权利。"
   },
   "good_for_md": {
-    "en": "Location-independent founders and operators who need secure digital access to Estonian e-services and want to establish or run a company online without relocating to Estonia."
+    "en": "Location-independent founders and operators who need secure digital access to Estonian e-services and want to establish or run a company online without relocating to Estonia.",
+    "zh-Hans": "不受地点限制的创始人和运营商，需要对爱沙尼亚电子服务进行安全的数字访问，并希望在不搬到爱沙尼亚的情况下在线建立或运营公司。"
   },
   "not_good_for_md": {
-    "en": "Anyone seeking a visa, physical residence, work authorization, citizenship, or travel rights in Estonia or the European Union."
+    "en": "Anyone seeking a visa, physical residence, work authorization, citizenship, or travel rights in Estonia or the European Union.",
+    "zh-Hans": "任何在爱沙尼亚或欧盟寻求签证、实际居住、工作授权、公民身份或旅行权利的人。"
   },
   "pathway_mechanism": "e_residency",
   "eligibility": {
@@ -26,7 +31,8 @@
       "required_level": "unknown",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "The application page describes online application, document preparation, identity verification, and card pickup, but does not publish an education requirement."
+        "en": "The application page describes online application, document preparation, identity verification, and card pickup, but does not publish an education requirement.",
+        "zh-Hans": "申请页面描述了在线申请、文件准备、身份验证和取卡，但没有公布学历要求。"
       }
     },
     "work_experience": {},
@@ -42,7 +48,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "e-Residency application fee"
+          "en": "e-Residency application fee",
+          "zh-Hans": "电子居留申请费"
         },
         "amount": 150,
         "currency": "EUR",
@@ -56,12 +63,14 @@
     "income_location": "not_applicable",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "e-Residency is not an immigration residence route and has no published personal-income requirement in the retained application page."
+      "en": "e-Residency is not an immigration residence route and has no published personal-income requirement in the retained application page.",
+      "zh-Hans": "e-Residency不是移民居留途径，并且在保留的申请页面中没有公布个人收入要求。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The application flow shows an identity check, approximately 30 days for approval, card delivery in two to five weeks, and automatic card activation within 24 hours after pickup."
+      "en": "The application flow shows an identity check, approximately 30 days for approval, card delivery in two to five weeks, and automatic card activation within 24 hours after pickup.",
+      "zh-Hans": "申请流程包括身份检查、大约 30 天的批准时间、两到五周内的卡交付以及取卡后 24 小时内的自动卡激活。"
     },
     "initial_validity_months": "unknown",
     "renewable": "unknown",
@@ -74,7 +83,8 @@
     "study_allowed": false,
     "business_allowed": true,
     "tax_residency_note_md": {
-      "en": "e-Residency does not change physical or tax residency."
+      "en": "e-Residency does not change physical or tax residency.",
+      "zh-Hans": "电子居民身份不会改变实际或税务居民身份。"
     }
   },
   "family": {
@@ -84,19 +94,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "Because e-Residency does not grant residence or travel rights, the retained sources do not establish family immigration benefits."
+      "en": "Because e-Residency does not grant residence or travel rights, the retained sources do not establish family immigration benefits.",
+      "zh-Hans": "由于电子居留权不授予居住或旅行权利，因此保留的来源不建立家庭移民福利。"
     }
   },
   "pr_pathway": {
     "available": false,
     "summary_md": {
-      "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no residence right."
+      "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no residence right.",
+      "zh-Hans": "保留的电子居留常见问题解答明确指出电子居留不提供居留权。"
     }
   },
   "citizenship_pathway": {
     "available": false,
     "summary_md": {
-      "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no citizenship right."
+      "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no citizenship right.",
+      "zh-Hans": "保留的电子居住常见问题解答明确指出电子居住不提供公民权利。"
     }
   },
   "risk": {
@@ -105,7 +118,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The official e-Residency application page and FAQ directly establish the digital-ID workflow, online company access, fees, processing steps, and lack of residence/citizenship/travel rights."
+      "en": "The official e-Residency application page and FAQ directly establish the digital-ID workflow, online company access, fees, processing steps, and lack of residence/citizenship/travel rights.",
+      "zh-Hans": "官方电子居留申请页面和常见问题解答直接建立了数字身份证工作流程、在线公司访问、费用、处理步骤以及缺乏居留/公民身份/旅行权利。"
     }
   },
   "comparison": {

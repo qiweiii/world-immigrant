@@ -5,7 +5,8 @@
     "digital_nomad"
   ],
   "official_names": {
-    "en": "Temporary Stay of Digital Nomads"
+    "en": "Temporary Stay of Digital Nomads",
+    "zh-Hans": "数字游牧民的暂时停留"
   },
   "aliases": [
     "Croatia Digital Nomad Residence",
@@ -13,16 +14,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "This temporary stay route is for non-EU/EEA/Swiss nationals working remotely for a foreign employer, a foreign company, or their own company not registered in Croatia, without entering the Croatian labour market."
+    "en": "This temporary stay route is for non-EU/EEA/Swiss nationals working remotely for a foreign employer, a foreign company, or their own company not registered in Croatia, without entering the Croatian labour market.",
+    "zh-Hans": "此临时居留途径适用于为外国雇主、外国公司或未在克罗地亚注册的自己的公司远程工作且无需进入克罗地亚劳动力市场的非欧盟/欧洲经济区/瑞士国民。"
   },
   "summary_md": {
-    "en": "A Croatian temporary stay route for third-country digital nomads with foreign remote work, up to 18 months, a €3,622.50 monthly means-of-subsistence threshold, and immediate family reunification eligibility."
+    "en": "A Croatian temporary stay route for third-country digital nomads with foreign remote work, up to 18 months, a €3,622.50 monthly means-of-subsistence threshold, and immediate family reunification eligibility.",
+    "zh-Hans": "克罗地亚临时居留途径，适用于在国外远程工作的第三国数字游牧民，最长可达 18 个月，每月生活资料门槛为 3,622.50 欧元，并有直系亲属团聚资格。"
   },
   "good_for_md": {
-    "en": "Remote employees, foreign-company owners, and qualifying freelancers who can show foreign work, health insurance, accommodation, criminal-record evidence, and the required income or savings."
+    "en": "Remote employees, foreign-company owners, and qualifying freelancers who can show foreign work, health insurance, accommodation, criminal-record evidence, and the required income or savings.",
+    "zh-Hans": "可以出示国外工作、健康保险、住宿、犯罪记录证据以及所需收入或储蓄的远程员工、外国公司所有者和合格的自由职业者。"
   },
   "not_good_for_md": {
-    "en": "Applicants planning to work for Croatian employers or provide services to Croatian employers, or applicants unable to prove the current financial threshold and foreign-work purpose."
+    "en": "Applicants planning to work for Croatian employers or provide services to Croatian employers, or applicants unable to prove the current financial threshold and foreign-work purpose.",
+    "zh-Hans": "计划为克罗地亚雇主工作或为克罗地亚雇主提供服务的申请人，或无法证明当前财务门槛和国外工作目的的申请人。"
   },
   "pathway_mechanism": "remote_income",
   "eligibility": {
@@ -44,7 +49,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "Temporary stay grant fee at police administration"
+          "en": "Temporary stay grant fee at police administration",
+          "zh-Hans": "警察局临时居留补助费"
         },
         "amount": 46.45,
         "currency": "EUR",
@@ -52,7 +58,8 @@
       },
       {
         "label": {
-          "en": "Administrative fee for biometric residence permit"
+          "en": "Administrative fee for biometric residence permit",
+          "zh-Hans": "生物识别居留许可管理费"
         },
         "amount": 9.29,
         "currency": "EUR",
@@ -60,7 +67,8 @@
       },
       {
         "label": {
-          "en": "Biometric residence card"
+          "en": "Biometric residence card",
+          "zh-Hans": "生物识别居留卡"
         },
         "amount": 31.85,
         "currency": "EUR",
@@ -88,12 +96,14 @@
     "income_location": "outside_destination",
     "proof_history_months": 6,
     "stability_requirement_md": {
-      "en": "The MUP page requires at least 2.5 average Croatian net salaries, currently €3,622.50 per month. It allows regular-income evidence or payslips for the previous six months; alternatives include €43,470 for a 12-month stay or €65,205 for an 18-month stay."
+      "en": "The MUP page requires at least 2.5 average Croatian net salaries, currently €3,622.50 per month. It allows regular-income evidence or payslips for the previous six months; alternatives include €43,470 for a 12-month stay or €65,205 for an 18-month stay.",
+      "zh-Hans": "MUP 页面要求至少 2.5 克罗地亚平均净工资，目前每月 3,622.50 欧元。它允许提供过去六个月的固定收入证据或工资单；其他选择包括 12 个月住宿 43,470 欧元或 18 个月住宿 65,205 欧元。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "Temporary stay may be granted for up to 18 months. If granted for less than 18 months, an extension of up to six months may be requested no later than 60 days before expiry. A new digital-nomad application may be submitted six months after expiry."
+      "en": "Temporary stay may be granted for up to 18 months. If granted for less than 18 months, an extension of up to six months may be requested no later than 60 days before expiry. A new digital-nomad application may be submitted six months after expiry.",
+      "zh-Hans": "临时居留期限最长可达 18 个月。如果授予期限少于 18 个月，则可以在到期前 60 天以内申请最多六个月的延期。新的数字游牧者申请可以在到期后六个月提交。"
     },
     "initial_validity_months": "variable",
     "renewable": true,
@@ -113,19 +123,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "Close family members, including qualifying common-law partners, may join after the digital nomad has been granted temporary stay."
+      "en": "Close family members, including qualifying common-law partners, may join after the digital nomad has been granted temporary stay.",
+      "zh-Hans": "在数字游牧者获得临时居留权后，亲密的家庭成员，包括符合条件的同居伴侣，可以加入。"
     }
   },
   "pr_pathway": {
     "available": false,
     "summary_md": {
-      "en": "The MUP page describes temporary stay and a later application after six months, but does not establish a permanent-residence pathway from digital-nomad stay."
+      "en": "The MUP page describes temporary stay and a later application after six months, but does not establish a permanent-residence pathway from digital-nomad stay.",
+      "zh-Hans": "MUP 页面描述了临时居留和六个月后的后续申请，但没有建立从数字游牧者居留到永久居留的途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained MUP page does not establish citizenship eligibility."
+      "en": "The retained MUP page does not establish citizenship eligibility.",
+      "zh-Hans": "保留的 MUP 页面并不确定公民资格。"
     }
   },
   "risk": {
@@ -134,7 +147,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "A current Croatian Ministry of the Interior page directly establishes the foreign-work restriction, 18-month maximum, €3,622.50 threshold, six-month evidence, family rule, and fee schedule."
+      "en": "A current Croatian Ministry of the Interior page directly establishes the foreign-work restriction, 18-month maximum, €3,622.50 threshold, six-month evidence, family rule, and fee schedule.",
+      "zh-Hans": "当前克罗地亚内政部页面直接规定了外国工作限制、最长 18 个月、3,622.50 欧元门槛、六个月证据、家庭规则和费用表。"
     }
   },
   "comparison": {

@@ -3,21 +3,26 @@
   "country_id": "estonia",
   "category_ids": ["digital_nomad"],
   "official_names": {
-    "en": "Digital Nomad Visa"
+    "en": "Digital Nomad Visa",
+    "zh-Hans": "数字游牧签证"
   },
   "aliases": ["Estonia Digital Nomad Visa", "Estonia DNV"],
   "status": "active",
   "status_note_md": {
-    "en": "The Digital Nomad Visa is a temporary stay visa, separate from e-Residency, and does not create a permanent-residence or citizenship route."
+    "en": "The Digital Nomad Visa is a temporary stay visa, separate from e-Residency, and does not create a permanent-residence or citizenship route.",
+    "zh-Hans": "数字游牧签证是一种临时居留签证，与电子居留分开，不会创建永久居留或公民身份途径。"
   },
   "summary_md": {
-    "en": "A temporary Estonian visa for location-independent workers working for a foreign employer, a foreign company, or mostly foreign clients, with a maximum D-visa stay of up to one year."
+    "en": "A temporary Estonian visa for location-independent workers working for a foreign employer, a foreign company, or mostly foreign clients, with a maximum D-visa stay of up to one year.",
+    "zh-Hans": "爱沙尼亚临时签证，适用于为外国雇主、外国公司或大多数外国客户工作的不受地点限制的工人，D 签证最长停留期限为一年。"
   },
   "good_for_md": {
-    "en": "Remote employees, foreign-company owners, and freelancers with mostly foreign clients who can prove location-independent work and the required income history."
+    "en": "Remote employees, foreign-company owners, and freelancers with mostly foreign clients who can prove location-independent work and the required income history.",
+    "zh-Hans": "远程员工、外国公司所有者和主要是外国客户的自由职业者，他们可以证明与地点无关的工作和所需的收入历史。"
   },
   "not_good_for_md": {
-    "en": "Applicants seeking Estonian residence, permanent residence, citizenship, local employment, or an e-Residency substitute."
+    "en": "Applicants seeking Estonian residence, permanent residence, citizenship, local employment, or an e-Residency substitute.",
+    "zh-Hans": "寻求爱沙尼亚居留权、永久居留权、公民身份、当地就业或电子居留权替代的申请人。"
   },
   "pathway_mechanism": "remote_income",
   "eligibility": {
@@ -26,7 +31,8 @@
       "required_level": "none",
       "credential_assessment_required": "not_applicable",
       "note_md": {
-        "en": "Applicants must work location-independently and fit a foreign-employer, foreign-company, or mostly-foreign-client freelancer category. Standard visa rules also apply."
+        "en": "Applicants must work location-independently and fit a foreign-employer, foreign-company, or mostly-foreign-client freelancer category. Standard visa rules also apply.",
+        "zh-Hans": "申请人必须独立工作地点，并且符合外国雇主、外国公司或主要是外国客户的自由职业者类别。标准签证规则也适用。"
       }
     },
     "work_experience": {},
@@ -42,7 +48,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "Long-stay D visa state fee"
+          "en": "Long-stay D visa state fee",
+          "zh-Hans": "长期居留 D 签证政府费用"
         },
         "amount": 120,
         "currency": "EUR",
@@ -50,7 +57,8 @@
       },
       {
         "label": {
-          "en": "Short-stay C visa state fee"
+          "en": "Short-stay C visa state fee",
+          "zh-Hans": "短期停留C签证政府费用"
         },
         "amount": 90,
         "currency": "EUR",
@@ -72,12 +80,14 @@
     "income_location": "outside_destination",
     "proof_history_months": 6,
     "stability_requirement_md": {
-      "en": "The FAQ states that applicants must evidence income during the six months before application and meet the monthly gross threshold."
+      "en": "The FAQ states that applicants must evidence income during the six months before application and meet the monthly gross threshold.",
+      "zh-Hans": "常见问题解答指出，申请人必须证明申请前六个月内的收入并达到每月总额门槛。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The e-Residency programme page says DNV processing can take up to 30 days. The FAQ distinguishes a C visa of up to 90 days from a D visa of up to 365 days."
+      "en": "The e-Residency programme page says DNV processing can take up to 30 days. The FAQ distinguishes a C visa of up to 90 days from a D visa of up to 365 days.",
+      "zh-Hans": "e-Residency 计划页面显示，DNV 处理最多可能需要 30 天。常见问题解答将最长 90 天的 C 签证与最长 365 天的 D 签证区分开来。"
     },
     "initial_validity_months": "variable",
     "renewable": false,
@@ -90,7 +100,8 @@
     "study_allowed": "unknown",
     "business_allowed": "unknown",
     "tax_residency_note_md": {
-      "en": "The DNV is a temporary stay visa and is not a residence permit."
+      "en": "The DNV is a temporary stay visa and is not a residence permit.",
+      "zh-Hans": "DNV 是临时居留签证，不是居留许可。"
     }
   },
   "family": {
@@ -100,19 +111,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The retained DNV pages do not establish dependant eligibility or dependant work rights."
+      "en": "The retained DNV pages do not establish dependant eligibility or dependant work rights.",
+      "zh-Hans": "保留的 DNV 页面不建立附属资格或附属工作权利。"
     }
   },
   "pr_pathway": {
     "available": false,
     "summary_md": {
-      "en": "The FAQ states that DNV stays do not provide an advantage for obtaining an Estonian residence permit and do not give permanent residence."
+      "en": "The FAQ states that DNV stays do not provide an advantage for obtaining an Estonian residence permit and do not give permanent residence.",
+      "zh-Hans": "常见问题解答指出，DNV 居留并不能为获得爱沙尼亚居留许可提供优势，也不能提供永久居留权。"
     }
   },
   "citizenship_pathway": {
     "available": false,
     "summary_md": {
-      "en": "The FAQ states that DNV stays do not give a right to Estonian citizenship."
+      "en": "The FAQ states that DNV stays do not give a right to Estonian citizenship.",
+      "zh-Hans": "常见问题解答指出，DNV 停留并不赋予爱沙尼亚公民身份的权利。"
     }
   },
   "risk": {
@@ -121,7 +135,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "Official e-Residency programme pages directly support the foreign-work categories, income threshold, six-month evidence period, C/D visa durations, fees, and lack of residence/PR/citizenship outcome."
+      "en": "Official e-Residency programme pages directly support the foreign-work categories, income threshold, six-month evidence period, C/D visa durations, fees, and lack of residence/PR/citizenship outcome.",
+      "zh-Hans": "官方电子居留计划页面直接支持外国工作类别、收入门槛、六个月证据期限、C/D 签证期限、费用以及缺乏居留/永久居民/公民身份结果。"
     }
   },
   "comparison": {

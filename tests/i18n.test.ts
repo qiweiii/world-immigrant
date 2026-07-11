@@ -13,10 +13,7 @@ test("withLocale keeps English unprefixed and prefixes other locales", () => {
   assert.equal(withLocale("/", "en"), "/");
   assert.equal(withLocale("/countries/canada", "zh-Hans"), "/zh-Hans/countries/canada");
   assert.equal(withLocale("/", "zh-Hans"), "/zh-Hans");
-  assert.equal(
-    withLocale("/compare?programs=a,b", "zh-Hans"),
-    "/zh-Hans/compare?programs=a,b",
-  );
+  assert.equal(withLocale("/compare?programs=a,b", "zh-Hans"), "/zh-Hans/compare?programs=a,b");
 });
 
 test("stripLocalePrefix and localeFromPath round-trip bare paths", () => {

@@ -3,21 +3,26 @@
   "country_id": "singapore",
   "category_ids": ["skilled_worker"],
   "official_names": {
-    "en": "Employment Pass"
+    "en": "Employment Pass",
+    "zh-Hans": "就业准证"
   },
   "aliases": ["Singapore Employment Pass", "EP"],
   "status": "active",
   "status_note_md": {
-    "en": "Singapore MOM describes a two-stage Employment Pass eligibility framework. Salary thresholds and COMPASS rules are time-sensitive and remain flagged for human review."
+    "en": "Singapore MOM describes a two-stage Employment Pass eligibility framework. Salary thresholds and COMPASS rules are time-sensitive and remain flagged for human review.",
+    "zh-Hans": "新加坡人力部描述了一个两阶段的就业准证资格框架。薪资阈值和 COMPASS 规则具有时间敏感性，并保留标记以供人工审核。"
   },
   "summary_md": {
-    "en": "An employer-sponsored Singapore work pass for foreign professionals, managers, and executives with a job offer in Singapore who meet the qualifying-salary and, unless exempted, COMPASS requirements."
+    "en": "An employer-sponsored Singapore work pass for foreign professionals, managers, and executives with a job offer in Singapore who meet the qualifying-salary and, unless exempted, COMPASS requirements.",
+    "zh-Hans": "雇主担保的新加坡工作准证，适用于在新加坡获得工作机会且符合合格工资以及 COMPASS 要求（除非豁免）的外国专业人士、经理和高管。"
   },
   "good_for_md": {
-    "en": "Candidates with a Singapore job offer, an employer or appointed employment agent able to apply, and a fixed monthly salary meeting the age- and sector-sensitive qualifying threshold."
+    "en": "Candidates with a Singapore job offer, an employer or appointed employment agent able to apply, and a fixed monthly salary meeting the age- and sector-sensitive qualifying threshold.",
+    "zh-Hans": "拥有新加坡工作机会、能够申请的雇主或指定的职业代理、固定月薪符合年龄和行业敏感资格门槛的候选人。"
   },
   "not_good_for_md": {
-    "en": "Applicants without a Singapore job offer or employer application route. The retained sources do not establish a universal degree, family, remote-work, or permanent-residence outcome."
+    "en": "Applicants without a Singapore job offer or employer application route. The retained sources do not establish a universal degree, family, remote-work, or permanent-residence outcome.",
+    "zh-Hans": "没有新加坡工作机会或雇主申请途径的申请人。保留的来源并不能确定普遍的学位、家庭、远程工作或永久居留结果。"
   },
   "pathway_mechanism": "employer_sponsored",
   "eligibility": {
@@ -28,7 +33,8 @@
       "required_level": "unknown",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "Degree-equivalent qualifications can contribute COMPASS points, but MOM states candidates without them may still pass through other criteria."
+        "en": "Degree-equivalent qualifications can contribute COMPASS points, but MOM states candidates without them may still pass through other criteria.",
+        "zh-Hans": "同等学位的资格可以贡献 COMPASS 分数，但人力部表示，没有这些资格的候选人仍然可以通过其他标准。"
       }
     },
     "work_experience": {},
@@ -54,7 +60,8 @@
         "applies_to": "primary",
         "calculation": "minimum_total",
         "note_md": {
-          "en": "Current minimum for all sectors except financial services; the threshold increases progressively with age and financial services has a higher threshold."
+          "en": "Current minimum for all sectors except financial services; the threshold increases progressively with age and financial services has a higher threshold.",
+          "zh-Hans": "目前除金融服务业外所有行业的最低标准；随着年龄的增长，门槛逐渐提高，金融服务的门槛也更高。"
         }
       }
     ],
@@ -62,7 +69,8 @@
     "income_location": "inside_destination",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The qualifying salary is a fixed monthly salary benchmarked to local PMET salaries by age and sector."
+      "en": "The qualifying salary is a fixed monthly salary benchmarked to local PMET salaries by age and sector.",
+      "zh-Hans": "合格工资是按年龄和行业以当地 PMET 工资为基准的固定月薪。"
     }
   },
   "timeline": {
@@ -84,19 +92,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "MOM's key-facts page notes eligible family passes but does not establish the family conditions in this source set."
+      "en": "MOM's key-facts page notes eligible family passes but does not establish the family conditions in this source set.",
+      "zh-Hans": "MOM 的关键事实页面记录了符合条件的家属准证，但并未在此源集中确定家庭条件。"
     }
   },
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained Employment Pass pages link to a permanent-residence question but do not establish a PR eligibility rule."
+      "en": "The retained Employment Pass pages link to a permanent-residence question but do not establish a PR eligibility rule.",
+      "zh-Hans": "保留的就业准证页面链接到永久居留问题，但没有建立永久居民资格规则。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained Employment Pass pages do not establish a citizenship pathway."
+      "en": "The retained Employment Pass pages do not establish a citizenship pathway.",
+      "zh-Hans": "保留的就业准证页面并不建立公民身份途径。"
     }
   },
   "risk": {
@@ -105,7 +116,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "Core eligibility, salary, COMPASS, employer application, duration, and renewal facts are retained from current MOM pages; family, PR, fees, and detailed document rules remain outside this fixture's claim set."
+      "en": "Core eligibility, salary, COMPASS, employer application, duration, and renewal facts are retained from current MOM pages; family, PR, fees, and detailed document rules remain outside this fixture's claim set.",
+      "zh-Hans": "核心资格、工资、COMPASS、雇主申请、期限和续签事实均从当前 MOM 页面保留；家庭、永久居留、费用和详细文件规则仍不属于本数据记录的事实范围。"
     }
   },
   "comparison": {

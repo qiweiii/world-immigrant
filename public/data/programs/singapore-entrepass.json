@@ -5,23 +5,28 @@
     "startup_entrepreneur"
   ],
   "official_names": {
-    "en": "EntrePass"
+    "en": "EntrePass",
+    "zh-Hans": "创业通行证"
   },
   "aliases": [
     "Singapore EntrePass"
   ],
   "status": "active",
   "status_note_md": {
-    "en": "MOM describes EntrePass as a route for eligible foreign entrepreneurs operating venture-backed or innovative-technology businesses. Qualification and renewal criteria are business-specific and remain flagged for human review."
+    "en": "MOM describes EntrePass as a route for eligible foreign entrepreneurs operating venture-backed or innovative-technology businesses. Qualification and renewal criteria are business-specific and remain flagged for human review.",
+    "zh-Hans": "MOM 将创业通行证描述为符合条件的外国企业家经营风险投资或创新技术企业的途径。资格和续订标准是针对特定业务的，并且仍标记为供人工审核。"
   },
   "summary_md": {
-    "en": "A Singapore own-company work pass for foreign entrepreneurs who start or operate an ACRA-registered private limited company, hold at least 30% of it, and meet at least one qualifying funding, accelerator, technology, IP, or research criterion."
+    "en": "A Singapore own-company work pass for foreign entrepreneurs who start or operate an ACRA-registered private limited company, hold at least 30% of it, and meet at least one qualifying funding, accelerator, technology, IP, or research criterion.",
+    "zh-Hans": "新加坡自有公司工作准证，适用于创办或经营 ACRA 注册私人有限公司、持有至少 30% 股份，并满足至少一项合格资金、加速器、技术、知识产权或研究标准的外国企业家。"
   },
   "good_for_md": {
-    "en": "Founders of venture-backed or innovative-technology companies who can meet the 30% ownership requirement and document at least one of MOM's qualifying entrepreneur, innovator, investor, or research criteria."
+    "en": "Founders of venture-backed or innovative-technology companies who can meet the 30% ownership requirement and document at least one of MOM's qualifying entrepreneur, innovator, investor, or research criteria.",
+    "zh-Hans": "风险投资支持或创新技术公司的创始人，可以满足 30% 的所有权要求，并至少记录 MOM 的一项合格企业家、创新者、投资者或研究标准。"
   },
   "not_good_for_md": {
-    "en": "Ordinary small businesses such as coffee shops, bars, employment agencies, and similar excluded businesses, or founders without the qualifying business profile. This is distinct from the standard employer-sponsored EP."
+    "en": "Ordinary small businesses such as coffee shops, bars, employment agencies, and similar excluded businesses, or founders without the qualifying business profile. This is distinct from the standard employer-sponsored EP.",
+    "zh-Hans": "普通小型企业，例如咖啡店、酒吧、职业介绍所和类似的排除企业，或不具备合格企业简介的创始人。这与标准的雇主赞助的 EP 不同。"
   },
   "pathway_mechanism": "own_company",
   "eligibility": {
@@ -53,7 +58,8 @@
     "income_location": "inside_destination",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "EntrePass eligibility is based on the company and qualifying founder/investor/innovation criteria rather than a universal personal income threshold."
+      "en": "EntrePass eligibility is based on the company and qualifying founder/investor/innovation criteria rather than a universal personal income threshold.",
+      "zh-Hans": "创业准证资格基于公司和合格的创始人/投资者/创新标准，而不是普遍的个人收入门槛。"
     }
   },
   "business_setup": {
@@ -71,12 +77,14 @@
     ],
     "local_director_required": true,
     "note_md": {
-      "en": "ACRA states foreigners must use a Corporate Service Provider, meet local residency requirements, and have at least one local resident. Entrepreneurs with venture-backed or innovative-tech companies can apply for EntrePass before incorporation or within six months of setup."
+      "en": "ACRA states foreigners must use a Corporate Service Provider, meet local residency requirements, and have at least one local resident. Entrepreneurs with venture-backed or innovative-tech companies can apply for EntrePass before incorporation or within six months of setup.",
+      "zh-Hans": "ACRA 规定外国人必须使用企业服务提供商、满足当地居住要求，并且至少拥有一名当地居民。拥有风投支持或创新科技公司的企业家可以在公司成立前或成立后六个月内申请创业准证。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The retained overview page links to application and renewal procedures but does not state one processing-time value."
+      "en": "The retained overview page links to application and renewal procedures but does not state one processing-time value.",
+      "zh-Hans": "保留的概述页面链接到申请和续订程序，但没有说明一个处理时间值。"
     },
     "initial_validity_months": "unknown",
     "renewable": true,
@@ -97,19 +105,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": true,
     "note_md": {
-      "en": "Family passes require business-spending and local-workforce thresholds. MOM lists Dependant's Pass for a legally married spouse and unmarried children under 21, and Long-Term Visit Pass routes for common-law spouses, certain children, and parents."
+      "en": "Family passes require business-spending and local-workforce thresholds. MOM lists Dependant's Pass for a legally married spouse and unmarried children under 21, and Long-Term Visit Pass routes for common-law spouses, certain children, and parents.",
+      "zh-Hans": "家属准证需要商业支出和当地劳动力门槛。 MOM 列出了针对合法结婚配偶和 21 岁以下未婚子女的家属准证，以及针对同居配偶、某些子女和父母的长期访问准证途径。"
     }
   },
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained EntrePass, family, and ACRA pages do not establish a permanent-residence pathway."
+      "en": "The retained EntrePass, family, and ACRA pages do not establish a permanent-residence pathway.",
+      "zh-Hans": "保留的创业准证、家庭和 ACRA 页面并未建立永久居留途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained EntrePass, family, and ACRA pages do not establish a citizenship pathway."
+      "en": "The retained EntrePass, family, and ACRA pages do not establish a citizenship pathway.",
+      "zh-Hans": "保留的创业准证、家庭和 ACRA 页面并未建立公民身份途径。"
     }
   },
   "risk": {
@@ -118,7 +129,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "Current official MOM, ACRA, and family-pass pages provide direct evidence for ownership, company, qualifying-criterion, foreign-registration, local-residency, and family conditions; renewal and settlement details are not fully represented here."
+      "en": "Current official MOM, ACRA, and family-pass pages provide direct evidence for ownership, company, qualifying-criterion, foreign-registration, local-residency, and family conditions; renewal and settlement details are not fully represented here.",
+      "zh-Hans": "目前的官方 MOM、ACRA 和家属准证页面提供了所有权、公司、资格标准、外国人登记、当地居住和家庭条件的直接证据；此处未完整展示续订和定居详细信息。"
     }
   },
   "comparison": {

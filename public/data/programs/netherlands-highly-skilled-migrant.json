@@ -5,7 +5,8 @@
     "skilled_worker"
   ],
   "official_names": {
-    "en": "Residence Permit for Highly Skilled Migrants"
+    "en": "Residence Permit for Highly Skilled Migrants",
+    "zh-Hans": "高技术移民居留许可"
   },
   "aliases": [
     "Netherlands Highly Skilled Migrant",
@@ -13,16 +14,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "The residence permit is employer-sponsored: only an employer recognised by the IND can apply, and the employment and salary conditions remain tied to the recognised sponsor."
+    "en": "The residence permit is employer-sponsored: only an employer recognised by the IND can apply, and the employment and salary conditions remain tied to the recognised sponsor.",
+    "zh-Hans": "居留许可由雇主担保：只有 IND 认可的雇主才能申请，并且就业和工资条件仍与认可的担保人相关。"
   },
   "summary_md": {
-    "en": "A Netherlands residence permit for highly skilled work based on an employment contract with an IND-recognised sponsor and an indexed salary criterion."
+    "en": "A Netherlands residence permit for highly skilled work based on an employment contract with an IND-recognised sponsor and an indexed salary criterion.",
+    "zh-Hans": "基于与 IND 认可的担保人签订的雇佣合同和指数工资标准，获得荷兰高技能工作居留许可。"
   },
   "good_for_md": {
-    "en": "Skilled employees with a Dutch employer or research institution willing and able to act as an IND-recognised sponsor and pay the applicable market-rate salary."
+    "en": "Skilled employees with a Dutch employer or research institution willing and able to act as an IND-recognised sponsor and pay the applicable market-rate salary.",
+    "zh-Hans": "荷兰雇主或研究机构愿意且能够充当 IND 认可的赞助商并支付适用的市场工资的熟练员工。"
   },
   "not_good_for_md": {
-    "en": "Applicants without a recognised sponsor, a qualifying Dutch employment contract, or sufficient salary under the applicable age and reduced-salary criterion."
+    "en": "Applicants without a recognised sponsor, a qualifying Dutch employment contract, or sufficient salary under the applicable age and reduced-salary criterion.",
+    "zh-Hans": "没有认可的担保人、合格的荷兰雇佣合同或在适用年龄和减薪标准下没有足够工资的申请人。"
   },
   "pathway_mechanism": "employer_sponsored",
   "eligibility": {
@@ -51,12 +56,14 @@
     "income_location": "inside_destination",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The salary must meet the indexed criterion for the applicant’s situation, be paid monthly into an account in the applicant’s name, and match the market rate. The PDF lists standard, under-30, and reduced salary criteria without embedding a single permanent amount."
+      "en": "The salary must meet the indexed criterion for the applicant’s situation, be paid monthly into an account in the applicant’s name, and match the market rate. The PDF lists standard, under-30, and reduced salary criteria without embedding a single permanent amount.",
+      "zh-Hans": "工资必须符合申请人情况的指数标准，每月支付到申请人名下的账户，并与市场利率相匹配。 PDF 列出了标​​准工资、30 岁以下工资和减薪标准，但没有嵌入任何永久金额。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "If the recognised sponsor submits a complete application, the IND process can be completed within two weeks according to the retained guide. Permit validity depends on the employment and residence conditions."
+      "en": "If the recognised sponsor submits a complete application, the IND process can be completed within two weeks according to the retained guide. Permit validity depends on the employment and residence conditions.",
+      "zh-Hans": "如果认可的申办者提交完整的申请，IND流程可以根据保留的指南在两周内完成。许可证的有效期取决于就业和居留条件。"
     },
     "initial_validity_months": "unknown",
     "renewable": true,
@@ -76,19 +83,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The retained highly skilled migrant guide does not establish dependant eligibility in this fixture; family conditions require a separate IND family assessment."
+      "en": "The retained highly skilled migrant guide does not establish dependant eligibility in this fixture; family conditions require a separate IND family assessment.",
+      "zh-Hans": "保留的高技术移民指南并未在此规定中建立依附资格；家庭条件需要单独的 IND 家庭评估。"
     }
   },
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained guide establishes the highly skilled migrant residence permit but does not establish an individual permanent-residence outcome."
+      "en": "The retained guide establishes the highly skilled migrant residence permit but does not establish an individual permanent-residence outcome.",
+      "zh-Hans": "保留的指南规定了高技术移民居留许可，但没有规定个人永久居留结果。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained guide does not establish citizenship eligibility."
+      "en": "The retained guide does not establish citizenship eligibility.",
+      "zh-Hans": "保留的指南不规定公民资格。"
     }
   },
   "risk": {
@@ -97,7 +107,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "An official IND PDF directly establishes the recognised-sponsor, employment-contract, salary-criterion, TB, and process requirements. Indexed salary amounts and residence outcomes are intentionally not frozen beyond the retained wording."
+      "en": "An official IND PDF directly establishes the recognised-sponsor, employment-contract, salary-criterion, TB, and process requirements. Indexed salary amounts and residence outcomes are intentionally not frozen beyond the retained wording.",
+      "zh-Hans": "官方 IND PDF 直接确定了认可的担保人、雇佣合同、薪资标准、TB 和流程要求。索引工资金额和居留结果有意不冻结在保留的措辞之外。"
     }
   },
   "comparison": {

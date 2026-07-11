@@ -1,4 +1,6 @@
 ---
+import { defaultLocale, tf, type Locale } from "../i18n";
+
 interface Props {
   title: string;
   country: string;
@@ -7,6 +9,7 @@ interface Props {
   href?: string;
   status?: string;
   checkedAt?: string;
+  locale?: Locale;
 }
 
 const {
@@ -17,6 +20,7 @@ const {
   href = "#",
   status = "active",
   checkedAt,
+  locale = defaultLocale,
 } = Astro.props;
 ---
 
@@ -25,6 +29,6 @@ const {
   <h3 class="card-title">{title}</h3>
   <p class="card-description">{summary}</p>
   <div class="card-footer">
-    {checkedAt && <span class="card-tag">Updated {checkedAt.slice(0, 10)}</span>}
+    {checkedAt && <span class="card-tag">{tf("card.updated", locale, { date: checkedAt.slice(0, 10) })}</span>}
   </div>
 </a>

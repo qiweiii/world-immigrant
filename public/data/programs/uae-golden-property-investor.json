@@ -5,7 +5,8 @@
     "investor"
   ],
   "official_names": {
-    "en": "Golden Residence — real estate investor"
+    "en": "Golden Residence — real estate investor",
+    "zh-Hans": "Golden Residence — 房地产投资者"
   },
   "aliases": [
     "UAE Golden Visa Property Investor",
@@ -13,16 +14,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "This fixture uses the Dubai GDRFA Golden Investor service for its real-estate stream; the federal ICP overview remains supplementary because its deterministic snapshot is incomplete."
+    "en": "This fixture uses the Dubai GDRFA Golden Investor service for its real-estate stream; the federal ICP overview remains supplementary because its deterministic snapshot is incomplete.",
+    "zh-Hans": "该赛事的房地产流使用了迪拜 GDRFA 黄金投资者服务；联邦 ICP 概述仍然是补充性的，因为其确定性快照并不完整。"
   },
   "summary_md": {
-    "en": "A ten-year Golden Residence route for a UAE real-estate investor who owns property or properties with a total value of at least AED 2 million and maintains the investment conditions."
+    "en": "A ten-year Golden Residence route for a UAE real-estate investor who owns property or properties with a total value of at least AED 2 million and maintains the investment conditions.",
+    "zh-Hans": "为拥有总价值至少 200 万迪拉姆的房产或房产并保持投资条件的阿联酋房地产投资者提供为期十年的黄金居留途径。"
   },
   "good_for_md": {
-    "en": "Applicants with a documented UAE property investment of at least AED 2 million who can provide Dubai Land Department valuation/ownership evidence and accept the ten-year investment hold conditions."
+    "en": "Applicants with a documented UAE property investment of at least AED 2 million who can provide Dubai Land Department valuation/ownership evidence and accept the ten-year investment hold conditions.",
+    "zh-Hans": "拥有至少 200 万迪拉姆阿联酋房地产投资记录的申请人，可以提供迪拜土地部门的估价/所有权证据并接受十年投资持有条件。"
   },
   "not_good_for_md": {
-    "en": "Applicants seeking a low-capital property route, a guaranteed permanent-residence outcome, or a general residence status without maintaining the qualifying property investment."
+    "en": "Applicants seeking a low-capital property route, a guaranteed permanent-residence outcome, or a general residence status without maintaining the qualifying property investment.",
+    "zh-Hans": "寻求低资本房地产途径、有保证的永久居留结果或一般居留身份但不维持合格房地产投资的申请人。"
   },
   "pathway_mechanism": "investment",
   "eligibility": {
@@ -31,7 +36,8 @@
       "required_level": "unknown",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "The Golden Investor service lists real-estate ownership of at least AED 2 million, Dubai Land Department certification, and a lien/continuity condition for the Golden Residence."
+        "en": "The Golden Investor service lists real-estate ownership of at least AED 2 million, Dubai Land Department certification, and a lien/continuity condition for the Golden Residence.",
+        "zh-Hans": "黄金投资者服务列出了至少 200 万迪拉姆的房地产所有权、迪拜土地部门的认证以及黄金居留的留置权/连续性条件。"
       }
     },
     "work_experience": {},
@@ -51,14 +57,16 @@
         "applies_to": "primary",
         "calculation": "minimum_total",
         "note_md": {
-          "en": "The real-estate investment must total at least AED 2 million; the service states that mortgaged property may be accepted and details valuation and lien controls."
+          "en": "The real-estate investment must total at least AED 2 million; the service states that mortgaged property may be accepted and details valuation and lien controls.",
+          "zh-Hans": "房地产投资总额必须至少200万迪拉姆；该服务规定可以接受抵押财产，并详细说明了估价和留置权控制。"
         }
       }
     ],
     "application_fees": [
       {
         "label": {
-          "en": "Golden Residence service cost"
+          "en": "Golden Residence service cost",
+          "zh-Hans": "金居服务费用"
         },
         "amount": 2790,
         "currency": "AED",
@@ -75,12 +83,14 @@
     "income_location": "not_applicable",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The retained Golden Investor page sets the property-value condition and does not state a universal personal income minimum for the Golden real-estate stream."
+      "en": "The retained Golden Investor page sets the property-value condition and does not state a universal personal income minimum for the Golden real-estate stream.",
+      "zh-Hans": "保留的黄金投资者页面设置了财产价值条件，但没有规定黄金房地产流的普遍个人收入最低标准。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The GDRFA service lists an expected completion time of five days. Golden Residence is valid for ten years and can be extended if the same conditions continue."
+      "en": "The GDRFA service lists an expected completion time of five days. Golden Residence is valid for ten years and can be extended if the same conditions continue.",
+      "zh-Hans": "GDRFA 服务列出的预计完成时间为五天。黄金居留的有效期为十年，如果相同条件持续，可以延长。"
     },
     "initial_validity_months": 120,
     "renewable": true,
@@ -100,19 +110,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The retained GDRFA Golden Investor page states Golden Residence family self-support conditions but does not enumerate dependant eligibility in the stream-specific service."
+      "en": "The retained GDRFA Golden Investor page states Golden Residence family self-support conditions but does not enumerate dependant eligibility in the stream-specific service.",
+      "zh-Hans": "保留的 GDRFA Golden Investor 页面规定了 Golden Residence 家庭的自养条件，但没有列举特定流服务中的家属资格。"
     }
   },
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The Golden Investor service establishes long-term renewable residence, not a permanent-residence route."
+      "en": "The Golden Investor service establishes long-term renewable residence, not a permanent-residence route.",
+      "zh-Hans": "黄金投资者服务建立了长期可更新居留权，而不是永久居留权。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained investor service does not establish a citizenship route."
+      "en": "The retained investor service does not establish a citizenship route.",
+      "zh-Hans": "保留投资者服务不建立公民身份途径。"
     }
   },
   "risk": {
@@ -121,7 +134,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The GDRFA investor service directly supports the property threshold, valuation/lien conditions, validity, extension, fees, and processing. Family, work rights, and settlement are intentionally unknown."
+      "en": "The GDRFA investor service directly supports the property threshold, valuation/lien conditions, validity, extension, fees, and processing. Family, work rights, and settlement are intentionally unknown.",
+      "zh-Hans": "GDRFA 投资者服务直接支持财产门槛、估价/留置权条件、有效性、延期、费用和处理。家庭、工作权利和定居权是故意未知的。"
     }
   },
   "comparison": {

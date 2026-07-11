@@ -3,21 +3,26 @@
   "country_id": "uae",
   "category_ids": ["skilled_worker"],
   "official_names": {
-    "en": "Green Residence — self-employment"
+    "en": "Green Residence — self-employment",
+    "zh-Hans": "绿色居留——自营职业"
   },
   "aliases": ["UAE Green Visa Freelancer", "UAE Green Residence Self-Employment"],
   "status": "active",
   "status_note_md": {
-    "en": "This fixture uses the Dubai GDRFA self-employment Green Residence service. The ICP Green Residency overview is retained as a supplementary source but currently flagged for incomplete deterministic extraction."
+    "en": "This fixture uses the Dubai GDRFA self-employment Green Residence service. The ICP Green Residency overview is retained as a supplementary source but currently flagged for incomplete deterministic extraction.",
+    "zh-Hans": "本数据记录使用迪拜 GDRFA 自营绿色居留服务。 ICP Green Residency 概述保留为补充来源，但目前标记为不完整的确定性提取。"
   },
   "summary_md": {
-    "en": "A self-sponsored UAE residence permit for a freelancer or self-employed person who holds a Ministry of Human Resources and Emiratisation permit and meets the education and income/solvency conditions."
+    "en": "A self-sponsored UAE residence permit for a freelancer or self-employed person who holds a Ministry of Human Resources and Emiratisation permit and meets the education and income/solvency conditions.",
+    "zh-Hans": "为持有人力资源和酋长国许可证并符合教育和收入/偿付能力条件的自由职业者或自营职业者提供的无需担保的阿联酋居留许可证。"
   },
   "good_for_md": {
-    "en": "Freelancers and independent professionals who can obtain the required MOHRE permit, show a bachelor degree or specialised diploma, and document AED 360,000 of self-employment income over the preceding two years or financial solvency."
+    "en": "Freelancers and independent professionals who can obtain the required MOHRE permit, show a bachelor degree or specialised diploma, and document AED 360,000 of self-employment income over the preceding two years or financial solvency.",
+    "zh-Hans": "自由职业者和独立专业人士，可以获得所需的 MOHRE 许可证，出示学士学位或专业文凭，并记录过去两年的 360,000 迪拉姆的自营职业收入或财务偿付能力。"
   },
   "not_good_for_md": {
-    "en": "Applicants who need an employer-sponsored job, a company-formation route, a published permanent-residence outcome, or a confirmed cross-emirate rule set beyond the Dubai service."
+    "en": "Applicants who need an employer-sponsored job, a company-formation route, a published permanent-residence outcome, or a confirmed cross-emirate rule set beyond the Dubai service.",
+    "zh-Hans": "需要雇主担保的工作、公司成立途径、公布的永久居留结果或迪拜服务之外的确认的跨酋长国规则的申请人。"
   },
   "pathway_mechanism": "self_sponsored",
   "eligibility": {
@@ -26,7 +31,8 @@
       "required_level": "bachelor",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "The page requires a freelance work permit from MOHRE, a bachelor degree or specialised diploma, and either the stated income history or financial solvency."
+        "en": "The page requires a freelance work permit from MOHRE, a bachelor degree or specialised diploma, and either the stated income history or financial solvency.",
+        "zh-Hans": "该页面需要 MOHRE 颁发的自由职业许可、学士学位或专业文凭，以及注明的收入历史或财务偿付能力。"
       }
     },
     "work_experience": {},
@@ -42,7 +48,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "Residence permit fee"
+          "en": "Residence permit fee",
+          "zh-Hans": "居留许可费"
         },
         "amount": 200,
         "currency": "AED",
@@ -50,7 +57,8 @@
       },
       {
         "label": {
-          "en": "Knowledge Dirham"
+          "en": "Knowledge Dirham",
+          "zh-Hans": "知识迪拉姆"
         },
         "amount": 10,
         "currency": "AED",
@@ -58,7 +66,8 @@
       },
       {
         "label": {
-          "en": "Innovation Dirham"
+          "en": "Innovation Dirham",
+          "zh-Hans": "创新迪拉姆"
         },
         "amount": 10,
         "currency": "AED",
@@ -66,7 +75,8 @@
       },
       {
         "label": {
-          "en": "Fee inside the country"
+          "en": "Fee inside the country",
+          "zh-Hans": "国内费用"
         },
         "amount": 500,
         "currency": "AED",
@@ -74,7 +84,8 @@
       },
       {
         "label": {
-          "en": "Delivery"
+          "en": "Delivery",
+          "zh-Hans": "送货"
         },
         "amount": 20,
         "currency": "AED",
@@ -91,7 +102,8 @@
         "period": "annual",
         "applies_to": "primary",
         "note_md": {
-          "en": "Self-employment income over the two preceding years; the page also permits proof of financial solvency throughout the stay as an alternative."
+          "en": "Self-employment income over the two preceding years; the page also permits proof of financial solvency throughout the stay as an alternative.",
+          "zh-Hans": "前两年的自营职业收入；作为替代方案，该页面还允许在整个住宿期间提供财务偿付能力证明。"
         }
       }
     ],
@@ -99,12 +111,14 @@
     "income_location": "unknown",
     "proof_history_months": 24,
     "stability_requirement_md": {
-      "en": "Annual self-employment income for the two preceding years must meet the threshold, unless financial solvency is proved throughout residence."
+      "en": "Annual self-employment income for the two preceding years must meet the threshold, unless financial solvency is proved throughout residence.",
+      "zh-Hans": "除非在整个居住期间证明财务偿付能力，否则前两年的年自营职业收入必须达到门槛。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The GDRFA service lists an expected completion time of 48 hours and a 180-day grace period after expiry or cancellation."
+      "en": "The GDRFA service lists an expected completion time of 48 hours and a 180-day grace period after expiry or cancellation.",
+      "zh-Hans": "GDRFA 服务列出了 48 小时的预计完成时间以及到期或取消后 180 天的宽限期。"
     },
     "initial_validity_months": "unknown",
     "renewable": true,
@@ -124,19 +138,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The retained Dubai self-employment service page does not state family sponsorship conditions."
+      "en": "The retained Dubai self-employment service page does not state family sponsorship conditions.",
+      "zh-Hans": "保留的迪拜自营职业服务页面并未注明家庭担保条件。"
     }
   },
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained self-employment service does not establish a permanent-residence route."
+      "en": "The retained self-employment service does not establish a permanent-residence route.",
+      "zh-Hans": "保留自营职业服务不建立永久居留途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained self-employment service does not establish a citizenship route."
+      "en": "The retained self-employment service does not establish a citizenship route.",
+      "zh-Hans": "保留的自营职业服务不建立公民身份途径。"
     }
   },
   "risk": {
@@ -145,7 +162,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The GDRFA page gives direct evidence for permit, education, income, fees, processing, and renewal-related information; cross-emirate applicability, family, and settlement remain unestablished."
+      "en": "The GDRFA page gives direct evidence for permit, education, income, fees, processing, and renewal-related information; cross-emirate applicability, family, and settlement remain unestablished.",
+      "zh-Hans": "GDRFA 页面提供许可证、教育、收入、费用、处理和续签相关信息的直接证据；跨酋长国的适用性、家庭和定居尚未确定。"
     }
   },
   "comparison": {

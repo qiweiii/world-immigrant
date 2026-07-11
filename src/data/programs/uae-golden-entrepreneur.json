@@ -3,21 +3,26 @@
   "country_id": "uae",
   "category_ids": ["startup_entrepreneur"],
   "official_names": {
-    "en": "Golden Residence — entrepreneur"
+    "en": "Golden Residence — entrepreneur",
+    "zh-Hans": "黄金居留——企业家"
   },
   "aliases": ["UAE Golden Visa Entrepreneur", "UAE Golden Residency Entrepreneur"],
   "status": "active",
   "status_note_md": {
-    "en": "This fixture uses the ICP entrepreneur visa service, which describes a service to complete Golden Residency procedures for an innovative or future-oriented project."
+    "en": "This fixture uses the ICP entrepreneur visa service, which describes a service to complete Golden Residency procedures for an innovative or future-oriented project.",
+    "zh-Hans": "本数据记录使用 ICP 企业家签证服务，该服务描述了为创新或面向未来的项目完成黄金居留程序的服务。"
   },
   "summary_md": {
-    "en": "An entrepreneur route to complete UAE Golden Residency procedures for an innovative or future-oriented project valued at least AED 500,000 and supported by an accredited-auditor letter and competent-authority or incubator confirmation."
+    "en": "An entrepreneur route to complete UAE Golden Residency procedures for an innovative or future-oriented project valued at least AED 500,000 and supported by an accredited-auditor letter and competent-authority or incubator confirmation.",
+    "zh-Hans": "为价值至少 500,000 迪拉姆的创新或面向未来的项目完成阿联酋黄金居留程序的企业家途径，并得到认可审计师信函和主管机构或孵化器确认的支持。"
   },
   "good_for_md": {
-    "en": "Project owners who can document an innovative or future-oriented project, obtain the competent-authority or incubator letter, and prove a project value of at least AED 500,000."
+    "en": "Project owners who can document an innovative or future-oriented project, obtain the competent-authority or incubator letter, and prove a project value of at least AED 500,000.",
+    "zh-Hans": "能够记录创新或面向未来的项目、获得主管当局或孵化器信函并证明项目价值至少为 500,000 迪拉姆的项目所有者。"
   },
   "not_good_for_md": {
-    "en": "Ordinary businesses without an innovation/future-oriented classification or without the required auditor and authority documentation."
+    "en": "Ordinary businesses without an innovation/future-oriented classification or without the required auditor and authority documentation.",
+    "zh-Hans": "没有创新/面向未来的分类或没有所需的审核员和权威文件的普通企业。"
   },
   "pathway_mechanism": "own_company",
   "eligibility": {
@@ -26,7 +31,8 @@
       "required_level": "unknown",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "The ICP service requires valid UAE health insurance, a passport valid at least six months, a competent-authority letter confirming innovative or future-oriented nature, and an accredited-auditor letter confirming project value of at least AED 500,000."
+        "en": "The ICP service requires valid UAE health insurance, a passport valid at least six months, a competent-authority letter confirming innovative or future-oriented nature, and an accredited-auditor letter confirming project value of at least AED 500,000.",
+        "zh-Hans": "ICP 服务需要有效的阿联酋健康保险、有效期至少六个月的护照、确认创新或面向未来性质的主管当局信函以及确认项目价值至少 500,000 迪拉姆的认可审计师信函。"
       }
     },
     "work_experience": {},
@@ -45,14 +51,16 @@
         "currency": "AED",
         "applies_to": "business",
         "note_md": {
-          "en": "This is the minimum documented project value, not a universal personal liquid-funds requirement."
+          "en": "This is the minimum documented project value, not a universal personal liquid-funds requirement.",
+          "zh-Hans": "这是记录的最低项目价值，而不是通用的个人流动资金要求。"
         }
       }
     ],
     "application_fees": [
       {
         "label": {
-          "en": "Application Fees"
+          "en": "Application Fees",
+          "zh-Hans": "申请费"
         },
         "amount": 100,
         "currency": "AED",
@@ -60,7 +68,8 @@
       },
       {
         "label": {
-          "en": "Issuance Fees"
+          "en": "Issuance Fees",
+          "zh-Hans": "发行费用"
         },
         "amount": 100,
         "currency": "AED",
@@ -68,7 +77,8 @@
       },
       {
         "label": {
-          "en": "Smart Services Fees"
+          "en": "Smart Services Fees",
+          "zh-Hans": "智能服务费用"
         },
         "amount": 100,
         "currency": "AED",
@@ -82,7 +92,8 @@
     "income_location": "unknown",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The retained entrepreneur service does not state a universal personal income threshold."
+      "en": "The retained entrepreneur service does not state a universal personal income threshold.",
+      "zh-Hans": "保留企业家服务并未规定普遍的个人收入门槛。"
     }
   },
   "business_setup": {
@@ -90,12 +101,14 @@
     "entity_types": ["Innovative or future-oriented project"],
     "local_director_required": "unknown",
     "note_md": {
-      "en": "The service is for a project owner and requires project-value and innovation/future-oriented documentation, but does not define a single company incorporation form."
+      "en": "The service is for a project owner and requires project-value and innovation/future-oriented documentation, but does not define a single company incorporation form.",
+      "zh-Hans": "该服务面向项目所有者，需要项目价值和创新/面向未来的文档，但不定义单一公司注册形式。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The ICP service lists a two-day service completion duration and describes the service as completing Golden Residency procedures for ten years."
+      "en": "The ICP service lists a two-day service completion duration and describes the service as completing Golden Residency procedures for ten years.",
+      "zh-Hans": "ICP服务列出了两天的服务完成期限，并将该服务描述为完成黄金居住程序十年。"
     },
     "initial_validity_months": 120,
     "renewable": "unknown",
@@ -115,19 +128,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The retained entrepreneur service does not enumerate dependant eligibility or work rights."
+      "en": "The retained entrepreneur service does not enumerate dependant eligibility or work rights.",
+      "zh-Hans": "保留的企业家服务不列举附属资格或工作权利。"
     }
   },
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The entrepreneur service establishes a ten-year Golden Residency procedure, not a permanent-residence route."
+      "en": "The entrepreneur service establishes a ten-year Golden Residency procedure, not a permanent-residence route.",
+      "zh-Hans": "企业家服务建立了为期十年的黄金居留程序，而不是永久居留途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained entrepreneur service does not establish a citizenship route."
+      "en": "The retained entrepreneur service does not establish a citizenship route.",
+      "zh-Hans": "保留的企业家服务不建立公民身份途径。"
     }
   },
   "risk": {
@@ -136,7 +152,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The ICP service directly supports project value, innovation documentation, fees, health insurance, passport validity, service duration, and processing. The underlying Golden Residency issuance and renewal conditions require case-level review."
+      "en": "The ICP service directly supports project value, innovation documentation, fees, health insurance, passport validity, service duration, and processing. The underlying Golden Residency issuance and renewal conditions require case-level review.",
+      "zh-Hans": "ICP服务直接支持项目价值、创新文档、费用、健康保险、护照有效期、服务期限和处理。黄金居留的基本发放和续签条件需要案例级别的审查。"
     }
   },
   "comparison": {

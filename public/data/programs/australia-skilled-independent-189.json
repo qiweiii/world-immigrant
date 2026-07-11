@@ -5,7 +5,8 @@
     "skilled_worker"
   ],
   "official_names": {
-    "en": "Skilled Independent visa (subclass 189) — Points-tested stream"
+    "en": "Skilled Independent visa (subclass 189) — Points-tested stream",
+    "zh-Hans": "独立技术移民签证（189 子类）- 积分测试类别"
   },
   "aliases": [
     "subclass 189",
@@ -14,16 +15,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "The points-tested stream is invitation-based through SkillSelect. Meeting the points threshold and other eligibility signals does not guarantee an invitation or visa grant."
+    "en": "The points-tested stream is invitation-based through SkillSelect. Meeting the points threshold and other eligibility signals does not guarantee an invitation or visa grant.",
+    "zh-Hans": "积分测试流是通过 SkillSelect 基于邀请进行的。满足积分门槛和其他资格信号并不能保证获得邀请或签证。"
   },
   "summary_md": {
-    "en": "A permanent skilled visa for invited workers who do not need an employer or state sponsor. Applicants must nominate an eligible occupation, hold a suitable skills assessment, satisfy the points test, and be invited to apply."
+    "en": "A permanent skilled visa for invited workers who do not need an employer or state sponsor. Applicants must nominate an eligible occupation, hold a suitable skills assessment, satisfy the points test, and be invited to apply.",
+    "zh-Hans": "为不需要雇主或国家担保的受邀工人提供永久技术签证。申请人必须提名一个合格的职业，进行适当的技能评估，满足分数测试，并被邀请申请。"
   },
   "good_for_md": {
-    "en": "Skilled workers under 45 at invitation with an occupation on the relevant skilled list, a positive skills assessment, at least Competent English, and a competitive SkillSelect points score."
+    "en": "Skilled workers under 45 at invitation with an occupation on the relevant skilled list, a positive skills assessment, at least Competent English, and a competitive SkillSelect points score.",
+    "zh-Hans": "受邀请的 45 岁以下技术工人，其职业在相关技术清单上，具有积极的技能评估，至少具有良好的英语能力，并且具有有竞争力的 SkillSelect 分数。"
   },
   "not_good_for_md": {
-    "en": "People without an eligible occupation, skills assessment, English evidence, or a competitive points score. Invitation rounds are competitive and not a personal entitlement."
+    "en": "People without an eligible occupation, skills assessment, English evidence, or a competitive points score. Invitation rounds are competitive and not a personal entitlement.",
+    "zh-Hans": "没有合格职业、技能评估、英语证明或竞争分数的人。邀请轮次是竞争性的，不是个人权利。"
   },
   "pathway_mechanism": "points_invitation",
   "eligibility": {
@@ -31,21 +36,24 @@
       "max": 44,
       "points_sensitive": true,
       "note_md": {
-        "en": "You must be under 45 to be invited for the points-tested stream. Points also vary by age band."
+        "en": "You must be under 45 to be invited for the points-tested stream. Points also vary by age band.",
+        "zh-Hans": "您必须年满 45 岁才能受邀参加积分测试流。分数也因年龄段而异。"
       }
     },
     "education": {
       "required_level": "unknown",
       "credential_assessment_required": true,
       "note_md": {
-        "en": "There is no single universal degree minimum for all occupations. Applicants need a suitable skills assessment for the nominated occupation, and education can contribute points under the points table."
+        "en": "There is no single universal degree minimum for all occupations. Applicants need a suitable skills assessment for the nominated occupation, and education can contribute points under the points table.",
+        "zh-Hans": "对于所有职业来说，没有单一的通用最低学位。申请人需要对提名职业进行合适的技能评估，教育程度可以在积分表下贡献积分。"
       }
     },
     "work_experience": {
       "min_years": 0,
       "occupation_list_required": true,
       "note_md": {
-        "en": "The nominated occupation must appear on the relevant skilled occupation list. Skilled employment contributes points, and a suitable skills assessment is required."
+        "en": "The nominated occupation must appear on the relevant skilled occupation list. Skilled employment contributes points, and a suitable skills assessment is required.",
+        "zh-Hans": "提名职业必须出现在相关技术职业列表中。技能就业会加分，并且需要进行适当的技能评估。"
       }
     },
     "language": [
@@ -55,7 +63,8 @@
         "minimum_level": "Competent English",
         "minimum_benchmark": 6,
         "note_md": {
-          "en": "Competent English is the baseline for points-tested skilled visas. Proficient and Superior English attract additional points."
+          "en": "Competent English is the baseline for points-tested skilled visas. Proficient and Superior English attract additional points.",
+          "zh-Hans": "合格的英语是通过打分测试的技术签证的基线。熟练和优秀的英语会吸引额外的加分。"
         }
       }
     ],
@@ -72,7 +81,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "Main applicant charge, from official materials"
+          "en": "Main applicant charge, from official materials",
+          "zh-Hans": "主申请人费用，来自官方材料"
         },
         "amount": 6135,
         "currency": "AUD",
@@ -85,12 +95,14 @@
     "accepted_sources": [],
     "income_location": "not_applicable",
     "stability_requirement_md": {
-      "en": "No fixed income floor is stated as a universal subclass 189 points-tested minimum."
+      "en": "No fixed income floor is stated as a universal subclass 189 points-tested minimum.",
+      "zh-Hans": "没有固定收入下限被规定为通用子类 189 点测试的最低标准。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "Use the official visa processing times tool for current indications. Invitation timing is separate from post-application processing."
+      "en": "Use the official visa processing times tool for current indications. Invitation timing is separate from post-application processing.",
+      "zh-Hans": "使用官方签证处理时间工具了解当前情况。邀请时间与申请后处理是分开的。"
     },
     "processing_time_months_min": "unknown",
     "processing_time_months_max": "unknown",
@@ -103,10 +115,12 @@
     "study_allowed": true,
     "business_allowed": "unknown",
     "healthcare_access_md": {
-      "en": "Permanent residents may access Medicare if eligible."
+      "en": "Permanent residents may access Medicare if eligible.",
+      "zh-Hans": "如果符合条件，永久居民可以享受医疗保险。"
     },
     "tax_residency_note_md": {
-      "en": "Tax residence depends on Australian tax rules and personal circumstances."
+      "en": "Tax residence depends on Australian tax rules and personal circumstances.",
+      "zh-Hans": "税务居住地取决于澳大利亚税务规则和个人情况。"
     }
   },
   "family": {
@@ -116,20 +130,23 @@
     "spouse_work_allowed": true,
     "dependent_parents_allowed": "not_applicable",
     "note_md": {
-      "en": "Members of the family unit can be included in the application and must meet health and character requirements."
+      "en": "Members of the family unit can be included in the application and must meet health and character requirements.",
+      "zh-Hans": "家庭成员可以包含在申请中，并且必须满足健康和品格要求。"
     }
   },
   "pr_pathway": {
     "available": true,
     "summary_md": {
-      "en": "A successful application grants Australian permanent residence directly."
+      "en": "A successful application grants Australian permanent residence directly.",
+      "zh-Hans": "成功申请可直接授予澳大利亚永久居留权。"
     }
   },
   "citizenship_pathway": {
     "available": "indirect",
     "min_residence_years": "unknown",
     "summary_md": {
-      "en": "Permanent residents may later apply for Australian citizenship if they meet the separate citizenship requirements."
+      "en": "Permanent residents may later apply for Australian citizenship if they meet the separate citizenship requirements.",
+      "zh-Hans": "如果永久居民满足单独的公民身份要求，则可以稍后申请澳大利亚公民身份。"
     }
   },
   "risk": {
@@ -138,7 +155,8 @@
     "extraction_confidence_score": 4,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The pathway is official and well documented, but invitation rounds, occupation lists, charges, and detailed stream rules change. This first Australia fixture remains under human review."
+      "en": "The pathway is official and well documented, but invitation rounds, occupation lists, charges, and detailed stream rules change. This first Australia fixture remains under human review.",
+      "zh-Hans": "该途径是官方的且有详细记录，但邀请轮数、职业列表、费用和详细的流规则发生了变化。澳大利亚的第一场比赛仍在接受人工审查。"
     }
   },
   "comparison": {

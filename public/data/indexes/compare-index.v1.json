@@ -4,23 +4,30 @@
     {
       "program_id": "australia-skilled-independent-189",
       "country_id": "australia",
+      "country_names": {
+        "en": "Australia",
+        "zh-Hans": "澳大利亚"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Skilled Independent visa (subclass 189) — Points-tested stream"
+        "en": "Skilled Independent visa (subclass 189) — Points-tested stream",
+        "zh-Hans": "独立技术移民签证（189 子类）- 积分测试类别"
       },
       "status": "active",
       "pathway_mechanism": "points_invitation",
       "summary_md": {
-        "en": "A permanent skilled visa for invited workers who do not need an employer or state sponsor. Applicants must nominate an eligible occupation, hold a suitable skills assessment, satisfy the points test, and be invited to apply."
+        "en": "A permanent skilled visa for invited workers who do not need an employer or state sponsor. Applicants must nominate an eligible occupation, hold a suitable skills assessment, satisfy the points test, and be invited to apply.",
+        "zh-Hans": "为不需要雇主或国家担保的受邀工人提供永久技术签证。申请人必须提名一个合格的职业，进行适当的技能评估，满足分数测试，并被邀请申请。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "Main applicant charge, from official materials"
+              "en": "Main applicant charge, from official materials",
+              "zh-Hans": "主申请人费用，来自官方材料"
             },
             "amount": 6135,
             "currency": "AUD",
@@ -33,12 +40,14 @@
         "accepted_sources": [],
         "income_location": "not_applicable",
         "stability_requirement_md": {
-          "en": "No fixed income floor is stated as a universal subclass 189 points-tested minimum."
+          "en": "No fixed income floor is stated as a universal subclass 189 points-tested minimum.",
+          "zh-Hans": "没有固定收入下限被规定为通用子类 189 点测试的最低标准。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "Use the official visa processing times tool for current indications. Invitation timing is separate from post-application processing."
+          "en": "Use the official visa processing times tool for current indications. Invitation timing is separate from post-application processing.",
+          "zh-Hans": "使用官方签证处理时间工具了解当前情况。邀请时间与申请后处理是分开的。"
         },
         "processing_time_months_min": "unknown",
         "processing_time_months_max": "unknown",
@@ -51,10 +60,12 @@
         "study_allowed": true,
         "business_allowed": "unknown",
         "healthcare_access_md": {
-          "en": "Permanent residents may access Medicare if eligible."
+          "en": "Permanent residents may access Medicare if eligible.",
+          "zh-Hans": "如果符合条件，永久居民可以享受医疗保险。"
         },
         "tax_residency_note_md": {
-          "en": "Tax residence depends on Australian tax rules and personal circumstances."
+          "en": "Tax residence depends on Australian tax rules and personal circumstances.",
+          "zh-Hans": "税务居住地取决于澳大利亚税务规则和个人情况。"
         }
       },
       "family": {
@@ -64,20 +75,23 @@
         "spouse_work_allowed": true,
         "dependent_parents_allowed": "not_applicable",
         "note_md": {
-          "en": "Members of the family unit can be included in the application and must meet health and character requirements."
+          "en": "Members of the family unit can be included in the application and must meet health and character requirements.",
+          "zh-Hans": "家庭成员可以包含在申请中，并且必须满足健康和品格要求。"
         }
       },
       "pr_pathway": {
         "available": true,
         "summary_md": {
-          "en": "A successful application grants Australian permanent residence directly."
+          "en": "A successful application grants Australian permanent residence directly.",
+          "zh-Hans": "成功申请可直接授予澳大利亚永久居留权。"
         }
       },
       "citizenship_pathway": {
         "available": "indirect",
         "min_residence_years": "unknown",
         "summary_md": {
-          "en": "Permanent residents may later apply for Australian citizenship if they meet the separate citizenship requirements."
+          "en": "Permanent residents may later apply for Australian citizenship if they meet the separate citizenship requirements.",
+          "zh-Hans": "如果永久居民满足单独的公民身份要求，则可以稍后申请澳大利亚公民身份。"
         }
       },
       "comparison": {
@@ -272,16 +286,22 @@
     {
       "program_id": "canada-express-entry-fsw",
       "country_id": "canada",
+      "country_names": {
+        "en": "Canada",
+        "zh-Hans": "加拿大"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Federal Skilled Worker Program"
+        "en": "Federal Skilled Worker Program",
+        "zh-Hans": "联邦技术工人计划"
       },
       "status": "active",
       "pathway_mechanism": "points_invitation",
       "summary_md": {
-        "en": "A federal permanent-residence pathway for skilled workers with foreign work experience. Candidates must satisfy the Federal Skilled Worker minimum requirements and score at least 67 out of 100 selection-factor points before competing for an invitation through Express Entry."
+        "en": "A federal permanent-residence pathway for skilled workers with foreign work experience. Candidates must satisfy the Federal Skilled Worker minimum requirements and score at least 67 out of 100 selection-factor points before competing for an invitation through Express Entry.",
+        "zh-Hans": "为具有外国工作经验的技术工人提供联邦永久居留途径。候选人必须满足联邦技术工人的最低要求，并在通过“快速通道”竞争邀请之前获得至少 67 分（满分 100 分）。"
       },
       "funds": {
         "proof_of_funds": [
@@ -349,17 +369,20 @@
               "valid_job_offer"
             ],
             "note_md": {
-              "en": "Proof of funds is not required when both conditions are met."
+              "en": "Proof of funds is not required when both conditions are met.",
+              "zh-Hans": "当满足这两个条件时，不需要资金证明。"
             }
           }
         ],
         "exemption_note_md": {
-          "en": "Proof of funds is not required when the applicant is authorized to work in Canada and has a valid Canadian job offer. Family size includes the applicant, spouse or common-law partner, and dependent children, including family members who are not accompanying the applicant."
+          "en": "Proof of funds is not required when the applicant is authorized to work in Canada and has a valid Canadian job offer. Family size includes the applicant, spouse or common-law partner, and dependent children, including family members who are not accompanying the applicant.",
+          "zh-Hans": "当申请人被授权在加拿大工作并拥有有效的加拿大工作机会时，不需要提供资金证明。家庭规模包括申请人、配偶或同居伴侣以及受抚养子女，包括不随申请人同行的家庭成员。"
         },
         "application_fees": [
           {
             "label": {
-              "en": "Principal applicant, including right of permanent residence fee"
+              "en": "Principal applicant, including right of permanent residence fee",
+              "zh-Hans": "主申请人，包括永久居留权费用"
             },
             "amount": 1590,
             "currency": "CAD",
@@ -367,7 +390,8 @@
           },
           {
             "label": {
-              "en": "Principal applicant, without right of permanent residence fee"
+              "en": "Principal applicant, without right of permanent residence fee",
+              "zh-Hans": "主申请人，无永久居留权费用"
             },
             "amount": 990,
             "currency": "CAD",
@@ -375,7 +399,8 @@
           },
           {
             "label": {
-              "en": "Spouse or partner, including right of permanent residence fee"
+              "en": "Spouse or partner, including right of permanent residence fee",
+              "zh-Hans": "配偶或伴侣，包括永久居留权费用"
             },
             "amount": 1590,
             "currency": "CAD",
@@ -383,7 +408,8 @@
           },
           {
             "label": {
-              "en": "Dependent child"
+              "en": "Dependent child",
+              "zh-Hans": "受抚养子女"
             },
             "amount": 270,
             "currency": "CAD",
@@ -396,12 +422,14 @@
         "accepted_sources": [],
         "income_location": "not_applicable",
         "stability_requirement_md": {
-          "en": "The program uses settlement funds rather than a recurring-income threshold."
+          "en": "The program uses settlement funds rather than a recurring-income threshold.",
+          "zh-Hans": "该计划使用定居资金而不是经常性收入门槛。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "Processing time is dynamic and depends on the application and current IRCC inventory. Use the cited official processing-times tool for the current estimate."
+          "en": "Processing time is dynamic and depends on the application and current IRCC inventory. Use the cited official processing-times tool for the current estimate.",
+          "zh-Hans": "处理时间是动态的，取决于应用程序和当前 IRCC 库存。使用引用的官方处理时间工具进行当前估计。"
         },
         "processing_time_months_min": "unknown",
         "processing_time_months_max": "unknown",
@@ -414,10 +442,12 @@
         "study_allowed": true,
         "business_allowed": "unknown",
         "healthcare_access_md": {
-          "en": "Permanent residents may qualify for public health coverage, but enrollment and waiting rules are provincial or territorial."
+          "en": "Permanent residents may qualify for public health coverage, but enrollment and waiting rules are provincial or territorial.",
+          "zh-Hans": "永久居民可能有资格享受公共卫生保险，但注册和等待规则是按省或地区规定的。"
         },
         "tax_residency_note_md": {
-          "en": "Tax residence depends on facts and Canadian tax rules; permanent-resident status alone is not a complete tax-residency determination."
+          "en": "Tax residence depends on facts and Canadian tax rules; permanent-resident status alone is not a complete tax-residency determination.",
+          "zh-Hans": "税务居住地取决于事实和加拿大税务规则；仅凭永久居民身份并不能完全确定税务居民身份。"
         }
       },
       "family": {
@@ -428,26 +458,31 @@
         "spouse_work_allowed": true,
         "dependent_parents_allowed": "not_applicable",
         "note_md": {
-          "en": "A spouse or common-law partner and dependent children must be declared and may accompany the principal applicant. Each family member must satisfy the applicable admissibility and document requirements."
+          "en": "A spouse or common-law partner and dependent children must be declared and may accompany the principal applicant. Each family member must satisfy the applicable admissibility and document requirements.",
+          "zh-Hans": "配偶或同居伴侣和受抚养子女必须申报并可以陪同主申请人。每个家庭成员都必须满足适用的准入和文件要求。"
         }
       },
       "pr_pathway": {
         "available": true,
         "summary_md": {
-          "en": "A successful application grants Canadian permanent residence directly."
+          "en": "A successful application grants Canadian permanent residence directly.",
+          "zh-Hans": "成功申请可直接授予加拿大永久居留权。"
         }
       },
       "citizenship_pathway": {
         "available": "indirect",
         "min_residence_years": 3,
         "physical_presence_requirement_md": {
-          "en": "Adult citizenship applicants generally need at least 1,095 days of physical presence during the five-year eligibility period, including at least 730 days as a permanent resident."
+          "en": "Adult citizenship applicants generally need at least 1,095 days of physical presence during the five-year eligibility period, including at least 730 days as a permanent resident.",
+          "zh-Hans": "成年公民申请人通常需要在五年资格期内实际居住至少 1,095 天，其中作为永久居民至少居住 730 天。"
         },
         "language_requirement_md": {
-          "en": "Applicants aged 18 to 54 generally need to demonstrate adequate English or French and take the citizenship test, subject to the official exemptions and waiver rules."
+          "en": "Applicants aged 18 to 54 generally need to demonstrate adequate English or French and take the citizenship test, subject to the official exemptions and waiver rules.",
+          "zh-Hans": "18 至 54 岁的申请人通常需要表现出足够的英语或法语能力，并参加公民考试，但须遵守官方豁免和豁免规则。"
         },
         "summary_md": {
-          "en": "Permanent residence can lead to citizenship after the separate citizenship requirements are met."
+          "en": "Permanent residence can lead to citizenship after the separate citizenship requirements are met.",
+          "zh-Hans": "满足单独的公民身份要求后，永久居留即可获得公民身份。"
         }
       },
       "comparison": {
@@ -683,23 +718,30 @@
     {
       "program_id": "croatia-digital-nomad",
       "country_id": "croatia",
+      "country_names": {
+        "en": "Croatia",
+        "zh-Hans": "克罗地亚"
+      },
       "category_ids": [
         "digital_nomad"
       ],
       "official_names": {
-        "en": "Temporary Stay of Digital Nomads"
+        "en": "Temporary Stay of Digital Nomads",
+        "zh-Hans": "数字游牧民的暂时停留"
       },
       "status": "active",
       "pathway_mechanism": "remote_income",
       "summary_md": {
-        "en": "A Croatian temporary stay route for third-country digital nomads with foreign remote work, up to 18 months, a €3,622.50 monthly means-of-subsistence threshold, and immediate family reunification eligibility."
+        "en": "A Croatian temporary stay route for third-country digital nomads with foreign remote work, up to 18 months, a €3,622.50 monthly means-of-subsistence threshold, and immediate family reunification eligibility.",
+        "zh-Hans": "克罗地亚临时居留途径，适用于在国外远程工作的第三国数字游牧民，最长可达 18 个月，每月生活资料门槛为 3,622.50 欧元，并有直系亲属团聚资格。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "Temporary stay grant fee at police administration"
+              "en": "Temporary stay grant fee at police administration",
+              "zh-Hans": "警察局临时居留补助费"
             },
             "amount": 46.45,
             "currency": "EUR",
@@ -707,7 +749,8 @@
           },
           {
             "label": {
-              "en": "Administrative fee for biometric residence permit"
+              "en": "Administrative fee for biometric residence permit",
+              "zh-Hans": "生物识别居留许可管理费"
             },
             "amount": 9.29,
             "currency": "EUR",
@@ -715,7 +758,8 @@
           },
           {
             "label": {
-              "en": "Biometric residence card"
+              "en": "Biometric residence card",
+              "zh-Hans": "生物识别居留卡"
             },
             "amount": 31.85,
             "currency": "EUR",
@@ -743,12 +787,14 @@
         "income_location": "outside_destination",
         "proof_history_months": 6,
         "stability_requirement_md": {
-          "en": "The MUP page requires at least 2.5 average Croatian net salaries, currently €3,622.50 per month. It allows regular-income evidence or payslips for the previous six months; alternatives include €43,470 for a 12-month stay or €65,205 for an 18-month stay."
+          "en": "The MUP page requires at least 2.5 average Croatian net salaries, currently €3,622.50 per month. It allows regular-income evidence or payslips for the previous six months; alternatives include €43,470 for a 12-month stay or €65,205 for an 18-month stay.",
+          "zh-Hans": "MUP 页面要求至少 2.5 克罗地亚平均净工资，目前每月 3,622.50 欧元。它允许提供过去六个月的固定收入证据或工资单；其他选择包括 12 个月住宿 43,470 欧元或 18 个月住宿 65,205 欧元。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "Temporary stay may be granted for up to 18 months. If granted for less than 18 months, an extension of up to six months may be requested no later than 60 days before expiry. A new digital-nomad application may be submitted six months after expiry."
+          "en": "Temporary stay may be granted for up to 18 months. If granted for less than 18 months, an extension of up to six months may be requested no later than 60 days before expiry. A new digital-nomad application may be submitted six months after expiry.",
+          "zh-Hans": "临时居留期限最长可达 18 个月。如果授予期限少于 18 个月，则可以在到期前 60 天以内申请最多六个月的延期。新的数字游牧者申请可以在到期后六个月提交。"
         },
         "initial_validity_months": "variable",
         "renewable": true,
@@ -768,19 +814,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "Close family members, including qualifying common-law partners, may join after the digital nomad has been granted temporary stay."
+          "en": "Close family members, including qualifying common-law partners, may join after the digital nomad has been granted temporary stay.",
+          "zh-Hans": "在数字游牧者获得临时居留权后，亲密的家庭成员，包括符合条件的同居伴侣，可以加入。"
         }
       },
       "pr_pathway": {
         "available": false,
         "summary_md": {
-          "en": "The MUP page describes temporary stay and a later application after six months, but does not establish a permanent-residence pathway from digital-nomad stay."
+          "en": "The MUP page describes temporary stay and a later application after six months, but does not establish a permanent-residence pathway from digital-nomad stay.",
+          "zh-Hans": "MUP 页面描述了临时居留和六个月后的后续申请，但没有建立从数字游牧者居留到永久居留的途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained MUP page does not establish citizenship eligibility."
+          "en": "The retained MUP page does not establish citizenship eligibility.",
+          "zh-Hans": "保留的 MUP 页面并不确定公民资格。"
         }
       },
       "comparison": {
@@ -942,23 +991,30 @@
     {
       "program_id": "estonia-digital-nomad-visa",
       "country_id": "estonia",
+      "country_names": {
+        "en": "Estonia",
+        "zh-Hans": "爱沙尼亚"
+      },
       "category_ids": [
         "digital_nomad"
       ],
       "official_names": {
-        "en": "Digital Nomad Visa"
+        "en": "Digital Nomad Visa",
+        "zh-Hans": "数字游牧签证"
       },
       "status": "active",
       "pathway_mechanism": "remote_income",
       "summary_md": {
-        "en": "A temporary Estonian visa for location-independent workers working for a foreign employer, a foreign company, or mostly foreign clients, with a maximum D-visa stay of up to one year."
+        "en": "A temporary Estonian visa for location-independent workers working for a foreign employer, a foreign company, or mostly foreign clients, with a maximum D-visa stay of up to one year.",
+        "zh-Hans": "爱沙尼亚临时签证，适用于为外国雇主、外国公司或大多数外国客户工作的不受地点限制的工人，D 签证最长停留期限为一年。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "Long-stay D visa state fee"
+              "en": "Long-stay D visa state fee",
+              "zh-Hans": "长期居留 D 签证政府费用"
             },
             "amount": 120,
             "currency": "EUR",
@@ -966,7 +1022,8 @@
           },
           {
             "label": {
-              "en": "Short-stay C visa state fee"
+              "en": "Short-stay C visa state fee",
+              "zh-Hans": "短期停留C签证政府费用"
             },
             "amount": 90,
             "currency": "EUR",
@@ -993,12 +1050,14 @@
         "income_location": "outside_destination",
         "proof_history_months": 6,
         "stability_requirement_md": {
-          "en": "The FAQ states that applicants must evidence income during the six months before application and meet the monthly gross threshold."
+          "en": "The FAQ states that applicants must evidence income during the six months before application and meet the monthly gross threshold.",
+          "zh-Hans": "常见问题解答指出，申请人必须证明申请前六个月内的收入并达到每月总额门槛。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The e-Residency programme page says DNV processing can take up to 30 days. The FAQ distinguishes a C visa of up to 90 days from a D visa of up to 365 days."
+          "en": "The e-Residency programme page says DNV processing can take up to 30 days. The FAQ distinguishes a C visa of up to 90 days from a D visa of up to 365 days.",
+          "zh-Hans": "e-Residency 计划页面显示，DNV 处理最多可能需要 30 天。常见问题解答将最长 90 天的 C 签证与最长 365 天的 D 签证区分开来。"
         },
         "initial_validity_months": "variable",
         "renewable": false,
@@ -1011,7 +1070,8 @@
         "study_allowed": "unknown",
         "business_allowed": "unknown",
         "tax_residency_note_md": {
-          "en": "The DNV is a temporary stay visa and is not a residence permit."
+          "en": "The DNV is a temporary stay visa and is not a residence permit.",
+          "zh-Hans": "DNV 是临时居留签证，不是居留许可。"
         }
       },
       "family": {
@@ -1021,19 +1081,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The retained DNV pages do not establish dependant eligibility or dependant work rights."
+          "en": "The retained DNV pages do not establish dependant eligibility or dependant work rights.",
+          "zh-Hans": "保留的 DNV 页面不建立附属资格或附属工作权利。"
         }
       },
       "pr_pathway": {
         "available": false,
         "summary_md": {
-          "en": "The FAQ states that DNV stays do not provide an advantage for obtaining an Estonian residence permit and do not give permanent residence."
+          "en": "The FAQ states that DNV stays do not provide an advantage for obtaining an Estonian residence permit and do not give permanent residence.",
+          "zh-Hans": "常见问题解答指出，DNV 居留并不能为获得爱沙尼亚居留许可提供优势，也不能提供永久居留权。"
         }
       },
       "citizenship_pathway": {
         "available": false,
         "summary_md": {
-          "en": "The FAQ states that DNV stays do not give a right to Estonian citizenship."
+          "en": "The FAQ states that DNV stays do not give a right to Estonian citizenship.",
+          "zh-Hans": "常见问题解答指出，DNV 停留并不赋予爱沙尼亚公民身份的权利。"
         }
       },
       "comparison": {
@@ -1196,23 +1259,30 @@
     {
       "program_id": "estonia-e-residency",
       "country_id": "estonia",
+      "country_names": {
+        "en": "Estonia",
+        "zh-Hans": "爱沙尼亚"
+      },
       "category_ids": [
         "startup_entrepreneur"
       ],
       "official_names": {
-        "en": "e-Residency"
+        "en": "e-Residency",
+        "zh-Hans": "电子居住"
       },
       "status": "active",
       "pathway_mechanism": "e_residency",
       "summary_md": {
-        "en": "A Republic of Estonia digital identity that lets global entrepreneurs authenticate online, sign documents, and establish or manage an Estonian company remotely; it does not grant residence or travel rights."
+        "en": "A Republic of Estonia digital identity that lets global entrepreneurs authenticate online, sign documents, and establish or manage an Estonian company remotely; it does not grant residence or travel rights.",
+        "zh-Hans": "爱沙尼亚共和国数字身份，让全球企业家可以在线验证、签署文件以及远程建立或管理爱沙尼亚公司；它不授予居住或旅行权利。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "e-Residency application fee"
+              "en": "e-Residency application fee",
+              "zh-Hans": "电子居留申请费"
             },
             "amount": 150,
             "currency": "EUR",
@@ -1228,12 +1298,14 @@
         "income_location": "not_applicable",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "e-Residency is not an immigration residence route and has no published personal-income requirement in the retained application page."
+          "en": "e-Residency is not an immigration residence route and has no published personal-income requirement in the retained application page.",
+          "zh-Hans": "e-Residency不是移民居留途径，并且在保留的申请页面中没有公布个人收入要求。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The application flow shows an identity check, approximately 30 days for approval, card delivery in two to five weeks, and automatic card activation within 24 hours after pickup."
+          "en": "The application flow shows an identity check, approximately 30 days for approval, card delivery in two to five weeks, and automatic card activation within 24 hours after pickup.",
+          "zh-Hans": "申请流程包括身份检查、大约 30 天的批准时间、两到五周内的卡交付以及取卡后 24 小时内的自动卡激活。"
         },
         "initial_validity_months": "unknown",
         "renewable": "unknown",
@@ -1246,7 +1318,8 @@
         "study_allowed": false,
         "business_allowed": true,
         "tax_residency_note_md": {
-          "en": "e-Residency does not change physical or tax residency."
+          "en": "e-Residency does not change physical or tax residency.",
+          "zh-Hans": "电子居民身份不会改变实际或税务居民身份。"
         }
       },
       "family": {
@@ -1256,19 +1329,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "Because e-Residency does not grant residence or travel rights, the retained sources do not establish family immigration benefits."
+          "en": "Because e-Residency does not grant residence or travel rights, the retained sources do not establish family immigration benefits.",
+          "zh-Hans": "由于电子居留权不授予居住或旅行权利，因此保留的来源不建立家庭移民福利。"
         }
       },
       "pr_pathway": {
         "available": false,
         "summary_md": {
-          "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no residence right."
+          "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no residence right.",
+          "zh-Hans": "保留的电子居留常见问题解答明确指出电子居留不提供居留权。"
         }
       },
       "citizenship_pathway": {
         "available": false,
         "summary_md": {
-          "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no citizenship right."
+          "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no citizenship right.",
+          "zh-Hans": "保留的电子居住常见问题解答明确指出电子居住不提供公民权利。"
         }
       },
       "comparison": {
@@ -1431,23 +1507,30 @@
     {
       "program_id": "hong-kong-top-talent-pass",
       "country_id": "hong-kong",
+      "country_names": {
+        "en": "Hong Kong",
+        "zh-Hans": "中国香港"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Top Talent Pass Scheme"
+        "en": "Top Talent Pass Scheme",
+        "zh-Hans": "顶尖人才通行证计划"
       },
       "status": "active",
       "pathway_mechanism": "talent_pass",
       "summary_md": {
-        "en": "A Hong Kong talent admission route with Category A for high annual income, Categories B and C for graduates of eligible universities, and no Hong Kong job offer required at initial application."
+        "en": "A Hong Kong talent admission route with Category A for high annual income, Categories B and C for graduates of eligible universities, and no Hong Kong job offer required at initial application.",
+        "zh-Hans": "香港人才录取途径，A类适用于高年收入，B类和C类适用于符合条件的大学毕业生，首次申请时无需提供香港工作机会。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "Non-refundable TTPS application fee"
+              "en": "Non-refundable TTPS application fee",
+              "zh-Hans": "不可退还的 TTPS 申请费"
             },
             "amount": "unknown",
             "currency": "HKD",
@@ -1465,7 +1548,8 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "Category A threshold; Categories B and C use academic and work-history criteria instead."
+              "en": "Category A threshold; Categories B and C use academic and work-history criteria instead.",
+              "zh-Hans": "A类门槛； B 类和 C 类使用学术和工作经历标准。"
             }
           }
         ],
@@ -1477,12 +1561,14 @@
         "income_location": "unknown",
         "proof_history_months": 12,
         "stability_requirement_md": {
-          "en": "Category A uses taxable employment or business income in the preceding year. Extension requires Hong Kong employment with stable income or an established/joined Hong Kong business."
+          "en": "Category A uses taxable employment or business income in the preceding year. Extension requires Hong Kong employment with stable income or an established/joined Hong Kong business.",
+          "zh-Hans": "A 类使用上一年的应税就业或营业收入。延期要求在香港就业并有稳定收入或已在香港成立/加盟企业。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "Entry applications normally take four weeks after all required documents and the relevant fee are received; extensions are normally processed in two to three weeks."
+          "en": "Entry applications normally take four weeks after all required documents and the relevant fee are received; extensions are normally processed in two to three weeks.",
+          "zh-Hans": "入学申请通常在收到所有所需文件和相关费用后需要四个星期；延期通常会在两到三周内得到处理。"
         },
         "initial_validity_months": "variable",
         "renewable": true,
@@ -1503,20 +1589,23 @@
         "spouse_work_allowed": true,
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The TTPS dependant policy covers a spouse or qualifying civil partner and unmarried dependent children under 18; dependants are not prohibited from employment or study."
+          "en": "The TTPS dependant policy covers a spouse or qualifying civil partner and unmarried dependent children under 18; dependants are not prohibited from employment or study.",
+          "zh-Hans": "TTPS 受养人政策涵盖配偶或合格的民事伴侣以及 18 岁以下的未婚受抚养子女；不禁止家属就业或学习。"
         }
       },
       "pr_pathway": {
         "available": true,
         "min_residence_years": 7,
         "summary_md": {
-          "en": "Persons admitted under TTPS who have ordinarily resided in Hong Kong for a continuous period of not less than seven years may apply for right of abode under the law."
+          "en": "Persons admitted under TTPS who have ordinarily resided in Hong Kong for a continuous period of not less than seven years may apply for right of abode under the law.",
+          "zh-Hans": "根据TTPS来港人士在香港通常居住连续满七年，可依法申请居留权。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained Immigration Department pages establish a right-of-abode route but do not establish a citizenship route."
+          "en": "The retained Immigration Department pages establish a right-of-abode route but do not establish a citizenship route.",
+          "zh-Hans": "保留的移民局页面建立了居留权途径，但没有建立公民身份途径。"
         }
       },
       "comparison": {
@@ -1679,16 +1768,22 @@
     {
       "program_id": "japan-engineer-specialist",
       "country_id": "japan",
+      "country_names": {
+        "en": "Japan",
+        "zh-Hans": "日本"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Engineer / Specialist in Humanities / International Services"
+        "en": "Engineer / Specialist in Humanities / International Services",
+        "zh-Hans": "工程师/人文专家/国际服务"
       },
       "status": "active",
       "pathway_mechanism": "employer_sponsored",
       "summary_md": {
-        "en": "A Japan work residence status for technical, humanities, and certain foreign-culture-based activities performed under a contract with a public or private institution in Japan."
+        "en": "A Japan work residence status for technical, humanities, and certain foreign-culture-based activities performed under a contract with a public or private institution in Japan.",
+        "zh-Hans": "根据与日本公共或私人机构签订的合同进行的技术、人文和某些外国文化活动的日本工作居留身份。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -1702,12 +1797,14 @@
         "income_location": "inside_destination",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The status is based on paid activity under a contract with an institution in Japan; the retained page does not state a universal salary minimum."
+          "en": "The status is based on paid activity under a contract with an institution in Japan; the retained page does not state a universal salary minimum.",
+          "zh-Hans": "该状态基于与日本机构签订的合同下的付费活动；保留的页面没有规定普遍最低工资。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The ISA page provides application procedures and document categories but no single processing-time value in the retained text."
+          "en": "The ISA page provides application procedures and document categories but no single processing-time value in the retained text.",
+          "zh-Hans": "ISA 页面提供了申请程序和文档类别，但保留文本中没有单个处理时间值。"
         },
         "initial_validity_months": "variable",
         "renewable": true,
@@ -1730,13 +1827,15 @@
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained ISA status page does not establish a permanent-residence pathway."
+          "en": "The retained ISA status page does not establish a permanent-residence pathway.",
+          "zh-Hans": "保留的 ISA 状态页面不会建立永久居留途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained ISA status page does not establish a citizenship pathway."
+          "en": "The retained ISA status page does not establish a citizenship pathway.",
+          "zh-Hans": "保留的 ISA 状态页面并未建立公民身份途径。"
         }
       },
       "comparison": {
@@ -1899,16 +1998,22 @@
     {
       "program_id": "netherlands-highly-skilled-migrant",
       "country_id": "netherlands",
+      "country_names": {
+        "en": "Netherlands",
+        "zh-Hans": "荷兰"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Residence Permit for Highly Skilled Migrants"
+        "en": "Residence Permit for Highly Skilled Migrants",
+        "zh-Hans": "高技术移民居留许可"
       },
       "status": "active",
       "pathway_mechanism": "employer_sponsored",
       "summary_md": {
-        "en": "A Netherlands residence permit for highly skilled work based on an employment contract with an IND-recognised sponsor and an indexed salary criterion."
+        "en": "A Netherlands residence permit for highly skilled work based on an employment contract with an IND-recognised sponsor and an indexed salary criterion.",
+        "zh-Hans": "基于与 IND 认可的担保人签订的雇佣合同和指数工资标准，获得荷兰高技能工作居留许可。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -1922,12 +2027,14 @@
         "income_location": "inside_destination",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The salary must meet the indexed criterion for the applicant’s situation, be paid monthly into an account in the applicant’s name, and match the market rate. The PDF lists standard, under-30, and reduced salary criteria without embedding a single permanent amount."
+          "en": "The salary must meet the indexed criterion for the applicant’s situation, be paid monthly into an account in the applicant’s name, and match the market rate. The PDF lists standard, under-30, and reduced salary criteria without embedding a single permanent amount.",
+          "zh-Hans": "工资必须符合申请人情况的指数标准，每月支付到申请人名下的账户，并与市场利率相匹配。 PDF 列出了标​​准工资、30 岁以下工资和减薪标准，但没有嵌入任何永久金额。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "If the recognised sponsor submits a complete application, the IND process can be completed within two weeks according to the retained guide. Permit validity depends on the employment and residence conditions."
+          "en": "If the recognised sponsor submits a complete application, the IND process can be completed within two weeks according to the retained guide. Permit validity depends on the employment and residence conditions.",
+          "zh-Hans": "如果认可的申办者提交完整的申请，IND流程可以根据保留的指南在两周内完成。许可证的有效期取决于就业和居留条件。"
         },
         "initial_validity_months": "unknown",
         "renewable": true,
@@ -1947,19 +2054,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The retained highly skilled migrant guide does not establish dependant eligibility in this fixture; family conditions require a separate IND family assessment."
+          "en": "The retained highly skilled migrant guide does not establish dependant eligibility in this fixture; family conditions require a separate IND family assessment.",
+          "zh-Hans": "保留的高技术移民指南并未在此规定中建立依附资格；家庭条件需要单独的 IND 家庭评估。"
         }
       },
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained guide establishes the highly skilled migrant residence permit but does not establish an individual permanent-residence outcome."
+          "en": "The retained guide establishes the highly skilled migrant residence permit but does not establish an individual permanent-residence outcome.",
+          "zh-Hans": "保留的指南规定了高技术移民居留许可，但没有规定个人永久居留结果。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained guide does not establish citizenship eligibility."
+          "en": "The retained guide does not establish citizenship eligibility.",
+          "zh-Hans": "保留的指南不规定公民资格。"
         }
       },
       "comparison": {
@@ -2121,16 +2231,22 @@
     {
       "program_id": "netherlands-orientation-year",
       "country_id": "netherlands",
+      "country_names": {
+        "en": "Netherlands",
+        "zh-Hans": "荷兰"
+      },
       "category_ids": [
         "study_to_pr"
       ],
       "official_names": {
-        "en": "Residence Permit for an Orientation Year"
+        "en": "Residence Permit for an Orientation Year",
+        "zh-Hans": "求职年居留许可"
       },
       "status": "active",
       "pathway_mechanism": "other",
       "summary_md": {
-        "en": "A one-year Netherlands residence permit for qualifying graduates, PhD holders, researchers, and other highly educated applicants to seek work after recent study or research."
+        "en": "A one-year Netherlands residence permit for qualifying graduates, PhD holders, researchers, and other highly educated applicants to seek work after recent study or research.",
+        "zh-Hans": "为符合资格的毕业生、博士持有者、研究人员和其他受过高等教育的申请人在最近的学习或研究后寻找工作提供一年期的荷兰居留许可。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -2144,12 +2260,14 @@
         "income_location": "not_applicable",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The retained form is an admission and residence application based on qualifying education or research, not a personal-income route."
+          "en": "The retained form is an admission and residence application based on qualifying education or research, not a personal-income route.",
+          "zh-Hans": "保留的表格是基于合格教育或研究的入学和居住申请，而不是个人收入途径。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The permit is an orientation year: one year to look for work in the Netherlands. The retained form does not establish a processing duration."
+          "en": "The permit is an orientation year: one year to look for work in the Netherlands. The retained form does not establish a processing duration.",
+          "zh-Hans": "该许可证是一个求职年：在荷兰寻找工作的一年。保留的表格不规定处理期限。"
         },
         "initial_validity_months": 12,
         "renewable": false,
@@ -2169,19 +2287,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The retained orientation-year form does not establish dependant conditions."
+          "en": "The retained orientation-year form does not establish dependant conditions.",
+          "zh-Hans": "保留的求职年表格不设定附属条件。"
         }
       },
       "pr_pathway": {
         "available": "indirect",
         "summary_md": {
-          "en": "The permit provides one year to find work; the IND highly skilled migrant guide identifies the orientation year as one route to the reduced salary criterion for a later highly skilled migrant application."
+          "en": "The permit provides one year to find work; the IND highly skilled migrant guide identifies the orientation year as one route to the reduced salary criterion for a later highly skilled migrant application.",
+          "zh-Hans": "该许可证提供一年的找工作时间； IND 高技术移民指南将求职年确定为以后高技术移民申请降低工资标准的一种途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained orientation-year form does not establish citizenship eligibility."
+          "en": "The retained orientation-year form does not establish citizenship eligibility.",
+          "zh-Hans": "保留的求职年表格并不确定公民资格。"
         }
       },
       "comparison": {
@@ -2343,23 +2464,30 @@
     {
       "program_id": "new-zealand-accredited-employer-work-visa",
       "country_id": "new-zealand",
+      "country_names": {
+        "en": "New Zealand",
+        "zh-Hans": "新西兰"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Accredited Employer Work Visa (AEWV)"
+        "en": "Accredited Employer Work Visa (AEWV)",
+        "zh-Hans": "认可雇主工作签证（AEWV）"
       },
       "status": "active",
       "pathway_mechanism": "employer_sponsored",
       "summary_md": {
-        "en": "A New Zealand work visa for a full-time job offer from an accredited employer, with job-specific conditions, up to five years for most jobs, and possible residence options depending on the occupation."
+        "en": "A New Zealand work visa for a full-time job offer from an accredited employer, with job-specific conditions, up to five years for most jobs, and possible residence options depending on the occupation.",
+        "zh-Hans": "新西兰工作签证，由认可的雇主提供全职工作机会，具有特定于工作的条件，大多数工作最长可达五年，并根据职业提供可能的居留选择。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "AEWV application fee from"
+              "en": "AEWV application fee from",
+              "zh-Hans": "AEWV 申请费从"
             },
             "amount": 1540,
             "currency": "NZD",
@@ -2375,12 +2503,14 @@
         "income_location": "inside_destination",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The retained AEWV page ties eligibility to the offered job and employment agreement; it does not establish one universal personal-income threshold in this fixture."
+          "en": "The retained AEWV page ties eligibility to the offered job and employment agreement; it does not establish one universal personal-income threshold in this fixture.",
+          "zh-Hans": "保留的 AEWV 页面将资格与所提供的工作和就业协议联系起来；它没有在此规定中设定普遍的个人收入门槛。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "Immigration New Zealand lists 80% processing within seven weeks. The visa can be up to five years based on the job; most jobs have a five-year maximum continuous stay and ANZSCO skill-level 4 or 5 jobs generally have three years."
+          "en": "Immigration New Zealand lists 80% processing within seven weeks. The visa can be up to five years based on the job; most jobs have a five-year maximum continuous stay and ANZSCO skill-level 4 or 5 jobs generally have three years.",
+          "zh-Hans": "新西兰移民局列出 80% 的处理时间为七周内。根据工作情况，签证最长可达五年；大多数工作的最长连续停留期限为五年，ANZSCO 技能级别 4 或 5 工作的最长连续停留期限为三年。"
         },
         "initial_validity_months": "unknown",
         "renewable": true,
@@ -2400,19 +2530,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": false,
         "note_md": {
-          "en": "Partner and dependent-child visas may be supported, but the exact visa type depends on earnings, occupation skill level, NOL/ANZSCO status, Green List or approved transport/care-workforce status, and other conditions."
+          "en": "Partner and dependent-child visas may be supported, but the exact visa type depends on earnings, occupation skill level, NOL/ANZSCO status, Green List or approved transport/care-workforce status, and other conditions.",
+          "zh-Hans": "可能支持伴侣和受抚养子女签证，但确切的签证类型取决于收入、职业技能水平、NOL/ANZSCO 状态、绿名单或批准的交通/护理劳动力状态以及其他条件。"
         }
       },
       "pr_pathway": {
         "available": "indirect",
         "summary_md": {
-          "en": "The AEWV page says the visa can lead to a resident visa depending on the job and points applicants to New Zealand skilled-residence pathways."
+          "en": "The AEWV page says the visa can lead to a resident visa depending on the job and points applicants to New Zealand skilled-residence pathways.",
+          "zh-Hans": "AEWV 页面称，该签证可以根据工作获得居民签证，并为申请人提供新西兰技术居留途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "AEWV alone does not establish citizenship eligibility."
+          "en": "AEWV alone does not establish citizenship eligibility.",
+          "zh-Hans": "AEWV 本身并不能确定公民资格。"
         }
       },
       "comparison": {
@@ -2576,23 +2709,30 @@
     {
       "program_id": "new-zealand-skilled-migrant-category",
       "country_id": "new-zealand",
+      "country_names": {
+        "en": "New Zealand",
+        "zh-Hans": "新西兰"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Skilled Migrant Category Resident Visa"
+        "en": "Skilled Migrant Category Resident Visa",
+        "zh-Hans": "技术移民类别居民签证"
       },
       "status": "active",
       "pathway_mechanism": "points_invitation",
       "summary_md": {
-        "en": "A New Zealand resident visa for applicants aged 55 or younger with an accredited-employer skilled job or offer, six skilled-resident points, English, and the other residence requirements."
+        "en": "A New Zealand resident visa for applicants aged 55 or younger with an accredited-employer skilled job or offer, six skilled-resident points, English, and the other residence requirements.",
+        "zh-Hans": "新西兰居民签证，适用于 55 岁或以下的申请人，拥有经认可的雇主技术工作或工作邀请、六个技术居民积分、英语和其他居住要求。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "Resident visa application fee from"
+              "en": "Resident visa application fee from",
+              "zh-Hans": "居民签证申请费从"
             },
             "amount": 6450,
             "currency": "NZD",
@@ -2608,12 +2748,14 @@
         "income_location": "inside_destination",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The job or offer must meet the skilled-job rules, including hours, duration, occupation level, and applicable wage conditions. The retained page does not reduce this to one universal income amount."
+          "en": "The job or offer must meet the skilled-job rules, including hours, duration, occupation level, and applicable wage conditions. The retained page does not reduce this to one universal income amount.",
+          "zh-Hans": "工作或工作机会必须符合技术工作规则，包括工作时间、持续时间、职业级别和适用的工资条件。保留的页面不会将其减少为一个普遍收入金额。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The visa lets the holder stay indefinitely. The application requires an expression of interest and invitation to apply."
+          "en": "The visa lets the holder stay indefinitely. The application requires an expression of interest and invitation to apply.",
+          "zh-Hans": "该签证允许持有人无限期居留。该申请需要表达兴趣并邀请申请。"
         },
         "initial_validity_months": "unknown",
         "renewable": false,
@@ -2634,20 +2776,23 @@
         "spouse_work_allowed": true,
         "dependent_parents_allowed": false,
         "note_md": {
-          "en": "The SMC page allows inclusion of a partner and dependent children aged 24 or younger in the application."
+          "en": "The SMC page allows inclusion of a partner and dependent children aged 24 or younger in the application.",
+          "zh-Hans": "SMC 页面允许在申请中包含伴侣和 24 岁或以下的受抚养子女。"
         }
       },
       "pr_pathway": {
         "available": true,
         "min_residence_years": 2,
         "summary_md": {
-          "en": "After holding the resident visa for two years in a row, the holder can apply for a Permanent Resident Visa that permits indefinite travel in and out of New Zealand."
+          "en": "After holding the resident visa for two years in a row, the holder can apply for a Permanent Resident Visa that permits indefinite travel in and out of New Zealand.",
+          "zh-Hans": "连续持有居民签证两年后，持有人可以申请永久居民签证，允许无限期进出新西兰。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The page links citizenship guidance but does not establish an individual citizenship outcome."
+          "en": "The page links citizenship guidance but does not establish an individual citizenship outcome.",
+          "zh-Hans": "该页面链接了公民身份指南，但并未建立个人公民身份结果。"
         }
       },
       "comparison": {
@@ -2809,16 +2954,22 @@
     {
       "program_id": "portugal-d8-digital-nomad",
       "country_id": "portugal",
+      "country_names": {
+        "en": "Portugal",
+        "zh-Hans": "葡萄牙"
+      },
       "category_ids": [
         "digital_nomad"
       ],
       "official_names": {
-        "en": "Temporary stay visa and residence permit for digital nomads"
+        "en": "Temporary stay visa and residence permit for digital nomads",
+        "zh-Hans": "数字游牧民的临时居留签证和居留许可"
       },
       "status": "active",
       "pathway_mechanism": "remote_income",
       "summary_md": {
-        "en": "Portugal's official government portal describes a temporary-stay visa and residence-permit route for digital nomads, with separate documentary conditions for employees and independent workers."
+        "en": "Portugal's official government portal describes a temporary-stay visa and residence-permit route for digital nomads, with separate documentary conditions for employees and independent workers.",
+        "zh-Hans": "葡萄牙官方政府门户网站描述了数字游牧民的临时居留签证和居留许可途径，并为雇员和独立工人提供了单独的文件条件。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -2834,7 +2985,8 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "The official article states an average monthly income over the last three months of at least four Portuguese minimum wages; the current monetary amount is not fixed in this record."
+              "en": "The official article states an average monthly income over the last three months of at least four Portuguese minimum wages; the current monetary amount is not fixed in this record.",
+              "zh-Hans": "官方文章指出，过去三个月的平均月收入至少达到葡萄牙最低工资的四倍；当前的货币金额在此记录中并未固定。"
             }
           }
         ],
@@ -2846,7 +2998,8 @@
         "income_location": "unknown",
         "proof_history_months": 3,
         "stability_requirement_md": {
-          "en": "The government article requires average monthly income over the last three months and different employment or independent-activity documents."
+          "en": "The government article requires average monthly income over the last three months and different employment or independent-activity documents.",
+          "zh-Hans": "政府文章要求过去三个月的平均月收入以及不同的就业或独立活动文件。"
         }
       },
       "timeline": {
@@ -2871,13 +3024,15 @@
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained government article does not establish a permanent-residence outcome for this route."
+          "en": "The retained government article does not establish a permanent-residence outcome for this route.",
+          "zh-Hans": "保留的政府条款并未确定这条途径的永久居留结果。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained government article does not establish a citizenship outcome for this route."
+          "en": "The retained government article does not establish a citizenship outcome for this route.",
+          "zh-Hans": "保留的政府文章并未确定这条途径的公民身份结果。"
         }
       },
       "comparison": {
@@ -3038,16 +3193,22 @@
     {
       "program_id": "singapore-employment-pass",
       "country_id": "singapore",
+      "country_names": {
+        "en": "Singapore",
+        "zh-Hans": "新加坡"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Employment Pass"
+        "en": "Employment Pass",
+        "zh-Hans": "就业准证"
       },
       "status": "active",
       "pathway_mechanism": "employer_sponsored",
       "summary_md": {
-        "en": "An employer-sponsored Singapore work pass for foreign professionals, managers, and executives with a job offer in Singapore who meet the qualifying-salary and, unless exempted, COMPASS requirements."
+        "en": "An employer-sponsored Singapore work pass for foreign professionals, managers, and executives with a job offer in Singapore who meet the qualifying-salary and, unless exempted, COMPASS requirements.",
+        "zh-Hans": "雇主担保的新加坡工作准证，适用于在新加坡获得工作机会且符合合格工资以及 COMPASS 要求（除非豁免）的外国专业人士、经理和高管。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -3063,7 +3224,8 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "Current minimum for all sectors except financial services; the threshold increases progressively with age and financial services has a higher threshold."
+              "en": "Current minimum for all sectors except financial services; the threshold increases progressively with age and financial services has a higher threshold.",
+              "zh-Hans": "目前除金融服务业外所有行业的最低标准；随着年龄的增长，门槛逐渐提高，金融服务的门槛也更高。"
             }
           }
         ],
@@ -3073,7 +3235,8 @@
         "income_location": "inside_destination",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The qualifying salary is a fixed monthly salary benchmarked to local PMET salaries by age and sector."
+          "en": "The qualifying salary is a fixed monthly salary benchmarked to local PMET salaries by age and sector.",
+          "zh-Hans": "合格工资是按年龄和行业以当地 PMET 工资为基准的固定月薪。"
         }
       },
       "timeline": {
@@ -3095,19 +3258,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "MOM's key-facts page notes eligible family passes but does not establish the family conditions in this source set."
+          "en": "MOM's key-facts page notes eligible family passes but does not establish the family conditions in this source set.",
+          "zh-Hans": "MOM 的关键事实页面记录了符合条件的家属准证，但并未在此源集中确定家庭条件。"
         }
       },
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained Employment Pass pages link to a permanent-residence question but do not establish a PR eligibility rule."
+          "en": "The retained Employment Pass pages link to a permanent-residence question but do not establish a PR eligibility rule.",
+          "zh-Hans": "保留的就业准证页面链接到永久居留问题，但没有建立永久居民资格规则。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained Employment Pass pages do not establish a citizenship pathway."
+          "en": "The retained Employment Pass pages do not establish a citizenship pathway.",
+          "zh-Hans": "保留的就业准证页面并不建立公民身份途径。"
         }
       },
       "comparison": {
@@ -3270,16 +3436,22 @@
     {
       "program_id": "singapore-entrepass",
       "country_id": "singapore",
+      "country_names": {
+        "en": "Singapore",
+        "zh-Hans": "新加坡"
+      },
       "category_ids": [
         "startup_entrepreneur"
       ],
       "official_names": {
-        "en": "EntrePass"
+        "en": "EntrePass",
+        "zh-Hans": "创业通行证"
       },
       "status": "active",
       "pathway_mechanism": "own_company",
       "summary_md": {
-        "en": "A Singapore own-company work pass for foreign entrepreneurs who start or operate an ACRA-registered private limited company, hold at least 30% of it, and meet at least one qualifying funding, accelerator, technology, IP, or research criterion."
+        "en": "A Singapore own-company work pass for foreign entrepreneurs who start or operate an ACRA-registered private limited company, hold at least 30% of it, and meet at least one qualifying funding, accelerator, technology, IP, or research criterion.",
+        "zh-Hans": "新加坡自有公司工作准证，适用于创办或经营 ACRA 注册私人有限公司、持有至少 30% 股份，并满足至少一项合格资金、加速器、技术、知识产权或研究标准的外国企业家。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -3294,7 +3466,8 @@
         "income_location": "inside_destination",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "EntrePass eligibility is based on the company and qualifying founder/investor/innovation criteria rather than a universal personal income threshold."
+          "en": "EntrePass eligibility is based on the company and qualifying founder/investor/innovation criteria rather than a universal personal income threshold.",
+          "zh-Hans": "创业准证资格基于公司和合格的创始人/投资者/创新标准，而不是普遍的个人收入门槛。"
         }
       },
       "business_setup": {
@@ -3312,12 +3485,14 @@
         ],
         "local_director_required": true,
         "note_md": {
-          "en": "ACRA states foreigners must use a Corporate Service Provider, meet local residency requirements, and have at least one local resident. Entrepreneurs with venture-backed or innovative-tech companies can apply for EntrePass before incorporation or within six months of setup."
+          "en": "ACRA states foreigners must use a Corporate Service Provider, meet local residency requirements, and have at least one local resident. Entrepreneurs with venture-backed or innovative-tech companies can apply for EntrePass before incorporation or within six months of setup.",
+          "zh-Hans": "ACRA 规定外国人必须使用企业服务提供商、满足当地居住要求，并且至少拥有一名当地居民。拥有风投支持或创新科技公司的企业家可以在公司成立前或成立后六个月内申请创业准证。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The retained overview page links to application and renewal procedures but does not state one processing-time value."
+          "en": "The retained overview page links to application and renewal procedures but does not state one processing-time value.",
+          "zh-Hans": "保留的概述页面链接到申请和续订程序，但没有说明一个处理时间值。"
         },
         "initial_validity_months": "unknown",
         "renewable": true,
@@ -3338,19 +3513,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": true,
         "note_md": {
-          "en": "Family passes require business-spending and local-workforce thresholds. MOM lists Dependant's Pass for a legally married spouse and unmarried children under 21, and Long-Term Visit Pass routes for common-law spouses, certain children, and parents."
+          "en": "Family passes require business-spending and local-workforce thresholds. MOM lists Dependant's Pass for a legally married spouse and unmarried children under 21, and Long-Term Visit Pass routes for common-law spouses, certain children, and parents.",
+          "zh-Hans": "家属准证需要商业支出和当地劳动力门槛。 MOM 列出了针对合法结婚配偶和 21 岁以下未婚子女的家属准证，以及针对同居配偶、某些子女和父母的长期访问准证途径。"
         }
       },
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained EntrePass, family, and ACRA pages do not establish a permanent-residence pathway."
+          "en": "The retained EntrePass, family, and ACRA pages do not establish a permanent-residence pathway.",
+          "zh-Hans": "保留的创业准证、家庭和 ACRA 页面并未建立永久居留途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained EntrePass, family, and ACRA pages do not establish a citizenship pathway."
+          "en": "The retained EntrePass, family, and ACRA pages do not establish a citizenship pathway.",
+          "zh-Hans": "保留的创业准证、家庭和 ACRA 页面并未建立公民身份途径。"
         }
       },
       "comparison": {
@@ -3524,16 +3702,22 @@
     {
       "program_id": "spain-digital-nomad",
       "country_id": "spain",
+      "country_names": {
+        "en": "Spain",
+        "zh-Hans": "西班牙"
+      },
       "category_ids": [
         "digital_nomad"
       ],
       "official_names": {
-        "en": "International teleworker residence authorisation"
+        "en": "International teleworker residence authorisation",
+        "zh-Hans": "国际远程工作者居留许可"
       },
       "status": "active",
       "pathway_mechanism": "remote_income",
       "summary_md": {
-        "en": "Spain's UGE describes an international-teleworker route for third-country nationals working remotely for companies outside Spain through computer, telematic, and telecommunications systems."
+        "en": "Spain's UGE describes an international-teleworker route for third-country nationals working remotely for companies outside Spain through computer, telematic, and telecommunications systems.",
+        "zh-Hans": "西班牙的 UGE 描述了一种国际远程工作途径，供第三国国民通过计算机、远程信息处理和电信系统为西班牙境外的公司远程工作。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -3549,7 +3733,8 @@
         "income_location": "outside_destination",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The retained UGE page establishes work for companies outside Spain but does not state the financial-resource threshold."
+          "en": "The retained UGE page establishes work for companies outside Spain but does not state the financial-resource threshold.",
+          "zh-Hans": "保留的 UGE 页面为西班牙境外的公司提供了工作机会，但没有说明财务资源门槛。"
         }
       },
       "timeline": {
@@ -3574,13 +3759,15 @@
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained UGE page does not establish a permanent-residence outcome for this authorisation."
+          "en": "The retained UGE page does not establish a permanent-residence outcome for this authorisation.",
+          "zh-Hans": "保留的 UGE 页面并不为此授权建立永久居留结果。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained UGE page does not establish a citizenship outcome for this authorisation."
+          "en": "The retained UGE page does not establish a citizenship outcome for this authorisation.",
+          "zh-Hans": "保留的 UGE 页面并未确定此授权的公民身份结果。"
         }
       },
       "comparison": {
@@ -3741,24 +3928,31 @@
     {
       "program_id": "uae-free-zone-investor",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "startup_entrepreneur",
         "investor"
       ],
       "official_names": {
-        "en": "Free-zone company and Green Residence — partner/investor"
+        "en": "Free-zone company and Green Residence — partner/investor",
+        "zh-Hans": "自由区公司和绿色居留——合作伙伴/投资者"
       },
       "status": "active",
       "pathway_mechanism": "own_company",
       "summary_md": {
-        "en": "A company-owner route pairing DMCC free-zone company formation with Dubai's Green Residence permit for an investor or partner in a commercial project."
+        "en": "A company-owner route pairing DMCC free-zone company formation with Dubai's Green Residence permit for an investor or partner in a commercial project.",
+        "zh-Hans": "公司所有者途径，将 DMCC 自由区公司组建与商业项目投资者或合作伙伴的迪拜绿色居留许可配对。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "GDRFA residence permit fee"
+              "en": "GDRFA residence permit fee",
+              "zh-Hans": "GDRFA 居留许可费"
             },
             "amount": 200,
             "currency": "AED",
@@ -3775,7 +3969,8 @@
         "income_location": "not_applicable",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The retained setup and residence sources do not state a universal income minimum for this partner/investor route."
+          "en": "The retained setup and residence sources do not state a universal income minimum for this partner/investor route.",
+          "zh-Hans": "保留的设立与居留来源并未说明此合作伙伴/投资者途径的普遍收入最低标准。"
         }
       },
       "business_setup": {
@@ -3794,18 +3989,21 @@
             "applies_to": "business",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "DMCC publishes a setup-cost range that varies by business type, licence duration, and office solution; this is the lower end of the published range."
+              "en": "DMCC publishes a setup-cost range that varies by business type, licence duration, and office solution; this is the lower end of the published range.",
+              "zh-Hans": "DMCC 发布了一个设立成本范围，该范围因业务类型、许可证期限和办公解决方案而异；这是已发布范围的下限。"
             }
           }
         ],
         "local_director_required": "unknown",
         "note_md": {
-          "en": "DMCC describes a digital formation process, shareholder and ownership documents, business information, a registered office solution, and an electronic licence. GDRFA requires partnership/MOA or investment-contract evidence and a trade licence for the residence permit."
+          "en": "DMCC describes a digital formation process, shareholder and ownership documents, business information, a registered office solution, and an electronic licence. GDRFA requires partnership/MOA or investment-contract evidence and a trade licence for the residence permit.",
+          "zh-Hans": "DMCC 描述了线上设立流程、股东和所有权文件、商业信息、注册办事处解决方案和电子许可证。 GDRFA 需要合伙/MOA 或投资合同证据以及居留许可的贸易许可证。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "DMCC says company formation typically takes around 10 working days depending on documents and approvals. GDRFA lists 48 hours as the expected completion time for the residence service."
+          "en": "DMCC says company formation typically takes around 10 working days depending on documents and approvals. GDRFA lists 48 hours as the expected completion time for the residence service.",
+          "zh-Hans": "DMCC 表示，公司成立通常需要 10 个工作日左右，具体取决于文件和批准。 GDRFA 将 48 小时列为居住服务的预计完成时间。"
         },
         "initial_validity_months": 60,
         "renewable": true,
@@ -3825,19 +4023,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The retained DMCC and GDRFA service pages do not establish the family sponsorship conditions for this fixture."
+          "en": "The retained DMCC and GDRFA service pages do not establish the family sponsorship conditions for this fixture.",
+          "zh-Hans": "保留的 DMCC 和 GDRFA 服务页面并未规定此赛事的家庭赞助条件。"
         }
       },
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained company-setup and Green Residence service pages do not establish a permanent-residence pathway."
+          "en": "The retained company-setup and Green Residence service pages do not establish a permanent-residence pathway.",
+          "zh-Hans": "保留的公司设立和绿色居住服务页面并未建立永久居留途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained company-setup and Green Residence service pages do not establish a citizenship pathway."
+          "en": "The retained company-setup and Green Residence service pages do not establish a citizenship pathway.",
+          "zh-Hans": "保留的公司设立和绿色居留服务页面并未建立公民身份途径。"
         }
       },
       "comparison": {
@@ -4000,16 +4201,22 @@
     {
       "program_id": "uae-golden-entrepreneur",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "startup_entrepreneur"
       ],
       "official_names": {
-        "en": "Golden Residence — entrepreneur"
+        "en": "Golden Residence — entrepreneur",
+        "zh-Hans": "黄金居留——企业家"
       },
       "status": "active",
       "pathway_mechanism": "own_company",
       "summary_md": {
-        "en": "An entrepreneur route to complete UAE Golden Residency procedures for an innovative or future-oriented project valued at least AED 500,000 and supported by an accredited-auditor letter and competent-authority or incubator confirmation."
+        "en": "An entrepreneur route to complete UAE Golden Residency procedures for an innovative or future-oriented project valued at least AED 500,000 and supported by an accredited-auditor letter and competent-authority or incubator confirmation.",
+        "zh-Hans": "为价值至少 500,000 迪拉姆的创新或面向未来的项目完成阿联酋黄金居留程序的企业家途径，并得到认可审计师信函和主管机构或孵化器确认的支持。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -4020,14 +4227,16 @@
             "applies_to": "business",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "This is the minimum documented project value, not a universal personal liquid-funds requirement."
+              "en": "This is the minimum documented project value, not a universal personal liquid-funds requirement.",
+              "zh-Hans": "这是记录的最低项目价值，而不是通用的个人流动资金要求。"
             }
           }
         ],
         "application_fees": [
           {
             "label": {
-              "en": "Application Fees"
+              "en": "Application Fees",
+              "zh-Hans": "申请费"
             },
             "amount": 100,
             "currency": "AED",
@@ -4035,7 +4244,8 @@
           },
           {
             "label": {
-              "en": "Issuance Fees"
+              "en": "Issuance Fees",
+              "zh-Hans": "发行费用"
             },
             "amount": 100,
             "currency": "AED",
@@ -4043,7 +4253,8 @@
           },
           {
             "label": {
-              "en": "Smart Services Fees"
+              "en": "Smart Services Fees",
+              "zh-Hans": "智能服务费用"
             },
             "amount": 100,
             "currency": "AED",
@@ -4061,7 +4272,8 @@
         "income_location": "unknown",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The retained entrepreneur service does not state a universal personal income threshold."
+          "en": "The retained entrepreneur service does not state a universal personal income threshold.",
+          "zh-Hans": "保留企业家服务并未规定普遍的个人收入门槛。"
         }
       },
       "business_setup": {
@@ -4071,12 +4283,14 @@
         ],
         "local_director_required": "unknown",
         "note_md": {
-          "en": "The service is for a project owner and requires project-value and innovation/future-oriented documentation, but does not define a single company incorporation form."
+          "en": "The service is for a project owner and requires project-value and innovation/future-oriented documentation, but does not define a single company incorporation form.",
+          "zh-Hans": "该服务面向项目所有者，需要项目价值和创新/面向未来的文档，但不定义单一公司注册形式。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The ICP service lists a two-day service completion duration and describes the service as completing Golden Residency procedures for ten years."
+          "en": "The ICP service lists a two-day service completion duration and describes the service as completing Golden Residency procedures for ten years.",
+          "zh-Hans": "ICP服务列出了两天的服务完成期限，并将该服务描述为完成黄金居住程序十年。"
         },
         "initial_validity_months": 120,
         "renewable": "unknown",
@@ -4096,19 +4310,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The retained entrepreneur service does not enumerate dependant eligibility or work rights."
+          "en": "The retained entrepreneur service does not enumerate dependant eligibility or work rights.",
+          "zh-Hans": "保留的企业家服务不列举附属资格或工作权利。"
         }
       },
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The entrepreneur service establishes a ten-year Golden Residency procedure, not a permanent-residence route."
+          "en": "The entrepreneur service establishes a ten-year Golden Residency procedure, not a permanent-residence route.",
+          "zh-Hans": "企业家服务建立了为期十年的黄金居留程序，而不是永久居留途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained entrepreneur service does not establish a citizenship route."
+          "en": "The retained entrepreneur service does not establish a citizenship route.",
+          "zh-Hans": "保留的企业家服务不建立公民身份途径。"
         }
       },
       "comparison": {
@@ -4270,16 +4487,22 @@
     {
       "program_id": "uae-golden-property-investor",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "investor"
       ],
       "official_names": {
-        "en": "Golden Residence — real estate investor"
+        "en": "Golden Residence — real estate investor",
+        "zh-Hans": "Golden Residence — 房地产投资者"
       },
       "status": "active",
       "pathway_mechanism": "investment",
       "summary_md": {
-        "en": "A ten-year Golden Residence route for a UAE real-estate investor who owns property or properties with a total value of at least AED 2 million and maintains the investment conditions."
+        "en": "A ten-year Golden Residence route for a UAE real-estate investor who owns property or properties with a total value of at least AED 2 million and maintains the investment conditions.",
+        "zh-Hans": "为拥有总价值至少 200 万迪拉姆的房产或房产并保持投资条件的阿联酋房地产投资者提供为期十年的黄金居留途径。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -4290,14 +4513,16 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "The real-estate investment must total at least AED 2 million; the service states that mortgaged property may be accepted and details valuation and lien controls."
+              "en": "The real-estate investment must total at least AED 2 million; the service states that mortgaged property may be accepted and details valuation and lien controls.",
+              "zh-Hans": "房地产投资总额必须至少200万迪拉姆；该服务规定可以接受抵押财产，并详细说明了估价和留置权控制。"
             }
           }
         ],
         "application_fees": [
           {
             "label": {
-              "en": "Golden Residence service cost"
+              "en": "Golden Residence service cost",
+              "zh-Hans": "金居服务费用"
             },
             "amount": 2790,
             "currency": "AED",
@@ -4314,12 +4539,14 @@
         "income_location": "not_applicable",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The retained Golden Investor page sets the property-value condition and does not state a universal personal income minimum for the Golden real-estate stream."
+          "en": "The retained Golden Investor page sets the property-value condition and does not state a universal personal income minimum for the Golden real-estate stream.",
+          "zh-Hans": "保留的黄金投资者页面设置了财产价值条件，但没有规定黄金房地产流的普遍个人收入最低标准。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The GDRFA service lists an expected completion time of five days. Golden Residence is valid for ten years and can be extended if the same conditions continue."
+          "en": "The GDRFA service lists an expected completion time of five days. Golden Residence is valid for ten years and can be extended if the same conditions continue.",
+          "zh-Hans": "GDRFA 服务列出的预计完成时间为五天。黄金居留的有效期为十年，如果相同条件持续，可以延长。"
         },
         "initial_validity_months": 120,
         "renewable": true,
@@ -4339,19 +4566,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The retained GDRFA Golden Investor page states Golden Residence family self-support conditions but does not enumerate dependant eligibility in the stream-specific service."
+          "en": "The retained GDRFA Golden Investor page states Golden Residence family self-support conditions but does not enumerate dependant eligibility in the stream-specific service.",
+          "zh-Hans": "保留的 GDRFA Golden Investor 页面规定了 Golden Residence 家庭的自养条件，但没有列举特定流服务中的家属资格。"
         }
       },
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The Golden Investor service establishes long-term renewable residence, not a permanent-residence route."
+          "en": "The Golden Investor service establishes long-term renewable residence, not a permanent-residence route.",
+          "zh-Hans": "黄金投资者服务建立了长期可更新居留权，而不是永久居留权。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained investor service does not establish a citizenship route."
+          "en": "The retained investor service does not establish a citizenship route.",
+          "zh-Hans": "保留投资者服务不建立公民身份途径。"
         }
       },
       "comparison": {
@@ -4513,23 +4743,30 @@
     {
       "program_id": "uae-golden-talent",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Golden Residence — talented geniuses"
+        "en": "Golden Residence — talented geniuses",
+        "zh-Hans": "黄金居留——杰出人才"
       },
       "status": "active",
       "pathway_mechanism": "talent_pass",
       "summary_md": {
-        "en": "A ten-year renewable Golden Residence route for exceptional talent in culture and arts, innovation and invention, athletics, or digital technology, with nomination and category-specific evidence."
+        "en": "A ten-year renewable Golden Residence route for exceptional talent in culture and arts, innovation and invention, athletics, or digital technology, with nomination and category-specific evidence.",
+        "zh-Hans": "为期十年的可续期黄金居留途径，针对文化和艺术、创新和发明、体育或数字技术领域的杰出人才，提供提名和特定类别的证据。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "Residence permit fee"
+              "en": "Residence permit fee",
+              "zh-Hans": "居留许可费"
             },
             "amount": 1100,
             "currency": "AED",
@@ -4537,7 +4774,8 @@
           },
           {
             "label": {
-              "en": "Fee inside the country"
+              "en": "Fee inside the country",
+              "zh-Hans": "国内费用"
             },
             "amount": 500,
             "currency": "AED",
@@ -4545,7 +4783,8 @@
           },
           {
             "label": {
-              "en": "Delivery"
+              "en": "Delivery",
+              "zh-Hans": "送货"
             },
             "amount": 20,
             "currency": "AED",
@@ -4561,12 +4800,14 @@
         "income_location": "unknown",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The service requires the holder to support themselves and their family without government support but does not state a universal income threshold."
+          "en": "The service requires the holder to support themselves and their family without government support but does not state a universal income threshold.",
+          "zh-Hans": "该服务要求持有人在没有政府支持的情况下养活自己和家人，但没有规定普遍的收入门槛。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The GDRFA service lists an expected completion time of five days. The permit is valid for ten years and may be extended if the same conditions are met."
+          "en": "The GDRFA service lists an expected completion time of five days. The permit is valid for ten years and may be extended if the same conditions are met.",
+          "zh-Hans": "GDRFA 服务列出的预计完成时间为五天。该许可证的有效期为十年，如果满足相同条件，可以延期。"
         },
         "initial_validity_months": 120,
         "renewable": true,
@@ -4586,19 +4827,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The retained talent service mentions supporting the family but does not enumerate dependant eligibility or work rights."
+          "en": "The retained talent service mentions supporting the family but does not enumerate dependant eligibility or work rights.",
+          "zh-Hans": "保留人才服务提到支持家庭，但没有列举受抚养资格或工作权利。"
         }
       },
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The talent service establishes renewable ten-year residence, not a permanent-residence route."
+          "en": "The talent service establishes renewable ten-year residence, not a permanent-residence route.",
+          "zh-Hans": "人才服务建立了可续签的十年居留权，而不是永久居留权。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained talent service does not establish a citizenship route."
+          "en": "The retained talent service does not establish a citizenship route.",
+          "zh-Hans": "留用人才服务不建立公民身份途径。"
         }
       },
       "comparison": {
@@ -4760,23 +5004,30 @@
     {
       "program_id": "uae-green-freelancer",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "skilled_worker"
       ],
       "official_names": {
-        "en": "Green Residence — self-employment"
+        "en": "Green Residence — self-employment",
+        "zh-Hans": "绿色居留——自营职业"
       },
       "status": "active",
       "pathway_mechanism": "self_sponsored",
       "summary_md": {
-        "en": "A self-sponsored UAE residence permit for a freelancer or self-employed person who holds a Ministry of Human Resources and Emiratisation permit and meets the education and income/solvency conditions."
+        "en": "A self-sponsored UAE residence permit for a freelancer or self-employed person who holds a Ministry of Human Resources and Emiratisation permit and meets the education and income/solvency conditions.",
+        "zh-Hans": "为持有人力资源和酋长国许可证并符合教育和收入/偿付能力条件的自由职业者或自营职业者提供的无需担保的阿联酋居留许可证。"
       },
       "funds": {
         "proof_of_funds": [],
         "application_fees": [
           {
             "label": {
-              "en": "Residence permit fee"
+              "en": "Residence permit fee",
+              "zh-Hans": "居留许可费"
             },
             "amount": 200,
             "currency": "AED",
@@ -4784,7 +5035,8 @@
           },
           {
             "label": {
-              "en": "Knowledge Dirham"
+              "en": "Knowledge Dirham",
+              "zh-Hans": "知识迪拉姆"
             },
             "amount": 10,
             "currency": "AED",
@@ -4792,7 +5044,8 @@
           },
           {
             "label": {
-              "en": "Innovation Dirham"
+              "en": "Innovation Dirham",
+              "zh-Hans": "创新迪拉姆"
             },
             "amount": 10,
             "currency": "AED",
@@ -4800,7 +5053,8 @@
           },
           {
             "label": {
-              "en": "Fee inside the country"
+              "en": "Fee inside the country",
+              "zh-Hans": "国内费用"
             },
             "amount": 500,
             "currency": "AED",
@@ -4808,7 +5062,8 @@
           },
           {
             "label": {
-              "en": "Delivery"
+              "en": "Delivery",
+              "zh-Hans": "送货"
             },
             "amount": 20,
             "currency": "AED",
@@ -4826,7 +5081,8 @@
             "applies_to": "primary",
             "calculation": "minimum_total",
             "note_md": {
-              "en": "Self-employment income over the two preceding years; the page also permits proof of financial solvency throughout the stay as an alternative."
+              "en": "Self-employment income over the two preceding years; the page also permits proof of financial solvency throughout the stay as an alternative.",
+              "zh-Hans": "前两年的自营职业收入；作为替代方案，该页面还允许在整个住宿期间提供财务偿付能力证明。"
             }
           }
         ],
@@ -4837,12 +5093,14 @@
         "income_location": "unknown",
         "proof_history_months": 24,
         "stability_requirement_md": {
-          "en": "Annual self-employment income for the two preceding years must meet the threshold, unless financial solvency is proved throughout residence."
+          "en": "Annual self-employment income for the two preceding years must meet the threshold, unless financial solvency is proved throughout residence.",
+          "zh-Hans": "除非在整个居住期间证明财务偿付能力，否则前两年的年自营职业收入必须达到门槛。"
         }
       },
       "timeline": {
         "application_processing_time_md": {
-          "en": "The GDRFA service lists an expected completion time of 48 hours and a 180-day grace period after expiry or cancellation."
+          "en": "The GDRFA service lists an expected completion time of 48 hours and a 180-day grace period after expiry or cancellation.",
+          "zh-Hans": "GDRFA 服务列出了 48 小时的预计完成时间以及到期或取消后 180 天的宽限期。"
         },
         "initial_validity_months": "unknown",
         "renewable": true,
@@ -4862,19 +5120,22 @@
         "spouse_work_allowed": "unknown",
         "dependent_parents_allowed": "unknown",
         "note_md": {
-          "en": "The retained Dubai self-employment service page does not state family sponsorship conditions."
+          "en": "The retained Dubai self-employment service page does not state family sponsorship conditions.",
+          "zh-Hans": "保留的迪拜自营职业服务页面并未注明家庭担保条件。"
         }
       },
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained self-employment service does not establish a permanent-residence route."
+          "en": "The retained self-employment service does not establish a permanent-residence route.",
+          "zh-Hans": "保留自营职业服务不建立永久居留途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained self-employment service does not establish a citizenship route."
+          "en": "The retained self-employment service does not establish a citizenship route.",
+          "zh-Hans": "保留的自营职业服务不建立公民身份途径。"
         }
       },
       "comparison": {
@@ -5036,16 +5297,22 @@
     {
       "program_id": "uae-remote-work",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "digital_nomad"
       ],
       "official_names": {
-        "en": "Virtual Work Residence"
+        "en": "Virtual Work Residence",
+        "zh-Hans": "虚拟工作居留"
       },
       "status": "active",
       "pathway_mechanism": "remote_income",
       "summary_md": {
-        "en": "A UAE remote-work residence route for people working remotely for an organization outside the UAE. The Dubai authority describes a one-year permit subject to renewal, while federal and Dubai sources state a USD 3,500 monthly income condition."
+        "en": "A UAE remote-work residence route for people working remotely for an organization outside the UAE. The Dubai authority describes a one-year permit subject to renewal, while federal and Dubai sources state a USD 3,500 monthly income condition.",
+        "zh-Hans": "阿联酋远程工作居住途径，适用于为阿联酋以外的组织远程工作的人员。迪拜当局描述了为期一年的许可证，可以续签，而联邦和迪拜消息人士称，每月收入为 3,500 美元。"
       },
       "funds": {
         "proof_of_funds": [],
@@ -5068,7 +5335,8 @@
         "income_location": "outside_destination",
         "proof_history_months": "unknown",
         "stability_requirement_md": {
-          "en": "The UAE sources require proof of remote work for an organization outside the UAE and a salary certificate or equivalent showing at least USD 3,500."
+          "en": "The UAE sources require proof of remote work for an organization outside the UAE and a salary certificate or equivalent showing at least USD 3,500.",
+          "zh-Hans": "阿联酋消息人士要求提供阿联酋境外组织的远程工作证明以及至少显示 3,500 美元的工资证明或同等文件。"
         }
       },
       "timeline": {
@@ -5093,13 +5361,15 @@
       "pr_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained virtual-work residence sources do not establish a permanent-residence route."
+          "en": "The retained virtual-work residence sources do not establish a permanent-residence route.",
+          "zh-Hans": "保留的虚拟工作居留来源不建立永久居住途径。"
         }
       },
       "citizenship_pathway": {
         "available": "unknown",
         "summary_md": {
-          "en": "The retained virtual-work residence sources do not establish a citizenship route."
+          "en": "The retained virtual-work residence sources do not establish a citizenship route.",
+          "zh-Hans": "保留的虚拟工作居留来源不建立公民身份途径。"
         }
       },
       "comparison": {

@@ -1,7 +1,7 @@
 ---
 import Layout from "../components/Layout.astro";
 import { loadCanonicalData } from "../lib/data";
-import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../i18n";
+import { defaultLocale, pickLocalized, regionLabel, t, tf, withLocale, type Locale } from "../i18n";
 
 interface Props {
   locale?: Locale;
@@ -65,7 +65,7 @@ const countryGroups = countries.map((country) => {
                 <div>
                   <h3>{pickLocalized(country.names, locale)}</h3>
                   <p class="card-meta">
-                    {country.iso2} · {country.region}
+                    {country.iso2} · {regionLabel(country.region, locale)}
                   </p>
                 </div>
               </header>
@@ -78,7 +78,7 @@ const countryGroups = countries.map((country) => {
                         <p class="source-program-cats">
                           {programCategories
                             .map((category) => pickLocalized(category.names, locale))
-                            .join(" · ") || "General"}
+                            .join(" · ") || t("sources.general", locale)}
                         </p>
                         <h4>
                           <a href={L(`/programs/${program.id}`)}>
@@ -87,7 +87,13 @@ const countryGroups = countries.map((country) => {
                         </h4>
                       </div>
                       <span class="card-tag">
-                        {programSources.length} source{programSources.length === 1 ? "" : "s"}
+                        {tf(
+                          programSources.length === 1
+                            ? "sources.sourceCount"
+                            : "sources.sourcesCount",
+                          locale,
+                          { count: programSources.length },
+                        )}
                       </span>
                     </div>
                     <ul class="source-link-list">
@@ -126,8 +132,8 @@ const countryGroups = countries.map((country) => {
                   <div class="source-program">
                     <div class="source-program-header">
                       <div>
-                        <p class="source-program-cats">Country-level</p>
-                        <h4>Other registered pages</h4>
+                        <p class="source-program-cats">{t("sources.countryLevel", locale)}</p>
+                        <h4>{t("sources.otherRegistered", locale)}</h4>
                       </div>
                     </div>
                     <ul class="source-link-list">

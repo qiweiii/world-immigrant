@@ -45,6 +45,20 @@ test("compare engine resolves stable rows and preserves evidence metadata", asyn
   );
 });
 
+test("compare engine localizes program, country, row, and value text", async () => {
+  const programs = await comparePrograms();
+  const view = buildComparison(programs, ["canada-express-entry-fsw"], "zh-Hans");
+
+  assert.equal(view.columns[0].title, "联邦技术工人计划");
+  assert.equal(programs[0].country_names["zh-Hans"], "澳大利亚");
+  assert.equal(view.rows.find(({ id }) => id === "pathway")?.label, "路径结果");
+  assert.equal(view.rows.find(({ id }) => id === "pathway")?.cells[0].display, "直接获得永久居留");
+  assert.equal(
+    view.rows.find(({ id }) => id === "pathway_mechanism")?.cells[0].display,
+    "打分邀请",
+  );
+});
+
 test("compare engine aligns a synthetic second program and displays unknown explicitly", async () => {
   const programs = await comparePrograms();
   const synthetic = structuredClone(programs[0]);

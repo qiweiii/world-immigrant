@@ -1,3 +1,4 @@
+import { defaultLocale, type Locale, pickLocalized, t, tf, type UiKey } from "../i18n";
 import type { buildPublicData } from "./public-data";
 
 type CompareProgram = ReturnType<typeof buildPublicData>["compareIndex"]["programs"][number];
@@ -33,144 +34,203 @@ function citationsFor(program: CompareProgram, path: string): CompareCitation[] 
   });
 }
 
-function formatPolicy(value: unknown) {
-  if (value === true) return "Yes";
-  if (value === false) return "No";
-  if (value === "unknown") return "Unknown — confirm with official source";
-  if (value === "variable") return "Variable";
-  if (value === "not_applicable") return "Not applicable";
-  if (value === "limited") return "Limited or conditional";
-  if (value === "indirect") return "Indirect pathway";
+const enumLabels: Record<Locale, Record<string, string>> = {
+  en: {},
+  "zh-Hans": {
+    temporary_no_pr: "临时身份，不通向永久居留",
+    temporary_may_lead_pr: "临时身份，可能通向永久居留",
+    residence: "居留",
+    direct_pr: "直接永久居留",
+    e_status_only: "仅电子身份",
+    employer_sponsored: "雇主担保",
+    self_sponsored: "自助申请",
+    own_company: "自有公司",
+    points_invitation: "打分邀请",
+    investment: "投资",
+    remote_income: "境外远程收入",
+    talent_pass: "人才准证",
+    e_residency: "电子居民身份",
+    other: "其他",
+    inside_destination: "目的地境内",
+    outside_destination: "目的地境外",
+    either: "境内或境外",
+    annual: "每年",
+    monthly: "每月",
+    weekly: "每周",
+    under_review: "待复核",
+    paused: "暂停",
+    closed: "关闭",
+  },
+};
+
+function enumLabel(value: string, locale: Locale) {
+  return enumLabels[locale][value] ?? value.replaceAll("_", " ");
+}
+
+function formatPolicy(value: unknown, locale: Locale) {
+  if (value === true) return t("compare.value.yes", locale);
+  if (value === false) return t("compare.value.no", locale);
+  if (value === "unknown") return t("compare.value.unknown", locale);
+  if (value === "variable") return t("compare.value.variable", locale);
+  if (value === "not_applicable") return t("compare.value.notApplicable", locale);
+  if (value === "limited") return t("compare.value.limited", locale);
+  if (value === "indirect") return t("compare.value.indirect", locale);
   return String(value);
 }
 
-function pathway(program: CompareProgram) {
-  if (program.pr_pathway.available === true) return "Direct permanent residence";
-  return formatPolicy(program.pr_pathway.available);
+function pathway(program: CompareProgram, locale: Locale) {
+  if (program.pr_pathway.available === true) return t("compare.value.directPr", locale);
+  return formatPolicy(program.pr_pathway.available, locale);
 }
 
-function mechanismLabel(value: string) {
-  return value.replaceAll("_", " ");
+function settlementTrack(program: CompareProgram, locale: Locale) {
+  return enumLabel(program.filter.settlement_track, locale);
 }
 
-function settlementTrack(program: CompareProgram) {
-  return mechanismLabel(program.filter.settlement_track);
+function pathwayMechanism(program: CompareProgram, locale: Locale) {
+  return enumLabel(program.pathway_mechanism, locale);
 }
 
-function pathwayMechanism(program: CompareProgram) {
-  return mechanismLabel(program.pathway_mechanism);
-}
-
-function incomeRow(program: CompareProgram) {
+function incomeRow(program: CompareProgram, locale: Locale) {
   if (program.income.required === false || program.income.required === "not_applicable") {
-    return "No recurring income minimum in this record";
+    return t("compare.value.noIncome", locale);
   }
   const first = program.income.min_income?.[0];
-  if (!first) return formatPolicy(program.income.required);
+  if (!first) return formatPolicy(program.income.required, locale);
   const location = program.income.income_location
-    ? `; income location: ${mechanismLabel(program.income.income_location)}`
+    ? `; ${tf("compare.value.incomeLocation", locale, {
+        location: enumLabel(program.income.income_location, locale),
+      })}`
     : "";
-  return `${formatPolicy(first.amount)} ${first.currency}${first.period ? ` ${first.period}` : ""}${location}`;
+  const period = first.period ? ` ${enumLabel(first.period, locale)}` : "";
+  return `${formatPolicy(first.amount, locale)} ${first.currency}${period}${location}`;
 }
 
-function jobOffer(program: CompareProgram) {
-  return formatPolicy(program.filter.requires_job_offer);
+function jobOffer(program: CompareProgram, locale: Locale) {
+  return formatPolicy(program.filter.requires_job_offer, locale);
 }
 
-function funds(program: CompareProgram) {
+function funds(program: CompareProgram, locale: Locale) {
   const first = program.funds.proof_of_funds.find(
     ({ calculation, family_size }) => calculation === "minimum_total" && family_size === 1,
   );
-  if (!first) return "No fixed minimum published in this record";
-  return `${formatPolicy(first.amount)} ${first.currency} for family size 1; varies by family size`;
+  if (!first) return t("compare.value.noFunds", locale);
+  return tf("compare.value.fundsFamily", locale, {
+    amount: formatPolicy(first.amount, locale),
+    currency: first.currency,
+  });
 }
 
-function processing(program: CompareProgram) {
+function processing(program: CompareProgram, locale: Locale) {
   const { processing_time_months_min: min, processing_time_months_max: max } = program.timeline;
   if (min === "unknown" || max === "unknown" || min === undefined || max === undefined) {
-    return "Unknown — use the current official processing-times tool";
+    return t("compare.value.processingUnknown", locale);
   }
-  return min === max ? `${min} months` : `${min}–${max} months`;
+  const value = min === max ? String(min) : `${min}–${max}`;
+  return tf("compare.value.months", locale, { value });
 }
 
-function workRights(program: CompareProgram) {
-  return `Work: ${formatPolicy(program.rights.work_allowed)}; remote work: ${formatPolicy(program.rights.remote_work_allowed)}`;
+function workRights(program: CompareProgram, locale: Locale) {
+  return tf("compare.value.workRights", locale, {
+    work: formatPolicy(program.rights.work_allowed, locale),
+    remote: formatPolicy(program.rights.remote_work_allowed, locale),
+  });
 }
 
-function family(program: CompareProgram) {
-  return `Partner: ${formatPolicy(program.family.spouse_or_partner_allowed)}; children: ${formatPolicy(program.family.children_allowed)}; partner work: ${formatPolicy(program.family.spouse_work_allowed)}`;
+function family(program: CompareProgram, locale: Locale) {
+  return tf("compare.value.familyRights", locale, {
+    partner: formatPolicy(program.family.spouse_or_partner_allowed, locale),
+    children: formatPolicy(program.family.children_allowed, locale),
+    partnerWork: formatPolicy(program.family.spouse_work_allowed, locale),
+  });
 }
 
-function citizenship(program: CompareProgram) {
+function citizenship(program: CompareProgram, locale: Locale) {
+  const value = formatPolicy(program.citizenship_pathway.available, locale);
   const years = program.citizenship_pathway.min_residence_years;
-  const suffix = typeof years === "number" ? `; minimum residence modeled: ${years} years` : "";
-  return `${formatPolicy(program.citizenship_pathway.available)}${suffix}`;
+  return typeof years === "number"
+    ? tf("compare.value.citizenshipYears", locale, { value, years })
+    : value;
 }
 
 const rowDefinitions: Array<{
   id: string;
-  label: string;
+  labelKey: UiKey;
   citationPath?: string;
-  render: (program: CompareProgram) => string;
+  render: (program: CompareProgram, locale: Locale) => string;
 }> = [
   {
     id: "settlement_track",
-    label: "Settlement track",
+    labelKey: "compare.row.settlementTrack",
     citationPath: "/filter",
     render: settlementTrack,
   },
   {
     id: "pathway_mechanism",
-    label: "Entry mechanism",
+    labelKey: "compare.row.entryMechanism",
     citationPath: "/pathway_mechanism",
     render: pathwayMechanism,
   },
-  { id: "pathway", label: "Pathway outcome", citationPath: "/pr_pathway", render: pathway },
+  {
+    id: "pathway",
+    labelKey: "compare.row.pathwayOutcome",
+    citationPath: "/pr_pathway",
+    render: pathway,
+  },
   {
     id: "job_offer",
-    label: "Job offer required",
+    labelKey: "compare.row.jobOffer",
     citationPath: "/filter",
     render: jobOffer,
   },
   {
     id: "income",
-    label: "Income threshold",
+    labelKey: "compare.row.income",
     citationPath: "/income",
     render: incomeRow,
   },
   {
     id: "settlement_funds",
-    label: "Settlement funds",
+    labelKey: "compare.row.funds",
     citationPath: "/funds",
     render: funds,
   },
   {
     id: "processing_time",
-    label: "Processing time",
+    labelKey: "compare.row.processing",
     citationPath: "/timeline",
     render: processing,
   },
-  { id: "work_rights", label: "Work rights", citationPath: "/rights", render: workRights },
-  { id: "family", label: "Family", citationPath: "/family", render: family },
+  {
+    id: "work_rights",
+    labelKey: "compare.row.workRights",
+    citationPath: "/rights",
+    render: workRights,
+  },
+  { id: "family", labelKey: "compare.row.family", citationPath: "/family", render: family },
   {
     id: "citizenship",
-    label: "Citizenship pathway",
+    labelKey: "compare.row.citizenship",
     citationPath: "/citizenship_pathway",
     render: citizenship,
   },
   {
     id: "source_confidence",
-    label: "Source confidence",
+    labelKey: "compare.row.sourceConfidence",
     render: (program) => `${program.comparison.source_confidence_score}/5`,
   },
   {
     id: "last_checked",
-    label: "Last updated",
+    labelKey: "compare.row.updated",
     render: (program) => program.freshness.last_checked_at.slice(0, 10),
   },
 ];
 
-export function buildComparison(programs: CompareProgram[], selectedIds: string[]): ComparisonView {
+export function buildComparison(
+  programs: CompareProgram[],
+  selectedIds: string[],
+  locale: Locale = defaultLocale,
+): ComparisonView {
   const byId = new Map(programs.map((program) => [program.program_id, program]));
   const uniqueIds = [...new Set(selectedIds)];
   if (uniqueIds.length > 3) {
@@ -185,15 +245,17 @@ export function buildComparison(programs: CompareProgram[], selectedIds: string[
   return {
     columns: selected.map((program) => ({
       id: program.program_id,
-      title: `${program.official_names.en}${program.status === "active" ? "" : ` (${program.status})`}`,
+      title: `${pickLocalized(program.official_names, locale)}${
+        program.status === "active" ? "" : ` (${enumLabel(program.status, locale)})`
+      }`,
       country_id: program.country_id,
     })),
     rows: rowDefinitions.map((row) => ({
       id: row.id,
-      label: row.label,
+      label: t(row.labelKey, locale),
       cells: selected.map((program) => ({
         program_id: program.program_id,
-        display: row.render(program),
+        display: row.render(program, locale),
         citations: row.citationPath ? citationsFor(program, row.citationPath) : [],
       })),
     })),

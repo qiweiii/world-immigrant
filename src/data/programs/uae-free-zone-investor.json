@@ -3,7 +3,8 @@
   "country_id": "uae",
   "category_ids": ["startup_entrepreneur", "investor"],
   "official_names": {
-    "en": "Free-zone company and Green Residence — partner/investor"
+    "en": "Free-zone company and Green Residence — partner/investor",
+    "zh-Hans": "自由区公司和绿色居留——合作伙伴/投资者"
   },
   "aliases": [
     "UAE Free-zone Investor Residence",
@@ -11,16 +12,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "This fixture combines an official DMCC free-zone company setup path with the Dubai GDRFA partner/investor Green Residence service. The government portal's broader Green Visa pages remain supplementary and are not used for claims here."
+    "en": "This fixture combines an official DMCC free-zone company setup path with the Dubai GDRFA partner/investor Green Residence service. The government portal's broader Green Visa pages remain supplementary and are not used for claims here.",
+    "zh-Hans": "本数据记录将官方 DMCC 自由区公司设立路径与迪拜 GDRFA 合作伙伴/投资者绿色居留服务结合起来。政府门户网站更广泛的绿色签证页面仍然是补充性的，不用于此处的事实陈述。"
   },
   "summary_md": {
-    "en": "A company-owner route pairing DMCC free-zone company formation with Dubai's Green Residence permit for an investor or partner in a commercial project."
+    "en": "A company-owner route pairing DMCC free-zone company formation with Dubai's Green Residence permit for an investor or partner in a commercial project.",
+    "zh-Hans": "公司所有者途径，将 DMCC 自由区公司组建与商业项目投资者或合作伙伴的迪拜绿色居留许可配对。"
   },
   "good_for_md": {
-    "en": "Founders or partners who need a UAE free-zone company, can provide ownership and business documents, and want a renewable five-year residence permit tied to their partner/investor status."
+    "en": "Founders or partners who need a UAE free-zone company, can provide ownership and business documents, and want a renewable five-year residence permit tied to their partner/investor status.",
+    "zh-Hans": "需要阿联酋自由区公司的创始人或合作伙伴可以提供所有权和商业文件，并希望获得与其合作伙伴/投资者身份相关的可更新的五年居留许可。"
   },
   "not_good_for_md": {
-    "en": "Applicants seeking a passive residence route without a company or commercial-project role, or those who need a published universal setup cost, family entitlement, or permanent-residence outcome."
+    "en": "Applicants seeking a passive residence route without a company or commercial-project role, or those who need a published universal setup cost, family entitlement, or permanent-residence outcome.",
+    "zh-Hans": "寻求没有公司或商业项目角色的被动居留途径的申请人，或者需要公布的通用设立成本、家庭权利或永久居留结果的申请人。"
   },
   "pathway_mechanism": "own_company",
   "eligibility": {
@@ -42,7 +47,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "GDRFA residence permit fee"
+          "en": "GDRFA residence permit fee",
+          "zh-Hans": "GDRFA 居留许可费"
         },
         "amount": 200,
         "currency": "AED",
@@ -56,7 +62,8 @@
     "income_location": "not_applicable",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The retained setup and residence sources do not state a universal income minimum for this partner/investor route."
+      "en": "The retained setup and residence sources do not state a universal income minimum for this partner/investor route.",
+      "zh-Hans": "保留的设立与居留来源并未说明此合作伙伴/投资者途径的普遍收入最低标准。"
     }
   },
   "business_setup": {
@@ -70,18 +77,21 @@
         "applies_to": "business",
         "calculation": "minimum_total",
         "note_md": {
-          "en": "DMCC publishes a setup-cost range that varies by business type, licence duration, and office solution; this is the lower end of the published range."
+          "en": "DMCC publishes a setup-cost range that varies by business type, licence duration, and office solution; this is the lower end of the published range.",
+          "zh-Hans": "DMCC 发布了一个设立成本范围，该范围因业务类型、许可证期限和办公解决方案而异；这是已发布范围的下限。"
         }
       }
     ],
     "local_director_required": "unknown",
     "note_md": {
-      "en": "DMCC describes a digital formation process, shareholder and ownership documents, business information, a registered office solution, and an electronic licence. GDRFA requires partnership/MOA or investment-contract evidence and a trade licence for the residence permit."
+      "en": "DMCC describes a digital formation process, shareholder and ownership documents, business information, a registered office solution, and an electronic licence. GDRFA requires partnership/MOA or investment-contract evidence and a trade licence for the residence permit.",
+      "zh-Hans": "DMCC 描述了线上设立流程、股东和所有权文件、商业信息、注册办事处解决方案和电子许可证。 GDRFA 需要合伙/MOA 或投资合同证据以及居留许可的贸易许可证。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "DMCC says company formation typically takes around 10 working days depending on documents and approvals. GDRFA lists 48 hours as the expected completion time for the residence service."
+      "en": "DMCC says company formation typically takes around 10 working days depending on documents and approvals. GDRFA lists 48 hours as the expected completion time for the residence service.",
+      "zh-Hans": "DMCC 表示，公司成立通常需要 10 个工作日左右，具体取决于文件和批准。 GDRFA 将 48 小时列为居住服务的预计完成时间。"
     },
     "initial_validity_months": 60,
     "renewable": true,
@@ -101,19 +111,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The retained DMCC and GDRFA service pages do not establish the family sponsorship conditions for this fixture."
+      "en": "The retained DMCC and GDRFA service pages do not establish the family sponsorship conditions for this fixture.",
+      "zh-Hans": "保留的 DMCC 和 GDRFA 服务页面并未规定此赛事的家庭赞助条件。"
     }
   },
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained company-setup and Green Residence service pages do not establish a permanent-residence pathway."
+      "en": "The retained company-setup and Green Residence service pages do not establish a permanent-residence pathway.",
+      "zh-Hans": "保留的公司设立和绿色居住服务页面并未建立永久居留途径。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained company-setup and Green Residence service pages do not establish a citizenship pathway."
+      "en": "The retained company-setup and Green Residence service pages do not establish a citizenship pathway.",
+      "zh-Hans": "保留的公司设立和绿色居留服务页面并未建立公民身份途径。"
     }
   },
   "risk": {
@@ -122,7 +135,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "DMCC and GDRFA provide direct official evidence for formation, ownership/document requirements, residence duration, renewal, and fees; broader UAE free-zone licensing, family, and settlement rules vary by authority and remain outside this fixture."
+      "en": "DMCC and GDRFA provide direct official evidence for formation, ownership/document requirements, residence duration, renewal, and fees; broader UAE free-zone licensing, family, and settlement rules vary by authority and remain outside this fixture.",
+      "zh-Hans": "DMCC 和 GDRFA 提供有关组建、所有权/文件要求、居留期限、续签和费用的直接官方证据；更广泛的阿联酋自由区许可、家庭和定居规则因当局而异，并且不在此范围内。"
     }
   },
   "comparison": {

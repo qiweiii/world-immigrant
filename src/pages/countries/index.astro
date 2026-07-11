@@ -3,14 +3,16 @@ import Layout from "../../components/Layout.astro";
 import VisaCard from "../../components/VisaCard.astro";
 import { loadCanonicalData } from "../../lib/data";
 import { buildCountryPageModels } from "../../lib/site-model";
-import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../../i18n";
+import { defaultLocale, pickLocalized, regionLabel, t, withLocale, type Locale } from "../../i18n";
 
 interface Props {
   locale?: Locale;
 }
 
 const { locale = defaultLocale } = Astro.props as Props;
-const countries = buildCountryPageModels(await loadCanonicalData());
+const dataset = await loadCanonicalData();
+const countries = buildCountryPageModels(dataset);
+const categoryById = new Map(dataset.categories.map((category) => [category.id, category]));
 const L = (path: string) => withLocale(path, locale);
 ---
 
@@ -49,7 +51,7 @@ const L = (path: string) => withLocale(path, locale);
             >
               <p class="card-meta">
                 <span class="country-swatch" aria-hidden="true"></span>
-                {country.iso2} · {country.region}
+                {country.iso2} · {regionLabel(country.region, locale)}
               </p>
               <h3 class="card-title">{pickLocalized(country.names, locale)}</h3>
               <p class="card-description">{pickLocalized(country.summary_md, locale)}</p>
@@ -82,9 +84,14 @@ const L = (path: string) => withLocale(path, locale);
           countries.flatMap(({ country, programs }) =>
             programs.map((program) => (
               <VisaCard
+                locale={locale}
                 title={pickLocalized(program.official_names, locale)}
                 country={pickLocalized(country.names, locale)}
-                category={program.category_ids.join(", ")}
+                category={program.category_ids
+                  .map((id) => categoryById.get(id))
+                  .filter((category) => category !== undefined)
+                  .map((category) => pickLocalized(category.names, locale))
+                  .join(", ")}
                 summary={pickLocalized(program.summary_md, locale)}
                 href={L(`/programs/${program.id}`)}
                 status={program.status}

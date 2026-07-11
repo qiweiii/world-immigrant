@@ -3,21 +3,26 @@
   "country_id": "new-zealand",
   "category_ids": ["skilled_worker"],
   "official_names": {
-    "en": "Skilled Migrant Category Resident Visa"
+    "en": "Skilled Migrant Category Resident Visa",
+    "zh-Hans": "技术移民类别居民签证"
   },
   "aliases": ["New Zealand SMC Resident Visa"],
   "status": "active",
   "status_note_md": {
-    "en": "This is New Zealand residence rather than a temporary work visa. It requires an expression of interest and invitation to apply under the Skilled Migrant Category rules."
+    "en": "This is New Zealand residence rather than a temporary work visa. It requires an expression of interest and invitation to apply under the Skilled Migrant Category rules.",
+    "zh-Hans": "这是新西兰居留签证，而不是临时工作签证。根据技术移民类别规则，需要表达兴趣并发出申请邀请。"
   },
   "summary_md": {
-    "en": "A New Zealand resident visa for applicants aged 55 or younger with an accredited-employer skilled job or offer, six skilled-resident points, English, and the other residence requirements."
+    "en": "A New Zealand resident visa for applicants aged 55 or younger with an accredited-employer skilled job or offer, six skilled-resident points, English, and the other residence requirements.",
+    "zh-Hans": "新西兰居民签证，适用于 55 岁或以下的申请人，拥有经认可的雇主技术工作或工作邀请、六个技术居民积分、英语和其他居住要求。"
   },
   "good_for_md": {
-    "en": "Skilled workers already in, or holding an offer of, qualifying accredited-employer work who can claim six points through occupation registration, qualification or income, and New Zealand skilled work experience."
+    "en": "Skilled workers already in, or holding an offer of, qualifying accredited-employer work who can claim six points through occupation registration, qualification or income, and New Zealand skilled work experience.",
+    "zh-Hans": "已经在合格的认可雇主工作中或持有合格雇主工作邀请的技术工人，可以通过职业注册、资格或收入以及新西兰技术工作经验获得六分。"
   },
   "not_good_for_md": {
-    "en": "Applicants without a qualifying skilled job or offer, six points, English, or the health and character requirements for residence."
+    "en": "Applicants without a qualifying skilled job or offer, six points, English, or the health and character requirements for residence.",
+    "zh-Hans": "申请人没有合格的技术工作或工作邀请、六分、英语或居住的健康和品格要求。"
   },
   "pathway_mechanism": "points_invitation",
   "eligibility": {
@@ -30,14 +35,16 @@
     },
     "work_experience": {
       "note_md": {
-        "en": "Up to three additional points can be claimed from skilled work experience in New Zealand; the exact points combination depends on the applicant profile."
+        "en": "Up to three additional points can be claimed from skilled work experience in New Zealand; the exact points combination depends on the applicant profile.",
+        "zh-Hans": "新西兰的技术工作经验最多可额外获得三分；确切的积分组合取决于申请人的个人资料。"
       }
     },
     "language": [
       {
         "language": "English",
         "note_md": {
-          "en": "The applicant must speak and understand English."
+          "en": "The applicant must speak and understand English.",
+          "zh-Hans": "申请人必须会说并理解英语。"
         }
       }
     ],
@@ -53,7 +60,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "Resident visa application fee from"
+          "en": "Resident visa application fee from",
+          "zh-Hans": "居民签证申请费从"
         },
         "amount": 6450,
         "currency": "NZD",
@@ -67,12 +75,14 @@
     "income_location": "inside_destination",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The job or offer must meet the skilled-job rules, including hours, duration, occupation level, and applicable wage conditions. The retained page does not reduce this to one universal income amount."
+      "en": "The job or offer must meet the skilled-job rules, including hours, duration, occupation level, and applicable wage conditions. The retained page does not reduce this to one universal income amount.",
+      "zh-Hans": "工作或工作机会必须符合技术工作规则，包括工作时间、持续时间、职业级别和适用的工资条件。保留的页面不会将其减少为一个普遍收入金额。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The visa lets the holder stay indefinitely. The application requires an expression of interest and invitation to apply."
+      "en": "The visa lets the holder stay indefinitely. The application requires an expression of interest and invitation to apply.",
+      "zh-Hans": "该签证允许持有人无限期居留。该申请需要表达兴趣并邀请申请。"
     },
     "initial_validity_months": "unknown",
     "renewable": false,
@@ -93,20 +103,23 @@
     "spouse_work_allowed": true,
     "dependent_parents_allowed": false,
     "note_md": {
-      "en": "The SMC page allows inclusion of a partner and dependent children aged 24 or younger in the application."
+      "en": "The SMC page allows inclusion of a partner and dependent children aged 24 or younger in the application.",
+      "zh-Hans": "SMC 页面允许在申请中包含伴侣和 24 岁或以下的受抚养子女。"
     }
   },
   "pr_pathway": {
     "available": true,
     "min_residence_years": 2,
     "summary_md": {
-      "en": "After holding the resident visa for two years in a row, the holder can apply for a Permanent Resident Visa that permits indefinite travel in and out of New Zealand."
+      "en": "After holding the resident visa for two years in a row, the holder can apply for a Permanent Resident Visa that permits indefinite travel in and out of New Zealand.",
+      "zh-Hans": "连续持有居民签证两年后，持有人可以申请永久居民签证，允许无限期进出新西兰。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The page links citizenship guidance but does not establish an individual citizenship outcome."
+      "en": "The page links citizenship guidance but does not establish an individual citizenship outcome.",
+      "zh-Hans": "该页面链接了公民身份指南，但并未建立个人公民身份结果。"
     }
   },
   "risk": {
@@ -115,7 +128,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "Immigration New Zealand directly supports age, points, job, English, indefinite residence, family inclusion, and the two-year Permanent Resident Visa option. Wage and points combinations remain profile-specific and policy-sensitive."
+      "en": "Immigration New Zealand directly supports age, points, job, English, indefinite residence, family inclusion, and the two-year Permanent Resident Visa option. Wage and points combinations remain profile-specific and policy-sensitive.",
+      "zh-Hans": "新西兰移民局直接支持年龄、积分、工作、英语、无限期居留、家庭成员随行和两年永久居民签证选项。工资和积分组合仍然是特定于个人资料且对政策敏感的。"
     }
   },
   "comparison": {

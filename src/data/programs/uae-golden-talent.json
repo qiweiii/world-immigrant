@@ -3,21 +3,26 @@
   "country_id": "uae",
   "category_ids": ["skilled_worker"],
   "official_names": {
-    "en": "Golden Residence — talented geniuses"
+    "en": "Golden Residence — talented geniuses",
+    "zh-Hans": "黄金居留——杰出人才"
   },
   "aliases": ["UAE Golden Visa Talent", "UAE Golden Residency Exceptional Talent"],
   "status": "active",
   "status_note_md": {
-    "en": "This fixture uses the Dubai GDRFA Talented Geniuses service for culture and arts, innovators and inventors, athletes, and digital-technology talent."
+    "en": "This fixture uses the Dubai GDRFA Talented Geniuses service for culture and arts, innovators and inventors, athletes, and digital-technology talent.",
+    "zh-Hans": "该赛事使用迪拜 GDRFA Talented Geniuses 服务，为文化艺术、创新者和发明家、运动员和数字技术人才提供服务。"
   },
   "summary_md": {
-    "en": "A ten-year renewable Golden Residence route for exceptional talent in culture and arts, innovation and invention, athletics, or digital technology, with nomination and category-specific evidence."
+    "en": "A ten-year renewable Golden Residence route for exceptional talent in culture and arts, innovation and invention, athletics, or digital technology, with nomination and category-specific evidence.",
+    "zh-Hans": "为期十年的可续期黄金居留途径，针对文化和艺术、创新和发明、体育或数字技术领域的杰出人才，提供提名和特定类别的证据。"
   },
   "good_for_md": {
-    "en": "Recognised creatives, inventors, innovators, athletes, and digital-technology talents who can obtain a nomination letter from the relevant UAE authority and document the applicable achievements."
+    "en": "Recognised creatives, inventors, innovators, athletes, and digital-technology talents who can obtain a nomination letter from the relevant UAE authority and document the applicable achievements.",
+    "zh-Hans": "获得认可的创意人士、发明家、创新者、运动员和数字技术人才，可以获得阿联酋相关机构的提名信并记录适用的成就。"
   },
   "not_good_for_md": {
-    "en": "Applicants without a nominating authority, category-specific achievements, or a clear record matching one of the listed exceptional-talent categories."
+    "en": "Applicants without a nominating authority, category-specific achievements, or a clear record matching one of the listed exceptional-talent categories.",
+    "zh-Hans": "没有提名机构、特定类别成就或与列出的特殊人才类别之一匹配的明确记录的申请人。"
   },
   "pathway_mechanism": "talent_pass",
   "eligibility": {
@@ -26,12 +31,14 @@
       "required_level": "unknown",
       "credential_assessment_required": "unknown",
       "note_md": {
-        "en": "A nomination letter is required from the relevant culture, economy, sports, or artificial-intelligence authority, depending on the talent category. Final approval remains subject to GDRFA evaluation."
+        "en": "A nomination letter is required from the relevant culture, economy, sports, or artificial-intelligence authority, depending on the talent category. Final approval remains subject to GDRFA evaluation.",
+        "zh-Hans": "根据人才类别，需要相关文化、经济、体育或人工智能部门的提名信。最终批准仍有待 GDRFA 评估。"
       }
     },
     "work_experience": {
       "note_md": {
-        "en": "The service sets different evidence rules by talent category; the creative practitioner criteria include at least five years of professional experience."
+        "en": "The service sets different evidence rules by talent category; the creative practitioner criteria include at least five years of professional experience.",
+        "zh-Hans": "服务按人才类别设置不同的证据规则；创意从业者的标准包括至少五年的专业经验。"
       }
     },
     "language": [],
@@ -46,7 +53,8 @@
     "application_fees": [
       {
         "label": {
-          "en": "Residence permit fee"
+          "en": "Residence permit fee",
+          "zh-Hans": "居留许可费"
         },
         "amount": 1100,
         "currency": "AED",
@@ -54,7 +62,8 @@
       },
       {
         "label": {
-          "en": "Fee inside the country"
+          "en": "Fee inside the country",
+          "zh-Hans": "国内费用"
         },
         "amount": 500,
         "currency": "AED",
@@ -62,7 +71,8 @@
       },
       {
         "label": {
-          "en": "Delivery"
+          "en": "Delivery",
+          "zh-Hans": "送货"
         },
         "amount": 20,
         "currency": "AED",
@@ -76,12 +86,14 @@
     "income_location": "unknown",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The service requires the holder to support themselves and their family without government support but does not state a universal income threshold."
+      "en": "The service requires the holder to support themselves and their family without government support but does not state a universal income threshold.",
+      "zh-Hans": "该服务要求持有人在没有政府支持的情况下养活自己和家人，但没有规定普遍的收入门槛。"
     }
   },
   "timeline": {
     "application_processing_time_md": {
-      "en": "The GDRFA service lists an expected completion time of five days. The permit is valid for ten years and may be extended if the same conditions are met."
+      "en": "The GDRFA service lists an expected completion time of five days. The permit is valid for ten years and may be extended if the same conditions are met.",
+      "zh-Hans": "GDRFA 服务列出的预计完成时间为五天。该许可证的有效期为十年，如果满足相同条件，可以延期。"
     },
     "initial_validity_months": 120,
     "renewable": true,
@@ -101,19 +113,22 @@
     "spouse_work_allowed": "unknown",
     "dependent_parents_allowed": "unknown",
     "note_md": {
-      "en": "The retained talent service mentions supporting the family but does not enumerate dependant eligibility or work rights."
+      "en": "The retained talent service mentions supporting the family but does not enumerate dependant eligibility or work rights.",
+      "zh-Hans": "保留人才服务提到支持家庭，但没有列举受抚养资格或工作权利。"
     }
   },
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The talent service establishes renewable ten-year residence, not a permanent-residence route."
+      "en": "The talent service establishes renewable ten-year residence, not a permanent-residence route.",
+      "zh-Hans": "人才服务建立了可续签的十年居留权，而不是永久居留权。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained talent service does not establish a citizenship route."
+      "en": "The retained talent service does not establish a citizenship route.",
+      "zh-Hans": "留用人才服务不建立公民身份途径。"
     }
   },
   "risk": {
@@ -122,7 +137,8 @@
     "extraction_confidence_score": 5,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The GDRFA source directly supports categories, nominations, evidence, fees, processing, validity, and renewal; exact category-specific eligibility and family/work rights require case-level review."
+      "en": "The GDRFA source directly supports categories, nominations, evidence, fees, processing, validity, and renewal; exact category-specific eligibility and family/work rights require case-level review.",
+      "zh-Hans": "GDRFA 来源直接支持类别、提名、证据、费用、处理、有效性和续订；确切的特定类别资格和家庭/工作权利需要案例层面的审查。"
     }
   },
   "comparison": {

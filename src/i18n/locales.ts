@@ -28,7 +28,8 @@ export function isLocale(value: string | undefined | null): value is Locale {
 export function matchBrowserLocale(languageTag: string): Locale | null {
   const normalized = languageTag.trim().toLowerCase().replace(/_/g, "-");
   if (!normalized) return null;
-  if (normalized === "zh-hans" || normalized === "zh-cn" || normalized === "zh-sg") return "zh-Hans";
+  if (normalized === "zh-hans" || normalized === "zh-cn" || normalized === "zh-sg")
+    return "zh-Hans";
   if (normalized === "zh-hant" || normalized === "zh-tw" || normalized === "zh-hk") return null;
   if (normalized === "zh" || normalized.startsWith("zh-")) return "zh-Hans";
   if (normalized === "en" || normalized.startsWith("en-")) return "en";

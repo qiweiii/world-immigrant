@@ -3,7 +3,8 @@
   "country_id": "spain",
   "category_ids": ["digital_nomad"],
   "official_names": {
-    "en": "International teleworker residence authorisation"
+    "en": "International teleworker residence authorisation",
+    "zh-Hans": "国际远程工作者居留许可"
   },
   "aliases": [
     "Spain digital nomad visa",
@@ -12,16 +13,20 @@
   ],
   "status": "active",
   "status_note_md": {
-    "en": "The retained UGE page establishes the international-teleworker route. Detailed financial, family, fee, and duration fields remain unknown until the official FAQ can be fetched and verified."
+    "en": "The retained UGE page establishes the international-teleworker route. Detailed financial, family, fee, and duration fields remain unknown until the official FAQ can be fetched and verified.",
+    "zh-Hans": "保留的 UGE 页面建立国际远程工作人员途径。在获取并验证官方常见问题解答之前，详细的财务、家庭、费用和期限字段仍然未知。"
   },
   "summary_md": {
-    "en": "Spain's UGE describes an international-teleworker route for third-country nationals working remotely for companies outside Spain through computer, telematic, and telecommunications systems."
+    "en": "Spain's UGE describes an international-teleworker route for third-country nationals working remotely for companies outside Spain through computer, telematic, and telecommunications systems.",
+    "zh-Hans": "西班牙的 UGE 描述了一种国际远程工作途径，供第三国国民通过计算机、远程信息处理和电信系统为西班牙境外的公司远程工作。"
   },
   "good_for_md": {
-    "en": "Third-country nationals whose employment or professional activity can be performed remotely for a company outside Spain using computer, telematic, and telecommunications systems."
+    "en": "Third-country nationals whose employment or professional activity can be performed remotely for a company outside Spain using computer, telematic, and telecommunications systems.",
+    "zh-Hans": "可以使用计算机、远程信息处理和电信系统为西班牙境外的公司远程执行就业或专业活动的第三国国民。"
   },
   "not_good_for_md": {
-    "en": "People whose work requires on-site activity or whose employment relationship is not with an organization outside Spain. Current income, family, fee, duration, and settlement details need the official FAQ evidence."
+    "en": "People whose work requires on-site activity or whose employment relationship is not with an organization outside Spain. Current income, family, fee, duration, and settlement details need the official FAQ evidence.",
+    "zh-Hans": "工作需要现场活动或与西班牙境外组织没有雇佣关系的人员。目前的收入、家庭、费用、期限和定居详细信息需要官方常见问题解答证据。"
   },
   "pathway_mechanism": "remote_income",
   "eligibility": {
@@ -48,7 +53,8 @@
     "income_location": "outside_destination",
     "proof_history_months": "unknown",
     "stability_requirement_md": {
-      "en": "The retained UGE page establishes work for companies outside Spain but does not state the financial-resource threshold."
+      "en": "The retained UGE page establishes work for companies outside Spain but does not state the financial-resource threshold.",
+      "zh-Hans": "保留的 UGE 页面为西班牙境外的公司提供了工作机会，但没有说明财务资源门槛。"
     }
   },
   "timeline": {
@@ -73,13 +79,15 @@
   "pr_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained UGE page does not establish a permanent-residence outcome for this authorisation."
+      "en": "The retained UGE page does not establish a permanent-residence outcome for this authorisation.",
+      "zh-Hans": "保留的 UGE 页面并不为此授权建立永久居留结果。"
     }
   },
   "citizenship_pathway": {
     "available": "unknown",
     "summary_md": {
-      "en": "The retained UGE page does not establish a citizenship outcome for this authorisation."
+      "en": "The retained UGE page does not establish a citizenship outcome for this authorisation.",
+      "zh-Hans": "保留的 UGE 页面并未确定此授权的公民身份结果。"
     }
   },
   "risk": {
@@ -88,7 +96,8 @@
     "extraction_confidence_score": 4,
     "needs_human_review": true,
     "rationale_md": {
-      "en": "The official UGE page establishes the route definition and legal reference, but the detailed FAQ was unavailable to the collector during this baseline and is intentionally not used for claims."
+      "en": "The official UGE page establishes the route definition and legal reference, but the detailed FAQ was unavailable to the collector during this baseline and is intentionally not used for claims.",
+      "zh-Hans": "官方 UGE 页面建立了途径定义和法律参考，但在此基线期间收集者无法获得详细的常见问题解答，并且有意不用于支持事实陈述。"
     }
   },
   "comparison": {

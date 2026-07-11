@@ -1,14 +1,18 @@
 ---
+import { defaultLocale, t, type Locale } from "../../i18n";
 import CustomDropdown from "../CustomDropdown.astro";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
 ---
-<section class="filter-shell" aria-labelledby="filter-heading" data-eligibility-filter>
+<section class="filter-shell" aria-labelledby="filter-heading" data-eligibility-filter data-locale={locale}>
   <div class="filter-intro">
-    <p class="eyebrow">Fit tool</p>
-    <h2 id="filter-heading">See how pathways line up with your situation.</h2>
-    <p class="filter-lede">
-      Answers stay on this page. Results are preliminary information, not a decision about eligibility
-      or an invitation.
-    </p>
+    <p class="eyebrow">{t("filter.toolEyebrow", locale)}</p>
+    <h2 id="filter-heading">{t("filter.toolHeading", locale)}</h2>
+    <p class="filter-lede">{t("filter.toolLede", locale)}</p>
   </div>
 
   <form class="filter-form" data-profile-form>
@@ -17,98 +21,101 @@ import CustomDropdown from "../CustomDropdown.astro";
         <CustomDropdown
           id="goal"
           name="goal"
-          label="Goal"
+          label={t("filter.goal", locale)}
           options={[
-            { value: "permanent_residence", label: "Permanent residence", selected: true },
-            { value: "citizenship", label: "Citizenship pathway" },
+            { value: "permanent_residence", label: t("filter.goal.pr", locale), selected: true },
+            { value: "citizenship", label: t("filter.goal.citizenship", locale) },
           ]}
         />
       </div>
       <div class="field">
-        <label class="field-label" for="work-years">Qualifying skilled-work years</label>
+        <label class="field-label" for="work-years">{t("filter.workYears", locale)}</label>
         <input class="input" id="work-years" name="skilled_work_years" value="3" inputmode="decimal" />
       </div>
       <div class="field">
-        <label class="field-label" for="language-benchmark">CLB or NCLC benchmark</label>
+        <label class="field-label" for="language-benchmark">{t("filter.languageBenchmark", locale)}</label>
         <input class="input" id="language-benchmark" name="language_benchmark" value="8" inputmode="numeric" />
       </div>
       <div class="field">
         <CustomDropdown
           id="education"
           name="education_level"
-          label="Highest completed education"
+          label={t("filter.education", locale)}
           options={[
-            { value: "secondary", label: "Secondary" },
-            { value: "vocational", label: "Vocational" },
-            { value: "associate", label: "Associate" },
-            { value: "bachelor", label: "Bachelor", selected: true },
-            { value: "master", label: "Master" },
-            { value: "doctorate", label: "Doctorate" },
+            { value: "secondary", label: t("filter.education.secondary", locale) },
+            { value: "vocational", label: t("filter.education.vocational", locale) },
+            { value: "associate", label: t("filter.education.associate", locale) },
+            { value: "bachelor", label: t("filter.education.bachelor", locale), selected: true },
+            { value: "master", label: t("filter.education.master", locale) },
+            { value: "doctorate", label: t("filter.education.doctorate", locale) },
           ]}
         />
       </div>
       <div class="field">
-        <label class="field-label" for="program-points">Program selection-factor points</label>
+        <label class="field-label" for="program-points">{t("filter.programPoints", locale)}</label>
         <input class="input" id="program-points" name="program_selection_points" value="72" inputmode="numeric" />
       </div>
       <div class="field">
-        <label class="field-label" for="family-size">Family size</label>
+        <label class="field-label" for="family-size">{t("filter.familySize", locale)}</label>
         <input class="input" id="family-size" name="family_size" value="1" inputmode="numeric" />
       </div>
       <div class="field">
-        <label class="field-label" for="funds">Available settlement funds, CAD</label>
+        <label class="field-label" for="funds">{t("filter.fundsCad", locale)}</label>
         <input class="input" id="funds" name="liquid_funds" value="20000" inputmode="decimal" />
       </div>
     </div>
 
     <fieldset class="filter-flags">
-      <legend class="field-label">Additional facts</legend>
+      <legend class="field-label">{t("filter.additionalFacts", locale)}</legend>
       <div class="filter-flag-list">
         <label class="filter-flag">
           <input type="checkbox" name="has_approved_language_test" checked />
-          <span>Approved language test</span>
+          <span>{t("filter.approvedLanguage", locale)}</span>
         </label>
         <label class="filter-flag">
           <input type="checkbox" name="foreign_education" checked />
-          <span>Foreign education</span>
+          <span>{t("filter.foreignEducation", locale)}</span>
         </label>
         <label class="filter-flag">
           <input type="checkbox" name="has_eca" checked />
-          <span>Valid ECA</span>
+          <span>{t("filter.validEca", locale)}</span>
         </label>
         <label class="filter-flag">
           <input type="checkbox" name="authorized_to_work_in_country" />
-          <span>Authorized to work in Canada</span>
+          <span>{t("filter.authorizedCanada", locale)}</span>
         </label>
         <label class="filter-flag">
           <input type="checkbox" name="valid_job_offer" />
-          <span>Valid Canadian job offer</span>
+          <span>{t("filter.validJobOffer", locale)}</span>
         </label>
       </div>
     </fieldset>
   </form>
 
-  <p class="filter-status" data-filter-status>Loading filter data…</p>
+  <p class="filter-status" data-filter-status>{t("filter.loading", locale)}</p>
   <div class="filter-results" data-filter-results></div>
 </section>
 
 <script>
   import { evaluatePrograms, type FilterResultStatus, type UserProfile } from "../../lib/filterEngine";
+  import { defaultLocale, isLocale, pickLocalized, t, tf, withLocale } from "../../i18n";
 
   type FilterPrograms = Parameters<typeof evaluatePrograms>[0];
 
   const root = document.querySelector<HTMLElement>("[data-eligibility-filter]");
+  const localeValue = root?.dataset.locale;
+  const locale = isLocale(localeValue) ? localeValue : defaultLocale;
   const form = root?.querySelector<HTMLFormElement>("[data-profile-form]");
   const status = root?.querySelector<HTMLElement>("[data-filter-status]");
   const resultsRoot = root?.querySelector<HTMLElement>("[data-filter-results]");
   let programs: FilterPrograms = [];
 
   const statusLabels: Record<FilterResultStatus, string> = {
-    likely_match: "Looks open",
-    possible_match: "Missing details",
-    not_match: "Does not match",
-    needs_review: "Complex rules",
-    unknown: "Unclear",
+    likely_match: t("filter.status.likely", locale),
+    possible_match: t("filter.status.possible", locale),
+    not_match: t("filter.status.notMatch", locale),
+    needs_review: t("filter.status.review", locale),
+    unknown: t("filter.status.unknown", locale),
   };
 
   function optionalNumber(formData: FormData, key: string) {
@@ -142,8 +149,11 @@ import CustomDropdown from "../CustomDropdown.astro";
     if (!status || !resultsRoot) return;
     const profile = profileFromForm();
     if (!profile) return;
-    const results = evaluatePrograms(programs, profile);
-    status.textContent = `${results.length} pathway${results.length === 1 ? "" : "s"} ranked for this profile. “Looks open” only means no modeled blocker was found.`;
+    const results = evaluatePrograms(programs, profile, locale);
+    status.textContent =
+      results.length === 1
+        ? t("filter.rankedOne", locale)
+        : tf("filter.ranked", locale, { count: results.length });
     resultsRoot.replaceChildren();
 
     for (const result of results) {
@@ -162,8 +172,8 @@ import CustomDropdown from "../CustomDropdown.astro";
 
       const heading = document.createElement("h3");
       const link = document.createElement("a");
-      link.href = `/programs/${result.program_id}`;
-      link.textContent = program.official_names.en;
+      link.href = withLocale(`/programs/${result.program_id}`, locale);
+      link.textContent = pickLocalized(program.official_names, locale);
       heading.append(link);
 
       header.append(badge, heading);
@@ -179,7 +189,7 @@ import CustomDropdown from "../CustomDropdown.astro";
         posBlock.className = "filter-reason-group filter-reason-group--positive";
         const posTitle = document.createElement("p");
         posTitle.className = "filter-reason-heading";
-        posTitle.textContent = "Supporting signals";
+        posTitle.textContent = t("filter.supporting", locale);
         posBlock.append(posTitle);
         const posList = document.createElement("ul");
         for (const reason of positives) {
@@ -217,7 +227,7 @@ import CustomDropdown from "../CustomDropdown.astro";
         otherBlock.className = "filter-reason-group";
         const otherTitle = document.createElement("p");
         otherTitle.className = "filter-reason-heading";
-        otherTitle.textContent = "Caveats and gaps";
+        otherTitle.textContent = t("filter.caveats", locale);
         otherBlock.append(otherTitle);
         const otherList = document.createElement("ul");
         for (const reason of others) {
@@ -265,7 +275,9 @@ import CustomDropdown from "../CustomDropdown.astro";
       form?.addEventListener("input", render);
       render();
     } catch (error) {
-      status.textContent = `Filter data could not be loaded: ${error instanceof Error ? error.message : "unknown error"}`;
+      status.textContent = tf("filter.loadError", locale, {
+        error: error instanceof Error ? error.message : t("filter.status.unknown", locale),
+      });
     }
   }
 
