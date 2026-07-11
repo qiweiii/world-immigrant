@@ -130,6 +130,24 @@ An employer-sponsored Singapore work pass for foreign professionals, managers, a
 - singapore-mom-employment-pass-key-facts: Key facts on Employment Pass — https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts
 - singapore-mom-employment-pass-eligibility: Eligibility for Employment Pass — https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility
 
+## EntrePass
+
+- ID: singapore-entrepass
+- Country: singapore
+- Status: active
+- Last updated: 2026-07-11T05:55:34.855Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A Singapore own-company work pass for foreign entrepreneurs who start or operate an ACRA-registered private limited company, hold at least 30% of it, and meet at least one qualifying funding, accelerator, technology, IP, or research criterion.
+
+### Official sources
+
+- singapore-mom-entrepass-overview: EntrePass — https://www.mom.gov.sg/passes-and-permits/entrepass
+- singapore-mom-entrepass-eligibility: Eligibility for EntrePass — https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility
+- singapore-mom-entrepass-family: Passes for families of EntrePass holders — https://www.mom.gov.sg/passes-and-permits/entrepass/passes-for-family
+- singapore-acra-business-requirements: Step 1: Understanding requirements and eligibility — https://www.acra.gov.sg/register/business/requirements-eligibility
+
 ## International teleworker residence authorisation
 
 - ID: spain-digital-nomad
@@ -144,6 +162,22 @@ Spain's UGE describes an international-teleworker route for third-country nation
 ### Official sources
 
 - spain-uge-international-teleworkers: International teleworkers — https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores
+
+## Free-zone company and Green Residence — partner/investor
+
+- ID: uae-free-zone-investor
+- Country: uae
+- Status: active
+- Last updated: 2026-07-11T05:55:37.159Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A company-owner route pairing DMCC free-zone company formation with Dubai's Green Residence permit for an investor or partner in a commercial project.
+
+### Official sources
+
+- uae-dmcc-business-setup: Set up your business in Dubai's leading hub — https://dmcc.ae/business/set-up-a-new-business
+- uae-gdrfa-green-residence-partner-investor: Issuing green residence permit (partner investor) — https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936
 
 ## Virtual Work Residence
 

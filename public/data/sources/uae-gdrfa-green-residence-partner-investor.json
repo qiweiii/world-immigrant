@@ -1,0 +1,28 @@
+{
+  "id": "uae-gdrfa-green-residence-partner-investor",
+  "country_id": "uae",
+  "program_ids": [
+    "uae-free-zone-investor"
+  ],
+  "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+  "title": "Issuing green residence permit (partner investor)",
+  "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "partner",
+    "investor",
+    "five years",
+    "trade license",
+    "memorandum of association"
+  ],
+  "expected_domains": [
+    "gdrfad.gov.ae"
+  ],
+  "last_checked_at": "2026-07-11T05:55:37.159Z",
+  "last_success_at": "2026-07-11T05:55:37.159Z",
+  "status": "active"
+}

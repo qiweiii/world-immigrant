@@ -2068,6 +2068,325 @@
       ]
     },
     {
+      "id": "singapore-entrepass",
+      "country_id": "singapore",
+      "category_ids": [
+        "startup_entrepreneur"
+      ],
+      "official_names": {
+        "en": "EntrePass"
+      },
+      "aliases": [
+        "Singapore EntrePass"
+      ],
+      "status": "active",
+      "status_note_md": {
+        "en": "MOM describes EntrePass as a route for eligible foreign entrepreneurs operating venture-backed or innovative-technology businesses. Qualification and renewal criteria are business-specific and remain flagged for human review."
+      },
+      "summary_md": {
+        "en": "A Singapore own-company work pass for foreign entrepreneurs who start or operate an ACRA-registered private limited company, hold at least 30% of it, and meet at least one qualifying funding, accelerator, technology, IP, or research criterion."
+      },
+      "good_for_md": {
+        "en": "Founders of venture-backed or innovative-technology companies who can meet the 30% ownership requirement and document at least one of MOM's qualifying entrepreneur, innovator, investor, or research criteria."
+      },
+      "not_good_for_md": {
+        "en": "Ordinary small businesses such as coffee shops, bars, employment agencies, and similar excluded businesses, or founders without the qualifying business profile. This is distinct from the standard employer-sponsored EP."
+      },
+      "pathway_mechanism": "own_company",
+      "eligibility": {
+        "age": {
+          "min": 18
+        },
+        "education": {
+          "required_level": "unknown",
+          "credential_assessment_required": "unknown"
+        },
+        "work_experience": {},
+        "language": [],
+        "health_check_required": "unknown",
+        "police_certificate_required": "unknown",
+        "points_based": false,
+        "job_offer_required": false,
+        "sponsor_required": false
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": []
+      },
+      "income": {
+        "required": false,
+        "accepted_sources": [
+          "business_income",
+          "self_employment"
+        ],
+        "income_location": "inside_destination",
+        "proof_history_months": "unknown",
+        "stability_requirement_md": {
+          "en": "EntrePass eligibility is based on the company and qualifying founder/investor/innovation criteria rather than a universal personal income threshold."
+        }
+      },
+      "business_setup": {
+        "required": true,
+        "entity_types": [
+          "Private limited company"
+        ],
+        "min_share_capital": [
+          {
+            "amount": "unknown",
+            "currency": "SGD",
+            "applies_to": "business",
+            "calculation": "minimum_total"
+          }
+        ],
+        "local_director_required": true,
+        "note_md": {
+          "en": "ACRA states foreigners must use a Corporate Service Provider, meet local residency requirements, and have at least one local resident. Entrepreneurs with venture-backed or innovative-tech companies can apply for EntrePass before incorporation or within six months of setup."
+        }
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "The retained overview page links to application and renewal procedures but does not state one processing-time value."
+        },
+        "initial_validity_months": "unknown",
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": "unknown",
+        "study_allowed": "unknown",
+        "business_allowed": true
+      },
+      "family": {
+        "spouse_or_partner_allowed": true,
+        "unmarried_partner_allowed": true,
+        "children_allowed": true,
+        "max_child_age": 21,
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": true,
+        "note_md": {
+          "en": "Family passes require business-spending and local-workforce thresholds. MOM lists Dependant's Pass for a legally married spouse and unmarried children under 21, and Long-Term Visit Pass routes for common-law spouses, certain children, and parents."
+        }
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained EntrePass, family, and ACRA pages do not establish a permanent-residence pathway."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained EntrePass, family, and ACRA pages do not establish a citizenship pathway."
+        }
+      },
+      "risk": {
+        "policy_stability_score": 3,
+        "source_confidence_score": 5,
+        "extraction_confidence_score": 5,
+        "needs_human_review": true,
+        "rationale_md": {
+          "en": "Current official MOM, ACRA, and family-pass pages provide direct evidence for ownership, company, qualifying-criterion, foreign-registration, local-residency, and family conditions; renewal and settlement details are not fully represented here."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 4,
+        "cost_score": 4,
+        "speed_score": 2,
+        "permanence_score": 3,
+        "family_friendliness_score": 4,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "pathway_type": "renewable_temporary",
+        "settlement_track": "unknown",
+        "pathway_mechanism": "own_company",
+        "accepts_remote_income": false,
+        "accepts_self_employment": true,
+        "accepts_overseas_remote_income": false,
+        "requires_degree": "not_applicable",
+        "requires_job_offer": false,
+        "requires_investment": "unknown",
+        "requires_language_test": false,
+        "requires_local_entity": true,
+        "allows_family": true,
+        "work_allowed": true,
+        "remote_work_allowed": "unknown",
+        "leads_to_pr": "unknown",
+        "leads_to_citizenship": "unknown",
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "policy_stability_score": 3,
+        "source_confidence_score": 5,
+        "last_checked_at": "2026-07-11T05:55:34.855Z"
+      },
+      "source_ids": [
+        "singapore-mom-entrepass-overview",
+        "singapore-mom-entrepass-eligibility",
+        "singapore-mom-entrepass-family",
+        "singapore-acra-business-requirements"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "singapore-mom-entrepass-overview",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass",
+            "section": "EntrePass overview",
+            "snapshot_id": "c5f2dd7c2c743f91a854b86171f1049a6f7a3a7561f6a4781ff54f6f98f90ece",
+            "retrieved_at": "2026-07-11T05:55:34.855Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "singapore-mom-entrepass-overview",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass",
+            "section": "EntrePass overview",
+            "snapshot_id": "c5f2dd7c2c743f91a854b86171f1049a6f7a3a7561f6a4781ff54f6f98f90ece",
+            "retrieved_at": "2026-07-11T05:55:34.855Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "singapore-mom-entrepass-overview",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass",
+            "section": "EntrePass overview",
+            "snapshot_id": "c5f2dd7c2c743f91a854b86171f1049a6f7a3a7561f6a4781ff54f6f98f90ece",
+            "retrieved_at": "2026-07-11T05:55:34.855Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "singapore-mom-entrepass-family",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/passes-for-family",
+            "section": "Passes for families",
+            "snapshot_id": "2d062cd8c0598744eb6fa532fbe96fd2c461cea72085cdadad8e2fc5974121ce",
+            "retrieved_at": "2026-07-11T05:55:34.757Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "singapore-mom-entrepass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+            "section": "Who is eligible and requirements",
+            "snapshot_id": "e01dd56c25ce613f44749ad8178502089dc1eacf74a3877be450cc24f16dcf8d",
+            "retrieved_at": "2026-07-11T05:55:34.645Z"
+          }
+        ],
+        "/business_setup": [
+          {
+            "source_id": "singapore-acra-business-requirements",
+            "url": "https://www.acra.gov.sg/register/business/requirements-eligibility",
+            "section": "Rules for foreigners and work pass options",
+            "snapshot_id": "dba92bfc0a578fb2642c15550a869c32a9105f071a1ace6ca9294fa54e88863f",
+            "retrieved_at": "2026-07-11T05:55:33.914Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T05:55:34.855Z",
+        "updated_at": "2026-07-11T05:55:34.855Z",
+        "last_checked_at": "2026-07-11T05:55:34.855Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "changelog": [
+        {
+          "changed_at": "2026-07-11T05:55:34.855Z",
+          "summary": "Added a Singapore EntrePass own-company fixture from retained MOM, ACRA, and family-pass evidence.",
+          "source_ids": [
+            "singapore-mom-entrepass-overview",
+            "singapore-mom-entrepass-eligibility",
+            "singapore-mom-entrepass-family",
+            "singapore-acra-business-requirements"
+          ]
+        }
+      ]
+    },
+    {
       "id": "spain-digital-nomad",
       "country_id": "spain",
       "category_ids": [
@@ -2342,6 +2661,327 @@
           "summary": "Added a conservative international-teleworker fixture from the retained Spanish UGE source.",
           "source_ids": [
             "spain-uge-international-teleworkers"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "uae-free-zone-investor",
+      "country_id": "uae",
+      "category_ids": [
+        "startup_entrepreneur",
+        "investor"
+      ],
+      "official_names": {
+        "en": "Free-zone company and Green Residence — partner/investor"
+      },
+      "aliases": [
+        "UAE Free-zone Investor Residence",
+        "Dubai Free-zone Partner/Investor Green Residence"
+      ],
+      "status": "active",
+      "status_note_md": {
+        "en": "This fixture combines an official DMCC free-zone company setup path with the Dubai GDRFA partner/investor Green Residence service. The government portal's broader Green Visa pages remain supplementary and are not used for claims here."
+      },
+      "summary_md": {
+        "en": "A company-owner route pairing DMCC free-zone company formation with Dubai's Green Residence permit for an investor or partner in a commercial project."
+      },
+      "good_for_md": {
+        "en": "Founders or partners who need a UAE free-zone company, can provide ownership and business documents, and want a renewable five-year residence permit tied to their partner/investor status."
+      },
+      "not_good_for_md": {
+        "en": "Applicants seeking a passive residence route without a company or commercial-project role, or those who need a published universal setup cost, family entitlement, or permanent-residence outcome."
+      },
+      "pathway_mechanism": "own_company",
+      "eligibility": {
+        "age": {},
+        "education": {
+          "required_level": "unknown",
+          "credential_assessment_required": "unknown"
+        },
+        "work_experience": {},
+        "language": [],
+        "health_check_required": "unknown",
+        "police_certificate_required": "unknown",
+        "points_based": false,
+        "job_offer_required": false,
+        "sponsor_required": false
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": [
+          {
+            "label": {
+              "en": "GDRFA residence permit fee"
+            },
+            "amount": 200,
+            "currency": "AED",
+            "applies_to": "primary"
+          }
+        ]
+      },
+      "income": {
+        "required": false,
+        "accepted_sources": [
+          "business_income",
+          "self_employment"
+        ],
+        "income_location": "not_applicable",
+        "proof_history_months": "unknown",
+        "stability_requirement_md": {
+          "en": "The retained setup and residence sources do not state a universal income minimum for this partner/investor route."
+        }
+      },
+      "business_setup": {
+        "required": true,
+        "entity_types": [
+          "Individual",
+          "Subsidiary",
+          "Branch",
+          "Free Zone Company"
+        ],
+        "min_setup_cost": [
+          {
+            "amount": 10345,
+            "currency": "AED",
+            "period": "one_time",
+            "applies_to": "business",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "DMCC publishes a setup-cost range that varies by business type, licence duration, and office solution; this is the lower end of the published range."
+            }
+          }
+        ],
+        "local_director_required": "unknown",
+        "note_md": {
+          "en": "DMCC describes a digital formation process, shareholder and ownership documents, business information, a registered office solution, and an electronic licence. GDRFA requires partnership/MOA or investment-contract evidence and a trade licence for the residence permit."
+        }
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "DMCC says company formation typically takes around 10 working days depending on documents and approvals. GDRFA lists 48 hours as the expected completion time for the residence service."
+        },
+        "initial_validity_months": 60,
+        "renewable": true,
+        "max_stay_months": 60
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": "unknown",
+        "remote_work_allowed": true,
+        "study_allowed": "unknown",
+        "business_allowed": true
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown",
+        "note_md": {
+          "en": "The retained DMCC and GDRFA service pages do not establish the family sponsorship conditions for this fixture."
+        }
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained company-setup and Green Residence service pages do not establish a permanent-residence pathway."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained company-setup and Green Residence service pages do not establish a citizenship pathway."
+        }
+      },
+      "risk": {
+        "policy_stability_score": 3,
+        "source_confidence_score": 4,
+        "extraction_confidence_score": 5,
+        "needs_human_review": true,
+        "rationale_md": {
+          "en": "DMCC and GDRFA provide direct official evidence for formation, ownership/document requirements, residence duration, renewal, and fees; broader UAE free-zone licensing, family, and settlement rules vary by authority and remain outside this fixture."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 4,
+        "cost_score": 4,
+        "speed_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 4,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "pathway_type": "renewable_temporary",
+        "settlement_track": "unknown",
+        "pathway_mechanism": "own_company",
+        "accepts_remote_income": false,
+        "accepts_self_employment": true,
+        "accepts_overseas_remote_income": false,
+        "requires_degree": "not_applicable",
+        "requires_job_offer": false,
+        "requires_investment": "unknown",
+        "requires_language_test": false,
+        "requires_local_entity": true,
+        "allows_family": "unknown",
+        "work_allowed": true,
+        "remote_work_allowed": true,
+        "leads_to_pr": "unknown",
+        "leads_to_citizenship": "unknown",
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "policy_stability_score": 3,
+        "source_confidence_score": 4,
+        "last_checked_at": "2026-07-11T05:55:37.159Z"
+      },
+      "source_ids": [
+        "uae-dmcc-business-setup",
+        "uae-gdrfa-green-residence-partner-investor"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "uae-dmcc-business-setup",
+            "url": "https://dmcc.ae/business/set-up-a-new-business",
+            "section": "Company formation and process",
+            "snapshot_id": "ef7ba19099a8ad49573f2ccbf0a8fc68c2cce59af9ed516744d5817f52f4632d",
+            "retrieved_at": "2026-07-11T05:55:37.044Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "uae-dmcc-business-setup",
+            "url": "https://dmcc.ae/business/set-up-a-new-business",
+            "section": "Company formation and process",
+            "snapshot_id": "ef7ba19099a8ad49573f2ccbf0a8fc68c2cce59af9ed516744d5817f52f4632d",
+            "retrieved_at": "2026-07-11T05:55:37.044Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "uae-dmcc-business-setup",
+            "url": "https://dmcc.ae/business/set-up-a-new-business",
+            "section": "Company formation and process",
+            "snapshot_id": "ef7ba19099a8ad49573f2ccbf0a8fc68c2cce59af9ed516744d5817f52f4632d",
+            "retrieved_at": "2026-07-11T05:55:37.044Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "uae-dmcc-business-setup",
+            "url": "https://dmcc.ae/business/set-up-a-new-business",
+            "section": "Company formation and process",
+            "snapshot_id": "ef7ba19099a8ad49573f2ccbf0a8fc68c2cce59af9ed516744d5817f52f4632d",
+            "retrieved_at": "2026-07-11T05:55:37.044Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "uae-gdrfa-green-residence-partner-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, and green residence permit",
+            "snapshot_id": "4e481895001d681d05b24487ff370862ece9f7cf13ca5cc6b98cd83630229059",
+            "retrieved_at": "2026-07-11T05:55:37.159Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T05:55:37.159Z",
+        "updated_at": "2026-07-11T05:55:37.159Z",
+        "last_checked_at": "2026-07-11T05:55:37.159Z",
+        "update_frequency_days": 30,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "changelog": [
+        {
+          "changed_at": "2026-07-11T05:55:37.159Z",
+          "summary": "Added a UAE free-zone company and partner/investor Green Residence fixture from retained DMCC and GDRFA evidence.",
+          "source_ids": [
+            "uae-dmcc-business-setup",
+            "uae-gdrfa-green-residence-partner-investor"
           ]
         }
       ]

@@ -26,7 +26,11 @@ test("country and program page models resolve canonical relationships", async ()
   );
   assert.deepEqual(
     byId.uae.programs.map(({ id }) => id),
-    ["uae-remote-work"],
+    ["uae-remote-work", "uae-free-zone-investor"],
+  );
+  assert.deepEqual(
+    byId.singapore.programs.map(({ id }) => id),
+    ["singapore-employment-pass", "singapore-entrepass"],
   );
   assert.deepEqual(
     byId.canada.programs.map(({ id }) => id),

@@ -17,13 +17,20 @@
   },
   "official_source_ids": [
     "uae-icp-virtual-work-residence",
-    "uae-gdrfa-virtual-work-residence"
+    "uae-gdrfa-virtual-work-residence",
+    "uae-gov-free-zone-starting-business",
+    "uae-gov-business-residence-green-visa",
+    "uae-dmcc-business-setup",
+    "uae-gdrfa-green-residence-partner-investor"
   ],
   "categories": [
-    "digital_nomad"
+    "digital_nomad",
+    "startup_entrepreneur",
+    "investor"
   ],
   "program_ids": [
-    "uae-remote-work"
+    "uae-remote-work",
+    "uae-free-zone-investor"
   ],
   "freshness": {
     "created_at": "2026-07-11T04:30:43Z",

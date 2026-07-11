@@ -1,0 +1,23 @@
+{
+  "id": "uae-dmcc-business-setup",
+  "country_id": "uae",
+  "program_ids": ["uae-free-zone-investor"],
+  "url": "https://dmcc.ae/business/set-up-a-new-business",
+  "title": "Set up your business in Dubai's leading hub",
+  "publisher": "Dubai Multi Commodities Centre",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "company formation",
+    "three simple steps",
+    "company licence",
+    "10 working days"
+  ],
+  "expected_domains": ["dmcc.ae"],
+  "last_checked_at": "2026-07-11T05:55:37.044Z",
+  "last_success_at": "2026-07-11T05:55:37.044Z",
+  "status": "active"
+}

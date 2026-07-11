@@ -17,10 +17,15 @@
   },
   "official_source_ids": [
     "singapore-mom-employment-pass-key-facts",
-    "singapore-mom-employment-pass-eligibility"
+    "singapore-mom-employment-pass-eligibility",
+    "singapore-mom-entrepass-overview",
+    "singapore-mom-entrepass-eligibility",
+    "singapore-mom-entrepass-family",
+    "singapore-acra-business-requirements",
+    "singapore-mom-ep-shareholder-faq"
   ],
-  "categories": ["skilled_worker"],
-  "program_ids": ["singapore-employment-pass"],
+  "categories": ["skilled_worker", "startup_entrepreneur"],
+  "program_ids": ["singapore-employment-pass", "singapore-entrepass"],
   "freshness": {
     "created_at": "2026-07-11T05:36:00Z",
     "updated_at": "2026-07-11T05:36:00Z",

@@ -1,0 +1,23 @@
+{
+  "id": "singapore-acra-business-requirements",
+  "country_id": "singapore",
+  "program_ids": ["singapore-entrepass"],
+  "url": "https://www.acra.gov.sg/register/business/requirements-eligibility",
+  "title": "Step 1: Understanding requirements and eligibility",
+  "publisher": "Singapore Accounting and Corporate Regulatory Authority",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "foreigners",
+    "Corporate Service Provider",
+    "local resident",
+    "EntrePass"
+  ],
+  "expected_domains": ["acra.gov.sg"],
+  "last_checked_at": "2026-07-11T05:55:33.914Z",
+  "last_success_at": "2026-07-11T05:55:33.914Z",
+  "status": "active"
+}

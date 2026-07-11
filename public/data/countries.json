@@ -214,13 +214,20 @@
       },
       "official_source_ids": [
         "singapore-mom-employment-pass-key-facts",
-        "singapore-mom-employment-pass-eligibility"
+        "singapore-mom-employment-pass-eligibility",
+        "singapore-mom-entrepass-overview",
+        "singapore-mom-entrepass-eligibility",
+        "singapore-mom-entrepass-family",
+        "singapore-acra-business-requirements",
+        "singapore-mom-ep-shareholder-faq"
       ],
       "categories": [
-        "skilled_worker"
+        "skilled_worker",
+        "startup_entrepreneur"
       ],
       "program_ids": [
-        "singapore-employment-pass"
+        "singapore-employment-pass",
+        "singapore-entrepass"
       ],
       "freshness": {
         "created_at": "2026-07-11T05:36:00Z",
@@ -286,13 +293,20 @@
       },
       "official_source_ids": [
         "uae-icp-virtual-work-residence",
-        "uae-gdrfa-virtual-work-residence"
+        "uae-gdrfa-virtual-work-residence",
+        "uae-gov-free-zone-starting-business",
+        "uae-gov-business-residence-green-visa",
+        "uae-dmcc-business-setup",
+        "uae-gdrfa-green-residence-partner-investor"
       ],
       "categories": [
-        "digital_nomad"
+        "digital_nomad",
+        "startup_entrepreneur",
+        "investor"
       ],
       "program_ids": [
-        "uae-remote-work"
+        "uae-remote-work",
+        "uae-free-zone-investor"
       ],
       "freshness": {
         "created_at": "2026-07-11T04:30:43Z",

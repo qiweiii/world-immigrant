@@ -1,0 +1,18 @@
+{
+  "id": "singapore-mom-ep-shareholder-faq",
+  "country_id": "singapore",
+  "program_ids": [],
+  "url": "https://www.mom.gov.sg/faq/employment-pass/can-an-ep-holder-be-a-shareholder-of-a-singapore-registered-company",
+  "title": "Can an Employment Pass holder be a shareholder of a Singapore-registered company?",
+  "publisher": "Singapore Ministry of Manpower",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["Employment Pass holder", "shareholder", "own shares"],
+  "expected_domains": ["mom.gov.sg"],
+  "last_checked_at": "2026-07-11T05:56:50.345Z",
+  "last_success_at": "2026-07-11T05:56:50.345Z",
+  "status": "active"
+}

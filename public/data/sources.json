@@ -672,6 +672,33 @@
       "status": "deprecated"
     },
     {
+      "id": "singapore-acra-business-requirements",
+      "country_id": "singapore",
+      "program_ids": [
+        "singapore-entrepass"
+      ],
+      "url": "https://www.acra.gov.sg/register/business/requirements-eligibility",
+      "title": "Step 1: Understanding requirements and eligibility",
+      "publisher": "Singapore Accounting and Corporate Regulatory Authority",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "foreigners",
+        "Corporate Service Provider",
+        "local resident",
+        "EntrePass"
+      ],
+      "expected_domains": [
+        "acra.gov.sg"
+      ],
+      "last_checked_at": "2026-07-11T05:55:33.914Z",
+      "last_success_at": "2026-07-11T05:55:33.914Z",
+      "status": "active"
+    },
+    {
       "id": "singapore-mom-employment-pass-eligibility",
       "country_id": "singapore",
       "program_ids": [
@@ -726,6 +753,111 @@
       "status": "active"
     },
     {
+      "id": "singapore-mom-entrepass-eligibility",
+      "country_id": "singapore",
+      "program_ids": [
+        "singapore-entrepass"
+      ],
+      "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility",
+      "title": "Eligibility for EntrePass",
+      "publisher": "Singapore Ministry of Manpower",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "serial entrepreneurs",
+        "SGD 100,000",
+        "incubator",
+        "intellectual property"
+      ],
+      "expected_domains": [
+        "mom.gov.sg"
+      ],
+      "last_checked_at": "2026-07-11T05:55:34.645Z",
+      "last_success_at": "2026-07-11T05:55:34.645Z",
+      "status": "active"
+    },
+    {
+      "id": "singapore-mom-entrepass-family",
+      "country_id": "singapore",
+      "program_ids": [
+        "singapore-entrepass"
+      ],
+      "url": "https://www.mom.gov.sg/passes-and-permits/entrepass/passes-for-family",
+      "title": "Passes for families of EntrePass holders",
+      "publisher": "Singapore Ministry of Manpower",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "spouse",
+        "children",
+        "Annual Total Business Spending",
+        "Local Workforce"
+      ],
+      "expected_domains": [
+        "mom.gov.sg"
+      ],
+      "last_checked_at": "2026-07-11T05:55:34.757Z",
+      "last_success_at": "2026-07-11T05:55:34.757Z",
+      "status": "active"
+    },
+    {
+      "id": "singapore-mom-entrepass-overview",
+      "country_id": "singapore",
+      "program_ids": [
+        "singapore-entrepass"
+      ],
+      "url": "https://www.mom.gov.sg/passes-and-permits/entrepass",
+      "title": "EntrePass",
+      "publisher": "Singapore Ministry of Manpower",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "foreign entrepreneurs",
+        "venture-backed",
+        "innovative technologies",
+        "renew"
+      ],
+      "expected_domains": [
+        "mom.gov.sg"
+      ],
+      "last_checked_at": "2026-07-11T05:55:34.855Z",
+      "last_success_at": "2026-07-11T05:55:34.855Z",
+      "status": "active"
+    },
+    {
+      "id": "singapore-mom-ep-shareholder-faq",
+      "country_id": "singapore",
+      "program_ids": [],
+      "url": "https://www.mom.gov.sg/faq/employment-pass/can-an-ep-holder-be-a-shareholder-of-a-singapore-registered-company",
+      "title": "Can an Employment Pass holder be a shareholder of a Singapore-registered company?",
+      "publisher": "Singapore Ministry of Manpower",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Employment Pass holder",
+        "shareholder",
+        "own shares"
+      ],
+      "expected_domains": [
+        "mom.gov.sg"
+      ],
+      "last_checked_at": "2026-07-11T05:56:50.345Z",
+      "last_success_at": "2026-07-11T05:56:50.345Z",
+      "status": "active"
+    },
+    {
       "id": "spain-uge-international-teleworkers",
       "country_id": "spain",
       "program_ids": [
@@ -775,6 +907,61 @@
       "status": "needs_attention"
     },
     {
+      "id": "uae-dmcc-business-setup",
+      "country_id": "uae",
+      "program_ids": [
+        "uae-free-zone-investor"
+      ],
+      "url": "https://dmcc.ae/business/set-up-a-new-business",
+      "title": "Set up your business in Dubai's leading hub",
+      "publisher": "Dubai Multi Commodities Centre",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "company formation",
+        "three simple steps",
+        "company licence",
+        "10 working days"
+      ],
+      "expected_domains": [
+        "dmcc.ae"
+      ],
+      "last_checked_at": "2026-07-11T05:55:37.044Z",
+      "last_success_at": "2026-07-11T05:55:37.044Z",
+      "status": "active"
+    },
+    {
+      "id": "uae-gdrfa-green-residence-partner-investor",
+      "country_id": "uae",
+      "program_ids": [
+        "uae-free-zone-investor"
+      ],
+      "url": "https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936",
+      "title": "Issuing green residence permit (partner investor)",
+      "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "partner",
+        "investor",
+        "five years",
+        "trade license",
+        "memorandum of association"
+      ],
+      "expected_domains": [
+        "gdrfad.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T05:55:37.159Z",
+      "last_success_at": "2026-07-11T05:55:37.159Z",
+      "status": "active"
+    },
+    {
       "id": "uae-gdrfa-virtual-work-residence",
       "country_id": "uae",
       "program_ids": [
@@ -800,6 +987,52 @@
       "last_checked_at": "2026-07-11T04:38:40.715Z",
       "last_success_at": "2026-07-11T04:38:40.715Z",
       "status": "active"
+    },
+    {
+      "id": "uae-gov-business-residence-green-visa",
+      "country_id": "uae",
+      "program_ids": [],
+      "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-doing-business-in-the-uae",
+      "title": "Residence visa for doing business in the UAE",
+      "publisher": "UAE Government",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Green visa",
+        "investors",
+        "renewable residence visa",
+        "five years"
+      ],
+      "expected_domains": [
+        "u.ae"
+      ],
+      "status": "needs_attention"
+    },
+    {
+      "id": "uae-gov-free-zone-starting-business",
+      "country_id": "uae",
+      "program_ids": [],
+      "url": "https://u.ae/en/information-and-services/business/doing-business-in-free-zones/starting-a-business-in-a-free-zone",
+      "title": "Starting a business in a free zone",
+      "publisher": "UAE Government",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "free zone",
+        "legal entity",
+        "business licence",
+        "14 working days"
+      ],
+      "expected_domains": [
+        "u.ae"
+      ],
+      "status": "needs_attention"
     },
     {
       "id": "uae-icp-virtual-work-residence",

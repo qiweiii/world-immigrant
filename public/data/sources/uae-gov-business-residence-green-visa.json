@@ -1,0 +1,23 @@
+{
+  "id": "uae-gov-business-residence-green-visa",
+  "country_id": "uae",
+  "program_ids": [],
+  "url": "https://u.ae/en/information-and-services/visa-and-emirates-id/residence-visas/residence-visa-for-doing-business-in-the-uae",
+  "title": "Residence visa for doing business in the UAE",
+  "publisher": "UAE Government",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Green visa",
+    "investors",
+    "renewable residence visa",
+    "five years"
+  ],
+  "expected_domains": [
+    "u.ae"
+  ],
+  "status": "needs_attention"
+}
