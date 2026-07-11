@@ -201,7 +201,10 @@
     line-height: 1.5;
   }
 
-  /* ── Button ── */
+  /* ── Button ──
+     Default and primary hovers are separate so a black primary never inherits
+     the light default hover fill while keeping inverted (light) label text.
+  */
   .btn {
     display: inline-flex;
     align-items: center;
@@ -216,22 +219,40 @@
     color: var(--foreground);
     cursor: pointer;
     text-decoration: none;
-    transition: background 0.15s, border-color 0.15s, transform 0.1s;
+    transition: background 0.15s, border-color 0.15s, color 0.15s, box-shadow 0.15s, transform 0.1s;
   }
-  .btn:hover { background: color-mix(in srgb, var(--foreground) 8%, var(--card)); }
+  .btn:not(.btn-primary):hover {
+    background: var(--muted);
+    color: var(--foreground);
+    border-color: var(--border-strong);
+  }
   .btn:active { transform: scale(0.98); }
+  .btn:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
   .btn-primary {
     background: var(--foreground);
     color: var(--background);
     border-color: var(--foreground);
   }
-  .btn-primary:hover { opacity: 0.88; }
+  .btn-primary:hover {
+    /* Keep inverted high-contrast pair; lift with shadow only */
+    background: var(--foreground);
+    color: var(--background);
+    border-color: var(--foreground);
+    box-shadow: var(--shadow-md);
+  }
   .btn-ghost {
     background: transparent;
     border-color: var(--border);
     color: var(--muted-foreground);
   }
-  .btn-ghost:hover { background: color-mix(in srgb, var(--foreground) 8%, transparent); color: var(--foreground); border-color: var(--border-strong); }
+  .btn-ghost:hover {
+    background: var(--muted);
+    color: var(--foreground);
+    border-color: var(--border-strong);
+  }
   .btn .icon, .btn img { width: 16px; height: 16px; }
 
   /* ── Card ── */
