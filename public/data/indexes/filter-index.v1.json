@@ -1107,6 +1107,199 @@
       "last_checked_at": "2026-07-11T06:31:33.620Z"
     },
     {
+      "program_id": "germany-eu-blue-card",
+      "country_id": "germany",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "EU Blue Card",
+        "zh-Hans": "欧盟蓝卡（EU Blue Card）"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "bachelor",
+        "credential_assessment_required": "unknown",
+        "credential_assessment_condition": "foreign_education",
+        "job_offer_required": true,
+        "sponsor_required": true,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [
+          {
+            "amount": 50700,
+            "currency": "EUR",
+            "period": "annual",
+            "applies_to": "primary",
+            "calculation": "minimum_total"
+          }
+        ],
+        "accepted_income_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T11:42:03Z",
+        "updated_at": "2026-07-11T11:42:03Z",
+        "last_checked_at": "2026-07-11T11:46:25.813Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "What is the EU Blue Card?",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "What is the EU Blue Card and overview of requirements",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Overview of the requirements for the EU Blue Card",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Overview of the requirements for the EU Blue Card",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Employment contract and job offer requirement",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Overview of the requirements for the EU Blue Card",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Application and residence requirements",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Current gross annual salary requirement",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "EU Blue Card validity and application process",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "How to live and work with the EU Blue Card",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Family reunification with the EU Blue Card",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Settlement permit for EU Blue Card holders",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Long-term residence and naturalisation information",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "germany-eu-blue-card",
+            "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+            "section": "Conservative comparison and filter fields",
+            "snapshot_id": "8e69d02a4ede3bb312b01d73b637f3a3e6b8b41747b1f9e098c044b770ace4e3",
+            "retrieved_at": "2026-07-11T11:46:25.813Z"
+          }
+        ]
+      },
+      "pathway_type": "residence",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "employer_sponsored",
+      "min_annual_income_usd": "unknown",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": true,
+      "requires_job_offer": true,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "indirect",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 4,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T11:46:25.813Z"
+    },
+    {
       "program_id": "hong-kong-top-talent-pass",
       "country_id": "hong-kong",
       "category_ids": [
@@ -1488,6 +1681,192 @@
       "policy_stability_score": 3,
       "source_confidence_score": 4,
       "last_checked_at": "2026-07-11T05:38:47.655Z"
+    },
+    {
+      "program_id": "malaysia-de-rantau-nomad-pass",
+      "country_id": "malaysia",
+      "category_ids": [
+        "digital_nomad"
+      ],
+      "official_names": {
+        "en": "DE Rantau Nomad Pass",
+        "zh-Hans": "DE Rantau 数字游牧者准证"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": "unknown",
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "unknown",
+        "min_income": [],
+        "accepted_income_sources": [
+          "remote_employment",
+          "self_employment",
+          "freelance",
+          "unknown"
+        ],
+        "income_location": "outside_destination"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T11:42:03Z",
+        "updated_at": "2026-07-11T11:42:03Z",
+        "last_checked_at": "2026-07-11T11:46:27.527Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "MDEC programme update and expanded professional coverage",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "DE Rantau programme purpose and eligible professional scope",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "DE Rantau programme scope",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Programme scope and limitations",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Digital nomad and remote-worker programme description",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Expanded professional coverage",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Application requirements not established on retained pages",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Application requirements not established on retained pages",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Pass duration not established on retained pages",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Stay and work description",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Family conditions not established on retained pages",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Long-term residence not established",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Citizenship not established",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "malaysia-mdec-de-rantau-update",
+            "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+            "section": "Conservative bootstrap filter fields",
+            "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489",
+            "retrieved_at": "2026-07-11T11:46:27.527Z"
+          }
+        ]
+      },
+      "pathway_type": "temporary_only",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "remote_income",
+      "accepts_remote_income": true,
+      "accepts_self_employment": "unknown",
+      "accepts_overseas_remote_income": true,
+      "requires_degree": "unknown",
+      "requires_job_offer": "unknown",
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": true,
+      "remote_work_allowed": true,
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-11T11:46:27.527Z"
     },
     {
       "program_id": "netherlands-highly-skilled-migrant",
@@ -4137,6 +4516,382 @@
       "policy_stability_score": 3,
       "source_confidence_score": 4,
       "last_checked_at": "2026-07-11T05:12:41.936Z"
+    },
+    {
+      "program_id": "united-kingdom-skilled-worker",
+      "country_id": "united-kingdom",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Skilled Worker visa",
+        "zh-Hans": "技术工人签证（Skilled Worker visa）"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": true,
+        "sponsor_required": true,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [
+          {
+            "amount": 41700,
+            "currency": "GBP",
+            "period": "annual",
+            "applies_to": "primary",
+            "calculation": "minimum_total"
+          }
+        ],
+        "accepted_income_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T11:42:03Z",
+        "updated_at": "2026-07-11T11:42:03Z",
+        "last_checked_at": "2026-07-11T11:46:27.619Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Skilled Worker visa overview and eligibility",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Eligibility and how long you can stay",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Eligibility: job, sponsor, salary, and English",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Eligibility requirements",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Approved employer and certificate of sponsorship",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Your job and knowledge of English",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "How much it costs and personal savings",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Minimum salary and going-rate requirement",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "How long you can stay and getting a decision",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "What you can and cannot do",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Partner and children",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Settlement after five years",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Long-term route caveat",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "united-kingdom-skilled-worker",
+            "url": "https://www.gov.uk/skilled-worker-visa",
+            "section": "Conservative comparison and filter fields",
+            "snapshot_id": "7b8a1277ff9c3aa0324f8afe9270d9ade584758c83386a41a79d99fdd3d6d0aa",
+            "retrieved_at": "2026-07-11T11:46:27.619Z"
+          }
+        ]
+      },
+      "pathway_type": "residence",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "employer_sponsored",
+      "min_annual_income_usd": "unknown",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": true,
+      "requires_investment": false,
+      "requires_language_test": true,
+      "requires_local_entity": false,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": true,
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": 0.75,
+      "processing_time_months_max": 2,
+      "policy_stability_score": 4,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T11:46:27.619Z"
+    },
+    {
+      "program_id": "united-states-h1b-specialty-occupations",
+      "country_id": "united-states",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "H-1B Specialty Occupations",
+        "zh-Hans": "H-1B 专业职业签证"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "bachelor",
+        "credential_assessment_required": "unknown",
+        "credential_assessment_condition": "foreign_education",
+        "job_offer_required": true,
+        "sponsor_required": true,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "unknown",
+        "min_income": [],
+        "accepted_income_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T11:42:03Z",
+        "updated_at": "2026-07-11T11:42:03Z",
+        "last_checked_at": "2026-07-11T11:46:29.968Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "H-1B Specialty Occupations current USCIS notices",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Classification description and petition process",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Eligibility criteria for specialty occupations",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Eligibility criteria and cap-subject registration",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Employer petition and Labor Condition Application",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Specialty occupation degree and equivalent requirements",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Filing and payment notices",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Employer-sponsored employment condition",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "H-1B validity and electronic registration process",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Employment authorization and portability",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Family of H-1B nonimmigrants",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Nonimmigrant classification caveat",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Citizenship not established",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "united-states-h1b-specialty-occupations",
+            "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+            "section": "Conservative comparison and filter fields",
+            "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+            "retrieved_at": "2026-07-11T11:46:29.968Z"
+          }
+        ]
+      },
+      "pathway_type": "temporary_only",
+      "settlement_track": "temporary_no_pr",
+      "pathway_mechanism": "employer_sponsored",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": true,
+      "requires_job_offer": true,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": false,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 2,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T11:46:29.968Z"
     }
   ]
 }

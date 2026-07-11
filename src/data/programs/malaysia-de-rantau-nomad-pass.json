@@ -1,0 +1,270 @@
+{
+  "id": "malaysia-de-rantau-nomad-pass",
+  "country_id": "malaysia",
+  "category_ids": ["digital_nomad"],
+  "official_names": {
+    "en": "DE Rantau Nomad Pass",
+    "zh-Hans": "DE Rantau 数字游牧者准证"
+  },
+  "aliases": ["Malaysia Digital Nomad Pass", "DE Rantau Pass"],
+  "status": "active",
+  "status_note_md": {
+    "en": "MDEC maintains the DE Rantau Nomad Pass programme. Its 2026 update says the programme has expanded beyond IT and digital fields to additional professional roles.",
+    "zh-Hans": "MDEC 继续提供 DE Rantau 数字游牧者准证。其 2026 年更新说明，该计划已从 IT 和数字领域扩展到其他专业岗位。"
+  },
+  "summary_md": {
+    "en": "A Malaysian digital-nomad route for eligible foreign digital professionals and remote workers. MDEC describes the programme as a way for qualified professionals to stay and work longer in Malaysia, while the latest update broadens eligible professional fields.",
+    "zh-Hans": "面向符合条件的外国数字专业人士和远程工作者的马来西亚数字游牧途径。MDEC 将该计划描述为让合格专业人士在马来西亚停留和工作更长时间的途径，最新更新还扩大了可申请的专业领域。"
+  },
+  "good_for_md": {
+    "en": "Remote workers, digital professionals, and other professional roles covered by the current MDEC programme who can document the required work and supporting evidence.",
+    "zh-Hans": "适合当前 MDEC 计划涵盖的远程工作者、数字专业人士及其他专业岗位人员，前提是能够提供所需工作和支持材料证明。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking Malaysian local employment, permanent residence, or a route whose current income, duration, and family conditions have not been confirmed in the retained MDEC pages.",
+    "zh-Hans": "不适合寻求马来西亚本地就业、永久居留，或需要当前保留的 MDEC 页面尚未确认的收入、期限和家庭条件的申请人。"
+  },
+  "pathway_mechanism": "remote_income",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": "unknown",
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": "unknown",
+    "accepted_sources": ["remote_employment", "self_employment", "freelance", "unknown"],
+    "income_location": "outside_destination"
+  },
+  "timeline": {
+    "renewable": "unknown",
+    "initial_validity_months": "unknown",
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": true,
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained MDEC pages do not establish a permanent-residence route from the DE Rantau Nomad Pass.",
+      "zh-Hans": "保留的 MDEC 页面没有确认 DE Rantau 数字游牧者准证通往永久居留的途径。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained MDEC pages do not establish citizenship eligibility.",
+      "zh-Hans": "保留的 MDEC 页面没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "extraction_confidence_score": 3,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "This bootstrap record is intentionally conservative. Official evidence supports the core route, while detailed fees, family conditions, and long-term outcomes require continued review.",
+      "zh-Hans": "此初始记录有意保持保守。官方证据支持核心途径，但详细费用、家庭条件和长期结果仍需持续审查。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 1,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 4,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "remote_income",
+    "accepts_remote_income": true,
+    "accepts_self_employment": "unknown",
+    "accepts_overseas_remote_income": true,
+    "requires_degree": "unknown",
+    "requires_job_offer": "unknown",
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": true,
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "last_checked_at": "2026-07-11T11:46:27.527Z"
+  },
+  "source_ids": ["malaysia-mdec-de-rantau", "malaysia-mdec-de-rantau-update"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "MDEC programme update and expanded professional coverage",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "DE Rantau programme purpose and eligible professional scope",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "DE Rantau programme scope",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Programme scope and limitations",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Digital nomad and remote-worker programme description",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Expanded professional coverage",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Application requirements not established on retained pages",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Application requirements not established on retained pages",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Pass duration not established on retained pages",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Stay and work description",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Family conditions not established on retained pages",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Long-term residence not established",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Citizenship not established",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "malaysia-mdec-de-rantau-update",
+        "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+        "section": "Conservative bootstrap filter fields",
+        "retrieved_at": "2026-07-11T11:46:27.527Z",
+        "snapshot_id": "cdfd6c7e2c747cab06a2d6c0013e96dbda1b7dd4db7c95adce2afb8be8c29489"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T11:42:03Z",
+    "updated_at": "2026-07-11T11:42:03Z",
+    "last_checked_at": "2026-07-11T11:46:27.527Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T11:42:03Z",
+      "summary": "Added DE Rantau Nomad Pass bootstrap fixture from retained official evidence.",
+      "source_ids": ["malaysia-mdec-de-rantau", "malaysia-mdec-de-rantau-update"]
+    }
+  ]
+}

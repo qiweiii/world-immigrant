@@ -1,0 +1,35 @@
+{
+  "id": "germany",
+  "iso2": "DE",
+  "iso3": "DEU",
+  "names": {
+    "en": "Germany",
+    "zh-Hans": "德国"
+  },
+  "region": "Europe",
+  "summary_md": {
+    "en": "Bootstrap coverage for Germany begins with the EU Blue Card for qualified professionals with a German job offer.",
+    "zh-Hans": "德国的初始覆盖从面向拥有德国工作机会的合格专业人士的欧盟蓝卡开始。"
+  },
+  "brand": {
+    "color": "#FFCC00",
+    "source": "flag"
+  },
+  "official_source_ids": [
+    "germany-eu-blue-card"
+  ],
+  "categories": [
+    "skilled_worker"
+  ],
+  "program_ids": [
+    "germany-eu-blue-card"
+  ],
+  "freshness": {
+    "created_at": "2026-07-11T11:42:03Z",
+    "updated_at": "2026-07-11T11:42:03Z",
+    "last_checked_at": "2026-07-11T11:46:25.813Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  }
+}

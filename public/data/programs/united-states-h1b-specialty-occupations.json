@@ -1,0 +1,283 @@
+{
+  "id": "united-states-h1b-specialty-occupations",
+  "country_id": "united-states",
+  "category_ids": [
+    "skilled_worker"
+  ],
+  "official_names": {
+    "en": "H-1B Specialty Occupations",
+    "zh-Hans": "H-1B 专业职业签证"
+  },
+  "aliases": [
+    "US H-1B",
+    "H-1B visa"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "USCIS maintains the H-1B specialty-occupation classification. The current USCIS page includes cap-selection and entry-related notices, so availability and filing conditions require human review at application time.",
+    "zh-Hans": "USCIS 继续提供 H-1B 专业职业类别。当前 USCIS 页面包含配额抽选和入境相关通知，因此申请时必须人工核实可用性和递交条件。"
+  },
+  "summary_md": {
+    "en": "A US employer-sponsored nonimmigrant classification for services in a specialty occupation requiring highly specialized knowledge and a directly related bachelor’s degree or equivalent. USCIS describes an employer petition, a certified Labor Condition Application, and an electronic registration process for cap-subject cases.",
+    "zh-Hans": "美国雇主担保的非移民类别，面向需要高度专业知识以及相关学士学位或同等学历的专业职业。USCIS 说明，该途径涉及雇主递交申请、经认证的劳工情况申请，以及受配额限制案件的电子注册流程。"
+  },
+  "good_for_md": {
+    "en": "Applicants with a US employer and a specialty-occupation role whose degree, equivalent education or experience, and licensing evidence match the offered position.",
+    "zh-Hans": "适合拥有美国雇主和专业职业岗位，并且学历、同等教育或经验以及执照证明与职位要求相匹配的申请人。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants without a qualifying employer petition, a directly related specialty qualification, or a selected registration where the case is cap-subject. This is not a general permanent-residence route.",
+    "zh-Hans": "不适合没有合格雇主申请、相关专业资格，或在受配额限制时没有入选注册的申请人。这不是一般性的永久居留途径。"
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "bachelor",
+      "credential_assessment_required": "unknown",
+      "credential_assessment_condition": "foreign_education"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": "unknown",
+    "accepted_sources": [
+      "employment"
+    ],
+    "income_location": "inside_destination"
+  },
+  "timeline": {
+    "initial_validity_months": 36,
+    "renewable": true,
+    "max_stay_months": 72
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": true,
+    "unmarried_partner_allowed": false,
+    "children_allowed": true,
+    "max_child_age": 21,
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": false
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The H-1B page describes a nonimmigrant classification and does not itself establish a permanent-residence outcome for every case.",
+      "zh-Hans": "H-1B 页面描述的是非移民类别，本身没有确认每个案件的永久居留结果。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The USCIS H-1B page does not establish citizenship eligibility.",
+      "zh-Hans": "USCIS H-1B 页面没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 2,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "This bootstrap record is intentionally conservative. Official evidence supports the core route, while detailed fees, family conditions, and long-term outcomes require continued review.",
+      "zh-Hans": "此初始记录有意保持保守。官方证据支持核心途径，但详细费用、家庭条件和长期结果仍需持续审查。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 4,
+    "speed_score": 2,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 2
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "temporary_no_pr",
+    "pathway_mechanism": "employer_sponsored",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": true,
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": true,
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 2,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T11:46:29.968Z"
+  },
+  "source_ids": [
+    "united-states-h1b-specialty-occupations"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "H-1B Specialty Occupations current USCIS notices",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Classification description and petition process",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Eligibility criteria for specialty occupations",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Eligibility criteria and cap-subject registration",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Employer petition and Labor Condition Application",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Specialty occupation degree and equivalent requirements",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Filing and payment notices",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Employer-sponsored employment condition",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "H-1B validity and electronic registration process",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Employment authorization and portability",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Family of H-1B nonimmigrants",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Nonimmigrant classification caveat",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Citizenship not established",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "united-states-h1b-specialty-occupations",
+        "url": "https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations",
+        "section": "Conservative comparison and filter fields",
+        "snapshot_id": "0129d196e40811964422e386e48ca279aad456c514282184d9a29f6cb0c9eb36",
+        "retrieved_at": "2026-07-11T11:46:29.968Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T11:42:03Z",
+    "updated_at": "2026-07-11T11:42:03Z",
+    "last_checked_at": "2026-07-11T11:46:29.968Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T11:42:03Z",
+      "summary": "Added H-1B Specialty Occupations bootstrap fixture from retained official evidence.",
+      "source_ids": [
+        "united-states-h1b-specialty-occupations"
+      ]
+    }
+  ]
+}

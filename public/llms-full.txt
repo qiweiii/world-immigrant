@@ -114,6 +114,21 @@ A Republic of Estonia digital identity that lets global entrepreneurs authentica
 - estonia-e-residency-apply: Become an e-resident of Estonia — how to apply — https://www.e-resident.gov.ee/become-an-e-resident
 - estonia-digital-nomad-visa-faq: FAQs about Estonia's Digital Nomad Visa — https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa
 
+## EU Blue Card
+
+- ID: germany-eu-blue-card
+- Country: germany
+- Status: active
+- Last updated: 2026-07-11T11:46:25.813Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A German residence route for qualified professionals with an employment contract or binding job offer, recognized or comparable higher education, and the applicable gross annual salary threshold. The official page also describes special rules for some IT professionals without a formal qualification.
+
+### Official sources
+
+- germany-eu-blue-card: EU Blue Card — https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card
+
 ## Top Talent Pass Scheme
 
 - ID: hong-kong-top-talent-pass
@@ -145,6 +160,22 @@ A Japan work residence status for technical, humanities, and certain foreign-cul
 
 - japan-isa-engineer-specialist: Residence status — Engineer/Specialist in Humanities/International Services — https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en
 - japan-isa-residence-status-list: Search by residence status — https://www.moj.go.jp/isa/applications/status/index.html
+
+## DE Rantau Nomad Pass
+
+- ID: malaysia-de-rantau-nomad-pass
+- Country: malaysia
+- Status: active
+- Last updated: 2026-07-11T11:46:27.527Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A Malaysian digital-nomad route for eligible foreign digital professionals and remote workers. MDEC describes the programme as a way for qualified professionals to stay and work longer in Malaysia, while the latest update broadens eligible professional fields.
+
+### Official sources
+
+- malaysia-mdec-de-rantau: Digital Nomad Pass — https://www.mdec.my/md-programmes/digital-nomad-pass
+- malaysia-mdec-de-rantau-update: MDEC expands DE Rantau programme — https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships
 
 ## Residence Permit for Highly Skilled Migrants
 
@@ -363,3 +394,33 @@ A UAE remote-work residence route for people working remotely for an organizatio
 
 - uae-icp-virtual-work-residence: Issuance of Visa Virtual Work Residence (Virtual Work Employee) — https://icp.gov.ae/en/services-details?serviceid=68e73fd45ae59b00117389f4
 - uae-gdrfa-virtual-work-residence: Issuance of the Virtual Work Residence Permit — https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936
+
+## Skilled Worker visa
+
+- ID: united-kingdom-skilled-worker
+- Country: united-kingdom
+- Status: active
+- Last updated: 2026-07-11T11:46:27.619Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A UK work and residence route for an eligible job with an approved employer, a certificate of sponsorship, the required salary, and English-language ability. GOV.UK says the visa can last up to five years and may support settlement after five years when the other conditions are met.
+
+### Official sources
+
+- united-kingdom-skilled-worker: Skilled Worker visa: Overview — https://www.gov.uk/skilled-worker-visa
+
+## H-1B Specialty Occupations
+
+- ID: united-states-h1b-specialty-occupations
+- Country: united-states
+- Status: active
+- Last updated: 2026-07-11T11:46:29.968Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A US employer-sponsored nonimmigrant classification for services in a specialty occupation requiring highly specialized knowledge and a directly related bachelor’s degree or equivalent. USCIS describes an employer petition, a certified Labor Condition Application, and an electronic registration process for cap-subject cases.
+
+### Official sources
+
+- united-states-h1b-specialty-occupations: H-1B Specialty Occupations — https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations

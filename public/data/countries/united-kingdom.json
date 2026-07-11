@@ -1,0 +1,35 @@
+{
+  "id": "united-kingdom",
+  "iso2": "GB",
+  "iso3": "GBR",
+  "names": {
+    "en": "United Kingdom",
+    "zh-Hans": "英国"
+  },
+  "region": "Europe",
+  "summary_md": {
+    "en": "Bootstrap coverage for the United Kingdom begins with the Skilled Worker visa for eligible jobs with approved employers.",
+    "zh-Hans": "英国的初始覆盖从面向获批雇主合格职位的技术工人签证开始。"
+  },
+  "brand": {
+    "color": "#012169",
+    "source": "flag"
+  },
+  "official_source_ids": [
+    "united-kingdom-skilled-worker"
+  ],
+  "categories": [
+    "skilled_worker"
+  ],
+  "program_ids": [
+    "united-kingdom-skilled-worker"
+  ],
+  "freshness": {
+    "created_at": "2026-07-11T11:42:03Z",
+    "updated_at": "2026-07-11T11:42:03Z",
+    "last_checked_at": "2026-07-11T11:46:27.619Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  }
+}

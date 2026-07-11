@@ -1,0 +1,27 @@
+{
+  "id": "germany-eu-blue-card",
+  "country_id": "germany",
+  "program_ids": [
+    "germany-eu-blue-card"
+  ],
+  "url": "https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card",
+  "title": "EU Blue Card",
+  "publisher": "Make it in Germany / Federal Government of Germany",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "EU Blue Card",
+    "job offer",
+    "salary",
+    "qualified professionals"
+  ],
+  "expected_domains": [
+    "www.make-it-in-germany.com"
+  ],
+  "last_checked_at": "2026-07-11T11:46:25.813Z",
+  "last_success_at": "2026-07-11T11:46:25.813Z",
+  "status": "active"
+}

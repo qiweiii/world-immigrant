@@ -1,0 +1,29 @@
+{
+  "id": "malaysia",
+  "iso2": "MY",
+  "iso3": "MYS",
+  "names": {
+    "en": "Malaysia",
+    "zh-Hans": "马来西亚"
+  },
+  "region": "Asia",
+  "summary_md": {
+    "en": "Bootstrap coverage for Malaysia begins with the MDEC DE Rantau Nomad Pass, a digital-professional and remote-work route whose detailed rules remain under review.",
+    "zh-Hans": "马来西亚的初始覆盖从 MDEC DE Rantau 数字游牧者准证开始，这是面向数字专业人士和远程工作者的途径，详细规定仍在审查中。"
+  },
+  "brand": {
+    "color": "#010066",
+    "source": "flag"
+  },
+  "official_source_ids": ["malaysia-mdec-de-rantau", "malaysia-mdec-de-rantau-update"],
+  "categories": ["digital_nomad"],
+  "program_ids": ["malaysia-de-rantau-nomad-pass"],
+  "freshness": {
+    "created_at": "2026-07-11T11:42:03Z",
+    "updated_at": "2026-07-11T11:42:03Z",
+    "last_checked_at": "2026-07-11T11:46:27.527Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  }
+}

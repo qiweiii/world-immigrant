@@ -1,0 +1,27 @@
+{
+  "id": "malaysia-mdec-de-rantau-update",
+  "country_id": "malaysia",
+  "program_ids": [
+    "malaysia-de-rantau-nomad-pass"
+  ],
+  "url": "https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships",
+  "title": "MDEC expands DE Rantau programme",
+  "publisher": "Malaysia Digital Economy Corporation (MDEC)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "DE Rantau",
+    "expanded",
+    "digital nomads",
+    "remote workers"
+  ],
+  "expected_domains": [
+    "www.mdec.my"
+  ],
+  "last_checked_at": "2026-07-11T11:46:27.527Z",
+  "last_success_at": "2026-07-11T11:46:27.527Z",
+  "status": "active"
+}
