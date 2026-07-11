@@ -256,13 +256,42 @@ type ProgramFilterIndex = {
  spouse_work_allowed: boolean | "limited" | "unknown";
  dependent_parents_allowed: boolean | "unknown";
 
- // Permanence
+ // Permanence and entry mechanism
+ // settlement_track is preferred for new fixtures; keep pathway_type aligned.
+ settlement_track:
+  | "temporary_no_pr"
+  | "temporary_may_lead_pr"
+  | "residence"
+  | "direct_pr"
+  | "e_status_only"
+  | "unknown";
  pathway_type: "temporary_only" | "renewable_temporary" | "residence" | "direct_pr" | "direct_citizenship" | "unknown";
+ pathway_mechanism:
+  | "employer_sponsored"
+  | "self_sponsored"
+  | "own_company"
+  | "points_invitation"
+  | "investment"
+  | "remote_income"
+  | "talent_pass"
+  | "e_residency"
+  | "other"
+  | "unknown";
  leads_to_pr: boolean | "indirect" | "unknown";
  min_years_to_pr?: number | "variable" | "unknown";
  leads_to_citizenship: boolean | "indirect" | "unknown";
  min_years_to_citizenship?: number | "variable" | "unknown";
  physical_presence_requirement_days_per_year?: number | "variable" | "unknown";
+
+ // Entry / income gates (rollups; canonical detail lives on eligibility/income/business_setup)
+ requires_job_offer?: boolean | "unknown" | "not_applicable";
+ requires_local_entity?: boolean | "unknown" | "not_applicable";
+ accepts_remote_income?: boolean | "unknown" | "not_applicable";
+ accepts_overseas_remote_income?: boolean | "unknown" | "not_applicable";
+ accepts_self_employment?: boolean | "unknown" | "not_applicable";
+ min_monthly_income_usd?: number | "variable" | "unknown";
+ min_annual_income_usd?: number | "variable" | "unknown";
+ min_investment_usd?: number | "variable" | "unknown";
 
  // Process / reliability
  processing_time_months_min?: number | "unknown";
@@ -273,9 +302,15 @@ type ProgramFilterIndex = {
  competitive_invitation: boolean | "unknown";
  policy_stability_score?: 1 | 2 | 3 | 4 | 5;
  source_confidence_score: 1 | 2 | 3 | 4 | 5;
- last_checked_at: string;
+ last_checked_at: string; // internal freshness; UI label is "Updated"
 };
 ```
+
+### Notes on mechanism vs category
+
+- Filter by **settlement track** when the user wants PR vs temporary stay vs e-status only.
+- Filter by **pathway mechanism** when the user has (or lacks) a job offer, remote income, capital, or a company setup path.
+- Category alone is not enough for UAE free-zone vs remote work vs golden visa within one country.
 
 ## 5. Compare table fields
 
@@ -286,21 +321,23 @@ The default compare table should not show every field. It should show the fields
 1. Country.
 2. Program name.
 3. Category.
-4. Best for.
-5. Status.
-6. Minimum funds/income/investment.
-7. Job offer required?
-8. Degree/occupation requirement.
-9. Language requirement.
-10. Initial validity.
-11. Processing time.
-12. Work rights.
-13. Family inclusion.
-14. Path to PR.
-15. Path to citizenship.
-16. Physical presence requirement.
-17. Source confidence.
-18. Last checked.
+4. Settlement track.
+5. Entry mechanism.
+6. Status.
+7. Minimum funds / income / investment.
+8. Job offer required?
+9. Local entity required?
+10. Degree/occupation requirement.
+11. Language requirement.
+12. Initial validity.
+13. Processing time.
+14. Work rights.
+15. Family inclusion.
+16. Path to PR.
+17. Path to citizenship.
+18. Physical presence requirement.
+19. Source confidence.
+20. Last updated.
 
 ### 5.2 Advanced columns
 

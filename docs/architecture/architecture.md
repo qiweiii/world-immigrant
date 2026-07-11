@@ -72,9 +72,10 @@ Pagefind indexes static HTML after build. It supports multilingual sites via `ht
 Eligibility logic lives in a dedicated `filterEngine.ts`:
 
 - Convert visa criteria into normalized predicates.
-- Classify result as `likely_match`, `possible_match`, `not_match`, `needs_review`, or `unknown`.
+- Classify result as `likely_match`, `possible_match`, `not_match`, `needs_review`, or `unknown` (internal codes; UI uses neutral labels).
+- Use `pathway_mechanism` and `settlement_track` (not category alone) to separate employer, remote-income, own-company, points, investment, and e-status routes.
+- Evaluate income and job-offer gates when modeled; keep all thresholds in data, not hardcoded UI.
 - Return exact reasons and citations.
-- Keep all thresholds in data, not hardcoded UI.
 - Treat results as preliminary matching guidance, never a legal eligibility decision.
 
 ## 6. i18n Strategy

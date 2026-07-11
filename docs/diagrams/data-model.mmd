@@ -6,6 +6,7 @@ erDiagram
   SOURCE ||--o{ FIELD_CITATION : supports
   PROGRAM ||--|| FILTER_INDEX_ENTRY : generates
   PROGRAM ||--|| COMPARE_INDEX_ENTRY : generates
+  PROGRAM ||--o| BUSINESS_SETUP : may_require
 
   COUNTRY {
     string id
@@ -19,8 +20,15 @@ erDiagram
     string id
     string country_id
     string status
+    string pathway_mechanism
+    string settlement_track
     string pathway_type
     datetime last_checked_at
+  }
+  BUSINESS_SETUP {
+    boolean required
+    string entity_types
+    string renewal_milestones
   }
   SOURCE {
     string id
