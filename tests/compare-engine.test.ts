@@ -37,6 +37,8 @@ test("compare engine resolves stable rows and preserves evidence metadata", asyn
   assert.ok(pathwayRow);
   assert.match(pathwayRow.cells[0].display, /Direct permanent residence/);
   assert.ok(pathwayRow.cells[0].citations.length > 0);
+  assert.equal(typeof pathwayRow.cells[0].citations[0].source_id, "string");
+  assert.match(pathwayRow.cells[0].citations[0].url, /^https?:\/\//);
   assert.match(
     view.rows.find((row) => row.id === "pathway_mechanism")?.cells[0].display ?? "",
     /points invitation/,

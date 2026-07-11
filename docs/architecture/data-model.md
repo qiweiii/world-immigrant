@@ -366,13 +366,13 @@ Filter engine should return reasons, not only matches:
 
 ```ts
 type FilterResult = {
- visa_program_id: string;
+ program_id: string;
  status: "likely_match" | "possible_match" | "not_match" | "needs_review" | "unknown";
  score: number;
  reasons: Array<{
   field: string;
   severity: "positive" | "warning" | "blocking" | "unknown";
-  message_md: LocalizedMarkdown;
+  message: string;
   citations: CitationRef[];
  }>;
 };

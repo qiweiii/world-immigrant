@@ -375,7 +375,13 @@ Example:
    "field": "income.min_monthly_income_usd",
    "severity": "positive",
    "message": "Your monthly remote income appears above the stated threshold.",
-   "citations": ["source:portugal-official-d8"]
+   "citations": [
+    {
+     "source_id": "portugal-official-d8",
+     "url": "https://example.gov/portugal-d8",
+     "section": "Income requirement"
+    }
+   ]
   },
   {
    "field": "family.spouse_work_allowed",

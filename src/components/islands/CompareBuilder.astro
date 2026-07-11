@@ -2,7 +2,7 @@
   <div class="compare-intro">
     <p class="eyebrow">Compare</p>
     <h2 id="compare-heading">Choose pathways, then scan the table.</h2>
-    <p class="compare-lede">Select up to three programs. Facts stay side by side with source IDs under each cell.</p>
+    <p class="compare-lede">Select up to three programs. Facts stay side by side with linked source sections under each cell.</p>
   </div>
 
   <div class="compare-select-wrap">
@@ -99,7 +99,18 @@
         if (cell.citations.length) {
           const evidence = document.createElement("div");
           evidence.className = "compare-cell-sources";
-          evidence.textContent = cell.citations.join(" · ");
+          const links = cell.citations.map((citation) => {
+            const link = document.createElement("a");
+            link.href = citation.url;
+            link.target = "_blank";
+            link.rel = "noopener";
+            link.textContent = citation.section || new URL(citation.url).hostname;
+            return link;
+          });
+          for (let i = 0; i < links.length; i++) {
+            if (i > 0) evidence.append(" · ");
+            evidence.append(links[i]);
+          }
           value.append(evidence);
         }
         rowElement.append(value);

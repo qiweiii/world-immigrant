@@ -1158,9 +1158,16 @@
   .compare-cell-sources {
     margin-top: 6px;
     color: var(--muted-foreground);
-    font-family: var(--font-mono);
-    font-size: 11px;
+    font-size: 12px;
     line-height: 1.35;
+  }
+  .compare-cell-sources a {
+    color: var(--accent);
+    text-decoration: none;
+  }
+  .compare-cell-sources a:hover {
+    text-decoration: underline;
+    text-underline-offset: 3px;
   }
 
   /* ── Filter shell ── */

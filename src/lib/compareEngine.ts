@@ -2,10 +2,16 @@ import type { buildPublicData } from "./public-data";
 
 type CompareProgram = ReturnType<typeof buildPublicData>["compareIndex"]["programs"][number];
 
+type CompareCitation = {
+  source_id: string;
+  url: string;
+  section?: string;
+};
+
 type CompareCell = {
   program_id: string;
   display: string;
-  citations: string[];
+  citations: CompareCitation[];
 };
 
 export type ComparisonView = {
@@ -13,14 +19,18 @@ export type ComparisonView = {
   rows: Array<{ id: string; label: string; cells: CompareCell[] }>;
 };
 
-function citationsFor(program: CompareProgram, path: string): string[] {
-  return [
-    ...new Set(
-      Object.entries(program.field_citations)
-        .filter(([citationPath]) => citationPath === path || citationPath.startsWith(`${path}/`))
-        .flatMap(([, citations]) => citations.map(({ source_id }) => source_id)),
-    ),
-  ];
+function citationsFor(program: CompareProgram, path: string): CompareCitation[] {
+  const matches = Object.entries(program.field_citations)
+    .filter(([citationPath]) => citationPath === path || citationPath.startsWith(`${path}/`))
+    .flatMap(([, citations]) =>
+      citations.map(({ source_id, url, section }) => ({ source_id, url, section })),
+    );
+  const seen = new Set<string>();
+  return matches.filter((citation) => {
+    if (seen.has(citation.source_id)) return false;
+    seen.add(citation.source_id);
+    return true;
+  });
 }
 
 function formatPolicy(value: unknown) {
