@@ -1,0 +1,304 @@
+{
+  "id": "uae-golden-talent",
+  "country_id": "uae",
+  "category_ids": ["skilled_worker"],
+  "official_names": {
+    "en": "Golden Residence — talented geniuses"
+  },
+  "aliases": ["UAE Golden Visa Talent", "UAE Golden Residency Exceptional Talent"],
+  "status": "active",
+  "status_note_md": {
+    "en": "This fixture uses the Dubai GDRFA Talented Geniuses service for culture and arts, innovators and inventors, athletes, and digital-technology talent."
+  },
+  "summary_md": {
+    "en": "A ten-year renewable Golden Residence route for exceptional talent in culture and arts, innovation and invention, athletics, or digital technology, with nomination and category-specific evidence."
+  },
+  "good_for_md": {
+    "en": "Recognised creatives, inventors, innovators, athletes, and digital-technology talents who can obtain a nomination letter from the relevant UAE authority and document the applicable achievements."
+  },
+  "not_good_for_md": {
+    "en": "Applicants without a nominating authority, category-specific achievements, or a clear record matching one of the listed exceptional-talent categories."
+  },
+  "pathway_mechanism": "talent_pass",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "A nomination letter is required from the relevant culture, economy, sports, or artificial-intelligence authority, depending on the talent category. Final approval remains subject to GDRFA evaluation."
+      }
+    },
+    "work_experience": {
+      "note_md": {
+        "en": "The service sets different evidence rules by talent category; the creative practitioner criteria include at least five years of professional experience."
+      }
+    },
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": "unknown"
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Residence permit fee"
+        },
+        "amount": 1100,
+        "currency": "AED",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Fee inside the country"
+        },
+        "amount": 500,
+        "currency": "AED",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Delivery"
+        },
+        "amount": 20,
+        "currency": "AED",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": "unknown",
+    "accepted_sources": ["unknown"],
+    "income_location": "unknown",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The service requires the holder to support themselves and their family without government support but does not state a universal income threshold."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The GDRFA service lists an expected completion time of five days. The permit is valid for ten years and may be extended if the same conditions are met."
+    },
+    "initial_validity_months": 120,
+    "renewable": true,
+    "max_stay_months": 120
+  },
+  "rights": {
+    "work_allowed": "unknown",
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "The retained talent service mentions supporting the family but does not enumerate dependant eligibility or work rights."
+    }
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The talent service establishes renewable ten-year residence, not a permanent-residence route."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained talent service does not establish a citizenship route."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The GDRFA source directly supports categories, nominations, evidence, fees, processing, validity, and renewal; exact category-specific eligibility and family/work rights require case-level review."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 3,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "talent_pass",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "unknown",
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T06:17:57.040Z"
+  },
+  "source_ids": ["uae-gdrfa-golden-talent"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "uae-gdrfa-golden-talent",
+        "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+        "section": "Talent categories, nomination letters, validity, and renewal",
+        "retrieved_at": "2026-07-11T06:17:57.040Z",
+        "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T06:17:57.040Z",
+    "updated_at": "2026-07-11T06:17:57.040Z",
+    "last_checked_at": "2026-07-11T06:17:57.040Z",
+    "update_frequency_days": 30,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T06:17:57.040Z",
+      "summary": "Added UAE Golden talented-geniuses fixture from retained GDRFA evidence.",
+      "source_ids": ["uae-gdrfa-golden-talent"]
+    }
+  ]
+}

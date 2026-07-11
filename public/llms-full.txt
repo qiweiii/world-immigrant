@@ -179,6 +179,66 @@ A company-owner route pairing DMCC free-zone company formation with Dubai's Gree
 - uae-dmcc-business-setup: Set up your business in Dubai's leading hub — https://dmcc.ae/business/set-up-a-new-business
 - uae-gdrfa-green-residence-partner-investor: Issuing green residence permit (partner investor) — https://www.gdrfad.gov.ae/en/services/f52024c6-b812-11ed-5210-4cd98f768936
 
+## Golden Residence — entrepreneur
+
+- ID: uae-golden-entrepreneur
+- Country: uae
+- Status: active
+- Last updated: 2026-07-11T06:17:59.729Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+An entrepreneur route to complete UAE Golden Residency procedures for an innovative or future-oriented project valued at least AED 500,000 and supported by an accredited-auditor letter and competent-authority or incubator confirmation.
+
+### Official sources
+
+- uae-icp-golden-entrepreneur: Issuance of a Residence Visa for an Entrepreneur — https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9
+
+## Golden Residence — real estate investor
+
+- ID: uae-golden-property-investor
+- Country: uae
+- Status: active
+- Last updated: 2026-07-11T06:17:55.232Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A ten-year Golden Residence route for a UAE real-estate investor who owns property or properties with a total value of at least AED 2 million and maintains the investment conditions.
+
+### Official sources
+
+- uae-gdrfa-golden-investor: Issuing a golden residence permit (investors) — https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8
+
+## Golden Residence — talented geniuses
+
+- ID: uae-golden-talent
+- Country: uae
+- Status: active
+- Last updated: 2026-07-11T06:17:57.040Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A ten-year renewable Golden Residence route for exceptional talent in culture and arts, innovation and invention, athletics, or digital technology, with nomination and category-specific evidence.
+
+### Official sources
+
+- uae-gdrfa-golden-talent: Issuance of a golden residence permit (Talented Geniuses) — https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8
+
+## Green Residence — self-employment
+
+- ID: uae-green-freelancer
+- Country: uae
+- Status: active
+- Last updated: 2026-07-11T06:17:58.396Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A self-sponsored UAE residence permit for a freelancer or self-employed person who holds a Ministry of Human Resources and Emiratisation permit and meets the education and income/solvency conditions.
+
+### Official sources
+
+- uae-gdrfa-green-self-employment: Issuing a green residence permit (self-employment) — https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936
+
 ## Virtual Work Residence
 
 - ID: uae-remote-work

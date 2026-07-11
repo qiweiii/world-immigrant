@@ -1,0 +1,27 @@
+{
+  "id": "uae-gdrfa-golden-talent",
+  "country_id": "uae",
+  "program_ids": [
+    "uae-golden-talent"
+  ],
+  "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+  "title": "Issuance of a golden residence permit (Talented Geniuses)",
+  "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Talented Geniuses",
+    "10 years",
+    "nomination letter"
+  ],
+  "expected_domains": [
+    "gdrfad.gov.ae",
+    "www.gdrfad.gov.ae"
+  ],
+  "last_checked_at": "2026-07-11T06:15:17.747Z",
+  "last_success_at": "2026-07-11T06:15:17.747Z",
+  "status": "active"
+}

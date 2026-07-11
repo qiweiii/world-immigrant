@@ -1,0 +1,307 @@
+{
+  "id": "uae-golden-property-investor",
+  "country_id": "uae",
+  "category_ids": [
+    "investor"
+  ],
+  "official_names": {
+    "en": "Golden Residence — real estate investor"
+  },
+  "aliases": [
+    "UAE Golden Visa Property Investor",
+    "UAE Golden Residency Real Estate Investor"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "This fixture uses the Dubai GDRFA Golden Investor service for its real-estate stream; the federal ICP overview remains supplementary because its deterministic snapshot is incomplete."
+  },
+  "summary_md": {
+    "en": "A ten-year Golden Residence route for a UAE real-estate investor who owns property or properties with a total value of at least AED 2 million and maintains the investment conditions."
+  },
+  "good_for_md": {
+    "en": "Applicants with a documented UAE property investment of at least AED 2 million who can provide Dubai Land Department valuation/ownership evidence and accept the ten-year investment hold conditions."
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking a low-capital property route, a guaranteed permanent-residence outcome, or a general residence status without maintaining the qualifying property investment."
+  },
+  "pathway_mechanism": "investment",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "The Golden Investor service lists real-estate ownership of at least AED 2 million, Dubai Land Department certification, and a lien/continuity condition for the Golden Residence."
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": "unknown"
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "minimum_investment": [
+      {
+        "amount": 2000000,
+        "currency": "AED",
+        "applies_to": "primary",
+        "calculation": "minimum_total",
+        "note_md": {
+          "en": "The real-estate investment must total at least AED 2 million; the service states that mortgaged property may be accepted and details valuation and lien controls."
+        }
+      }
+    ],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Golden Residence service cost"
+        },
+        "amount": 2790,
+        "currency": "AED",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": false,
+    "accepted_sources": [
+      "passive_income",
+      "unknown"
+    ],
+    "income_location": "not_applicable",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The retained Golden Investor page sets the property-value condition and does not state a universal personal income minimum for the Golden real-estate stream."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The GDRFA service lists an expected completion time of five days. Golden Residence is valid for ten years and can be extended if the same conditions continue."
+    },
+    "initial_validity_months": 120,
+    "renewable": true,
+    "max_stay_months": 120
+  },
+  "rights": {
+    "work_allowed": "unknown",
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "The retained GDRFA Golden Investor page states Golden Residence family self-support conditions but does not enumerate dependant eligibility in the stream-specific service."
+    }
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The Golden Investor service establishes long-term renewable residence, not a permanent-residence route."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained investor service does not establish a citizenship route."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The GDRFA investor service directly supports the property threshold, valuation/lien conditions, validity, extension, fees, and processing. Family, work rights, and settlement are intentionally unknown."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 5,
+    "speed_score": 3,
+    "permanence_score": 3,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "investment",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": true,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "unknown",
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T06:17:55.232Z"
+  },
+  "source_ids": [
+    "uae-gdrfa-golden-investor"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "uae-gdrfa-golden-investor",
+        "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+        "section": "Real Estate Investor requirements, fees, and terms",
+        "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+        "retrieved_at": "2026-07-11T06:17:55.232Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T06:17:55.232Z",
+    "updated_at": "2026-07-11T06:17:55.232Z",
+    "last_checked_at": "2026-07-11T06:17:55.232Z",
+    "update_frequency_days": 30,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T06:17:55.232Z",
+      "summary": "Added UAE Golden real-estate investor fixture from retained GDRFA evidence.",
+      "source_ids": [
+        "uae-gdrfa-golden-investor"
+      ]
+    }
+  ]
+}

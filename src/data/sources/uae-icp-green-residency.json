@@ -1,0 +1,18 @@
+{
+  "id": "uae-icp-green-residency",
+  "country_id": "uae",
+  "program_ids": [],
+  "url": "https://icp.gov.ae/en/green-residency",
+  "title": "Green Residency",
+  "publisher": "UAE Federal Authority for Identity, Citizenship, Customs & Port Security",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["Green Residency", "Freelancers and Self-Employed", "360,000"],
+  "expected_domains": ["icp.gov.ae"],
+  "last_checked_at": "2026-07-11T06:15:17.747Z",
+  "last_success_at": "2026-07-11T06:15:17.747Z",
+  "status": "needs_attention"
+}

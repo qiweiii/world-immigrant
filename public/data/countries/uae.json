@@ -21,16 +21,27 @@
     "uae-gov-free-zone-starting-business",
     "uae-gov-business-residence-green-visa",
     "uae-dmcc-business-setup",
-    "uae-gdrfa-green-residence-partner-investor"
+    "uae-gdrfa-green-residence-partner-investor",
+    "uae-icp-green-residency",
+    "uae-gdrfa-green-self-employment",
+    "uae-icp-golden-residency",
+    "uae-gdrfa-golden-investor",
+    "uae-icp-golden-entrepreneur",
+    "uae-gdrfa-golden-talent"
   ],
   "categories": [
     "digital_nomad",
     "startup_entrepreneur",
-    "investor"
+    "investor",
+    "skilled_worker"
   ],
   "program_ids": [
     "uae-remote-work",
-    "uae-free-zone-investor"
+    "uae-free-zone-investor",
+    "uae-green-freelancer",
+    "uae-golden-property-investor",
+    "uae-golden-talent",
+    "uae-golden-entrepreneur"
   ],
   "freshness": {
     "created_at": "2026-07-11T04:30:43Z",

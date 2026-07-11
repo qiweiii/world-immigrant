@@ -1,0 +1,27 @@
+{
+  "id": "uae-gdrfa-golden-investor",
+  "country_id": "uae",
+  "program_ids": [
+    "uae-golden-property-investor"
+  ],
+  "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+  "title": "Issuing a golden residence permit (investors)",
+  "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Golden Residence Permit",
+    "Real Estate Investor",
+    "2 million"
+  ],
+  "expected_domains": [
+    "gdrfad.gov.ae",
+    "www.gdrfad.gov.ae"
+  ],
+  "last_checked_at": "2026-07-11T06:15:17.747Z",
+  "last_success_at": "2026-07-11T06:15:17.747Z",
+  "status": "active"
+}

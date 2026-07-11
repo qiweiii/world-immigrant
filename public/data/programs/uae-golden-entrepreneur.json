@@ -1,0 +1,334 @@
+{
+  "id": "uae-golden-entrepreneur",
+  "country_id": "uae",
+  "category_ids": [
+    "startup_entrepreneur"
+  ],
+  "official_names": {
+    "en": "Golden Residence — entrepreneur"
+  },
+  "aliases": [
+    "UAE Golden Visa Entrepreneur",
+    "UAE Golden Residency Entrepreneur"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "This fixture uses the ICP entrepreneur visa service, which describes a service to complete Golden Residency procedures for an innovative or future-oriented project."
+  },
+  "summary_md": {
+    "en": "An entrepreneur route to complete UAE Golden Residency procedures for an innovative or future-oriented project valued at least AED 500,000 and supported by an accredited-auditor letter and competent-authority or incubator confirmation."
+  },
+  "good_for_md": {
+    "en": "Project owners who can document an innovative or future-oriented project, obtain the competent-authority or incubator letter, and prove a project value of at least AED 500,000."
+  },
+  "not_good_for_md": {
+    "en": "Ordinary businesses without an innovation/future-oriented classification or without the required auditor and authority documentation."
+  },
+  "pathway_mechanism": "own_company",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "The ICP service requires valid UAE health insurance, a passport valid at least six months, a competent-authority letter confirming innovative or future-oriented nature, and an accredited-auditor letter confirming project value of at least AED 500,000."
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": true,
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": "unknown"
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "minimum_investment": [
+      {
+        "amount": 500000,
+        "currency": "AED",
+        "applies_to": "business",
+        "calculation": "minimum_total",
+        "note_md": {
+          "en": "This is the minimum documented project value, not a universal personal liquid-funds requirement."
+        }
+      }
+    ],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Application Fees"
+        },
+        "amount": 100,
+        "currency": "AED",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Issuance Fees"
+        },
+        "amount": 100,
+        "currency": "AED",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Smart Services Fees"
+        },
+        "amount": 100,
+        "currency": "AED",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": "unknown",
+    "accepted_sources": [
+      "business_income",
+      "self_employment",
+      "unknown"
+    ],
+    "income_location": "unknown",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The retained entrepreneur service does not state a universal personal income threshold."
+    }
+  },
+  "business_setup": {
+    "required": "unknown",
+    "entity_types": [
+      "Innovative or future-oriented project"
+    ],
+    "local_director_required": "unknown",
+    "note_md": {
+      "en": "The service is for a project owner and requires project-value and innovation/future-oriented documentation, but does not define a single company incorporation form."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The ICP service lists a two-day service completion duration and describes the service as completing Golden Residency procedures for ten years."
+    },
+    "initial_validity_months": 120,
+    "renewable": "unknown",
+    "max_stay_months": 120
+  },
+  "rights": {
+    "work_allowed": "unknown",
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": true
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "The retained entrepreneur service does not enumerate dependant eligibility or work rights."
+    }
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The entrepreneur service establishes a ten-year Golden Residency procedure, not a permanent-residence route."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained entrepreneur service does not establish a citizenship route."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The ICP service directly supports project value, innovation documentation, fees, health insurance, passport validity, service duration, and processing. The underlying Golden Residency issuance and renewal conditions require case-level review."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 3,
+    "speed_score": 4,
+    "permanence_score": 3,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "own_company",
+    "accepts_remote_income": false,
+    "accepts_self_employment": true,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": true,
+    "requires_language_test": false,
+    "requires_local_entity": "unknown",
+    "allows_family": "unknown",
+    "work_allowed": "unknown",
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T06:17:59.729Z"
+  },
+  "source_ids": [
+    "uae-icp-golden-entrepreneur"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "uae-icp-golden-entrepreneur",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+        "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+        "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+        "retrieved_at": "2026-07-11T06:17:59.729Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T06:17:59.729Z",
+    "updated_at": "2026-07-11T06:17:59.729Z",
+    "last_checked_at": "2026-07-11T06:17:59.729Z",
+    "update_frequency_days": 30,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T06:17:59.729Z",
+      "summary": "Added UAE Golden entrepreneur fixture from retained ICP service evidence.",
+      "source_ids": [
+        "uae-icp-golden-entrepreneur"
+      ]
+    }
+  ]
+}

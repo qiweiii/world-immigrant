@@ -934,6 +934,60 @@
       "status": "active"
     },
     {
+      "id": "uae-gdrfa-golden-investor",
+      "country_id": "uae",
+      "program_ids": [
+        "uae-golden-property-investor"
+      ],
+      "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+      "title": "Issuing a golden residence permit (investors)",
+      "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Golden Residence Permit",
+        "Real Estate Investor",
+        "2 million"
+      ],
+      "expected_domains": [
+        "gdrfad.gov.ae",
+        "www.gdrfad.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T06:15:17.747Z",
+      "last_success_at": "2026-07-11T06:15:17.747Z",
+      "status": "active"
+    },
+    {
+      "id": "uae-gdrfa-golden-talent",
+      "country_id": "uae",
+      "program_ids": [
+        "uae-golden-talent"
+      ],
+      "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+      "title": "Issuance of a golden residence permit (Talented Geniuses)",
+      "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Talented Geniuses",
+        "10 years",
+        "nomination letter"
+      ],
+      "expected_domains": [
+        "gdrfad.gov.ae",
+        "www.gdrfad.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T06:15:17.747Z",
+      "last_success_at": "2026-07-11T06:15:17.747Z",
+      "status": "active"
+    },
+    {
       "id": "uae-gdrfa-green-residence-partner-investor",
       "country_id": "uae",
       "program_ids": [
@@ -959,6 +1013,34 @@
       ],
       "last_checked_at": "2026-07-11T05:55:37.159Z",
       "last_success_at": "2026-07-11T05:55:37.159Z",
+      "status": "active"
+    },
+    {
+      "id": "uae-gdrfa-green-self-employment",
+      "country_id": "uae",
+      "program_ids": [
+        "uae-green-freelancer"
+      ],
+      "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+      "title": "Issuing a green residence permit (self-employment)",
+      "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "green residence permit",
+        "self-employment",
+        "360,000",
+        "48.0 Hour"
+      ],
+      "expected_domains": [
+        "gdrfad.gov.ae",
+        "www.gdrfad.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T06:15:17.747Z",
+      "last_success_at": "2026-07-11T06:15:17.747Z",
       "status": "active"
     },
     {
@@ -1032,6 +1114,80 @@
       "expected_domains": [
         "u.ae"
       ],
+      "status": "needs_attention"
+    },
+    {
+      "id": "uae-icp-golden-entrepreneur",
+      "country_id": "uae",
+      "program_ids": [
+        "uae-golden-entrepreneur"
+      ],
+      "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+      "title": "Issuance of a Residence Visa for an Entrepreneur",
+      "publisher": "UAE Federal Authority for Identity, Citizenship, Customs & Port Security",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Golden Residency",
+        "500,000",
+        "innovative or future-oriented"
+      ],
+      "expected_domains": [
+        "icp.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T06:15:17.747Z",
+      "last_success_at": "2026-07-11T06:15:17.747Z",
+      "status": "active"
+    },
+    {
+      "id": "uae-icp-golden-residency",
+      "country_id": "uae",
+      "program_ids": [],
+      "url": "https://icp.gov.ae/en/services/golden-residency",
+      "title": "Golden Residency",
+      "publisher": "UAE Federal Authority for Identity, Citizenship, Customs & Port Security",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Golden Residency",
+        "Real Estate Investors",
+        "Entrepreneurs"
+      ],
+      "expected_domains": [
+        "icp.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T06:15:17.747Z",
+      "last_success_at": "2026-07-11T06:15:17.747Z",
+      "status": "needs_attention"
+    },
+    {
+      "id": "uae-icp-green-residency",
+      "country_id": "uae",
+      "program_ids": [],
+      "url": "https://icp.gov.ae/en/green-residency",
+      "title": "Green Residency",
+      "publisher": "UAE Federal Authority for Identity, Citizenship, Customs & Port Security",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Green Residency",
+        "Freelancers and Self-Employed",
+        "360,000"
+      ],
+      "expected_domains": [
+        "icp.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T06:15:17.747Z",
+      "last_success_at": "2026-07-11T06:15:17.747Z",
       "status": "needs_attention"
     },
     {

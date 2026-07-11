@@ -1869,6 +1869,754 @@
       "last_checked_at": "2026-07-11T05:55:37.159Z"
     },
     {
+      "program_id": "uae-golden-entrepreneur",
+      "country_id": "uae",
+      "category_ids": [
+        "startup_entrepreneur"
+      ],
+      "official_names": {
+        "en": "Golden Residence — entrepreneur"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": "unknown",
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "unknown",
+        "min_income": [],
+        "accepted_income_sources": [
+          "business_income",
+          "self_employment",
+          "unknown"
+        ],
+        "income_location": "unknown",
+        "proof_history_months": "unknown",
+        "requires_local_entity": "unknown"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T06:17:59.729Z",
+        "updated_at": "2026-07-11T06:17:59.729Z",
+        "last_checked_at": "2026-07-11T06:17:59.729Z",
+        "update_frequency_days": 30,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "uae-icp-golden-entrepreneur",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e34f115ae59b00117383d9",
+            "section": "Entrepreneur Golden Residency service conditions, fees, and duration",
+            "snapshot_id": "c7de0521c9cde5780f15305f8f2ae573dd7513b700bad3296d79e1ec7917b376",
+            "retrieved_at": "2026-07-11T06:17:59.729Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "own_company",
+      "accepts_remote_income": false,
+      "accepts_self_employment": true,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": false,
+      "requires_investment": true,
+      "requires_language_test": false,
+      "requires_local_entity": "unknown",
+      "allows_family": "unknown",
+      "work_allowed": "unknown",
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T06:17:59.729Z"
+    },
+    {
+      "program_id": "uae-golden-property-investor",
+      "country_id": "uae",
+      "category_ids": [
+        "investor"
+      ],
+      "official_names": {
+        "en": "Golden Residence — real estate investor"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": "unknown",
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": false,
+        "min_income": [],
+        "accepted_income_sources": [
+          "passive_income",
+          "unknown"
+        ],
+        "income_location": "not_applicable",
+        "proof_history_months": "unknown"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T06:17:55.232Z",
+        "updated_at": "2026-07-11T06:17:55.232Z",
+        "last_checked_at": "2026-07-11T06:17:55.232Z",
+        "update_frequency_days": 30,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "uae-gdrfa-golden-investor",
+            "url": "https://www.gdrfad.gov.ae/en/services/8ea80da4-f43e-11eb-0320-0050569629e8",
+            "section": "Real Estate Investor requirements, fees, and terms",
+            "snapshot_id": "ebe22ddd2e777702534aa16a588edac7c921a6b272bd841bcf84b0e889a03f46",
+            "retrieved_at": "2026-07-11T06:17:55.232Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "investment",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": false,
+      "requires_job_offer": false,
+      "requires_investment": true,
+      "requires_language_test": false,
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": "unknown",
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T06:17:55.232Z"
+    },
+    {
+      "program_id": "uae-golden-talent",
+      "country_id": "uae",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Golden Residence — talented geniuses"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": "unknown",
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "unknown",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "unknown",
+        "proof_history_months": "unknown"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T06:17:57.040Z",
+        "updated_at": "2026-07-11T06:17:57.040Z",
+        "last_checked_at": "2026-07-11T06:17:57.040Z",
+        "update_frequency_days": 30,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "uae-gdrfa-golden-talent",
+            "url": "https://www.gdrfad.gov.ae/en/services/2e7da546-f815-11eb-0320-0050569629e8",
+            "section": "Talent categories, nomination letters, validity, and renewal",
+            "snapshot_id": "e97ceb62d4888cd5cb173f4442aa945f3523a60ae0363807e11afcf5df3250cd",
+            "retrieved_at": "2026-07-11T06:17:57.040Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "talent_pass",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": "unknown",
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T06:17:57.040Z"
+    },
+    {
+      "program_id": "uae-green-freelancer",
+      "country_id": "uae",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Green Residence — self-employment"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "bachelor",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [
+          {
+            "amount": 360000,
+            "currency": "AED",
+            "period": "annual",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "Self-employment income over the two preceding years; the page also permits proof of financial solvency throughout the stay as an alternative."
+            }
+          }
+        ],
+        "accepted_income_sources": [
+          "self_employment",
+          "freelance"
+        ],
+        "income_location": "unknown",
+        "proof_history_months": 24
+      },
+      "freshness": {
+        "created_at": "2026-07-11T06:17:58.396Z",
+        "updated_at": "2026-07-11T06:17:58.396Z",
+        "last_checked_at": "2026-07-11T06:17:58.396Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "uae-gdrfa-green-self-employment",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024d1-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements, fees, conditions, and expected completion time",
+            "snapshot_id": "1188561bb8ef3212a111e80273054fd9707c097d5f556397209fc8282eacb811",
+            "retrieved_at": "2026-07-11T06:17:58.396Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "self_sponsored",
+      "accepts_remote_income": false,
+      "accepts_self_employment": true,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": true,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-11T06:17:58.396Z"
+    },
+    {
       "program_id": "uae-remote-work",
       "country_id": "uae",
       "category_ids": [
