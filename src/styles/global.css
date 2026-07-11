@@ -1379,10 +1379,25 @@
     list-style: none;
     background: var(--muted);
     border-bottom: 1px solid transparent;
+    border-left: 4px solid var(--country-color, var(--accent));
     font-size: 15px;
     font-weight: 650;
     letter-spacing: -0.02em;
     user-select: none;
+  }
+  .filter-country-name {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .filter-country-name::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: var(--country-color, var(--accent));
+    box-shadow: 0 0 0 1px color-mix(in srgb, var(--country-color, var(--accent)) 25%, transparent);
+    flex-shrink: 0;
   }
   .filter-country-group > summary::-webkit-details-marker { display: none; }
   .filter-country-group[open] > summary {
@@ -1434,13 +1449,9 @@
     border-radius: calc(var(--radius) * 1.2);
     background: var(--background);
     padding: 16px 16px 14px;
-    border-left: 3px solid var(--border-strong);
+    /* Country brand accent (from country.brand.color); status stays on the badge. */
+    border-left: 4px solid var(--country-color, var(--border-strong));
   }
-  .filter-result--likely_match { border-left-color: var(--success); }
-  .filter-result--possible_match { border-left-color: var(--warning); }
-  .filter-result--not_match { border-left-color: var(--destructive); }
-  .filter-result--needs_review { border-left-color: color-mix(in srgb, var(--accent) 70%, #64748b); }
-  .filter-result--unknown { border-left-color: var(--muted-foreground); }
   .filter-result-header {
     display: flex;
     flex-wrap: wrap;

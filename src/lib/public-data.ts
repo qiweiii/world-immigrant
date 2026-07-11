@@ -28,6 +28,7 @@ export function buildPublicData(dataset: CanonicalDataset, generatedAt = new Dat
       program_id: program.id,
       country_id: program.country_id,
       country_names: countryById.get(program.country_id)?.names ?? { en: program.country_id },
+      country_brand_color: countryById.get(program.country_id)?.brand.color,
       category_ids: program.category_ids,
       official_names: program.official_names,
       status: program.status,

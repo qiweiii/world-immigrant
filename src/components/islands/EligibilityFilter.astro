@@ -262,6 +262,10 @@ const categories = [
   ): HTMLElement {
     const article = document.createElement("article");
     article.className = `filter-result filter-result--${result.status}`;
+    const brandColor = program.country_brand_color;
+    if (typeof brandColor === "string" && brandColor) {
+      article.style.setProperty("--country-color", brandColor);
+    }
 
     const header = document.createElement("div");
     header.className = "filter-result-header";
@@ -342,6 +346,13 @@ const categories = [
       const details = document.createElement("details");
       details.className = "filter-country-group";
       details.open = !collapsedCountries.has(group.countryId);
+      const sample = programs.find(({ program_id }) =>
+        group.results.some((result) => result.program_id === program_id),
+      );
+      const brandColor = sample?.country_brand_color;
+      if (typeof brandColor === "string" && brandColor) {
+        details.style.setProperty("--country-color", brandColor);
+      }
       details.addEventListener("toggle", () => {
         if (details.open) collapsedCountries.delete(group.countryId);
         else collapsedCountries.add(group.countryId);
@@ -349,6 +360,7 @@ const categories = [
 
       const summary = document.createElement("summary");
       const name = document.createElement("span");
+      name.className = "filter-country-name";
       name.textContent = group.countryName;
       const count = document.createElement("span");
       count.className = "filter-country-count";
