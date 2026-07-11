@@ -494,6 +494,34 @@
       "status": "active"
     },
     {
+      "id": "croatia-mup-digital-nomad",
+      "country_id": "croatia",
+      "program_ids": [
+        "croatia-digital-nomad"
+      ],
+      "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+      "title": "Temporary stay of digital nomads",
+      "publisher": "Ministry of the Interior of the Republic of Croatia",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "digital nomad",
+        "18 months",
+        "not registered in the Republic of Croatia",
+        "temporary stay",
+        "family members"
+      ],
+      "expected_domains": [
+        "mup.gov.hr"
+      ],
+      "last_checked_at": "2026-07-11T07:42:21.348Z",
+      "last_success_at": "2026-07-11T07:42:21.348Z",
+      "status": "active"
+    },
+    {
       "id": "estonia-digital-nomad-visa",
       "country_id": "estonia",
       "program_ids": [
@@ -680,6 +708,63 @@
       ],
       "last_checked_at": "2026-07-11T05:38:47.655Z",
       "last_success_at": "2026-07-11T05:38:47.655Z",
+      "status": "active"
+    },
+    {
+      "id": "netherlands-ind-highly-skilled-migrant",
+      "country_id": "netherlands",
+      "program_ids": [
+        "netherlands-highly-skilled-migrant"
+      ],
+      "url": "https://ind.nl/en/forms/3072.pdf",
+      "title": "Residence permit for work as a highly skilled migrant",
+      "publisher": "Immigration and Naturalisation Service (IND)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "pdf",
+      "expected_content_hints": [
+        "highly skilled migrant",
+        "recognised sponsor",
+        "salary criterion",
+        "employment contract",
+        "residence permit"
+      ],
+      "expected_domains": [
+        "ind.nl"
+      ],
+      "last_checked_at": "2026-07-11T07:42:21.348Z",
+      "last_success_at": "2026-07-11T07:42:21.348Z",
+      "status": "active"
+    },
+    {
+      "id": "netherlands-ind-orientation-year",
+      "country_id": "netherlands",
+      "program_ids": [
+        "netherlands-orientation-year"
+      ],
+      "url": "https://ind.nl/en/forms/9571.pdf",
+      "title": "Application for admission and residence for an orientation year",
+      "publisher": "Immigration and Naturalisation Service (IND)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "pdf",
+      "expected_content_hints": [
+        "orientation year",
+        "bachelor",
+        "master",
+        "PhD",
+        "3 years",
+        "residence permit"
+      ],
+      "expected_domains": [
+        "ind.nl"
+      ],
+      "last_checked_at": "2026-07-11T07:42:21.348Z",
+      "last_success_at": "2026-07-11T07:42:21.348Z",
       "status": "active"
     },
     {

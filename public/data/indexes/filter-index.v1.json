@@ -531,6 +531,200 @@
       "last_checked_at": "2026-07-10T00:00:00Z"
     },
     {
+      "program_id": "croatia-digital-nomad",
+      "country_id": "croatia",
+      "category_ids": [
+        "digital_nomad"
+      ],
+      "official_names": {
+        "en": "Temporary Stay of Digital Nomads"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "none",
+        "credential_assessment_required": "not_applicable",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [
+          {
+            "amount": 3622.5,
+            "currency": "EUR",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total"
+          }
+        ],
+        "accepted_income_sources": [
+          "remote_employment",
+          "self_employment",
+          "freelance",
+          "savings"
+        ],
+        "income_location": "outside_destination",
+        "proof_history_months": 6
+      },
+      "freshness": {
+        "created_at": "2026-07-11T07:52:36.068Z",
+        "updated_at": "2026-07-11T07:52:36.068Z",
+        "last_checked_at": "2026-07-11T07:52:36.068Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "croatia-mup-digital-nomad",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+            "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+            "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788",
+            "retrieved_at": "2026-07-11T07:52:36.068Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "temporary_no_pr",
+      "pathway_mechanism": "remote_income",
+      "accepts_remote_income": true,
+      "accepts_self_employment": true,
+      "accepts_overseas_remote_income": true,
+      "requires_degree": false,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": false,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": true,
+      "leads_to_pr": false,
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T07:52:36.068Z"
+    },
+    {
       "program_id": "estonia-digital-nomad-visa",
       "country_id": "estonia",
       "category_ids": [
@@ -1285,6 +1479,372 @@
       "policy_stability_score": 3,
       "source_confidence_score": 4,
       "last_checked_at": "2026-07-11T05:38:47.655Z"
+    },
+    {
+      "program_id": "netherlands-highly-skilled-migrant",
+      "country_id": "netherlands",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Residence Permit for Highly Skilled Migrants"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": true,
+        "sponsor_required": true,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [],
+        "accepted_income_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination",
+        "proof_history_months": "unknown"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T07:52:43.472Z",
+        "updated_at": "2026-07-11T07:52:43.472Z",
+        "last_checked_at": "2026-07-11T07:52:43.472Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "netherlands-ind-highly-skilled-migrant",
+            "url": "https://ind.nl/en/forms/3072.pdf",
+            "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+            "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+            "retrieved_at": "2026-07-11T07:52:43.472Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "employer_sponsored",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": true,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": true,
+      "allows_family": "unknown",
+      "work_allowed": true,
+      "remote_work_allowed": false,
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": 1,
+      "processing_time_months_max": 1,
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T07:52:43.472Z"
+    },
+    {
+      "program_id": "netherlands-orientation-year",
+      "country_id": "netherlands",
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Residence Permit for an Orientation Year"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "bachelor",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": false,
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable",
+        "proof_history_months": "unknown"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T07:52:43.961Z",
+        "updated_at": "2026-07-11T07:52:43.961Z",
+        "last_checked_at": "2026-07-11T07:52:43.961Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "netherlands-ind-orientation-year",
+            "url": "https://ind.nl/en/forms/9571.pdf",
+            "section": "Eligibility within the previous three years and orientation-year application requirements",
+            "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789",
+            "retrieved_at": "2026-07-11T07:52:43.961Z"
+          }
+        ]
+      },
+      "pathway_type": "temporary_only",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "other",
+      "accepts_remote_income": "unknown",
+      "accepts_self_employment": "unknown",
+      "accepts_overseas_remote_income": "unknown",
+      "requires_degree": true,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "indirect",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T07:52:43.961Z"
     },
     {
       "program_id": "new-zealand-accredited-employer-work-visa",

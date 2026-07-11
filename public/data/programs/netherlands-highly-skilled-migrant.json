@@ -1,0 +1,283 @@
+{
+  "id": "netherlands-highly-skilled-migrant",
+  "country_id": "netherlands",
+  "category_ids": [
+    "skilled_worker"
+  ],
+  "official_names": {
+    "en": "Residence Permit for Highly Skilled Migrants"
+  },
+  "aliases": [
+    "Netherlands Highly Skilled Migrant",
+    "Kennismigrant"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "The residence permit is employer-sponsored: only an employer recognised by the IND can apply, and the employment and salary conditions remain tied to the recognised sponsor."
+  },
+  "summary_md": {
+    "en": "A Netherlands residence permit for highly skilled work based on an employment contract with an IND-recognised sponsor and an indexed salary criterion."
+  },
+  "good_for_md": {
+    "en": "Skilled employees with a Dutch employer or research institution willing and able to act as an IND-recognised sponsor and pay the applicable market-rate salary."
+  },
+  "not_good_for_md": {
+    "en": "Applicants without a recognised sponsor, a qualifying Dutch employment contract, or sufficient salary under the applicable age and reduced-salary criterion."
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": true,
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": true,
+    "accepted_sources": [
+      "employment"
+    ],
+    "income_location": "inside_destination",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The salary must meet the indexed criterion for the applicant’s situation, be paid monthly into an account in the applicant’s name, and match the market rate. The PDF lists standard, under-30, and reduced salary criteria without embedding a single permanent amount."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "If the recognised sponsor submits a complete application, the IND process can be completed within two weeks according to the retained guide. Permit validity depends on the employment and residence conditions."
+    },
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": 60
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": false,
+    "study_allowed": "unknown",
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "The retained highly skilled migrant guide does not establish dependant eligibility in this fixture; family conditions require a separate IND family assessment."
+    }
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained guide establishes the highly skilled migrant residence permit but does not establish an individual permanent-residence outcome."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained guide does not establish citizenship eligibility."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "An official IND PDF directly establishes the recognised-sponsor, employment-contract, salary-criterion, TB, and process requirements. Indexed salary amounts and residence outcomes are intentionally not frozen beyond the retained wording."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 3,
+    "speed_score": 4,
+    "permanence_score": 3,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "employer_sponsored",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": true,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": false,
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": 1,
+    "processing_time_months_max": 1,
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T07:52:43.472Z"
+  },
+  "source_ids": [
+    "netherlands-ind-highly-skilled-migrant"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "netherlands-ind-highly-skilled-migrant",
+        "url": "https://ind.nl/en/forms/3072.pdf",
+        "section": "Requirements, recognised sponsor, employment contract, salary criterion, and application process",
+        "snapshot_id": "a2dd98abf501fbbd3044b9009a2cbb159e759f38123dda0e492204a5082e034c",
+        "retrieved_at": "2026-07-11T07:52:43.472Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T07:52:43.472Z",
+    "updated_at": "2026-07-11T07:52:43.472Z",
+    "last_checked_at": "2026-07-11T07:52:43.472Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T08:06:46.019Z",
+      "summary": "Added Netherlands Highly Skilled Migrant fixture from retained IND PDF evidence.",
+      "source_ids": [
+        "netherlands-ind-highly-skilled-migrant"
+      ]
+    }
+  ]
+}

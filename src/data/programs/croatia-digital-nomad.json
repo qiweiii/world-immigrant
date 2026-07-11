@@ -1,0 +1,305 @@
+{
+  "id": "croatia-digital-nomad",
+  "country_id": "croatia",
+  "category_ids": ["digital_nomad"],
+  "official_names": {
+    "en": "Temporary Stay of Digital Nomads"
+  },
+  "aliases": ["Croatia Digital Nomad Residence", "Croatia Digital Nomad Visa"],
+  "status": "active",
+  "status_note_md": {
+    "en": "This temporary stay route is for non-EU/EEA/Swiss nationals working remotely for a foreign employer, a foreign company, or their own company not registered in Croatia, without entering the Croatian labour market."
+  },
+  "summary_md": {
+    "en": "A Croatian temporary stay route for third-country digital nomads with foreign remote work, up to 18 months, a €3,622.50 monthly means-of-subsistence threshold, and immediate family reunification eligibility."
+  },
+  "good_for_md": {
+    "en": "Remote employees, foreign-company owners, and qualifying freelancers who can show foreign work, health insurance, accommodation, criminal-record evidence, and the required income or savings."
+  },
+  "not_good_for_md": {
+    "en": "Applicants planning to work for Croatian employers or provide services to Croatian employers, or applicants unable to prove the current financial threshold and foreign-work purpose."
+  },
+  "pathway_mechanism": "remote_income",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "none",
+      "credential_assessment_required": "not_applicable"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": true,
+    "police_certificate_required": true,
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Temporary stay grant fee at police administration"
+        },
+        "amount": 46.45,
+        "currency": "EUR",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Administrative fee for biometric residence permit"
+        },
+        "amount": 9.29,
+        "currency": "EUR",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Biometric residence card"
+        },
+        "amount": 31.85,
+        "currency": "EUR",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": true,
+    "min_income": [
+      {
+        "amount": 3622.5,
+        "currency": "EUR",
+        "period": "monthly",
+        "applies_to": "primary"
+      }
+    ],
+    "accepted_sources": ["remote_employment", "self_employment", "freelance", "savings"],
+    "income_location": "outside_destination",
+    "proof_history_months": 6,
+    "stability_requirement_md": {
+      "en": "The MUP page requires at least 2.5 average Croatian net salaries, currently €3,622.50 per month. It allows regular-income evidence or payslips for the previous six months; alternatives include €43,470 for a 12-month stay or €65,205 for an 18-month stay."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Temporary stay may be granted for up to 18 months. If granted for less than 18 months, an extension of up to six months may be requested no later than 60 days before expiry. A new digital-nomad application may be submitted six months after expiry."
+    },
+    "initial_validity_months": "variable",
+    "renewable": true,
+    "max_stay_months": 18
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": false,
+    "remote_work_allowed": true,
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": true,
+    "unmarried_partner_allowed": true,
+    "children_allowed": true,
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "Close family members, including qualifying common-law partners, may join after the digital nomad has been granted temporary stay."
+    }
+  },
+  "pr_pathway": {
+    "available": false,
+    "summary_md": {
+      "en": "The MUP page describes temporary stay and a later application after six months, but does not establish a permanent-residence pathway from digital-nomad stay."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained MUP page does not establish citizenship eligibility."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "A current Croatian Ministry of the Interior page directly establishes the foreign-work restriction, 18-month maximum, €3,622.50 threshold, six-month evidence, family rule, and fee schedule."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 2,
+    "speed_score": 3,
+    "permanence_score": 1,
+    "family_friendliness_score": 4,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_no_pr",
+    "pathway_mechanism": "remote_income",
+    "accepts_remote_income": true,
+    "accepts_self_employment": true,
+    "accepts_overseas_remote_income": true,
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": true,
+    "work_allowed": true,
+    "remote_work_allowed": true,
+    "leads_to_pr": false,
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T07:52:36.068Z"
+  },
+  "source_ids": ["croatia-mup-digital-nomad"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "croatia-mup-digital-nomad",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833",
+        "section": "Digital nomad definition, 18-month stay, income, family, documents, and costs",
+        "retrieved_at": "2026-07-11T07:52:36.068Z",
+        "snapshot_id": "fb2c1478c6cdaf65f2b544b19d977ceaecbaf0a1f79fa4a5e1b7b15cf78a5788"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T07:52:36.068Z",
+    "updated_at": "2026-07-11T07:52:36.068Z",
+    "last_checked_at": "2026-07-11T07:52:36.068Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T08:06:46.019Z",
+      "summary": "Added Croatia digital nomad temporary-stay fixture from retained Ministry of the Interior evidence.",
+      "source_ids": ["croatia-mup-digital-nomad"]
+    }
+  ]
+}

@@ -26,9 +26,9 @@ test("public data generation exposes one complete program through stable indexes
 
   assert.deepEqual(output.index.counts, {
     categories: 5,
-    countries: 10,
-    programs: 18,
-    sources: 53,
+    countries: 12,
+    programs: 21,
+    sources: 56,
   });
   assert.equal(output.index.generated_at, "2026-07-10T12:00:00.000Z");
   const canada = output.filterIndex.programs.find(

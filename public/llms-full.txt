@@ -67,6 +67,21 @@ A federal permanent-residence pathway for skilled workers with foreign work expe
 - canada-ircc-medical-exams: Medical examination for permanent residence applicants — https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html
 - canada-ircc-processing-times: Check current IRCC processing times — https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html
 
+## Temporary Stay of Digital Nomads
+
+- ID: croatia-digital-nomad
+- Country: croatia
+- Status: active
+- Last updated: 2026-07-11T07:52:36.068Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A Croatian temporary stay route for third-country digital nomads with foreign remote work, up to 18 months, a €3,622.50 monthly means-of-subsistence threshold, and immediate family reunification eligibility.
+
+### Official sources
+
+- croatia-mup-digital-nomad: Temporary stay of digital nomads — https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833
+
 ## Digital Nomad Visa
 
 - ID: estonia-digital-nomad-visa
@@ -130,6 +145,36 @@ A Japan work residence status for technical, humanities, and certain foreign-cul
 
 - japan-isa-engineer-specialist: Residence status — Engineer/Specialist in Humanities/International Services — https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en
 - japan-isa-residence-status-list: Search by residence status — https://www.moj.go.jp/isa/applications/status/index.html
+
+## Residence Permit for Highly Skilled Migrants
+
+- ID: netherlands-highly-skilled-migrant
+- Country: netherlands
+- Status: active
+- Last updated: 2026-07-11T07:52:43.472Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A Netherlands residence permit for highly skilled work based on an employment contract with an IND-recognised sponsor and an indexed salary criterion.
+
+### Official sources
+
+- netherlands-ind-highly-skilled-migrant: Residence permit for work as a highly skilled migrant — https://ind.nl/en/forms/3072.pdf
+
+## Residence Permit for an Orientation Year
+
+- ID: netherlands-orientation-year
+- Country: netherlands
+- Status: active
+- Last updated: 2026-07-11T07:52:43.961Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A one-year Netherlands residence permit for qualifying graduates, PhD holders, researchers, and other highly educated applicants to seek work after recent study or research.
+
+### Official sources
+
+- netherlands-ind-orientation-year: Application for admission and residence for an orientation year — https://ind.nl/en/forms/9571.pdf
 
 ## Accredited Employer Work Visa (AEWV)
 

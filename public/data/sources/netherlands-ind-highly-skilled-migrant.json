@@ -1,0 +1,28 @@
+{
+  "id": "netherlands-ind-highly-skilled-migrant",
+  "country_id": "netherlands",
+  "program_ids": [
+    "netherlands-highly-skilled-migrant"
+  ],
+  "url": "https://ind.nl/en/forms/3072.pdf",
+  "title": "Residence permit for work as a highly skilled migrant",
+  "publisher": "Immigration and Naturalisation Service (IND)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "pdf",
+  "expected_content_hints": [
+    "highly skilled migrant",
+    "recognised sponsor",
+    "salary criterion",
+    "employment contract",
+    "residence permit"
+  ],
+  "expected_domains": [
+    "ind.nl"
+  ],
+  "last_checked_at": "2026-07-11T07:42:21.348Z",
+  "last_success_at": "2026-07-11T07:42:21.348Z",
+  "status": "active"
+}

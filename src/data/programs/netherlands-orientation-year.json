@@ -1,0 +1,282 @@
+{
+  "id": "netherlands-orientation-year",
+  "country_id": "netherlands",
+  "category_ids": ["study_to_pr"],
+  "official_names": {
+    "en": "Residence Permit for an Orientation Year"
+  },
+  "aliases": ["Netherlands Orientation Year", "Zoekjaar"],
+  "status": "active",
+  "status_note_md": {
+    "en": "This is a one-year residence permit for highly educated persons seeking employment after qualifying study, doctorate, research, or related education."
+  },
+  "summary_md": {
+    "en": "A one-year Netherlands residence permit for qualifying graduates, PhD holders, researchers, and other highly educated applicants to seek work after recent study or research."
+  },
+  "good_for_md": {
+    "en": "Recent graduates or researchers who completed a qualifying programme or research route within the previous three years and want time to find Dutch employment."
+  },
+  "not_good_for_md": {
+    "en": "Applicants outside the three-year qualification window or without one of the listed Dutch, Erasmus Mundus, research, policy, or designated foreign-education grounds."
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "bachelor",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "The retained January 2026 IND form lists accredited Dutch bachelor’s/master’s study, qualifying post-master study or PhD, research permits, Erasmus Mundus, certain policy programmes, and qualifying designated foreign institutions completed within the previous three years."
+      }
+    },
+    "work_experience": {},
+    "language": [
+      {
+        "language": "English",
+        "note_md": {
+          "en": "For the designated foreign-institution route, the form lists IELTS 6.0 or a comparable English-language condition, with alternatives for English- or Dutch-taught study."
+        }
+      }
+    ],
+    "health_check_required": true,
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": false,
+    "accepted_sources": ["unknown"],
+    "income_location": "not_applicable",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The retained form is an admission and residence application based on qualifying education or research, not a personal-income route."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The permit is an orientation year: one year to look for work in the Netherlands. The retained form does not establish a processing duration."
+    },
+    "initial_validity_months": 12,
+    "renewable": false,
+    "max_stay_months": 12
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": true,
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "The retained orientation-year form does not establish dependant conditions."
+    }
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "The permit provides one year to find work; the IND highly skilled migrant guide identifies the orientation year as one route to the reduced salary criterion for a later highly skilled migrant application."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained orientation-year form does not establish citizenship eligibility."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The current official IND application form directly lists the qualification routes and three-year window. Work-right and later-route details are kept conditional where the retained form does not state them fully."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": "unknown",
+    "accepts_self_employment": "unknown",
+    "accepts_overseas_remote_income": "unknown",
+    "requires_degree": true,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T07:52:43.961Z"
+  },
+  "source_ids": ["netherlands-ind-orientation-year"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "netherlands-ind-orientation-year",
+        "url": "https://ind.nl/en/forms/9571.pdf",
+        "section": "Eligibility within the previous three years and orientation-year application requirements",
+        "retrieved_at": "2026-07-11T07:52:43.961Z",
+        "snapshot_id": "bdb84360084ce93fa7ae3a821a927e384f99d825b4cabc67f23d76a3222b2789"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T07:52:43.961Z",
+    "updated_at": "2026-07-11T07:52:43.961Z",
+    "last_checked_at": "2026-07-11T07:52:43.961Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T08:06:46.019Z",
+      "summary": "Added Netherlands Orientation Year fixture from retained IND PDF evidence.",
+      "source_ids": ["netherlands-ind-orientation-year"]
+    }
+  ]
+}
