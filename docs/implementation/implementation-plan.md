@@ -350,28 +350,30 @@ Script:
 
 **Verification:** script reads `src/data/sources.json` and outputs due sources + hashes.
 
-### Task 7.3: Add PR helper script
+### Task 7.3: Keep updater scan-only
 
-**Objective:** Open PRs via git push and GitHub API.
+**Objective:** Keep scheduled source checks local and prevent unattended repository writes.
 
 **Files:**
-- Create: `hermes/scripts/open-update-pr.sh`
+- Maintain: `automation/hermes-policy.json`
+- Maintain: `automation/skills/world-immigrant-updater/SKILL.md`
+- Maintain: `docs/implementation/hermes-automation.md`
 
-**Security:** uses environment-based auth configured outside the repo. Never store credentials in repo files.
+**Security:** no repository write token is required for the scan-only workflow. Never store credentials in repo files.
 
-**Verification:** dry-run mode prints intended branch/title/body without credentials.
+**Verification:** unchanged runs retain local snapshots and reports without modifying canonical data, creating branches, opening pull requests, or merging.
 
 ### Task 7.4: Configure Hermes cron
 
-**Objective:** Run updater every 3 days for Tier 1 sources.
+**Objective:** Run the scan-only updater on the configured schedule from a dedicated automation clone.
 
 Command concept:
 
 ```text
-cronjob create schedule="0 8 */3 * *" workdir="/absolute/path/to/world-immigrant" skills=["immigration-source-update"]
+cronjob create schedule="15 6 * * *" workdir="/absolute/path/to/world-immigrant-automation" skills=["world-immigrant-updater"]
 ```
 
-Use the absolute path of your local clone. Hermes uses it as the working directory so `AGENTS.md` and project instructions load automatically.
+Use the absolute path of the dedicated automation clone. Hermes uses it as the working directory so `AGENTS.md` and project instructions load automatically. Keep delivery local and inspect saved reports manually.
 
 ---
 

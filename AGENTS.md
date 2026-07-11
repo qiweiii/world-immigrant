@@ -16,7 +16,7 @@ This project is a static-first public-good immigration information site:
 - Generated public JSON in `public/data/`.
 - `llms.txt` / `llms-full.txt` for AI-readable public data access.
 - Pagefind for static full-text search.
-- Hermes updater should open PRs; never silently publish high-stakes policy changes.
+- Hermes updater runs scan-only: it never edits canonical data, pushes, opens pull requests, merges, or silently publishes high-stakes policy changes.
 
 ## Tooling
 

@@ -10,7 +10,7 @@ Stack:
 - **Local CSS primitives** + **Tailwind CSS v4** for design tokens and UI patterns.
 - **Frameworkless TypeScript islands** for comparison, filtering, and other interactive surfaces.
 - **Pagefind** for static multilingual full-text search.
-- **Hermes Agent** scheduled updaters that collect official sources, structure data, and open PRs for review.
+- **Hermes Agent** scheduled updaters that collect official sources and retain local evidence reports for manual data updates.
 
 Output is static HTML/CSS/JS + JSON assets, deployable to any static host without a runtime server.
 
@@ -138,7 +138,7 @@ No backend secrets are needed in frontend hosting.
 | ARCH-001 | Use Astro + frameworkless TypeScript islands, not Next.js | Content-heavy, static, SEO/AEO important, strict pnpm supply-chain checks blocked current React/Preact integration chains |
 | ARCH-002 | Store immigration data as structured JSON/YAML + Markdown fields | Supports compare/filter while preserving nuanced policy text |
 | ARCH-003 | Require citation arrays on every material policy field | Trust and source-of-truth are the brand |
-| ARCH-004 | Hermes creates PRs instead of directly pushing to main | Policy data is high-stakes; human review needed |
+| ARCH-004 | Hermes remains scan-only and never writes to the repository | Policy data is high-stakes; local evidence reports preserve human control over every canonical update |
 | ARCH-005 | Use Pagefind for static multilingual full-text search | No backend search infra; supports multilingual static sites |
 | ARCH-006 | Use local CSS primitives + Tailwind CSS v4 | Keeps the UI frameworkless, ownable, and free of component-library runtime dependencies |
 | ARCH-007 | MCP is optional/generated, not runtime dependency | Pure static site cannot host MCP server without runtime |
@@ -147,7 +147,7 @@ No backend secrets are needed in frontend hosting.
 | ARCH-010 | Use JSON Pointer keys in `field_citations` as the sole factual-field provenance mechanism | One citation system avoids drift between inline and object-level citations and supports deterministic coverage checks |
 | ARCH-011 | Keep freshness reporting separate from build-blocking integrity validation | Stale data must be visible and escalated without blocking unrelated corrections; strict freshness audits run explicitly and in automation |
 | ARCH-012 | Store full source snapshots in a gitignored cache and retain hashes, retrieval metadata, and quoted evidence in canonical data | Keeps the public repository reviewable while preserving enough provenance for change detection and human review |
-| ARCH-013 | Make Hermes propose reviewed branches/PRs only | Deterministic scripts collect and validate; the agent interprets evidence, but never auto-merges or pushes directly to `main` |
+| ARCH-013 | Keep source snapshots and evidence reports local | Deterministic scripts collect and validate; canonical policy changes are reviewed and committed manually outside the cron run |
 
 ### See also
 

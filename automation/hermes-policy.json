@@ -4,7 +4,7 @@
   "base_branch": "main",
   "branch_prefix": "automation/source-update",
   "max_sources_per_run": 5,
-  "draft_pull_requests": true,
+  "draft_pull_requests": false,
   "auto_merge": false,
   "allowed_write_paths": [
     "src/data/countries/",

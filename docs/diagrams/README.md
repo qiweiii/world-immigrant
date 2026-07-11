@@ -5,7 +5,7 @@ This folder contains separate design diagrams for the product and technical arch
 ## Diagram index
 
 1. `system-architecture.mmd` — static site, data, search, and automation architecture.
-2. `data-pipeline.mmd` — official source to PR-reviewed structured data pipeline.
+2. `data-pipeline.mmd` — official source to local evidence report and manually reviewed structured data pipeline.
 3. `ux-flow.mmd` — profile-first, compare-first, and plan-B user journeys.
 4. `data-model.mmd` — country/category/program/source relationship model, including pathway_mechanism, settlement_track, and optional business_setup.
 5. `filter-reason-engine.mmd` — local profile matching and cited reason generation.

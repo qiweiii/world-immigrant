@@ -2,14 +2,15 @@
 
 ## Purpose
 
-Hermes monitors registered immigration sources, detects evidence changes, and prepares reviewable updates without silently publishing high-stakes policy changes.
+Hermes monitors registered immigration sources, detects evidence changes, and retains local reports without editing or publishing high-stakes policy data.
 
-The workflow has two operating modes controlled by `automation/hermes-policy.json`:
+The workflow is `scan_only`, controlled by `automation/hermes-policy.json`:
 
-- `scan_only`: fetch, normalize, hash, retain local snapshots, and report evidence changes. No canonical edits, commits, pushes, or pull requests.
-- `draft_pr`: prepare and validate evidence-backed canonical changes in a dedicated automation clone, then open or update one draft pull request. This mode also requires an explicit unattended-updater exception in `AGENTS.md`.
+- Fetch, normalize, hash, retain local snapshots, and report evidence changes.
+- Do not edit canonical data, generated artifacts, branches, commits, pushes, pull requests, merges, or auto-merges.
+- Keep output local and silent when there is no actionable change or failure.
 
-The repository is configured for `scan_only` until the baseline implementation is committed, pushed, and installed in a dedicated automation clone.
+The repository remains scan-only. Canonical updates are manual repository work after a human reviews the retained evidence.
 
 ## Components
 
@@ -95,9 +96,8 @@ The skill enforces:
 - Snapshot-backed changed-field citations.
 - Full validation and build gates.
 - No branch for unchanged canonical data.
-- No base-branch push, force push, merge, or auto-merge.
-- No commit or draft pull request without explicit policy and repository authorization.
-- Deterministic branch and duplicate-pull-request handling after authorization.
+- No canonical edits, commit, branch push, force push, pull request, merge, or auto-merge.
+- No proactive notification; the current CLI job stores local cron output for later inspection.
 
 ## Daily Run Contract
 
@@ -109,30 +109,24 @@ The skill enforces:
 6. Ignore page-template noise.
 7. Retain existing policy facts on fetch, extraction, domain, or ambiguity failures.
 8. In scan-only mode, report the evidence change and stop.
-9. In authorized draft-pull-request mode, create a candidate patch from evidence only.
-10. Attach snapshot IDs and verify every verbatim quote.
-11. Validate schema, reciprocal references, material citation coverage, and strict freshness.
-12. Regenerate public JSON and AI-readable outputs.
-13. Run tests, Biome, TypeScript, full Astro/Pagefind build, diff checks, secret checks, and allowed-path checks.
-14. Exit without a branch if canonical data has no semantic change.
-15. Otherwise open or update one draft pull request and wait for human review.
+9. Keep canonical data and generated artifacts unchanged.
+10. Include source IDs, snapshot hashes, evidence status, and the exact blocker or change classification in the local report.
+11. Return a quiet result when no source is due, evidence is unchanged, or no actionable failure exists.
+12. Release locks and clean temporary state before exiting.
+13. Exit without a branch, commit, push, pull request, or merge in every case.
 
 ## Git Safety
 
 The cron agent must not edit a person's active worktree.
 
-Draft-pull-request mode requires:
+Scan-only mode requires:
 
 - A separate automation clone or disposable worktree based on freshly fetched `origin/main`.
 - A repository-level lock.
-- Recorded base SHA.
-- Protected `main`.
-- Least-privilege token supplied as `WORLD_IMMIGRANT_TOKEN` outside the repository.
-- No force push.
-- Matching open-pull-request detection.
 - Cleanup on success, failure, or interruption.
+- No repository write token or unattended GitHub write access.
 
-The current repository instruction says not to commit or push without explicit user approval. `scan_only` complies with that instruction. Enabling unattended draft pull requests requires a narrow documented exception; it must still prohibit merge and direct base-branch writes.
+The current repository instruction and policy both require scan-only behavior. Human-reviewed repository changes happen outside the cron run.
 
 ## Required Verification
 
@@ -155,10 +149,9 @@ The diff must also be scanned for secrets, local home paths, private hostnames, 
 
 The Hermes cron job is created paused and local-only. This is intentional because:
 
-- The implementation currently exists as uncommitted work in the human checkout.
-- A dedicated automation clone cannot contain it until the baseline is committed and pushed.
-- Draft pull requests are not yet authorized by repository policy.
-- CLI sessions have no delivery channel; local cron output is retrieved from the cron-job list.
+- The cron must run from a dedicated automation clone rather than a human checkout.
+- The scan-only policy prohibits repository writes, pull requests, merges, and proactive notifications.
+- CLI sessions have no live delivery channel; local cron output is saved under `~/.hermes/cron/output/` for later inspection.
 
 Before enabling the job:
 
@@ -168,8 +161,7 @@ Before enabling the job:
 4. Move the cron job's `workdir` to that clone.
 5. Keep policy in `scan_only` for several manual runs.
 6. Test unchanged, changed, fetch-failure, validation-failure, duplicate-run, and cleanup paths.
-7. Configure a gateway delivery target if proactive notifications are wanted.
-8. Add a narrow updater authorization to `AGENTS.md` and change policy to `draft_pr` only if unattended draft pull requests are approved.
-9. Enable the job.
+7. Keep delivery local and do not configure proactive notifications.
+8. Enable the job only after the lifecycle tests pass.
 
 The updater never schedules another cron job from inside a cron run.

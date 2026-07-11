@@ -10,7 +10,7 @@ The architecture remains viable only if the canonical dataset, generated artifac
 - Generated pages and JSON are disposable build outputs.
 - Compare and filter run from compact generated indexes.
 - User profile data remains in the browser.
-- Hermes proposes evidence-backed changes through reviewable branches or pull requests; it never silently publishes policy changes.
+- Hermes scans registered sources and retains local evidence reports; it never edits canonical data, pushes, opens pull requests, or silently publishes policy changes.
 
 This preserves the initial product vision: useful multi-destination planning, transparent uncertainty, official-source evidence, and privacy without turning the product into a legal eligibility oracle.
 
@@ -63,7 +63,7 @@ For every material program leaf:
 
 Interpretive scores remain separate from legal facts and require a written rationale. They must not be presented as official government scores.
 
-A later evidence-snapshot extension may add immutable snapshot IDs and quote hashes. The system does not need to retain complete third-party pages publicly to prove the first vertical slice, but unattended policy updates require snapshot-backed evidence before automatic pull requests are enabled.
+A later evidence-snapshot extension may add immutable snapshot IDs and quote hashes. The system retains complete third-party pages locally for source comparison and human review; canonical policy updates remain manual.
 
 ## Freshness Contract
 
@@ -141,15 +141,15 @@ The safe updater has a deterministic stage before an AI stage:
 3. Record final URL, response metadata, extraction method, and versioned hashes.
 4. Exit without a content change when normalized evidence is unchanged.
 5. Produce a bounded evidence report when evidence changes.
-6. Let Hermes propose canonical edits only from retained evidence.
-7. Validate schema, references, citations, freshness, generated artifacts, checks, build, and forbidden paths.
+6. Let Hermes produce a bounded local evidence report only.
+7. Keep canonical data and generated artifacts unchanged during the cron run.
 8. Produce no branch when semantic canonical data is unchanged.
-9. Open or update one draft review branch or pull request for a valid semantic change.
-10. Never push to `main`, merge, force-push, or publish silently.
+9. Never commit, push, open a pull request, merge, or publish from the cron run.
+10. Review and commit any canonical update manually outside the cron run.
 
-Cron must operate from a dedicated clone or disposable worktree, not a human worktree. It requires a repository lock, a source cap, bounded retries, cleanup, duplicate-run detection, and a least-privilege GitHub credential.
+Cron must operate from a dedicated clone or disposable worktree, not a human worktree. It requires a repository lock, a source cap, bounded retries, cleanup, duplicate-run detection, and no repository write credential.
 
-The project-level instruction requiring explicit approval for commits and pushes remains authoritative. Therefore the updater can be built and dry-run now, but unattended branch push and pull-request creation require an explicit automation authorization policy before activation.
+The project-level instruction requiring explicit approval for commits and pushes remains authoritative. The updater is intentionally activated only as a scan-only, local-report workflow.
 
 ## Failure Behavior
 

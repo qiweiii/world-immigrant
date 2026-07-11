@@ -27,7 +27,7 @@ World Immigrant helps people discover and compare lawful immigration pathways ac
 - **Search:** Pagefind (static, multilingual)
 - **Package manager:** pnpm v11
 - **Deployment:** Cloudflare Workers static assets
-- **Data updates:** Hermes Agent scheduled crawlers that open PRs for human review
+- **Data updates:** Hermes Agent scheduled source scans with local evidence reports; canonical updates are manual
 
 ## Quick start
 
@@ -40,7 +40,7 @@ pnpm preview   # preview locally
 
 ## Contribution
 
-- Data changes come via PR; Hermes automation never auto-merges to `main`.
+- Data changes are reviewed and committed manually; Hermes automation remains scan-only and never edits canonical data, pushes, opens pull requests, or merges.
 - Do not commit secrets, tokens, or per-dev environment details.
 
 ## Disclaimer

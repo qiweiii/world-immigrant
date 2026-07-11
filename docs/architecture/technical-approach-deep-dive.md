@@ -142,10 +142,10 @@ flowchart TD
  D -- no --> E[Update last_checked_at]
  D -- yes --> F[Extract facts with citations]
  F --> G[Validate schema + citation coverage]
- G --> H[Generate public JSON + llms.txt]
- H --> I[Build Astro static site]
- I --> J[Pagefind index]
- G --> K[Open PR for review]
+ G --> H[Local source-monitor report]
+ H --> I[Manual canonical update]
+ I --> J[Generate public JSON + llms.txt]
+ J --> K[Build Astro static site]
 ```
 
 ## 7. Validation layers

@@ -1,25 +1,21 @@
 ---
 name: world-immigrant-updater
-description: Verify sources and propose cited immigration data updates
+description: Verify registered sources and report cited immigration evidence changes
 version: 1.0.0
 platforms: [linux]
 metadata:
   hermes:
-    tags: [immigration, sources, automation, pull-requests]
+    tags: [immigration, sources, automation, scan-only]
     category: research
     requires_toolsets: [terminal]
-required_environment_variables:
-  - name: WORLD_IMMIGRANT_TOKEN
-    prompt: GitHub token for the World Immigrant automation branch
-    help: Use a least-privilege token with repository contents and pull-request permissions.
-    required_for: draft pull-request mode only
+required_environment_variables: []
 ---
 
 # World Immigrant Updater
 
 ## When to Use
 
-Use this skill for scheduled or manual checks of registered World Immigrant policy sources and for evidence-backed candidate updates.
+Use this skill for scheduled or manual checks of registered World Immigrant policy sources and evidence reports for human-reviewed updates.
 
 Do not use it to add countries without an approved scope, redesign the product, publish directly, or decide a person's legal eligibility.
 
@@ -31,8 +27,8 @@ Do not use it to add countries without an approved scope, redesign the product, 
 - Never edit generated files as canonical input.
 - Never work in a dirty human checkout.
 - Never push to the base branch, force-push, merge, or auto-merge.
-- Never create a commit, branch push, or pull request unless both `automation/hermes-policy.json` enables `draft_pr` mode and `AGENTS.md` grants an explicit unattended updater exception.
-- Never expose tokens in commands, logs, diffs, reports, or pull-request text.
+- Never create a commit, branch, push, pull request, merge, or auto-merge.
+- Never expose credentials in commands, logs, diffs, or reports.
 
 ## Procedure
 
@@ -53,11 +49,11 @@ Do not use it to add countries without an approved scope, redesign the product, 
 15. Run every command in `required_checks`. Also run `git diff --check` and scan the diff for secrets, home paths, private hostnames, and files outside `allowed_write_paths`.
 16. If canonical input has no semantic change, discard generated timestamp-only changes and stop without a branch.
 17. If any check fails, do not commit or push. Retain the local source-monitor report and return the failure.
-18. If pull-request mode is not explicitly authorized by both policy and `AGENTS.md`, stop with a validated uncommitted candidate diff and state that authorization is required.
-19. When explicitly authorized, create a deterministic update branch from the recorded base SHA, commit canonical data and generated artifacts atomically, and push only that branch using the configured least-privilege token.
-20. Derive GitHub owner and repository from `origin`; use the GitHub REST API to create or update one draft pull request. Reuse a matching open automation pull request instead of creating a duplicate.
-21. The pull request must include base SHA, sources checked, previous and current snapshot hashes, changed JSON Pointers, citation/evidence notes, uncertainties, all verification results, and a human-review checklist.
-22. Always clean up temporary worktrees and release locks. A rerun against the same source hashes must not create a second snapshot, commit, branch, or pull request.
+18. Keep canonical data and generated artifacts unchanged in scan-only mode.
+19. Write no commit, branch, push, pull request, merge, or auto-merge.
+20. Return a concise local report containing sources checked, snapshot hashes, evidence status, uncertainties, and verification results.
+21. Return exactly `[SILENT]` when there is no actionable source change or failure.
+22. Always clean up temporary state and release locks. A rerun against the same source hashes must not create a second snapshot or public change.
 
 ## Allowed Interpretation
 
@@ -76,7 +72,7 @@ The filter remains conservative:
 - A first-seen snapshot establishes a baseline; it is not automatically a policy change.
 - Government pages may redirect between subdomains; only `expected_domains` are permitted.
 - Dynamic calculators may need browser or manual extraction and must not be guessed from surrounding text.
-- Wall-clock-only `generated_at` changes must not cause a pull request.
+- Wall-clock-only `generated_at` changes must not create an actionable change report.
 - Canonical citation `quote_md` is verbatim evidence, not a paraphrase field.
 - A clean current checkout is not sufficient if it is a person's active worktree; use a dedicated automation clone.
 
@@ -89,4 +85,4 @@ A scan-only run is ready when:
 - `pnpm sources:verify -- --require-snapshot-ids` passes.
 - No tracked file changes are created by an unchanged rerun.
 
-Draft pull-request mode is ready only after clean-run, changed-source, fetch-failure, validation-failure, duplicate-run, and cleanup scenarios have all been tested in a dedicated automation clone.
+Activation is ready only after clean-run, changed-source, fetch-failure, validation-failure, duplicate-run, stale-lock, and cleanup scenarios have all been tested in a dedicated automation clone.
