@@ -42,14 +42,14 @@ const { model } = Astro.props as { model: CategoryModel };
     </nav>
 
     <section class="hero">
-      <p class="eyebrow">Pathway category</p>
+      <p class="eyebrow">Category</p>
       <h1>{model.category.names.en}</h1>
       <p>{model.category.description_md.en}</p>
     </section>
     <section class="section" aria-labelledby="programs-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Validated coverage</p>
+          <p class="eyebrow">Pathways</p>
           <h2 id="programs-heading">Programs</h2>
         </div>
       </div>
@@ -64,14 +64,13 @@ const { model } = Astro.props as { model: CategoryModel };
                 summary={program.summary_md.en}
                 href={`/programs/${program.id}`}
                 status={program.status}
-                needsReview={program.freshness.needs_human_review}
                 checkedAt={program.freshness.last_checked_at}
               />
             ))}
           </div>
         ) : (
           <div class="panel">
-            <p>No validated programs are published in this category yet.</p>
+            <p>No programs are published in this category yet.</p>
           </div>
         )
       }

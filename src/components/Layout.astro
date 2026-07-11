@@ -61,18 +61,6 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
           <a href="/filter">Filter</a>
           <a href="/sources">Sources</a>
         </nav>
-        <details class="mobile-nav">
-          <summary aria-label="Open navigation">
-            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
-          </summary>
-          <nav aria-label="Mobile primary navigation">
-            <a href="/countries">Countries</a>
-            <a href="/categories">Categories</a>
-            <a href="/compare">Compare pathways</a>
-            <a href="/filter">Check fit</a>
-            <a href="/sources">Source registry</a>
-          </nav>
-        </details>
         <div class="appbar-actions">
           <a
             class="nav-icon"
@@ -131,6 +119,23 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
             >
           </button>
         </div>
+        <details class="mobile-nav">
+          <summary aria-label="Open navigation">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
+          </summary>
+          <nav aria-label="Mobile primary navigation">
+            <a href="/countries">Countries</a>
+            <a href="/categories">Categories</a>
+            <a href="/compare">Compare pathways</a>
+            <a href="/filter">Check fit</a>
+            <a href="/sources">Source registry</a>
+            <div class="mobile-nav-divider"></div>
+            <a href="https://github.com/qiweiii/world-immigrant" target="_blank" rel="noopener">GitHub</a>
+            <button class="mobile-nav-theme" id="mobile-theme-toggle" aria-label="Toggle theme">
+              <span id="mobile-theme-label">Dark mode</span>
+            </button>
+          </nav>
+        </details>
       </div>
     </header>
 
@@ -179,19 +184,30 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
       const toggle = document.getElementById("theme-toggle");
       const sun = document.getElementById("icon-sun");
       const moon = document.getElementById("icon-moon");
+      const mobileToggle = document.getElementById("mobile-theme-toggle");
+      const mobileLabel = document.getElementById("mobile-theme-label");
+
+      function isDark() {
+        return document.documentElement.dataset.theme === "dark";
+      }
+
       function updateIcons() {
-        const dark = document.documentElement.dataset.theme === "dark";
+        const dark = isDark();
         if (sun) sun.style.display = dark ? "" : "none";
         if (moon) moon.style.display = dark ? "none" : "";
+        if (mobileLabel) mobileLabel.textContent = dark ? "Light mode" : "Dark mode";
       }
-      updateIcons();
-      toggle?.addEventListener("click", () => {
-        const cur = document.documentElement.dataset.theme || "light";
-        const next = cur === "dark" ? "light" : "dark";
+
+      function switchTheme() {
+        const next = isDark() ? "light" : "dark";
         document.documentElement.dataset.theme = next;
         localStorage.setItem("theme", next);
         updateIcons();
-      });
+      }
+
+      updateIcons();
+      toggle?.addEventListener("click", switchTheme);
+      mobileToggle?.addEventListener("click", switchTheme);
 
       const obs = new IntersectionObserver(
         (entries) => {
@@ -207,6 +223,13 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
       document.querySelectorAll("section, .card, .panel").forEach((el) => obs.observe(el));
       document.querySelectorAll(".grid, .card-grid").forEach((grid) => {
         [...grid.children].forEach((c, i) => c.style.setProperty("--si", String(i)));
+      });
+
+      // Close mobile nav after clicking a link
+      document.querySelectorAll(".mobile-nav nav a").forEach((a) => {
+        a.addEventListener("click", () => {
+          document.querySelector(".mobile-nav")?.removeAttribute("open");
+        });
       });
     </script>
   </body>

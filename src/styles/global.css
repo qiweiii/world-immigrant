@@ -141,7 +141,7 @@
     background: var(--muted);
   }
   .nav-icon {
-    padding: 8px;
+    padding: 9px;
     border-radius: var(--radius);
     color: var(--muted-foreground);
     transition: color 0.2s, background 0.2s;
@@ -149,7 +149,7 @@
   }
   .nav-icon:hover { color: var(--foreground); background: var(--muted); }
   .theme-toggle {
-    padding: 6px;
+    padding: 8px;
     border-radius: var(--radius);
     border: 1px solid var(--border);
     background: transparent;
@@ -162,13 +162,13 @@
   .theme-toggle:hover { background: var(--muted); color: var(--foreground); }
 
   /* ── Hero ── */
-  .hero { padding: 88px 0 48px; }
+  .hero { padding: 72px 0 40px; }
   .eyebrow {
-    color: var(--accent);
+    color: var(--muted-foreground);
     font-size: 12px;
-    letter-spacing: 0.14em;
-    text-transform: uppercase;
-    font-weight: 600;
+    letter-spacing: 0;
+    text-transform: none;
+    font-weight: 400;
   }
   .hero h1 {
     margin: 12px 0;
@@ -206,7 +206,7 @@
     display: inline-flex;
     align-items: center;
     gap: 8px;
-    height: 40px;
+    height: 44px;
     padding: 0 16px;
     border-radius: var(--radius);
     font-size: 14px;
@@ -240,26 +240,66 @@
     border-radius: calc(var(--radius) * 1.6);
     background: var(--card);
     padding: 24px;
-    transition: border-color 0.2s, box-shadow 0.2s;
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.15s;
   }
   .card:hover {
     border-color: var(--border-strong);
     box-shadow: var(--shadow-sm);
   }
+  .card-clickable {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+  }
+  .card-clickable:hover {
+    border-color: var(--accent);
+    box-shadow: var(--shadow-md);
+    transform: translateY(-2px);
+  }
+  .card-clickable:active {
+    transform: translateY(0);
+  }
   .card-header { margin-bottom: 12px; }
   .card-title {
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 600;
     letter-spacing: -0.02em;
-    margin: 0;
+    margin: 6px 0 0;
+    color: var(--foreground);
   }
-  .card-title a { transition: color 0.2s; }
+  .card-title a { color: inherit; transition: color 0.2s; }
   .card-title a:hover { color: var(--accent); }
   .card-description {
     color: var(--muted-foreground);
     font-size: 14px;
     line-height: 1.55;
-    margin: 6px 0 0;
+    margin: 8px 0 0;
+    flex: 1;
+  }
+  .card-meta {
+    color: var(--muted-foreground);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 0;
+    text-transform: none;
+    margin: 0 0 4px;
+  }
+  .card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-top: 14px;
+    padding-top: 14px;
+    border-top: 1px solid var(--border);
+  }
+  .card-tag {
+    display: inline-flex;
+    align-items: center;
+    color: var(--muted-foreground);
+    font-family: var(--font-mono);
+    font-size: 11px;
   }
 
   /* ── Badge ── */
@@ -285,6 +325,7 @@
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 16px;
     margin: 24px 0 56px;
+    align-items: stretch;
   }
 
   /* ── Interactive panel ── */
@@ -432,7 +473,7 @@
   .appbar-spacer { height:56px; }
   .breadcrumbs {
     display:flex; flex-wrap:wrap; align-items:center; gap:8px;
-    padding: 20px 0 0;
+    padding: 16px 0 0;
     color: var(--muted-foreground);
     font-size: 13px;
   }
@@ -465,7 +506,7 @@
   }
   .card-grid {
     display:grid; grid-template-columns: repeat(2, minmax(0,1fr));
-    gap: 16px;
+    gap: 16px; align-items: stretch;
   }
   .card-grid.three { grid-template-columns: repeat(3, minmax(0,1fr)); }
   .card-grid.two { grid-template-columns: repeat(2, minmax(0,1fr)); }
@@ -494,8 +535,8 @@
   .mobile-nav { display: none; }
   .mobile-nav summary {
     list-style: none;
-    width: 36px;
-    height: 36px;
+    width: 40px;
+    height: 40px;
     display: grid;
     place-items: center;
     border: 1px solid var(--border);
@@ -506,19 +547,34 @@
   .mobile-nav summary::-webkit-details-marker { display: none; }
   .mobile-nav summary svg { width: 18px; height: 18px; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; }
   .mobile-nav nav {
-    position: absolute;
-    top: 48px;
+    position: fixed;
+    top: 64px;
     right: 16px;
+    left: 16px;
     display: grid;
-    min-width: 210px;
+    gap: 2px;
     padding: 8px;
     border: 1px solid var(--border);
     border-radius: calc(var(--radius) * 1.4);
     background: var(--card);
     box-shadow: var(--shadow-md);
+    z-index: 60;
   }
-  .mobile-nav nav a { padding: 10px; border-radius: calc(var(--radius) * .8); color: var(--muted-foreground); font-size: 14px; }
+  .mobile-nav nav a { padding: 14px 12px; border-radius: calc(var(--radius) * .8); color: var(--muted-foreground); font-size: 15px; }
   .mobile-nav nav a:hover { background: var(--muted); color: var(--foreground); }
+  .mobile-nav-divider { height: 1px; background: var(--border); margin: 6px 4px; }
+  .mobile-nav-theme {
+    padding: 14px 12px;
+    border-radius: calc(var(--radius) * .8);
+    color: var(--muted-foreground);
+    font-size: 15px;
+    background: transparent;
+    border: 0;
+    cursor: pointer;
+    text-align: left;
+    width: 100%;
+  }
+  .mobile-nav-theme:hover { background: var(--muted); color: var(--foreground); }
 
   /* ── Home journey ── */
   .landing-hero {
@@ -708,16 +764,23 @@
     .section-heading { flex-direction: column; align-items: start; }
   }
 
+  @media (min-width: 769px) and (max-width: 900px) {
+    .landing-hero { gap: 40px; }
+    .card-grid { grid-template-columns: 1fr; }
+    .pathway-facts { grid-template-columns: repeat(3, 1fr); }
+  }
+
   @media (max-width: 768px) {
-    .appbar-inner { gap: 8px; }
-    .wordmark { width: 146px; height: 27px; }
+    .appbar-inner { gap: 6px; }
+    .wordmark { width: 130px; height: 24px; }
     .footer-grid { grid-template-columns: 1fr; gap: 24px; }
-    .footer-bottom { flex-direction: column; gap: 8px; }
+    .footer-bottom { flex-direction: column; gap: 8px; align-items: flex-start; }
     .nav-links { display: none; }
+    .appbar-actions { display: none; }
     .mobile-nav { display: block; }
-    .landing-hero { padding: 56px 0 36px; }
-    .landing-hero h1 { font-size: clamp(36px, 11vw, 48px); }
-    .coverage-panel { padding: 0 0 0 20px; }
+    .landing-hero { padding: 48px 0 32px; }
+    .landing-hero h1 { font-size: clamp(34px, 10vw, 44px); }
+    .coverage-panel { padding: 24px 0 0; border-left: 0; border-top: 1px solid var(--border); }
     .trust-callout { padding: 22px; }
     .quick-actions { grid-template-columns: 1fr; }
     .quick-action { min-height: 52px; padding: 0 2px; }
@@ -730,6 +793,47 @@
     .category-directory { grid-template-columns: 1fr; }
     .category-link:nth-child(odd), .category-link:nth-child(even) { padding-left: 0; padding-right: 0; border-right: 0; }
     .category-link { min-height: 0; }
+
+    /* Generic hero on non-home pages */
+    .hero { padding: 48px 0 32px; }
+    .hero h1 { font-size: clamp(32px, 9vw, 42px); }
+    .hero p { font-size: 16px; }
+
+    /* Sections tighten */
+    .section { padding: 28px 0 4px; }
+    .section-heading { margin-bottom: 14px; }
+
+    /* Cards reduce padding */
+    .card { padding: 18px; }
+    .card-title { font-size: 16px; }
+    .panel { padding: 20px; margin: 20px 0 40px; }
+
+    .badge-row { gap: 6px; }
+
+    /* Breadcrumbs */
+    .breadcrumbs { padding: 12px 0 0; font-size: 12px; }
+
+    /* Action rows stack better */
+    .action-row { gap: 8px; }
+    .action-row .btn { width: 100%; justify-content: center; }
+
+    /* Footer */
+    .footer-inner { padding: 28px 0; }
+    .footer-col p { font-size: 13px; }
+
+    /* Form controls in islands */
+    .field-label { font-size: 12px; }
+    .input { padding: 11px 12px; font-size: 15px; }
+    .field-grid { grid-template-columns: 1fr; gap: 12px; }
+
+    /* Tables scroll */
+    .table th, .table td { padding: 10px 8px; font-size: 13px; }
+    .table-wrap { margin: 0 -18px; }
+
+    /* Pathway and country rows */
+    .pathway-row, .country-row { padding: 22px 0; }
+    .pathway-row h3 { font-size: 20px; }
+    .country-row h3 { font-size: 20px; }
   }
 }
 

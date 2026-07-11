@@ -6,7 +6,6 @@ interface Props {
   summary: string;
   href?: string;
   status?: string;
-  needsReview?: boolean;
   checkedAt?: string;
 }
 
@@ -17,19 +16,15 @@ const {
   summary,
   href = "#",
   status = "active",
-  needsReview = false,
   checkedAt,
 } = Astro.props;
 ---
 
-<article class="card card-linkable">
-  <p class="eyebrow">{country} · {category.replaceAll("_", " ")}</p>
-  <h3 class="card-title"><a href={href}>{title}</a></h3>
+<a class="card card-clickable" href={href}>
+  <p class="card-meta">{country} · {category.replaceAll("_", " ")}</p>
+  <h3 class="card-title">{title}</h3>
   <p class="card-description">{summary}</p>
-  <div class="badge-row">
-    <span class="badge">{status}</span>
-    {needsReview ? <span class="badge badge-warning">needs review</span> : <span class="badge badge-success">reviewed</span>}
-    {checkedAt && <span class="badge">checked {checkedAt.slice(0, 10)}</span>}
+  <div class="card-footer">
+    {checkedAt && <span class="card-tag">Checked {checkedAt.slice(0, 10)}</span>}
   </div>
-  <p class="card-cta"><a href={href}>View pathway details →</a></p>
-</article>
+</a>

@@ -26,27 +26,26 @@ const shorten = (value: string, maxLength: number) => {
     <section class="landing-hero" aria-labelledby="home-title">
       <div class="landing-hero-copy">
         <p class="eyebrow">World Immigrant</p>
-        <h1 id="home-title">Find a route you can check.</h1>
+        <h1 id="home-title">Find a route you can verify.</h1>
         <p class="landing-lede">
-          Immigration pathways, structured around the questions that change a decision and linked
-          back to the official source.
+          Structured immigration pathways, linked to official sources.
         </p>
         <div class="action-row">
           <a class="btn btn-primary" href="#pathways">View pathways</a>
-          <a class="text-action" href={compareHref}>Compare Canada and Australia →</a>
+          <a class="text-action" href={compareHref}>Compare →</a>
         </div>
       </div>
 
       <aside class="coverage-panel" aria-label="Current coverage">
-        <p class="eyebrow">Current coverage</p>
-        <p class="coverage-total"><strong>{programs.length}</strong> cited pathways</p>
+        <p class="eyebrow">Coverage</p>
+        <p class="coverage-total"><strong>{programs.length}</strong> pathways</p>
         <div class="coverage-country-list">
           {
             countryModels.map(({ country, programs: countryPrograms }) => (
               <a class="coverage-country" href={`/countries/${country.id}`}>
                 <span>
                   <strong>{country.names.en}</strong>
-                  <small>{countryPrograms.length} mapped pathway{countryPrograms.length === 1 ? "" : "s"}</small>
+                  <small>{countryPrograms.length} pathway{countryPrograms.length === 1 ? "" : "s"}</small>
                 </span>
                 <span aria-hidden="true">→</span>
               </a>
@@ -54,7 +53,7 @@ const shorten = (value: string, maxLength: number) => {
           }
         </div>
         <div class="coverage-footnote">
-          <span>{sources.length} official sources</span>
+          <span>{sources.length} sources</span>
           <a href="/sources">Source registry</a>
         </div>
       </aside>
@@ -70,7 +69,7 @@ const shorten = (value: string, maxLength: number) => {
       <div class="section-heading section-heading-wide">
         <div>
           <p class="eyebrow">Available now</p>
-          <h2 id="pathways-heading">Two pathways. Full records.</h2>
+          <h2 id="pathways-heading">Pathways</h2>
         </div>
         <a class="text-action" href="/countries">All destinations →</a>
       </div>
@@ -79,7 +78,7 @@ const shorten = (value: string, maxLength: number) => {
           programCards.map(({ program, country }) => (
             <article class="pathway-row">
               <div class="pathway-row-main">
-                <p class="eyebrow">
+                <p class="card-meta">
                   {country?.names.en ?? program.country_id} · {program.category_ids.join(" ").replaceAll("_", " ")}
                 </p>
                 <h3><a href={`/programs/${program.id}`}>{program.official_names.en}</a></h3>
@@ -88,25 +87,25 @@ const shorten = (value: string, maxLength: number) => {
               <dl class="pathway-facts">
                 <div>
                   <dt>Residence</dt>
-                  <dd>{program.pr_pathway.available === true ? "Direct permanent residence" : "See pathway"}</dd>
+                  <dd>{program.pr_pathway.available === true ? "Direct PR" : "See pathway"}</dd>
                 </div>
                 <div>
                   <dt>Family</dt>
-                  <dd>{program.family.spouse_or_partner_allowed === true ? "Partner and children" : "See rules"}</dd>
+                  <dd>{program.family.spouse_or_partner_allowed === true ? "Yes" : "See rules"}</dd>
                 </div>
                 <div>
                   <dt>Checked</dt>
                   <dd>{program.freshness.last_checked_at.slice(0, 10)}</dd>
                 </div>
               </dl>
-              <a class="pathway-row-link" href={`/programs/${program.id}`}>Read record →</a>
+              <a class="pathway-row-link" href={`/programs/${program.id}`}>Read →</a>
             </article>
           ))
         }
       </div>
       <div class="section-actions">
-        <a class="btn" href={compareHref}>Compare both pathways</a>
-        <a class="text-action" href="/filter">Check your fit privately →</a>
+        <a class="btn" href={compareHref}>Compare both</a>
+        <a class="text-action" href="/filter">Check fit →</a>
       </div>
     </section>
 
@@ -114,7 +113,7 @@ const shorten = (value: string, maxLength: number) => {
       <div class="section-heading section-heading-wide">
         <div>
           <p class="eyebrow">Destinations</p>
-          <h2 id="countries-heading">Browse by country.</h2>
+          <h2 id="countries-heading">By country</h2>
         </div>
       </div>
       <div class="country-list">
@@ -122,12 +121,12 @@ const shorten = (value: string, maxLength: number) => {
           countryModels.map(({ country, programs: countryPrograms }) => (
             <article class="country-row">
               <div>
-                <p class="eyebrow">{country.iso2} · {country.region}</p>
+                <p class="card-meta">{country.iso2} · {country.region}</p>
                 <h3><a href={`/countries/${country.id}`}>{country.names.en}</a></h3>
               </div>
               <p>{shorten(country.summary_md.en, 140)}</p>
               <div class="country-row-meta">
-                <span>{countryPrograms.length} mapped pathway{countryPrograms.length === 1 ? "" : "s"}</span>
+                <span>{countryPrograms.length} pathway{countryPrograms.length === 1 ? "" : "s"}</span>
                 <span>checked {country.freshness.last_checked_at.slice(0, 10)}</span>
               </div>
               <a class="text-action" href={`/countries/${country.id}`}>Open →</a>
@@ -138,7 +137,7 @@ const shorten = (value: string, maxLength: number) => {
     </section>
 
     <section class="source-note" aria-label="Source guidance">
-      <p><strong>Policy changes.</strong> Every record carries a check date and official source trail.</p>
+      <p><strong>Policy changes.</strong> Every record carries a check date and source trail.</p>
       <a class="text-action" href="/sources">Inspect sources →</a>
     </section>
   </main>

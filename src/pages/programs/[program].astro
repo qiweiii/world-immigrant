@@ -1,6 +1,5 @@
 ---
 import Layout from "../../components/Layout.astro";
-import TrustBadge from "../../components/TrustBadge.astro";
 import { loadCanonicalData } from "../../lib/data";
 import { buildProgramPageModels, type ProgramPageModel } from "../../lib/site-model";
 
@@ -54,26 +53,9 @@ const applicationFees = program.funds.application_fees ?? [];
       <p>{program.summary_md.en}</p>
       <div class="action-row">
         <a class="btn btn-primary" href={`/compare?programs=${program.id}`}>Compare this pathway</a>
-        <a class="btn" href="/filter">Check local fit</a>
-        <a class="btn btn-ghost" href={`/countries/${country.id}`}>Back to {country.names.en}</a>
-      </div>
-      <div class="badge-row">
-        <span class="badge">{program.status}</span>
-        <span class="badge">{pathwayLabel}</span>
-        <span class="badge">checked {program.freshness.last_checked_at.slice(0, 10)}</span>
-        {
-          program.freshness.needs_human_review && (
-            <span class="badge badge-warning">needs human review</span>
-          )
-        }
+        <a class="btn" href="/filter">Check fit</a>
       </div>
     </section>
-
-    <div class="badge-row" aria-label="Trust information">
-      <TrustBadge label={`Checked ${program.freshness.last_checked_at.slice(0, 10)}`} tone="success" />
-      <TrustBadge label={`${program.freshness.confidence} confidence`} tone="neutral" />
-      <TrustBadge label={`${sources.length} official sources`} tone="neutral" />
-    </div>
 
     {
       program.status_note_md?.en && (
@@ -92,11 +74,11 @@ const applicationFees = program.funds.application_fees ?? [];
       </div>
       <div class="card-grid two">
         <article class="card">
-          <h3>Good fit</h3>
+          <h3 class="card-title">Good fit</h3>
           <p class="prose">{program.good_for_md.en}</p>
         </article>
         <article class="card">
-          <h3>Important limits</h3>
+          <h3 class="card-title">Important limits</h3>
           <p class="prose">{program.not_good_for_md?.en ?? "No separate limit summary is recorded."}</p>
         </article>
       </div>
@@ -105,66 +87,47 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="eligibility-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Program minimums</p>
-          <h2 id="eligibility-heading">Eligibility signals</h2>
+          <p class="eyebrow">Minimums</p>
+          <h2 id="eligibility-heading">Eligibility</h2>
         </div>
       </div>
       <div class="card-grid">
         <article class="card">
-          <h3>Age</h3>
+          <h3 class="card-title">Age</h3>
           <p>
             {
               program.eligibility.age.max !== undefined
-                ? `Maximum modeled invitation age: under ${program.eligibility.age.max + 1}`
-                : "No hard age floor or ceiling is modeled as a universal minimum."
+                ? `Maximum modeled age: under ${program.eligibility.age.max + 1}`
+                : "No hard age floor or ceiling is modeled."
             }
           </p>
           <p class="prose muted">{program.eligibility.age.note_md?.en}</p>
         </article>
         <article class="card">
-          <h3>Work experience</h3>
-          <p>
-            Minimum years modeled: {displayValue(program.eligibility.work_experience.min_years)}
-          </p>
+          <h3 class="card-title">Work experience</h3>
+          <p>Minimum: {displayValue(program.eligibility.work_experience.min_years)} years</p>
           <p class="prose muted">{program.eligibility.work_experience.note_md?.en}</p>
         </article>
         <article class="card">
-          <h3>Language</h3>
+          <h3 class="card-title">Language</h3>
           <p>{program.eligibility.language[0]?.minimum_level ?? "Not stated"}</p>
           <p class="prose muted">{program.eligibility.language[0]?.note_md?.en}</p>
         </article>
         <article class="card">
-          <h3>Education and assessment</h3>
-          <p>Minimum level: {displayValue(program.eligibility.education.required_level)}</p>
-          <p>
-            Credential / skills assessment: {
-              displayValue(program.eligibility.education.credential_assessment_required)
-            }
-          </p>
+          <h3 class="card-title">Education</h3>
+          <p>Minimum: {displayValue(program.eligibility.education.required_level)}</p>
+          <p>Assessment: {displayValue(program.eligibility.education.credential_assessment_required)}</p>
           <p class="prose muted">{program.eligibility.education.note_md?.en}</p>
         </article>
         <article class="card">
-          <h3>Selection threshold</h3>
-          <p>
-            Points threshold: {displayValue(program.eligibility.points_threshold)}
-            {
-              typeof program.eligibility.points_threshold === "number"
-                ? " program-specific points"
-                : ""
-            }
-          </p>
-          <p>
-            Invitation competition: {
-              displayValue(program.eligibility.invitation_competition_level)
-            }
-          </p>
+          <h3 class="card-title">Selection threshold</h3>
+          <p>Points: {displayValue(program.eligibility.points_threshold)}</p>
+          <p>Competition: {displayValue(program.eligibility.invitation_competition_level)}</p>
         </article>
         <article class="card">
-          <h3>Health and character</h3>
+          <h3 class="card-title">Health and character</h3>
           <p>Health check: {displayValue(program.eligibility.health_check_required)}</p>
-          <p>
-            Police certificate: {displayValue(program.eligibility.police_certificate_required)}
-          </p>
+          <p>Police certificate: {displayValue(program.eligibility.police_certificate_required)}</p>
         </article>
       </div>
     </section>
@@ -172,13 +135,13 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="funds-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Money and charges</p>
-          <h2 id="funds-heading">Funds and application charges</h2>
+          <p class="eyebrow">Costs</p>
+          <h2 id="funds-heading">Funds and fees</h2>
         </div>
       </div>
       <div class="card-grid two">
         <article class="card">
-          <h3>Settlement funds</h3>
+          <h3 class="card-title">Settlement funds</h3>
           {
             hasFundsTable ? (
               <div class="table-wrap">
@@ -206,31 +169,25 @@ const applicationFees = program.funds.application_fees ?? [];
                 </table>
               </div>
             ) : (
-              <p class="prose">No fixed settlement-fund table is published in this record.</p>
+              <p class="prose">No settlement-fund table is published.</p>
             )
           }
-          <p class="prose muted">
-            {program.funds.exemption_note_md?.en}
-          </p>
+          <p class="prose muted">{program.funds.exemption_note_md?.en}</p>
         </article>
         <article class="card">
-          <h3>Application charges</h3>
+          <h3 class="card-title">Application fees</h3>
           {
             applicationFees.length ? (
               <ul class="detail-list">
                 {applicationFees.map((fee) => (
                   <li>
-                    <strong>
-                      {displayValue(fee.amount)} {fee.currency}
-                    </strong>
-                    <span>
-                      {fee.label?.en ?? fee.applies_to}
-                    </span>
+                    <strong>{displayValue(fee.amount)} {fee.currency}</strong>
+                    <span>{fee.label?.en ?? fee.applies_to}</span>
                   </li>
                 ))}
               </ul>
             ) : (
-              <p class="prose">No application-charge table is published in this record.</p>
+              <p class="prose">No fee table is published.</p>
             )
           }
         </article>
@@ -240,44 +197,29 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="outcome-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Outcome and family</p>
+          <p class="eyebrow">Outcomes</p>
           <h2 id="outcome-heading">Residence, work, and family</h2>
         </div>
       </div>
       <div class="card-grid">
         <article class="card">
-          <h3>Permanent residence</h3>
+          <h3 class="card-title">Permanent residence</h3>
           <p class="prose">{program.pr_pathway.summary_md?.en}</p>
-          <p>
-            Work: {displayValue(program.rights.work_allowed)} · Study: {
-              displayValue(program.rights.study_allowed)
-            }
-          </p>
-          <p class="prose muted">{program.rights.healthcare_access_md?.en}</p>
+          <p>Work: {displayValue(program.rights.work_allowed)} · Study: {displayValue(program.rights.study_allowed)}</p>
         </article>
         <article class="card">
-          <h3>Family</h3>
+          <h3 class="card-title">Family</h3>
           <p class="prose">{program.family.note_md?.en}</p>
-          <p>
-            Partner: {displayValue(program.family.spouse_or_partner_allowed)} · Children: {
-              displayValue(program.family.children_allowed)
-            }
-          </p>
+          <p>Partner: {displayValue(program.family.spouse_or_partner_allowed)} · Children: {displayValue(program.family.children_allowed)}</p>
         </article>
         <article class="card">
-          <h3>Citizenship</h3>
+          <h3 class="card-title">Citizenship</h3>
           <p class="prose">{program.citizenship_pathway.summary_md?.en}</p>
-          <p class="prose muted">
-            {program.citizenship_pathway.physical_presence_requirement_md?.en}
-          </p>
         </article>
         <article class="card">
-          <h3>Processing time</h3>
+          <h3 class="card-title">Processing time</h3>
           <p class="prose">{program.timeline.application_processing_time_md?.en}</p>
-          <p>
-            Modeled range: {displayValue(program.timeline.processing_time_months_min)}
-            –{displayValue(program.timeline.processing_time_months_max)} months
-          </p>
+          <p>Modeled: {displayValue(program.timeline.processing_time_months_min)}–{displayValue(program.timeline.processing_time_months_max)} months</p>
         </article>
       </div>
     </section>
@@ -285,26 +227,20 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="sources-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Primary evidence</p>
+          <p class="eyebrow">Sources</p>
           <h2 id="sources-heading">Official sources</h2>
         </div>
-        <a class="btn btn-ghost" href="/sources">Source registry</a>
       </div>
       <div class="card-grid">
         {
           sources.map((source) => (
-            <article class="card">
-              <p class="eyebrow">
-                Priority {source.priority} · {source.source_type}
-              </p>
-              <h3>
-                <a href={source.url} rel="noopener noreferrer" target="_blank">
-                  {source.title}
-                </a>
-              </h3>
-              <p>{source.publisher}</p>
-              <p class="muted">Checked {source.last_checked_at?.slice(0, 10)}</p>
-            </article>
+            <a class="card card-clickable" href={source.url} target="_blank" rel="noopener noreferrer">
+              <p class="card-meta">{source.publisher}</p>
+              <h3 class="card-title">{source.title}</h3>
+              <div class="card-footer">
+                <span class="card-tag">Checked {source.last_checked_at?.slice(0, 10)}</span>
+              </div>
+            </a>
           ))
         }
       </div>
@@ -313,23 +249,23 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="evidence-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Field provenance</p>
-          <h2 id="evidence-heading">Citation coverage</h2>
+          <p class="eyebrow">Citations</p>
+          <h2 id="evidence-heading">Field provenance</h2>
         </div>
       </div>
       <div class="card-grid">
         {
           citations.map(({ path, citations: refs }) => (
             <article class="card">
-              <p class="eyebrow mono">{path}</p>
+              <p class="card-meta mono">{path}</p>
               {refs.map((ref) => (
                 <div class="citation-block">
-                  <h3>
-                    <a href={ref.url} rel="noopener noreferrer" target="_blank">
+                  <h3 class="card-title">
+                    <a href={ref.url} target="_blank" rel="noopener noreferrer">
                       {ref.section ?? ref.source_id}
                     </a>
                   </h3>
-                  {ref.quote_md && <p class="quote">“{ref.quote_md}”</p>}
+                  {ref.quote_md && <p class="quote">"{ref.quote_md}"</p>}
                 </div>
               ))}
             </article>
@@ -340,9 +276,8 @@ const applicationFees = program.funds.application_fees ?? [];
 
     <section class="panel" aria-label="Informational disclaimer">
       <p>
-        <strong>Information only, not legal advice.</strong> Rules, fees, invitation rounds, and
-        processing times change. Verify the linked official pages before acting. Final decisions
-        remain with the responsible government authority.
+        <strong>Information only, not legal advice.</strong> Rules, fees, and processing times change.
+        Verify the linked official pages before acting.
       </p>
     </section>
   </main>

@@ -8,12 +8,9 @@ const { sources } = await loadCanonicalData();
 <Layout title="Sources — World Immigrant">
   <main>
     <section class="hero">
-      <p class="eyebrow">Source registry</p>
-      <h1>See where every summary starts.</h1>
-      <p>
-        Open the government page behind a pathway, see when we last checked it, and understand
-        which parts of the record still need careful review.
-      </p>
+      <p class="eyebrow">Sources</p>
+      <h1>Where every summary starts.</h1>
+      <p>The government pages behind each pathway record.</p>
     </section>
 
     <section class="section" aria-labelledby="registry-heading">
@@ -26,16 +23,14 @@ const { sources } = await loadCanonicalData();
       <div class="card-grid">
         {
           sources.map((source) => (
-            <article class="card">
-              <p class="eyebrow">Priority {source.priority} · {source.status}</p>
-              <h3><a href={source.url} rel="external">{source.title}</a></h3>
-              <p>{source.publisher}</p>
-              <div class="badge-row">
-                <span class="badge">checked {source.last_checked_at?.slice(0, 10)}</span>
-                <span class="badge">every {source.update_frequency_days} days</span>
-                <span class="badge">{source.extraction_method}</span>
+            <a class="card card-clickable" href={source.url} target="_blank" rel="noopener noreferrer">
+              <p class="card-meta">{source.publisher}</p>
+              <h3 class="card-title">{source.title}</h3>
+              <div class="card-footer">
+                <span class="card-tag">Checked {source.last_checked_at?.slice(0, 10)}</span>
+                <span class="card-tag">Every {source.update_frequency_days} days</span>
               </div>
-            </article>
+            </a>
           ))
         }
       </div>
@@ -43,14 +38,12 @@ const { sources } = await loadCanonicalData();
 
     <section class="card-grid" aria-label="Source policy">
       <article class="card">
-        <p class="eyebrow">Hierarchy</p>
-        <h3>Official evidence first</h3>
-        <p>Law and regulation text, immigration-department pages, official portals and calculators, then clearly labeled supporting sources.</p>
+        <h3 class="card-title">Official evidence first</h3>
+        <p class="card-description">Law and regulation text, immigration-department pages, official portals and calculators, then clearly labeled supporting sources.</p>
       </article>
       <article class="card">
-        <p class="eyebrow">Validation</p>
-        <h3>No uncited material claims</h3>
-        <p>Active program records fail integrity validation when a material fact cannot be traced to a registered source.</p>
+        <h3 class="card-title">No uncited material claims</h3>
+        <p class="card-description">Active program records fail integrity validation when a material fact cannot be traced to a registered source.</p>
       </article>
     </section>
   </main>
