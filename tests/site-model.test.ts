@@ -16,9 +16,18 @@ test("country and program page models resolve canonical relationships", async ()
   assert.ok(byId.portugal);
   assert.ok(byId.spain);
   assert.ok(byId.uae);
-  assert.deepEqual(byId.portugal.programs, []);
-  assert.deepEqual(byId.spain.programs, []);
-  assert.deepEqual(byId.uae.programs, []);
+  assert.deepEqual(
+    byId.portugal.programs.map(({ id }) => id),
+    ["portugal-d8-digital-nomad"],
+  );
+  assert.deepEqual(
+    byId.spain.programs.map(({ id }) => id),
+    ["spain-digital-nomad"],
+  );
+  assert.deepEqual(
+    byId.uae.programs.map(({ id }) => id),
+    ["uae-remote-work"],
+  );
   assert.deepEqual(
     byId.canada.programs.map(({ id }) => id),
     ["canada-express-entry-fsw"],
@@ -27,7 +36,7 @@ test("country and program page models resolve canonical relationships", async ()
     byId.australia.programs.map(({ id }) => id),
     ["australia-skilled-independent-189"],
   );
-  assert.equal(programs.length, 2);
+  assert.equal(programs.length, dataset.programs.length);
   const canadaProgram = programs.find((model) => model.program.id === "canada-express-entry-fsw");
   const australiaProgram = programs.find(
     (model) => model.program.id === "australia-skilled-independent-189",

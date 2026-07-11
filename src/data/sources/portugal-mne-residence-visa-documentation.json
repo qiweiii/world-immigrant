@@ -10,7 +10,11 @@
   "priority": 2,
   "update_frequency_days": 14,
   "extraction_method": "web_extract",
-  "expected_content_hints": ["Proof of means of subsistence", "residence visa", "work contract or service provider contract"],
+  "expected_content_hints": [
+    "Proof of means of subsistence",
+    "residence visa",
+    "work contract or service provider contract"
+  ],
   "expected_domains": ["vistos.mne.gov.pt"],
-  "status": "needs_attention"
+  "status": "deprecated"
 }

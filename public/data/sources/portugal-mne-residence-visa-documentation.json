@@ -18,5 +18,5 @@
   "expected_domains": [
     "vistos.mne.gov.pt"
   ],
-  "status": "needs_attention"
+  "status": "deprecated"
 }

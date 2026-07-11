@@ -516,6 +516,33 @@
       "status": "needs_attention"
     },
     {
+      "id": "portugal-gov-remote-work-residence",
+      "country_id": "portugal",
+      "program_ids": [
+        "portugal-d8-digital-nomad"
+      ],
+      "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+      "title": "Foreigners Act — digital nomad visa and residence permit changes",
+      "publisher": "Portuguese Government Portal",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "digital nomads",
+        "average monthly income",
+        "work contract",
+        "residence permit"
+      ],
+      "expected_domains": [
+        "www2.gov.pt"
+      ],
+      "last_checked_at": "2026-07-11T05:12:33.252Z",
+      "last_success_at": "2026-07-11T05:12:33.252Z",
+      "status": "active"
+    },
+    {
       "id": "portugal-mne-residence-visa-documentation",
       "country_id": "portugal",
       "program_ids": [],
@@ -535,12 +562,14 @@
       "expected_domains": [
         "vistos.mne.gov.pt"
       ],
-      "status": "needs_attention"
+      "status": "deprecated"
     },
     {
       "id": "spain-uge-international-teleworkers",
       "country_id": "spain",
-      "program_ids": [],
+      "program_ids": [
+        "spain-digital-nomad"
+      ],
       "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
       "title": "International teleworkers",
       "publisher": "Spanish Ministry of Inclusion, Social Security and Migration — UGE",
@@ -557,8 +586,8 @@
       "expected_domains": [
         "inclusion.gob.es"
       ],
-      "last_checked_at": "2026-07-11T04:38:37.289Z",
-      "last_success_at": "2026-07-11T04:38:37.289Z",
+      "last_checked_at": "2026-07-11T05:07:14.070Z",
+      "last_success_at": "2026-07-11T05:07:14.070Z",
       "status": "active"
     },
     {
@@ -587,7 +616,9 @@
     {
       "id": "uae-gdrfa-virtual-work-residence",
       "country_id": "uae",
-      "program_ids": [],
+      "program_ids": [
+        "uae-remote-work"
+      ],
       "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
       "title": "Issuance of the Virtual Work Residence Permit",
       "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
@@ -612,7 +643,9 @@
     {
       "id": "uae-icp-virtual-work-residence",
       "country_id": "uae",
-      "program_ids": [],
+      "program_ids": [
+        "uae-remote-work"
+      ],
       "url": "https://icp.gov.ae/en/services-details?serviceid=68e73fd45ae59b00117389f4",
       "title": "Issuance of Visa Virtual Work Residence (Virtual Work Employee)",
       "publisher": "UAE Federal Authority for Identity, Citizenship, Customs & Port Security",

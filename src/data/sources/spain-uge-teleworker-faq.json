@@ -10,7 +10,12 @@
   "priority": 1,
   "update_frequency_days": 14,
   "extraction_method": "pdf",
-  "expected_content_hints": ["international teleworker", "financial resources", "family members", "residence authorisation"],
+  "expected_content_hints": [
+    "international teleworker",
+    "financial resources",
+    "family members",
+    "residence authorisation"
+  ],
   "expected_domains": ["inclusion.gob.es"],
   "status": "needs_attention"
 }

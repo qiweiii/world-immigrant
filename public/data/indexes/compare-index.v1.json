@@ -679,6 +679,677 @@
         "confidence": "high",
         "needs_human_review": true
       }
+    },
+    {
+      "program_id": "portugal-d8-digital-nomad",
+      "country_id": "portugal",
+      "category_ids": [
+        "digital_nomad"
+      ],
+      "official_names": {
+        "en": "Temporary stay visa and residence permit for digital nomads"
+      },
+      "status": "active",
+      "pathway_mechanism": "remote_income",
+      "summary_md": {
+        "en": "Portugal's official government portal describes a temporary-stay visa and residence-permit route for digital nomads, with separate documentary conditions for employees and independent workers."
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": []
+      },
+      "income": {
+        "required": true,
+        "min_income": [
+          {
+            "amount": "variable",
+            "currency": "EUR",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "The official article states an average monthly income over the last three months of at least four Portuguese minimum wages; the current monetary amount is not fixed in this record."
+            }
+          }
+        ],
+        "accepted_sources": [
+          "remote_employment",
+          "self_employment",
+          "freelance"
+        ],
+        "income_location": "unknown",
+        "proof_history_months": 3,
+        "stability_requirement_md": {
+          "en": "The government article requires average monthly income over the last three months and different employment or independent-activity documents."
+        }
+      },
+      "timeline": {
+        "initial_validity_months": "unknown",
+        "renewable": "unknown",
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": "unknown",
+        "remote_work_allowed": true,
+        "study_allowed": "unknown",
+        "business_allowed": "unknown"
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown"
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained government article does not establish a permanent-residence outcome for this route."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained government article does not establish a citizenship outcome for this route."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 3,
+        "permanence_score": 3,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 4,
+        "policy_stability_score": 2
+      },
+      "filter": {
+        "settlement_track": "unknown",
+        "pathway_mechanism": "remote_income",
+        "pathway_type": "unknown",
+        "requires_job_offer": "unknown",
+        "requires_local_entity": "unknown"
+      },
+      "source_ids": [
+        "portugal-gov-remote-work-residence"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "If you work as an employee / In the case of independent activity",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "If you work as an employee / In the case of independent activity",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "If you work as an employee / In the case of independent activity",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa to accompany a temporary stay visa applicant",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "portugal-gov-remote-work-residence",
+            "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
+            "section": "Temporary stay visa and residence permit for digital nomads",
+            "snapshot_id": "dd5340ef12f02459b2b5c686f6b1ce4888c0b8c1f55de8655f85e46edda3f5ad",
+            "retrieved_at": "2026-07-11T05:12:33.252Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T05:12:33.252Z",
+        "updated_at": "2026-07-11T05:12:33.252Z",
+        "last_checked_at": "2026-07-11T05:12:33.252Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      }
+    },
+    {
+      "program_id": "spain-digital-nomad",
+      "country_id": "spain",
+      "category_ids": [
+        "digital_nomad"
+      ],
+      "official_names": {
+        "en": "International teleworker residence authorisation"
+      },
+      "status": "active",
+      "pathway_mechanism": "remote_income",
+      "summary_md": {
+        "en": "Spain's UGE describes an international-teleworker route for third-country nationals working remotely for companies outside Spain through computer, telematic, and telecommunications systems."
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": []
+      },
+      "income": {
+        "required": "unknown",
+        "accepted_sources": [
+          "remote_employment",
+          "self_employment",
+          "unknown"
+        ],
+        "income_location": "outside_destination",
+        "proof_history_months": "unknown",
+        "stability_requirement_md": {
+          "en": "The retained UGE page establishes work for companies outside Spain but does not state the financial-resource threshold."
+        }
+      },
+      "timeline": {
+        "initial_validity_months": "unknown",
+        "renewable": "unknown",
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": "unknown",
+        "remote_work_allowed": true,
+        "study_allowed": "unknown",
+        "business_allowed": "unknown"
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown"
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained UGE page does not establish a permanent-residence outcome for this authorisation."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained UGE page does not establish a citizenship outcome for this authorisation."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 3,
+        "permanence_score": 3,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 3,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "unknown",
+        "pathway_mechanism": "remote_income",
+        "pathway_type": "unknown",
+        "requires_job_offer": "unknown",
+        "requires_local_entity": "unknown"
+      },
+      "source_ids": [
+        "spain-uge-international-teleworkers"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional / Art.74 bis Ley 14/2013",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional / Art.74 bis Ley 14/2013",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Preguntas frecuentes",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "spain-uge-international-teleworkers",
+            "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+            "section": "Teletrabajadores de carácter internacional / Art.74 bis Ley 14/2013",
+            "snapshot_id": "5e974375c4d0af532196b053e1eb3b0cdaba2199ecb74707dba14cf7b327f164",
+            "retrieved_at": "2026-07-11T05:07:14.070Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T05:07:14.070Z",
+        "updated_at": "2026-07-11T05:07:14.070Z",
+        "last_checked_at": "2026-07-11T05:07:14.070Z",
+        "update_frequency_days": 7,
+        "confidence": "medium",
+        "needs_human_review": true
+      }
+    },
+    {
+      "program_id": "uae-remote-work",
+      "country_id": "uae",
+      "category_ids": [
+        "digital_nomad"
+      ],
+      "official_names": {
+        "en": "Virtual Work Residence"
+      },
+      "status": "active",
+      "pathway_mechanism": "remote_income",
+      "summary_md": {
+        "en": "A UAE remote-work residence route for people working remotely for an organization outside the UAE. The Dubai authority describes a one-year permit subject to renewal, while federal and Dubai sources state a USD 3,500 monthly income condition."
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": []
+      },
+      "income": {
+        "required": true,
+        "min_income": [
+          {
+            "amount": 3500,
+            "currency": "USD",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total"
+          }
+        ],
+        "accepted_sources": [
+          "remote_employment"
+        ],
+        "income_location": "outside_destination",
+        "proof_history_months": "unknown",
+        "stability_requirement_md": {
+          "en": "The UAE sources require proof of remote work for an organization outside the UAE and a salary certificate or equivalent showing at least USD 3,500."
+        }
+      },
+      "timeline": {
+        "initial_validity_months": 12,
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": "unknown",
+        "remote_work_allowed": true,
+        "study_allowed": "unknown",
+        "business_allowed": "unknown"
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown"
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained virtual-work residence sources do not establish a permanent-residence route."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained virtual-work residence sources do not establish a citizenship route."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 4,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "temporary_no_pr",
+        "pathway_mechanism": "remote_income",
+        "pathway_type": "temporary_only",
+        "requires_job_offer": "unknown",
+        "requires_local_entity": false
+      },
+      "source_ids": [
+        "uae-icp-virtual-work-residence",
+        "uae-gdrfa-virtual-work-residence"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Issuance of the virtual work residence permit",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "When a foreigner engages in remote work for an organization outside the country",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "uae-icp-virtual-work-residence",
+            "url": "https://icp.gov.ae/en/services-details?serviceid=68e73fd45ae59b00117389f4",
+            "section": "List of Required Documents for Service",
+            "snapshot_id": "d62dd210c054c690aae747e3a1a1b1f053543f03a7a147ad5cb7684704527d3f",
+            "retrieved_at": "2026-07-11T05:12:41.936Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Terms And Conditions",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "When a foreigner engages in remote work for an organization outside the country",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Requirements",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Fees",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Terms And Conditions",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Issuance of the virtual work residence permit",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "When a foreigner engages in remote work for an organization outside the country",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Additional Information",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Issuance of the virtual work residence permit",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Issuance of the virtual work residence permit",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "uae-gdrfa-virtual-work-residence",
+            "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+            "section": "Terms And Conditions",
+            "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8",
+            "retrieved_at": "2026-07-11T05:12:40.261Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T05:12:41.936Z",
+        "updated_at": "2026-07-11T05:12:41.936Z",
+        "last_checked_at": "2026-07-11T05:12:41.936Z",
+        "update_frequency_days": 7,
+        "confidence": "medium",
+        "needs_human_review": true
+      }
     }
   ]
 }

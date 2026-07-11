@@ -8,6 +8,7 @@ import type { Source } from "../src/lib/schema";
 import {
   type ContentChangeState,
   classifyContentChange,
+  extractPdfText,
   normalizeSourceText,
   selectDueSources,
   sha256,
@@ -355,7 +356,12 @@ async function fetchSource(source: Source, previous: SourceState | undefined): P
       response.headers.get("content-type")?.split(";")[0] ?? "application/octet-stream";
     const rawHash = sha256(raw);
     const textLike = /^(text\/|application\/(xhtml\+xml|json|xml))/.test(contentType);
-    if (!textLike) {
+    let sourceText: string;
+    if (textLike) {
+      sourceText = new TextDecoder().decode(raw);
+    } else if (source.extraction_method === "pdf" && contentType === "application/pdf") {
+      sourceText = await extractPdfText(raw, maxBytes * 4);
+    } else {
       return {
         source_id: source.id,
         source_url: source.url,
@@ -369,7 +375,7 @@ async function fetchSource(source: Source, previous: SourceState | undefined): P
       };
     }
 
-    const normalized = normalizeSourceText(new TextDecoder().decode(raw), contentType);
+    const normalized = normalizeSourceText(sourceText, textLike ? contentType : "text/plain");
     if (!normalized) throw new Error("Normalized source text is empty");
     const normalizedHash = sha256(normalized);
     const change = classifyContentChange(previous?.normalized_hash, normalizedHash);

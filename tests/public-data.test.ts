@@ -8,8 +8,14 @@ test("public data generation exposes one complete program through stable indexes
   const dataset = await loadCanonicalData();
   const expectedGenerationTime = Math.max(
     ...[
-      ...dataset.countries.flatMap(({ freshness }) => [freshness.updated_at, freshness.last_checked_at]),
-      ...dataset.programs.flatMap(({ freshness }) => [freshness.updated_at, freshness.last_checked_at]),
+      ...dataset.countries.flatMap(({ freshness }) => [
+        freshness.updated_at,
+        freshness.last_checked_at,
+      ]),
+      ...dataset.programs.flatMap(({ freshness }) => [
+        freshness.updated_at,
+        freshness.last_checked_at,
+      ]),
       ...dataset.sources.flatMap(({ last_success_at, last_checked_at }) =>
         [last_success_at, last_checked_at].filter((value): value is string => Boolean(value)),
       ),
@@ -21,8 +27,8 @@ test("public data generation exposes one complete program through stable indexes
   assert.deepEqual(output.index.counts, {
     categories: 5,
     countries: 5,
-    programs: 2,
-    sources: 25,
+    programs: 5,
+    sources: 26,
   });
   assert.equal(output.index.generated_at, "2026-07-10T12:00:00.000Z");
   const canada = output.filterIndex.programs.find(

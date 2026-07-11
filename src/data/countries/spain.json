@@ -15,12 +15,9 @@
     "color": "#AA151B",
     "source": "flag"
   },
-  "official_source_ids": [
-    "spain-uge-international-teleworkers",
-    "spain-uge-teleworker-faq"
-  ],
+  "official_source_ids": ["spain-uge-international-teleworkers", "spain-uge-teleworker-faq"],
   "categories": ["digital_nomad"],
-  "program_ids": [],
+  "program_ids": ["spain-digital-nomad"],
   "freshness": {
     "created_at": "2026-07-11T04:30:43Z",
     "updated_at": "2026-07-11T04:30:43Z",

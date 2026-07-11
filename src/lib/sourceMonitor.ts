@@ -1,3 +1,4 @@
+import { spawn } from "node:child_process";
 import { createHash } from "node:crypto";
 import type { Source } from "./schema";
 
@@ -54,6 +55,45 @@ export function normalizeSourceText(content: string, contentType: string) {
 
 export function sha256(value: string | Uint8Array) {
   return createHash("sha256").update(value).digest("hex");
+}
+
+export function extractPdfText(raw: Uint8Array, maxOutputBytes: number) {
+  return new Promise<string>((resolve, reject) => {
+    const child = spawn("pdftotext", ["-layout", "-", "-"], {
+      stdio: ["pipe", "pipe", "pipe"],
+    });
+    const chunks: Buffer[] = [];
+    let total = 0;
+    let settled = false;
+
+    const fail = (error: Error) => {
+      if (settled) return;
+      settled = true;
+      child.kill();
+      reject(error);
+    };
+
+    child.on("error", (error) => fail(error));
+    child.stderr.resume();
+    child.stdout.on("data", (chunk: Buffer) => {
+      total += chunk.byteLength;
+      if (total > maxOutputBytes) {
+        fail(new Error(`Extracted PDF text exceeds ${maxOutputBytes} bytes`));
+        return;
+      }
+      chunks.push(chunk);
+    });
+    child.on("close", (code) => {
+      if (settled) return;
+      settled = true;
+      if (code !== 0) {
+        reject(new Error(`pdftotext exited with code ${code ?? "unknown"}`));
+        return;
+      }
+      resolve(Buffer.concat(chunks).toString("utf8"));
+    });
+    child.stdin.end(raw);
+  });
 }
 
 export function normalizedIncludesQuote(normalizedSource: string, quote: string) {

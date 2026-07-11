@@ -1,0 +1,279 @@
+{
+  "id": "uae-remote-work",
+  "country_id": "uae",
+  "category_ids": ["digital_nomad"],
+  "official_names": {
+    "en": "Virtual Work Residence"
+  },
+  "aliases": [
+    "UAE Virtual Work Residence",
+    "Virtual Work Employee visa",
+    "Dubai Virtual Work Residence"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "Official UAE sources describe a remote-work residence route. The source record remains under human review because service details and fees can change."
+  },
+  "summary_md": {
+    "en": "A UAE remote-work residence route for people working remotely for an organization outside the UAE. The Dubai authority describes a one-year permit subject to renewal, while federal and Dubai sources state a USD 3,500 monthly income condition."
+  },
+  "good_for_md": {
+    "en": "Remote employees with an overseas organization, documented monthly income of at least USD 3,500, health insurance, and the documents required by the issuing authority."
+  },
+  "not_good_for_md": {
+    "en": "Applicants who cannot document remote work for an organization outside the UAE or the stated monthly income condition. Family, local-employment, and settlement outcomes require separate official confirmation."
+  },
+  "pathway_mechanism": "remote_income",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": true,
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": "unknown",
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": true,
+    "min_income": [
+      {
+        "amount": 3500,
+        "currency": "USD",
+        "period": "monthly",
+        "applies_to": "primary",
+        "calculation": "minimum_total"
+      }
+    ],
+    "accepted_sources": ["remote_employment"],
+    "income_location": "outside_destination",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The UAE sources require proof of remote work for an organization outside the UAE and a salary certificate or equivalent showing at least USD 3,500."
+    }
+  },
+  "timeline": {
+    "initial_validity_months": 12,
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": true,
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained virtual-work residence sources do not establish a permanent-residence route."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained virtual-work residence sources do not establish a citizenship route."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The route and core remote-work condition are stated on official UAE authority pages, but family rights, local-employment limits, fees, and longer-term settlement are not fully represented by this source set."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 4,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "temporary_no_pr",
+    "pathway_mechanism": "remote_income",
+    "min_monthly_income_usd": 3500,
+    "accepts_remote_income": true,
+    "accepts_self_employment": "unknown",
+    "accepts_overseas_remote_income": true,
+    "requires_degree": "unknown",
+    "requires_job_offer": "unknown",
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": true,
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "last_checked_at": "2026-07-11T05:12:41.936Z"
+  },
+  "source_ids": ["uae-icp-virtual-work-residence", "uae-gdrfa-virtual-work-residence"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Issuance of the virtual work residence permit",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "When a foreigner engages in remote work for an organization outside the country",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "uae-icp-virtual-work-residence",
+        "url": "https://icp.gov.ae/en/services-details?serviceid=68e73fd45ae59b00117389f4",
+        "section": "List of Required Documents for Service",
+        "retrieved_at": "2026-07-11T05:12:41.936Z",
+        "snapshot_id": "d62dd210c054c690aae747e3a1a1b1f053543f03a7a147ad5cb7684704527d3f"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Terms And Conditions",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "When a foreigner engages in remote work for an organization outside the country",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Requirements",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Fees",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Terms And Conditions",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Issuance of the virtual work residence permit",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "When a foreigner engages in remote work for an organization outside the country",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Additional Information",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Issuance of the virtual work residence permit",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Issuance of the virtual work residence permit",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "uae-gdrfa-virtual-work-residence",
+        "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+        "section": "Terms And Conditions",
+        "retrieved_at": "2026-07-11T05:12:40.261Z",
+        "snapshot_id": "ef32bf4cefc3061867ab2b429fb941493ed49e9d8f17499ba435e145e2b483e8"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T05:12:41.936Z",
+    "updated_at": "2026-07-11T05:12:41.936Z",
+    "last_checked_at": "2026-07-11T05:12:41.936Z",
+    "update_frequency_days": 7,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T05:12:41.936Z",
+      "summary": "Added a conservative remote-income residence fixture from retained UAE ICP and GDRFA evidence.",
+      "source_ids": ["uae-icp-virtual-work-residence", "uae-gdrfa-virtual-work-residence"]
+    }
+  ]
+}

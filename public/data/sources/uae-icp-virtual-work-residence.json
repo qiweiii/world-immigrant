@@ -1,7 +1,9 @@
 {
   "id": "uae-icp-virtual-work-residence",
   "country_id": "uae",
-  "program_ids": [],
+  "program_ids": [
+    "uae-remote-work"
+  ],
   "url": "https://icp.gov.ae/en/services-details?serviceid=68e73fd45ae59b00117389f4",
   "title": "Issuance of Visa Virtual Work Residence (Virtual Work Employee)",
   "publisher": "UAE Federal Authority for Identity, Citizenship, Customs & Port Security",

@@ -1,7 +1,7 @@
 {
   "id": "spain-uge-international-teleworkers",
   "country_id": "spain",
-  "program_ids": [],
+  "program_ids": ["spain-digital-nomad"],
   "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
   "title": "International teleworkers",
   "publisher": "Spanish Ministry of Inclusion, Social Security and Migration — UGE",
@@ -10,9 +10,13 @@
   "priority": 1,
   "update_frequency_days": 7,
   "extraction_method": "web_extract",
-  "expected_content_hints": ["Teletrabajadores de carácter internacional", "Art.74 bis Ley 14/2013", "empresas radicadas fuera"],
+  "expected_content_hints": [
+    "Teletrabajadores de carácter internacional",
+    "Art.74 bis Ley 14/2013",
+    "empresas radicadas fuera"
+  ],
   "expected_domains": ["inclusion.gob.es"],
-  "last_checked_at": "2026-07-11T04:38:37.289Z",
-  "last_success_at": "2026-07-11T04:38:37.289Z",
+  "last_checked_at": "2026-07-11T05:07:14.070Z",
+  "last_success_at": "2026-07-11T05:07:14.070Z",
   "status": "active"
 }

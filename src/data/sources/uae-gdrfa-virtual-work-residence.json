@@ -1,7 +1,7 @@
 {
   "id": "uae-gdrfa-virtual-work-residence",
   "country_id": "uae",
-  "program_ids": [],
+  "program_ids": ["uae-remote-work"],
   "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
   "title": "Issuance of the Virtual Work Residence Permit",
   "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
