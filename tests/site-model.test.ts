@@ -10,9 +10,15 @@ test("country and program page models resolve canonical relationships", async ()
   const programs = buildProgramPageModels(dataset);
   const byId = Object.fromEntries(countries.map((model) => [model.country.id, model]));
 
-  assert.equal(countries.length, 2);
+  assert.equal(countries.length, dataset.countries.length);
   assert.ok(byId.canada);
   assert.ok(byId.australia);
+  assert.ok(byId.portugal);
+  assert.ok(byId.spain);
+  assert.ok(byId.uae);
+  assert.deepEqual(byId.portugal.programs, []);
+  assert.deepEqual(byId.spain.programs, []);
+  assert.deepEqual(byId.uae.programs, []);
   assert.deepEqual(
     byId.canada.programs.map(({ id }) => id),
     ["canada-express-entry-fsw"],

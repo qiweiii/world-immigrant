@@ -492,6 +492,146 @@
       "last_checked_at": "2026-07-10T00:00:00Z",
       "last_success_at": "2026-07-10T00:00:00Z",
       "status": "active"
+    },
+    {
+      "id": "portugal-aima-digital-nomad-residence",
+      "country_id": "portugal",
+      "program_ids": [],
+      "url": "https://aima.gov.pt/pt/trabalhar/autorizacao-de-residencia-para-o-exercicio-de-atividade-profissional-prestada-de-forma-remota-com-visto-de-residencia-para-o-exe",
+      "title": "Residence authorization for remote professional activity",
+      "publisher": "AIMA — Agency for Integration, Migration and Asylum",
+      "source_type": "official",
+      "language": "pt",
+      "priority": 1,
+      "update_frequency_days": 7,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "atividade profissional prestada de forma remota",
+        "visto de residência",
+        "Nómadas Digitais"
+      ],
+      "expected_domains": [
+        "aima.gov.pt"
+      ],
+      "status": "needs_attention"
+    },
+    {
+      "id": "portugal-mne-residence-visa-documentation",
+      "country_id": "portugal",
+      "program_ids": [],
+      "url": "https://vistos.mne.gov.pt/en/national-visas/necessary-documentation/residency",
+      "title": "National residence visas — required documentation",
+      "publisher": "Portuguese Ministry of Foreign Affairs — National Visas Portal",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Proof of means of subsistence",
+        "residence visa",
+        "work contract or service provider contract"
+      ],
+      "expected_domains": [
+        "vistos.mne.gov.pt"
+      ],
+      "status": "needs_attention"
+    },
+    {
+      "id": "spain-uge-international-teleworkers",
+      "country_id": "spain",
+      "program_ids": [],
+      "url": "https://www.inclusion.gob.es/web/unidadgrandesempresas/teletrabajadores",
+      "title": "International teleworkers",
+      "publisher": "Spanish Ministry of Inclusion, Social Security and Migration — UGE",
+      "source_type": "official",
+      "language": "es",
+      "priority": 1,
+      "update_frequency_days": 7,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Teletrabajadores de carácter internacional",
+        "Art.74 bis Ley 14/2013",
+        "empresas radicadas fuera"
+      ],
+      "expected_domains": [
+        "inclusion.gob.es"
+      ],
+      "last_checked_at": "2026-07-11T04:38:37.289Z",
+      "last_success_at": "2026-07-11T04:38:37.289Z",
+      "status": "active"
+    },
+    {
+      "id": "spain-uge-teleworker-faq",
+      "country_id": "spain",
+      "program_ids": [],
+      "url": "https://www.inclusion.gob.es/documents/d/unidadgrandesempresas/digital-nomad-faqs-english",
+      "title": "Frequently asked questions for international teleworkers",
+      "publisher": "Spanish Ministry of Inclusion, Social Security and Migration — UGE",
+      "source_type": "government_pdf",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "pdf",
+      "expected_content_hints": [
+        "international teleworker",
+        "financial resources",
+        "family members",
+        "residence authorisation"
+      ],
+      "expected_domains": [
+        "inclusion.gob.es"
+      ],
+      "status": "needs_attention"
+    },
+    {
+      "id": "uae-gdrfa-virtual-work-residence",
+      "country_id": "uae",
+      "program_ids": [],
+      "url": "https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936",
+      "title": "Issuance of the Virtual Work Residence Permit",
+      "publisher": "General Directorate of Residency and Foreigners Affairs — Dubai",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 7,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "remote work",
+        "health insurance",
+        "3,500",
+        "subject to renewal"
+      ],
+      "expected_domains": [
+        "gdrfad.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T04:38:40.715Z",
+      "last_success_at": "2026-07-11T04:38:40.715Z",
+      "status": "active"
+    },
+    {
+      "id": "uae-icp-virtual-work-residence",
+      "country_id": "uae",
+      "program_ids": [],
+      "url": "https://icp.gov.ae/en/services-details?serviceid=68e73fd45ae59b00117389f4",
+      "title": "Issuance of Visa Virtual Work Residence (Virtual Work Employee)",
+      "publisher": "UAE Federal Authority for Identity, Citizenship, Customs & Port Security",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 7,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Virtual Work Residence",
+        "Proof of remote employment",
+        "Salary certificate"
+      ],
+      "expected_domains": [
+        "icp.gov.ae"
+      ],
+      "last_checked_at": "2026-07-11T04:38:42.349Z",
+      "last_success_at": "2026-07-11T04:38:42.349Z",
+      "status": "active"
     }
   ]
 }

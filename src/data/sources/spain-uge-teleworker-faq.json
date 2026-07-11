@@ -1,0 +1,16 @@
+{
+  "id": "spain-uge-teleworker-faq",
+  "country_id": "spain",
+  "program_ids": [],
+  "url": "https://www.inclusion.gob.es/documents/d/unidadgrandesempresas/digital-nomad-faqs-english",
+  "title": "Frequently asked questions for international teleworkers",
+  "publisher": "Spanish Ministry of Inclusion, Social Security and Migration — UGE",
+  "source_type": "government_pdf",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "pdf",
+  "expected_content_hints": ["international teleworker", "financial resources", "family members", "residence authorisation"],
+  "expected_domains": ["inclusion.gob.es"],
+  "status": "needs_attention"
+}

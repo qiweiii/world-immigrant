@@ -1,0 +1,16 @@
+{
+  "id": "portugal-aima-digital-nomad-residence",
+  "country_id": "portugal",
+  "program_ids": [],
+  "url": "https://aima.gov.pt/pt/trabalhar/autorizacao-de-residencia-para-o-exercicio-de-atividade-profissional-prestada-de-forma-remota-com-visto-de-residencia-para-o-exe",
+  "title": "Residence authorization for remote professional activity",
+  "publisher": "AIMA — Agency for Integration, Migration and Asylum",
+  "source_type": "official",
+  "language": "pt",
+  "priority": 1,
+  "update_frequency_days": 7,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["atividade profissional prestada de forma remota", "visto de residência", "Nómadas Digitais"],
+  "expected_domains": ["aima.gov.pt"],
+  "status": "needs_attention"
+}

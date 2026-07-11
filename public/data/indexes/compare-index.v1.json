@@ -11,6 +11,7 @@
         "en": "Skilled Independent visa (subclass 189) — Points-tested stream"
       },
       "status": "active",
+      "pathway_mechanism": "points_invitation",
       "summary_md": {
         "en": "A permanent skilled visa for invited workers who do not need an employer or state sponsor. Applicants must nominate an eligible occupation, hold a suitable skills assessment, satisfy the points test, and be invited to apply."
       },
@@ -26,6 +27,14 @@
             "applies_to": "primary"
           }
         ]
+      },
+      "income": {
+        "required": false,
+        "accepted_sources": [],
+        "income_location": "not_applicable",
+        "stability_requirement_md": {
+          "en": "No fixed income floor is stated as a universal subclass 189 points-tested minimum."
+        }
       },
       "timeline": {
         "application_processing_time_md": {
@@ -79,6 +88,13 @@
         "source_confidence_score": 4,
         "policy_stability_score": 4
       },
+      "filter": {
+        "settlement_track": "direct_pr",
+        "pathway_mechanism": "points_invitation",
+        "pathway_type": "direct_pr",
+        "requires_job_offer": false,
+        "requires_local_entity": false
+      },
       "source_ids": [
         "australia-home-affairs-189",
         "australia-home-affairs-189-points-tested",
@@ -95,6 +111,15 @@
             "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skilled-independent-189/points-tested",
             "section": "Overview",
             "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "australia-skillselect-eoi",
+            "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/expression-of-interest",
+            "section": "points threshold of 65",
+            "snapshot_id": "1c6541a53f81c1cad6b58ec025cb89fbd3850ccb83180f49e9ab620990df4c64",
             "retrieved_at": "2026-07-10T00:00:00Z"
           }
         ],
@@ -254,6 +279,7 @@
         "en": "Federal Skilled Worker Program"
       },
       "status": "active",
+      "pathway_mechanism": "points_invitation",
       "summary_md": {
         "en": "A federal permanent-residence pathway for skilled workers with foreign work experience. Candidates must satisfy the Federal Skilled Worker minimum requirements and score at least 67 out of 100 selection-factor points before competing for an invitation through Express Entry."
       },
@@ -365,6 +391,14 @@
           }
         ]
       },
+      "income": {
+        "required": false,
+        "accepted_sources": [],
+        "income_location": "not_applicable",
+        "stability_requirement_md": {
+          "en": "The program uses settlement funds rather than a recurring-income threshold."
+        }
+      },
       "timeline": {
         "application_processing_time_md": {
           "en": "Processing time is dynamic and depends on the application and current IRCC inventory. Use the cited official processing-times tool for the current estimate."
@@ -424,6 +458,13 @@
         "source_confidence_score": 5,
         "policy_stability_score": 4
       },
+      "filter": {
+        "settlement_track": "direct_pr",
+        "pathway_mechanism": "points_invitation",
+        "pathway_type": "direct_pr",
+        "requires_job_offer": false,
+        "requires_local_entity": false
+      },
       "source_ids": [
         "canada-ircc-fsw",
         "canada-ircc-proof-funds",
@@ -447,6 +488,15 @@
             "section": "Federal Skilled Worker Program",
             "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
             "quote_hash": "8678a16ca7a18bd693f1440319193862dc9faac778100a27e7104b3cca958383",
+            "retrieved_at": "2026-07-10T00:00:00Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "canada-ircc-fsw",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+            "section": "Federal Skilled Worker Program",
+            "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
             "retrieved_at": "2026-07-10T00:00:00Z"
           }
         ],

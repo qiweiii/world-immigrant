@@ -86,6 +86,108 @@
         "confidence": "high",
         "needs_human_review": true
       }
+    },
+    {
+      "id": "portugal",
+      "iso2": "PT",
+      "iso3": "PRT",
+      "names": {
+        "en": "Portugal",
+        "zh-Hans": "葡萄牙"
+      },
+      "region": "Europe",
+      "summary_md": {
+        "en": "Coverage is being expanded with official sources for remote-work residence. A complete pathway record will be added after the source set is reviewed.",
+        "zh-Hans": "正在通过官方来源扩展远程工作居留信息。完整路径记录将在来源集完成审查后添加。"
+      },
+      "brand": {
+        "color": "#006600",
+        "source": "flag"
+      },
+      "official_source_ids": [
+        "portugal-aima-digital-nomad-residence",
+        "portugal-mne-residence-visa-documentation"
+      ],
+      "categories": [
+        "digital_nomad"
+      ],
+      "program_ids": [],
+      "freshness": {
+        "created_at": "2026-07-11T04:30:43Z",
+        "updated_at": "2026-07-11T04:30:43Z",
+        "last_checked_at": "2026-07-11T04:30:43Z",
+        "update_frequency_days": 7,
+        "confidence": "medium",
+        "needs_human_review": true
+      }
+    },
+    {
+      "id": "spain",
+      "iso2": "ES",
+      "iso3": "ESP",
+      "names": {
+        "en": "Spain",
+        "zh-Hans": "西班牙"
+      },
+      "region": "Europe",
+      "summary_md": {
+        "en": "Coverage is being expanded with official sources for international teleworker residence. A complete pathway record will be added after the source set is reviewed.",
+        "zh-Hans": "正在通过官方来源扩展国际远程工作者居留信息。完整路径记录将在来源集完成审查后添加。"
+      },
+      "brand": {
+        "color": "#AA151B",
+        "source": "flag"
+      },
+      "official_source_ids": [
+        "spain-uge-international-teleworkers",
+        "spain-uge-teleworker-faq"
+      ],
+      "categories": [
+        "digital_nomad"
+      ],
+      "program_ids": [],
+      "freshness": {
+        "created_at": "2026-07-11T04:30:43Z",
+        "updated_at": "2026-07-11T04:30:43Z",
+        "last_checked_at": "2026-07-11T04:30:43Z",
+        "update_frequency_days": 7,
+        "confidence": "medium",
+        "needs_human_review": true
+      }
+    },
+    {
+      "id": "uae",
+      "iso2": "AE",
+      "iso3": "ARE",
+      "names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
+      "region": "Middle East",
+      "summary_md": {
+        "en": "Coverage is being expanded with official sources for remote-work residence. A complete pathway record will be added after the source set is reviewed.",
+        "zh-Hans": "正在通过官方来源扩展远程工作居留信息。完整路径记录将在来源集完成审查后添加。"
+      },
+      "brand": {
+        "color": "#00732F",
+        "source": "flag"
+      },
+      "official_source_ids": [
+        "uae-icp-virtual-work-residence",
+        "uae-gdrfa-virtual-work-residence"
+      ],
+      "categories": [
+        "digital_nomad"
+      ],
+      "program_ids": [],
+      "freshness": {
+        "created_at": "2026-07-11T04:30:43Z",
+        "updated_at": "2026-07-11T04:30:43Z",
+        "last_checked_at": "2026-07-11T04:30:43Z",
+        "update_frequency_days": 7,
+        "confidence": "medium",
+        "needs_human_review": true
+      }
     }
   ]
 }
