@@ -1,0 +1,395 @@
+{
+  "id": "canada-express-entry-cec",
+  "country_id": "canada",
+  "category_ids": ["skilled_worker"],
+  "official_names": {
+    "en": "Canadian Experience Class",
+    "zh-Hans": "加拿大经验类移民"
+  },
+  "aliases": ["CEC", "Canadian Experience Class", "Express Entry CEC"],
+  "status": "active",
+  "status_note_md": {
+    "en": "The Canadian Experience Class is an active Express Entry permanent-residence program for skilled workers with qualifying Canadian work experience. Meeting minimums enters the pool but does not guarantee an invitation.",
+    "zh-Hans": "加拿大经验类是快速通道下面向具备合资格加拿大工作经验的技术工人的现行永久居留计划。满足最低要求可进入人才库，但不能保证获得邀请。"
+  },
+  "summary_md": {
+    "en": "A federal permanent-residence pathway for skilled workers who have at least one year of authorized skilled work experience in Canada (TEER 0–3), meet language minimums, and plan to live outside Quebec. Candidates compete for invitations through Express Entry.",
+    "zh-Hans": "面向在加拿大拥有至少一年获授权技术工作经验（TEER 0–3）、满足语言最低要求并计划在魁北克以外定居的技术工人的联邦永久居留途径。候选人通过快速通道竞争邀请。"
+  },
+  "good_for_md": {
+    "en": "Workers with at least 1,560 hours of paid skilled Canadian work in TEER 0–3 occupations within the last three years, authorized temporary-resident work status at the time of that work, and IRCC-approved language results.",
+    "zh-Hans": "适合在过去三年内拥有至少 1,560 小时 TEER 0–3 带薪加拿大技术工作经验、当时具备获授权临时居民工作身份，并持有 IRCC 认可语言成绩的申请人。"
+  },
+  "not_good_for_md": {
+    "en": "People without qualifying Canadian skilled work experience, applicants relying on self-employment or full-time student work (which generally do not count), those planning to settle in Quebec under provincial selection, or candidates who cannot meet language or admissibility rules.",
+    "zh-Hans": "不适合没有合资格加拿大技术工作经验、主要依赖自雇或全日制学生期间工作（通常不计）、计划在魁北克通过省甄选定居，或无法满足语言与入境规则的申请人。"
+  },
+  "pathway_mechanism": "points_invitation",
+  "eligibility": {
+    "age": {
+      "points_sensitive": true,
+      "note_md": {
+        "en": "There is no stated hard maximum age for Canadian Experience Class eligibility. Age affects Comprehensive Ranking System points in the Express Entry pool.",
+        "zh-Hans": "加拿大经验类资格没有规定硬性最高年龄。年龄会影响快速通道人才库中的综合排名系统分数。"
+      }
+    },
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": false,
+      "note_md": {
+        "en": "IRCC states there is no education requirement for the Canadian Experience Class. Canadian or foreign credentials with an Educational Credential Assessment can still improve Express Entry ranking.",
+        "zh-Hans": "IRCC 说明加拿大经验类没有教育要求。加拿大学历或经教育证书评估的外国学历仍可提高快速通道排名。"
+      }
+    },
+    "work_experience": {
+      "min_years": 1,
+      "occupation_list_required": true,
+      "note_md": {
+        "en": "At least 1 year (1,560 hours) of paid skilled work in Canada in TEER 0, 1, 2, or 3 occupations is required within the 3 years before applying. The work must have been performed while authorized under temporary resident status and must match the NOC lead statement and most main duties. Self-employment and work while a full-time student generally do not count, subject to limited physician public-policy exceptions.",
+        "zh-Hans": "申请前三年内需要至少 1 年（1,560 小时）在加拿大 TEER 0、1、2 或 3 职业中的带薪技术工作。工作必须在获授权的临时居民身份下完成，并符合 NOC 主要描述与多数主要职责。自雇和全日制学生期间的工作通常不计，但有限的医生公共政策例外除外。"
+      }
+    },
+    "language": [
+      {
+        "language": "en-or-fr",
+        "test": "IRCC-approved English or French test",
+        "minimum_level": "CLB/NCLC 7 for TEER 0–1; CLB/NCLC 5 for TEER 2–3",
+        "minimum_benchmark": 5,
+        "note_md": {
+          "en": "Minimum language level depends on the NOC TEER of the skilled work: CLB 7 or NCLC 7 in all four abilities for TEER 0 and 1, and CLB 5 or NCLC 5 for TEER 2 and 3. Results must be less than two years old when the Express Entry profile and permanent-residence application are submitted.",
+          "zh-Hans": "最低语言要求取决于技术工作的 NOC TEER：TEER 0 和 1 要求四项能力均达到 CLB 7 或 NCLC 7；TEER 2 和 3 要求 CLB 5 或 NCLC 5。提交快速通道资料和永久居留申请时，成绩必须少于两年。"
+        }
+      }
+    ],
+    "health_check_required": true,
+    "police_certificate_required": true,
+    "points_based": true,
+    "invitation_competition_level": "high",
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Principal applicant, including right of permanent residence fee",
+          "zh-Hans": "主申请人，包括永久居留权费用"
+        },
+        "amount": 1590,
+        "currency": "CAD",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Principal applicant, without right of permanent residence fee",
+          "zh-Hans": "主申请人，无永久居留权费用"
+        },
+        "amount": 990,
+        "currency": "CAD",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Spouse or partner, including right of permanent residence fee",
+          "zh-Hans": "配偶或伴侣，包括永久居留权费用"
+        },
+        "amount": 1590,
+        "currency": "CAD",
+        "applies_to": "family"
+      },
+      {
+        "label": {
+          "en": "Dependent child",
+          "zh-Hans": "受抚养子女"
+        },
+        "amount": 270,
+        "currency": "CAD",
+        "applies_to": "per_dependent"
+      }
+    ]
+  },
+  "income": {
+    "required": false,
+    "accepted_sources": ["employment"],
+    "income_location": "inside_destination",
+    "stability_requirement_md": {
+      "en": "The program requires qualifying paid Canadian skilled work experience rather than a separate recurring-income threshold or settlement-funds table.",
+      "zh-Hans": "该计划要求合资格的带薪加拿大技术工作经验，而不是单独的经常性收入门槛或定居资金表。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Processing time is dynamic and depends on the application and current IRCC inventory. Use the official processing-times tool for the current estimate after an invitation to apply.",
+      "zh-Hans": "处理时间是动态的，取决于申请和当前 IRCC 库存。获邀申请后请使用官方处理时间工具查看当前估计。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "renewable": false
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": true,
+    "study_allowed": true,
+    "business_allowed": "unknown",
+    "healthcare_access_md": {
+      "en": "Permanent residents may qualify for public health coverage, but enrollment and waiting rules are provincial or territorial.",
+      "zh-Hans": "永久居民可能有资格享受公共卫生保险，但注册和等待规则由省或地区规定。"
+    }
+  },
+  "family": {
+    "spouse_or_partner_allowed": true,
+    "unmarried_partner_allowed": true,
+    "children_allowed": true,
+    "spouse_work_allowed": true,
+    "dependent_parents_allowed": "not_applicable",
+    "note_md": {
+      "en": "A spouse or common-law partner and dependent children must be declared and may accompany the principal applicant, subject to admissibility and document rules.",
+      "zh-Hans": "配偶或同居伴侣和受抚养子女必须申报并可以陪同主申请人，但须符合入境与文件规则。"
+    }
+  },
+  "pr_pathway": {
+    "available": true,
+    "summary_md": {
+      "en": "A successful Canadian Experience Class application grants Canadian permanent residence directly through Express Entry.",
+      "zh-Hans": "成功的加拿大经验类申请通过快速通道直接授予加拿大永久居留权。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "indirect",
+    "min_residence_years": 3,
+    "summary_md": {
+      "en": "Permanent residence can lead to citizenship after the separate citizenship physical-presence, language, and other requirements are met.",
+      "zh-Hans": "满足单独的公民身份实际居住、语言和其他要求后，永久居留可通向公民身份。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 4,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The program is established and documented by IRCC. Invitation patterns, TEER classification, language cut-offs, fees, and processing times can change and need scheduled checks.",
+      "zh-Hans": "该计划由 IRCC 制定并记录。邀请模式、TEER 分类、语言门槛、费用和处理时间可能变化，需要定期检查。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 5,
+    "family_friendliness_score": 4,
+    "source_confidence_score": 5,
+    "policy_stability_score": 4
+  },
+  "filter": {
+    "pathway_type": "direct_pr",
+    "settlement_track": "direct_pr",
+    "pathway_mechanism": "points_invitation",
+    "accepts_remote_income": "not_applicable",
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": "not_applicable",
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": true,
+    "requires_local_entity": false,
+    "allows_family": true,
+    "work_allowed": true,
+    "remote_work_allowed": true,
+    "leads_to_pr": true,
+    "leads_to_citizenship": "indirect",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 4,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T13:30:46.000Z"
+  },
+  "source_ids": [
+    "canada-ircc-cec",
+    "canada-ircc-language-tests",
+    "canada-ircc-fees",
+    "canada-ircc-rounds",
+    "canada-ircc-citizenship",
+    "canada-ircc-pr-rights",
+    "canada-ircc-family-inclusion",
+    "canada-ircc-police-certificates",
+    "canada-ircc-medical-exams",
+    "canada-ircc-processing-times"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Canadian Experience Class",
+        "quote_md": "The Canadian Experience Class is for skilled workers who have Canadian work experience and want to become permanent residents.",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+        "quote_hash": "57ce579ec3c520606a96c9fd64c8dd0ec6552df62f6240a36e541e8be12e54b0"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Canadian Experience Class",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Canadian skilled work experience and where you can live",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Canadian skilled work experience",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Self-employment and student work experience; Where you can live in Canada",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Canadian Experience Class",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Canadian skilled work experience, language ability, education, admissibility",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629"
+      },
+      {
+        "source_id": "canada-ircc-language-tests",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+        "section": "Canadian Experience Class language requirements",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "49a30ed7eace3803a70063a068b8692175ef07f93fbed1cb34da46f968ac134f"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "canada-ircc-fees",
+        "url": "https://ircc.canada.ca/english/information/fees/fees.asp",
+        "section": "Economic immigration (including Express Entry) fees",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "0f6dce57d6b5c1180025783417a6eb73a12c6eeae89ade8accf88998034a4723"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Paid work requirement",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "canada-ircc-processing-times",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+        "section": "Dynamic processing times",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "0e6f5b1e07ef4cc6f8016e7d407be1a9d2e83836565744e33078e641ad78e357"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "canada-ircc-pr-rights",
+        "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
+        "section": "Permanent resident right to live, work or study in Canada",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "82ee40826dbf95931477d61a12dd10867729123a2b114eb7f888e79d1fba5c63"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "canada-ircc-family-inclusion",
+        "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28",
+        "section": "Who to include on a permanent residence application",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "039579798e31c030da1c90fa4967f61c05ad3f71a002c16062b27fd4e523a037"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Canadian Experience Class permanent residence",
+        "quote_md": "The Canadian Experience Class is for skilled workers who have Canadian work experience and want to become permanent residents.",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+        "quote_hash": "57ce579ec3c520606a96c9fd64c8dd0ec6552df62f6240a36e541e8be12e54b0"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "canada-ircc-citizenship",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/who.html",
+        "section": "Canadian citizenship: Who can apply",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "71d38956f91d34e513c253c9ddc58488e6d29aeefaa100cd555377c87bcc4e5b"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "canada-ircc-cec",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+        "section": "Conservative Canadian Experience Class filter fields",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T13:12:00Z",
+    "updated_at": "2026-07-11T13:12:00Z",
+    "last_checked_at": "2026-07-11T13:30:46.000Z",
+    "update_frequency_days": 7,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T13:12:00Z",
+      "summary": "Added Canadian Experience Class coverage from official IRCC Express Entry sources.",
+      "source_ids": [
+        "canada-ircc-cec",
+        "canada-ircc-language-tests",
+        "canada-ircc-fees",
+        "canada-ircc-rounds",
+        "canada-ircc-citizenship",
+        "canada-ircc-pr-rights",
+        "canada-ircc-family-inclusion",
+        "canada-ircc-police-certificates",
+        "canada-ircc-medical-exams",
+        "canada-ircc-processing-times"
+      ]
+    }
+  ]
+}

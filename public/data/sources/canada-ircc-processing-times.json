@@ -2,7 +2,8 @@
   "id": "canada-ircc-processing-times",
   "country_id": "canada",
   "program_ids": [
-    "canada-express-entry-fsw"
+    "canada-express-entry-fsw",
+    "canada-express-entry-cec"
   ],
   "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
   "title": "Check current IRCC processing times",

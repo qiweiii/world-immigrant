@@ -2,7 +2,8 @@
   "id": "canada-ircc-family-inclusion",
   "country_id": "canada",
   "program_ids": [
-    "canada-express-entry-fsw"
+    "canada-express-entry-fsw",
+    "canada-express-entry-cec"
   ],
   "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28",
   "title": "Who to include on a permanent residence application",

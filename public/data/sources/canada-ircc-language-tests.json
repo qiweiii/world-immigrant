@@ -2,7 +2,8 @@
   "id": "canada-ircc-language-tests",
   "country_id": "canada",
   "program_ids": [
-    "canada-express-entry-fsw"
+    "canada-express-entry-fsw",
+    "canada-express-entry-cec"
   ],
   "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
   "title": "Express Entry: Language test results",

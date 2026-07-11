@@ -1,0 +1,425 @@
+{
+  "id": "canada-study-permit",
+  "country_id": "canada",
+  "category_ids": [
+    "study_to_pr"
+  ],
+  "official_names": {
+    "en": "Study permit",
+    "zh-Hans": "学习许可"
+  },
+  "aliases": [
+    "Canada study permit",
+    "Canadian study visa",
+    "Study permit Canada"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "Most foreign nationals need a study permit to study at a designated learning institution in Canada. Applicants should apply before travelling to Canada. Rules such as provincial attestation letters and financial support amounts can change.",
+    "zh-Hans": "大多数外国人在加拿大指定学习机构学习需要学习许可。申请人应在前往加拿大前申请。省/地区证明信和资金要求等规则可能变化。"
+  },
+  "summary_md": {
+    "en": "Canada's principal temporary study authorization for international students enrolled at designated learning institutions. It can form part of a longer study-to-work-to-PR path when the program and later PGWP or Express Entry rules are met, but the study permit itself is not permanent residence.",
+    "zh-Hans": "加拿大面向在指定学习机构就读的国际学生的主要临时学习许可。在课程及后续毕业工签或快速通道规则满足时，可成为学习-工作-永居路径的一部分，但学习许可本身不是永久居留。"
+  },
+  "good_for_md": {
+    "en": "Students accepted by a designated learning institution who can show a letter of acceptance, required provincial or territorial attestation in most cases, identity documents, first-year financial support, and intent to leave Canada when the permit expires.",
+    "zh-Hans": "适合被指定学习机构录取，并能提供录取通知书、多数情况下所需的省/地区证明信、身份文件、首年经济能力证明，以及在许可到期时离开加拿大意向的学生。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking unrestricted work, a digital-nomad route, or direct permanent residence. Canada does not offer a dedicated digital-nomad visa in this record. Work rights while studying are conditional and separate from the study permit decision itself.",
+    "zh-Hans": "不适合寻求不受限制工作、数字游民途径或直接永久居留的申请人。本记录不将加拿大描述为提供专门数字游民签证。在学期间工作权利有条件限制，且与学习许可决定本身分开。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "Applicants must be enrolled at a designated learning institution. Post-secondary letters of acceptance are validated with the school. Program-level academic requirements are set by the institution rather than a single federal education floor in the retained IRCC pages. Core IRCC eligibility includes DLI enrolment, enough money for tuition, living expenses and return transport, lawfulness and possible police certificate, good health and possible medical exam, and proof the applicant will leave when the study permit expires. Most applicants also need a provincial or territorial attestation letter (or a CAQ for Quebec).",
+        "zh-Hans": "申请人必须就读于指定学习机构。高等教育录取通知书需经学校验证。课程层面的学术要求由院校设定，保留的 IRCC 页面没有单一的联邦最低学历门槛。 IRCC 核心资格包括指定学习机构录取、足够支付学费/生活费/往返交通的资金、守法及可能的无犯罪证明、健康及可能的体检，以及证明学习许可到期后会离开。大多数申请人还需要省/地区证明信（魁北克为 CAQ）。"
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [
+      {
+        "amount": 22895,
+        "currency": "CAD",
+        "period": "annual",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 1,
+        "note_md": {
+          "en": "Living-expense amount for applications on or after 1 September 2025 outside Quebec, excluding tuition and transportation. Larger family sizes have higher published annual amounts.",
+          "zh-Hans": "2025 年 9 月 1 日及之后在魁北克以外申请的生活费金额，不含学费和交通。家庭成员越多，公布的年度金额越高。"
+        }
+      },
+      {
+        "amount": 28502,
+        "currency": "CAD",
+        "period": "annual",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 2
+      },
+      {
+        "amount": 35040,
+        "currency": "CAD",
+        "period": "annual",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 3
+      },
+      {
+        "amount": 42543,
+        "currency": "CAD",
+        "period": "annual",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 4
+      },
+      {
+        "amount": 48252,
+        "currency": "CAD",
+        "period": "annual",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 5
+      },
+      {
+        "amount": 54420,
+        "currency": "CAD",
+        "period": "annual",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 6
+      },
+      {
+        "amount": 60589,
+        "currency": "CAD",
+        "period": "annual",
+        "applies_to": "family",
+        "calculation": "minimum_total",
+        "family_size": 7
+      },
+      {
+        "amount": 6170,
+        "currency": "CAD",
+        "period": "annual",
+        "applies_to": "per_dependent",
+        "calculation": "increment_per_additional_member",
+        "family_size_above": 7
+      }
+    ],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Study permit processing fee",
+          "zh-Hans": "学习许可处理费"
+        },
+        "amount": 150,
+        "currency": "CAD",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": [
+      "unknown"
+    ],
+    "income_location": "not_applicable",
+    "stability_requirement_md": {
+      "en": "Applicants must show financial support for study without relying on working in Canada to meet the funds requirement.",
+      "zh-Hans": "申请人必须证明有经济能力支持学习，不能依赖在加拿大工作来满足资金要求。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "IRCC states processing times vary by country. Use the official processing-times tool for the current estimate.",
+      "zh-Hans": "IRCC 说明处理时间因国家而异。请使用官方处理时间工具查看当前估计。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": "unknown",
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": false,
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "not_applicable",
+    "note_md": {
+      "en": "Family members may be included in funding calculations and document packages. Separate companion permits or visas may be required and are not fully specified on the core study-permit pages retained here.",
+      "zh-Hans": "家庭成员可纳入资金计算和文件包。随行许可或签证可能另需申请，本记录保留的核心学习许可页面未完整说明。"
+    }
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "A study permit is temporary. Eligible graduates may later apply for a post-graduation work permit and, with Canadian experience, for permanent residence routes such as the Canadian Experience Class. Those later steps have separate eligibility rules.",
+      "zh-Hans": "学习许可是临时的。合资格毕业生之后可能申请毕业工签，并在取得加拿大经验后申请加拿大经验类等永居途径。后续步骤有单独资格规则。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The study permit sources do not establish citizenship eligibility.",
+      "zh-Hans": "学习许可来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Study-permit rules, provincial attestation quotas, and financial thresholds have changed frequently. Applicants should re-check IRCC pages and DLI/PGWP eligibility before applying.",
+      "zh-Hans": "学习许可规则、省证明配额和资金门槛变化频繁。申请前应重新核对 IRCC 页面以及指定学习机构/毕业工签资格。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 4,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "min_liquid_funds_usd": "variable",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "unknown",
+    "remote_work_allowed": false,
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T13:30:46.000Z"
+  },
+  "source_ids": [
+    "canada-ircc-study-permit",
+    "canada-ircc-study-permit-eligibility",
+    "canada-ircc-study-permit-documents",
+    "canada-ircc-study-permit-financial-support"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "canada-ircc-study-permit",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+        "quote_md": "The study permit is a document we issue that allows foreign nationals to study at designated learning institutions (DLIs) in Canada.",
+        "section": "Study permit",
+        "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+        "quote_hash": "e711261f7e04afd222211a627c91f05611283942cdd155ae30f30d55cde16a88",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "canada-ircc-study-permit",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+        "section": "Study permit overview and fees",
+        "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "canada-ircc-study-permit",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+        "section": "Study permit",
+        "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      },
+      {
+        "source_id": "canada-ircc-study-permit-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+        "section": "Post-graduation work permit",
+        "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "canada-ircc-study-permit-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+        "section": "Eligibility requirements",
+        "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      },
+      {
+        "source_id": "canada-ircc-study-permit-documents",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html",
+        "section": "Letter of acceptance and provincial attestation",
+        "snapshot_id": "cfa5a6f8c20bc41d8083d2d01218a1cbd2cbacf8a2d159e8056e8f15548a21e7",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "canada-ircc-study-permit-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+        "section": "Eligibility requirements and temporary study purpose",
+        "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "canada-ircc-study-permit",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+        "section": "Study permit",
+        "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "canada-ircc-study-permit-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+        "section": "Eligibility requirements",
+        "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      },
+      {
+        "source_id": "canada-ircc-study-permit-documents",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html",
+        "section": "Get the right documents",
+        "snapshot_id": "cfa5a6f8c20bc41d8083d2d01218a1cbd2cbacf8a2d159e8056e8f15548a21e7",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "canada-ircc-study-permit",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+        "section": "Fees Study permit $CAN 150",
+        "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      },
+      {
+        "source_id": "canada-ircc-study-permit-financial-support",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+        "section": "How much money you need for living expenses on or after September 1, 2025",
+        "snapshot_id": "39d164d3fb266ade384d9b5d6894c1ea6de48f83aaf20711692b10f574ff1999",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "canada-ircc-study-permit-financial-support",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+        "section": "Proof of financial support without working in Canada",
+        "snapshot_id": "39d164d3fb266ade384d9b5d6894c1ea6de48f83aaf20711692b10f574ff1999",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "canada-ircc-study-permit",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+        "section": "Processing times vary by country",
+        "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "canada-ircc-study-permit-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+        "section": "Your responsibilities as a student and permit conditions",
+        "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "canada-ircc-study-permit-financial-support",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+        "section": "Living expenses for applicant and family members",
+        "snapshot_id": "39d164d3fb266ade384d9b5d6894c1ea6de48f83aaf20711692b10f574ff1999",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "canada-ircc-study-permit-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+        "section": "Post-graduation work permit",
+        "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "canada-ircc-study-permit",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+        "section": "Temporary study authorization",
+        "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "canada-ircc-study-permit-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+        "section": "Conservative study permit filter fields",
+        "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+        "retrieved_at": "2026-07-11T13:12:00.000Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T13:12:00Z",
+    "updated_at": "2026-07-11T13:12:00Z",
+    "last_checked_at": "2026-07-11T13:30:46.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T13:12:00Z",
+      "summary": "Added Canada Study permit coverage from official IRCC sources.",
+      "source_ids": [
+        "canada-ircc-study-permit",
+        "canada-ircc-study-permit-eligibility",
+        "canada-ircc-study-permit-documents",
+        "canada-ircc-study-permit-financial-support"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "canada-ircc-pgwp-about",
+  "country_id": "canada",
+  "program_ids": [
+    "canada-post-graduation-work-permit"
+  ],
+  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+  "title": "About the post-graduation work permit (PGWP)",
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "post-graduation work permit",
+    "designated learning institutions",
+    "November 1, 2024",
+    "3 years"
+  ],
+  "expected_domains": [
+    "canada.ca"
+  ],
+  "last_checked_at": "2026-07-11T13:30:18.553Z",
+  "last_success_at": "2026-07-11T13:30:18.553Z",
+  "status": "active"
+}

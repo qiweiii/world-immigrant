@@ -1,0 +1,23 @@
+{
+  "id": "canada-ircc-study-permit-eligibility",
+  "country_id": "canada",
+  "program_ids": ["canada-study-permit"],
+  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+  "title": "Study permit: Who can apply",
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Eligibility requirements",
+    "designated learning",
+    "enough money",
+    "leave Canada"
+  ],
+  "expected_domains": ["canada.ca"],
+  "status": "active",
+  "last_checked_at": "2026-07-11T13:30:18.553Z",
+  "last_success_at": "2026-07-11T13:30:18.553Z"
+}

@@ -1,0 +1,327 @@
+{
+  "id": "canada-post-graduation-work-permit",
+  "country_id": "canada",
+  "category_ids": ["study_to_pr"],
+  "official_names": {
+    "en": "Post-graduation work permit",
+    "zh-Hans": "毕业后工作许可"
+  },
+  "aliases": ["PGWP", "Post-Graduation Work Permit", "Canada PGWP"],
+  "status": "active",
+  "status_note_md": {
+    "en": "The PGWP is an active open work permit for eligible graduates of designated learning institutions. Eligibility changed as of 1 November 2024 for most applicants, including language proof and, for some programs, field-of-study rules.",
+    "zh-Hans": "毕业工签是面向指定学习机构合资格毕业生的现行开放式工作许可。自 2024 年 11 月 1 日起，多数申请人资格规则发生变化，包括语言证明，以及对部分课程的专业领域要求。"
+  },
+  "summary_md": {
+    "en": "A temporary open work permit that lets eligible international graduates work in Canada after completing a qualifying program at a PGWP-eligible designated learning institution. Canadian work experience gained on a PGWP is commonly used later for permanent residence routes such as the Canadian Experience Class, but the PGWP itself is not permanent residence.",
+    "zh-Hans": "允许合资格国际毕业生在完成毕业工签合资格指定学习机构课程后在加拿大工作的临时开放式工作许可。持毕业工签获得的加拿大工作经验常用于之后的加拿大经验类等永居途径，但毕业工签本身不是永久居留。"
+  },
+  "good_for_md": {
+    "en": "Graduates who completed a PGWP-eligible program of at least 8 months (or 900 hours in Quebec), maintained full-time study status each semester except the final semester, apply within 180 days of program completion, and meet language and any field-of-study rules that apply to their program level and application timing.",
+    "zh-Hans": "适合完成至少 8 个月（魁北克为 900 小时）毕业工签合资格课程、除最后学期外每学期保持全日制学生身份、在完成课程后 180 天内申请，并满足适用于其学历层次和申请时点的语言及专业领域规则的毕业生。"
+  },
+  "not_good_for_md": {
+    "en": "People who already received a PGWP, completed ineligible programs (such as ESL/FSL or many private curriculum-licensing arrangements), cannot meet language or field-of-study rules where required, or seek a digital-nomad or multi-entry remote-work visa unrelated to Canadian study.",
+    "zh-Hans": "不适合已经获得过毕业工签、完成不合资格课程（如 ESL/FSL 或许多公私合作课程授权安排）、在需要时无法满足语言或专业领域规则，或寻求与加拿大学习无关的数字游民/远程工作签证的申请人。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": false,
+      "note_md": {
+        "en": "The completed program must be at a PGWP-eligible designated learning institution and at least 8 months long (or 900 hours for Quebec programs). Bachelor's, master's and doctoral graduates face different language and field-of-study rules than many college or non-degree programs.",
+        "zh-Hans": "完成的课程必须在毕业工签合资格指定学习机构，且至少 8 个月（魁北克课程为 900 小时）。学士、硕士和博士毕业生的语言与专业领域规则，与许多学院或非学位课程不同。"
+      }
+    },
+    "work_experience": {},
+    "language": [
+      {
+        "language": "en-or-fr",
+        "test": "IRCC-accepted English or French test for PGWP",
+        "minimum_level": "CLB/NCLC 7 for university degree streams; CLB/NCLC 5 for many college streams",
+        "minimum_benchmark": 5,
+        "note_md": {
+          "en": "As of 1 November 2024, most PGWP applicants must prove language ability. Bachelor's, master's, doctoral and other university program graduates generally need CLB/NCLC 7 in all four abilities; many college, polytechnic or non-university graduates need CLB/NCLC 5. Flight school graduates and applications submitted before 1 November 2024 are exempt from the new language rules.",
+          "zh-Hans": "自 2024 年 11 月 1 日起，多数毕业工签申请人须证明语言能力。学士、硕士、博士及其他大学课程毕业生通常需要四项能力达到 CLB/NCLC 7；许多学院、理工学院或非大学毕业生需要 CLB/NCLC 5。飞行学校毕业生及 2024 年 11 月 1 日前递交的申请可豁免新语言规则。"
+        }
+      }
+    ],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Work permit and open work permit holder fee (combined)",
+          "zh-Hans": "工作许可费与开放式工作许可持有人费（合计）"
+        },
+        "amount": 255,
+        "currency": "CAD",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": ["unknown"],
+    "income_location": "not_applicable"
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Applicants generally have up to 180 days after confirmation of program completion to apply. Validity length depends on program level and duration and the passport expiry date: master's degrees of at least 8 months may receive up to 3 years; other programs under 2 years may match program length; programs of 2 years or more may receive up to 3 years.",
+      "zh-Hans": "申请人通常在确认完成课程后最多 180 天内申请。有效期取决于课程层次与时长以及护照有效期：至少 8 个月的硕士课程最长可获 3 年；其他不足 2 年的课程可能与课程时长相当；2 年或以上课程最长可获 3 年。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": "unknown",
+    "max_stay_months": 36,
+    "renewable": false
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "not_applicable"
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "The PGWP is temporary. Qualifying Canadian skilled work experience gained while on a PGWP may support later permanent residence applications such as the Canadian Experience Class through Express Entry, subject to those programs' separate rules.",
+      "zh-Hans": "毕业工签是临时的。在持毕业工签期间获得的合资格加拿大技术工作经验，可能支持之后通过快速通道申请加拿大经验类等永居，但仍须满足那些计划的单独规则。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The PGWP sources do not establish citizenship eligibility.",
+      "zh-Hans": "毕业工签来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "PGWP language and field-of-study rules changed in late 2024 and eligible CIP codes have been updated since. Applicants must re-check DLI eligibility, program level rules, and current field lists before relying on this pathway.",
+      "zh-Hans": "毕业工签语言与专业领域规则在 2024 年末发生变化，合资格 CIP 代码此后也有更新。依赖该途径前必须重新核对指定学习机构资格、课程层次规则和当前专业列表。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 2,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": "unknown",
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": true,
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T13:30:46.000Z"
+  },
+  "source_ids": [
+    "canada-ircc-pgwp-about",
+    "canada-ircc-pgwp-eligibility",
+    "canada-ircc-pgwp-apply"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "About the post-graduation work permit",
+        "quote_md": "The post-graduation work permit (PGWP) allows students who have graduated from eligible designated learning institutions (DLIs) to gain valuable Canadian work experience.",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+        "quote_hash": "08d08ab466b980d297e93f54032596e4ced4175a43fee9deae9ba24a7965d446"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "November 1, 2024 eligibility changes",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "About the post-graduation work permit",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "canada-ircc-pgwp-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+        "section": "General eligibility",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "e64625cc1a67942708fc85d9110b189a45746afcad85741a375c5c21435f864e"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "canada-ircc-pgwp-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+        "section": "Who is not eligible for a PGWP",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "e64625cc1a67942708fc85d9110b189a45746afcad85741a375c5c21435f864e"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "About the post-graduation work permit",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "canada-ircc-pgwp-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+        "section": "General eligibility and study program requirements",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "e64625cc1a67942708fc85d9110b189a45746afcad85741a375c5c21435f864e"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "canada-ircc-pgwp-apply",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html",
+        "section": "Fees and how to apply",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "3a3d50a38d349a338c59a1d28e8bbf93fd05e003e682e96f4adb692139e7df2e"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "Work experience after graduation",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "How long is a post-graduation work permit valid?",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3"
+      },
+      {
+        "source_id": "canada-ircc-pgwp-apply",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html",
+        "section": "Up to 180 days after you graduate",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "3a3d50a38d349a338c59a1d28e8bbf93fd05e003e682e96f4adb692139e7df2e"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "About the post-graduation work permit",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "canada-ircc-pgwp-apply",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html",
+        "section": "Application includes family members only as documented on apply pages",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "3a3d50a38d349a338c59a1d28e8bbf93fd05e003e682e96f4adb692139e7df2e"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "Canadian work experience after graduation",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "canada-ircc-pgwp-about",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+        "section": "Temporary work authorization",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "canada-ircc-pgwp-eligibility",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+        "section": "Conservative PGWP filter fields",
+        "retrieved_at": "2026-07-11T13:12:00.000Z",
+        "snapshot_id": "e64625cc1a67942708fc85d9110b189a45746afcad85741a375c5c21435f864e"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T13:12:00Z",
+    "updated_at": "2026-07-11T13:12:00Z",
+    "last_checked_at": "2026-07-11T13:30:46.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T13:12:00Z",
+      "summary": "Added Canada Post-graduation work permit coverage from official IRCC sources.",
+      "source_ids": [
+        "canada-ircc-pgwp-about",
+        "canada-ircc-pgwp-eligibility",
+        "canada-ircc-pgwp-apply"
+      ]
+    }
+  ]
+}

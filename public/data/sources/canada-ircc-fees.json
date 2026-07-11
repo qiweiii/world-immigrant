@@ -2,7 +2,8 @@
   "id": "canada-ircc-fees",
   "country_id": "canada",
   "program_ids": [
-    "canada-express-entry-fsw"
+    "canada-express-entry-fsw",
+    "canada-express-entry-cec"
   ],
   "url": "https://ircc.canada.ca/english/information/fees/fees.asp",
   "title": "Citizenship and immigration application fees",

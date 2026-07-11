@@ -8,8 +8,8 @@
   },
   "region": "North America",
   "summary_md": {
-    "en": "Canada operates federal and provincial immigration pathways. This first coverage focuses on the Federal Skilled Worker Program managed through Express Entry.",
-    "zh-Hans": "加拿大有联邦与省级移民路径。本站首批收录内容聚焦通过 Express Entry 管理的联邦技术工人项目（FSW）。"
+    "en": "Canada now has official bootstrap coverage for Federal Skilled Worker and Canadian Experience Class permanent residence through Express Entry, plus the study permit and post-graduation work permit study-to-work path. No dedicated digital-nomad visa is included.",
+    "zh-Hans": "加拿大现在覆盖通过快速通道的联邦技术工人与加拿大经验类永久居留，以及学习许可和毕业后工作许可的留学-工作路径。未加入专门的数字游民签证。"
   },
   "brand": {
     "color": "#D52B1E",
@@ -27,14 +27,27 @@
     "canada-ircc-family-inclusion",
     "canada-ircc-police-certificates",
     "canada-ircc-medical-exams",
-    "canada-ircc-processing-times"
+    "canada-ircc-processing-times",
+    "canada-ircc-cec",
+    "canada-ircc-study-permit",
+    "canada-ircc-study-permit-eligibility",
+    "canada-ircc-study-permit-documents",
+    "canada-ircc-study-permit-financial-support",
+    "canada-ircc-pgwp-about",
+    "canada-ircc-pgwp-eligibility",
+    "canada-ircc-pgwp-apply"
   ],
-  "categories": ["skilled_worker"],
-  "program_ids": ["canada-express-entry-fsw"],
+  "categories": ["skilled_worker", "study_to_pr"],
+  "program_ids": [
+    "canada-express-entry-fsw",
+    "canada-express-entry-cec",
+    "canada-study-permit",
+    "canada-post-graduation-work-permit"
+  ],
   "freshness": {
     "created_at": "2026-07-10T00:00:00Z",
-    "updated_at": "2026-07-10T00:00:00Z",
-    "last_checked_at": "2026-07-10T00:00:00Z",
+    "updated_at": "2026-07-11T13:30:46Z",
+    "last_checked_at": "2026-07-11T13:30:46.000Z",
     "update_frequency_days": 3,
     "confidence": "high",
     "needs_human_review": true

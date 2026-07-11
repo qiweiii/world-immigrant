@@ -1,0 +1,18 @@
+{
+  "id": "canada-ircc-cec",
+  "country_id": "canada",
+  "program_ids": ["canada-express-entry-cec"],
+  "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+  "title": "Express Entry: Canadian Experience Class",
+  "publisher": "Immigration, Refugees and Citizenship Canada",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 7,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["Canadian Experience Class", "1,560 hours", "TEER", "self-employment"],
+  "expected_domains": ["canada.ca"],
+  "status": "active",
+  "last_checked_at": "2026-07-11T13:30:18.553Z",
+  "last_success_at": "2026-07-11T13:30:18.553Z"
+}

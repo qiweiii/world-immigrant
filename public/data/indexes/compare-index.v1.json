@@ -1004,6 +1004,309 @@
       }
     },
     {
+      "program_id": "canada-express-entry-cec",
+      "country_id": "canada",
+      "country_names": {
+        "en": "Canada",
+        "zh-Hans": "加拿大"
+      },
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Canadian Experience Class",
+        "zh-Hans": "加拿大经验类移民"
+      },
+      "status": "active",
+      "pathway_mechanism": "points_invitation",
+      "summary_md": {
+        "en": "A federal permanent-residence pathway for skilled workers who have at least one year of authorized skilled work experience in Canada (TEER 0–3), meet language minimums, and plan to live outside Quebec. Candidates compete for invitations through Express Entry.",
+        "zh-Hans": "面向在加拿大拥有至少一年获授权技术工作经验（TEER 0–3）、满足语言最低要求并计划在魁北克以外定居的技术工人的联邦永久居留途径。候选人通过快速通道竞争邀请。"
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": [
+          {
+            "label": {
+              "en": "Principal applicant, including right of permanent residence fee",
+              "zh-Hans": "主申请人，包括永久居留权费用"
+            },
+            "amount": 1590,
+            "currency": "CAD",
+            "applies_to": "primary"
+          },
+          {
+            "label": {
+              "en": "Principal applicant, without right of permanent residence fee",
+              "zh-Hans": "主申请人，无永久居留权费用"
+            },
+            "amount": 990,
+            "currency": "CAD",
+            "applies_to": "primary"
+          },
+          {
+            "label": {
+              "en": "Spouse or partner, including right of permanent residence fee",
+              "zh-Hans": "配偶或伴侣，包括永久居留权费用"
+            },
+            "amount": 1590,
+            "currency": "CAD",
+            "applies_to": "family"
+          },
+          {
+            "label": {
+              "en": "Dependent child",
+              "zh-Hans": "受抚养子女"
+            },
+            "amount": 270,
+            "currency": "CAD",
+            "applies_to": "per_dependent"
+          }
+        ]
+      },
+      "income": {
+        "required": false,
+        "accepted_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination",
+        "stability_requirement_md": {
+          "en": "The program requires qualifying paid Canadian skilled work experience rather than a separate recurring-income threshold or settlement-funds table.",
+          "zh-Hans": "该计划要求合资格的带薪加拿大技术工作经验，而不是单独的经常性收入门槛或定居资金表。"
+        }
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "Processing time is dynamic and depends on the application and current IRCC inventory. Use the official processing-times tool for the current estimate after an invitation to apply.",
+          "zh-Hans": "处理时间是动态的，取决于申请和当前 IRCC 库存。获邀申请后请使用官方处理时间工具查看当前估计。"
+        },
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "renewable": false
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": true,
+        "study_allowed": true,
+        "business_allowed": "unknown",
+        "healthcare_access_md": {
+          "en": "Permanent residents may qualify for public health coverage, but enrollment and waiting rules are provincial or territorial.",
+          "zh-Hans": "永久居民可能有资格享受公共卫生保险，但注册和等待规则由省或地区规定。"
+        }
+      },
+      "family": {
+        "spouse_or_partner_allowed": true,
+        "unmarried_partner_allowed": true,
+        "children_allowed": true,
+        "spouse_work_allowed": true,
+        "dependent_parents_allowed": "not_applicable",
+        "note_md": {
+          "en": "A spouse or common-law partner and dependent children must be declared and may accompany the principal applicant, subject to admissibility and document rules.",
+          "zh-Hans": "配偶或同居伴侣和受抚养子女必须申报并可以陪同主申请人，但须符合入境与文件规则。"
+        }
+      },
+      "pr_pathway": {
+        "available": true,
+        "summary_md": {
+          "en": "A successful Canadian Experience Class application grants Canadian permanent residence directly through Express Entry.",
+          "zh-Hans": "成功的加拿大经验类申请通过快速通道直接授予加拿大永久居留权。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "indirect",
+        "min_residence_years": 3,
+        "summary_md": {
+          "en": "Permanent residence can lead to citizenship after the separate citizenship physical-presence, language, and other requirements are met.",
+          "zh-Hans": "满足单独的公民身份实际居住、语言和其他要求后，永久居留可通向公民身份。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 3,
+        "speed_score": 3,
+        "permanence_score": 5,
+        "family_friendliness_score": 4,
+        "source_confidence_score": 5,
+        "policy_stability_score": 4
+      },
+      "filter": {
+        "settlement_track": "direct_pr",
+        "pathway_mechanism": "points_invitation",
+        "pathway_type": "direct_pr",
+        "requires_job_offer": false,
+        "requires_local_entity": false
+      },
+      "source_ids": [
+        "canada-ircc-cec",
+        "canada-ircc-language-tests",
+        "canada-ircc-fees",
+        "canada-ircc-rounds",
+        "canada-ircc-citizenship",
+        "canada-ircc-pr-rights",
+        "canada-ircc-family-inclusion",
+        "canada-ircc-police-certificates",
+        "canada-ircc-medical-exams",
+        "canada-ircc-processing-times"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "quote_md": "The Canadian Experience Class is for skilled workers who have Canadian work experience and want to become permanent residents.",
+            "section": "Canadian Experience Class",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "quote_hash": "57ce579ec3c520606a96c9fd64c8dd0ec6552df62f6240a36e541e8be12e54b0",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "section": "Canadian Experience Class",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "section": "Canadian skilled work experience and where you can live",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "section": "Canadian skilled work experience",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "section": "Self-employment and student work experience; Where you can live in Canada",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "section": "Canadian Experience Class",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "section": "Canadian skilled work experience, language ability, education, admissibility",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          },
+          {
+            "source_id": "canada-ircc-language-tests",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
+            "section": "Canadian Experience Class language requirements",
+            "snapshot_id": "49a30ed7eace3803a70063a068b8692175ef07f93fbed1cb34da46f968ac134f",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "canada-ircc-fees",
+            "url": "https://ircc.canada.ca/english/information/fees/fees.asp",
+            "section": "Economic immigration (including Express Entry) fees",
+            "snapshot_id": "0f6dce57d6b5c1180025783417a6eb73a12c6eeae89ade8accf88998034a4723",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "section": "Paid work requirement",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "canada-ircc-processing-times",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
+            "section": "Dynamic processing times",
+            "snapshot_id": "0e6f5b1e07ef4cc6f8016e7d407be1a9d2e83836565744e33078e641ad78e357",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "canada-ircc-pr-rights",
+            "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
+            "section": "Permanent resident right to live, work or study in Canada",
+            "snapshot_id": "82ee40826dbf95931477d61a12dd10867729123a2b114eb7f888e79d1fba5c63",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "canada-ircc-family-inclusion",
+            "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28",
+            "section": "Who to include on a permanent residence application",
+            "snapshot_id": "039579798e31c030da1c90fa4967f61c05ad3f71a002c16062b27fd4e523a037",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "quote_md": "The Canadian Experience Class is for skilled workers who have Canadian work experience and want to become permanent residents.",
+            "section": "Canadian Experience Class permanent residence",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "quote_hash": "57ce579ec3c520606a96c9fd64c8dd0ec6552df62f6240a36e541e8be12e54b0",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "canada-ircc-citizenship",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/who.html",
+            "section": "Canadian citizenship: Who can apply",
+            "snapshot_id": "71d38956f91d34e513c253c9ddc58488e6d29aeefaa100cd555377c87bcc4e5b",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "canada-ircc-cec",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+            "section": "Conservative Canadian Experience Class filter fields",
+            "snapshot_id": "27b223e27b7dc56fcac01de9fcf17d0a2674fbefa06143a7c9816fc7ad70f629",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T13:12:00Z",
+        "updated_at": "2026-07-11T13:12:00Z",
+        "last_checked_at": "2026-07-11T13:30:46.000Z",
+        "update_frequency_days": 7,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
       "program_id": "canada-express-entry-fsw",
       "country_id": "canada",
       "country_names": {
@@ -1431,6 +1734,617 @@
         "updated_at": "2026-07-10T00:00:00Z",
         "last_checked_at": "2026-07-10T00:00:00Z",
         "update_frequency_days": 3,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
+      "program_id": "canada-post-graduation-work-permit",
+      "country_id": "canada",
+      "country_names": {
+        "en": "Canada",
+        "zh-Hans": "加拿大"
+      },
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Post-graduation work permit",
+        "zh-Hans": "毕业后工作许可"
+      },
+      "status": "active",
+      "pathway_mechanism": "other",
+      "summary_md": {
+        "en": "A temporary open work permit that lets eligible international graduates work in Canada after completing a qualifying program at a PGWP-eligible designated learning institution. Canadian work experience gained on a PGWP is commonly used later for permanent residence routes such as the Canadian Experience Class, but the PGWP itself is not permanent residence.",
+        "zh-Hans": "允许合资格国际毕业生在完成毕业工签合资格指定学习机构课程后在加拿大工作的临时开放式工作许可。持毕业工签获得的加拿大工作经验常用于之后的加拿大经验类等永居途径，但毕业工签本身不是永久居留。"
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": [
+          {
+            "label": {
+              "en": "Work permit and open work permit holder fee (combined)",
+              "zh-Hans": "工作许可费与开放式工作许可持有人费（合计）"
+            },
+            "amount": 255,
+            "currency": "CAD",
+            "applies_to": "primary"
+          }
+        ]
+      },
+      "income": {
+        "required": "not_applicable",
+        "accepted_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "Applicants generally have up to 180 days after confirmation of program completion to apply. Validity length depends on program level and duration and the passport expiry date: master's degrees of at least 8 months may receive up to 3 years; other programs under 2 years may match program length; programs of 2 years or more may receive up to 3 years.",
+          "zh-Hans": "申请人通常在确认完成课程后最多 180 天内申请。有效期取决于课程层次与时长以及护照有效期：至少 8 个月的硕士课程最长可获 3 年；其他不足 2 年的课程可能与课程时长相当；2 年或以上课程最长可获 3 年。"
+        },
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "initial_validity_months": "unknown",
+        "renewable": false,
+        "max_stay_months": 36
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": "unknown",
+        "study_allowed": "unknown",
+        "business_allowed": "unknown"
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "not_applicable"
+      },
+      "pr_pathway": {
+        "available": "indirect",
+        "summary_md": {
+          "en": "The PGWP is temporary. Qualifying Canadian skilled work experience gained while on a PGWP may support later permanent residence applications such as the Canadian Experience Class through Express Entry, subject to those programs' separate rules.",
+          "zh-Hans": "毕业工签是临时的。在持毕业工签期间获得的合资格加拿大技术工作经验，可能支持之后通过快速通道申请加拿大经验类等永居，但仍须满足那些计划的单独规则。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The PGWP sources do not establish citizenship eligibility.",
+          "zh-Hans": "毕业工签来源没有确认公民资格。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 2,
+        "speed_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "temporary_may_lead_pr",
+        "pathway_mechanism": "other",
+        "pathway_type": "temporary_only",
+        "requires_job_offer": false,
+        "requires_local_entity": false
+      },
+      "source_ids": [
+        "canada-ircc-pgwp-about",
+        "canada-ircc-pgwp-eligibility",
+        "canada-ircc-pgwp-apply"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "quote_md": "The post-graduation work permit (PGWP) allows students who have graduated from eligible designated learning institutions (DLIs) to gain valuable Canadian work experience.",
+            "section": "About the post-graduation work permit",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "quote_hash": "08d08ab466b980d297e93f54032596e4ced4175a43fee9deae9ba24a7965d446",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "section": "November 1, 2024 eligibility changes",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "section": "About the post-graduation work permit",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "canada-ircc-pgwp-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+            "section": "General eligibility",
+            "snapshot_id": "e64625cc1a67942708fc85d9110b189a45746afcad85741a375c5c21435f864e",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "canada-ircc-pgwp-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+            "section": "Who is not eligible for a PGWP",
+            "snapshot_id": "e64625cc1a67942708fc85d9110b189a45746afcad85741a375c5c21435f864e",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "section": "About the post-graduation work permit",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "canada-ircc-pgwp-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+            "section": "General eligibility and study program requirements",
+            "snapshot_id": "e64625cc1a67942708fc85d9110b189a45746afcad85741a375c5c21435f864e",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "canada-ircc-pgwp-apply",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html",
+            "section": "Fees and how to apply",
+            "snapshot_id": "3a3d50a38d349a338c59a1d28e8bbf93fd05e003e682e96f4adb692139e7df2e",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "section": "Work experience after graduation",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "section": "How long is a post-graduation work permit valid?",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          },
+          {
+            "source_id": "canada-ircc-pgwp-apply",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html",
+            "section": "Up to 180 days after you graduate",
+            "snapshot_id": "3a3d50a38d349a338c59a1d28e8bbf93fd05e003e682e96f4adb692139e7df2e",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "section": "About the post-graduation work permit",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "canada-ircc-pgwp-apply",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html",
+            "section": "Application includes family members only as documented on apply pages",
+            "snapshot_id": "3a3d50a38d349a338c59a1d28e8bbf93fd05e003e682e96f4adb692139e7df2e",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "section": "Canadian work experience after graduation",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "canada-ircc-pgwp-about",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+            "section": "Temporary work authorization",
+            "snapshot_id": "2b7c91587d463b731cfaaba1c46b7f4364578b40f8d37c1468f7a15666461bf3",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "canada-ircc-pgwp-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+            "section": "Conservative PGWP filter fields",
+            "snapshot_id": "e64625cc1a67942708fc85d9110b189a45746afcad85741a375c5c21435f864e",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T13:12:00Z",
+        "updated_at": "2026-07-11T13:12:00Z",
+        "last_checked_at": "2026-07-11T13:30:46.000Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
+      "program_id": "canada-study-permit",
+      "country_id": "canada",
+      "country_names": {
+        "en": "Canada",
+        "zh-Hans": "加拿大"
+      },
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Study permit",
+        "zh-Hans": "学习许可"
+      },
+      "status": "active",
+      "pathway_mechanism": "other",
+      "summary_md": {
+        "en": "Canada's principal temporary study authorization for international students enrolled at designated learning institutions. It can form part of a longer study-to-work-to-PR path when the program and later PGWP or Express Entry rules are met, but the study permit itself is not permanent residence.",
+        "zh-Hans": "加拿大面向在指定学习机构就读的国际学生的主要临时学习许可。在课程及后续毕业工签或快速通道规则满足时，可成为学习-工作-永居路径的一部分，但学习许可本身不是永久居留。"
+      },
+      "funds": {
+        "proof_of_funds": [
+          {
+            "amount": 22895,
+            "currency": "CAD",
+            "period": "annual",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 1,
+            "note_md": {
+              "en": "Living-expense amount for applications on or after 1 September 2025 outside Quebec, excluding tuition and transportation. Larger family sizes have higher published annual amounts.",
+              "zh-Hans": "2025 年 9 月 1 日及之后在魁北克以外申请的生活费金额，不含学费和交通。家庭成员越多，公布的年度金额越高。"
+            }
+          },
+          {
+            "amount": 28502,
+            "currency": "CAD",
+            "period": "annual",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 2
+          },
+          {
+            "amount": 35040,
+            "currency": "CAD",
+            "period": "annual",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 3
+          },
+          {
+            "amount": 42543,
+            "currency": "CAD",
+            "period": "annual",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 4
+          },
+          {
+            "amount": 48252,
+            "currency": "CAD",
+            "period": "annual",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 5
+          },
+          {
+            "amount": 54420,
+            "currency": "CAD",
+            "period": "annual",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 6
+          },
+          {
+            "amount": 60589,
+            "currency": "CAD",
+            "period": "annual",
+            "applies_to": "family",
+            "calculation": "minimum_total",
+            "family_size": 7
+          },
+          {
+            "amount": 6170,
+            "currency": "CAD",
+            "period": "annual",
+            "applies_to": "per_dependent",
+            "calculation": "increment_per_additional_member",
+            "family_size_above": 7
+          }
+        ],
+        "application_fees": [
+          {
+            "label": {
+              "en": "Study permit processing fee",
+              "zh-Hans": "学习许可处理费"
+            },
+            "amount": 150,
+            "currency": "CAD",
+            "applies_to": "primary"
+          }
+        ]
+      },
+      "income": {
+        "required": "not_applicable",
+        "accepted_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable",
+        "stability_requirement_md": {
+          "en": "Applicants must show financial support for study without relying on working in Canada to meet the funds requirement.",
+          "zh-Hans": "申请人必须证明有经济能力支持学习，不能依赖在加拿大工作来满足资金要求。"
+        }
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "IRCC states processing times vary by country. Use the official processing-times tool for the current estimate.",
+          "zh-Hans": "IRCC 说明处理时间因国家而异。请使用官方处理时间工具查看当前估计。"
+        },
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "initial_validity_months": "unknown",
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": "unknown",
+        "local_employment_allowed": "unknown",
+        "remote_work_allowed": false,
+        "study_allowed": true,
+        "business_allowed": false
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "not_applicable",
+        "note_md": {
+          "en": "Family members may be included in funding calculations and document packages. Separate companion permits or visas may be required and are not fully specified on the core study-permit pages retained here.",
+          "zh-Hans": "家庭成员可纳入资金计算和文件包。随行许可或签证可能另需申请，本记录保留的核心学习许可页面未完整说明。"
+        }
+      },
+      "pr_pathway": {
+        "available": "indirect",
+        "summary_md": {
+          "en": "A study permit is temporary. Eligible graduates may later apply for a post-graduation work permit and, with Canadian experience, for permanent residence routes such as the Canadian Experience Class. Those later steps have separate eligibility rules.",
+          "zh-Hans": "学习许可是临时的。合资格毕业生之后可能申请毕业工签，并在取得加拿大经验后申请加拿大经验类等永居途径。后续步骤有单独资格规则。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The study permit sources do not establish citizenship eligibility.",
+          "zh-Hans": "学习许可来源没有确认公民资格。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 4,
+        "speed_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "temporary_may_lead_pr",
+        "pathway_mechanism": "other",
+        "pathway_type": "renewable_temporary",
+        "requires_job_offer": false,
+        "requires_local_entity": false
+      },
+      "source_ids": [
+        "canada-ircc-study-permit",
+        "canada-ircc-study-permit-eligibility",
+        "canada-ircc-study-permit-documents",
+        "canada-ircc-study-permit-financial-support"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "canada-ircc-study-permit",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+            "quote_md": "The study permit is a document we issue that allows foreign nationals to study at designated learning institutions (DLIs) in Canada.",
+            "section": "Study permit",
+            "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+            "quote_hash": "e711261f7e04afd222211a627c91f05611283942cdd155ae30f30d55cde16a88",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "canada-ircc-study-permit",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+            "section": "Study permit overview and fees",
+            "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "canada-ircc-study-permit",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+            "section": "Study permit",
+            "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          },
+          {
+            "source_id": "canada-ircc-study-permit-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+            "section": "Post-graduation work permit",
+            "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "canada-ircc-study-permit-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+            "section": "Eligibility requirements",
+            "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          },
+          {
+            "source_id": "canada-ircc-study-permit-documents",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html",
+            "section": "Letter of acceptance and provincial attestation",
+            "snapshot_id": "cfa5a6f8c20bc41d8083d2d01218a1cbd2cbacf8a2d159e8056e8f15548a21e7",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "canada-ircc-study-permit-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+            "section": "Eligibility requirements and temporary study purpose",
+            "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "canada-ircc-study-permit",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+            "section": "Study permit",
+            "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "canada-ircc-study-permit-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+            "section": "Eligibility requirements",
+            "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          },
+          {
+            "source_id": "canada-ircc-study-permit-documents",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html",
+            "section": "Get the right documents",
+            "snapshot_id": "cfa5a6f8c20bc41d8083d2d01218a1cbd2cbacf8a2d159e8056e8f15548a21e7",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "canada-ircc-study-permit",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+            "section": "Fees Study permit $CAN 150",
+            "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          },
+          {
+            "source_id": "canada-ircc-study-permit-financial-support",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+            "section": "How much money you need for living expenses on or after September 1, 2025",
+            "snapshot_id": "39d164d3fb266ade384d9b5d6894c1ea6de48f83aaf20711692b10f574ff1999",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "canada-ircc-study-permit-financial-support",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+            "section": "Proof of financial support without working in Canada",
+            "snapshot_id": "39d164d3fb266ade384d9b5d6894c1ea6de48f83aaf20711692b10f574ff1999",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "canada-ircc-study-permit",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+            "section": "Processing times vary by country",
+            "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "canada-ircc-study-permit-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+            "section": "Your responsibilities as a student and permit conditions",
+            "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "canada-ircc-study-permit-financial-support",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+            "section": "Living expenses for applicant and family members",
+            "snapshot_id": "39d164d3fb266ade384d9b5d6894c1ea6de48f83aaf20711692b10f574ff1999",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "canada-ircc-study-permit-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+            "section": "Post-graduation work permit",
+            "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "canada-ircc-study-permit",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+            "section": "Temporary study authorization",
+            "snapshot_id": "842c77532eb12ecc5fac18ab6f7e100909df0c41100c7581f03d518fbc75e305",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "canada-ircc-study-permit-eligibility",
+            "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+            "section": "Conservative study permit filter fields",
+            "snapshot_id": "4f70915758794fa74f38021f999888d65c691150ca7036ce7612030b52e4957a",
+            "retrieved_at": "2026-07-11T13:12:00.000Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T13:12:00Z",
+        "updated_at": "2026-07-11T13:12:00Z",
+        "last_checked_at": "2026-07-11T13:30:46.000Z",
+        "update_frequency_days": 14,
         "confidence": "high",
         "needs_human_review": true
       }

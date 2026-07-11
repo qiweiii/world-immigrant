@@ -1,6 +1,6 @@
 {
   "country_id": "canada",
-  "program_ids": ["canada-express-entry-fsw"],
+  "program_ids": ["canada-express-entry-fsw", "canada-express-entry-cec"],
   "publisher": "Immigration, Refugees and Citizenship Canada",
   "source_type": "official",
   "language": "en",

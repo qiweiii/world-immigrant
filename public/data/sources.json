@@ -396,10 +396,38 @@
       "status": "active"
     },
     {
+      "id": "canada-ircc-cec",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-express-entry-cec"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/canadian-experience-class.html",
+      "title": "Express Entry: Canadian Experience Class",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 7,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Canadian Experience Class",
+        "1,560 hours",
+        "TEER",
+        "self-employment"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-11T13:30:18.553Z",
+      "last_success_at": "2026-07-11T13:30:18.553Z",
+      "status": "active"
+    },
+    {
       "id": "canada-ircc-citizenship",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/canadian-citizenship/adult-minor/who.html",
       "title": "Canadian citizenship: Who can apply",
@@ -451,7 +479,8 @@
       "id": "canada-ircc-family-inclusion",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=256&top=28",
       "title": "Who to include on a permanent residence application",
@@ -476,7 +505,8 @@
       "id": "canada-ircc-fees",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://ircc.canada.ca/english/information/fees/fees.asp",
       "title": "Citizenship and immigration application fees",
@@ -528,7 +558,8 @@
       "id": "canada-ircc-language-tests",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/language-test.html",
       "title": "Express Entry: Language test results",
@@ -554,7 +585,8 @@
       "id": "canada-ircc-medical-exams",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html",
       "title": "Medical examination for permanent residence applicants",
@@ -576,10 +608,93 @@
       "status": "active"
     },
     {
+      "id": "canada-ircc-pgwp-about",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-post-graduation-work-permit"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/about.html",
+      "title": "About the post-graduation work permit (PGWP)",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "post-graduation work permit",
+        "designated learning institutions",
+        "November 1, 2024",
+        "3 years"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-11T13:30:18.553Z",
+      "last_success_at": "2026-07-11T13:30:18.553Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-pgwp-apply",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-post-graduation-work-permit"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/apply.html",
+      "title": "Post-graduation work permit: How to apply",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "How to apply",
+        "180 days",
+        "fees",
+        "open work permit"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-11T13:30:18.553Z",
+      "last_success_at": "2026-07-11T13:30:18.553Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-pgwp-eligibility",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-post-graduation-work-permit"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/work/after-graduation/eligibility.html",
+      "title": "Post-graduation work permit: Who can apply",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "general eligibility",
+        "180 days",
+        "full-time",
+        "field of study",
+        "CLB"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-11T13:30:18.553Z",
+      "last_success_at": "2026-07-11T13:30:18.553Z",
+      "status": "active"
+    },
+    {
       "id": "canada-ircc-police-certificates",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/documents/police-certificates.html",
       "title": "Express Entry: Police certificates",
@@ -604,7 +719,8 @@
       "id": "canada-ircc-pr-rights",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://ircc.canada.ca/english/helpcentre/answer.asp?qnum=1113&top=6",
       "title": "Permanent resident right to live, work or study in Canada",
@@ -628,7 +744,8 @@
       "id": "canada-ircc-processing-times",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html",
       "title": "Check current IRCC processing times",
@@ -679,7 +796,8 @@
       "id": "canada-ircc-rounds",
       "country_id": "canada",
       "program_ids": [
-        "canada-express-entry-fsw"
+        "canada-express-entry-fsw",
+        "canada-express-entry-cec"
       ],
       "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/rounds-invitations.html",
       "title": "Express Entry: Rounds of invitations",
@@ -699,6 +817,112 @@
       ],
       "last_checked_at": "2026-07-10T00:00:00Z",
       "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-study-permit",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-study-permit"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit.html",
+      "title": "Study permit",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Study permit",
+        "designated learning institutions",
+        "150"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-11T13:30:18.553Z",
+      "last_success_at": "2026-07-11T13:30:18.553Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-study-permit-documents",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-study-permit"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents.html",
+      "title": "Study permit: Get the right documents",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "letter of acceptance",
+        "provincial or territorial attestation",
+        "proof of funds"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-11T13:30:18.553Z",
+      "last_success_at": "2026-07-11T13:30:18.553Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-study-permit-eligibility",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-study-permit"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/eligibility.html",
+      "title": "Study permit: Who can apply",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Eligibility requirements",
+        "designated learning",
+        "enough money",
+        "leave Canada"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-11T13:30:18.553Z",
+      "last_success_at": "2026-07-11T13:30:18.553Z",
+      "status": "active"
+    },
+    {
+      "id": "canada-ircc-study-permit-financial-support",
+      "country_id": "canada",
+      "program_ids": [
+        "canada-study-permit"
+      ],
+      "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/study-canada/study-permit/get-documents/financial-support.html",
+      "title": "Study permit: Proof of financial support",
+      "publisher": "Immigration, Refugees and Citizenship Canada",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "living expenses",
+        "tuition fees",
+        "22,895",
+        "September 1, 2025"
+      ],
+      "expected_domains": [
+        "canada.ca"
+      ],
+      "last_checked_at": "2026-07-11T13:30:18.553Z",
+      "last_success_at": "2026-07-11T13:30:18.553Z",
       "status": "active"
     },
     {
