@@ -496,7 +496,9 @@
     {
       "id": "hong-kong-immd-ttps",
       "country_id": "hong-kong",
-      "program_ids": [],
+      "program_ids": [
+        "hong-kong-top-talent-pass"
+      ],
       "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
       "title": "Top Talent Pass Scheme",
       "publisher": "Hong Kong Immigration Department",
@@ -521,7 +523,9 @@
     {
       "id": "hong-kong-immd-ttps-faq",
       "country_id": "hong-kong",
-      "program_ids": [],
+      "program_ids": [
+        "hong-kong-top-talent-pass"
+      ],
       "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
       "title": "Top Talent Pass Scheme frequently asked questions",
       "publisher": "Hong Kong Immigration Department",
@@ -546,7 +550,9 @@
     {
       "id": "japan-isa-engineer-specialist",
       "country_id": "japan",
-      "program_ids": [],
+      "program_ids": [
+        "japan-engineer-specialist"
+      ],
       "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
       "title": "Residence status — Engineer/Specialist in Humanities/International Services",
       "publisher": "Japan Immigration Services Agency",
@@ -571,7 +577,9 @@
     {
       "id": "japan-isa-residence-status-list",
       "country_id": "japan",
-      "program_ids": [],
+      "program_ids": [
+        "japan-engineer-specialist"
+      ],
       "url": "https://www.moj.go.jp/isa/applications/status/index.html",
       "title": "Search by residence status",
       "publisher": "Japan Immigration Services Agency",
@@ -666,7 +674,9 @@
     {
       "id": "singapore-mom-employment-pass-eligibility",
       "country_id": "singapore",
-      "program_ids": [],
+      "program_ids": [
+        "singapore-employment-pass"
+      ],
       "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
       "title": "Eligibility for Employment Pass",
       "publisher": "Singapore Ministry of Manpower",
@@ -691,7 +701,9 @@
     {
       "id": "singapore-mom-employment-pass-key-facts",
       "country_id": "singapore",
-      "program_ids": [],
+      "program_ids": [
+        "singapore-employment-pass"
+      ],
       "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
       "title": "Key facts on Employment Pass",
       "publisher": "Singapore Ministry of Manpower",

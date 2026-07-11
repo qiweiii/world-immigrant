@@ -1,7 +1,7 @@
 {
   "id": "japan-isa-residence-status-list",
   "country_id": "japan",
-  "program_ids": [],
+  "program_ids": ["japan-engineer-specialist"],
   "url": "https://www.moj.go.jp/isa/applications/status/index.html",
   "title": "Search by residence status",
   "publisher": "Japan Immigration Services Agency",

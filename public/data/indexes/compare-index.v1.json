@@ -681,6 +681,474 @@
       }
     },
     {
+      "program_id": "hong-kong-top-talent-pass",
+      "country_id": "hong-kong",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Top Talent Pass Scheme"
+      },
+      "status": "active",
+      "pathway_mechanism": "talent_pass",
+      "summary_md": {
+        "en": "A Hong Kong talent admission route with Category A for high annual income, Categories B and C for graduates of eligible universities, and no Hong Kong job offer required at initial application."
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": [
+          {
+            "label": {
+              "en": "Non-refundable TTPS application fee"
+            },
+            "amount": "unknown",
+            "currency": "HKD",
+            "applies_to": "primary"
+          }
+        ]
+      },
+      "income": {
+        "required": "unknown",
+        "min_income": [
+          {
+            "amount": 2500000,
+            "currency": "HKD",
+            "period": "annual",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "Category A threshold; Categories B and C use academic and work-history criteria instead."
+            }
+          }
+        ],
+        "accepted_sources": [
+          "employment",
+          "business_income",
+          "self_employment"
+        ],
+        "income_location": "unknown",
+        "proof_history_months": 12,
+        "stability_requirement_md": {
+          "en": "Category A uses taxable employment or business income in the preceding year. Extension requires Hong Kong employment with stable income or an established/joined Hong Kong business."
+        }
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "Entry applications normally take four weeks after all required documents and the relevant fee are received; extensions are normally processed in two to three weeks."
+        },
+        "initial_validity_months": "variable",
+        "renewable": true,
+        "max_stay_months": "variable"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": "unknown",
+        "study_allowed": "unknown",
+        "business_allowed": true
+      },
+      "family": {
+        "spouse_or_partner_allowed": true,
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": true,
+        "max_child_age": 18,
+        "spouse_work_allowed": true,
+        "dependent_parents_allowed": "unknown",
+        "note_md": {
+          "en": "The TTPS dependant policy covers a spouse or qualifying civil partner and unmarried dependent children under 18; dependants are not prohibited from employment or study."
+        }
+      },
+      "pr_pathway": {
+        "available": true,
+        "min_residence_years": 7,
+        "summary_md": {
+          "en": "Persons admitted under TTPS who have ordinarily resided in Hong Kong for a continuous period of not less than seven years may apply for right of abode under the law."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained Immigration Department pages establish a right-of-abode route but do not establish a citizenship route."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 3,
+        "speed_score": 4,
+        "permanence_score": 4,
+        "family_friendliness_score": 5,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "residence",
+        "pathway_mechanism": "talent_pass",
+        "pathway_type": "residence",
+        "requires_job_offer": false,
+        "requires_local_entity": "unknown"
+      },
+      "source_ids": [
+        "hong-kong-immd-ttps",
+        "hong-kong-immd-ttps-faq"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "hong-kong-immd-ttps-faq",
+            "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
+            "section": "Eligibility, condition of stay, dependants, and extension of stay",
+            "snapshot_id": "ca6fa9abfe75739f70c6af5878fa455cb77624a59f2ea99dc50525ac138af4d7",
+            "retrieved_at": "2026-07-11T05:37:28.622Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "hong-kong-immd-ttps-faq",
+            "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
+            "section": "Eligibility, condition of stay, dependants, and extension of stay",
+            "snapshot_id": "ca6fa9abfe75739f70c6af5878fa455cb77624a59f2ea99dc50525ac138af4d7",
+            "retrieved_at": "2026-07-11T05:37:28.622Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "hong-kong-immd-ttps-faq",
+            "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
+            "section": "Eligibility, condition of stay, dependants, and extension of stay",
+            "snapshot_id": "ca6fa9abfe75739f70c6af5878fa455cb77624a59f2ea99dc50525ac138af4d7",
+            "retrieved_at": "2026-07-11T05:37:28.622Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "hong-kong-immd-ttps-faq",
+            "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
+            "section": "Eligibility, condition of stay, dependants, and extension of stay",
+            "snapshot_id": "ca6fa9abfe75739f70c6af5878fa455cb77624a59f2ea99dc50525ac138af4d7",
+            "retrieved_at": "2026-07-11T05:37:28.622Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "hong-kong-immd-ttps",
+            "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+            "section": "Eligibility Criteria and Entry of Dependants",
+            "snapshot_id": "f56154cbb05121ab9d67255cafc59a6ff0a001bc7e34105ffc3baa86202c8971",
+            "retrieved_at": "2026-07-11T05:37:27.494Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "hong-kong-immd-ttps-faq",
+            "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
+            "section": "Eligibility, condition of stay, dependants, and extension of stay",
+            "snapshot_id": "ca6fa9abfe75739f70c6af5878fa455cb77624a59f2ea99dc50525ac138af4d7",
+            "retrieved_at": "2026-07-11T05:37:28.622Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T05:37:28.622Z",
+        "updated_at": "2026-07-11T05:37:28.622Z",
+        "last_checked_at": "2026-07-11T05:37:28.622Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
+      "program_id": "japan-engineer-specialist",
+      "country_id": "japan",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Engineer / Specialist in Humanities / International Services"
+      },
+      "status": "active",
+      "pathway_mechanism": "employer_sponsored",
+      "summary_md": {
+        "en": "A Japan work residence status for technical, humanities, and certain foreign-culture-based activities performed under a contract with a public or private institution in Japan."
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": []
+      },
+      "income": {
+        "required": true,
+        "accepted_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination",
+        "proof_history_months": "unknown",
+        "stability_requirement_md": {
+          "en": "The status is based on paid activity under a contract with an institution in Japan; the retained page does not state a universal salary minimum."
+        }
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "The ISA page provides application procedures and document categories but no single processing-time value in the retained text."
+        },
+        "initial_validity_months": "variable",
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": "unknown",
+        "study_allowed": "unknown",
+        "business_allowed": "unknown"
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown"
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained ISA status page does not establish a permanent-residence pathway."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained ISA status page does not establish a citizenship pathway."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 4,
+        "cost_score": 3,
+        "speed_score": 2,
+        "permanence_score": 3,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 4,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "unknown",
+        "pathway_mechanism": "employer_sponsored",
+        "pathway_type": "renewable_temporary",
+        "requires_job_offer": true,
+        "requires_local_entity": true
+      },
+      "source_ids": [
+        "japan-isa-engineer-specialist",
+        "japan-isa-residence-status-list"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "japan-isa-residence-status-list",
+            "url": "https://www.moj.go.jp/isa/applications/status/index.html",
+            "section": "Residence status index",
+            "snapshot_id": "f6674778b30bf11445e7eee0314b9d3a75ca1f573a7d311333c43214f32a2d2c",
+            "retrieved_at": "2026-07-11T05:38:47.655Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "japan-isa-engineer-specialist",
+            "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+            "section": "Activities covered and period of stay",
+            "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+            "retrieved_at": "2026-07-11T05:37:29.406Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T05:38:47.655Z",
+        "updated_at": "2026-07-11T05:38:47.655Z",
+        "last_checked_at": "2026-07-11T05:38:47.655Z",
+        "update_frequency_days": 30,
+        "confidence": "medium",
+        "needs_human_review": true
+      }
+    },
+    {
       "program_id": "portugal-d8-digital-nomad",
       "country_id": "portugal",
       "category_ids": [
@@ -906,6 +1374,238 @@
         "last_checked_at": "2026-07-11T05:12:33.252Z",
         "update_frequency_days": 14,
         "confidence": "medium",
+        "needs_human_review": true
+      }
+    },
+    {
+      "program_id": "singapore-employment-pass",
+      "country_id": "singapore",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Employment Pass"
+      },
+      "status": "active",
+      "pathway_mechanism": "employer_sponsored",
+      "summary_md": {
+        "en": "An employer-sponsored Singapore work pass for foreign professionals, managers, and executives with a job offer in Singapore who meet the qualifying-salary and, unless exempted, COMPASS requirements."
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": []
+      },
+      "income": {
+        "required": true,
+        "min_income": [
+          {
+            "amount": 5600,
+            "currency": "SGD",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "Current minimum for all sectors except financial services; the threshold increases progressively with age and financial services has a higher threshold."
+            }
+          }
+        ],
+        "accepted_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination",
+        "proof_history_months": "unknown",
+        "stability_requirement_md": {
+          "en": "The qualifying salary is a fixed monthly salary benchmarked to local PMET salaries by age and sector."
+        }
+      },
+      "timeline": {
+        "initial_validity_months": 24,
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": "unknown",
+        "study_allowed": "unknown",
+        "business_allowed": "unknown"
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown",
+        "note_md": {
+          "en": "MOM's key-facts page notes eligible family passes but does not establish the family conditions in this source set."
+        }
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained Employment Pass pages link to a permanent-residence question but do not establish a PR eligibility rule."
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained Employment Pass pages do not establish a citizenship pathway."
+        }
+      },
+      "comparison": {
+        "difficulty_score": 4,
+        "cost_score": 3,
+        "speed_score": 3,
+        "permanence_score": 3,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "unknown",
+        "pathway_mechanism": "employer_sponsored",
+        "pathway_type": "renewable_temporary",
+        "requires_job_offer": true,
+        "requires_local_entity": "unknown"
+      },
+      "source_ids": [
+        "singapore-mom-employment-pass-key-facts",
+        "singapore-mom-employment-pass-eligibility"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "singapore-mom-employment-pass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+            "section": "EP qualifying salary and COMPASS",
+            "snapshot_id": "7ad08e55ddb1bd20bcbfbb0f5bb0d2a85f776264d2c42ea28f83728b521ab894",
+            "retrieved_at": "2026-07-11T05:37:33.786Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "singapore-mom-employment-pass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+            "section": "EP qualifying salary and COMPASS",
+            "snapshot_id": "7ad08e55ddb1bd20bcbfbb0f5bb0d2a85f776264d2c42ea28f83728b521ab894",
+            "retrieved_at": "2026-07-11T05:37:33.786Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "singapore-mom-employment-pass-key-facts",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+            "section": "Pass facts",
+            "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe",
+            "retrieved_at": "2026-07-11T05:37:33.952Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "singapore-mom-employment-pass-eligibility",
+            "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+            "section": "EP qualifying salary and COMPASS",
+            "snapshot_id": "7ad08e55ddb1bd20bcbfbb0f5bb0d2a85f776264d2c42ea28f83728b521ab894",
+            "retrieved_at": "2026-07-11T05:37:33.786Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T05:37:33.952Z",
+        "updated_at": "2026-07-11T05:37:33.952Z",
+        "last_checked_at": "2026-07-11T05:37:33.952Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
         "needs_human_review": true
       }
     },

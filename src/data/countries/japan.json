@@ -17,7 +17,7 @@
   },
   "official_source_ids": ["japan-isa-engineer-specialist", "japan-isa-residence-status-list"],
   "categories": ["skilled_worker"],
-  "program_ids": [],
+  "program_ids": ["japan-engineer-specialist"],
   "freshness": {
     "created_at": "2026-07-11T05:36:00Z",
     "updated_at": "2026-07-11T05:36:00Z",

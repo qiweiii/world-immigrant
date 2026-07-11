@@ -67,6 +67,38 @@ A federal permanent-residence pathway for skilled workers with foreign work expe
 - canada-ircc-medical-exams: Medical examination for permanent residence applicants — https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html
 - canada-ircc-processing-times: Check current IRCC processing times — https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html
 
+## Top Talent Pass Scheme
+
+- ID: hong-kong-top-talent-pass
+- Country: hong-kong
+- Status: active
+- Last updated: 2026-07-11T05:37:28.622Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A Hong Kong talent admission route with Category A for high annual income, Categories B and C for graduates of eligible universities, and no Hong Kong job offer required at initial application.
+
+### Official sources
+
+- hong-kong-immd-ttps: Top Talent Pass Scheme — https://www.immd.gov.hk/eng/services/visas/TTPS.html
+- hong-kong-immd-ttps-faq: Top Talent Pass Scheme frequently asked questions — https://www.immd.gov.hk/eng/faq/TTPS.html
+
+## Engineer / Specialist in Humanities / International Services
+
+- ID: japan-engineer-specialist
+- Country: japan
+- Status: active
+- Last updated: 2026-07-11T05:38:47.655Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A Japan work residence status for technical, humanities, and certain foreign-culture-based activities performed under a contract with a public or private institution in Japan.
+
+### Official sources
+
+- japan-isa-engineer-specialist: Residence status — Engineer/Specialist in Humanities/International Services — https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en
+- japan-isa-residence-status-list: Search by residence status — https://www.moj.go.jp/isa/applications/status/index.html
+
 ## Temporary stay visa and residence permit for digital nomads
 
 - ID: portugal-d8-digital-nomad
@@ -81,6 +113,22 @@ Portugal's official government portal describes a temporary-stay visa and reside
 ### Official sources
 
 - portugal-gov-remote-work-residence: Foreigners Act — digital nomad visa and residence permit changes — https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples
+
+## Employment Pass
+
+- ID: singapore-employment-pass
+- Country: singapore
+- Status: active
+- Last updated: 2026-07-11T05:37:33.952Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+An employer-sponsored Singapore work pass for foreign professionals, managers, and executives with a job offer in Singapore who meet the qualifying-salary and, unless exempted, COMPASS requirements.
+
+### Official sources
+
+- singapore-mom-employment-pass-key-facts: Key facts on Employment Pass — https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts
+- singapore-mom-employment-pass-eligibility: Eligibility for Employment Pass — https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility
 
 ## International teleworker residence authorisation
 

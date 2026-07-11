@@ -17,7 +17,7 @@
   },
   "official_source_ids": ["hong-kong-immd-ttps", "hong-kong-immd-ttps-faq"],
   "categories": ["skilled_worker"],
-  "program_ids": [],
+  "program_ids": ["hong-kong-top-talent-pass"],
   "freshness": {
     "created_at": "2026-07-11T05:36:00Z",
     "updated_at": "2026-07-11T05:36:00Z",

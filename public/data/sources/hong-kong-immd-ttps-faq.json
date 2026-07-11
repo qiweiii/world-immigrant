@@ -1,7 +1,9 @@
 {
   "id": "hong-kong-immd-ttps-faq",
   "country_id": "hong-kong",
-  "program_ids": [],
+  "program_ids": [
+    "hong-kong-top-talent-pass"
+  ],
   "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
   "title": "Top Talent Pass Scheme frequently asked questions",
   "publisher": "Hong Kong Immigration Department",

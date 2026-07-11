@@ -1,0 +1,294 @@
+{
+  "id": "singapore-employment-pass",
+  "country_id": "singapore",
+  "category_ids": ["skilled_worker"],
+  "official_names": {
+    "en": "Employment Pass"
+  },
+  "aliases": ["Singapore Employment Pass", "EP"],
+  "status": "active",
+  "status_note_md": {
+    "en": "Singapore MOM describes a two-stage Employment Pass eligibility framework. Salary thresholds and COMPASS rules are time-sensitive and remain flagged for human review."
+  },
+  "summary_md": {
+    "en": "An employer-sponsored Singapore work pass for foreign professionals, managers, and executives with a job offer in Singapore who meet the qualifying-salary and, unless exempted, COMPASS requirements."
+  },
+  "good_for_md": {
+    "en": "Candidates with a Singapore job offer, an employer or appointed employment agent able to apply, and a fixed monthly salary meeting the age- and sector-sensitive qualifying threshold."
+  },
+  "not_good_for_md": {
+    "en": "Applicants without a Singapore job offer or employer application route. The retained sources do not establish a universal degree, family, remote-work, or permanent-residence outcome."
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {
+      "points_sensitive": true
+    },
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "Degree-equivalent qualifications can contribute COMPASS points, but MOM states candidates without them may still pass through other criteria."
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": true,
+    "points_threshold": 40,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": true,
+    "min_income": [
+      {
+        "amount": 5600,
+        "currency": "SGD",
+        "period": "monthly",
+        "applies_to": "primary",
+        "calculation": "minimum_total",
+        "note_md": {
+          "en": "Current minimum for all sectors except financial services; the threshold increases progressively with age and financial services has a higher threshold."
+        }
+      }
+    ],
+    "accepted_sources": ["employment"],
+    "income_location": "inside_destination",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The qualifying salary is a fixed monthly salary benchmarked to local PMET salaries by age and sector."
+    }
+  },
+  "timeline": {
+    "initial_validity_months": 24,
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "MOM's key-facts page notes eligible family passes but does not establish the family conditions in this source set."
+    }
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained Employment Pass pages link to a permanent-residence question but do not establish a PR eligibility rule."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained Employment Pass pages do not establish a citizenship pathway."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Core eligibility, salary, COMPASS, employer application, duration, and renewal facts are retained from current MOM pages; family, PR, fees, and detailed document rules remain outside this fixture's claim set."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 3,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "employer_sponsored",
+    "min_monthly_income_usd": "unknown",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": "unknown",
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T05:37:33.952Z"
+  },
+  "source_ids": [
+    "singapore-mom-employment-pass-key-facts",
+    "singapore-mom-employment-pass-eligibility"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "singapore-mom-employment-pass-eligibility",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+        "section": "EP qualifying salary and COMPASS",
+        "retrieved_at": "2026-07-11T05:37:33.786Z",
+        "snapshot_id": "7ad08e55ddb1bd20bcbfbb0f5bb0d2a85f776264d2c42ea28f83728b521ab894"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "singapore-mom-employment-pass-eligibility",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+        "section": "EP qualifying salary and COMPASS",
+        "retrieved_at": "2026-07-11T05:37:33.786Z",
+        "snapshot_id": "7ad08e55ddb1bd20bcbfbb0f5bb0d2a85f776264d2c42ea28f83728b521ab894"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "singapore-mom-employment-pass-key-facts",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+        "section": "Pass facts",
+        "retrieved_at": "2026-07-11T05:37:33.952Z",
+        "snapshot_id": "ff975b8b76ff8d661bb21e6ff2b26bc182d49d6eaaf066e07da39e2b08adf0fe"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "singapore-mom-employment-pass-eligibility",
+        "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+        "section": "EP qualifying salary and COMPASS",
+        "retrieved_at": "2026-07-11T05:37:33.786Z",
+        "snapshot_id": "7ad08e55ddb1bd20bcbfbb0f5bb0d2a85f776264d2c42ea28f83728b521ab894"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T05:37:33.952Z",
+    "updated_at": "2026-07-11T05:37:33.952Z",
+    "last_checked_at": "2026-07-11T05:37:33.952Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T05:37:33.952Z",
+      "summary": "Added a conservative Singapore Employment Pass fixture from retained MOM key-facts and eligibility evidence.",
+      "source_ids": [
+        "singapore-mom-employment-pass-key-facts",
+        "singapore-mom-employment-pass-eligibility"
+      ]
+    }
+  ]
+}

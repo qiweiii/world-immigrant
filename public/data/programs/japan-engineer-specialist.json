@@ -1,0 +1,289 @@
+{
+  "id": "japan-engineer-specialist",
+  "country_id": "japan",
+  "category_ids": [
+    "skilled_worker"
+  ],
+  "official_names": {
+    "en": "Engineer / Specialist in Humanities / International Services"
+  },
+  "aliases": [
+    "Japan Engineer/Specialist in Humanities/International Services",
+    "技術・人文知識・国際業務"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "Japan's Immigration Services Agency publishes the status and application-document requirements in Japanese. This fixture is limited to the retained status page and remains under human review."
+  },
+  "summary_md": {
+    "en": "A Japan work residence status for technical, humanities, and certain foreign-culture-based activities performed under a contract with a public or private institution in Japan."
+  },
+  "good_for_md": {
+    "en": "Professionals whose proposed role fits the listed engineering, humanities, translation, design, language-teaching, marketing, or related activities and who have a qualifying contract with an institution in Japan."
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking a general self-sponsored or remote-income status. The retained ISA page describes institution-based work and does not establish a universal salary, family, PR, or citizenship rule."
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "The ISA application materials distinguish education and relevant-work-experience evidence by activity and applicant category; this fixture does not generalize one universal threshold."
+      }
+    },
+    "work_experience": {
+      "note_md": {
+        "en": "Relevant education or work-history evidence is required in the application materials, with conditions varying by the activity and applicant."
+      }
+    },
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": true,
+    "accepted_sources": [
+      "employment"
+    ],
+    "income_location": "inside_destination",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The status is based on paid activity under a contract with an institution in Japan; the retained page does not state a universal salary minimum."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The ISA page provides application procedures and document categories but no single processing-time value in the retained text."
+    },
+    "initial_validity_months": "variable",
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained ISA status page does not establish a permanent-residence pathway."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained ISA status page does not establish a citizenship pathway."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The official ISA page clearly states covered activities, institution-based contracts, status periods, and application materials, but much of the evidence is Japanese and role/category-specific."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 3,
+    "speed_score": 2,
+    "permanence_score": 3,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 4,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "employer_sponsored",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": true,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "last_checked_at": "2026-07-11T05:38:47.655Z"
+  },
+  "source_ids": [
+    "japan-isa-engineer-specialist",
+    "japan-isa-residence-status-list"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "japan-isa-residence-status-list",
+        "url": "https://www.moj.go.jp/isa/applications/status/index.html",
+        "section": "Residence status index",
+        "snapshot_id": "f6674778b30bf11445e7eee0314b9d3a75ca1f573a7d311333c43214f32a2d2c",
+        "retrieved_at": "2026-07-11T05:38:47.655Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "japan-isa-engineer-specialist",
+        "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+        "section": "Activities covered and period of stay",
+        "snapshot_id": "1fa7848b71d5ff31ef69fe67f7c7f8b219367c1102e9e2bfa168b9a8d48300b5",
+        "retrieved_at": "2026-07-11T05:37:29.406Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T05:38:47.655Z",
+    "updated_at": "2026-07-11T05:38:47.655Z",
+    "last_checked_at": "2026-07-11T05:38:47.655Z",
+    "update_frequency_days": 30,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T05:38:47.655Z",
+      "summary": "Added a conservative Japan Engineer/Specialist in Humanities/International Services fixture from retained ISA evidence.",
+      "source_ids": [
+        "japan-isa-engineer-specialist",
+        "japan-isa-residence-status-list"
+      ]
+    }
+  ]
+}

@@ -1,7 +1,9 @@
 {
   "id": "singapore-mom-employment-pass-eligibility",
   "country_id": "singapore",
-  "program_ids": [],
+  "program_ids": [
+    "singapore-employment-pass"
+  ],
   "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
   "title": "Eligibility for Employment Pass",
   "publisher": "Singapore Ministry of Manpower",

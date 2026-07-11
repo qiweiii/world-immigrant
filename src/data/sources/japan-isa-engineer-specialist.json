@@ -1,7 +1,7 @@
 {
   "id": "japan-isa-engineer-specialist",
   "country_id": "japan",
-  "program_ids": [],
+  "program_ids": ["japan-engineer-specialist"],
   "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
   "title": "Residence status — Engineer/Specialist in Humanities/International Services",
   "publisher": "Japan Immigration Services Agency",

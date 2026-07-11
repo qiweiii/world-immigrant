@@ -1,7 +1,9 @@
 {
   "id": "hong-kong-immd-ttps",
   "country_id": "hong-kong",
-  "program_ids": [],
+  "program_ids": [
+    "hong-kong-top-talent-pass"
+  ],
   "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
   "title": "Top Talent Pass Scheme",
   "publisher": "Hong Kong Immigration Department",
