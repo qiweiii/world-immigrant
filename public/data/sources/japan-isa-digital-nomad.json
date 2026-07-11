@@ -1,0 +1,28 @@
+{
+  "id": "japan-isa-digital-nomad",
+  "country_id": "japan",
+  "program_ids": [
+    "japan-digital-nomad"
+  ],
+  "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+  "title": "Status of Residence of Designated Activities (Digital Nomad)",
+  "publisher": "Immigration Services Agency of Japan",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Digital Nomad",
+    "10 million yen",
+    "Six months",
+    "private medical"
+  ],
+  "expected_domains": [
+    "www.moj.go.jp",
+    "moj.go.jp"
+  ],
+  "last_checked_at": "2026-07-11T14:11:38.524Z",
+  "last_success_at": "2026-07-11T14:11:38.524Z",
+  "status": "active"
+}

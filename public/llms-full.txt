@@ -238,6 +238,37 @@ A German residence route for qualified professionals with an employment contract
 
 - germany-eu-blue-card: EU Blue Card — https://www.make-it-in-germany.com/en/visa-residence/types/eu-blue-card
 
+## Opportunity Card (Chancenkarte)
+
+- ID: germany-opportunity-card
+- Country: germany
+- Status: active
+- Last updated: 2026-07-11T14:09:25.000Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A German job-search residence route for non-EU skilled workers. It is designed to help candidates look for qualified employment in Germany, typically for up to one year, with limited part-time work while searching. Finding a qualifying job can lead to a longer work residence title such as the EU Blue Card.
+
+### Official sources
+
+- germany-opportunity-card: Apply online for the Opportunity Card — https://digital.diplo.de/chancenkarte
+
+## Residence title for full-time study
+
+- ID: germany-student-residence
+- Country: germany
+- Status: active
+- Last updated: 2026-07-11T14:09:25.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A German study residence route for full-time higher education. BAMF says limited employment is possible while studying, and after successful completion you generally have up to 18 months to look for qualified work. That later job search can lead toward skilled-work titles and longer settlement pathways.
+
+### Official sources
+
+- germany-bamf-studying: BAMF: Studying — https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html
+- germany-study-in-germany-visa: Study in Germany: Visa — https://www.study-in-germany.de/en/plan-your-studies/requirements/visa/
+
 ## Top Talent Pass Scheme
 
 - ID: hong-kong-top-talent-pass
@@ -254,6 +285,21 @@ A Hong Kong talent admission route with Category A for high annual income, Categ
 - hong-kong-immd-ttps: Top Talent Pass Scheme — https://www.immd.gov.hk/eng/services/visas/TTPS.html
 - hong-kong-immd-ttps-faq: Top Talent Pass Scheme frequently asked questions — https://www.immd.gov.hk/eng/faq/TTPS.html
 
+## Designated Activities (Digital Nomad)
+
+- ID: japan-digital-nomad
+- Country: japan
+- Status: active
+- Last updated: 2026-07-11T14:09:25.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A temporary Japan route for nationals of eligible visa-exempt tax-treaty countries who earn at least 10 million yen a year and hold private medical travel insurance covering death, injury and illness (medical treatment coverage of 10 million yen or more). Work must be remote international work for a foreign employer or overseas clients using ICT; local Japanese employment is not the model.
+
+### Official sources
+
+- japan-isa-digital-nomad: Status of Residence of Designated Activities (Digital Nomad) — https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html
+
 ## Engineer / Specialist in Humanities / International Services
 
 - ID: japan-engineer-specialist
@@ -269,6 +315,21 @@ A Japan work residence status for technical, humanities, and certain foreign-cul
 
 - japan-isa-engineer-specialist: Residence status — Engineer/Specialist in Humanities/International Services — https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en
 - japan-isa-residence-status-list: Search by residence status — https://www.moj.go.jp/isa/applications/status/index.html
+
+## Student status of residence
+
+- ID: japan-student
+- Country: japan
+- Status: active
+- Last updated: 2026-07-11T14:09:25.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+Japan's main study residence status for school-based learning. Applicants usually obtain a Certificate of Eligibility through the school, then a visa at a Japanese mission, and receive a residence card after entry when staying more than three months.
+
+### Official sources
+
+- japan-studyinjapan-student: Immigration and Students Visas | Study in Japan — https://www.studyinjapan.go.jp/en/planning/immigration-procedures/
 
 ## DE Rantau Nomad Pass
 

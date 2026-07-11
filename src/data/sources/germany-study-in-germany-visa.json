@@ -1,0 +1,18 @@
+{
+  "id": "germany-study-in-germany-visa",
+  "country_id": "germany",
+  "program_ids": ["germany-student-residence"],
+  "url": "https://www.study-in-germany.de/en/plan-your-studies/requirements/visa/",
+  "title": "Study in Germany: Visa",
+  "publisher": "DAAD / Study in Germany",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["visa", "student", "prospective student"],
+  "expected_domains": ["www.study-in-germany.de", "study-in-germany.de"],
+  "last_checked_at": "2026-07-11T14:11:38.524Z",
+  "last_success_at": "2026-07-11T14:11:38.524Z",
+  "status": "active"
+}

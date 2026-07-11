@@ -85,6 +85,14 @@ test("country and program page models resolve canonical relationships", async ()
       "united-kingdom-graduate-visa",
     ],
   );
+  assert.deepEqual(
+    byId.germany.programs.map(({ id }) => id),
+    ["germany-eu-blue-card", "germany-opportunity-card", "germany-student-residence"],
+  );
+  assert.deepEqual(
+    byId.japan.programs.map(({ id }) => id),
+    ["japan-engineer-specialist", "japan-student", "japan-digital-nomad"],
+  );
   assert.equal(programs.length, dataset.programs.length);
   const canadaProgram = programs.find((model) => model.program.id === "canada-express-entry-fsw");
   const australiaProgram = programs.find(

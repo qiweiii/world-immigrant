@@ -1,0 +1,320 @@
+{
+  "id": "germany-opportunity-card",
+  "country_id": "germany",
+  "category_ids": [
+    "skilled_worker"
+  ],
+  "official_names": {
+    "en": "Opportunity Card (Chancenkarte)",
+    "zh-Hans": "机会卡（Chancenkarte）"
+  },
+  "aliases": [
+    "Germany Opportunity Card",
+    "Chancenkarte",
+    "Job search opportunity card"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "The Federal Foreign Office presents the Opportunity Card as an active residence route that lets third-country skilled workers enter Germany to seek employment. Online application is available through the official Consular Services portal.",
+    "zh-Hans": "德国外交部将机会卡列为现行居留途径，允许第三国技术工人进入德国求职。可通过官方领事服务门户在线申请。"
+  },
+  "summary_md": {
+    "en": "A German job-search residence route for non-EU skilled workers. It is designed to help candidates look for qualified employment in Germany, typically for up to one year, with limited part-time work while searching. Finding a qualifying job can lead to a longer work residence title such as the EU Blue Card.",
+    "zh-Hans": "面向非欧盟技术工人的德国求职居留途径。旨在帮助申请人在德国寻找合格工作，通常最长一年，求职期间可从事有限兼职。找到合资格工作后可转为欧盟蓝卡等更长期工作居留。"
+  },
+  "good_for_md": {
+    "en": "Skilled workers from outside the EU who want time in Germany to find a job, either with a recognised qualification or through the points-based Opportunity Card selection rules, and who can support themselves during the search.",
+    "zh-Hans": "适合希望在德国求职的非欧盟技术工人，无论是通过获认可资格还是机会卡积分规则，并能够在求职期间自给。"
+  },
+  "not_good_for_md": {
+    "en": "People who already have a qualifying job offer (other work routes may fit better), applicants seeking unrestricted remote-only work for foreign employers only, or a dedicated digital-nomad visa. Germany does not have a dedicated digital-nomad visa in this record.",
+    "zh-Hans": "不适合已有合资格工作机会（其他工作途径可能更合适）、仅寻求为境外雇主远程工作，或寻求专门数字游民签证的申请人。本记录不将德国描述为提供专门数字游民签证。"
+  },
+  "pathway_mechanism": "points_invitation",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "vocational",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "The Opportunity Card is aimed at skilled workers. Applicants may qualify with a recognised foreign vocational or higher-education qualification, or via a points system that scores education, experience, language, age and related factors. Exact scoring and recognition rules should be checked on the official self-check and portal.",
+        "zh-Hans": "机会卡面向技术工人。申请人可凭获认可的境外职业或高等教育资格，或通过评估学历、经验、语言、年龄等因素的积分制获得资格。具体计分与认证规则应在官方自检工具和门户核对。"
+      }
+    },
+    "work_experience": {
+      "note_md": {
+        "en": "Work experience can improve points under the selection system when that route is used. Official materials emphasise skilled-worker profiles rather than unskilled labour.",
+        "zh-Hans": "在适用积分途径时，工作经验可提高分数。官方材料强调技术工人画像，而非非技术劳动。"
+      }
+    },
+    "language": [
+      {
+        "language": "de-or-en",
+        "test": "German or English language evidence under Opportunity Card rules",
+        "minimum_level": "unknown",
+        "note_md": {
+          "en": "Language ability is part of the Opportunity Card points assessment. Exact minimum levels depend on the current official scoring table.",
+          "zh-Hans": "语言能力属于机会卡积分评估的一部分。具体最低等级取决于当前官方计分表。"
+        }
+      }
+    ],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": true,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": [
+      "unknown"
+    ],
+    "income_location": "not_applicable",
+    "stability_requirement_md": {
+      "en": "Applicants must be able to support themselves during the job search. Official guidance commonly refers to blocked-account or other subsistence proof rather than a job salary threshold for entry.",
+      "zh-Hans": "申请人必须能在求职期间自给。官方指引通常要求冻结账户或其他生活费证明，而非入职时的薪资门槛。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Processing depends on the mission or authority handling the application. The card is typically issued for up to one year for job search; after finding qualified work, a different residence title is needed.",
+      "zh-Hans": "处理时间取决于办理申请的使领馆或主管机关。该卡通常为最长一年的求职居留；找到合格工作后需换取其他居留许可。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": 12,
+    "renewable": "unknown",
+    "max_stay_months": 12
+  },
+  "rights": {
+    "work_allowed": "limited",
+    "local_employment_allowed": "limited",
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "limited"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "The Opportunity Card itself is a temporary job-search title. A later skilled-work residence permit such as the EU Blue Card may lead toward permanent residence under its own rules.",
+      "zh-Hans": "机会卡本身是临时求职身份。之后如欧盟蓝卡等技术工作居留许可，可在其自身规则下通向永久居留。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The Opportunity Card sources do not establish citizenship eligibility.",
+      "zh-Hans": "机会卡来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "extraction_confidence_score": 3,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The route is officially active, but Make it in Germany pages are often bot-protected and detailed points thresholds change. Human review of the current portal and mission instructions is required before applying.",
+      "zh-Hans": "该途径官方有效，但 Make it in Germany 页面常受机器人防护，详细积分门槛会变化。申请前需人工核对当前门户和使领馆说明。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 4,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "points_invitation",
+    "accepts_remote_income": false,
+    "accepts_self_employment": "unknown",
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "limited",
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "last_checked_at": "2026-07-11T14:09:25.000Z"
+  },
+  "source_ids": [
+    "germany-opportunity-card"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Opportunity Card online application portal",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Residence permit to seek employment",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Opportunity Card for third-country workers",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Seek employment in Germany",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Job-search route limitations",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Skilled-worker selection without existing job",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Third-country skilled workers seeking employment",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Self-support during job search",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "No job offer required to enter for search",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Job-search residence period",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Seek employment activities",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Family rules not fully established on portal landing",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Temporary search title leading to later work permit",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Citizenship not established",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "germany-opportunity-card",
+        "url": "https://digital.diplo.de/chancenkarte",
+        "section": "Conservative Opportunity Card filter fields",
+        "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:09:25Z",
+    "updated_at": "2026-07-11T14:09:25Z",
+    "last_checked_at": "2026-07-11T14:09:25.000Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:09:25Z",
+      "summary": "Added Germany Opportunity Card coverage from Federal Foreign Office portal evidence.",
+      "source_ids": [
+        "germany-opportunity-card"
+      ]
+    }
+  ]
+}

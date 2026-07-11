@@ -1,0 +1,18 @@
+{
+  "id": "germany-opportunity-card",
+  "country_id": "germany",
+  "program_ids": ["germany-opportunity-card"],
+  "url": "https://digital.diplo.de/chancenkarte",
+  "title": "Apply online for the Opportunity Card",
+  "publisher": "Federal Foreign Office of Germany",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["Opportunity Card", "seek employment", "third countries"],
+  "expected_domains": ["digital.diplo.de", "diplo.de"],
+  "last_checked_at": "2026-07-11T14:12:30.187Z",
+  "last_success_at": "2026-07-11T14:12:30.187Z",
+  "status": "active"
+}

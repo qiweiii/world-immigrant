@@ -2655,6 +2655,402 @@
       "last_checked_at": "2026-07-11T11:46:25.813Z"
     },
     {
+      "program_id": "germany-opportunity-card",
+      "country_id": "germany",
+      "country_names": {
+        "en": "Germany",
+        "zh-Hans": "德国"
+      },
+      "country_brand_color": "#FFCC00",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Opportunity Card (Chancenkarte)",
+        "zh-Hans": "机会卡（Chancenkarte）"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "vocational",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "not_applicable",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T14:09:25Z",
+        "updated_at": "2026-07-11T14:09:25Z",
+        "last_checked_at": "2026-07-11T14:09:25.000Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Opportunity Card online application portal",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Residence permit to seek employment",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Opportunity Card for third-country workers",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Seek employment in Germany",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Job-search route limitations",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Skilled-worker selection without existing job",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Third-country skilled workers seeking employment",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Self-support during job search",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "No job offer required to enter for search",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Job-search residence period",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Seek employment activities",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Family rules not fully established on portal landing",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Temporary search title leading to later work permit",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Citizenship not established",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "germany-opportunity-card",
+            "url": "https://digital.diplo.de/chancenkarte",
+            "section": "Conservative Opportunity Card filter fields",
+            "snapshot_id": "4a270df62c14a3fb11c9e900227a028c94c84346ac7b5979d9ffca43fad2e633",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ]
+      },
+      "pathway_type": "temporary_only",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "points_invitation",
+      "accepts_remote_income": false,
+      "accepts_self_employment": "unknown",
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": "limited",
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "indirect",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-11T14:09:25.000Z"
+    },
+    {
+      "program_id": "germany-student-residence",
+      "country_id": "germany",
+      "country_names": {
+        "en": "Germany",
+        "zh-Hans": "德国"
+      },
+      "country_brand_color": "#FFCC00",
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Residence title for full-time study",
+        "zh-Hans": "全日制学习居留许可"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "secondary",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "not_applicable",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T14:09:25Z",
+        "updated_at": "2026-07-11T14:09:25Z",
+        "last_checked_at": "2026-07-11T14:09:25.000Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "quote_md": "You can come to Germany to study here as long as you are admitted to a full-time course of study by a higher education institution.",
+            "section": "Studying in Germany",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "quote_hash": "4cbd4ab6ccac8983f6c5f0496155e6f3031f32a24a64a4f4b43f82e96417a44a",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Full-time study admission and self-support",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Employment while studying and 18 months after graduation",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Admission and ability to support yourself",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "germany-study-in-germany-visa",
+            "url": "https://www.study-in-germany.de/en/plan-your-studies/requirements/visa/",
+            "section": "Visa requirement for living and studying",
+            "snapshot_id": "753066f0dc54862d1cbce8353bb47c97c336288f5fb2515ed4045c631b2eb4e2",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Residence title for study purposes",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Full-time admission and prospective-student stay",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Able to support yourself / subsistence",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Subsistence rather than employment income threshold",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Up to 18 months after studies to look for a job",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Limited employment and part-time student jobs",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Family rules not fully established on overview page",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Post-study job search then qualified employment",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Citizenship not established",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "germany-bamf-studying",
+            "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+            "section": "Conservative student residence filter fields",
+            "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "other",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": false,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": "limited",
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "indirect",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 4,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T14:09:25.000Z"
+    },
+    {
       "program_id": "hong-kong-top-talent-pass",
       "country_id": "hong-kong",
       "country_names": {
@@ -2859,6 +3255,222 @@
       "last_checked_at": "2026-07-11T05:37:28.622Z"
     },
     {
+      "program_id": "japan-digital-nomad",
+      "country_id": "japan",
+      "country_names": {
+        "en": "Japan",
+        "zh-Hans": "日本"
+      },
+      "country_brand_color": "#BC002D",
+      "category_ids": [
+        "digital_nomad"
+      ],
+      "official_names": {
+        "en": "Designated Activities (Digital Nomad)",
+        "zh-Hans": "特定活动（数字游民）"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": false,
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [
+          {
+            "amount": 10000000,
+            "currency": "JPY",
+            "period": "annual",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "ISA states annual income must be at least 10 million yen at the time of application, proven by tax or income certificates from the country where the applicant worked.",
+              "zh-Hans": "出入国在留管理厅说明申请时年收入须至少 1,000 万日元，并以工作所在国的税务或收入证明证明。"
+            }
+          }
+        ],
+        "accepted_income_sources": [
+          "remote_employment",
+          "freelance",
+          "business_income"
+        ],
+        "income_location": "outside_destination"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T14:09:25Z",
+        "updated_at": "2026-07-11T14:09:25Z",
+        "last_checked_at": "2026-07-11T14:09:25.000Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "quote_md": "Six months (No extension will be granted.)",
+            "section": "Designated Activities for Digital Nomad",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "quote_hash": "a5eb0e0e28c8213d7f06ec72e83c621be4db77365cea2681453d119b648b7380",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Six months, reapply wait, no residence card",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Income, insurance, nationality chart, remote work activities",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Eligibility conditions for Digital Nomad",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Nationality list, income and six-month limit",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "International remote work using ICT for foreign organisations or clients",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Nationality, income, insurance requirements",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Income proof rather than settlement funds table",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "quote_md": "Annual income of an applicant must be at least 10 million yen at the time of application.",
+            "section": "Annual income of at least 10 million yen",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "quote_hash": "4b0a8f39311bec685ea0f9d02ff3ad1c9ae1bac681e1e4d6751b293a13ff9e83",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Six months, no extension, reapply wait",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "International remote work activities",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Spouse or child of Digital Nomad",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Temporary six-month status without residence card",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Citizenship not available on this status",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "japan-isa-digital-nomad",
+            "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+            "section": "Conservative digital-nomad filter fields",
+            "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ]
+      },
+      "pathway_type": "temporary_only",
+      "settlement_track": "temporary_no_pr",
+      "pathway_mechanism": "remote_income",
+      "min_annual_income_usd": "variable",
+      "accepts_remote_income": true,
+      "accepts_self_employment": true,
+      "accepts_overseas_remote_income": true,
+      "requires_degree": false,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": false,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": true,
+      "leads_to_pr": false,
+      "leads_to_citizenship": false,
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T14:09:25.000Z"
+    },
+    {
       "program_id": "japan-engineer-specialist",
       "country_id": "japan",
       "country_names": {
@@ -3046,6 +3658,205 @@
       "policy_stability_score": 3,
       "source_confidence_score": 4,
       "last_checked_at": "2026-07-11T05:38:47.655Z"
+    },
+    {
+      "program_id": "japan-student",
+      "country_id": "japan",
+      "country_names": {
+        "en": "Japan",
+        "zh-Hans": "日本"
+      },
+      "country_brand_color": "#BC002D",
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Student status of residence",
+        "zh-Hans": "留学在留资格"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "not_applicable",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T14:09:25Z",
+        "updated_at": "2026-07-11T14:09:25Z",
+        "last_checked_at": "2026-07-11T14:09:25.000Z",
+        "update_frequency_days": 30,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "quote_md": "The residential status for the purpose of studies at universities, junior colleges, colleges of technology, specialized training colleges or Japanese language schools in Japan is designated as \"Student.\"",
+            "section": "Visas and Status of Residence — Student",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "quote_hash": "79bd5ec1d7b52609ec8d4b94b72a6d969fea7a0bb3e28d0676c3d6b3073b0e74",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Period of stay not exceeding 4 years and 3 months",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "COE, visa application, residence card",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Ability to pay expenses and COE process",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Study-purpose residence status",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "School-based Student status",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Eligible school types for Student status",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Evidence showing ability to pay expenses",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Expense coverage rather than employment income",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "COE then visa; period of stay up to 4 years 3 months",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Student activities and residence card",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Family rules not established on overview page",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Temporary student status",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Citizenship not established",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "japan-studyinjapan-student",
+            "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+            "section": "Conservative Student status filter fields",
+            "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+            "retrieved_at": "2026-07-11T14:09:25.000Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "other",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": "unknown",
+      "remote_work_allowed": false,
+      "leads_to_pr": "indirect",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 4,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T14:09:25.000Z"
     },
     {
       "program_id": "malaysia-de-rantau-nomad-pass",

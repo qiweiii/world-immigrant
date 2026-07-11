@@ -1,0 +1,326 @@
+{
+  "id": "japan-digital-nomad",
+  "country_id": "japan",
+  "category_ids": [
+    "digital_nomad"
+  ],
+  "official_names": {
+    "en": "Designated Activities (Digital Nomad)",
+    "zh-Hans": "特定活动（数字游民）"
+  },
+  "aliases": [
+    "Japan digital nomad visa",
+    "Designated Activities No. 53",
+    "特定活動（デジタルノマド）"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "The Immigration Services Agency publishes Designated Activities (Digital Nomad) as an active status for remote international work for a stay not exceeding six months. Extension is not granted; after six months the same status cannot be reapplied for until another six months have passed, and a residence card is not issued.",
+    "zh-Hans": "出入国在留管理厅将特定活动（数字游民）列为现行在留资格，面向不超过六个月的国际远程工作停留。不可延期；满六个月后须再间隔六个月才可再次申请同一资格，且不签发在留卡。"
+  },
+  "summary_md": {
+    "en": "A temporary Japan route for nationals of eligible visa-exempt tax-treaty countries who earn at least 10 million yen a year and hold private medical travel insurance covering death, injury and illness (medical treatment coverage of 10 million yen or more). Work must be remote international work for a foreign employer or overseas clients using ICT; local Japanese employment is not the model.",
+    "zh-Hans": "面向合资格免签且适用日本税收协定国家/地区国民的临时途径，要求年收入至少 1,000 万日元，并持有覆盖死亡、伤害、疾病的民间旅行医疗保险（伤病医疗补偿额 1,000 万日元以上）。工作须是利用信息通信技术为境外组织或境外客户从事国际远程工作，而非在日本本地就业模式。"
+  },
+  "good_for_md": {
+    "en": "High-earning remote workers from listed eligible countries who can prove income and insurance and only need up to six months in Japan without seeking local employment or permanent settlement.",
+    "zh-Hans": "适合来自名单合资格国家、能证明收入与保险、仅需在日本停留最长六个月且不寻求本地就业或永久定居的高收入远程工作者。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants from non-eligible nationalities, people below the 10 million yen income threshold, those needing longer than six months, or people seeking a Japanese employer-sponsored work status or permanent residence path.",
+    "zh-Hans": "不适合国籍不在名单、年收入低于 1,000 万日元门槛、需要超过六个月停留，或寻求日本雇主担保工作身份或永久居留路径的申请人。"
+  },
+  "pathway_mechanism": "remote_income",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": false
+    },
+    "work_experience": {
+      "note_md": {
+        "en": "ISA requires documents proving current work status such as an employment contract or certificate of employment, and materials explaining the activity schedule in Japan.",
+        "zh-Hans": "出入国在留管理厅要求提供证明当前工作状态的材料（如雇佣合同或在职证明），以及说明在日本活动安排的材料。"
+      }
+    },
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": true,
+    "min_income": [
+      {
+        "amount": 10000000,
+        "currency": "JPY",
+        "period": "annual",
+        "applies_to": "primary",
+        "calculation": "minimum_total",
+        "note_md": {
+          "en": "ISA states annual income must be at least 10 million yen at the time of application, proven by tax or income certificates from the country where the applicant worked.",
+          "zh-Hans": "出入国在留管理厅说明申请时年收入须至少 1,000 万日元，并以工作所在国的税务或收入证明证明。"
+        }
+      }
+    ],
+    "accepted_sources": [
+      "remote_employment",
+      "freelance",
+      "business_income"
+    ],
+    "income_location": "outside_destination"
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "A Certificate of Eligibility application may be filed with regional immigration services. Stay is six months with no extension. After using the full six months, reapplication for the same status requires waiting another six months.",
+      "zh-Hans": "可向地方出入国在留管理局申请在留资格认定证明书。停留期为六个月且不可延期。用满六个月后，再次申请同一资格须再等待六个月。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": 6,
+    "renewable": false,
+    "max_stay_months": 6
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": false,
+    "remote_work_allowed": true,
+    "study_allowed": "unknown",
+    "business_allowed": "limited"
+  },
+  "family": {
+    "spouse_or_partner_allowed": true,
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": true,
+    "spouse_work_allowed": false,
+    "dependent_parents_allowed": false,
+    "note_md": {
+      "en": "ISA publishes a separate Designated Activities status for the spouse or child of a digital nomad, also for six months with private medical insurance requirements.",
+      "zh-Hans": "出入国在留管理厅另公布数字游民配偶或子女的特定活动资格，同样为六个月，并有民间医疗保险要求。"
+    }
+  },
+  "pr_pathway": {
+    "available": false,
+    "summary_md": {
+      "en": "This status is temporary for up to six months, does not issue a residence card, and does not establish a permanent-residence pathway.",
+      "zh-Hans": "该资格最长临时停留六个月，不签发在留卡，也不构成永久居留路径。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": false,
+    "summary_md": {
+      "en": "The digital-nomad sources do not establish citizenship eligibility.",
+      "zh-Hans": "数字游民来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "ISA pages clearly state duration, income, insurance and nationality-list constraints. Eligible-country PDFs and consular practice can change and need re-check before applying.",
+      "zh-Hans": "出入国在留管理厅页面清楚说明期限、收入、保险和国籍名单限制。合资格国家 PDF 与领事实践可能变化，申请前需再核对。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 1,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "temporary_no_pr",
+    "pathway_mechanism": "remote_income",
+    "min_annual_income_usd": "variable",
+    "accepts_remote_income": true,
+    "accepts_self_employment": true,
+    "accepts_overseas_remote_income": true,
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": true,
+    "work_allowed": true,
+    "remote_work_allowed": true,
+    "leads_to_pr": false,
+    "leads_to_citizenship": false,
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T14:09:25.000Z"
+  },
+  "source_ids": [
+    "japan-isa-digital-nomad"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "quote_md": "Six months (No extension will be granted.)",
+        "section": "Designated Activities for Digital Nomad",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "quote_hash": "a5eb0e0e28c8213d7f06ec72e83c621be4db77365cea2681453d119b648b7380",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Six months, reapply wait, no residence card",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Income, insurance, nationality chart, remote work activities",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Eligibility conditions for Digital Nomad",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Nationality list, income and six-month limit",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "International remote work using ICT for foreign organisations or clients",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Nationality, income, insurance requirements",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Income proof rather than settlement funds table",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "quote_md": "Annual income of an applicant must be at least 10 million yen at the time of application.",
+        "section": "Annual income of at least 10 million yen",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "quote_hash": "4b0a8f39311bec685ea0f9d02ff3ad1c9ae1bac681e1e4d6751b293a13ff9e83",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Six months, no extension, reapply wait",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "International remote work activities",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Spouse or child of Digital Nomad",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Temporary six-month status without residence card",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Citizenship not available on this status",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "japan-isa-digital-nomad",
+        "url": "https://www.moj.go.jp/isa/applications/status/designatedactivities53_00001.html",
+        "section": "Conservative digital-nomad filter fields",
+        "snapshot_id": "2bdbe5663fa629cf8a7fd46b30e3dbe4e2913259eefb32528ff46a86e72a7d93",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:09:25Z",
+    "updated_at": "2026-07-11T14:09:25Z",
+    "last_checked_at": "2026-07-11T14:09:25.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:09:25Z",
+      "summary": "Added Japan Designated Activities (Digital Nomad) coverage from official ISA pages.",
+      "source_ids": [
+        "japan-isa-digital-nomad"
+      ]
+    }
+  ]
+}

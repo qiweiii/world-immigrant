@@ -1,0 +1,28 @@
+{
+  "id": "germany-bamf-studying",
+  "country_id": "germany",
+  "program_ids": [
+    "germany-student-residence"
+  ],
+  "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+  "title": "BAMF: Studying",
+  "publisher": "Federal Office for Migration and Refugees (BAMF)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "study",
+    "higher education",
+    "18 months",
+    "residence"
+  ],
+  "expected_domains": [
+    "www.bamf.de",
+    "bamf.de"
+  ],
+  "last_checked_at": "2026-07-11T14:12:30.187Z",
+  "last_success_at": "2026-07-11T14:12:30.187Z",
+  "status": "active"
+}

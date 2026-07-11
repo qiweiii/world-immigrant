@@ -1,0 +1,307 @@
+{
+  "id": "japan-student",
+  "country_id": "japan",
+  "category_ids": [
+    "study_to_pr"
+  ],
+  "official_names": {
+    "en": "Student status of residence",
+    "zh-Hans": "留学在留资格"
+  },
+  "aliases": [
+    "Japan student visa",
+    "Student status Japan",
+    "留学"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "The official Study in Japan portal states that residential status for studies at universities, junior colleges, colleges of technology, specialized training colleges or Japanese language schools is designated as Student, with a period of stay determined by the Minister of Justice not exceeding 4 years and 3 months.",
+    "zh-Hans": "官方 Study in Japan 门户说明，在大学、短期大学、高等专门学校、专修学校或日语学校学习时的在留资格为“留学”，居留期限由法务大臣决定，最长不超过 4 年 3 个月。"
+  },
+  "summary_md": {
+    "en": "Japan's main study residence status for school-based learning. Applicants usually obtain a Certificate of Eligibility through the school, then a visa at a Japanese mission, and receive a residence card after entry when staying more than three months.",
+    "zh-Hans": "日本面向学校学习的主要留学在留资格。申请人通常通过学校申请在留资格认定证明书，再向日本使领馆申请签证，停留超过三个月时入境后领取在留卡。"
+  },
+  "good_for_md": {
+    "en": "International students accepted by an eligible Japanese school who can show funds for expenses during the stay and complete the COE and visa process.",
+    "zh-Hans": "适合获日本合资格学校录取、能证明在留期间费用，并完成认定证明书与签证流程的国际学生。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants without a school place, people seeking unrestricted work only, or remote-work digital-nomad stays under a different status. Japan has a separate Designated Activities digital-nomad route.",
+    "zh-Hans": "不适合没有学校录取、仅寻求不受限制工作，或希望通过其他身份远程工作的申请人。日本另有特定活动数字游民途径。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "Student status is for studies at universities, junior colleges, colleges of technology, specialized training colleges or Japanese language schools. Document packages are set by the Immigration Services Agency and the accepting school.",
+        "zh-Hans": "留学资格适用于大学、短期大学、高等专门学校、专修学校或日语学校的学习。材料包由出入国在留管理厅和接收学校确定。"
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": [
+      "unknown"
+    ],
+    "income_location": "not_applicable",
+    "stability_requirement_md": {
+      "en": "Study in Japan states that COE or visa applications may require proof that the applicant can cover expenses while studying, such as savings, income certificates, or sponsor documentation.",
+      "zh-Hans": "Study in Japan 说明申请认定证明书或签证时可能需要证明能够支付学习期间费用，例如存款、收入证明或担保人材料。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The school usually acts as proxy for the Certificate of Eligibility. After the COE is issued, apply for a visa at a Japanese embassy or consulate. Period of stay is set case by case up to 4 years and 3 months.",
+      "zh-Hans": "学校通常代理申请在留资格认定证明书。认定证明书签发后，向日本使领馆申请签证。居留期限按个案设定，最长 4 年 3 个月。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": 51
+  },
+  "rights": {
+    "work_allowed": "unknown",
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": false,
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "Student status is temporary. Changing to a work status after graduation follows separate Immigration Services Agency procedures and is not automatic.",
+      "zh-Hans": "留学资格是临时的。毕业后变更为工作类在留资格需按出入国在留管理厅另行手续办理，并非自动获得。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The student sources do not establish citizenship eligibility.",
+      "zh-Hans": "留学来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 4,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The Study in Japan overview is clear on process stages, but school-specific document lists and part-time work permission details need case-level checks.",
+      "zh-Hans": "Study in Japan 概览对流程阶段表述清楚，但学校特定材料清单和兼职许可细节需按案件核对。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 5,
+    "policy_stability_score": 4
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "unknown",
+    "remote_work_allowed": false,
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 4,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T14:09:25.000Z"
+  },
+  "source_ids": [
+    "japan-studyinjapan-student"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "quote_md": "The residential status for the purpose of studies at universities, junior colleges, colleges of technology, specialized training colleges or Japanese language schools in Japan is designated as \"Student.\"",
+        "section": "Visas and Status of Residence — Student",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "quote_hash": "79bd5ec1d7b52609ec8d4b94b72a6d969fea7a0bb3e28d0676c3d6b3073b0e74",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Period of stay not exceeding 4 years and 3 months",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "COE, visa application, residence card",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Ability to pay expenses and COE process",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Study-purpose residence status",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "School-based Student status",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Eligible school types for Student status",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Evidence showing ability to pay expenses",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Expense coverage rather than employment income",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "COE then visa; period of stay up to 4 years 3 months",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Student activities and residence card",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Family rules not established on overview page",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Temporary student status",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Citizenship not established",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "japan-studyinjapan-student",
+        "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+        "section": "Conservative Student status filter fields",
+        "snapshot_id": "cbd801e4e5b02885c992e528868760a962dd7deafb82203a73b60cb70207a622",
+        "retrieved_at": "2026-07-11T14:09:25.000Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:09:25Z",
+    "updated_at": "2026-07-11T14:09:25Z",
+    "last_checked_at": "2026-07-11T14:09:25.000Z",
+    "update_frequency_days": 30,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:09:25Z",
+      "summary": "Added Japan Student status coverage from official Study in Japan immigration pages.",
+      "source_ids": [
+        "japan-studyinjapan-student"
+      ]
+    }
+  ]
+}

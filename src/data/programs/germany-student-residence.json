@@ -1,0 +1,309 @@
+{
+  "id": "germany-student-residence",
+  "country_id": "germany",
+  "category_ids": ["study_to_pr"],
+  "official_names": {
+    "en": "Residence title for full-time study",
+    "zh-Hans": "全日制学习居留许可"
+  },
+  "aliases": [
+    "Germany student visa",
+    "Student residence permit Germany",
+    "Section 16b Residence Act"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "BAMF states that third-country nationals can come to Germany to study if admitted to a full-time course at a higher education institution and able to support themselves. Related preparatory and prospective-student stays are also described.",
+    "zh-Hans": "BAMF 说明，第三国国民获高等教育机构全日制课程录取并能自给时，可来德国学习。官方还描述了相关的预备学习与“申请入学”停留。"
+  },
+  "summary_md": {
+    "en": "A German study residence route for full-time higher education. BAMF says limited employment is possible while studying, and after successful completion you generally have up to 18 months to look for qualified work. That later job search can lead toward skilled-work titles and longer settlement pathways.",
+    "zh-Hans": "面向全日制高等教育的德国学习居留途径。BAMF 说明学习期间可有限就业，成功完成学业后通常有最长 18 个月寻找合格工作。后续求职可通向技术工作居留及更长定居路径。"
+  },
+  "good_for_md": {
+    "en": "Applicants admitted to a full-time German higher-education programme who can show they can support themselves and who want a study-to-work path after graduation.",
+    "zh-Hans": "适合获德国全日制高等教育录取、能证明可自给，并希望毕业后走留学-工作路径的申请人。"
+  },
+  "not_good_for_md": {
+    "en": "People without university admission, applicants seeking unrestricted work only, or a dedicated digital-nomad visa. Germany does not have a dedicated digital-nomad visa in this record.",
+    "zh-Hans": "不适合没有大学录取、仅寻求不受限制工作，或寻求专门数字游民签证的申请人。本记录不将德国描述为提供专门数字游民签证。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "secondary",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "BAMF requires admission to a full-time course of study by a higher education institution. Schooling and language requirements for admission are checked as part of the study path; a prospective-student stay of up to nine months is also described for application and preparation.",
+        "zh-Hans": "BAMF 要求获高等教育机构全日制课程录取。入学所需的学历和语言条件在学习路径中审查；官方还描述最长九个月的“申请入学/准备学习”停留。"
+      }
+    },
+    "work_experience": {},
+    "language": [
+      {
+        "language": "de-or-program",
+        "test": "Language skills required for the chosen programme",
+        "minimum_level": "unknown",
+        "note_md": {
+          "en": "Language requirements depend on the programme and university. BAMF and Study in Germany both treat language readiness as part of admission and study preparation.",
+          "zh-Hans": "语言要求取决于课程和大学。BAMF 与 Study in Germany 都将语言准备视为录取与学习准备的一部分。"
+        }
+      }
+    ],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": ["unknown"],
+    "income_location": "not_applicable",
+    "stability_requirement_md": {
+      "en": "BAMF requires that you be able to support yourself while studying. Exact subsistence proof (blocked account, scholarship, etc.) is set in the visa/residence process.",
+      "zh-Hans": "BAMF 要求学习期间能够自给。具体生活费证明方式（冻结账户、奖学金等）在签证/居留程序中确定。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Processing depends on the mission and local foreigners authority. BAMF notes that after successful studies you generally have up to 18 months to seek qualified employment, and you may work during that search period.",
+      "zh-Hans": "处理时间取决于使领馆和地方外国人管理局。BAMF 说明成功完成学业后通常有最长 18 个月寻找合格工作，求职期间可以工作。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": "limited",
+    "local_employment_allowed": "limited",
+    "remote_work_allowed": "unknown",
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "BAMF states that after graduation you generally have up to 18 months to find qualified employment. Longer skilled-work residence and later permanent residence follow separate work-title rules.",
+      "zh-Hans": "BAMF 说明毕业后通常有最长 18 个月寻找合格工作。更长期的技术工作居留及之后的永久居留遵循单独的工作居留规则。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The student-residence sources do not establish citizenship eligibility.",
+      "zh-Hans": "学习居留来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 4,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "BAMF and Study in Germany provide clear high-level rules, but blocked-account amounts, weekly work-hour caps, and local foreigners-office practice change and need confirmation at filing.",
+      "zh-Hans": "BAMF 与 Study in Germany 提供了清晰的高层规则，但冻结账户金额、每周工时上限和地方外管实践会变化，递交时需确认。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 4
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "limited",
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 4,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T14:09:25.000Z"
+  },
+  "source_ids": ["germany-bamf-studying", "germany-study-in-germany-visa"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Studying in Germany",
+        "quote_md": "You can come to Germany to study here as long as you are admitted to a full-time course of study by a higher education institution.",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9",
+        "quote_hash": "4cbd4ab6ccac8983f6c5f0496155e6f3031f32a24a64a4f4b43f82e96417a44a"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Full-time study admission and self-support",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Employment while studying and 18 months after graduation",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Admission and ability to support yourself",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "germany-study-in-germany-visa",
+        "url": "https://www.study-in-germany.de/en/plan-your-studies/requirements/visa/",
+        "section": "Visa requirement for living and studying",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "753066f0dc54862d1cbce8353bb47c97c336288f5fb2515ed4045c631b2eb4e2"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Residence title for study purposes",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Full-time admission and prospective-student stay",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Able to support yourself / subsistence",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Subsistence rather than employment income threshold",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Up to 18 months after studies to look for a job",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Limited employment and part-time student jobs",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Family rules not fully established on overview page",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Post-study job search then qualified employment",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Citizenship not established",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "germany-bamf-studying",
+        "url": "https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html",
+        "section": "Conservative student residence filter fields",
+        "retrieved_at": "2026-07-11T14:09:25.000Z",
+        "snapshot_id": "e350ecb8f11c361be549d3664a1f4e1e3d9f0dd9056f2e2843c392b104b928e9"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:09:25Z",
+    "updated_at": "2026-07-11T14:09:25Z",
+    "last_checked_at": "2026-07-11T14:09:25.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:09:25Z",
+      "summary": "Added Germany student residence coverage from BAMF and Study in Germany official pages.",
+      "source_ids": ["germany-bamf-studying", "germany-study-in-germany-visa"]
+    }
+  ]
+}

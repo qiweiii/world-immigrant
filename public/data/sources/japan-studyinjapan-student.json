@@ -1,0 +1,27 @@
+{
+  "id": "japan-studyinjapan-student",
+  "country_id": "japan",
+  "program_ids": [
+    "japan-student"
+  ],
+  "url": "https://www.studyinjapan.go.jp/en/planning/immigration-procedures/",
+  "title": "Immigration and Students Visas | Study in Japan",
+  "publisher": "Study in Japan / JASSO (official study portal)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Student",
+    "Certificate of Eligibility",
+    "Residence Card"
+  ],
+  "expected_domains": [
+    "www.studyinjapan.go.jp",
+    "studyinjapan.go.jp"
+  ],
+  "last_checked_at": "2026-07-11T14:11:38.524Z",
+  "last_success_at": "2026-07-11T14:11:38.524Z",
+  "status": "active"
+}
