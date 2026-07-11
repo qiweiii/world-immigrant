@@ -1,0 +1,32 @@
+{
+  "id": "singapore",
+  "iso2": "SG",
+  "iso3": "SGP",
+  "names": {
+    "en": "Singapore",
+    "zh-Hans": "新加坡"
+  },
+  "region": "Asia",
+  "summary_md": {
+    "en": "Coverage is being expanded with official Ministry of Manpower sources for employer-sponsored Employment Pass work authorization. A complete pathway record will be added after the source set is reviewed.",
+    "zh-Hans": "正在通过人力部官方来源扩展雇主担保就业准证信息。完整路径记录将在来源集完成审查后添加。"
+  },
+  "brand": {
+    "color": "#EF3340",
+    "source": "flag"
+  },
+  "official_source_ids": [
+    "singapore-mom-employment-pass-key-facts",
+    "singapore-mom-employment-pass-eligibility"
+  ],
+  "categories": ["skilled_worker"],
+  "program_ids": [],
+  "freshness": {
+    "created_at": "2026-07-11T05:36:00Z",
+    "updated_at": "2026-07-11T05:36:00Z",
+    "last_checked_at": "2026-07-11T05:36:00Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  }
+}

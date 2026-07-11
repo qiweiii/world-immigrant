@@ -1,0 +1,25 @@
+{
+  "id": "singapore-mom-employment-pass-key-facts",
+  "country_id": "singapore",
+  "program_ids": [],
+  "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+  "title": "Key facts on Employment Pass",
+  "publisher": "Singapore Ministry of Manpower",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Employment Pass",
+    "qualifying salary",
+    "employer",
+    "renew"
+  ],
+  "expected_domains": [
+    "mom.gov.sg"
+  ],
+  "last_checked_at": "2026-07-11T05:37:33.952Z",
+  "last_success_at": "2026-07-11T05:37:33.952Z",
+  "status": "active"
+}

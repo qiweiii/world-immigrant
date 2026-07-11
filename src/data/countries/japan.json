@@ -1,0 +1,29 @@
+{
+  "id": "japan",
+  "iso2": "JP",
+  "iso3": "JPN",
+  "names": {
+    "en": "Japan",
+    "zh-Hans": "日本"
+  },
+  "region": "Asia",
+  "summary_md": {
+    "en": "Coverage is being expanded with official Immigration Services Agency sources for the Engineer/Specialist in Humanities/International Services residence status. A complete pathway record will be added after the source set is reviewed.",
+    "zh-Hans": "正在通过出入国在留管理厅官方来源扩展技术、人文知识、国际业务在留资格信息。完整路径记录将在来源集完成审查后添加。"
+  },
+  "brand": {
+    "color": "#BC002D",
+    "source": "flag"
+  },
+  "official_source_ids": ["japan-isa-engineer-specialist", "japan-isa-residence-status-list"],
+  "categories": ["skilled_worker"],
+  "program_ids": [],
+  "freshness": {
+    "created_at": "2026-07-11T05:36:00Z",
+    "updated_at": "2026-07-11T05:36:00Z",
+    "last_checked_at": "2026-07-11T05:36:00Z",
+    "update_frequency_days": 30,
+    "confidence": "medium",
+    "needs_human_review": true
+  }
+}

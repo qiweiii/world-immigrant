@@ -1,0 +1,23 @@
+{
+  "id": "hong-kong-immd-ttps",
+  "country_id": "hong-kong",
+  "program_ids": [],
+  "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+  "title": "Top Talent Pass Scheme",
+  "publisher": "Hong Kong Immigration Department",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Top Talent Pass Scheme",
+    "36 months",
+    "24 months",
+    "Entry of Dependants"
+  ],
+  "expected_domains": ["immd.gov.hk"],
+  "last_checked_at": "2026-07-11T05:37:27.494Z",
+  "last_success_at": "2026-07-11T05:37:27.494Z",
+  "status": "active"
+}

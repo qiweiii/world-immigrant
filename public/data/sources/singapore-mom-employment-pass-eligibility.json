@@ -1,0 +1,25 @@
+{
+  "id": "singapore-mom-employment-pass-eligibility",
+  "country_id": "singapore",
+  "program_ids": [],
+  "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+  "title": "Eligibility for Employment Pass",
+  "publisher": "Singapore Ministry of Manpower",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "COMPASS",
+    "qualifying salary",
+    "40 points",
+    "Employment Pass"
+  ],
+  "expected_domains": [
+    "mom.gov.sg"
+  ],
+  "last_checked_at": "2026-07-11T05:37:33.786Z",
+  "last_success_at": "2026-07-11T05:37:33.786Z",
+  "status": "active"
+}

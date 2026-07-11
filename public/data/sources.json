@@ -494,6 +494,105 @@
       "status": "active"
     },
     {
+      "id": "hong-kong-immd-ttps",
+      "country_id": "hong-kong",
+      "program_ids": [],
+      "url": "https://www.immd.gov.hk/eng/services/visas/TTPS.html",
+      "title": "Top Talent Pass Scheme",
+      "publisher": "Hong Kong Immigration Department",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Top Talent Pass Scheme",
+        "36 months",
+        "24 months",
+        "Entry of Dependants"
+      ],
+      "expected_domains": [
+        "immd.gov.hk"
+      ],
+      "last_checked_at": "2026-07-11T05:37:27.494Z",
+      "last_success_at": "2026-07-11T05:37:27.494Z",
+      "status": "active"
+    },
+    {
+      "id": "hong-kong-immd-ttps-faq",
+      "country_id": "hong-kong",
+      "program_ids": [],
+      "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
+      "title": "Top Talent Pass Scheme frequently asked questions",
+      "publisher": "Hong Kong Immigration Department",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Category A",
+        "Category B",
+        "Category C",
+        "extension of stay"
+      ],
+      "expected_domains": [
+        "immd.gov.hk"
+      ],
+      "last_checked_at": "2026-07-11T05:37:28.622Z",
+      "last_success_at": "2026-07-11T05:37:28.622Z",
+      "status": "active"
+    },
+    {
+      "id": "japan-isa-engineer-specialist",
+      "country_id": "japan",
+      "program_ids": [],
+      "url": "https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en",
+      "title": "Residence status — Engineer/Specialist in Humanities/International Services",
+      "publisher": "Japan Immigration Services Agency",
+      "source_type": "official",
+      "language": "ja",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "技術",
+        "人文知識",
+        "国際業務",
+        "在留期間"
+      ],
+      "expected_domains": [
+        "moj.go.jp"
+      ],
+      "last_checked_at": "2026-07-11T05:37:29.406Z",
+      "last_success_at": "2026-07-11T05:37:29.406Z",
+      "status": "active"
+    },
+    {
+      "id": "japan-isa-residence-status-list",
+      "country_id": "japan",
+      "program_ids": [],
+      "url": "https://www.moj.go.jp/isa/applications/status/index.html",
+      "title": "Search by residence status",
+      "publisher": "Japan Immigration Services Agency",
+      "source_type": "official",
+      "language": "ja",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "在留資格",
+        "就労",
+        "出入国在留管理庁"
+      ],
+      "expected_domains": [
+        "moj.go.jp"
+      ],
+      "last_checked_at": "2026-07-11T05:38:47.655Z",
+      "last_success_at": "2026-07-11T05:38:47.655Z",
+      "status": "active"
+    },
+    {
       "id": "portugal-aima-digital-nomad-residence",
       "country_id": "portugal",
       "program_ids": [],
@@ -563,6 +662,56 @@
         "vistos.mne.gov.pt"
       ],
       "status": "deprecated"
+    },
+    {
+      "id": "singapore-mom-employment-pass-eligibility",
+      "country_id": "singapore",
+      "program_ids": [],
+      "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/eligibility",
+      "title": "Eligibility for Employment Pass",
+      "publisher": "Singapore Ministry of Manpower",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "COMPASS",
+        "qualifying salary",
+        "40 points",
+        "Employment Pass"
+      ],
+      "expected_domains": [
+        "mom.gov.sg"
+      ],
+      "last_checked_at": "2026-07-11T05:37:33.786Z",
+      "last_success_at": "2026-07-11T05:37:33.786Z",
+      "status": "active"
+    },
+    {
+      "id": "singapore-mom-employment-pass-key-facts",
+      "country_id": "singapore",
+      "program_ids": [],
+      "url": "https://www.mom.gov.sg/passes-and-permits/employment-pass/key-facts",
+      "title": "Key facts on Employment Pass",
+      "publisher": "Singapore Ministry of Manpower",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Employment Pass",
+        "qualifying salary",
+        "employer",
+        "renew"
+      ],
+      "expected_domains": [
+        "mom.gov.sg"
+      ],
+      "last_checked_at": "2026-07-11T05:37:33.952Z",
+      "last_success_at": "2026-07-11T05:37:33.952Z",
+      "status": "active"
     },
     {
       "id": "spain-uge-international-teleworkers",

@@ -1,0 +1,18 @@
+{
+  "id": "hong-kong-immd-ttps-faq",
+  "country_id": "hong-kong",
+  "program_ids": [],
+  "url": "https://www.immd.gov.hk/eng/faq/TTPS.html",
+  "title": "Top Talent Pass Scheme frequently asked questions",
+  "publisher": "Hong Kong Immigration Department",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["Category A", "Category B", "Category C", "extension of stay"],
+  "expected_domains": ["immd.gov.hk"],
+  "last_checked_at": "2026-07-11T05:37:28.622Z",
+  "last_success_at": "2026-07-11T05:37:28.622Z",
+  "status": "active"
+}

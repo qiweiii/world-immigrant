@@ -1,0 +1,24 @@
+{
+  "id": "japan-isa-residence-status-list",
+  "country_id": "japan",
+  "program_ids": [],
+  "url": "https://www.moj.go.jp/isa/applications/status/index.html",
+  "title": "Search by residence status",
+  "publisher": "Japan Immigration Services Agency",
+  "source_type": "official",
+  "language": "ja",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "在留資格",
+    "就労",
+    "出入国在留管理庁"
+  ],
+  "expected_domains": [
+    "moj.go.jp"
+  ],
+  "last_checked_at": "2026-07-11T05:38:47.655Z",
+  "last_success_at": "2026-07-11T05:38:47.655Z",
+  "status": "active"
+}

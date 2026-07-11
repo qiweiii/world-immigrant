@@ -1,0 +1,29 @@
+{
+  "id": "hong-kong",
+  "iso2": "HK",
+  "iso3": "HKG",
+  "names": {
+    "en": "Hong Kong",
+    "zh-Hans": "中国香港"
+  },
+  "region": "Asia",
+  "summary_md": {
+    "en": "Coverage is being expanded with official Immigration Department sources for the Top Talent Pass Scheme. A complete pathway record will be added after the source set is reviewed.",
+    "zh-Hans": "正在通过入境事务处官方来源扩展高端人才通行证计划信息。完整路径记录将在来源集完成审查后添加。"
+  },
+  "brand": {
+    "color": "#DE2910",
+    "source": "flag"
+  },
+  "official_source_ids": ["hong-kong-immd-ttps", "hong-kong-immd-ttps-faq"],
+  "categories": ["skilled_worker"],
+  "program_ids": [],
+  "freshness": {
+    "created_at": "2026-07-11T05:36:00Z",
+    "updated_at": "2026-07-11T05:36:00Z",
+    "last_checked_at": "2026-07-11T05:36:00Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  }
+}
