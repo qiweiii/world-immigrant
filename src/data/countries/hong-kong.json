@@ -8,22 +8,22 @@
   },
   "region": "Asia",
   "summary_md": {
-    "en": "Coverage is being expanded with official Immigration Department sources for the Top Talent Pass Scheme. A complete pathway record will be added after the source set is reviewed.",
-    "zh-Hans": "正在通过入境事务处官方来源扩展高端人才通行证计划信息。完整路径记录将在来源集完成审查后添加。"
+    "en": "Hong Kong coverage includes the Top Talent Pass Scheme for skilled admission and the student visa/entry permit for eligible study. There is no dedicated digital-nomad visa in this record.",
+    "zh-Hans": "香港覆盖包括顶尖人才通行证计划（技术/人才入境）以及合资格学习的学生签证/进入许可。本记录不包含专门数字游民签证。"
   },
   "brand": {
     "color": "#DE2910",
     "source": "flag"
   },
-  "official_source_ids": ["hong-kong-immd-ttps", "hong-kong-immd-ttps-faq"],
-  "categories": ["skilled_worker"],
-  "program_ids": ["hong-kong-top-talent-pass"],
+  "official_source_ids": ["hong-kong-immd-ttps", "hong-kong-immd-ttps-faq", "hong-kong-immd-study"],
+  "categories": ["skilled_worker", "study_to_pr"],
+  "program_ids": ["hong-kong-top-talent-pass", "hong-kong-student"],
   "freshness": {
     "created_at": "2026-07-11T05:36:00Z",
-    "updated_at": "2026-07-11T05:36:00Z",
-    "last_checked_at": "2026-07-11T05:36:00Z",
+    "updated_at": "2026-07-11T14:45:00.000Z",
+    "last_checked_at": "2026-07-11T14:45:00.000Z",
     "update_frequency_days": 14,
-    "confidence": "medium",
+    "confidence": "high",
     "needs_human_review": true
   }
 }

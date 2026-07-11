@@ -1,0 +1,22 @@
+{
+  "id": "croatia-mup-work-third-country",
+  "country_id": "croatia",
+  "program_ids": ["croatia-eu-blue-card"],
+  "url": "https://mup.gov.hr/aliens-281621/stay-and-work/work-of-third-country-nationals/281663",
+  "title": "Work of third-country nationals",
+  "publisher": "Ministry of the Interior of the Republic of Croatia (MUP)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "stay and work permit",
+    "labour market test",
+    "third-country nationals"
+  ],
+  "expected_domains": ["mup.gov.hr"],
+  "last_checked_at": "2026-07-11T14:45:00.000Z",
+  "last_success_at": "2026-07-11T14:45:00.000Z",
+  "status": "active"
+}

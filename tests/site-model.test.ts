@@ -49,11 +49,15 @@ test("country and program page models resolve canonical relationships", async ()
   );
   assert.deepEqual(
     byId.singapore.programs.map(({ id }) => id),
-    ["singapore-employment-pass", "singapore-entrepass"],
+    ["singapore-employment-pass", "singapore-entrepass", "singapore-student-pass"],
   );
   assert.deepEqual(
     byId["new-zealand"].programs.map(({ id }) => id),
-    ["new-zealand-accredited-employer-work-visa", "new-zealand-skilled-migrant-category"],
+    [
+      "new-zealand-accredited-employer-work-visa",
+      "new-zealand-skilled-migrant-category",
+      "new-zealand-fee-paying-student",
+    ],
   );
   assert.deepEqual(
     byId.estonia.programs.map(({ id }) => id),
@@ -65,7 +69,11 @@ test("country and program page models resolve canonical relationships", async ()
   );
   assert.deepEqual(
     byId.croatia.programs.map(({ id }) => id),
-    ["croatia-digital-nomad"],
+    ["croatia-digital-nomad", "croatia-eu-blue-card"],
+  );
+  assert.deepEqual(
+    byId["hong-kong"].programs.map(({ id }) => id),
+    ["hong-kong-top-talent-pass", "hong-kong-student"],
   );
   assert.deepEqual(
     byId.canada.programs.map(({ id }) => id),

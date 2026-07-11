@@ -1,0 +1,299 @@
+{
+  "id": "hong-kong-student",
+  "country_id": "hong-kong",
+  "category_ids": ["study_to_pr"],
+  "official_names": {
+    "en": "Student visa / entry permit",
+    "zh-Hans": "学生签证 / 进入许可"
+  },
+  "aliases": ["Hong Kong student visa", "Entry for study Hong Kong"],
+  "status": "active",
+  "status_note_md": {
+    "en": "Hong Kong Immigration Department publishes entry arrangements for study. Separate rules apply for some nationalities and for Mainland, Macao, and Taiwan residents.",
+    "zh-Hans": "香港入境事务处公布以学习为目的的入境安排。部分国籍以及内地、澳门、台湾居民另有规则。"
+  },
+  "summary_md": {
+    "en": "The main Hong Kong study entry route for non-local students with a school acceptance letter for an eligible private school, full-time locally accredited post-secondary programme, exchange, or registered non-local course. Applicants must show they can pay fees and living costs without working or public funds. Hong Kong has no dedicated digital-nomad visa in this record; talent routes such as TTPS are separate.",
+    "zh-Hans": "面向非本地学生的主要香港学习入境途径，须持有合资格私立学校、全日制本地认可专上课程、交换或已登记非本地课程的录取信，并能证明可支付学费与生活费且不靠工作或公共资金。本记录不将香港描述为提供专门数字游民签证；顶尖人才通等途径另行处理。"
+  },
+  "good_for_md": {
+    "en": "Students accepted into an eligible Hong Kong programme who can fund fees and living costs without working, and who need a dedicated study visa/entry permit.",
+    "zh-Hans": "适合获香港合资格课程录取、能在不工作的情况下支付学费与生活费，并需要专门学生签证/进入许可的学生。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants without school acceptance, those seeking unrestricted work or a digital-nomad stay, or people already holding another status that allows study (check ImmD conditions). Public or aided school study is generally not permitted except listed exceptions.",
+    "zh-Hans": "不适合没有学校录取、寻求不受限制工作或数字游民停留，或已持其他允许学习身份者（须核对入境处条件）。除列明例外外，一般不可入读官立或资助学校。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {
+      "note_md": {
+        "en": "ImmD sets age bands for primary (from 5 years 8 months to 11) and secondary (below 20). Post-secondary study is not limited by those school-age bands on the same page.",
+        "zh-Hans": "入境处对小学（5 岁 8 个月至 11 岁）和中学（20 岁以下）设有年龄范围。同页上的专上课程不受这些学龄段限制。"
+      }
+    },
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "Requires acceptance for an eligible private school, full-time locally accredited post-secondary programme (including some part-time taught postgraduate local programmes), exchange within stated limits, or a full-time course on the Cap. 493 non-local course register.",
+        "zh-Hans": "须获合资格私立学校、全日制本地认可专上课程（包括部分兼读授课式研究院本地课程）、规定时限内的交换，或第 493 章非本地课程登记册上的全日制课程录取。"
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [
+      {
+        "amount": "unknown",
+        "currency": "HKD",
+        "applies_to": "primary",
+        "note_md": {
+          "en": "ImmD requires ability to meet course fees, living expenses, and accommodation without working and without recourse to public funds. Exact amounts are case- and programme-specific.",
+          "zh-Hans": "入境处要求能够支付学费、生活费与住宿，且不靠工作及公共资金。具体金额视个案与课程而定。"
+        }
+      }
+    ],
+    "application_fees": []
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": ["unknown"],
+    "income_location": "not_applicable",
+    "stability_requirement_md": {
+      "en": "The study route is funded by personal means, not employment income in Hong Kong; ImmD states maintenance without working.",
+      "zh-Hans": "学习途径依赖自有资金而非在港就业收入；入境处说明须在不工作的情况下维持生活。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "ImmD publishes processing-time guidance on the study pages; times vary and should be checked when applying.",
+      "zh-Hans": "入境处在学习页面公布处理时间指引；时长会变化，申请时应核对。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": false,
+    "local_employment_allowed": false,
+    "remote_work_allowed": false,
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "A student visa/entry permit is temporary. Longer Hong Kong settlement, if any, depends on later employment or talent schemes such as IANG or TTPS under their own rules—not automatic from study alone.",
+      "zh-Hans": "学生签证/进入许可是临时的。更长的香港定居（如有）取决于后续就业或 IANG、顶尖人才通等计划的自身规则，并非仅凭学习自动获得。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "ImmD study pages do not establish citizenship eligibility.",
+      "zh-Hans": "入境处学习页面没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Core eligibility is clear on ImmD, but nationality carve-outs, work conditions after study, and fees need case-level checks.",
+      "zh-Hans": "入境处核心资格清楚，但国籍例外、毕业后工作条件与费用需按案件核对。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 4,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": false,
+    "remote_work_allowed": false,
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T14:45:00.000Z"
+  },
+  "source_ids": ["hong-kong-immd-study"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "hong-kong-immd-study",
+        "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+        "section": "Students entry for study — Eligibility Criteria",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:45:00.000Z",
+    "updated_at": "2026-07-11T14:45:00.000Z",
+    "last_checked_at": "2026-07-11T14:45:00.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:45:00.000Z",
+      "summary": "Added Hong Kong student visa/entry permit from ImmD study page.",
+      "source_ids": ["hong-kong-immd-study"]
+    }
+  ]
+}

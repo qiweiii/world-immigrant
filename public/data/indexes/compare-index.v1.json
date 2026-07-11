@@ -2623,6 +2623,256 @@
       }
     },
     {
+      "program_id": "croatia-eu-blue-card",
+      "country_id": "croatia",
+      "country_names": {
+        "en": "Croatia",
+        "zh-Hans": "克罗地亚"
+      },
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Stay and work permit for highly qualified workers (EU Blue Card)",
+        "zh-Hans": "高技能劳动者居留和工作许可（欧盟蓝卡）"
+      },
+      "status": "active",
+      "pathway_mechanism": "employer_sponsored",
+      "summary_md": {
+        "en": "An employer-linked Croatian stay and work permit for highly qualified jobs with at least a one-year employment contract with a Croatian-registered employer, higher-education qualifications, and regulated-profession conditions where applicable. Apply at a Croatian mission or local police administration. MUP lists administrative fees for the permit and biometric residence card.",
+        "zh-Hans": "面向高技能岗位的克罗地亚居留和工作许可，须与在克罗地亚注册的雇主签订至少一年雇佣合同、具备高等教育资格，并在适用时满足受规管职业条件。可在克罗地亚使领馆或地方警察部门申请。内政部列明许可与生物识别居留卡行政费用。"
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": [
+          {
+            "label": {
+              "en": "Stay and work permit administrative fee",
+              "zh-Hans": "居留和工作许可行政费"
+            },
+            "amount": 74.32,
+            "currency": "EUR",
+            "applies_to": "primary"
+          },
+          {
+            "label": {
+              "en": "Biometric residence card (regular procedure)",
+              "zh-Hans": "生物识别居留卡（普通程序）"
+            },
+            "amount": 31.85,
+            "currency": "EUR",
+            "applies_to": "primary"
+          }
+        ]
+      },
+      "income": {
+        "required": true,
+        "accepted_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination",
+        "stability_requirement_md": {
+          "en": "Built around a highly qualified employment contract of at least one year with a Croatian-registered employer entity.",
+          "zh-Hans": "基于与克罗地亚注册雇主实体签订的至少一年高技能雇佣合同。"
+        }
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "Apply at a diplomatic mission/consular post or police administration/station of intended stay. Exact decision times are not fixed on the retained MUP page.",
+          "zh-Hans": "向使领馆或拟居留地警察部门申请。保留的内政部页面未固定确切决定时限。"
+        },
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "initial_validity_months": 12,
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": "unknown",
+        "study_allowed": "unknown",
+        "business_allowed": "unknown"
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown"
+      },
+      "pr_pathway": {
+        "available": "indirect",
+        "summary_md": {
+          "en": "Long-term residence after uninterrupted legal stay is described on related MUP long-term residence pages; EU Blue Card holders may later qualify under EU/national long-term rules. Confirm current counting rules separately.",
+          "zh-Hans": "相关内政部长期居留页面描述连续合法居留后的长期居留；欧盟蓝卡持有人之后可能符合欧盟/国家长期规则。请另行核对当前计算规则。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "MUP Blue Card page does not establish citizenship eligibility.",
+          "zh-Hans": "内政部蓝卡页面没有确认公民资格。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 3,
+        "speed_score": 3,
+        "permanence_score": 3,
+        "family_friendliness_score": 2,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "temporary_may_lead_pr",
+        "pathway_mechanism": "employer_sponsored",
+        "pathway_type": "renewable_temporary",
+        "requires_job_offer": true,
+        "requires_local_entity": false
+      },
+      "source_ids": [
+        "croatia-mup-eu-blue-card",
+        "croatia-mup-work-third-country"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "croatia-mup-work-third-country",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/work-of-third-country-nationals/281663",
+            "section": "Stay and work permit for third-country nationals",
+            "snapshot_id": "88bca5d788de8f33d0a18c0fd9ca4f40cf52ac979b1835e69f3fcec2e620242a",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "One-year highly qualified employment contract and higher education proof",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Administrative fee 74,32 EUR and biometric card fees",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "croatia-mup-eu-blue-card",
+            "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+            "section": "Stay and work of highly-qualified third-country nationals",
+            "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T14:45:00.000Z",
+        "updated_at": "2026-07-11T14:45:00.000Z",
+        "last_checked_at": "2026-07-11T14:45:00.000Z",
+        "update_frequency_days": 30,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
       "program_id": "estonia-digital-nomad-visa",
       "country_id": "estonia",
       "country_names": {
@@ -3844,6 +4094,247 @@
         "created_at": "2026-07-11T14:09:25Z",
         "updated_at": "2026-07-11T14:09:25Z",
         "last_checked_at": "2026-07-11T14:09:25.000Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
+      "program_id": "hong-kong-student",
+      "country_id": "hong-kong",
+      "country_names": {
+        "en": "Hong Kong",
+        "zh-Hans": "中国香港"
+      },
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Student visa / entry permit",
+        "zh-Hans": "学生签证 / 进入许可"
+      },
+      "status": "active",
+      "pathway_mechanism": "other",
+      "summary_md": {
+        "en": "The main Hong Kong study entry route for non-local students with a school acceptance letter for an eligible private school, full-time locally accredited post-secondary programme, exchange, or registered non-local course. Applicants must show they can pay fees and living costs without working or public funds. Hong Kong has no dedicated digital-nomad visa in this record; talent routes such as TTPS are separate.",
+        "zh-Hans": "面向非本地学生的主要香港学习入境途径，须持有合资格私立学校、全日制本地认可专上课程、交换或已登记非本地课程的录取信，并能证明可支付学费与生活费且不靠工作或公共资金。本记录不将香港描述为提供专门数字游民签证；顶尖人才通等途径另行处理。"
+      },
+      "funds": {
+        "proof_of_funds": [
+          {
+            "amount": "unknown",
+            "currency": "HKD",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "ImmD requires ability to meet course fees, living expenses, and accommodation without working and without recourse to public funds. Exact amounts are case- and programme-specific.",
+              "zh-Hans": "入境处要求能够支付学费、生活费与住宿，且不靠工作及公共资金。具体金额视个案与课程而定。"
+            }
+          }
+        ],
+        "application_fees": []
+      },
+      "income": {
+        "required": "not_applicable",
+        "accepted_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable",
+        "stability_requirement_md": {
+          "en": "The study route is funded by personal means, not employment income in Hong Kong; ImmD states maintenance without working.",
+          "zh-Hans": "学习途径依赖自有资金而非在港就业收入；入境处说明须在不工作的情况下维持生活。"
+        }
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "ImmD publishes processing-time guidance on the study pages; times vary and should be checked when applying.",
+          "zh-Hans": "入境处在学习页面公布处理时间指引；时长会变化，申请时应核对。"
+        },
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "initial_validity_months": "unknown",
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": false,
+        "local_employment_allowed": false,
+        "remote_work_allowed": false,
+        "study_allowed": true,
+        "business_allowed": false
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown"
+      },
+      "pr_pathway": {
+        "available": "indirect",
+        "summary_md": {
+          "en": "A student visa/entry permit is temporary. Longer Hong Kong settlement, if any, depends on later employment or talent schemes such as IANG or TTPS under their own rules—not automatic from study alone.",
+          "zh-Hans": "学生签证/进入许可是临时的。更长的香港定居（如有）取决于后续就业或 IANG、顶尖人才通等计划的自身规则，并非仅凭学习自动获得。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "ImmD study pages do not establish citizenship eligibility.",
+          "zh-Hans": "入境处学习页面没有确认公民资格。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 4,
+        "speed_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 2,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "temporary_may_lead_pr",
+        "pathway_mechanism": "other",
+        "pathway_type": "renewable_temporary",
+        "requires_job_offer": false,
+        "requires_local_entity": false
+      },
+      "source_ids": [
+        "hong-kong-immd-study"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "hong-kong-immd-study",
+            "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+            "section": "Students entry for study — Eligibility Criteria",
+            "snapshot_id": "0e0d9beb64fe80e76c0092225595d952ee7f08a5f14fa79ff5fc89bd24e421b1",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T14:45:00.000Z",
+        "updated_at": "2026-07-11T14:45:00.000Z",
+        "last_checked_at": "2026-07-11T14:45:00.000Z",
         "update_frequency_days": 14,
         "confidence": "high",
         "needs_human_review": true
@@ -6251,6 +6742,266 @@
       }
     },
     {
+      "program_id": "new-zealand-fee-paying-student",
+      "country_id": "new-zealand",
+      "country_names": {
+        "en": "New Zealand",
+        "zh-Hans": "新西兰"
+      },
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Fee Paying Student Visa",
+        "zh-Hans": "自费学生签证（Fee Paying Student Visa）"
+      },
+      "status": "active",
+      "pathway_mechanism": "other",
+      "summary_md": {
+        "en": "A New Zealand student visa for people with an offer of place from an approved education provider who pay international tuition (or partial scholarship). INZ says stay can be up to 4 years, online applications cost from NZD $850, and 80% of decisions are within 9.5 weeks. Limited part-time work (up to 25 hours a week while studying, full-time in holidays) depends on visa conditions. Living funds are typically NZD $20,000 per year for tertiary study.",
+        "zh-Hans": "面向获认可教育机构录取并支付国际学费（或部分奖学金）者的新西兰学生签证。移民局说明最长可停留 4 年，在线申请费用起价约 850 新西兰元，80% 在 9.5 周内出结果。有限兼职（学习期间每周最多 25 小时，假期可全职）取决于签证条件。高等教育生活费资金通常为每年 20,000 新西兰元。"
+      },
+      "funds": {
+        "proof_of_funds": [
+          {
+            "amount": 20000,
+            "currency": "NZD",
+            "period": "annual",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "Tertiary, English language or other non-compulsory study living costs: NZD $20,000 per year if studying 1 year or more, or NZD $1,667 per month if shorter. School years 1–13 use NZD $17,000 per year or NZD $1,417 per month. Plus tuition and outward travel funds.",
+              "zh-Hans": "高等教育、英语或其他非义务教育生活费：学习满一年及以上每年 20,000 新西兰元，不足一年每月 1,667 新西兰元。小学至中学 1–13 年级为每年 17,000 或每月 1,417。另需学费与离境交通资金。"
+            }
+          }
+        ],
+        "application_fees": [
+          {
+            "label": {
+              "en": "Fee Paying Student Visa application fee (from)",
+              "zh-Hans": "自费学生签证申请费（起价）"
+            },
+            "amount": 850,
+            "currency": "NZD",
+            "applies_to": "primary"
+          }
+        ]
+      },
+      "income": {
+        "required": "not_applicable",
+        "accepted_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "INZ states cost from NZD $850, processing 80% within 9.5 weeks, and strongly encourages applying 3 months before travel. Maximum stay up to 4 years; visa length usually matches paid study or passport validity if sooner.",
+          "zh-Hans": "移民局说明费用起价 850 新西兰元，80% 在 9.5 周内处理，强烈建议出行前 3 个月申请。最长停留 4 年；签证时长通常与已付学费学习期或护照有效期（以较短者为准）一致。"
+        },
+        "processing_time_months_min": 2,
+        "processing_time_months_max": 3,
+        "initial_validity_months": "unknown",
+        "renewable": true,
+        "max_stay_months": 48
+      },
+      "rights": {
+        "work_allowed": "limited",
+        "local_employment_allowed": "limited",
+        "remote_work_allowed": "unknown",
+        "study_allowed": true,
+        "business_allowed": false
+      },
+      "family": {
+        "spouse_or_partner_allowed": "limited",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "limited",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": false,
+        "note_md": {
+          "en": "You cannot include a partner or dependent children in the student visa application; they may apply for visas based on their relationship to you.",
+          "zh-Hans": "不能将伴侣或受抚养子女纳入学生签证申请；他们可基于与你的关系另行申请签证。"
+        }
+      },
+      "pr_pathway": {
+        "available": "indirect",
+        "summary_md": {
+          "en": "A student visa is temporary. Later work or residence routes such as AEWV or Skilled Migrant Category may apply under their own rules after study.",
+          "zh-Hans": "学生签证是临时的。学业后可能在各自规则下适用 AEWV 或技术移民等后续工作/居留途径。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "Student visa sources do not establish citizenship eligibility.",
+          "zh-Hans": "学生签证来源没有确认公民资格。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 4,
+        "speed_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "temporary_may_lead_pr",
+        "pathway_mechanism": "other",
+        "pathway_type": "renewable_temporary",
+        "requires_job_offer": false,
+        "requires_local_entity": false
+      },
+      "source_ids": [
+        "new-zealand-inz-fee-paying-student",
+        "new-zealand-inz-student-funds"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Cost from NZD $850",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          },
+          {
+            "source_id": "new-zealand-inz-student-funds",
+            "url": "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/student-fund-requirements/",
+            "section": "NZD $20,000 living costs per year tertiary",
+            "snapshot_id": "5040e6e7e8466a0f3fc6e3261f21f1390550249519d227e7ff062e7246cf4a60",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Up to 4 years; 80% within 9.5 weeks",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "work part-time up to 25 hours a week while studying",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "new-zealand-inz-fee-paying-student",
+            "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+            "section": "Fee Paying Student Visa overview",
+            "snapshot_id": "ed7d14590cb62662954caea0483ab5e5fec624052d9f513d74ba38c969d61a25",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T14:45:00.000Z",
+        "updated_at": "2026-07-11T14:45:00.000Z",
+        "last_checked_at": "2026-07-11T14:45:00.000Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
       "program_id": "new-zealand-skilled-migrant-category",
       "country_id": "new-zealand",
       "country_names": {
@@ -7732,6 +8483,232 @@
         "created_at": "2026-07-11T05:55:34.855Z",
         "updated_at": "2026-07-11T05:55:34.855Z",
         "last_checked_at": "2026-07-11T05:55:34.855Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
+      "program_id": "singapore-student-pass",
+      "country_id": "singapore",
+      "country_names": {
+        "en": "Singapore",
+        "zh-Hans": "新加坡"
+      },
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Student's Pass",
+        "zh-Hans": "学生准证（Student’s Pass）"
+      },
+      "status": "active",
+      "pathway_mechanism": "other",
+      "summary_md": {
+        "en": "Singapore's main study immigration pass for foreigners accepted into an approved full-time course. Part-time, evening, or weekend courses are not eligible. Holders of some other long-term passes may study without a Student's Pass for non-religious full-time courses while that pass remains valid.",
+        "zh-Hans": "面向获批准全日制课程录取外国人的新加坡主要学习准证。兼职、晚间或周末课程不符合资格。部分其他长期准证持有人在准证有效期内可无需学生准证就读非宗教全日制课程。"
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": []
+      },
+      "income": {
+        "required": "not_applicable",
+        "accepted_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "Application and collection procedures depend on institution type and ICA e-services. ICA requires appointment for completion of formalities when collecting the pass.",
+          "zh-Hans": "申请与领取程序取决于院校类型与 ICA 电子服务。领取准证完成手续时 ICA 要求预约。"
+        },
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "initial_validity_months": "unknown",
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": "unknown",
+        "local_employment_allowed": "unknown",
+        "remote_work_allowed": false,
+        "study_allowed": true,
+        "business_allowed": false
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown"
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "A Student's Pass is for study. Permanent residence, if any, depends on later employment or other schemes under separate rules—not automatic from study alone.",
+          "zh-Hans": "学生准证用于学习。永久居民（如有）取决于后续就业或其他计划的独立规则，并非仅凭学习自动获得。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "ICA Student's Pass pages do not establish citizenship eligibility.",
+          "zh-Hans": "ICA 学生准证页面没有确认公民资格。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 3,
+        "speed_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 2,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "settlement_track": "temporary_may_lead_pr",
+        "pathway_mechanism": "other",
+        "pathway_type": "renewable_temporary",
+        "requires_job_offer": false,
+        "requires_local_entity": false
+      },
+      "source_ids": [
+        "singapore-ica-student-pass"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "singapore-ica-student-pass",
+            "url": "https://www.ica.gov.sg/reside/STP/apply",
+            "section": "Becoming a Student's Pass Holder",
+            "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4",
+            "retrieved_at": "2026-07-11T14:45:00.000Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T14:45:00.000Z",
+        "updated_at": "2026-07-11T14:45:00.000Z",
+        "last_checked_at": "2026-07-11T14:45:00.000Z",
         "update_frequency_days": 14,
         "confidence": "high",
         "needs_human_review": true

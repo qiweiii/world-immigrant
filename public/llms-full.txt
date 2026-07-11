@@ -191,6 +191,22 @@ A Croatian temporary stay route for third-country digital nomads with foreign re
 
 - croatia-mup-digital-nomad: Temporary stay of digital nomads — https://mup.gov.hr/aliens-281621/stay-and-work/temporary-stay-of-digital-nomads/286833
 
+## Stay and work permit for highly qualified workers (EU Blue Card)
+
+- ID: croatia-eu-blue-card
+- Country: croatia
+- Status: active
+- Last updated: 2026-07-11T14:45:00.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+An employer-linked Croatian stay and work permit for highly qualified jobs with at least a one-year employment contract with a Croatian-registered employer, higher-education qualifications, and regulated-profession conditions where applicable. Apply at a Croatian mission or local police administration. MUP lists administrative fees for the permit and biometric residence card.
+
+### Official sources
+
+- croatia-mup-eu-blue-card: Stay and work of highly-qualified third-country nationals (EU Blue Card) — https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692
+- croatia-mup-work-third-country: Work of third-country nationals — https://mup.gov.hr/aliens-281621/stay-and-work/work-of-third-country-nationals/281663
+
 ## Digital Nomad Visa
 
 - ID: estonia-digital-nomad-visa
@@ -268,6 +284,21 @@ A German study residence route for full-time higher education. BAMF says limited
 
 - germany-bamf-studying: BAMF: Studying — https://www.bamf.de/EN/Themen/MigrationAufenthalt/ZuwandererDrittstaaten/Bildung/Studium/studium-node.html
 - germany-study-in-germany-visa: Study in Germany: Visa — https://www.study-in-germany.de/en/plan-your-studies/requirements/visa/
+
+## Student visa / entry permit
+
+- ID: hong-kong-student
+- Country: hong-kong
+- Status: active
+- Last updated: 2026-07-11T14:45:00.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+The main Hong Kong study entry route for non-local students with a school acceptance letter for an eligible private school, full-time locally accredited post-secondary programme, exchange, or registered non-local course. Applicants must show they can pay fees and living costs without working or public funds. Hong Kong has no dedicated digital-nomad visa in this record; talent routes such as TTPS are separate.
+
+### Official sources
+
+- hong-kong-immd-study: Students — entry for study — https://www.immd.gov.hk/eng/services/visas/study.html
 
 ## Top Talent Pass Scheme
 
@@ -427,6 +458,22 @@ A New Zealand work visa for a full-time job offer from an accredited employer, w
 - new-zealand-inz-aewv-family: Bringing family if you have an Accredited Employer Work Visa (AEWV) — https://www.immigration.govt.nz/process-to-apply/once-you-have-a-visa/bringing-family-to-new-zealand/bringing-family-if-you-have-a-work-visa/bringing-family-if-you-have-an-accredited-employer-work-visa-aewv
 - new-zealand-inz-smc-resident: Skilled Migrant Category Resident Visa — https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa
 
+## Fee Paying Student Visa
+
+- ID: new-zealand-fee-paying-student
+- Country: new-zealand
+- Status: active
+- Last updated: 2026-07-11T14:45:00.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A New Zealand student visa for people with an offer of place from an approved education provider who pay international tuition (or partial scholarship). INZ says stay can be up to 4 years, online applications cost from NZD $850, and 80% of decisions are within 9.5 weeks. Limited part-time work (up to 25 hours a week while studying, full-time in holidays) depends on visa conditions. Living funds are typically NZD $20,000 per year for tertiary study.
+
+### Official sources
+
+- new-zealand-inz-fee-paying-student: Fee Paying Student Visa — https://www.immigration.govt.nz/visas/fee-paying-student-visa/
+- new-zealand-inz-student-funds: Student fund requirements — https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/student-fund-requirements/
+
 ## Skilled Migrant Category Resident Visa
 
 - ID: new-zealand-skilled-migrant-category
@@ -521,6 +568,21 @@ A Singapore own-company work pass for foreign entrepreneurs who start or operate
 - singapore-mom-entrepass-eligibility: Eligibility for EntrePass — https://www.mom.gov.sg/passes-and-permits/entrepass/eligibility
 - singapore-mom-entrepass-family: Passes for families of EntrePass holders — https://www.mom.gov.sg/passes-and-permits/entrepass/passes-for-family
 - singapore-acra-business-requirements: Step 1: Understanding requirements and eligibility — https://www.acra.gov.sg/register/business/requirements-eligibility
+
+## Student's Pass
+
+- ID: singapore-student-pass
+- Country: singapore
+- Status: active
+- Last updated: 2026-07-11T14:45:00.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+Singapore's main study immigration pass for foreigners accepted into an approved full-time course. Part-time, evening, or weekend courses are not eligible. Holders of some other long-term passes may study without a Student's Pass for non-religious full-time courses while that pass remains valid.
+
+### Official sources
+
+- singapore-ica-student-pass: Becoming a Student's Pass Holder — https://www.ica.gov.sg/reside/STP/apply
 
 ## International teleworker residence authorisation
 

@@ -1,0 +1,316 @@
+{
+  "id": "croatia-eu-blue-card",
+  "country_id": "croatia",
+  "category_ids": [
+    "skilled_worker"
+  ],
+  "official_names": {
+    "en": "Stay and work permit for highly qualified workers (EU Blue Card)",
+    "zh-Hans": "高技能劳动者居留和工作许可（欧盟蓝卡）"
+  },
+  "aliases": [
+    "Croatia EU Blue Card",
+    "Croatia highly qualified stay and work permit"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "Croatian MUP describes a stay and work permit (EU Blue Card) for highly qualified third-country nationals as a single permit for temporary stay and work. General third-country work often also uses stay and work permits with labour-market tests; this record covers the highly qualified Blue Card path.",
+    "zh-Hans": "克罗地亚内政部将高技能第三国国民的居留和工作许可（欧盟蓝卡）描述为临时居留与工作合一许可。一般第三国工作也常用带劳动力市场测试的居留和工作许可；本记录覆盖高技能蓝卡路径。"
+  },
+  "summary_md": {
+    "en": "An employer-linked Croatian stay and work permit for highly qualified jobs with at least a one-year employment contract with a Croatian-registered employer, higher-education qualifications, and regulated-profession conditions where applicable. Apply at a Croatian mission or local police administration. MUP lists administrative fees for the permit and biometric residence card.",
+    "zh-Hans": "面向高技能岗位的克罗地亚居留和工作许可，须与在克罗地亚注册的雇主签订至少一年雇佣合同、具备高等教育资格，并在适用时满足受规管职业条件。可在克罗地亚使领馆或地方警察部门申请。内政部列明许可与生物识别居留卡行政费用。"
+  },
+  "good_for_md": {
+    "en": "Highly qualified workers with a Croatian employment contract of at least one year for highly qualified work and recognised higher-education proof.",
+    "zh-Hans": "适合持有至少一年高技能工作雇佣合同及认可高等教育证明的高技能劳动者。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants without a qualifying Croatian employment relationship, remote-only digital nomads (use the digital-nomad temporary stay route), or people seeking open work rights with any employer.",
+    "zh-Hans": "不适合没有合格克罗地亚雇佣关系、仅远程的数字游民（应使用数字游民临时停留途径），或寻求可任意雇主开放工作权的人。"
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "bachelor",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "MUP requires proof of higher education (diploma, certificate or other formal qualifications from a recognised higher education institution) and, for regulated professions, proof of meeting professional qualification conditions.",
+        "zh-Hans": "内政部要求高等教育证明（获认可高等教育机构的文凭、证书或其他正式资格），受规管职业还须满足专业资格条件。"
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Stay and work permit administrative fee",
+          "zh-Hans": "居留和工作许可行政费"
+        },
+        "amount": 74.32,
+        "currency": "EUR",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Biometric residence card (regular procedure)",
+          "zh-Hans": "生物识别居留卡（普通程序）"
+        },
+        "amount": 31.85,
+        "currency": "EUR",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": true,
+    "accepted_sources": [
+      "employment"
+    ],
+    "income_location": "inside_destination",
+    "stability_requirement_md": {
+      "en": "Built around a highly qualified employment contract of at least one year with a Croatian-registered employer entity.",
+      "zh-Hans": "基于与克罗地亚注册雇主实体签订的至少一年高技能雇佣合同。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Apply at a diplomatic mission/consular post or police administration/station of intended stay. Exact decision times are not fixed on the retained MUP page.",
+      "zh-Hans": "向使领馆或拟居留地警察部门申请。保留的内政部页面未固定确切决定时限。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": 12,
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "Long-term residence after uninterrupted legal stay is described on related MUP long-term residence pages; EU Blue Card holders may later qualify under EU/national long-term rules. Confirm current counting rules separately.",
+      "zh-Hans": "相关内政部长期居留页面描述连续合法居留后的长期居留；欧盟蓝卡持有人之后可能符合欧盟/国家长期规则。请另行核对当前计算规则。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "MUP Blue Card page does not establish citizenship eligibility.",
+      "zh-Hans": "内政部蓝卡页面没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Official MUP pages are clear on core documents and fees, but salary thresholds and labour-market detail for non-Blue-Card stay-and-work permits need separate checks.",
+      "zh-Hans": "内政部官方页面对核心材料与费用清楚，但薪资门槛及非蓝卡居留和工作许可的劳动力市场细节需另行核对。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 3,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "employer_sponsored",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": true,
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T14:45:00.000Z"
+  },
+  "source_ids": [
+    "croatia-mup-eu-blue-card",
+    "croatia-mup-work-third-country"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "croatia-mup-work-third-country",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/work-of-third-country-nationals/281663",
+        "section": "Stay and work permit for third-country nationals",
+        "snapshot_id": "88bca5d788de8f33d0a18c0fd9ca4f40cf52ac979b1835e69f3fcec2e620242a",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "One-year highly qualified employment contract and higher education proof",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Administrative fee 74,32 EUR and biometric card fees",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "croatia-mup-eu-blue-card",
+        "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+        "section": "Stay and work of highly-qualified third-country nationals",
+        "snapshot_id": "dd50ec303fba6dd8b7b485737c0e8c73c4303dbdfb80c435660915b1aeda3082",
+        "retrieved_at": "2026-07-11T14:45:00.000Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:45:00.000Z",
+    "updated_at": "2026-07-11T14:45:00.000Z",
+    "last_checked_at": "2026-07-11T14:45:00.000Z",
+    "update_frequency_days": 30,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:45:00.000Z",
+      "summary": "Added Croatia EU Blue Card stay-and-work path from official MUP pages.",
+      "source_ids": [
+        "croatia-mup-eu-blue-card",
+        "croatia-mup-work-third-country"
+      ]
+    }
+  ]
+}

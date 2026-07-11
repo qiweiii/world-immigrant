@@ -8,26 +8,30 @@
   },
   "region": "Europe",
   "summary_md": {
-    "en": "Croatia provides a temporary stay route for third-country digital nomads working for foreign employers or companies.",
-    "zh-Hans": "克罗地亚为为外国雇主或公司工作的第三国数字游民提供临时居留途径。"
+    "en": "Croatia coverage includes temporary stay for digital nomads and an employer-linked stay and work path for highly qualified workers (EU Blue Card).",
+    "zh-Hans": "克罗地亚覆盖包括数字游民临时停留，以及高技能劳动者的雇主关联居留和工作路径（欧盟蓝卡）。"
   },
   "brand": {
     "color": "#FF0000",
     "source": "flag"
   },
   "official_source_ids": [
-    "croatia-mup-digital-nomad"
+    "croatia-mup-digital-nomad",
+    "croatia-mup-eu-blue-card",
+    "croatia-mup-work-third-country"
   ],
   "categories": [
-    "digital_nomad"
+    "digital_nomad",
+    "skilled_worker"
   ],
   "program_ids": [
-    "croatia-digital-nomad"
+    "croatia-digital-nomad",
+    "croatia-eu-blue-card"
   ],
   "freshness": {
     "created_at": "2026-07-11T07:42:21.348Z",
-    "updated_at": "2026-07-11T07:42:21.348Z",
-    "last_checked_at": "2026-07-11T07:42:21.348Z",
+    "updated_at": "2026-07-11T14:45:00.000Z",
+    "last_checked_at": "2026-07-11T14:45:00.000Z",
     "update_frequency_days": 30,
     "confidence": "high",
     "needs_human_review": true

@@ -954,6 +954,59 @@
       "status": "active"
     },
     {
+      "id": "croatia-mup-eu-blue-card",
+      "country_id": "croatia",
+      "program_ids": [
+        "croatia-eu-blue-card"
+      ],
+      "url": "https://mup.gov.hr/aliens-281621/stay-and-work/stay-and-work-of-highly-qualified-third-country-nationals/281692",
+      "title": "Stay and work of highly-qualified third-country nationals (EU Blue Card)",
+      "publisher": "Ministry of the Interior of the Republic of Croatia (MUP)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "EU Blue Card",
+        "highly-qualified",
+        "contract of employment",
+        "higher education"
+      ],
+      "expected_domains": [
+        "mup.gov.hr"
+      ],
+      "last_checked_at": "2026-07-11T14:45:00.000Z",
+      "last_success_at": "2026-07-11T14:45:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "croatia-mup-work-third-country",
+      "country_id": "croatia",
+      "program_ids": [
+        "croatia-eu-blue-card"
+      ],
+      "url": "https://mup.gov.hr/aliens-281621/stay-and-work/work-of-third-country-nationals/281663",
+      "title": "Work of third-country nationals",
+      "publisher": "Ministry of the Interior of the Republic of Croatia (MUP)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "stay and work permit",
+        "labour market test",
+        "third-country nationals"
+      ],
+      "expected_domains": [
+        "mup.gov.hr"
+      ],
+      "last_checked_at": "2026-07-11T14:45:00.000Z",
+      "last_success_at": "2026-07-11T14:45:00.000Z",
+      "status": "active"
+    },
+    {
       "id": "estonia-digital-nomad-visa",
       "country_id": "estonia",
       "program_ids": [
@@ -1142,6 +1195,34 @@
       ],
       "last_checked_at": "2026-07-11T14:11:38.524Z",
       "last_success_at": "2026-07-11T14:11:38.524Z",
+      "status": "active"
+    },
+    {
+      "id": "hong-kong-immd-study",
+      "country_id": "hong-kong",
+      "program_ids": [
+        "hong-kong-student"
+      ],
+      "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+      "title": "Students — entry for study",
+      "publisher": "Hong Kong Immigration Department",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Eligibility Criteria",
+        "school acceptance letter",
+        "post-secondary",
+        "without working"
+      ],
+      "expected_domains": [
+        "www.immd.gov.hk",
+        "immd.gov.hk"
+      ],
+      "last_checked_at": "2026-07-11T14:45:00.000Z",
+      "last_success_at": "2026-07-11T14:45:00.000Z",
       "status": "active"
     },
     {
@@ -1609,6 +1690,34 @@
       "status": "active"
     },
     {
+      "id": "new-zealand-inz-fee-paying-student",
+      "country_id": "new-zealand",
+      "program_ids": [
+        "new-zealand-fee-paying-student"
+      ],
+      "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+      "title": "Fee Paying Student Visa",
+      "publisher": "Immigration New Zealand",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Fee Paying Student Visa",
+        "4 years",
+        "NZD $850",
+        "25 hours"
+      ],
+      "expected_domains": [
+        "www.immigration.govt.nz",
+        "immigration.govt.nz"
+      ],
+      "last_checked_at": "2026-07-11T14:45:00.000Z",
+      "last_success_at": "2026-07-11T14:45:00.000Z",
+      "status": "active"
+    },
+    {
       "id": "new-zealand-inz-smc-resident",
       "country_id": "new-zealand",
       "program_ids": [
@@ -1634,6 +1743,33 @@
       ],
       "last_checked_at": "2026-07-11T06:28:54.771Z",
       "last_success_at": "2026-07-11T06:28:54.771Z",
+      "status": "active"
+    },
+    {
+      "id": "new-zealand-inz-student-funds",
+      "country_id": "new-zealand",
+      "program_ids": [
+        "new-zealand-fee-paying-student"
+      ],
+      "url": "https://www.immigration.govt.nz/process-to-apply/applying-for-a-visa/providing-evidence-and-documents-to-support-your-visa-application/student-fund-requirements/",
+      "title": "Student fund requirements",
+      "publisher": "Immigration New Zealand",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "NZD $20,000",
+        "living costs",
+        "student visa"
+      ],
+      "expected_domains": [
+        "www.immigration.govt.nz",
+        "immigration.govt.nz"
+      ],
+      "last_checked_at": "2026-07-11T14:45:00.000Z",
+      "last_success_at": "2026-07-11T14:45:00.000Z",
       "status": "active"
     },
     {
@@ -1790,6 +1926,33 @@
       ],
       "last_checked_at": "2026-07-11T05:55:33.914Z",
       "last_success_at": "2026-07-11T05:55:33.914Z",
+      "status": "active"
+    },
+    {
+      "id": "singapore-ica-student-pass",
+      "country_id": "singapore",
+      "program_ids": [
+        "singapore-student-pass"
+      ],
+      "url": "https://www.ica.gov.sg/reside/STP/apply",
+      "title": "Becoming a Student's Pass Holder",
+      "publisher": "Immigration & Checkpoints Authority of Singapore (ICA)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Student's Pass",
+        "full-time studies",
+        "approved full-time course"
+      ],
+      "expected_domains": [
+        "www.ica.gov.sg",
+        "ica.gov.sg"
+      ],
+      "last_checked_at": "2026-07-11T14:45:00.000Z",
+      "last_success_at": "2026-07-11T14:45:00.000Z",
       "status": "active"
     },
     {

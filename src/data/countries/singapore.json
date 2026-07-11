@@ -8,8 +8,8 @@
   },
   "region": "Asia",
   "summary_md": {
-    "en": "Coverage is being expanded with official Ministry of Manpower sources for employer-sponsored Employment Pass work authorization. A complete pathway record will be added after the source set is reviewed.",
-    "zh-Hans": "正在通过人力部官方来源扩展雇主担保就业准证信息。完整路径记录将在来源集完成审查后添加。"
+    "en": "Singapore coverage includes Employment Pass and EntrePass for work/entrepreneurship, plus the Student’s Pass for full-time study. There is no dedicated digital-nomad visa in this record.",
+    "zh-Hans": "新加坡覆盖包括就业准证与创业准证，以及全日制学习的学生准证。本记录不包含专门数字游民签证。"
   },
   "brand": {
     "color": "#EF3340",
@@ -22,16 +22,17 @@
     "singapore-mom-entrepass-eligibility",
     "singapore-mom-entrepass-family",
     "singapore-acra-business-requirements",
-    "singapore-mom-ep-shareholder-faq"
+    "singapore-mom-ep-shareholder-faq",
+    "singapore-ica-student-pass"
   ],
-  "categories": ["skilled_worker", "startup_entrepreneur"],
-  "program_ids": ["singapore-employment-pass", "singapore-entrepass"],
+  "categories": ["skilled_worker", "startup_entrepreneur", "study_to_pr"],
+  "program_ids": ["singapore-employment-pass", "singapore-entrepass", "singapore-student-pass"],
   "freshness": {
     "created_at": "2026-07-11T05:36:00Z",
-    "updated_at": "2026-07-11T05:36:00Z",
-    "last_checked_at": "2026-07-11T05:36:00Z",
+    "updated_at": "2026-07-11T14:45:00.000Z",
+    "last_checked_at": "2026-07-11T14:45:00.000Z",
     "update_frequency_days": 14,
-    "confidence": "medium",
+    "confidence": "high",
     "needs_human_review": true
   }
 }

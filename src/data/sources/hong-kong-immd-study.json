@@ -1,0 +1,23 @@
+{
+  "id": "hong-kong-immd-study",
+  "country_id": "hong-kong",
+  "program_ids": ["hong-kong-student"],
+  "url": "https://www.immd.gov.hk/eng/services/visas/study.html",
+  "title": "Students — entry for study",
+  "publisher": "Hong Kong Immigration Department",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Eligibility Criteria",
+    "school acceptance letter",
+    "post-secondary",
+    "without working"
+  ],
+  "expected_domains": ["www.immd.gov.hk", "immd.gov.hk"],
+  "last_checked_at": "2026-07-11T14:45:00.000Z",
+  "last_success_at": "2026-07-11T14:45:00.000Z",
+  "status": "active"
+}

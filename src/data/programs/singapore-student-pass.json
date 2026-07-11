@@ -1,0 +1,280 @@
+{
+  "id": "singapore-student-pass",
+  "country_id": "singapore",
+  "category_ids": ["study_to_pr"],
+  "official_names": {
+    "en": "Student's Pass",
+    "zh-Hans": "学生准证（Student’s Pass）"
+  },
+  "aliases": ["Singapore Student Pass", "STP Singapore"],
+  "status": "active",
+  "status_note_md": {
+    "en": "ICA states that a foreigner accepted for full-time studies in Singapore generally needs a Student's Pass unless holding another qualifying pass. Procedures differ by institution type. Singapore has no dedicated digital-nomad visa in this record.",
+    "zh-Hans": "ICA 说明获新加坡全日制课程录取的外国人一般需要学生准证，除非持有其他合资格准证。程序因院校类型而异。本记录不将新加坡描述为提供专门数字游民签证。"
+  },
+  "summary_md": {
+    "en": "Singapore's main study immigration pass for foreigners accepted into an approved full-time course. Part-time, evening, or weekend courses are not eligible. Holders of some other long-term passes may study without a Student's Pass for non-religious full-time courses while that pass remains valid.",
+    "zh-Hans": "面向获批准全日制课程录取外国人的新加坡主要学习准证。兼职、晚间或周末课程不符合资格。部分其他长期准证持有人在准证有效期内可无需学生准证就读非宗教全日制课程。"
+  },
+  "good_for_md": {
+    "en": "Students accepted into an approved full-time Singapore course (IHL, private PEI, government school, etc. as listed by ICA) who need a dedicated study pass.",
+    "zh-Hans": "适合获 ICA 所列批准全日制课程（高等院校、私立教育机构、政府学校等）录取并需要专门学习准证的学生。"
+  },
+  "not_good_for_md": {
+    "en": "Part-time or weekend-only students, people seeking unrestricted work or a digital-nomad stay, or applicants without acceptance into an approved full-time course.",
+    "zh-Hans": "不适合仅兼职或周末学习、寻求不受限制工作或数字游民停留，或未被批准全日制课程录取的申请人。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "Must be accepted into an approved full-time course in Singapore. ICA lists different institution types (IHL, PEI, government schools, foreign system schools, ITE, kindergartens, etc.) with procedures that differ slightly by type.",
+        "zh-Hans": "必须获新加坡批准全日制课程录取。ICA 列出不同院校类型（高等院校、私立教育机构、政府学校、外国体系学校、工艺教育学院、幼儿园等），程序因类型略有不同。"
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": ["unknown"],
+    "income_location": "not_applicable"
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Application and collection procedures depend on institution type and ICA e-services. ICA requires appointment for completion of formalities when collecting the pass.",
+      "zh-Hans": "申请与领取程序取决于院校类型与 ICA 电子服务。领取准证完成手续时 ICA 要求预约。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": "unknown",
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": false,
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "A Student's Pass is for study. Permanent residence, if any, depends on later employment or other schemes under separate rules—not automatic from study alone.",
+      "zh-Hans": "学生准证用于学习。永久居民（如有）取决于后续就业或其他计划的独立规则，并非仅凭学习自动获得。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "ICA Student's Pass pages do not establish citizenship eligibility.",
+      "zh-Hans": "ICA 学生准证页面没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "ICA overview is clear on full-time course requirement; fees, work rights while studying, and processing times need institution-specific checks.",
+      "zh-Hans": "ICA 概述对全日制课程要求清楚；费用、在学工作权利与处理时间需按院校类型核对。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "unknown",
+    "remote_work_allowed": false,
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T14:45:00.000Z"
+  },
+  "source_ids": ["singapore-ica-student-pass"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "singapore-ica-student-pass",
+        "url": "https://www.ica.gov.sg/reside/STP/apply",
+        "section": "Becoming a Student's Pass Holder",
+        "retrieved_at": "2026-07-11T14:45:00.000Z",
+        "snapshot_id": "ad7f1f9f0ab40029ef71dea184fc43e34e49e5103325a371ab26356800b772e4"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:45:00.000Z",
+    "updated_at": "2026-07-11T14:45:00.000Z",
+    "last_checked_at": "2026-07-11T14:45:00.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:45:00.000Z",
+      "summary": "Added Singapore Student's Pass from official ICA page.",
+      "source_ids": ["singapore-ica-student-pass"]
+    }
+  ]
+}

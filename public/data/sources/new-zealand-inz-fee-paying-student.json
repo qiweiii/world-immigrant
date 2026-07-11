@@ -1,0 +1,28 @@
+{
+  "id": "new-zealand-inz-fee-paying-student",
+  "country_id": "new-zealand",
+  "program_ids": [
+    "new-zealand-fee-paying-student"
+  ],
+  "url": "https://www.immigration.govt.nz/visas/fee-paying-student-visa/",
+  "title": "Fee Paying Student Visa",
+  "publisher": "Immigration New Zealand",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Fee Paying Student Visa",
+    "4 years",
+    "NZD $850",
+    "25 hours"
+  ],
+  "expected_domains": [
+    "www.immigration.govt.nz",
+    "immigration.govt.nz"
+  ],
+  "last_checked_at": "2026-07-11T14:45:00.000Z",
+  "last_success_at": "2026-07-11T14:45:00.000Z",
+  "status": "active"
+}
