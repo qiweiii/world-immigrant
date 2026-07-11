@@ -40,6 +40,8 @@ export type EducationLevel =
 
 export type UserProfile = {
   goal: "temporary_stay" | "renewable_residence" | "permanent_residence" | "citizenship";
+  /** When set and non-empty, only programs in these categories are evaluated. */
+  category_ids?: string[];
   skilled_work_years?: number;
   has_approved_language_test?: boolean;
   language_benchmark?: number;
@@ -526,7 +528,9 @@ export function evaluateProgram(
     });
   } else if (typeof minProgramPoints === "number") {
     if (profile.program_selection_points === undefined) {
-      needsReview = true;
+      // Points systems are competitive and opaque to first-time users; treat as
+      // "possible" rather than burying the pathway under complex-review only.
+      possible = true;
       add({
         field: "program_selection_points",
         severity: "warning",
@@ -623,7 +627,8 @@ export function evaluateProgram(
   }
 
   if (program.freshness.needs_human_review) {
-    needsReview = true;
+    // Soft caveat only: most bootstrap records are flagged for review, so elevating
+    // status would hide almost every pathway from the shortlist.
     add({
       field: "content_review",
       severity: "warning",
@@ -662,13 +667,21 @@ function isVisibleForGoal(program: FilterIndexProgram, profile: UserProfile) {
   );
 }
 
+function isVisibleForCategory(program: FilterIndexProgram, profile: UserProfile) {
+  const selected = profile.category_ids?.filter(Boolean) ?? [];
+  if (!selected.length) return true;
+  return program.category_ids.some((id) => selected.includes(id));
+}
+
 export function evaluatePrograms(
   programs: FilterIndexProgram[],
   profile: UserProfile,
   locale: Locale = defaultLocale,
 ): FilterResult[] {
   return programs
-    .filter((program) => isVisibleForGoal(program, profile))
+    .filter(
+      (program) => isVisibleForGoal(program, profile) && isVisibleForCategory(program, profile),
+    )
     .map((program) => evaluateProgram(program, profile, locale))
     .sort(
       (left, right) => right.score - left.score || left.program_id.localeCompare(right.program_id),

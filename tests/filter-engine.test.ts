@@ -49,14 +49,33 @@ test("filter returns possible_match when a non-critical profile fact is missing"
   assert.ok(result.reasons.some(({ field }) => field === "settlement_funds"));
 });
 
-test("filter returns needs_review when a program-specific selection score is missing", async () => {
-  const program = await indexProgram();
+test("filter returns possible_match when a program-specific selection score is missing", async () => {
+  const program = structuredClone(await indexProgram());
+  program.freshness.needs_human_review = false;
   const result = evaluateProgram(program, {
     ...completeProfile,
     program_selection_points: undefined,
   });
 
-  assert.equal(result.status, "needs_review");
+  assert.equal(result.status, "possible_match");
+  assert.ok(result.reasons.some(({ field }) => field === "program_selection_points"));
+});
+
+test("filter can narrow results by pathway category", async () => {
+  const output = buildPublicData(await loadCanonicalData());
+  const all = evaluatePrograms(output.filterIndex.programs, completeProfile);
+  const studyOnly = evaluatePrograms(output.filterIndex.programs, {
+    ...completeProfile,
+    category_ids: ["study_to_pr"],
+  });
+  assert.ok(all.length > studyOnly.length);
+  assert.ok(studyOnly.length > 0);
+  for (const result of studyOnly) {
+    const program = output.filterIndex.programs.find(
+      (item) => item.program_id === result.program_id,
+    );
+    assert.ok(program?.category_ids.includes("study_to_pr"));
+  }
 });
 
 test("filter returns likely_match only when known checks pass and content is reviewed", async () => {

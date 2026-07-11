@@ -12,10 +12,10 @@ const { locale = defaultLocale } = Astro.props as Props;
 
 <Layout locale={locale} title={t("filter.title", locale)}>
   <main>
-    <section class="hero">
+    <section class="hero hero--compact">
       <p class="eyebrow">{t("filter.eyebrow", locale)}</p>
       <h1>{t("filter.h1", locale)}</h1>
-      <p>{t("filter.lede", locale)}</p>
+      <p class="hero-lede">{t("filter.lede", locale)}</p>
     </section>
     <EligibilityFilter locale={locale} />
   </main>

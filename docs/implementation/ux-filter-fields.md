@@ -10,6 +10,39 @@ Core user question:
 
 The filter experience should produce reasons, not just results.
 
+### 1.1 Public filter surface (implemented)
+
+The live `/filter` page is intentionally simpler than the full research profile model below. Most visitors only know **what they already have**, not immigration jargon (points tables, CLB levels, ECA, etc.).
+
+**What the UI asks (plain language):**
+
+1. Goal chips — stay a while / settle long-term / citizenship later.
+2. Path-type chips — work, study, remote/nomad, startup, invest (multi-select; none selected = all).
+3. About you — education, rough work years, job offer yes/no/not sure.
+4. Money and family — people moving, optional savings + currency.
+5. Optional advanced details — language score already held, foreign degree, already authorized to work.
+
+**What the UI avoids on first paint:**
+
+- Program-specific selection scores (Express Entry CRS, SkillSelect points, etc.).
+- Language benchmark numbers as required inputs.
+- Forcing “no” when a checkbox is unchecked (unchecked means *unknown*, not *false*).
+
+**How results are shown:**
+
+- Summary counts (explore vs probably not).
+- **Pathways to explore** first: `likely_match`, `possible_match`, `needs_review`, `unknown`.
+- **Probably not a fit** collapsed behind a toggle.
+- Compact cards with 1–2 plain-language reasons; full reasons + official source link on expand.
+
+**Engine notes aligned with that surface:**
+
+- Missing competitive scores → `possible_match` warning, not a hard “complex review only” bury.
+- `needs_human_review` on program content → soft caveat, not an automatic status override (bootstrap data is almost always flagged).
+- Category chips filter the index before ranking.
+
+The richer profile field inventory in §3 remains the **research / future expansion model**. Ship new UI fields only when they map to user-owned facts and improve shortlist quality.
+
 ## 2. Core result states
 
 Every program returned by the filter should be classified as one of:
