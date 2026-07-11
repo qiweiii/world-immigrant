@@ -8,6 +8,7 @@
         "en": "Australia",
         "zh-Hans": "澳大利亚"
       },
+      "country_brand_color": "#012169",
       "category_ids": [
         "skilled_worker"
       ],
@@ -226,6 +227,7 @@
         "en": "Australia",
         "zh-Hans": "澳大利亚"
       },
+      "country_brand_color": "#012169",
       "category_ids": [
         "skilled_worker"
       ],
@@ -435,6 +437,7 @@
         "en": "Australia",
         "zh-Hans": "澳大利亚"
       },
+      "country_brand_color": "#012169",
       "category_ids": [
         "study_to_pr"
       ],
@@ -631,6 +634,7 @@
         "en": "Australia",
         "zh-Hans": "澳大利亚"
       },
+      "country_brand_color": "#012169",
       "category_ids": [
         "study_to_pr"
       ],
@@ -834,6 +838,7 @@
         "en": "Canada",
         "zh-Hans": "加拿大"
       },
+      "country_brand_color": "#D52B1E",
       "category_ids": [
         "skilled_worker"
       ],
@@ -1043,6 +1048,7 @@
         "en": "Canada",
         "zh-Hans": "加拿大"
       },
+      "country_brand_color": "#D52B1E",
       "category_ids": [
         "skilled_worker"
       ],
@@ -1365,6 +1371,7 @@
         "en": "Canada",
         "zh-Hans": "加拿大"
       },
+      "country_brand_color": "#D52B1E",
       "category_ids": [
         "study_to_pr"
       ],
@@ -1571,6 +1578,7 @@
         "en": "Canada",
         "zh-Hans": "加拿大"
       },
+      "country_brand_color": "#D52B1E",
       "category_ids": [
         "study_to_pr"
       ],
@@ -1867,6 +1875,7 @@
         "en": "Croatia",
         "zh-Hans": "克罗地亚"
       },
+      "country_brand_color": "#FF0000",
       "category_ids": [
         "digital_nomad"
       ],
@@ -2066,6 +2075,7 @@
         "en": "Estonia",
         "zh-Hans": "爱沙尼亚"
       },
+      "country_brand_color": "#0072CE",
       "category_ids": [
         "digital_nomad"
       ],
@@ -2264,6 +2274,7 @@
         "en": "Estonia",
         "zh-Hans": "爱沙尼亚"
       },
+      "country_brand_color": "#0072CE",
       "category_ids": [
         "startup_entrepreneur"
       ],
@@ -2452,6 +2463,7 @@
         "en": "Germany",
         "zh-Hans": "德国"
       },
+      "country_brand_color": "#FFCC00",
       "category_ids": [
         "skilled_worker"
       ],
@@ -2649,6 +2661,7 @@
         "en": "Hong Kong",
         "zh-Hans": "中国香港"
       },
+      "country_brand_color": "#DE2910",
       "category_ids": [
         "skilled_worker"
       ],
@@ -2852,6 +2865,7 @@
         "en": "Japan",
         "zh-Hans": "日本"
       },
+      "country_brand_color": "#BC002D",
       "category_ids": [
         "skilled_worker"
       ],
@@ -3040,6 +3054,7 @@
         "en": "Malaysia",
         "zh-Hans": "马来西亚"
       },
+      "country_brand_color": "#010066",
       "category_ids": [
         "digital_nomad"
       ],
@@ -3230,6 +3245,7 @@
         "en": "Malaysia",
         "zh-Hans": "马来西亚"
       },
+      "country_brand_color": "#010066",
       "category_ids": [
         "skilled_worker"
       ],
@@ -3425,6 +3441,7 @@
         "en": "Malaysia",
         "zh-Hans": "马来西亚"
       },
+      "country_brand_color": "#010066",
       "category_ids": [
         "study_to_pr"
       ],
@@ -3612,6 +3629,7 @@
         "en": "Netherlands",
         "zh-Hans": "荷兰"
       },
+      "country_brand_color": "#AE1C28",
       "category_ids": [
         "skilled_worker"
       ],
@@ -3800,6 +3818,7 @@
         "en": "Netherlands",
         "zh-Hans": "荷兰"
       },
+      "country_brand_color": "#AE1C28",
       "category_ids": [
         "study_to_pr"
       ],
@@ -3988,6 +4007,7 @@
         "en": "New Zealand",
         "zh-Hans": "新西兰"
       },
+      "country_brand_color": "#012169",
       "category_ids": [
         "skilled_worker"
       ],
@@ -4177,6 +4197,7 @@
         "en": "New Zealand",
         "zh-Hans": "新西兰"
       },
+      "country_brand_color": "#012169",
       "category_ids": [
         "skilled_worker"
       ],
@@ -4366,6 +4387,7 @@
         "en": "Portugal",
         "zh-Hans": "葡萄牙"
       },
+      "country_brand_color": "#046A38",
       "category_ids": [
         "digital_nomad"
       ],
@@ -4569,6 +4591,7 @@
         "en": "Singapore",
         "zh-Hans": "新加坡"
       },
+      "country_brand_color": "#EF3340",
       "category_ids": [
         "skilled_worker"
       ],
@@ -4771,6 +4794,7 @@
         "en": "Singapore",
         "zh-Hans": "新加坡"
       },
+      "country_brand_color": "#EF3340",
       "category_ids": [
         "startup_entrepreneur"
       ],
@@ -4970,6 +4994,7 @@
         "en": "Spain",
         "zh-Hans": "西班牙"
       },
+      "country_brand_color": "#AA151B",
       "category_ids": [
         "digital_nomad"
       ],
@@ -5160,6 +5185,7 @@
         "en": "Spain",
         "zh-Hans": "西班牙"
       },
+      "country_brand_color": "#AA151B",
       "category_ids": [
         "skilled_worker"
       ],
@@ -5355,6 +5381,7 @@
         "en": "Spain",
         "zh-Hans": "西班牙"
       },
+      "country_brand_color": "#AA151B",
       "category_ids": [
         "study_to_pr"
       ],
@@ -5554,6 +5581,7 @@
         "en": "United Arab Emirates",
         "zh-Hans": "阿联酋"
       },
+      "country_brand_color": "#00843D",
       "category_ids": [
         "startup_entrepreneur",
         "investor"
@@ -5745,6 +5773,7 @@
         "en": "United Arab Emirates",
         "zh-Hans": "阿联酋"
       },
+      "country_brand_color": "#00843D",
       "category_ids": [
         "startup_entrepreneur"
       ],
@@ -5936,6 +5965,7 @@
         "en": "United Arab Emirates",
         "zh-Hans": "阿联酋"
       },
+      "country_brand_color": "#00843D",
       "category_ids": [
         "investor"
       ],
@@ -6125,6 +6155,7 @@
         "en": "United Arab Emirates",
         "zh-Hans": "阿联酋"
       },
+      "country_brand_color": "#00843D",
       "category_ids": [
         "skilled_worker"
       ],
@@ -6313,6 +6344,7 @@
         "en": "United Arab Emirates",
         "zh-Hans": "阿联酋"
       },
+      "country_brand_color": "#00843D",
       "category_ids": [
         "skilled_worker"
       ],
@@ -6514,6 +6546,7 @@
         "en": "United Arab Emirates",
         "zh-Hans": "阿联酋"
       },
+      "country_brand_color": "#00843D",
       "category_ids": [
         "digital_nomad"
       ],
@@ -6705,12 +6738,212 @@
       "last_checked_at": "2026-07-11T05:12:41.936Z"
     },
     {
+      "program_id": "united-kingdom-graduate-visa",
+      "country_id": "united-kingdom",
+      "country_names": {
+        "en": "United Kingdom",
+        "zh-Hans": "英国"
+      },
+      "country_brand_color": "#012169",
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Graduate visa",
+        "zh-Hans": "毕业签证（Graduate visa）"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "bachelor",
+        "credential_assessment_required": false,
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "not_applicable",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T13:54:30Z",
+        "updated_at": "2026-07-11T13:54:30Z",
+        "last_checked_at": "2026-07-11T13:54:30.000Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "quote_md": "A Graduate visa gives you permission to stay in the UK for at least 18 months after successfully completing an eligible course in the UK.",
+            "section": "Graduate visa overview",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "quote_hash": "4db87ad81147ec7396d8304520460ea9cc271b10a24b54cd755d338b7c05e198",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "How long you can stay",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "Eligibility and switching later",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "Eligibility",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "You must be in the UK; cannot extend",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "Post-study permission after Student visa",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "Eligibility requirements",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "How much it costs £937 and healthcare surcharge",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "No job offer required to apply",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "How long you can stay and getting a decision",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "What you can and cannot do",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "Partner and children",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "Switch to a different visa such as Skilled Worker",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "Temporary post-study route",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "united-kingdom-graduate-visa",
+            "url": "https://www.gov.uk/graduate-visa",
+            "section": "Conservative Graduate visa filter fields",
+            "snapshot_id": "610e8f4ea2b8ec39b74342377d56128664b9a9ae72b2d9f659bbdadc5f14aa9e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ]
+      },
+      "pathway_type": "temporary_only",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "other",
+      "accepts_remote_income": false,
+      "accepts_self_employment": true,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": true,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "indirect",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": 2,
+      "processing_time_months_max": 2,
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T13:54:30.000Z"
+    },
+    {
       "program_id": "united-kingdom-skilled-worker",
       "country_id": "united-kingdom",
       "country_names": {
         "en": "United Kingdom",
         "zh-Hans": "英国"
       },
+      "country_brand_color": "#012169",
       "category_ids": [
         "skilled_worker"
       ],
@@ -6901,12 +7134,242 @@
       "last_checked_at": "2026-07-11T11:46:27.619Z"
     },
     {
+      "program_id": "united-kingdom-student-visa",
+      "country_id": "united-kingdom",
+      "country_names": {
+        "en": "United Kingdom",
+        "zh-Hans": "英国"
+      },
+      "country_brand_color": "#012169",
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Student visa",
+        "zh-Hans": "学生签证（Student visa）"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": true,
+        "proof_of_funds": [
+          {
+            "amount": 1529,
+            "currency": "GBP",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "Living-cost figure for courses in London, for up to 9 months, plus course fees for one academic year as shown on the CAS. Funds must usually be held for 28 consecutive days ending within 31 days of application, subject to exemptions.",
+              "zh-Hans": "伦敦课程的生活费金额，最长按 9 个月计算，另加 CAS 所示一学年学费。资金通常须连续持有 28 天，且该 28 天结束日须在申请日前 31 天内，豁免情形除外。"
+            }
+          },
+          {
+            "amount": 1171,
+            "currency": "GBP",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "Living-cost figure for courses outside London, for up to 9 months, plus course fees. Some applicants are exempt from proving funds, including some nationalities under the differential evidence list and people who have lived in the UK on a valid visa for at least 12 months.",
+              "zh-Hans": "伦敦以外课程的生活费金额，最长按 9 个月计算，另加学费。部分申请人可豁免资金证明，包括差异化证据名单中的部分国籍，以及已在英国持有效签证居住至少 12 个月的人。"
+            }
+          }
+        ],
+        "proof_of_funds_exemptions": [],
+        "income_required": "not_applicable",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T13:54:30Z",
+        "updated_at": "2026-07-11T13:54:30Z",
+        "last_checked_at": "2026-07-11T13:54:30.000Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "quote_md": "You can apply for a Student visa to study in the UK if you’re 16 or over",
+            "section": "Student visa overview",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "quote_hash": "1299e2d511968620cc4db17d35f911fc12333115e1d0a292c4dc88e389fbe765",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Tier 4 replacement note",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Overview, how long you can stay, Graduate visa link",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Eligibility overview",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "What you can and cannot do",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Licensed student sponsor course offer",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Age 16+, sponsor offer, English, parental consent",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Fees £558",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          },
+          {
+            "source_id": "united-kingdom-student-visa-money",
+            "url": "https://www.gov.uk/student-visa/money",
+            "section": "London £1,529 and outside London £1,171 monthly living costs",
+            "snapshot_id": "00d3a703c7dac6ccc82a26e58b36749a9041f5e7a349e0b46fb189d6ac40345c",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "united-kingdom-student-visa-money",
+            "url": "https://www.gov.uk/student-visa/money",
+            "section": "Course fee and financial requirement",
+            "snapshot_id": "00d3a703c7dac6ccc82a26e58b36749a9041f5e7a349e0b46fb189d6ac40345c",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "When to apply and how long it takes",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "What you can and cannot do",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Your partner and children",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Staying longer and Graduate visa",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Temporary study route",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "united-kingdom-student-visa",
+            "url": "https://www.gov.uk/student-visa",
+            "section": "Conservative Student visa filter fields",
+            "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+            "retrieved_at": "2026-07-11T13:54:30.000Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "other",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": true,
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": "limited",
+      "remote_work_allowed": false,
+      "leads_to_pr": "indirect",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": 0.75,
+      "processing_time_months_max": 2,
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T13:54:30.000Z"
+    },
+    {
       "program_id": "united-states-h1b-specialty-occupations",
       "country_id": "united-states",
       "country_names": {
         "en": "United States",
         "zh-Hans": "美国"
       },
+      "country_brand_color": "#B31942",
       "category_ids": [
         "skilled_worker"
       ],

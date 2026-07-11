@@ -2222,6 +2222,33 @@
       "status": "active"
     },
     {
+      "id": "united-kingdom-graduate-visa",
+      "country_id": "united-kingdom",
+      "program_ids": [
+        "united-kingdom-graduate-visa"
+      ],
+      "url": "https://www.gov.uk/graduate-visa",
+      "title": "Graduate visa: Overview",
+      "publisher": "UK Visas and Immigration / GOV.UK",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Graduate visa",
+        "18 months",
+        "937",
+        "Student visa"
+      ],
+      "expected_domains": [
+        "www.gov.uk"
+      ],
+      "last_checked_at": "2026-07-11T13:55:39.547Z",
+      "last_success_at": "2026-07-11T13:55:39.547Z",
+      "status": "active"
+    },
+    {
       "id": "united-kingdom-skilled-worker",
       "country_id": "united-kingdom",
       "program_ids": [
@@ -2246,6 +2273,60 @@
       ],
       "last_checked_at": "2026-07-11T11:46:27.619Z",
       "last_success_at": "2026-07-11T11:46:27.619Z",
+      "status": "active"
+    },
+    {
+      "id": "united-kingdom-student-visa",
+      "country_id": "united-kingdom",
+      "program_ids": [
+        "united-kingdom-student-visa"
+      ],
+      "url": "https://www.gov.uk/student-visa",
+      "title": "Student visa: Overview",
+      "publisher": "UK Visas and Immigration / GOV.UK",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Student visa",
+        "licensed student sponsor",
+        "558",
+        "Graduate visa"
+      ],
+      "expected_domains": [
+        "www.gov.uk"
+      ],
+      "last_checked_at": "2026-07-11T13:55:39.547Z",
+      "last_success_at": "2026-07-11T13:55:39.547Z",
+      "status": "active"
+    },
+    {
+      "id": "united-kingdom-student-visa-money",
+      "country_id": "united-kingdom",
+      "program_ids": [
+        "united-kingdom-student-visa"
+      ],
+      "url": "https://www.gov.uk/student-visa/money",
+      "title": "Student visa: Money you need",
+      "publisher": "UK Visas and Immigration / GOV.UK",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "financial requirement",
+        "1,529",
+        "1,171",
+        "28 days"
+      ],
+      "expected_domains": [
+        "www.gov.uk"
+      ],
+      "last_checked_at": "2026-07-11T13:55:39.547Z",
+      "last_success_at": "2026-07-11T13:55:39.547Z",
       "status": "active"
     },
     {

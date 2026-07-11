@@ -1,0 +1,27 @@
+{
+  "id": "united-kingdom-student-visa",
+  "country_id": "united-kingdom",
+  "program_ids": [
+    "united-kingdom-student-visa"
+  ],
+  "url": "https://www.gov.uk/student-visa",
+  "title": "Student visa: Overview",
+  "publisher": "UK Visas and Immigration / GOV.UK",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Student visa",
+    "licensed student sponsor",
+    "558",
+    "Graduate visa"
+  ],
+  "expected_domains": [
+    "www.gov.uk"
+  ],
+  "last_checked_at": "2026-07-11T13:55:39.547Z",
+  "last_success_at": "2026-07-11T13:55:39.547Z",
+  "status": "active"
+}

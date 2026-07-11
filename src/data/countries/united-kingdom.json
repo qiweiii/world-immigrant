@@ -8,20 +8,29 @@
   },
   "region": "Europe",
   "summary_md": {
-    "en": "Bootstrap coverage for the United Kingdom begins with the Skilled Worker visa for eligible jobs with approved employers.",
-    "zh-Hans": "英国的初始覆盖从面向获批雇主合格职位的技术工人签证开始。"
+    "en": "The United Kingdom now has official bootstrap coverage for the Skilled Worker visa, Student visa, and Graduate visa post-study route. No dedicated digital-nomad visa is included.",
+    "zh-Hans": "英国现在覆盖技术工人签证、学生签证以及毕业后工作的毕业签证。未加入专门的数字游民签证。"
   },
   "brand": {
     "color": "#012169",
     "source": "flag"
   },
-  "official_source_ids": ["united-kingdom-skilled-worker"],
-  "categories": ["skilled_worker"],
-  "program_ids": ["united-kingdom-skilled-worker"],
+  "official_source_ids": [
+    "united-kingdom-skilled-worker",
+    "united-kingdom-student-visa",
+    "united-kingdom-student-visa-money",
+    "united-kingdom-graduate-visa"
+  ],
+  "categories": ["skilled_worker", "study_to_pr"],
+  "program_ids": [
+    "united-kingdom-skilled-worker",
+    "united-kingdom-student-visa",
+    "united-kingdom-graduate-visa"
+  ],
   "freshness": {
     "created_at": "2026-07-11T11:42:03Z",
-    "updated_at": "2026-07-11T11:42:03Z",
-    "last_checked_at": "2026-07-11T11:46:27.619Z",
+    "updated_at": "2026-07-11T13:54:30Z",
+    "last_checked_at": "2026-07-11T13:54:30.000Z",
     "update_frequency_days": 14,
     "confidence": "medium",
     "needs_human_review": true

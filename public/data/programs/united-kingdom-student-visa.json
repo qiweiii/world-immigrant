@@ -1,0 +1,368 @@
+{
+  "id": "united-kingdom-student-visa",
+  "country_id": "united-kingdom",
+  "category_ids": [
+    "study_to_pr"
+  ],
+  "official_names": {
+    "en": "Student visa",
+    "zh-Hans": "学生签证（Student visa）"
+  },
+  "aliases": [
+    "UK Student visa",
+    "Tier 4 General student visa replacement"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "GOV.UK describes the Student visa as the main study route for people aged 16 or over with an offer from a licensed student sponsor. It replaced the Tier 4 (General) student visa.",
+    "zh-Hans": "GOV.UK 将学生签证描述为年满 16 岁、并获持牌学生担保机构录取者的主要学习途径。该签证已取代 Tier 4（普通）学生签证。"
+  },
+  "summary_md": {
+    "en": "A UK study route for an eligible course with a licensed student sponsor, enough money for the course and living costs, and English-language ability. GOV.UK says degree-level study for adults can usually support up to five years, and many graduates later switch to a Graduate visa for temporary post-study work.",
+    "zh-Hans": "面向持牌学生担保机构合资格课程的英国学习途径，需具备足够学费与生活费以及英语能力。GOV.UK 说明成年学位级课程通常最长可停留五年，许多毕业生之后可转申请毕业签证以获得临时毕业后工作时间。"
+  },
+  "good_for_md": {
+    "en": "Applicants aged 16 or over with a course offer from a licensed student sponsor, evidence of funds (unless exempt), and the required English ability, who intend to study rather than seek unrestricted work or a digital-nomad stay.",
+    "zh-Hans": "适合年满 16 岁、获得持牌学生担保机构课程录取、能提供资金证明（除非获豁免）并具备所需英语能力，且以学习而非不受限制工作或数字游民停留为目的的申请人。"
+  },
+  "not_good_for_md": {
+    "en": "People without a licensed sponsor offer, applicants seeking unrestricted employment or self-employment, or a dedicated digital-nomad visa. The UK does not have a dedicated digital-nomad visa in this record.",
+    "zh-Hans": "不适合没有持牌担保机构录取、寻求不受限制就业或自雇，或寻求专门数字游民签证的申请人。本记录不将英国描述为提供专门数字游民签证。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {
+      "min": 16,
+      "note_md": {
+        "en": "GOV.UK says you can apply if you are 16 or over. Applicants aged 16 or 17 need parental consent evidence.",
+        "zh-Hans": "GOV.UK 说明年满 16 岁可申请。16 或 17 岁申请人需要父母同意证明。"
+      }
+    },
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "You must have been offered a place on a course by a licensed student sponsor. Course-level academic requirements are set by the sponsor and Confirmation of Acceptance for Studies (CAS).",
+        "zh-Hans": "必须获得持牌学生担保机构的课程录取。课程层面的学术要求由担保机构及录取确认书（CAS）确定。"
+      }
+    },
+    "work_experience": {},
+    "language": [
+      {
+        "language": "en",
+        "test": "GOV.UK knowledge of English requirement for Student visa",
+        "minimum_level": "unknown",
+        "note_md": {
+          "en": "GOV.UK requires that you can speak, read, write and understand English. Exact proof routes depend on the course and nationality.",
+          "zh-Hans": "GOV.UK 要求能够说、读、写并理解英语。具体证明方式取决于课程和国籍。"
+        }
+      }
+    ],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [
+      {
+        "amount": 1529,
+        "currency": "GBP",
+        "period": "monthly",
+        "applies_to": "primary",
+        "calculation": "minimum_total",
+        "note_md": {
+          "en": "Living-cost figure for courses in London, for up to 9 months, plus course fees for one academic year as shown on the CAS. Funds must usually be held for 28 consecutive days ending within 31 days of application, subject to exemptions.",
+          "zh-Hans": "伦敦课程的生活费金额，最长按 9 个月计算，另加 CAS 所示一学年学费。资金通常须连续持有 28 天，且该 28 天结束日须在申请日前 31 天内，豁免情形除外。"
+        }
+      },
+      {
+        "amount": 1171,
+        "currency": "GBP",
+        "period": "monthly",
+        "applies_to": "primary",
+        "calculation": "minimum_total",
+        "note_md": {
+          "en": "Living-cost figure for courses outside London, for up to 9 months, plus course fees. Some applicants are exempt from proving funds, including some nationalities under the differential evidence list and people who have lived in the UK on a valid visa for at least 12 months.",
+          "zh-Hans": "伦敦以外课程的生活费金额，最长按 9 个月计算，另加学费。部分申请人可豁免资金证明，包括差异化证据名单中的部分国籍，以及已在英国持有效签证居住至少 12 个月的人。"
+        }
+      }
+    ],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Student visa application fee (outside or inside the UK)",
+          "zh-Hans": "学生签证申请费（英国境内外）"
+        },
+        "amount": 558,
+        "currency": "GBP",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": [
+      "unknown"
+    ],
+    "income_location": "not_applicable",
+    "stability_requirement_md": {
+      "en": "The Student route uses course fees and living-cost funds rather than a recurring employment income threshold.",
+      "zh-Hans": "学生途径使用学费与生活费资金要求，而不是经常性就业收入门槛。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "GOV.UK says you usually get a decision within 3 weeks from outside the UK or 8 weeks from inside the UK. Apply up to 6 months before the course from outside the UK, or 3 months before from inside the UK.",
+      "zh-Hans": "GOV.UK 说明英国境外申请通常 3 周内出结果，境内申请通常 8 周内出结果。境外最早可在开课前 6 个月申请，境内最早可在开课前 3 个月申请。"
+    },
+    "processing_time_months_min": 0.75,
+    "processing_time_months_max": 2,
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": 60
+  },
+  "rights": {
+    "work_allowed": "limited",
+    "local_employment_allowed": "limited",
+    "remote_work_allowed": false,
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "limited",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "limited",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": false,
+    "note_md": {
+      "en": "GOV.UK says you may be able to bring a partner and children as dependants, subject to the Student visa family rules.",
+      "zh-Hans": "GOV.UK 说明在符合学生签证家属规则的情况下，可能可以携带伴侣和子女作为受养人。"
+    }
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "A Student visa is temporary. GOV.UK points many graduates to a Graduate visa for post-study stay, and later work routes such as Skilled Worker may support settlement when their own rules are met.",
+      "zh-Hans": "学生签证是临时的。GOV.UK 指引许多毕业生申请毕业签证以毕业后停留，之后如技术工人等工签在满足各自规则时可能支持定居。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The Student visa sources do not establish citizenship eligibility.",
+      "zh-Hans": "学生签证来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Core rules are published on GOV.UK, but funds exemptions, work conditions, dependants, and Graduate-route duration rules can change and need case-level checks.",
+      "zh-Hans": "核心规则发布于 GOV.UK，但资金豁免、工作条件、受养人以及毕业路径期限规则可能变化，需按案件核对。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 4,
+    "speed_score": 4,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": true,
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "limited",
+    "remote_work_allowed": false,
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": 0.75,
+    "processing_time_months_max": 2,
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T13:54:30.000Z"
+  },
+  "source_ids": [
+    "united-kingdom-student-visa",
+    "united-kingdom-student-visa-money"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "quote_md": "You can apply for a Student visa to study in the UK if you’re 16 or over",
+        "section": "Student visa overview",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "quote_hash": "1299e2d511968620cc4db17d35f911fc12333115e1d0a292c4dc88e389fbe765",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Tier 4 replacement note",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Overview, how long you can stay, Graduate visa link",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Eligibility overview",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "What you can and cannot do",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Licensed student sponsor course offer",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Age 16+, sponsor offer, English, parental consent",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Fees £558",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      },
+      {
+        "source_id": "united-kingdom-student-visa-money",
+        "url": "https://www.gov.uk/student-visa/money",
+        "section": "London £1,529 and outside London £1,171 monthly living costs",
+        "snapshot_id": "00d3a703c7dac6ccc82a26e58b36749a9041f5e7a349e0b46fb189d6ac40345c",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "united-kingdom-student-visa-money",
+        "url": "https://www.gov.uk/student-visa/money",
+        "section": "Course fee and financial requirement",
+        "snapshot_id": "00d3a703c7dac6ccc82a26e58b36749a9041f5e7a349e0b46fb189d6ac40345c",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "When to apply and how long it takes",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "What you can and cannot do",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Your partner and children",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Staying longer and Graduate visa",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Temporary study route",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "united-kingdom-student-visa",
+        "url": "https://www.gov.uk/student-visa",
+        "section": "Conservative Student visa filter fields",
+        "snapshot_id": "61dc67478656ea7b75880544279b3661b162e3555326c06e8e25f1d698ce672e",
+        "retrieved_at": "2026-07-11T13:54:30.000Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T13:54:30Z",
+    "updated_at": "2026-07-11T13:54:30Z",
+    "last_checked_at": "2026-07-11T13:54:30.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T13:54:30Z",
+      "summary": "Added UK Student visa coverage from official GOV.UK sources.",
+      "source_ids": [
+        "united-kingdom-student-visa",
+        "united-kingdom-student-visa-money"
+      ]
+    }
+  ]
+}

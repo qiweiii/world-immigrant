@@ -569,6 +569,21 @@ A UAE remote-work residence route for people working remotely for an organizatio
 - uae-icp-virtual-work-residence: Issuance of Visa Virtual Work Residence (Virtual Work Employee) — https://icp.gov.ae/en/services-details?serviceid=68e73fd45ae59b00117389f4
 - uae-gdrfa-virtual-work-residence: Issuance of the Virtual Work Residence Permit — https://www.gdrfad.gov.ae/en/services/f52024e3-b812-11ed-5210-4cd98f768936
 
+## Graduate visa
+
+- ID: united-kingdom-graduate-visa
+- Country: united-kingdom
+- Status: active
+- Last updated: 2026-07-11T13:54:30.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A temporary UK post-study work route for people already in the UK on a Student or Tier 4 (General) visa who successfully complete an eligible UK course. It is not extendable, but GOV.UK says you may later switch to another visa such as Skilled Worker.
+
+### Official sources
+
+- united-kingdom-graduate-visa: Graduate visa: Overview — https://www.gov.uk/graduate-visa
+
 ## Skilled Worker visa
 
 - ID: united-kingdom-skilled-worker
@@ -583,6 +598,22 @@ A UK work and residence route for an eligible job with an approved employer, a c
 ### Official sources
 
 - united-kingdom-skilled-worker: Skilled Worker visa: Overview — https://www.gov.uk/skilled-worker-visa
+
+## Student visa
+
+- ID: united-kingdom-student-visa
+- Country: united-kingdom
+- Status: active
+- Last updated: 2026-07-11T13:54:30.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A UK study route for an eligible course with a licensed student sponsor, enough money for the course and living costs, and English-language ability. GOV.UK says degree-level study for adults can usually support up to five years, and many graduates later switch to a Graduate visa for temporary post-study work.
+
+### Official sources
+
+- united-kingdom-student-visa: Student visa: Overview — https://www.gov.uk/student-visa
+- united-kingdom-student-visa-money: Student visa: Money you need — https://www.gov.uk/student-visa/money
 
 ## H-1B Specialty Occupations
 
