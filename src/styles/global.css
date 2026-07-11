@@ -218,7 +218,7 @@
     text-decoration: none;
     transition: background 0.15s, border-color 0.15s, transform 0.1s;
   }
-  .btn:hover { background: var(--muted); }
+  .btn:hover { background: color-mix(in srgb, var(--foreground) 8%, var(--card)); }
   .btn:active { transform: scale(0.98); }
   .btn-primary {
     background: var(--foreground);
@@ -228,10 +228,10 @@
   .btn-primary:hover { opacity: 0.88; }
   .btn-ghost {
     background: transparent;
-    border-color: transparent;
+    border-color: var(--border);
     color: var(--muted-foreground);
   }
-  .btn-ghost:hover { background: var(--muted); color: var(--foreground); }
+  .btn-ghost:hover { background: color-mix(in srgb, var(--foreground) 8%, transparent); color: var(--foreground); border-color: var(--border-strong); }
   .btn .icon, .btn img { width: 16px; height: 16px; }
 
   /* ── Card ── */
