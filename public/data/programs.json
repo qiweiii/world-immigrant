@@ -3106,6 +3106,611 @@
       ]
     },
     {
+      "id": "malaysia-employment-pass",
+      "country_id": "malaysia",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Employment Pass (Category I–III)",
+        "zh-Hans": "就业准证（第一至第三类别）"
+      },
+      "aliases": [
+        "Malaysia Employment Pass",
+        "Malaysia EP"
+      ],
+      "status": "active",
+      "status_note_md": {
+        "en": "The Malaysian Expatriate Services Division maintains the Employment Pass route for eligible expatriate employees. ESD states that revised salary thresholds and a structured employment-duration framework take effect from June 1, 2026.",
+        "zh-Hans": "马来西亚外籍人士服务部门继续提供面向合格外籍员工的就业准证途径。ESD 说明，修订后的薪资门槛和结构化雇佣期限框架自 2026 年 6 月 1 日起实施。"
+      },
+      "summary_md": {
+        "en": "An employer-sponsored Malaysian work-pass route for expatriates hired by an ESD-registered company. The ESD guidebook describes company registration and activation, expatriate application, Employment Pass categories, supporting-agency processes, and pass endorsement.",
+        "zh-Hans": "面向由 ESD 注册公司聘用的外籍人士的马来西亚雇主担保工作准证途径。ESD 指南说明了公司注册和激活、外籍人士申请、就业准证类别、支持机构流程以及准证签注。"
+      },
+      "good_for_md": {
+        "en": "Professionals with a Malaysian employer that can complete ESD registration and activation, obtain any required agency support, and submit the employment-pass documents.",
+        "zh-Hans": "适合拥有马来西亚雇主，且雇主能够完成 ESD 注册和激活、取得所需机构支持并提交就业准证材料的专业人士。"
+      },
+      "not_good_for_md": {
+        "en": "Applicants seeking a self-sponsored or remote-work route, applicants without a Malaysian hiring company, or cases that do not meet the current category-specific salary and employment-duration rules.",
+        "zh-Hans": "不适合寻求自我担保或远程工作的申请人、没有马来西亚聘用公司的申请人，或不符合当前类别薪资和雇佣期限规则的案件。"
+      },
+      "pathway_mechanism": "employer_sponsored",
+      "eligibility": {
+        "age": {},
+        "education": {
+          "required_level": "unknown",
+          "credential_assessment_required": "unknown"
+        },
+        "work_experience": {},
+        "language": [],
+        "health_check_required": "unknown",
+        "police_certificate_required": "unknown",
+        "points_based": false,
+        "job_offer_required": true,
+        "sponsor_required": true
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": []
+      },
+      "income": {
+        "required": true,
+        "min_income": [
+          {
+            "amount": "unknown",
+            "currency": "MYR",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total"
+          }
+        ],
+        "accepted_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination",
+        "stability_requirement_md": {
+          "en": "The ESD portal states that revised Employment Pass salary thresholds and a structured employment-duration framework take effect on June 1, 2026. The category table and case-specific exceptions must be checked before filing.",
+          "zh-Hans": "ESD 门户说明，修订后的就业准证薪资门槛和结构化雇佣期限框架自 2026 年 6 月 1 日起实施。递交申请前必须核对类别表和案件特定例外。"
+        }
+      },
+      "timeline": {
+        "initial_validity_months": "unknown",
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": true,
+        "local_employment_allowed": true,
+        "remote_work_allowed": "unknown",
+        "study_allowed": "unknown",
+        "business_allowed": "unknown"
+      },
+      "family": {
+        "spouse_or_partner_allowed": "unknown",
+        "unmarried_partner_allowed": "unknown",
+        "children_allowed": "unknown",
+        "spouse_work_allowed": "unknown",
+        "dependent_parents_allowed": "unknown"
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained Employment Pass sources do not establish a permanent-residence outcome.",
+          "zh-Hans": "保留的就业准证来源没有确认永久居留结果。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained Employment Pass sources do not establish citizenship eligibility.",
+          "zh-Hans": "保留的就业准证来源没有确认公民资格。"
+        }
+      },
+      "risk": {
+        "policy_stability_score": 3,
+        "source_confidence_score": 5,
+        "extraction_confidence_score": 5,
+        "needs_human_review": true,
+        "rationale_md": {
+          "en": "This Malaysia bootstrap record is based on current official Immigration, ESD, MDEC, and EMGS pages. Category-specific and conditional rules still require human review before application.",
+          "zh-Hans": "这条马来西亚初始记录基于当前移民局、ESD、MDEC 和 EMGS 官方页面。类别特定规则和条件规则在申请前仍需人工核实。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 3,
+        "cost_score": 3,
+        "speed_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "pathway_type": "temporary_only",
+        "settlement_track": "unknown",
+        "pathway_mechanism": "employer_sponsored",
+        "accepts_remote_income": false,
+        "accepts_self_employment": false,
+        "accepts_overseas_remote_income": false,
+        "requires_degree": "unknown",
+        "requires_job_offer": true,
+        "requires_investment": false,
+        "requires_language_test": "unknown",
+        "requires_local_entity": true,
+        "allows_family": "unknown",
+        "work_allowed": true,
+        "remote_work_allowed": "unknown",
+        "leads_to_pr": "unknown",
+        "leads_to_citizenship": "unknown",
+        "processing_time_months_min": "unknown",
+        "processing_time_months_max": "unknown",
+        "policy_stability_score": 3,
+        "source_confidence_score": 5,
+        "last_checked_at": "2026-07-11T12:00:16.054Z"
+      },
+      "source_ids": [
+        "malaysia-esd-employment-pass-guidebook",
+        "malaysia-esd-employment-pass-overview",
+        "malaysia-mdec-foreign-knowledge-worker-epass"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "malaysia-esd-employment-pass-overview",
+            "url": "https://esd.imi.gov.my",
+            "section": "Employment Pass categories and current ESD policy notices",
+            "snapshot_id": "7081c042f837f910e3fae2087e806a28affa4632a8ffaa116fe9abef7139f189",
+            "retrieved_at": "2026-07-11T12:00:15.528Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Employment of expatriates in Malaysia and ESD application stages",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Company registration, activation, and expatriate application requirements",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Employment Pass employer and category conditions",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Employment Pass applied for by the hiring company",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Eligibility criteria for Employment Pass applications",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Document checklist and application costs",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "malaysia-esd-employment-pass-overview",
+            "url": "https://esd.imi.gov.my",
+            "section": "Revised Employment Pass salary policy and category thresholds",
+            "snapshot_id": "7081c042f837f910e3fae2087e806a28affa4632a8ffaa116fe9abef7139f189",
+            "retrieved_at": "2026-07-11T12:00:15.528Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "ESD application and pass endorsement stages",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "malaysia-mdec-foreign-knowledge-worker-epass",
+            "url": "https://www.mdec.my/expats/announcement/implementation-of-electronic-pass-epass--for-foreign-knowledge-worker-application",
+            "section": "Employment Pass and foreign knowledge worker pass endorsement",
+            "snapshot_id": "a4f37a441923d3b23d000f60f231bff3032107389ab1985034c3b811242fcc85",
+            "retrieved_at": "2026-07-11T12:00:16.054Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "malaysia-mdec-foreign-knowledge-worker-epass",
+            "url": "https://www.mdec.my/expats/announcement/implementation-of-electronic-pass-epass--for-foreign-knowledge-worker-application",
+            "section": "Dependant Pass availability in the ESD guidebook",
+            "snapshot_id": "a4f37a441923d3b23d000f60f231bff3032107389ab1985034c3b811242fcc85",
+            "retrieved_at": "2026-07-11T12:00:16.054Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Permanent residence not established",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Citizenship not established",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "malaysia-esd-employment-pass-guidebook",
+            "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+            "section": "Conservative Employment Pass filter fields",
+            "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb",
+            "retrieved_at": "2026-07-11T12:00:14.052Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T11:56:45Z",
+        "updated_at": "2026-07-11T11:56:45Z",
+        "last_checked_at": "2026-07-11T12:00:16.054Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "changelog": [
+        {
+          "changed_at": "2026-07-11T11:56:45Z",
+          "summary": "Added Malaysia Employment Pass (Category I–III) coverage from current official evidence.",
+          "source_ids": [
+            "malaysia-esd-employment-pass-guidebook",
+            "malaysia-esd-employment-pass-overview",
+            "malaysia-mdec-foreign-knowledge-worker-epass"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "malaysia-student-pass",
+      "country_id": "malaysia",
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Student Pass",
+        "zh-Hans": "学生准证"
+      },
+      "aliases": [
+        "Malaysia Student Pass",
+        "Malaysia student visa"
+      ],
+      "status": "active",
+      "status_note_md": {
+        "en": "The Malaysian Immigration Department and Education Malaysia Global Services describe the Student Pass as the immigration pass for non-citizen students studying at approved institutions in Malaysia.",
+        "zh-Hans": "马来西亚移民局和马来西亚教育全球服务说明，学生准证是面向在马来西亚获批机构学习的非公民学生的移民准证。"
+      },
+      "summary_md": {
+        "en": "A study residence route for international students admitted to approved Malaysian institutions. The documented process includes an offer letter, EMGS or institutional application, academic screening, eVAL, possible Single-Entry Visa, arrival medical screening, and Student Pass endorsement.",
+        "zh-Hans": "面向获准进入马来西亚认可机构学习的国际学生的学习居留途径。已记录流程包括录取通知书、EMGS 或学校申请、学术审查、电子签证批准信、可能需要的单次入境签证、抵达后的体检以及学生准证签注。"
+      },
+      "good_for_md": {
+        "en": "International students with an offer from an approved Malaysian institution who can complete the EMGS and Immigration process and maintain the required insurance and pass conditions.",
+        "zh-Hans": "适合获得马来西亚认可机构录取，能够完成 EMGS 和移民局流程，并维持所需保险及准证条件的国际学生。"
+      },
+      "not_good_for_md": {
+        "en": "Applicants seeking unrestricted work, a self-sponsored work route, or a direct permanent-residence pathway. Part-time work and dependant eligibility are conditional.",
+        "zh-Hans": "不适合寻求不受限制工作、自我担保工作途径或直接永久居留途径的申请人。兼职工作和家属资格均有条件限制。"
+      },
+      "pathway_mechanism": "other",
+      "eligibility": {
+        "age": {},
+        "education": {
+          "required_level": "secondary",
+          "credential_assessment_required": "unknown",
+          "note_md": {
+            "en": "EMGS states that applicants for diploma or degree programmes need at least 12 years of education and a recognized national or international examination.",
+            "zh-Hans": "EMGS 说明，申请文凭或学位课程的申请人需要至少 12 年教育经历以及获认可的国家或国际考试。"
+          }
+        },
+        "work_experience": {},
+        "language": [],
+        "health_check_required": true,
+        "police_certificate_required": "unknown",
+        "points_based": false,
+        "job_offer_required": false,
+        "sponsor_required": false
+      },
+      "funds": {
+        "proof_of_funds": [],
+        "application_fees": [
+          {
+            "label": {
+              "en": "Student Pass fee",
+              "zh-Hans": "学生准证费用"
+            },
+            "amount": 60,
+            "currency": "MYR",
+            "applies_to": "primary"
+          }
+        ]
+      },
+      "income": {
+        "required": "not_applicable",
+        "accepted_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "timeline": {
+        "application_processing_time_md": {
+          "en": "EMGS states a 14-working-day client charter for a complete application, while incomplete or incorrect documents can add time. A Student Pass is usually issued for up to one year at a time and may be renewed subject to the approved study duration and conditions.",
+          "zh-Hans": "EMGS 说明，完整申请的客户服务时限为 14 个工作日，但材料不完整或错误可能延长时间。学生准证通常一次签发最长一年，并可根据获批学习期限和条件续签。"
+        },
+        "processing_time_months_min": 0.5,
+        "processing_time_months_max": "unknown",
+        "initial_validity_months": 12,
+        "renewable": true,
+        "max_stay_months": "unknown"
+      },
+      "rights": {
+        "work_allowed": "limited",
+        "local_employment_allowed": "limited",
+        "remote_work_allowed": false,
+        "study_allowed": true,
+        "business_allowed": false
+      },
+      "family": {
+        "spouse_or_partner_allowed": "limited",
+        "unmarried_partner_allowed": false,
+        "children_allowed": "limited",
+        "spouse_work_allowed": false,
+        "dependent_parents_allowed": "unknown",
+        "note_md": {
+          "en": "Dependants are conditional. Immigration says only Student Pass holders at Master’s or PhD level may bring dependants to reside, while EMGS describes additional nationality and programme conditions.",
+          "zh-Hans": "家属资格具有条件限制。移民局说明，只有硕士或博士阶段的学生准证持有人可以携带家属居住；EMGS 还说明了其他国籍和课程条件。"
+        }
+      },
+      "pr_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The Student Pass and Graduate Pass sources do not establish a permanent-residence outcome.",
+          "zh-Hans": "学生准证和毕业生准证来源没有确认永久居留结果。"
+        }
+      },
+      "citizenship_pathway": {
+        "available": "unknown",
+        "summary_md": {
+          "en": "The retained Student Pass sources do not establish citizenship eligibility.",
+          "zh-Hans": "保留的学生准证来源没有确认公民资格。"
+        }
+      },
+      "risk": {
+        "policy_stability_score": 3,
+        "source_confidence_score": 5,
+        "extraction_confidence_score": 5,
+        "needs_human_review": true,
+        "rationale_md": {
+          "en": "This Malaysia bootstrap record is based on current official Immigration, ESD, MDEC, and EMGS pages. Category-specific and conditional rules still require human review before application.",
+          "zh-Hans": "这条马来西亚初始记录基于当前移民局、ESD、MDEC 和 EMGS 官方页面。类别特定规则和条件规则在申请前仍需人工核实。"
+        }
+      },
+      "comparison": {
+        "difficulty_score": 2,
+        "cost_score": 3,
+        "speed_score": 3,
+        "permanence_score": 2,
+        "family_friendliness_score": 3,
+        "source_confidence_score": 5,
+        "policy_stability_score": 3
+      },
+      "filter": {
+        "pathway_type": "temporary_only",
+        "settlement_track": "unknown",
+        "pathway_mechanism": "other",
+        "accepts_remote_income": false,
+        "accepts_self_employment": false,
+        "accepts_overseas_remote_income": false,
+        "requires_degree": false,
+        "requires_job_offer": false,
+        "requires_investment": false,
+        "requires_language_test": "unknown",
+        "requires_local_entity": false,
+        "allows_family": "unknown",
+        "work_allowed": "limited",
+        "remote_work_allowed": false,
+        "leads_to_pr": "unknown",
+        "leads_to_citizenship": "unknown",
+        "processing_time_months_min": 0.5,
+        "processing_time_months_max": "unknown",
+        "policy_stability_score": 3,
+        "source_confidence_score": 5,
+        "last_checked_at": "2026-07-11T12:00:16.054Z"
+      },
+      "source_ids": [
+        "malaysia-immigration-student-pass",
+        "malaysia-emgs-student-pass-faq"
+      ],
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "malaysia-immigration-student-pass",
+            "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+            "section": "Student Pass facility and application categories",
+            "snapshot_id": "18f9e674e65585ca0b321c828d2bd2b3db5a098df9477f96d8c559b32d8003a7",
+            "retrieved_at": "2026-07-11T12:00:15.578Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "malaysia-emgs-student-pass-faq",
+            "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+            "section": "Student Pass application stages and eVAL process",
+            "snapshot_id": "3b1e10f013e96868393ea180b605df5d0f416a6ff913fa0b8eb449a68e8f67f5",
+            "retrieved_at": "2026-07-11T12:00:13.665Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "malaysia-emgs-student-pass-faq",
+            "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+            "section": "Student Pass requirements and EMGS application process",
+            "snapshot_id": "3b1e10f013e96868393ea180b605df5d0f416a6ff913fa0b8eb449a68e8f67f5",
+            "retrieved_at": "2026-07-11T12:00:13.665Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "malaysia-emgs-student-pass-faq",
+            "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+            "section": "Conditional work, dependant, and study conditions",
+            "snapshot_id": "3b1e10f013e96868393ea180b605df5d0f416a6ff913fa0b8eb449a68e8f67f5",
+            "retrieved_at": "2026-07-11T12:00:13.665Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "malaysia-immigration-student-pass",
+            "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+            "section": "Admission to approved institution and Student Pass application",
+            "snapshot_id": "18f9e674e65585ca0b321c828d2bd2b3db5a098df9477f96d8c559b32d8003a7",
+            "retrieved_at": "2026-07-11T12:00:15.578Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "malaysia-immigration-student-pass",
+            "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+            "section": "Student Pass age, education, institution, and medical conditions",
+            "snapshot_id": "18f9e674e65585ca0b321c828d2bd2b3db5a098df9477f96d8c559b32d8003a7",
+            "retrieved_at": "2026-07-11T12:00:15.578Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "malaysia-immigration-student-pass",
+            "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+            "section": "Student Pass fee schedule",
+            "snapshot_id": "18f9e674e65585ca0b321c828d2bd2b3db5a098df9477f96d8c559b32d8003a7",
+            "retrieved_at": "2026-07-11T12:00:15.578Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "malaysia-immigration-student-pass",
+            "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+            "section": "Study route does not use an income requirement",
+            "snapshot_id": "18f9e674e65585ca0b321c828d2bd2b3db5a098df9477f96d8c559b32d8003a7",
+            "retrieved_at": "2026-07-11T12:00:15.578Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "malaysia-emgs-student-pass-faq",
+            "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+            "section": "14-working-day charter, eVAL, validity, and renewal",
+            "snapshot_id": "3b1e10f013e96868393ea180b605df5d0f416a6ff913fa0b8eb449a68e8f67f5",
+            "retrieved_at": "2026-07-11T12:00:13.665Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "malaysia-emgs-student-pass-faq",
+            "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+            "section": "Limited part-time work and study permission",
+            "snapshot_id": "3b1e10f013e96868393ea180b605df5d0f416a6ff913fa0b8eb449a68e8f67f5",
+            "retrieved_at": "2026-07-11T12:00:13.665Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "malaysia-immigration-student-pass",
+            "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+            "section": "Dependants and guardians for Student Pass holders",
+            "snapshot_id": "18f9e674e65585ca0b321c828d2bd2b3db5a098df9477f96d8c559b32d8003a7",
+            "retrieved_at": "2026-07-11T12:00:15.578Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "malaysia-immigration-student-pass",
+            "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+            "section": "Permanent residence not established",
+            "snapshot_id": "18f9e674e65585ca0b321c828d2bd2b3db5a098df9477f96d8c559b32d8003a7",
+            "retrieved_at": "2026-07-11T12:00:15.578Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "malaysia-immigration-student-pass",
+            "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+            "section": "Citizenship not established",
+            "snapshot_id": "18f9e674e65585ca0b321c828d2bd2b3db5a098df9477f96d8c559b32d8003a7",
+            "retrieved_at": "2026-07-11T12:00:15.578Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "malaysia-emgs-student-pass-faq",
+            "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+            "section": "Conservative Student Pass filter fields",
+            "snapshot_id": "3b1e10f013e96868393ea180b605df5d0f416a6ff913fa0b8eb449a68e8f67f5",
+            "retrieved_at": "2026-07-11T12:00:13.665Z"
+          }
+        ]
+      },
+      "freshness": {
+        "created_at": "2026-07-11T11:56:45Z",
+        "updated_at": "2026-07-11T11:56:45Z",
+        "last_checked_at": "2026-07-11T12:00:16.054Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "changelog": [
+        {
+          "changed_at": "2026-07-11T11:56:45Z",
+          "summary": "Added Malaysia Student Pass coverage from current official evidence.",
+          "source_ids": [
+            "malaysia-immigration-student-pass",
+            "malaysia-emgs-student-pass-faq"
+          ]
+        }
+      ]
+    },
+    {
       "id": "netherlands-highly-skilled-migrant",
       "country_id": "netherlands",
       "category_ids": [

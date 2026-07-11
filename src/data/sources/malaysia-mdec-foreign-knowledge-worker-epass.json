@@ -1,0 +1,23 @@
+{
+  "id": "malaysia-mdec-foreign-knowledge-worker-epass",
+  "country_id": "malaysia",
+  "program_ids": ["malaysia-employment-pass"],
+  "url": "https://www.mdec.my/expats/announcement/implementation-of-electronic-pass-epass--for-foreign-knowledge-worker-application",
+  "title": "Implementation of electronic pass for foreign knowledge worker application",
+  "publisher": "Malaysia Digital Economy Corporation (MDEC)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Foreign Knowledge Worker",
+    "ePASS",
+    "dependents",
+    "physically present in Malaysia"
+  ],
+  "expected_domains": ["www.mdec.my"],
+  "last_checked_at": "2026-07-11T12:00:16.054Z",
+  "last_success_at": "2026-07-11T12:00:16.054Z",
+  "status": "active"
+}

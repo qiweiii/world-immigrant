@@ -1,0 +1,28 @@
+{
+  "id": "malaysia-emgs-student-pass-faq",
+  "country_id": "malaysia",
+  "program_ids": [
+    "malaysia-student-pass"
+  ],
+  "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+  "title": "FAQ: How to Study in Malaysia",
+  "publisher": "Education Malaysia Global Services (EMGS)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "What is a Student Pass?",
+    "14 working days",
+    "20 hours per week",
+    "Graduate Pass",
+    "eVAL"
+  ],
+  "expected_domains": [
+    "educationmalaysia.gov.my"
+  ],
+  "last_checked_at": "2026-07-11T12:00:13.665Z",
+  "last_success_at": "2026-07-11T12:00:13.665Z",
+  "status": "active"
+}

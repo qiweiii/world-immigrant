@@ -1,0 +1,27 @@
+{
+  "id": "malaysia-esd-employment-pass-overview",
+  "country_id": "malaysia",
+  "program_ids": [
+    "malaysia-employment-pass"
+  ],
+  "url": "https://esd.imi.gov.my",
+  "title": "Expatriate Services Division",
+  "publisher": "Expatriate Services Division, Immigration Department of Malaysia",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "eligible expatriates",
+    "Employment Pass",
+    "revised Employment Pass Salary Policy",
+    "June 1, 2026"
+  ],
+  "expected_domains": [
+    "esd.imi.gov.my"
+  ],
+  "last_checked_at": "2026-07-11T12:00:15.528Z",
+  "last_success_at": "2026-07-11T12:00:15.528Z",
+  "status": "active"
+}

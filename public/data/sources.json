@@ -738,6 +738,116 @@
       "status": "active"
     },
     {
+      "id": "malaysia-emgs-student-pass-faq",
+      "country_id": "malaysia",
+      "program_ids": [
+        "malaysia-student-pass"
+      ],
+      "url": "https://educationmalaysia.gov.my/get-in-touch/faq",
+      "title": "FAQ: How to Study in Malaysia",
+      "publisher": "Education Malaysia Global Services (EMGS)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "What is a Student Pass?",
+        "14 working days",
+        "20 hours per week",
+        "Graduate Pass",
+        "eVAL"
+      ],
+      "expected_domains": [
+        "educationmalaysia.gov.my"
+      ],
+      "last_checked_at": "2026-07-11T12:00:13.665Z",
+      "last_success_at": "2026-07-11T12:00:13.665Z",
+      "status": "active"
+    },
+    {
+      "id": "malaysia-esd-employment-pass-guidebook",
+      "country_id": "malaysia",
+      "program_ids": [
+        "malaysia-employment-pass"
+      ],
+      "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+      "title": "ESD Online Guidebook V6 2025",
+      "publisher": "Expatriate Services Division, Immigration Department of Malaysia",
+      "source_type": "government_pdf",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "pdf",
+      "expected_content_hints": [
+        "Employment Pass",
+        "Eligibility Criteria",
+        "Expatriate Application",
+        "Types of Employment Pass"
+      ],
+      "expected_domains": [
+        "esd.imi.gov.my"
+      ],
+      "last_checked_at": "2026-07-11T12:00:14.052Z",
+      "last_success_at": "2026-07-11T12:00:14.052Z",
+      "status": "active"
+    },
+    {
+      "id": "malaysia-esd-employment-pass-overview",
+      "country_id": "malaysia",
+      "program_ids": [
+        "malaysia-employment-pass"
+      ],
+      "url": "https://esd.imi.gov.my",
+      "title": "Expatriate Services Division",
+      "publisher": "Expatriate Services Division, Immigration Department of Malaysia",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "eligible expatriates",
+        "Employment Pass",
+        "revised Employment Pass Salary Policy",
+        "June 1, 2026"
+      ],
+      "expected_domains": [
+        "esd.imi.gov.my"
+      ],
+      "last_checked_at": "2026-07-11T12:00:15.528Z",
+      "last_success_at": "2026-07-11T12:00:15.528Z",
+      "status": "active"
+    },
+    {
+      "id": "malaysia-immigration-student-pass",
+      "country_id": "malaysia",
+      "program_ids": [
+        "malaysia-student-pass"
+      ],
+      "url": "https://www.imi.gov.my/index.php/en/main-services/pass/student-pass",
+      "title": "Student Pass",
+      "publisher": "Immigration Department of Malaysia",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Student Pass",
+        "eVAL",
+        "20 hours per week",
+        "RM60.00",
+        "post-arrival medical"
+      ],
+      "expected_domains": [
+        "www.imi.gov.my"
+      ],
+      "last_checked_at": "2026-07-11T12:00:15.578Z",
+      "last_success_at": "2026-07-11T12:00:15.578Z",
+      "status": "active"
+    },
+    {
       "id": "malaysia-mdec-de-rantau",
       "country_id": "malaysia",
       "program_ids": [
@@ -788,6 +898,33 @@
       ],
       "last_checked_at": "2026-07-11T11:46:27.527Z",
       "last_success_at": "2026-07-11T11:46:27.527Z",
+      "status": "active"
+    },
+    {
+      "id": "malaysia-mdec-foreign-knowledge-worker-epass",
+      "country_id": "malaysia",
+      "program_ids": [
+        "malaysia-employment-pass"
+      ],
+      "url": "https://www.mdec.my/expats/announcement/implementation-of-electronic-pass-epass--for-foreign-knowledge-worker-application",
+      "title": "Implementation of electronic pass for foreign knowledge worker application",
+      "publisher": "Malaysia Digital Economy Corporation (MDEC)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Foreign Knowledge Worker",
+        "ePASS",
+        "dependents",
+        "physically present in Malaysia"
+      ],
+      "expected_domains": [
+        "www.mdec.my"
+      ],
+      "last_checked_at": "2026-07-11T12:00:16.054Z",
+      "last_success_at": "2026-07-11T12:00:16.054Z",
       "status": "active"
     },
     {

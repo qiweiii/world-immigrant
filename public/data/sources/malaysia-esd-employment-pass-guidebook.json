@@ -1,0 +1,27 @@
+{
+  "id": "malaysia-esd-employment-pass-guidebook",
+  "country_id": "malaysia",
+  "program_ids": [
+    "malaysia-employment-pass"
+  ],
+  "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+  "title": "ESD Online Guidebook V6 2025",
+  "publisher": "Expatriate Services Division, Immigration Department of Malaysia",
+  "source_type": "government_pdf",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "pdf",
+  "expected_content_hints": [
+    "Employment Pass",
+    "Eligibility Criteria",
+    "Expatriate Application",
+    "Types of Employment Pass"
+  ],
+  "expected_domains": [
+    "esd.imi.gov.my"
+  ],
+  "last_checked_at": "2026-07-11T12:00:14.052Z",
+  "last_success_at": "2026-07-11T12:00:14.052Z",
+  "status": "active"
+}

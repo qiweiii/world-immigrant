@@ -1,0 +1,290 @@
+{
+  "id": "malaysia-employment-pass",
+  "country_id": "malaysia",
+  "category_ids": ["skilled_worker"],
+  "official_names": {
+    "en": "Employment Pass (Category I–III)",
+    "zh-Hans": "就业准证（第一至第三类别）"
+  },
+  "aliases": ["Malaysia Employment Pass", "Malaysia EP"],
+  "status": "active",
+  "status_note_md": {
+    "en": "The Malaysian Expatriate Services Division maintains the Employment Pass route for eligible expatriate employees. ESD states that revised salary thresholds and a structured employment-duration framework take effect from June 1, 2026.",
+    "zh-Hans": "马来西亚外籍人士服务部门继续提供面向合格外籍员工的就业准证途径。ESD 说明，修订后的薪资门槛和结构化雇佣期限框架自 2026 年 6 月 1 日起实施。"
+  },
+  "summary_md": {
+    "en": "An employer-sponsored Malaysian work-pass route for expatriates hired by an ESD-registered company. The ESD guidebook describes company registration and activation, expatriate application, Employment Pass categories, supporting-agency processes, and pass endorsement.",
+    "zh-Hans": "面向由 ESD 注册公司聘用的外籍人士的马来西亚雇主担保工作准证途径。ESD 指南说明了公司注册和激活、外籍人士申请、就业准证类别、支持机构流程以及准证签注。"
+  },
+  "good_for_md": {
+    "en": "Professionals with a Malaysian employer that can complete ESD registration and activation, obtain any required agency support, and submit the employment-pass documents.",
+    "zh-Hans": "适合拥有马来西亚雇主，且雇主能够完成 ESD 注册和激活、取得所需机构支持并提交就业准证材料的专业人士。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking a self-sponsored or remote-work route, applicants without a Malaysian hiring company, or cases that do not meet the current category-specific salary and employment-duration rules.",
+    "zh-Hans": "不适合寻求自我担保或远程工作的申请人、没有马来西亚聘用公司的申请人，或不符合当前类别薪资和雇佣期限规则的案件。"
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": true,
+    "min_income": [
+      {
+        "amount": "unknown",
+        "currency": "MYR",
+        "applies_to": "primary",
+        "period": "monthly"
+      }
+    ],
+    "accepted_sources": ["employment"],
+    "income_location": "inside_destination",
+    "stability_requirement_md": {
+      "en": "The ESD portal states that revised Employment Pass salary thresholds and a structured employment-duration framework take effect on June 1, 2026. The category table and case-specific exceptions must be checked before filing.",
+      "zh-Hans": "ESD 门户说明，修订后的就业准证薪资门槛和结构化雇佣期限框架自 2026 年 6 月 1 日起实施。递交申请前必须核对类别表和案件特定例外。"
+    }
+  },
+  "timeline": {
+    "renewable": true,
+    "initial_validity_months": "unknown",
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained Employment Pass sources do not establish a permanent-residence outcome.",
+      "zh-Hans": "保留的就业准证来源没有确认永久居留结果。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained Employment Pass sources do not establish citizenship eligibility.",
+      "zh-Hans": "保留的就业准证来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "This Malaysia bootstrap record is based on current official Immigration, ESD, MDEC, and EMGS pages. Category-specific and conditional rules still require human review before application.",
+      "zh-Hans": "这条马来西亚初始记录基于当前移民局、ESD、MDEC 和 EMGS 官方页面。类别特定规则和条件规则在申请前仍需人工核实。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "employer_sponsored",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": true,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T12:00:16.054Z"
+  },
+  "source_ids": [
+    "malaysia-esd-employment-pass-guidebook",
+    "malaysia-esd-employment-pass-overview",
+    "malaysia-mdec-foreign-knowledge-worker-epass"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "malaysia-esd-employment-pass-overview",
+        "url": "https://esd.imi.gov.my",
+        "section": "Employment Pass categories and current ESD policy notices",
+        "retrieved_at": "2026-07-11T12:00:15.528Z",
+        "snapshot_id": "7081c042f837f910e3fae2087e806a28affa4632a8ffaa116fe9abef7139f189"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Employment of expatriates in Malaysia and ESD application stages",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Company registration, activation, and expatriate application requirements",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Employment Pass employer and category conditions",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Employment Pass applied for by the hiring company",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Eligibility criteria for Employment Pass applications",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Document checklist and application costs",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "malaysia-esd-employment-pass-overview",
+        "url": "https://esd.imi.gov.my",
+        "section": "Revised Employment Pass salary policy and category thresholds",
+        "retrieved_at": "2026-07-11T12:00:15.528Z",
+        "snapshot_id": "7081c042f837f910e3fae2087e806a28affa4632a8ffaa116fe9abef7139f189"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "ESD application and pass endorsement stages",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "malaysia-mdec-foreign-knowledge-worker-epass",
+        "url": "https://www.mdec.my/expats/announcement/implementation-of-electronic-pass-epass--for-foreign-knowledge-worker-application",
+        "section": "Employment Pass and foreign knowledge worker pass endorsement",
+        "retrieved_at": "2026-07-11T12:00:16.054Z",
+        "snapshot_id": "a4f37a441923d3b23d000f60f231bff3032107389ab1985034c3b811242fcc85"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "malaysia-mdec-foreign-knowledge-worker-epass",
+        "url": "https://www.mdec.my/expats/announcement/implementation-of-electronic-pass-epass--for-foreign-knowledge-worker-application",
+        "section": "Dependant Pass availability in the ESD guidebook",
+        "retrieved_at": "2026-07-11T12:00:16.054Z",
+        "snapshot_id": "a4f37a441923d3b23d000f60f231bff3032107389ab1985034c3b811242fcc85"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Permanent residence not established",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Citizenship not established",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "malaysia-esd-employment-pass-guidebook",
+        "url": "https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf",
+        "section": "Conservative Employment Pass filter fields",
+        "retrieved_at": "2026-07-11T12:00:14.052Z",
+        "snapshot_id": "5ea9d1983b725904dc3ba1edbc46d88180529e54bae37f9d9aab0fdf0a6c7edb"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T11:56:45Z",
+    "updated_at": "2026-07-11T11:56:45Z",
+    "last_checked_at": "2026-07-11T12:00:16.054Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T11:56:45Z",
+      "summary": "Added Malaysia Employment Pass (Category I–III) coverage from current official evidence.",
+      "source_ids": [
+        "malaysia-esd-employment-pass-guidebook",
+        "malaysia-esd-employment-pass-overview",
+        "malaysia-mdec-foreign-knowledge-worker-epass"
+      ]
+    }
+  ]
+}

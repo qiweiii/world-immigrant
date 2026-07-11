@@ -177,6 +177,39 @@ A Malaysian digital-nomad route for eligible foreign digital professionals and r
 - malaysia-mdec-de-rantau: Digital Nomad Pass — https://www.mdec.my/md-programmes/digital-nomad-pass
 - malaysia-mdec-de-rantau-update: MDEC expands DE Rantau programme — https://www.mdec.my/press-releases/mdec-expands-de-rantau-programme-new-opportunities-for-global-digital-nomads-and-exciting-partnerships
 
+## Employment Pass (Category I–III)
+
+- ID: malaysia-employment-pass
+- Country: malaysia
+- Status: active
+- Last updated: 2026-07-11T12:00:16.054Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+An employer-sponsored Malaysian work-pass route for expatriates hired by an ESD-registered company. The ESD guidebook describes company registration and activation, expatriate application, Employment Pass categories, supporting-agency processes, and pass endorsement.
+
+### Official sources
+
+- malaysia-esd-employment-pass-guidebook: ESD Online Guidebook V6 2025 — https://esd.imi.gov.my/portal/pdf/ESD_Online_Guidebook_V6_2025_(14042025).pdf
+- malaysia-esd-employment-pass-overview: Expatriate Services Division — https://esd.imi.gov.my
+- malaysia-mdec-foreign-knowledge-worker-epass: Implementation of electronic pass for foreign knowledge worker application — https://www.mdec.my/expats/announcement/implementation-of-electronic-pass-epass--for-foreign-knowledge-worker-application
+
+## Student Pass
+
+- ID: malaysia-student-pass
+- Country: malaysia
+- Status: active
+- Last updated: 2026-07-11T12:00:16.054Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A study residence route for international students admitted to approved Malaysian institutions. The documented process includes an offer letter, EMGS or institutional application, academic screening, eVAL, possible Single-Entry Visa, arrival medical screening, and Student Pass endorsement.
+
+### Official sources
+
+- malaysia-immigration-student-pass: Student Pass — https://www.imi.gov.my/index.php/en/main-services/pass/student-pass
+- malaysia-emgs-student-pass-faq: FAQ: How to Study in Malaysia — https://educationmalaysia.gov.my/get-in-touch/faq
+
 ## Residence Permit for Highly Skilled Migrants
 
 - ID: netherlands-highly-skilled-migrant
