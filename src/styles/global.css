@@ -161,44 +161,66 @@
   }
   .theme-toggle:hover { background: var(--muted); color: var(--foreground); }
 
-  /* ── Language switcher ── */
+  /* ── Language switcher (dropdown; scales to many locales) ── */
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
   .locale-switcher {
+    position: relative;
     display: inline-flex;
     align-items: center;
-    gap: 2px;
-    padding: 3px;
+    min-width: 7.5rem;
+    max-width: 12rem;
+  }
+  .locale-select {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 100%;
+    height: 34px;
+    padding: 0 28px 0 10px;
     border: 1px solid var(--border);
     border-radius: var(--radius);
     background: var(--card);
-  }
-  .locale-option {
-    padding: 5px 9px;
-    border-radius: calc(var(--radius) - 2px);
+    color: var(--foreground);
+    font-family: inherit;
     font-size: 12px;
     font-weight: 500;
-    color: var(--muted-foreground);
     line-height: 1.2;
-    white-space: nowrap;
-    transition: background 0.15s, color 0.15s;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
   }
-  .locale-option:hover {
-    color: var(--foreground);
+  .locale-select:hover {
+    border-color: var(--border-strong);
     background: var(--muted);
   }
-  .locale-option.active {
-    color: var(--background);
-    background: var(--foreground);
+  .locale-select:focus-visible {
+    outline: 2px solid var(--ring);
+    outline-offset: 2px;
+  }
+  .locale-select-chevron {
+    position: absolute;
+    right: 9px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: var(--muted-foreground);
+    pointer-events: none;
   }
   .mobile-locale {
     padding: 4px 0 8px;
   }
   .mobile-locale .locale-switcher {
+    display: flex;
     width: 100%;
-    justify-content: stretch;
-  }
-  .mobile-locale .locale-option {
-    flex: 1;
-    text-align: center;
+    max-width: none;
+    min-width: 0;
   }
 
   /* ── Hero ── */

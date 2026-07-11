@@ -16,34 +16,64 @@ interface Props {
 
 const { locale, pathname } = Astro.props;
 const barePath = stripLocalePrefix(pathname);
+const routes = Object.fromEntries(
+  locales.map((item) => [item, withLocale(barePath, item)]),
+) as Record<Locale, string>;
 ---
 
-<nav class="locale-switcher" aria-label={t("nav.language", locale)}>
-  {
-    locales.map((item) => {
-      const href = withLocale(barePath, item);
-      const active = item === locale;
-      return (
-        <a
-          class:list={["locale-option", { active }]}
-          href={href}
-          hreflang={item}
-          aria-current={active ? "page" : undefined}
-          data-locale-switch={item}
-          title={localeLabels[item].english}
-        >
+<label class="locale-switcher">
+  <span class="sr-only">{t("nav.language", locale)}</span>
+  <select
+    class="locale-select"
+    name="locale"
+    aria-label={t("nav.language", locale)}
+    data-locale-select
+    data-locale-routes={JSON.stringify(routes)}
+  >
+    {
+      locales.map((item) => (
+        <option value={item} selected={item === locale} title={localeLabels[item].english}>
           {localeLabels[item].native}
-        </a>
-      );
-    })
-  }
-</nav>
+        </option>
+      ))
+    }
+  </select>
+  <svg class="locale-select-chevron" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true">
+    <path
+      d="M4 6l4 4 4-4"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="1.5"
+      stroke-linecap="round"
+      stroke-linejoin="round"></path>
+  </svg>
+</label>
 
 <script define:vars={{ storageKey: LOCALE_STORAGE_KEY }}>
-  document.querySelectorAll("[data-locale-switch]").forEach((node) => {
-    node.addEventListener("click", () => {
-      const value = node.getAttribute("data-locale-switch");
-      if (value) localStorage.setItem(storageKey, value);
+  document.querySelectorAll("select[data-locale-select]").forEach((node) => {
+    const select = /** @type {HTMLSelectElement} */ (node);
+    if (select.dataset.bound === "1") return;
+    select.dataset.bound = "1";
+
+    select.addEventListener("change", () => {
+      const next = select.value;
+      if (!next) return;
+      try {
+        localStorage.setItem(storageKey, next);
+      } catch {
+        /* ignore private-mode storage errors */
+      }
+
+      let routes = {};
+      try {
+        routes = JSON.parse(select.dataset.localeRoutes || "{}");
+      } catch {
+        routes = {};
+      }
+      const href = routes[next];
+      if (typeof href === "string" && href.length > 0) {
+        window.location.assign(href);
+      }
     });
   });
 </script>
