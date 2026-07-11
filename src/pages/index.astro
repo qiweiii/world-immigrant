@@ -35,7 +35,7 @@ const L = (path: string) => withLocale(path, locale);
         <p class="landing-lede">{t("home.lede", locale)}</p>
         <div class="action-row">
           <a class="btn btn-primary" href="#pathways">{t("home.viewPathways", locale)}</a>
-          <a class="text-action" href={compareHref}>{t("home.compareArrow", locale)}</a>
+          <a class="btn btn-ghost" href={compareHref}>{t("home.compareArrow", locale)}</a>
         </div>
       </div>
 
@@ -66,7 +66,6 @@ const L = (path: string) => withLocale(path, locale);
                     </small>
                   </span>
                 </span>
-                <span aria-hidden="true">→</span>
               </a>
             ))
           }
@@ -137,7 +136,7 @@ const L = (path: string) => withLocale(path, locale);
                   <dd>{program.freshness.last_checked_at.slice(0, 10)}</dd>
                 </div>
               </dl>
-              <a class="pathway-row-link" href={L(`/programs/${program.id}`)}
+              <a class="btn btn-ghost pathway-row-action" href={L(`/programs/${program.id}`)}
                 >{t("home.read", locale)}</a
               >
             </article>
@@ -146,7 +145,7 @@ const L = (path: string) => withLocale(path, locale);
       </div>
       <div class="section-actions">
         <a class="btn" href={compareHref}>{t("home.compareBoth", locale)}</a>
-        <a class="text-action" href={L("/filter")}>{t("home.checkFitArrow", locale)}</a>
+        <a class="btn btn-ghost" href={L("/filter")}>{t("home.checkFitArrow", locale)}</a>
       </div>
     </section>
 
@@ -185,7 +184,7 @@ const L = (path: string) => withLocale(path, locale);
                   {country.freshness.last_checked_at.slice(0, 10)}</span
                 >
               </div>
-              <a class="text-action" href={L(`/countries/${country.id}`)}
+              <a class="btn btn-ghost" href={L(`/countries/${country.id}`)}
                 >{t("home.open", locale)}</a
               >
             </article>
@@ -200,7 +199,7 @@ const L = (path: string) => withLocale(path, locale);
         {" "}
         {t("home.policyBody", locale)}
       </p>
-      <a class="text-action" href={L("/sources")}>{t("home.inspectSources", locale)}</a>
+      <a class="btn btn-ghost" href={L("/sources")}>{t("home.inspectSources", locale)}</a>
     </section>
   </main>
 </Layout>

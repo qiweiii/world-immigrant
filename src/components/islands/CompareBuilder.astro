@@ -1,13 +1,26 @@
-<section class="panel" aria-labelledby="compare-heading" data-compare-builder>
-  <p class="eyebrow">Local compare</p>
-  <h2 id="compare-heading">Compare verified pathway facts.</h2>
-  <p>
-    Select up to three programs. The browser reads the static compare index; no profile or selection
-    data is sent to a server.
-  </p>
-  <div class="field-grid" data-program-options aria-label="Programs"></div>
-  <p class="card-description" data-compare-status>Loading verified programs…</p>
-  <div style="overflow-x:auto;" data-compare-table></div>
+<section class="compare-shell" aria-labelledby="compare-heading" data-compare-builder>
+  <div class="compare-intro">
+    <p class="eyebrow">Compare</p>
+    <h2 id="compare-heading">Choose pathways, then scan the table.</h2>
+    <p class="compare-lede">Select up to three programs. Facts stay side by side with source IDs under each cell.</p>
+  </div>
+
+  <div class="compare-select-wrap">
+    <table class="compare-select-table" aria-label="Programs">
+      <thead>
+        <tr>
+          <th scope="col" class="compare-col-check">Select</th>
+          <th scope="col">Program</th>
+          <th scope="col">Country</th>
+          <th scope="col">Status</th>
+        </tr>
+      </thead>
+      <tbody data-program-options></tbody>
+    </table>
+  </div>
+
+  <p class="compare-status" data-compare-status>Loading programs…</p>
+  <div class="compare-result-wrap" data-compare-table></div>
 </section>
 
 <script>
@@ -23,7 +36,7 @@
 
   function selectedIds() {
     if (!options) return [];
-    return [...options.querySelectorAll<HTMLInputElement>("input:checked")].map(
+    return [...options.querySelectorAll<HTMLInputElement>("input[type=checkbox]:checked")].map(
       ({ value }) => value,
     );
   }
@@ -46,18 +59,21 @@
     }
 
     const view = buildComparison(programs, ids);
-    status.textContent = `${ids.length} verified program${ids.length === 1 ? "" : "s"} selected.`;
+    status.textContent = `${ids.length} of 3 slots used.`;
     setQuery(ids);
 
     const table = document.createElement("table");
-    table.className = "table";
+    table.className = "compare-matrix";
     const head = document.createElement("thead");
     const headRow = document.createElement("tr");
     const fieldHead = document.createElement("th");
-    fieldHead.textContent = "Decision field";
+    fieldHead.scope = "col";
+    fieldHead.textContent = "Field";
+    fieldHead.className = "compare-sticky";
     headRow.append(fieldHead);
     for (const column of view.columns) {
       const cell = document.createElement("th");
+      cell.scope = "col";
       const link = document.createElement("a");
       link.href = `/programs/${column.id}`;
       link.textContent = column.title;
@@ -69,19 +85,21 @@
     const body = document.createElement("tbody");
     for (const row of view.rows) {
       const rowElement = document.createElement("tr");
-      const label = document.createElement("td");
+      const label = document.createElement("th");
+      label.scope = "row";
+      label.className = "compare-sticky";
       label.textContent = row.label;
-      label.style.color = "var(--foreground)";
-      label.style.fontWeight = "500";
       rowElement.append(label);
       for (const cell of row.cells) {
         const value = document.createElement("td");
-        const text = document.createElement("p");
+        const text = document.createElement("div");
+        text.className = "compare-cell-value";
         text.textContent = cell.display;
         value.append(text);
         if (cell.citations.length) {
-          const evidence = document.createElement("small");
-          evidence.textContent = `Sources: ${cell.citations.join(", ")}`;
+          const evidence = document.createElement("div");
+          evidence.className = "compare-cell-sources";
+          evidence.textContent = cell.citations.join(" · ");
           value.append(evidence);
         }
         rowElement.append(value);
@@ -113,22 +131,38 @@
         : programs.slice(0, 1).map(({ program_id }) => program_id);
 
       for (const program of programs) {
-        const field = document.createElement("label");
-        field.className = "field";
+        const row = document.createElement("tr");
+        const checkCell = document.createElement("td");
+        checkCell.className = "compare-col-check";
+        const label = document.createElement("label");
+        label.className = "compare-check";
         const checkbox = document.createElement("input");
         checkbox.type = "checkbox";
         checkbox.value = program.program_id;
         checkbox.checked = initial.includes(program.program_id);
+        checkbox.setAttribute("aria-label", `Select ${program.official_names.en}`);
         checkbox.addEventListener("change", () => {
-          const checked = selectedIds();
-          if (checked.length > 3) checkbox.checked = false;
+          const selected = selectedIds();
+          if (selected.length > 3) checkbox.checked = false;
           renderTable();
         });
-        const name = document.createElement("span");
-        const statusLabel = program.status === "active" ? "" : ` · ${program.status}`;
-        name.textContent = `${program.official_names.en} · ${program.country_id}${statusLabel}`;
-        field.append(checkbox, name);
-        options.append(field);
+        label.append(checkbox);
+        checkCell.append(label);
+
+        const nameCell = document.createElement("td");
+        const name = document.createElement("div");
+        name.className = "compare-program-name";
+        name.textContent = program.official_names.en;
+        nameCell.append(name);
+
+        const countryCell = document.createElement("td");
+        countryCell.textContent = program.country_id;
+
+        const statusCell = document.createElement("td");
+        statusCell.textContent = program.status;
+
+        row.append(checkCell, nameCell, countryCell, statusCell);
+        options.append(row);
       }
       renderTable();
     } catch (error) {

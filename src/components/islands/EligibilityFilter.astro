@@ -1,11 +1,14 @@
-<section class="panel" aria-labelledby="filter-heading" data-eligibility-filter>
-  <p class="eyebrow">Local-first profile</p>
-  <h2 id="filter-heading">Check modeled minimums without sending profile data.</h2>
-  <p>
-    Results are preliminary information, not legal advice or a guarantee of eligibility or an
-    invitation. Unknown and incomplete facts stay visible.
-  </p>
-  <form data-profile-form>
+<section class="filter-shell" aria-labelledby="filter-heading" data-eligibility-filter>
+  <div class="filter-intro">
+    <p class="eyebrow">Fit tool</p>
+    <h2 id="filter-heading">See how pathways line up with your situation.</h2>
+    <p class="filter-lede">
+      Answers stay on this page. Results are preliminary information, not a decision about eligibility
+      or an invitation.
+    </p>
+  </div>
+
+  <form class="filter-form" data-profile-form>
     <div class="field-grid">
       <div class="field">
         <label class="field-label" for="goal">Goal</label>
@@ -46,20 +49,40 @@
         <input class="input" id="funds" name="liquid_funds" value="20000" inputmode="decimal" />
       </div>
     </div>
-    <div class="badge-row" style="margin-top:16px;">
-      <label class="badge"><input type="checkbox" name="has_approved_language_test" checked /> Approved language test</label>
-      <label class="badge"><input type="checkbox" name="foreign_education" checked /> Foreign education</label>
-      <label class="badge"><input type="checkbox" name="has_eca" checked /> Valid ECA</label>
-      <label class="badge"><input type="checkbox" name="authorized_to_work_in_country" /> Authorized to work in Canada</label>
-      <label class="badge"><input type="checkbox" name="valid_job_offer" /> Valid Canadian job offer</label>
-    </div>
+
+    <fieldset class="filter-flags">
+      <legend class="field-label">Additional facts</legend>
+      <div class="filter-flag-list">
+        <label class="filter-flag">
+          <input type="checkbox" name="has_approved_language_test" checked />
+          <span>Approved language test</span>
+        </label>
+        <label class="filter-flag">
+          <input type="checkbox" name="foreign_education" checked />
+          <span>Foreign education</span>
+        </label>
+        <label class="filter-flag">
+          <input type="checkbox" name="has_eca" checked />
+          <span>Valid ECA</span>
+        </label>
+        <label class="filter-flag">
+          <input type="checkbox" name="authorized_to_work_in_country" />
+          <span>Authorized to work in Canada</span>
+        </label>
+        <label class="filter-flag">
+          <input type="checkbox" name="valid_job_offer" />
+          <span>Valid Canadian job offer</span>
+        </label>
+      </div>
+    </fieldset>
   </form>
-  <p class="card-description" data-filter-status>Loading verified filter data…</p>
-  <div class="card-grid" data-filter-results></div>
+
+  <p class="filter-status" data-filter-status>Loading filter data…</p>
+  <div class="filter-results" data-filter-results></div>
 </section>
 
 <script>
-  import { evaluatePrograms, type UserProfile } from "../../lib/filterEngine";
+  import { evaluatePrograms, type FilterResultStatus, type UserProfile } from "../../lib/filterEngine";
 
   type FilterPrograms = Parameters<typeof evaluatePrograms>[0];
 
@@ -68,6 +91,14 @@
   const status = root?.querySelector<HTMLElement>("[data-filter-status]");
   const resultsRoot = root?.querySelector<HTMLElement>("[data-filter-results]");
   let programs: FilterPrograms = [];
+
+  const statusLabels: Record<FilterResultStatus, string> = {
+    likely_match: "Looks open",
+    possible_match: "Missing details",
+    not_match: "Does not match",
+    needs_review: "Complex rules",
+    unknown: "Unclear",
+  };
 
   function optionalNumber(formData: FormData, key: string) {
     const raw = String(formData.get(key) ?? "").trim();
@@ -101,29 +132,90 @@
     const profile = profileFromForm();
     if (!profile) return;
     const results = evaluatePrograms(programs, profile);
-    status.textContent = `${results.length} program${results.length === 1 ? "" : "s"} checked locally. “Likely match” means no modeled blocker was found; it does not mean eligible or invited.`;
+    status.textContent = `${results.length} pathway${results.length === 1 ? "" : "s"} ranked for this profile. “Looks open” only means no modeled blocker was found.`;
     resultsRoot.replaceChildren();
 
     for (const result of results) {
       const program = programs.find(({ program_id }) => program_id === result.program_id);
       if (!program) continue;
+
       const article = document.createElement("article");
-      article.className = "card";
-      const eyebrow = document.createElement("p");
-      eyebrow.className = "eyebrow";
-      eyebrow.textContent = `${result.status.replaceAll("_", " ")} · score ${result.score}`;
+      article.className = `filter-result filter-result--${result.status}`;
+
+      const header = document.createElement("div");
+      header.className = "filter-result-header";
+
+      const badge = document.createElement("span");
+      badge.className = `filter-result-badge filter-result-badge--${result.status}`;
+      badge.textContent = statusLabels[result.status];
+
       const heading = document.createElement("h3");
       const link = document.createElement("a");
       link.href = `/programs/${result.program_id}`;
       link.textContent = program.official_names.en;
       heading.append(link);
-      const list = document.createElement("ul");
-      for (const reason of result.reasons) {
-        const item = document.createElement("li");
-        item.textContent = `${reason.severity}: ${reason.message} Sources: ${reason.citations.join(", ")}`;
-        list.append(item);
+
+      header.append(badge, heading);
+
+      const positives = result.reasons.filter((reason) => reason.severity === "positive");
+      const others = result.reasons.filter((reason) => reason.severity !== "positive");
+
+      const body = document.createElement("div");
+      body.className = "filter-result-body";
+
+      if (positives.length) {
+        const posBlock = document.createElement("div");
+        posBlock.className = "filter-reason-group filter-reason-group--positive";
+        const posTitle = document.createElement("p");
+        posTitle.className = "filter-reason-heading";
+        posTitle.textContent = "Supporting signals";
+        posBlock.append(posTitle);
+        const posList = document.createElement("ul");
+        for (const reason of positives) {
+          const item = document.createElement("li");
+          item.className = "filter-reason filter-reason--positive";
+          const msg = document.createElement("span");
+          msg.textContent = reason.message;
+          item.append(msg);
+          if (reason.citations.length) {
+            const src = document.createElement("span");
+            src.className = "filter-reason-sources";
+            src.textContent = reason.citations.join(" · ");
+            item.append(src);
+          }
+          posList.append(item);
+        }
+        posBlock.append(posList);
+        body.append(posBlock);
       }
-      article.append(eyebrow, heading, list);
+
+      if (others.length) {
+        const otherBlock = document.createElement("div");
+        otherBlock.className = "filter-reason-group";
+        const otherTitle = document.createElement("p");
+        otherTitle.className = "filter-reason-heading";
+        otherTitle.textContent = "Caveats and gaps";
+        otherBlock.append(otherTitle);
+        const otherList = document.createElement("ul");
+        for (const reason of others) {
+          const item = document.createElement("li");
+          item.className = `filter-reason filter-reason--${reason.severity}`;
+          const msg = document.createElement("span");
+          msg.textContent = reason.message;
+          item.append(msg);
+          if (reason.citations.length) {
+            const src = document.createElement("span");
+            src.className = "filter-reason-sources";
+            src.textContent = reason.citations.join(" · ");
+            item.append(src);
+          }
+          otherList.append(item);
+        }
+        otherBlock.append(otherList);
+        body.append(otherBlock);
+      }
+
+      article.append(header, body);
       resultsRoot.append(article);
     }
   }

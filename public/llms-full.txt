@@ -25,7 +25,7 @@ Rules for AI agents:
 - ID: australia-skilled-independent-189
 - Country: australia
 - Status: active
-- Last checked: 2026-07-10T00:00:00Z
+- Last updated: 2026-07-10T00:00:00Z
 - Source confidence: 4/5
 - Human review flagged: yes
 
@@ -46,7 +46,7 @@ A permanent skilled visa for invited workers who do not need an employer or stat
 - ID: canada-express-entry-fsw
 - Country: canada
 - Status: active
-- Last checked: 2026-07-10T00:00:00Z
+- Last updated: 2026-07-10T00:00:00Z
 - Source confidence: 5/5
 - Human review flagged: yes
 

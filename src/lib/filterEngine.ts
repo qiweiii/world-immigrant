@@ -195,7 +195,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "work_experience",
         severity: "warning",
-        message: `Add skilled-work experience to check the ${minWorkYears}-year minimum.`,
+        message: `Add skilled-work experience for the ${minWorkYears}-year minimum.`,
       });
     } else if (profile.skilled_work_years < minWorkYears) {
       blocking = true;
@@ -245,7 +245,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "language_benchmark",
         severity: "warning",
-        message: `Add the language benchmark to check the level ${minBenchmark} minimum.`,
+        message: `Add the language benchmark for the level ${minBenchmark} minimum.`,
       });
     } else if (profile.language_benchmark < minBenchmark) {
       blocking = true;
@@ -277,7 +277,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
       add({
         field: "education",
         severity: "warning",
-        message: `Add education to check the ${minEducation} minimum.`,
+        message: `Add education for the ${minEducation} minimum.`,
       });
     } else if (
       educationRank[profile.education_level] < educationRank[minEducation as EducationLevel]
@@ -404,7 +404,7 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     add({
       field: "settlement_funds",
       severity: "warning",
-      message: "Add family size and liquid funds to check the current settlement-fund table.",
+      message: "Add family size and liquid funds for the current settlement-fund table.",
     });
   } else {
     const required = requiredFunds(program, profile.family_size);

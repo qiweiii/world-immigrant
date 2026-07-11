@@ -10,6 +10,20 @@ interface Props {
 const { locale = defaultLocale } = Astro.props as Props;
 const { categories, programs } = await loadCanonicalData();
 const L = (path: string) => withLocale(path, locale);
+
+/** Distinct accent per category for list hover washes */
+const categoryColors: Record<string, string> = {
+  digital_nomad: "#0ea5e9",
+  skilled_worker: "#2563eb",
+  study_to_pr: "#8b5cf6",
+  startup_entrepreneur: "#f59e0b",
+  investor: "#10b981",
+  family: "#ec4899",
+  retirement: "#14b8a6",
+  e_residency: "#6366f1",
+  humanitarian: "#ef4444",
+  other: "#64748b",
+};
 ---
 
 <Layout locale={locale} title={t("categories.title", locale)}>
@@ -25,19 +39,32 @@ const L = (path: string) => withLocale(path, locale);
       <h1>{t("categories.h1", locale)}</h1>
       <p>{t("categories.lede", locale)}</p>
     </section>
-    <section class="card-grid" aria-label={t("categories.eyebrow", locale)}>
+
+    <section class="category-list" aria-label={t("categories.eyebrow", locale)}>
       {
-        categories.map((category) => {
+        categories.map((category, index) => {
           const count = programs.filter(({ category_ids }) => category_ids.includes(category.id))
             .length;
+          const color = categoryColors[category.id] ?? categoryColors.other;
           return (
-            <a class="card card-clickable" href={L(`/categories/${category.id}`)}>
-              <p class="card-meta">
+            <a
+              class="category-list-item"
+              href={L(`/categories/${category.id}`)}
+              style={`--item-color: ${color}; --item-delay: ${index * 30}ms`}
+            >
+              <span class="category-list-index" aria-hidden="true">
+                {String(index + 1).padStart(2, "0")}
+              </span>
+              <span class="category-list-body">
+                <span class="category-list-title">{pickLocalized(category.names, locale)}</span>
+                <span class="category-list-desc">
+                  {pickLocalized(category.description_md, locale)}
+                </span>
+              </span>
+              <span class="category-list-meta">
                 {count}{" "}
                 {count === 1 ? t("categories.program", locale) : t("categories.programs", locale)}
-              </p>
-              <h2 class="card-title">{pickLocalized(category.names, locale)}</h2>
-              <p class="card-description">{pickLocalized(category.description_md, locale)}</p>
+              </span>
             </a>
           );
         })

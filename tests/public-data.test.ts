@@ -35,7 +35,7 @@ test("public data generation exposes one complete program through stable indexes
   assert.equal(australia.freshness.needs_human_review, true);
 });
 
-test("AI-readable output includes verified programs, freshness, and official sources", async () => {
+test("AI-readable output includes programs, freshness, and official sources", async () => {
   const dataset = await loadCanonicalData();
   const output = buildLlmsDocuments(dataset);
 

@@ -117,22 +117,6 @@ const htmlLang = localeHtmlLang[locale];
         </nav>
         <div class="appbar-actions">
           <LanguageSwitcher locale={locale} pathname={pathname} />
-          <a
-            class="nav-icon"
-            href="https://github.com/qiweiii/world-immigrant"
-            target="_blank"
-            rel="noopener"
-            aria-label={t("nav.github", locale)}
-          >
-            <img
-              class="icon"
-              src="https://cdn.simpleicons.org/github/71717a"
-              alt=""
-              width="18"
-              height="18"
-              style="width:18px;height:18px;"
-            />
-          </a>
           <button class="theme-toggle" id="theme-toggle" aria-label={t("nav.theme", locale)}>
             <svg
               id="icon-sun"
@@ -173,6 +157,22 @@ const htmlLang = localeHtmlLang[locale];
               ><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg
             >
           </button>
+          <a
+            class="nav-icon"
+            href="https://github.com/qiweiii/world-immigrant"
+            target="_blank"
+            rel="noopener"
+            aria-label={t("nav.github", locale)}
+          >
+            <img
+              class="icon"
+              src="https://cdn.simpleicons.org/github/71717a"
+              alt=""
+              width="18"
+              height="18"
+              style="width:18px;height:18px;"
+            />
+          </a>
         </div>
         <details class="mobile-nav">
           <summary aria-label={t("nav.open", locale)}>

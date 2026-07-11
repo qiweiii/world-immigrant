@@ -26,7 +26,7 @@ function citationsFor(program: CompareProgram, path: string): string[] {
 function formatPolicy(value: unknown) {
   if (value === true) return "Yes";
   if (value === false) return "No";
-  if (value === "unknown") return "Unknown — verify with official source";
+  if (value === "unknown") return "Unknown — confirm with official source";
   if (value === "variable") return "Variable";
   if (value === "not_applicable") return "Not applicable";
   if (value === "limited") return "Limited or conditional";
@@ -103,7 +103,7 @@ const rowDefinitions: Array<{
   },
   {
     id: "last_checked",
-    label: "Last checked",
+    label: "Last updated",
     render: (program) => program.freshness.last_checked_at.slice(0, 10),
   },
 ];

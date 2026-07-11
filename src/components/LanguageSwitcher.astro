@@ -32,8 +32,8 @@ const routes = Object.fromEntries(
   >
     {
       locales.map((item) => (
-        <option value={item} selected={item === locale} title={localeLabels[item].english}>
-          {localeLabels[item].native}
+        <option value={item} selected={item === locale} title={localeLabels[item].native}>
+          {localeLabels[item].short}
         </option>
       ))
     }

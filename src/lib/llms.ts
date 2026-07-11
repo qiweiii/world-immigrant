@@ -38,7 +38,7 @@ export function buildLlmsDocuments(dataset: CanonicalDataset) {
 - ID: ${program.id}
 - Country: ${program.country_id}
 - Status: ${program.status}
-- Last checked: ${program.freshness.last_checked_at}
+- Last updated: ${program.freshness.last_checked_at}
 - Source confidence: ${program.comparison.source_confidence_score}/5
 - Human review flagged: ${program.freshness.needs_human_review ? "yes" : "no"}
 

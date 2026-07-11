@@ -1,14 +1,41 @@
 ---
 import Layout from "../components/Layout.astro";
 import { loadCanonicalData } from "../lib/data";
-import { defaultLocale, t, type Locale } from "../i18n";
+import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../i18n";
 
 interface Props {
   locale?: Locale;
 }
 
 const { locale = defaultLocale } = Astro.props as Props;
-const { sources } = await loadCanonicalData();
+const dataset = await loadCanonicalData();
+const { sources, countries, programs, categories } = dataset;
+const L = (path: string) => withLocale(path, locale);
+
+const categoryById = new Map(categories.map((category) => [category.id, category]));
+const programById = new Map(programs.map((program) => [program.id, program]));
+
+const countryGroups = countries.map((country) => {
+  const countryPrograms = programs
+    .filter((program) => program.country_id === country.id)
+    .map((program) => {
+      const programSources = sources.filter((source) => source.program_ids.includes(program.id));
+      const programCategories = program.category_ids
+        .map((id) => categoryById.get(id))
+        .filter((item): item is (typeof categories)[number] => Boolean(item));
+      return { program, programSources, programCategories };
+    })
+    .filter(({ programSources }) => programSources.length > 0);
+
+  const unassigned = sources.filter(
+    (source) =>
+      source.country_id === country.id &&
+      (source.program_ids.length === 0 ||
+        source.program_ids.every((id) => !programById.has(id))),
+  );
+
+  return { country, countryPrograms, unassigned };
+});
 ---
 
 <Layout locale={locale} title={t("sources.title", locale)}>
@@ -28,28 +55,114 @@ const { sources } = await loadCanonicalData();
           </h2>
         </div>
       </div>
-      <div class="card-grid">
+
+      <div class="source-tree">
         {
-          sources.map((source) => (
-            <a class="card card-clickable" href={source.url} target="_blank" rel="noopener noreferrer">
-              <p class="card-meta">{source.publisher}</p>
-              <h3 class="card-title">{source.title}</h3>
-              <div class="card-footer">
-                <span class="card-tag">
-                  {t("sources.checked", locale)} {source.last_checked_at?.slice(0, 10)}
-                </span>
-                <span class="card-tag">
-                  {t("sources.every", locale)} {source.update_frequency_days}{" "}
-                  {t("sources.days", locale)}
-                </span>
-              </div>
-            </a>
+          countryGroups.map(({ country, countryPrograms, unassigned }) => (
+            <section class="source-country" style={`--country-color: ${country.brand.color}`}>
+              <header class="source-country-header">
+                <span class="country-swatch" aria-hidden="true"></span>
+                <div>
+                  <h3>{pickLocalized(country.names, locale)}</h3>
+                  <p class="card-meta">
+                    {country.iso2} · {country.region}
+                  </p>
+                </div>
+              </header>
+
+              {
+                countryPrograms.map(({ program, programSources, programCategories }) => (
+                  <div class="source-program">
+                    <div class="source-program-header">
+                      <div>
+                        <p class="source-program-cats">
+                          {programCategories
+                            .map((category) => pickLocalized(category.names, locale))
+                            .join(" · ") || "General"}
+                        </p>
+                        <h4>
+                          <a href={L(`/programs/${program.id}`)}>
+                            {pickLocalized(program.official_names, locale)}
+                          </a>
+                        </h4>
+                      </div>
+                      <span class="card-tag">
+                        {programSources.length} source{programSources.length === 1 ? "" : "s"}
+                      </span>
+                    </div>
+                    <ul class="source-link-list">
+                      {programSources.map((source) => (
+                        <li>
+                          <a
+                            class="source-link-row"
+                            href={source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span class="source-link-main">
+                              <strong>{source.title}</strong>
+                              <small>{source.publisher}</small>
+                            </span>
+                            <span class="source-link-meta">
+                              <span>
+                                {t("sources.checked", locale)}{" "}
+                                {source.last_checked_at?.slice(0, 10) ?? "—"}
+                              </span>
+                              <span>
+                                {t("sources.every", locale)} {source.update_frequency_days}{" "}
+                                {t("sources.days", locale)}
+                              </span>
+                            </span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                ))
+              }
+
+              {
+                unassigned.length > 0 && (
+                  <div class="source-program">
+                    <div class="source-program-header">
+                      <div>
+                        <p class="source-program-cats">Country-level</p>
+                        <h4>Other registered pages</h4>
+                      </div>
+                    </div>
+                    <ul class="source-link-list">
+                      {unassigned.map((source) => (
+                        <li>
+                          <a
+                            class="source-link-row"
+                            href={source.url}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            <span class="source-link-main">
+                              <strong>{source.title}</strong>
+                              <small>{source.publisher}</small>
+                            </span>
+                            <span class="source-link-meta">
+                              <span>
+                                {t("sources.checked", locale)}{" "}
+                                {source.last_checked_at?.slice(0, 10) ?? "—"}
+                              </span>
+                            </span>
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+                )
+              }
+            </section>
           ))
         }
       </div>
     </section>
 
-    <section class="card-grid" aria-label={t("sources.registry", locale)}>
+    <section class="card-grid two" aria-label={t("sources.registry", locale)}>
       <article class="card">
         <h3 class="card-title">{t("sources.officialFirst", locale)}</h3>
         <p class="card-description">{t("sources.officialFirstBody", locale)}</p>

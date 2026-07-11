@@ -5,9 +5,9 @@ export const locales = ["en", "zh-Hans"] as const;
 
 export type Locale = (typeof locales)[number];
 
-export const localeLabels: Record<Locale, { native: string; english: string }> = {
-  en: { native: "English", english: "English" },
-  "zh-Hans": { native: "简体中文", english: "Simplified Chinese" },
+export const localeLabels: Record<Locale, { native: string; english: string; short: string }> = {
+  en: { native: "English", english: "English", short: "EN" },
+  "zh-Hans": { native: "简体中文", english: "Simplified Chinese", short: "中文" },
 };
 
 /** BCP 47 / HTML lang values */
