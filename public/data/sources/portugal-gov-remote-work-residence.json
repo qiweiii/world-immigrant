@@ -2,7 +2,8 @@
   "id": "portugal-gov-remote-work-residence",
   "country_id": "portugal",
   "program_ids": [
-    "portugal-d8-digital-nomad"
+    "portugal-d8-digital-nomad",
+    "portugal-student-residence"
   ],
   "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
   "title": "Foreigners Act — digital nomad visa and residence permit changes",
@@ -16,12 +17,15 @@
     "digital nomads",
     "average monthly income",
     "work contract",
-    "residence permit"
+    "residence permit",
+    "research, study",
+    "professional activity",
+    "Visa to Seek Work"
   ],
   "expected_domains": [
     "www2.gov.pt"
   ],
-  "last_checked_at": "2026-07-11T05:12:33.252Z",
-  "last_success_at": "2026-07-11T05:12:33.252Z",
+  "last_checked_at": "2026-07-11T14:20:00.000Z",
+  "last_success_at": "2026-07-11T14:20:00.000Z",
   "status": "active"
 }

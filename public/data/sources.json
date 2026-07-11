@@ -1659,10 +1659,65 @@
       "status": "needs_attention"
     },
     {
+      "id": "portugal-eu-employed-worker",
+      "country_id": "portugal",
+      "program_ids": [
+        "portugal-employed-worker-residence"
+      ],
+      "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+      "title": "Employed worker in Portugal — EU Immigration Portal",
+      "publisher": "European Commission — Migration and Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "residence visa",
+        "work contract",
+        "IEFP",
+        "permanent residence"
+      ],
+      "expected_domains": [
+        "home-affairs.ec.europa.eu"
+      ],
+      "last_checked_at": "2026-07-11T14:20:00.000Z",
+      "last_success_at": "2026-07-11T14:20:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "portugal-eu-student",
+      "country_id": "portugal",
+      "program_ids": [
+        "portugal-student-residence"
+      ],
+      "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-portugal_en",
+      "title": "Student in Portugal — EU Immigration Portal",
+      "publisher": "European Commission — Migration and Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "residence visa",
+        "higher education",
+        "temporary residence permit",
+        "family reunification"
+      ],
+      "expected_domains": [
+        "home-affairs.ec.europa.eu"
+      ],
+      "last_checked_at": "2026-07-11T14:20:00.000Z",
+      "last_success_at": "2026-07-11T14:20:00.000Z",
+      "status": "active"
+    },
+    {
       "id": "portugal-gov-remote-work-residence",
       "country_id": "portugal",
       "program_ids": [
-        "portugal-d8-digital-nomad"
+        "portugal-d8-digital-nomad",
+        "portugal-student-residence"
       ],
       "url": "https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples",
       "title": "Foreigners Act — digital nomad visa and residence permit changes",
@@ -1676,13 +1731,16 @@
         "digital nomads",
         "average monthly income",
         "work contract",
-        "residence permit"
+        "residence permit",
+        "research, study",
+        "professional activity",
+        "Visa to Seek Work"
       ],
       "expected_domains": [
         "www2.gov.pt"
       ],
-      "last_checked_at": "2026-07-11T05:12:33.252Z",
-      "last_success_at": "2026-07-11T05:12:33.252Z",
+      "last_checked_at": "2026-07-11T14:20:00.000Z",
+      "last_success_at": "2026-07-11T14:20:00.000Z",
       "status": "active"
     },
     {
@@ -2491,6 +2549,118 @@
       ],
       "last_checked_at": "2026-07-11T11:46:29.968Z",
       "last_success_at": "2026-07-11T11:46:29.968Z",
+      "status": "active"
+    },
+    {
+      "id": "united-states-opt-f1",
+      "country_id": "united-states",
+      "program_ids": [
+        "united-states-opt-f1"
+      ],
+      "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+      "title": "Optional Practical Training (OPT) for F-1 Students",
+      "publisher": "U.S. Citizenship and Immigration Services (USCIS)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "12 months",
+        "post-completion",
+        "STEM",
+        "Form I-765",
+        "DSO"
+      ],
+      "expected_domains": [
+        "www.uscis.gov",
+        "uscis.gov"
+      ],
+      "last_checked_at": "2026-07-11T14:20:00.000Z",
+      "last_success_at": "2026-07-11T14:20:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "united-states-sevis-i901-fee",
+      "country_id": "united-states",
+      "program_ids": [
+        "united-states-f1-student"
+      ],
+      "url": "https://www.ice.gov/sevis/i901",
+      "title": "I-901 SEVIS Fee",
+      "publisher": "U.S. Immigration and Customs Enforcement (ICE)",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "I-901 SEVIS Fee",
+        "$350",
+        "F or M visa"
+      ],
+      "expected_domains": [
+        "www.ice.gov",
+        "ice.gov"
+      ],
+      "last_checked_at": "2026-07-11T14:20:00.000Z",
+      "last_success_at": "2026-07-11T14:20:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "united-states-student-f1-state",
+      "country_id": "united-states",
+      "program_ids": [
+        "united-states-f1-student"
+      ],
+      "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+      "title": "Student Visa (F and M)",
+      "publisher": "U.S. Department of State — Bureau of Consular Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Form I-20",
+        "SEVIS",
+        "F visa",
+        "Application Fee $185",
+        "F-2"
+      ],
+      "expected_domains": [
+        "travel.state.gov"
+      ],
+      "last_checked_at": "2026-07-11T14:20:00.000Z",
+      "last_success_at": "2026-07-11T14:20:00.000Z",
+      "status": "active"
+    },
+    {
+      "id": "united-states-study-in-states-work",
+      "country_id": "united-states",
+      "program_ids": [
+        "united-states-f1-student",
+        "united-states-opt-f1"
+      ],
+      "url": "https://studyinthestates.dhs.gov/students/work/working-in-the-united-states",
+      "title": "Working in the United States (F-1 students)",
+      "publisher": "U.S. Department of Homeland Security — Study in the States",
+      "source_type": "official",
+      "language": "en",
+      "priority": 2,
+      "update_frequency_days": 14,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "on-campus employment",
+        "20 hours",
+        "DSO",
+        "financial ability"
+      ],
+      "expected_domains": [
+        "studyinthestates.dhs.gov"
+      ],
+      "last_checked_at": "2026-07-11T14:20:00.000Z",
+      "last_success_at": "2026-07-11T14:20:00.000Z",
       "status": "active"
     }
   ]

@@ -1,0 +1,307 @@
+{
+  "id": "portugal-employed-worker-residence",
+  "country_id": "portugal",
+  "category_ids": [
+    "skilled_worker"
+  ],
+  "official_names": {
+    "en": "Residence for employed (subordinate) work",
+    "zh-Hans": "受雇工作居留（从属职业活动）"
+  },
+  "aliases": [
+    "Portugal work residence visa",
+    "Residence visa for subordinate professional activity",
+    "Portugal employed worker permit"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "The European Commission EU Immigration Portal describes Portugal’s employed-worker residence visa and temporary residence permit path. National portals (AIMA, MNE, IEFP) control current forms, quotas, and appointment practice, so this record needs human review at application time.",
+    "zh-Hans": "欧盟移民门户描述了葡萄牙受雇工作居留签证与临时居留许可路径。国家门户（AIMA、MNE、IEFP）决定当前表格、配额与预约实践，申请时需人工复核本记录。"
+  },
+  "summary_md": {
+    "en": "A Portuguese long-stay path for non-EU workers with a work contract or promise of contract for subordinate employment. Applicants typically obtain a residence visa abroad (about four months to enter and apply for a residence permit), then a temporary residence permit that is generally renewable. After five years of legal temporary residence, permanent or EC long-term residence may be available when language, means, and other conditions are met.",
+    "zh-Hans": "面向持有从属雇佣合同或合同承诺的非欧盟劳动者的葡萄牙长期路径。申请人通常在境外取得居留签证（约四个月入境并申请居留许可），再获得一般可续期的临时居留许可。合法临时居留满五年后，在语言、经济能力等条件满足时可申请永久或欧盟长期居留。"
+  },
+  "good_for_md": {
+    "en": "Workers with a Portuguese employer relationship evidenced by a signed contract, promise of contract, or demonstrated employer interest plus qualifications, who can show means of subsistence, travel insurance, and related documents.",
+    "zh-Hans": "适合能以已签合同、合同承诺或雇主明确意向加资格证明证明葡萄牙雇佣关系，并能出示生活费、旅行保险及相关材料的劳动者。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants without a qualifying employment link, pure remote digital-nomad stays without local employment (use the digital-nomad route instead), or people seeking a points-based skilled-migration system like Express Entry.",
+    "zh-Hans": "不适合没有合格雇佣关系、纯远程数字游民停留（应使用数字游民途径），或寻求类似快速通道打分技术移民体系的申请人。"
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "The EU portal states you must prove a work contract, promise of contract, or the necessary qualifications and employer interest. A labour-market preference principle and IEFP publication of offers may apply; historical quota rules have been modified by later measures.",
+        "zh-Hans": "欧盟门户说明须证明工作合同、合同承诺，或具备所需资格并获雇主意向。可能适用劳动力市场优先原则与 IEFP 职位发布；历史上的配额规则已被后续措施修改。"
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [
+      {
+        "amount": "unknown",
+        "currency": "EUR",
+        "applies_to": "primary",
+        "calculation": "minimum_total",
+        "note_md": {
+          "en": "Sufficient means of subsistence are required for the visa and permit, referenced to Portuguese rules such as Order 1563/2007 on the EU portal. Exact current amounts are not fixed in this record.",
+          "zh-Hans": "签证与许可要求足够生活费，欧盟门户引用如第 1563/2007 号法令等葡萄牙规则。当前具体金额未在本记录固定。"
+        }
+      }
+    ],
+    "application_fees": []
+  },
+  "income": {
+    "required": true,
+    "accepted_sources": [
+      "employment"
+    ],
+    "income_location": "inside_destination",
+    "stability_requirement_md": {
+      "en": "The route is built around a subordinate employment contract or promise of contract in Portugal. If you lose your job, the EU portal says you need sufficient means of subsistence to renew the residence permit.",
+      "zh-Hans": "该途径围绕葡萄牙从属雇佣合同或合同承诺。若失业，欧盟门户说明续期居留许可时须具备足够生活费。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The residence visa allows stay for four months to apply for a residence permit after entry. As a general rule, a temporary residence permit is valid for one year and renewable for successive periods of two years (subject to later temporary measures).",
+      "zh-Hans": "居留签证允许入境后停留四个月以申请居留许可。一般规则下，临时居留许可有效期一年，可连续续期两年（受后续临时措施影响）。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": 12,
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "limited"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "After at least five years of legal temporary residence, the EU portal describes a national permanent residence permit (basic Portuguese, means, accommodation) and an EC long-term residence status with additional resource and language conditions.",
+      "zh-Hans": "合法临时居留至少五年后，欧盟门户描述国家永久居留许可（基本葡语、经济能力、住所）以及另有资源与语言条件的欧盟长期居留身份。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The employed-worker portal page focuses on residence and long-term residence, not naturalisation eligibility.",
+      "zh-Hans": "受雇工作者门户页面侧重居留与长期居留，而非入籍资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Evidence is from the official EU Immigration Portal profile for Portugal. National agency names (SEF vs AIMA), quotas, and fees change; verify with MNE and AIMA before applying.",
+      "zh-Hans": "证据来自欧盟移民门户的葡萄牙专题。国家机构名称（SEF 与 AIMA）、配额与费用会变化；申请前请与 MNE 和 AIMA 核实。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 4,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 4,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "employer_sponsored",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "last_checked_at": "2026-07-11T14:20:00.000Z"
+  },
+  "source_ids": [
+    "portugal-eu-employed-worker"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Work contract or promise of contract; IEFP labour market context",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Residence visa four months; temporary permit one year renewable",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Permanent residence permit and long-term residence",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "portugal-eu-employed-worker",
+        "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+        "section": "Employed worker in Portugal",
+        "snapshot_id": "d3bf824dc0a04cbfe3eb0b798b8f0dba957015b2a5a3d59a7603fe45dec44431",
+        "retrieved_at": "2026-07-11T14:20:00.000Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:20:00.000Z",
+    "updated_at": "2026-07-11T14:20:00.000Z",
+    "last_checked_at": "2026-07-11T14:20:00.000Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:20:00.000Z",
+      "summary": "Added employed-worker residence coverage from the EU Immigration Portal Portugal profile.",
+      "source_ids": [
+        "portugal-eu-employed-worker"
+      ]
+    }
+  ]
+}

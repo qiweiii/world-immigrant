@@ -21,8 +21,8 @@
     "zh-Hans": "适合拥有美国雇主和专业职业岗位，并且学历、同等教育或经验以及执照证明与职位要求相匹配的申请人。"
   },
   "not_good_for_md": {
-    "en": "Applicants without a qualifying employer petition, a directly related specialty qualification, or a selected registration where the case is cap-subject. This is not a general permanent-residence route.",
-    "zh-Hans": "不适合没有合格雇主申请、相关专业资格，或在受配额限制时没有入选注册的申请人。这不是一般性的永久居留途径。"
+    "en": "Applicants without a qualifying employer petition, a directly related specialty qualification, or a selected registration where the case is cap-subject. This is not a general permanent-residence route, and the United States does not have a dedicated digital-nomad visa in this record.",
+    "zh-Hans": "不适合没有合格雇主申请、相关专业资格，或在受配额限制时没有入选注册的申请人。这不是一般性的永久居留途径，且本记录不将美国描述为提供专门数字游民签证。"
   },
   "pathway_mechanism": "employer_sponsored",
   "eligibility": {
@@ -256,8 +256,8 @@
   },
   "freshness": {
     "created_at": "2026-07-11T11:42:03Z",
-    "updated_at": "2026-07-11T11:42:03Z",
-    "last_checked_at": "2026-07-11T11:46:29.968Z",
+    "updated_at": "2026-07-11T14:20:00.000Z",
+    "last_checked_at": "2026-07-11T14:20:00.000Z",
     "update_frequency_days": 14,
     "confidence": "medium",
     "needs_human_review": true

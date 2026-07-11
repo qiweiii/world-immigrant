@@ -1,0 +1,18 @@
+{
+  "id": "united-states-sevis-i901-fee",
+  "country_id": "united-states",
+  "program_ids": ["united-states-f1-student"],
+  "url": "https://www.ice.gov/sevis/i901",
+  "title": "I-901 SEVIS Fee",
+  "publisher": "U.S. Immigration and Customs Enforcement (ICE)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["I-901 SEVIS Fee", "$350", "F or M visa"],
+  "expected_domains": ["www.ice.gov", "ice.gov"],
+  "last_checked_at": "2026-07-11T14:20:00.000Z",
+  "last_success_at": "2026-07-11T14:20:00.000Z",
+  "status": "active"
+}

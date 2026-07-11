@@ -457,6 +457,37 @@ Portugal's official government portal describes a temporary-stay visa and reside
 
 - portugal-gov-remote-work-residence: Foreigners Act — digital nomad visa and residence permit changes — https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples
 
+## Residence for employed (subordinate) work
+
+- ID: portugal-employed-worker-residence
+- Country: portugal
+- Status: active
+- Last updated: 2026-07-11T14:20:00.000Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A Portuguese long-stay path for non-EU workers with a work contract or promise of contract for subordinate employment. Applicants typically obtain a residence visa abroad (about four months to enter and apply for a residence permit), then a temporary residence permit that is generally renewable. After five years of legal temporary residence, permanent or EC long-term residence may be available when language, means, and other conditions are met.
+
+### Official sources
+
+- portugal-eu-employed-worker: Employed worker in Portugal — EU Immigration Portal — https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en
+
+## Residence for study (higher and secondary education)
+
+- ID: portugal-student-residence
+- Country: portugal
+- Status: active
+- Last updated: 2026-07-11T14:20:00.000Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A Portuguese study residence route for non-EU students admitted to higher or secondary education. Applicants usually obtain a residence visa (about four months to enter and apply for a residence permit), then a temporary residence permit that is typically valid for one year and renewable. Higher-education study time counts by half toward long-term residence. After studies, work is possible with a separate temporary residence permit.
+
+### Official sources
+
+- portugal-eu-student: Student in Portugal — EU Immigration Portal — https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/student-portugal_en
+- portugal-gov-remote-work-residence: Foreigners Act — digital nomad visa and residence permit changes — https://www2.gov.pt/en/noticias/lei-dos-estrangeiros-pedidos-de-vistos-e-autorizacao-de-residencia-vao-ser-mais-simples
+
 ## Employment Pass
 
 - ID: singapore-employment-pass
@@ -676,12 +707,29 @@ A UK study route for an eligible course with a licensed student sponsor, enough 
 - united-kingdom-student-visa: Student visa: Overview — https://www.gov.uk/student-visa
 - united-kingdom-student-visa-money: Student visa: Money you need — https://www.gov.uk/student-visa/money
 
+## F-1 Student visa
+
+- ID: united-states-f1-student
+- Country: united-states
+- Status: active
+- Last updated: 2026-07-11T14:20:00.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+The main US academic student nonimmigrant route. After acceptance by a SEVP-approved school, the school issues Form I-20 and the student pays the SEVIS I-901 fee, then applies for an F-1 visa (usually with Form DS-160 and an interview). Study in the States says on-campus work is limited (generally no more than 20 hours per week while school is in session) and students must show financial ability before arrival. Many graduates later seek post-completion Optional Practical Training (OPT) or employer-sponsored work such as H-1B.
+
+### Official sources
+
+- united-states-student-f1-state: Student Visa (F and M) — https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html
+- united-states-sevis-i901-fee: I-901 SEVIS Fee — https://www.ice.gov/sevis/i901
+- united-states-study-in-states-work: Working in the United States (F-1 students) — https://studyinthestates.dhs.gov/students/work/working-in-the-united-states
+
 ## H-1B Specialty Occupations
 
 - ID: united-states-h1b-specialty-occupations
 - Country: united-states
 - Status: active
-- Last updated: 2026-07-11T11:46:29.968Z
+- Last updated: 2026-07-11T14:20:00.000Z
 - Source confidence: 5/5
 - Human review flagged: yes
 
@@ -690,3 +738,19 @@ A US employer-sponsored nonimmigrant classification for services in a specialty 
 ### Official sources
 
 - united-states-h1b-specialty-occupations: H-1B Specialty Occupations — https://www.uscis.gov/working-in-the-united-states/h-1b-specialty-occupations
+
+## Optional Practical Training (OPT) for F-1 students
+
+- ID: united-states-opt-f1
+- Country: united-states
+- Status: active
+- Last updated: 2026-07-11T14:20:00.000Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A US post-study and in-study training authorization for F-1 students. After a DSO recommends OPT in SEVIS and endorses Form I-20, the student files Form I-765 with USCIS. Post-completion OPT generally requires at least 20 hours of work per week related to the major. STEM OPT can add 24 months for designated degrees. OPT is not permanent residence; many students later seek H-1B or other work classifications.
+
+### Official sources
+
+- united-states-opt-f1: Optional Practical Training (OPT) for F-1 Students — https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students
+- united-states-study-in-states-work: Working in the United States (F-1 students) — https://studyinthestates.dhs.gov/students/work/working-in-the-united-states

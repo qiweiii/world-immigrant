@@ -1,0 +1,18 @@
+{
+  "id": "united-states-study-in-states-work",
+  "country_id": "united-states",
+  "program_ids": ["united-states-f1-student", "united-states-opt-f1"],
+  "url": "https://studyinthestates.dhs.gov/students/work/working-in-the-united-states",
+  "title": "Working in the United States (F-1 students)",
+  "publisher": "U.S. Department of Homeland Security — Study in the States",
+  "source_type": "official",
+  "language": "en",
+  "priority": 2,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["on-campus employment", "20 hours", "DSO", "financial ability"],
+  "expected_domains": ["studyinthestates.dhs.gov"],
+  "last_checked_at": "2026-07-11T14:20:00.000Z",
+  "last_success_at": "2026-07-11T14:20:00.000Z",
+  "status": "active"
+}

@@ -1,0 +1,339 @@
+{
+  "id": "united-states-f1-student",
+  "country_id": "united-states",
+  "category_ids": ["study_to_pr"],
+  "official_names": {
+    "en": "F-1 Student visa",
+    "zh-Hans": "F-1 学生签证"
+  },
+  "aliases": ["US F-1", "F student visa", "Academic student visa"],
+  "status": "active",
+  "status_note_md": {
+    "en": "The Department of State states that foreign nationals who wish to study in the United States generally need a student visa (F or M). Academic study at a university, college, seminary, conservatory, high school, private elementary school, or language training program uses the F category. This record covers F-1 academic study; M-1 vocational study is separate.",
+    "zh-Hans": "美国国务院说明，希望在美国学习的外国人通常需要学生签证（F 或 M）。在大学、学院、神学院、音乐学院、高中、私立小学或语言培训项目的学术学习使用 F 类别。本记录覆盖 F-1 学术学习；M-1 职业学习另行处理。"
+  },
+  "summary_md": {
+    "en": "The main US academic student nonimmigrant route. After acceptance by a SEVP-approved school, the school issues Form I-20 and the student pays the SEVIS I-901 fee, then applies for an F-1 visa (usually with Form DS-160 and an interview). Study in the States says on-campus work is limited (generally no more than 20 hours per week while school is in session) and students must show financial ability before arrival. Many graduates later seek post-completion Optional Practical Training (OPT) or employer-sponsored work such as H-1B.",
+    "zh-Hans": "美国主要的学术学生非移民途径。获 SEVP 认证学校录取后，学校签发 I-20，学生缴纳 SEVIS I-901 费，再申请 F-1 签证（通常需 DS-160 与面谈）。Study in the States 说明校内工作有限制（学期中一般每周不超过 20 小时），且入境前须证明经济能力。许多毕业生之后申请毕业后 OPT 或 H-1B 等雇主担保工作。"
+  },
+  "good_for_md": {
+    "en": "Applicants admitted to a SEVP-approved academic school who can pay the SEVIS fee and visa fee, present Form I-20, and show intent and funds consistent with F-1 nonimmigrant study.",
+    "zh-Hans": "适合获 SEVP 认证学术院校录取、能支付 SEVIS 与签证费、出示 I-20，并能证明符合 F-1 非移民学习目的与资金条件的申请人。"
+  },
+  "not_good_for_md": {
+    "en": "People without a SEVP school place, applicants seeking unrestricted employment or a dedicated digital-nomad visa, or those planning degree study on a visitor (B) visa. The United States does not have a dedicated digital-nomad visa in this record.",
+    "zh-Hans": "不适合没有 SEVP 学校录取、寻求不受限制就业或专门数字游民签证，或计划用访问者（B）签证完成学位学习的人。本记录不将美国描述为提供专门数字游民签证。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "You must be accepted by a SEVP-approved school, which registers you in SEVIS and issues Form I-20. Academic requirements are set by the school and programme, not a single federal education floor on the State Department student-visa page.",
+        "zh-Hans": "必须获 SEVP 认证学校录取；学校在 SEVIS 登记并签发 I-20。学术要求由学校与课程设定，国务院学生签证页面没有单一联邦学历门槛。"
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [
+      {
+        "amount": "unknown",
+        "currency": "USD",
+        "applies_to": "primary",
+        "note_md": {
+          "en": "Study in the States states F-1 students must prove financial ability (for example bank statements) to pay tuition and living expenses while studying. Exact amounts appear on Form I-20 and school guidance.",
+          "zh-Hans": "Study in the States 说明 F-1 学生须证明有经济能力支付学费与生活费（例如银行对账单）。具体金额见 I-20 与学校说明。"
+        }
+      }
+    ],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Nonimmigrant visa application fee (MRV / DS-160)",
+          "zh-Hans": "非移民签证申请费（MRV / DS-160）"
+        },
+        "amount": 185,
+        "currency": "USD",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "I-901 SEVIS fee (F or M visa applicants, full payment)",
+          "zh-Hans": "I-901 SEVIS 费（F 或 M 签证申请人全额）"
+        },
+        "amount": 350,
+        "currency": "USD",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": ["unknown"],
+    "income_location": "not_applicable",
+    "stability_requirement_md": {
+      "en": "The F-1 route uses school cost-of-attendance and financial evidence rather than a recurring employment income threshold.",
+      "zh-Hans": "F-1 途径使用学校就读费用与资金证明，而不是经常性就业收入门槛。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Interview wait times vary by embassy or consulate. New-student F visas can be issued up to 365 days before the course start date, but entry is generally limited to no more than 30 days before the start date.",
+      "zh-Hans": "面谈等待时间因使领馆而异。新生 F 签证最早可在开课前 365 天签发，但入境一般不得早于开课前 30 天。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": "limited",
+    "local_employment_allowed": "limited",
+    "remote_work_allowed": false,
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": true,
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": true,
+    "spouse_work_allowed": false,
+    "dependent_parents_allowed": false,
+    "note_md": {
+      "en": "A spouse and unmarried children who will live with the student may apply for F-2 visas with individual Forms I-20. Dependents do not pay the SEVIS fee. F-2 work authorization is not established as available in the retained sources for this record.",
+      "zh-Hans": "将与学生同住的配偶与未婚子女可凭各自 I-20 申请 F-2 签证。受养人无需缴纳 SEVIS 费。保留来源未确认 F-2 可获得工作授权。"
+    }
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "F-1 status is temporary nonimmigrant study. Later temporary work (such as OPT) or employer-sponsored classifications (such as H-1B) may support longer stays and, in some cases, employment-based permanent residence under separate rules.",
+      "zh-Hans": "F-1 是临时非移民学习身份。之后的临时工作（如 OPT）或雇主担保类别（如 H-1B）可能支持更长停留，并在部分情况下依其他规则通向职业类永久居留。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The F-1 student sources do not establish citizenship eligibility.",
+      "zh-Hans": "F-1 学生来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Core process steps are clear on Department of State, ICE, and Study in the States pages, but school costs, interview waits, and work-authorization details still need case-level checks.",
+      "zh-Hans": "国务院、ICE 与 Study in the States 页面核心流程清楚，但学校费用、面谈等待与工作授权细节仍需按案件核对。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 4,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": true,
+    "work_allowed": "limited",
+    "remote_work_allowed": false,
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T14:20:00.000Z"
+  },
+  "source_ids": [
+    "united-states-student-f1-state",
+    "united-states-sevis-i901-fee",
+    "united-states-study-in-states-work"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Student Visa overview, I-20, fees, F-2",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Student Visa overview, I-20, fees, F-2",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Student Visa overview, I-20, fees, F-2",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Students cannot travel on VWP or visitor visas for degree study",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Student Visa overview, I-20, fees, F-2",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Student Visa overview, I-20, fees, F-2",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Application Fee $185",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      },
+      {
+        "source_id": "united-states-sevis-i901-fee",
+        "url": "https://www.ice.gov/sevis/i901",
+        "section": "I-901 SEVIS Fee F or M $350",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "cdf0edaff25544e36591b9abf19f26fb7fd87412199f75c5f3c233f95f8c5fd6"
+      },
+      {
+        "source_id": "united-states-study-in-states-work",
+        "url": "https://studyinthestates.dhs.gov/students/work/working-in-the-united-states",
+        "section": "financial ability tuition and living expenses",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "170bf3639b351de04a7d97077135a20d84086642acc01a0f64aeb146fda64af2"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "united-states-study-in-states-work",
+        "url": "https://studyinthestates.dhs.gov/students/work/working-in-the-united-states",
+        "section": "prove financial ability before working",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "170bf3639b351de04a7d97077135a20d84086642acc01a0f64aeb146fda64af2"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "365 days issuance / 30 days entry for new students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "united-states-study-in-states-work",
+        "url": "https://studyinthestates.dhs.gov/students/work/working-in-the-united-states",
+        "section": "On-campus employment 20 hours per week",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "170bf3639b351de04a7d97077135a20d84086642acc01a0f64aeb146fda64af2"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "spouse and children F-2 and individual I-20",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Student Visa overview, I-20, fees, F-2",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Student Visa overview, I-20, fees, F-2",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "united-states-student-f1-state",
+        "url": "https://travel.state.gov/content/travel/en/us-visas/study/student-visa.html",
+        "section": "Student Visa overview, I-20, fees, F-2",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "a3ed9cc4f0c0cd7dbba7862a0bd6de94dfb1f87fc6eb2326f7343e2c04f3b050"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:20:00.000Z",
+    "updated_at": "2026-07-11T14:20:00.000Z",
+    "last_checked_at": "2026-07-11T14:20:00.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:20:00.000Z",
+      "summary": "Added F-1 student coverage from Department of State, ICE SEVIS fee, and Study in the States work pages.",
+      "source_ids": [
+        "united-states-student-f1-state",
+        "united-states-sevis-i901-fee",
+        "united-states-study-in-states-work"
+      ]
+    }
+  ]
+}

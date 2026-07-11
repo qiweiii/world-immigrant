@@ -1,0 +1,288 @@
+{
+  "id": "united-states-opt-f1",
+  "country_id": "united-states",
+  "category_ids": ["study_to_pr"],
+  "official_names": {
+    "en": "Optional Practical Training (OPT) for F-1 students",
+    "zh-Hans": "F-1 学生选择性实习培训（OPT）"
+  },
+  "aliases": ["US OPT", "Post-completion OPT", "STEM OPT extension"],
+  "status": "active",
+  "status_note_md": {
+    "en": "USCIS describes OPT as temporary employment directly related to an F-1 student’s major. Eligible students may receive up to 12 months of OPT (pre- and/or post-completion). Certain STEM graduates may apply for a 24-month STEM OPT extension with an E-Verify employer.",
+    "zh-Hans": "USCIS 将 OPT 描述为与 F-1 学生主修直接相关的临时就业。合资格学生最多可获 12 个月 OPT（完成前和/或完成后）。部分 STEM 毕业生可向使用 E-Verify 的雇主申请 24 个月 STEM OPT 延期。"
+  },
+  "summary_md": {
+    "en": "A US post-study and in-study training authorization for F-1 students. After a DSO recommends OPT in SEVIS and endorses Form I-20, the student files Form I-765 with USCIS. Post-completion OPT generally requires at least 20 hours of work per week related to the major. STEM OPT can add 24 months for designated degrees. OPT is not permanent residence; many students later seek H-1B or other work classifications.",
+    "zh-Hans": "面向 F-1 学生的美国在读/毕业后培训授权。DSO 在 SEVIS 推荐 OPT 并背书 I-20 后，学生向 USCIS 递交 I-765。完成后 OPT 通常要求每周至少 20 小时与主修相关的工作。指定 STEM 学位可再延长 24 个月。OPT 不是永久居留；许多学生之后申请 H-1B 等其他工作类别。"
+  },
+  "good_for_md": {
+    "en": "F-1 students who have completed (or will complete) a full academic year at a SEVP-certified college, university, conservatory, or seminary, whose employment relates to the major, and who can obtain a DSO recommendation and timely file Form I-765.",
+    "zh-Hans": "适合在 SEVP 认证高校/音乐学院/神学院完成（或即将完成）一整个学年、就业与主修相关，并能获得 DSO 推荐并及时递交 I-765 的 F-1 学生。"
+  },
+  "not_good_for_md": {
+    "en": "People who are not in F-1 status, ESL-only students without OPT eligibility, applicants without a major-related training opportunity, or those seeking a dedicated digital-nomad visa unrelated to US study. Unemployment on post-completion OPT is tightly limited.",
+    "zh-Hans": "不适合非 F-1 身份、仅 ESL 不合 OPT 资格、没有与主修相关培训机会，或寻求与美国学习无关的数字游民签证的人。完成后 OPT 的失业天数限制严格。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": false,
+      "note_md": {
+        "en": "USCIS requires lawful full-time enrollment for one full academic year at a SEVP-certified college, university, conservatory, or seminary for pre-completion OPT. Employment must be directly related to the major. Pre-completion OPT reduces remaining post-completion OPT. STEM OPT requires a designated STEM degree, E-Verify employment, and a prior post-completion OPT grant based on that STEM degree.",
+        "zh-Hans": "USCIS 要求完成前 OPT 前在 SEVP 认证高校/音乐学院/神学院合法全日制就读满一学年。就业须与主修直接相关。完成前 OPT 会扣减完成后 OPT。STEM OPT 需要指定 STEM 学位、E-Verify 雇主，以及基于该 STEM 学位的完成后 OPT。"
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": ["employment"],
+    "income_location": "inside_destination",
+    "stability_requirement_md": {
+      "en": "OPT is employment authorization related to the major rather than a minimum-income route. Post-completion OPT requires part-time (at least 20 hours per week) or full-time work as authorized.",
+      "zh-Hans": "OPT 是与主修相关的就业授权，而不是最低收入途径。完成后 OPT 须按授权从事兼职（每周至少 20 小时）或全职工作。"
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "For initial post-completion OPT, USCIS says you must apply after the DSO enters the recommendation, within 30 days of that recommendation, and no later than 60 days after degree completion (and up to 90 days before completion). Regular OPT is up to 12 months per education level; STEM OPT can add 24 months.",
+      "zh-Hans": "USCIS 说明初始完成后 OPT 须在 DSO 录入推荐后申请，推荐后 30 天内，且不得晚于毕业后 60 天（最早可在毕业前 90 天）。常规 OPT 每个教育层次最长 12 个月；STEM OPT 可再加 24 个月。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": 12,
+    "renewable": true,
+    "max_stay_months": 36
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "limited",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "limited",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "limited",
+    "spouse_work_allowed": false,
+    "dependent_parents_allowed": false,
+    "note_md": {
+      "en": "F-2 dependants remain tied to the principal F-1 status. The OPT page focuses on the F-1 student’s employment authorization rather than expanding F-2 work rights.",
+      "zh-Hans": "F-2 受养人仍依附于主申请人 F-1 身份。OPT 页面侧重 F-1 学生就业授权，并未扩大 F-2 工作权利。"
+    }
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "OPT is temporary training authorization. USCIS also describes a cap-gap extension when a timely H-1B petition and change of status are filed. Permanent residence, if any, depends on a later immigrant category, not on OPT itself.",
+      "zh-Hans": "OPT 是临时培训授权。USCIS 也描述在及时递交 H-1B 申请与身份变更时的 cap-gap 延期。永久居留（如有）取决于后续移民类别，而非 OPT 本身。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The OPT sources do not establish citizenship eligibility.",
+      "zh-Hans": "OPT 来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "USCIS rules for OPT and STEM OPT are detailed and can change; filing windows, unemployment limits, and employer E-Verify conditions need case-level review.",
+      "zh-Hans": "USCIS 对 OPT 与 STEM OPT 规则详细且可能变化；递交窗口、失业限制与雇主 E-Verify 条件需按案件审查。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": "unknown",
+    "accepts_overseas_remote_income": false,
+    "requires_degree": true,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T14:20:00.000Z"
+  },
+  "source_ids": ["united-states-opt-f1", "united-states-study-in-states-work"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "one full academic year; DSO recommendation; Form I-765",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "12 months OPT and STEM 24-month extension; filing windows",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "post-completion OPT part-time or full-time related to major",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "united-states-opt-f1",
+        "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+        "section": "Optional Practical Training for F-1 Students",
+        "retrieved_at": "2026-07-11T14:20:00.000Z",
+        "snapshot_id": "f4182c8a0ee6d177a630540259d4ee9b03e14dff7829450a9d6f0e2ce689821f"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T14:20:00.000Z",
+    "updated_at": "2026-07-11T14:20:00.000Z",
+    "last_checked_at": "2026-07-11T14:20:00.000Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T14:20:00.000Z",
+      "summary": "Added F-1 OPT and STEM OPT extension coverage from official USCIS guidance.",
+      "source_ids": ["united-states-opt-f1", "united-states-study-in-states-work"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "id": "portugal-eu-employed-worker",
+  "country_id": "portugal",
+  "program_ids": [
+    "portugal-employed-worker-residence"
+  ],
+  "url": "https://home-affairs.ec.europa.eu/policies/migration-and-asylum/eu-immigration-portal/employed-worker-portugal_en",
+  "title": "Employed worker in Portugal — EU Immigration Portal",
+  "publisher": "European Commission — Migration and Home Affairs",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "residence visa",
+    "work contract",
+    "IEFP",
+    "permanent residence"
+  ],
+  "expected_domains": [
+    "home-affairs.ec.europa.eu"
+  ],
+  "last_checked_at": "2026-07-11T14:20:00.000Z",
+  "last_success_at": "2026-07-11T14:20:00.000Z",
+  "status": "active"
+}

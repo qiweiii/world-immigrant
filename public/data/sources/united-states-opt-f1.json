@@ -1,0 +1,29 @@
+{
+  "id": "united-states-opt-f1",
+  "country_id": "united-states",
+  "program_ids": [
+    "united-states-opt-f1"
+  ],
+  "url": "https://www.uscis.gov/working-in-the-united-states/students-and-exchange-visitors/optional-practical-training-opt-for-f-1-students",
+  "title": "Optional Practical Training (OPT) for F-1 Students",
+  "publisher": "U.S. Citizenship and Immigration Services (USCIS)",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "12 months",
+    "post-completion",
+    "STEM",
+    "Form I-765",
+    "DSO"
+  ],
+  "expected_domains": [
+    "www.uscis.gov",
+    "uscis.gov"
+  ],
+  "last_checked_at": "2026-07-11T14:20:00.000Z",
+  "last_success_at": "2026-07-11T14:20:00.000Z",
+  "status": "active"
+}
