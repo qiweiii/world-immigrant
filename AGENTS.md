@@ -27,6 +27,14 @@ Use pnpm only. Do not use npm/yarn for project-level installs.
 - Lint/format: Biome
 - Fast verification: `pnpm data:validate`, `pnpm biome:check`, `pnpm check`
 
+## UI styling
+
+The site uses local Astro components and local CSS primitives. It does not depend on a component library.
+
+- `src/styles/global.css` holds theme tokens, dark-mode tokens, base element rules, and shared local primitives such as `.btn`, `.card`, `.badge`, `.input`, `.panel`, and `.table`.
+- For normal product work, prefer page-, feature-, or component-specific selectors over global primitive or token changes.
+- Do not add a UI component-library runtime, generator, or generated component set without an explicit architecture decision and dependency review.
+
 ## Environment
 
 Prefer checks first:

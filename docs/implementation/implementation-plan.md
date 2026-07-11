@@ -397,7 +397,7 @@ Connect `world-immigrant.com` in Cloudflare after the domain is purchased.
 2. Domain: `world-immigrant.com`
 3. Framework/library: Astro
 4. Styling: Tailwind CSS v4
-5. UI components: shadcn/ui base variant (CSS-only)
+5. UI primitives: local CSS components and tokens
 6. Data schema/validation: Zod
 7. Linting/formatting: Biome
 8. Search: Pagefind

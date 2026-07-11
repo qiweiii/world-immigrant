@@ -81,7 +81,7 @@
   }
 }
 
-/* ─── shadcn-style CSS components ─── */
+/* ─── Local UI primitives ─── */
 @layer components {
 
   /* ── App bar (fixed) ── */
@@ -201,7 +201,7 @@
     line-height: 1.5;
   }
 
-  /* ── Button (shadcn base) ── */
+  /* ── Button ── */
   .btn {
     display: inline-flex;
     align-items: center;
@@ -234,7 +234,7 @@
   .btn-ghost:hover { background: var(--muted); color: var(--foreground); }
   .btn .icon, .btn img { width: 16px; height: 16px; }
 
-  /* ── Card (shadcn base) ── */
+  /* ── Card ── */
   .card {
     border: 1px solid var(--border);
     border-radius: calc(var(--radius) * 1.6);
@@ -262,7 +262,7 @@
     margin: 6px 0 0;
   }
 
-  /* ── Badge (shadcn base) ── */
+  /* ── Badge ── */
   .badge {
     display: inline-flex;
     align-items: center;

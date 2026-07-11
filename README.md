@@ -19,7 +19,7 @@ World Immigrant helps people discover and compare lawful immigration pathways ac
 ## Tech stack
 
 - **Framework:** Astro static site (`output: "static"`)
-- **UI components:** shadcn/ui base variant (CSS-only, no Radix runtime)
+- **UI primitives:** Local CSS components and tokens
 - **Styling:** Tailwind CSS v4
 - **Language:** TypeScript
 - **Validation:** Zod

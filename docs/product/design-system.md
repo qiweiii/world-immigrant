@@ -13,7 +13,7 @@ Rules:
 
 ## Motion
 
-Shadcn/ui base variant provides layout and component patterns, but it does not include animation utilities. Use [transitions.dev](https://transitions.dev/) as the reference for custom transitions.
+Local CSS primitives provide the site layout and component patterns. Use [transitions.dev](https://transitions.dev/) as the reference for custom transitions.
 
 Patterns:
 
@@ -35,9 +35,13 @@ Process:
 4. Document the final tokens in `src/styles/global.css` as CSS custom properties.
 5. Avoid adding new colors ad-hoc; map every UI surface to a token.
 
+## External design references
+
+External design systems and component libraries may be studied for interaction patterns, accessibility behavior, spacing, and visual hierarchy. They are learning references, not dependencies or templates to copy. Translate useful ideas into the project's own Astro components and local CSS, and preserve the current frameworkless architecture unless an explicit architecture decision changes it.
+
 ## Current tokens
 
-The live tokens live in `src/styles/global.css`. They follow the shadcn/ui base variant naming convention and support light and dark modes via `[data-theme="dark"]`.
+The live tokens live in `src/styles/global.css` and support light and dark modes via `[data-theme="dark"]`.
 
 Key colors:
 

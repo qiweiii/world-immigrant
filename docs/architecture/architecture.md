@@ -7,7 +7,7 @@ World Immigrant is a static-first, content-heavy, SEO-sensitive, multilingual im
 Stack:
 
 - **Astro** static site generation (`output: "static"`).
-- **shadcn/ui base components** (CSS-only) + **Tailwind CSS v4** for design tokens and UI patterns.
+- **Local CSS primitives** + **Tailwind CSS v4** for design tokens and UI patterns.
 - **Frameworkless TypeScript islands** for comparison, filtering, and other interactive surfaces.
 - **Pagefind** for static multilingual full-text search.
 - **Hermes Agent** scheduled updaters that collect official sources, structure data, and open PRs for review.
@@ -134,7 +134,7 @@ No backend secrets are needed in frontend hosting.
 | ARCH-003 | Require citation arrays on every material policy field | Trust and source-of-truth are the brand |
 | ARCH-004 | Hermes creates PRs instead of directly pushing to main | Policy data is high-stakes; human review needed |
 | ARCH-005 | Use Pagefind for static multilingual full-text search | No backend search infra; supports multilingual static sites |
-| ARCH-006 | Use shadcn/ui base variant (CSS-only) + Tailwind CSS v4 | Provides design tokens and component patterns without Radix runtime; keeps JS footprint zero for UI components |
+| ARCH-006 | Use local CSS primitives + Tailwind CSS v4 | Keeps the UI frameworkless, ownable, and free of component-library runtime dependencies |
 | ARCH-007 | MCP is optional/generated, not runtime dependency | Pure static site cannot host MCP server without runtime |
 | ARCH-008 | Deploy as static site to Cloudflare Workers | Static output fits content-first product; Workers Static Assets serves `dist/` directly without SSR adapter |
 | ARCH-009 | Use one canonical JSON file per country, program, and source | Narrow diffs reduce review conflicts and let scheduled updates target one policy object at a time |
