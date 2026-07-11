@@ -3,45 +3,66 @@ import Layout from "../../components/Layout.astro";
 import VisaCard from "../../components/VisaCard.astro";
 import { loadCanonicalData } from "../../lib/data";
 import { buildCountryPageModels } from "../../lib/site-model";
+import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../../i18n";
 
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
 const countries = buildCountryPageModels(await loadCanonicalData());
+const L = (path: string) => withLocale(path, locale);
 ---
 
-<Layout title="Countries — World Immigrant">
+<Layout locale={locale} title={t("countries.title", locale)}>
   <main>
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a>
+    <nav class="breadcrumbs" aria-label={t("crumb.aria", locale)}>
+      <a href={L("/")}>{t("crumb.home", locale)}</a>
       <span aria-hidden="true">/</span>
-      <span>Countries</span>
+      <span>{t("countries.eyebrow", locale)}</span>
     </nav>
 
     <section class="hero">
-      <p class="eyebrow">Countries</p>
-      <h1>Explore by destination.</h1>
-      <p>See which countries have mapped pathways and open the one you're interested in.</p>
+      <p class="eyebrow">{t("countries.eyebrow", locale)}</p>
+      <h1>{t("countries.h1", locale)}</h1>
+      <p>{t("countries.lede", locale)}</p>
       <div class="action-row">
-        <a class="btn btn-primary" href="/filter">Find matching pathways</a>
-        <a class="btn" href="/compare">Compare</a>
+        <a class="btn btn-primary" href={L("/filter")}>{t("countries.findMatching", locale)}</a>
+        <a class="btn" href={L("/compare")}>{t("countries.compare", locale)}</a>
       </div>
     </section>
 
     <section class="section" aria-labelledby="countries-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Coverage</p>
-          <h2 id="countries-heading">Countries</h2>
+          <p class="eyebrow">{t("countries.coverage", locale)}</p>
+          <h2 id="countries-heading">{t("countries.h2", locale)}</h2>
         </div>
       </div>
       <div class="card-grid">
         {
           countries.map(({ country, programs }) => (
-            <a class="card card-clickable" href={`/countries/${country.id}`}>
-              <p class="card-meta">{country.iso2} · {country.region}</p>
-              <h3 class="card-title">{country.names.en}</h3>
-              <p class="card-description">{country.summary_md.en}</p>
+            <a
+              class="card card-clickable country-card"
+              href={L(`/countries/${country.id}`)}
+              style={`--country-color: ${country.brand.color}`}
+            >
+              <p class="card-meta">
+                <span class="country-swatch" aria-hidden="true"></span>
+                {country.iso2} · {country.region}
+              </p>
+              <h3 class="card-title">{pickLocalized(country.names, locale)}</h3>
+              <p class="card-description">{pickLocalized(country.summary_md, locale)}</p>
               <div class="card-footer">
-                <span class="card-tag">{programs.length} pathway{programs.length === 1 ? "" : "s"}</span>
-                <span class="card-tag">Checked {country.freshness.last_checked_at.slice(0, 10)}</span>
+                <span class="card-tag">
+                  {programs.length}{" "}
+                  {programs.length === 1
+                    ? t("home.pathwayCount", locale)
+                    : t("home.pathwaysCount", locale)}
+                </span>
+                <span class="card-tag">
+                  {t("countries.checked", locale)} {country.freshness.last_checked_at.slice(0, 10)}
+                </span>
               </div>
             </a>
           ))
@@ -52,8 +73,8 @@ const countries = buildCountryPageModels(await loadCanonicalData());
     <section class="section" aria-labelledby="programs-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Pathways</p>
-          <h2 id="programs-heading">All programs</h2>
+          <p class="eyebrow">{t("countries.pathways", locale)}</p>
+          <h2 id="programs-heading">{t("countries.allPrograms", locale)}</h2>
         </div>
       </div>
       <div class="card-grid">
@@ -61,11 +82,11 @@ const countries = buildCountryPageModels(await loadCanonicalData());
           countries.flatMap(({ country, programs }) =>
             programs.map((program) => (
               <VisaCard
-                title={program.official_names.en}
-                country={country.names.en}
+                title={pickLocalized(program.official_names, locale)}
+                country={pickLocalized(country.names, locale)}
                 category={program.category_ids.join(", ")}
-                summary={program.summary_md.en}
-                href={`/programs/${program.id}`}
+                summary={pickLocalized(program.summary_md, locale)}
+                href={L(`/programs/${program.id}`)}
                 status={program.status}
                 checkedAt={program.freshness.last_checked_at}
               />

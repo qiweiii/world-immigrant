@@ -1,0 +1,21 @@
+---
+import { loadCanonicalData } from "../../../lib/data";
+import { buildCountryPageModels } from "../../../lib/site-model";
+import { isLocale, nonDefaultLocales } from "../../../i18n";
+import CountryPage from "../../countries/[country].astro";
+
+export async function getStaticPaths() {
+  const models = buildCountryPageModels(await loadCanonicalData());
+  return nonDefaultLocales.flatMap((locale) =>
+    models.map((model) => ({
+      params: { locale, country: model.country.id },
+      props: { model, locale },
+    })),
+  );
+}
+
+const { model, locale } = Astro.props;
+if (!isLocale(locale)) throw new Error(`Unsupported locale: ${locale}`);
+---
+
+<CountryPage model={model} locale={locale} />

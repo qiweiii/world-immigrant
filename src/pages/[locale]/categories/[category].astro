@@ -1,0 +1,32 @@
+---
+import { loadCanonicalData, type CanonicalDataset } from "../../../lib/data";
+import { isLocale, nonDefaultLocales } from "../../../i18n";
+import CategoryPage from "../../categories/[category].astro";
+
+export async function getStaticPaths() {
+  const dataset: CanonicalDataset = await loadCanonicalData();
+  const countries = new Map(dataset.countries.map((country) => [country.id, country]));
+  return nonDefaultLocales.flatMap((locale) =>
+    dataset.categories.map((category) => ({
+      params: { locale, category: category.id },
+      props: {
+        locale,
+        model: {
+          category,
+          programs: dataset.programs
+            .filter(({ category_ids }) => category_ids.includes(category.id))
+            .flatMap((program) => {
+              const country = countries.get(program.country_id);
+              return country ? [{ program, country }] : [];
+            }),
+        },
+      },
+    })),
+  );
+}
+
+const { model, locale } = Astro.props;
+if (!isLocale(locale)) throw new Error(`Unsupported locale: ${locale}`);
+---
+
+<CategoryPage model={model} locale={locale} />

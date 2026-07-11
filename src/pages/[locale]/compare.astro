@@ -1,0 +1,13 @@
+---
+import { isLocale, nonDefaultLocales } from "../../i18n";
+import ComparePage from "../compare.astro";
+
+export function getStaticPaths() {
+  return nonDefaultLocales.map((locale) => ({ params: { locale } }));
+}
+
+const { locale } = Astro.params;
+if (!isLocale(locale)) throw new Error(`Unsupported locale: ${locale}`);
+---
+
+<ComparePage locale={locale} />

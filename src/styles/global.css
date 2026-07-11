@@ -161,6 +161,46 @@
   }
   .theme-toggle:hover { background: var(--muted); color: var(--foreground); }
 
+  /* ── Language switcher ── */
+  .locale-switcher {
+    display: inline-flex;
+    align-items: center;
+    gap: 2px;
+    padding: 3px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--card);
+  }
+  .locale-option {
+    padding: 5px 9px;
+    border-radius: calc(var(--radius) - 2px);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--muted-foreground);
+    line-height: 1.2;
+    white-space: nowrap;
+    transition: background 0.15s, color 0.15s;
+  }
+  .locale-option:hover {
+    color: var(--foreground);
+    background: var(--muted);
+  }
+  .locale-option.active {
+    color: var(--background);
+    background: var(--foreground);
+  }
+  .mobile-locale {
+    padding: 4px 0 8px;
+  }
+  .mobile-locale .locale-switcher {
+    width: 100%;
+    justify-content: stretch;
+  }
+  .mobile-locale .locale-option {
+    flex: 1;
+    text-align: center;
+  }
+
   /* ── Hero ── */
   .hero { padding: 72px 0 40px; }
   .eyebrow {
@@ -255,6 +295,41 @@
   }
   .btn .icon, .btn img { width: 16px; height: 16px; }
 
+  /* ── Country brand accent ──
+     Color comes from canonical country.brand.color (flag / official site).
+     Use as decorative accent only — not for body text on a filled brand block.
+  */
+  .country-swatch {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 999px;
+    background: var(--country-color, var(--accent));
+    flex-shrink: 0;
+    vertical-align: middle;
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--foreground) 12%, transparent);
+  }
+  .card-meta .country-swatch,
+  .eyebrow .country-swatch {
+    margin-right: 8px;
+  }
+  .country-hero {
+    border-left: 3px solid var(--country-color, var(--accent));
+    padding-left: 20px;
+  }
+  .coverage-country-main {
+    display: inline-flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+  .coverage-country-main .country-swatch {
+    margin-top: 6px;
+  }
+  .country-row .card-meta {
+    display: flex;
+    align-items: center;
+  }
+
   /* ── Card ── */
   .card {
     border: 1px solid var(--border);
@@ -281,6 +356,13 @@
   }
   .card-clickable:active {
     transform: translateY(0);
+  }
+  .card.country-card {
+    border-top: 3px solid var(--country-color, var(--accent));
+  }
+  .card.card-clickable.country-card:hover {
+    border-color: var(--border-strong);
+    border-top-color: var(--country-color, var(--accent));
   }
   .card-header { margin-bottom: 12px; }
   .card-title {

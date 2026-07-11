@@ -268,17 +268,20 @@ Current state: page and island shells exist. Complete data-driven comparison and
 
 ## Phase 6 — Search, i18n, AI-native Output
 
-Current state: Pagefind indexing, public JSON generation, and AI-readable output generation exist. Search UI and i18n routing remain.
+Current state: Pagefind indexing, public JSON generation, AI-readable output, and path-based i18n (`en` unprefixed + `zh-Hans` prefix) with a header language switcher exist. Search UI polish remains.
 
 ### Task 6.1: Add i18n routing
 
 **Objective:** Support at least `en` and `zh-Hans`.
 
-**Files:**
-- Create: `src/i18n/locales.ts`
-- Create: localized route handling (Astro config/pages)
+**Status:** Implemented.
 
-**Verification:** pages render with correct `<html lang="...">` so Pagefind multilingual indexing works.
+**Files:**
+- Maintain: `src/i18n/` (`locales`, `paths`, `resolve`, `ui`)
+- Maintain: `src/components/LanguageSwitcher.astro`, locale-aware `Layout.astro`
+- Maintain: unprefixed pages + `src/pages/[locale]/…` mirrors
+
+**Verification:** `/` and `/zh-Hans` render with correct `<html lang>`; switcher preserves path; `localStorage.wi-locale` remembers choice.
 
 ### Task 6.2: Add Pagefind search UI
 

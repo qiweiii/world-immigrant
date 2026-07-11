@@ -32,6 +32,18 @@ Country
 ## 3. Country Object
 
 ```ts
+type CountryBrand = {
+ /** sRGB hex accent used in UI chips, bars, and swatches, e.g. "#D52B1E" */
+ color: string;
+ /**
+  * Provenance of the color choice:
+  * - flag: national flag or closely related national mark
+  * - official_site: primary brand color of the immigration / government site
+  * - hybrid: deliberate blend when flag and official site differ
+  */
+ source: "flag" | "official_site" | "hybrid";
+};
+
 type Country = {
  id: string;         // "canada"
  iso2: string;        // "CA"
@@ -39,12 +51,20 @@ type Country = {
  names: LocalizedText;    // { en: "Canada", "zh-Hans": "Canada (zh translation sample)" }
  region: string;       // "North America"
  summary_md: LocalizedMarkdown;
+ brand: CountryBrand;    // decorative UI accent; not a legal/policy field
  official_source_ids: string[]; // references the canonical source registry
  categories: string[];    // category IDs available in this country
  program_ids: string[];
  freshness: Freshness;
 };
 ```
+
+### Country brand color rules
+
+- Required on every country record. Prefer a single stable hex that remains recognizable at small sizes (swatches, card bars).
+- Prefer the national flag or the immigration department’s primary brand color. Use `hybrid` only when neither alone is usable in UI.
+- Brand color is **decorative presentation only**. Do not put small body text on a solid brand fill without a separate contrast check.
+- Do not treat brand color as policy data; it does not need `field_citations`.
 
 ## 4. Category Object
 

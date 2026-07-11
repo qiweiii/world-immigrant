@@ -3,52 +3,66 @@ import Layout from "../../components/Layout.astro";
 import VisaCard from "../../components/VisaCard.astro";
 import { loadCanonicalData } from "../../lib/data";
 import { buildCountryPageModels, type CountryPageModel } from "../../lib/site-model";
+import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../../i18n";
+
+interface Props {
+  model: CountryPageModel;
+  locale?: Locale;
+}
 
 export async function getStaticPaths() {
   const models = buildCountryPageModels(await loadCanonicalData());
   return models.map((model) => ({ params: { country: model.country.id }, props: { model } }));
 }
 
-const { model } = Astro.props as { model: CountryPageModel };
+const { model, locale = defaultLocale } = Astro.props as Props;
 const { country, programs, categories } = model;
+const L = (path: string) => withLocale(path, locale);
+const countryName = pickLocalized(country.names, locale);
 ---
 
-<Layout title={`${country.names.en} immigration pathways — World Immigrant`}>
+<Layout
+  locale={locale}
+  title={`${countryName} ${t("country.pathwaysTitle", locale)}`}
+>
   <main>
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a>
+    <nav class="breadcrumbs" aria-label={t("crumb.aria", locale)}>
+      <a href={L("/")}>{t("crumb.home", locale)}</a>
       <span aria-hidden="true">/</span>
-      <a href="/countries">Countries</a>
+      <a href={L("/countries")}>{t("nav.countries", locale)}</a>
       <span aria-hidden="true">/</span>
-      <span>{country.names.en}</span>
+      <span>{countryName}</span>
     </nav>
 
-    <section class="hero">
-      <p class="eyebrow">{country.iso2} · {country.region}</p>
-      <h1>{country.names.en}</h1>
-      <p>{country.summary_md.en}</p>
+    <section class="hero country-hero" style={`--country-color: ${country.brand.color}`}>
+      <p class="eyebrow">
+        <span class="country-swatch" aria-hidden="true"></span>
+        {country.iso2} · {country.region}
+      </p>
+      <h1>{countryName}</h1>
+      <p>{pickLocalized(country.summary_md, locale)}</p>
       <div class="action-row">
-        <a class="btn" href="/compare">Compare</a>
-        <a class="btn btn-ghost" href="/filter">Check your fit</a>
+        <a class="btn" href={L("/compare")}>{t("country.compare", locale)}</a>
+        <a class="btn btn-ghost" href={L("/filter")}>{t("country.checkFit", locale)}</a>
       </div>
     </section>
 
     <section class="section" aria-labelledby="pathways-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Pathways</p>
-          <h2 id="pathways-heading">Programs</h2>
+          <p class="eyebrow">{t("country.pathways", locale)}</p>
+          <h2 id="pathways-heading">{t("country.programs", locale)}</h2>
         </div>
       </div>
       <div class="card-grid">
         {
           programs.map((program) => (
             <VisaCard
-              title={program.official_names.en}
-              country={country.names.en}
+              title={pickLocalized(program.official_names, locale)}
+              country={countryName}
               category={program.category_ids.join(", ")}
-              summary={program.summary_md.en}
-              href={`/programs/${program.id}`}
+              summary={pickLocalized(program.summary_md, locale)}
+              href={L(`/programs/${program.id}`)}
               status={program.status}
               checkedAt={program.freshness.last_checked_at}
             />
@@ -60,16 +74,16 @@ const { country, programs, categories } = model;
     <section class="section" aria-labelledby="categories-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Categories</p>
-          <h2 id="categories-heading">Related categories</h2>
+          <p class="eyebrow">{t("country.categories", locale)}</p>
+          <h2 id="categories-heading">{t("country.related", locale)}</h2>
         </div>
       </div>
       <div class="card-grid">
         {
           categories.map((category) => (
-            <a class="card card-clickable" href={`/categories/${category.id}`}>
-              <h3 class="card-title">{category.names.en}</h3>
-              <p class="card-description">{category.description_md.en}</p>
+            <a class="card card-clickable" href={L(`/categories/${category.id}`)}>
+              <h3 class="card-title">{pickLocalized(category.names, locale)}</h3>
+              <p class="card-description">{pickLocalized(category.description_md, locale)}</p>
             </a>
           ))
         }

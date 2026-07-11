@@ -154,6 +154,7 @@ function validDataset() {
         names: { en: "Country" },
         region: "Region",
         summary_md: { en: "Country summary." },
+        brand: { color: "#336699", source: "hybrid" },
         official_source_ids: ["source-one"],
         categories: ["skilled_worker"],
         program_ids: ["country-program"],

@@ -1,32 +1,43 @@
 ---
 import Layout from "../../components/Layout.astro";
 import { loadCanonicalData } from "../../lib/data";
+import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../../i18n";
 
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
 const { categories, programs } = await loadCanonicalData();
+const L = (path: string) => withLocale(path, locale);
 ---
 
-<Layout title="Immigration pathway categories — World Immigrant">
+<Layout locale={locale} title={t("categories.title", locale)}>
   <main>
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a>
+    <nav class="breadcrumbs" aria-label={t("crumb.aria", locale)}>
+      <a href={L("/")}>{t("crumb.home", locale)}</a>
       <span aria-hidden="true">/</span>
-      <span>Categories</span>
+      <span>{t("categories.eyebrow", locale)}</span>
     </nav>
 
     <section class="hero">
-      <p class="eyebrow">Categories</p>
-      <h1>Browse by type of route.</h1>
-      <p>Skilled worker, investor, digital nomad, and other immigration categories.</p>
+      <p class="eyebrow">{t("categories.eyebrow", locale)}</p>
+      <h1>{t("categories.h1", locale)}</h1>
+      <p>{t("categories.lede", locale)}</p>
     </section>
-    <section class="card-grid" aria-label="Pathway categories">
+    <section class="card-grid" aria-label={t("categories.eyebrow", locale)}>
       {
         categories.map((category) => {
-          const count = programs.filter(({ category_ids }) => category_ids.includes(category.id)).length;
+          const count = programs.filter(({ category_ids }) => category_ids.includes(category.id))
+            .length;
           return (
-            <a class="card card-clickable" href={`/categories/${category.id}`}>
-              <p class="card-meta">{count} program{count === 1 ? "" : "s"}</p>
-              <h2 class="card-title">{category.names.en}</h2>
-              <p class="card-description">{category.description_md.en}</p>
+            <a class="card card-clickable" href={L(`/categories/${category.id}`)}>
+              <p class="card-meta">
+                {count}{" "}
+                {count === 1 ? t("categories.program", locale) : t("categories.programs", locale)}
+              </p>
+              <h2 class="card-title">{pickLocalized(category.names, locale)}</h2>
+              <p class="card-description">{pickLocalized(category.description_md, locale)}</p>
             </a>
           );
         })

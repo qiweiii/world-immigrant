@@ -82,6 +82,22 @@ export const sourceSchema = z.strictObject({
   status: z.enum(["active", "broken", "needs_attention", "deprecated"]),
 });
 
+/** sRGB hex used as a decorative country accent in UI (chip, bar, swatch). */
+export const brandColorSchema = z
+  .string()
+  .regex(/^#[0-9A-Fa-f]{6}$/, "brand.color must be a 6-digit hex color like #C8102E");
+
+export const countryBrandSchema = z.strictObject({
+  color: brandColorSchema,
+  /**
+   * Where the color comes from:
+   * - flag: national flag or closely related national mark
+   * - official_site: primary brand color of the immigration / government site
+   * - hybrid: deliberate blend when flag and official site differ
+   */
+  source: z.enum(["flag", "official_site", "hybrid"]),
+});
+
 export const countrySchema = z.strictObject({
   id: z.string().min(1),
   iso2: z.string().length(2),
@@ -89,6 +105,7 @@ export const countrySchema = z.strictObject({
   names: localizedTextSchema,
   region: z.string().min(1),
   summary_md: localizedMarkdownSchema,
+  brand: countryBrandSchema,
   official_source_ids: z.array(z.string()),
   categories: z.array(z.string()),
   program_ids: z.array(z.string()),
@@ -326,6 +343,7 @@ export const programSchema = z.strictObject({
 export type Category = z.infer<typeof categorySchema>;
 export type CitationRef = z.infer<typeof citationRefSchema>;
 export type Country = z.infer<typeof countrySchema>;
+export type CountryBrand = z.infer<typeof countryBrandSchema>;
 export type Program = z.infer<typeof programSchema>;
 export type ProgramFilter = z.infer<typeof programFilterSchema>;
 export type Source = z.infer<typeof sourceSchema>;

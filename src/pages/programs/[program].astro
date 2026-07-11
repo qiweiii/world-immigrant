@@ -2,65 +2,77 @@
 import Layout from "../../components/Layout.astro";
 import { loadCanonicalData } from "../../lib/data";
 import { buildProgramPageModels, type ProgramPageModel } from "../../lib/site-model";
+import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../../i18n";
+
+interface Props {
+  model: ProgramPageModel;
+  locale?: Locale;
+}
 
 export async function getStaticPaths() {
   const models = buildProgramPageModels(await loadCanonicalData());
   return models.map((model) => ({ params: { program: model.program.id }, props: { model } }));
 }
 
-const { model } = Astro.props as { model: ProgramPageModel };
+const { model, locale = defaultLocale } = Astro.props as Props;
 const { program, country, categories, sources, citations } = model;
+const L = (path: string) => withLocale(path, locale);
 
 function displayValue(value: unknown) {
-  if (value === true) return "Yes";
-  if (value === false) return "No";
-  if (value === "not_applicable") return "Not applicable";
-  if (value === "unknown") return "Unknown — verify with the official source";
-  if (value === "indirect") return "Indirect pathway";
-  if (value === "limited") return "Limited or conditional";
-  if (value === undefined || value === null || value === "") return "Not stated";
+  if (value === true) return t("program.yes", locale);
+  if (value === false) return t("program.no", locale);
+  if (value === "not_applicable") return t("program.notApplicable", locale);
+  if (value === "unknown") return t("program.unknown", locale);
+  if (value === "indirect") return t("program.indirect", locale);
+  if (value === "limited") return t("program.limited", locale);
+  if (value === undefined || value === null || value === "") return t("program.notStated", locale);
   return String(value);
 }
 
 const pathwayLabel =
   program.filter.pathway_type === "direct_pr"
-    ? "Direct permanent residence"
+    ? t("program.directPr", locale)
     : program.filter.pathway_type.replaceAll("_", " ");
 const hasFundsTable = program.funds.proof_of_funds.length > 0;
 const applicationFees = program.funds.application_fees ?? [];
+const programName = pickLocalized(program.official_names, locale);
+const countryName = pickLocalized(country.names, locale);
+const summary = pickLocalized(program.summary_md, locale);
 ---
 
-<Layout
-  title={`${program.official_names.en} — World Immigrant`}
-  description={program.summary_md.en}
->
+<Layout locale={locale} title={`${programName} — World Immigrant`} description={summary}>
   <main>
-    <nav class="breadcrumbs" aria-label="Breadcrumb">
-      <a href="/">Home</a>
+    <nav class="breadcrumbs" aria-label={t("crumb.aria", locale)}>
+      <a href={L("/")}>{t("crumb.home", locale)}</a>
       <span aria-hidden="true">/</span>
-      <a href="/countries">Countries</a>
+      <a href={L("/countries")}>{t("nav.countries", locale)}</a>
       <span aria-hidden="true">/</span>
-      <a href={`/countries/${country.id}`}>{country.names.en}</a>
+      <a href={L(`/countries/${country.id}`)}>{countryName}</a>
       <span aria-hidden="true">/</span>
-      <span>{program.official_names.en}</span>
+      <span>{programName}</span>
     </nav>
 
     <section class="hero">
       <p class="eyebrow">
-        {country.names.en} · {categories.map(({ names }) => names.en).join(" · ")}
+        {countryName} · {categories.map((c) => pickLocalized(c.names, locale)).join(" · ")}
       </p>
-      <h1>{program.official_names.en}</h1>
-      <p>{program.summary_md.en}</p>
+      <h1>{programName}</h1>
+      <p>{summary}</p>
       <div class="action-row">
-        <a class="btn btn-primary" href={`/compare?programs=${program.id}`}>Compare this pathway</a>
-        <a class="btn btn-ghost" href="/filter">Check your fit</a>
+        <a class="btn btn-primary" href={L(`/compare?programs=${program.id}`)}
+          >{t("program.compareThis", locale)}</a
+        >
+        <a class="btn btn-ghost" href={L("/filter")}>{t("program.checkFit", locale)}</a>
       </div>
     </section>
 
     {
-      program.status_note_md?.en && (
-        <section class="panel panel-note" aria-label="Status note">
-          <p><strong>Status note.</strong> {program.status_note_md.en}</p>
+      pickLocalized(program.status_note_md, locale) && (
+        <section class="panel panel-note" aria-label={t("program.statusNote", locale)}>
+          <p>
+            <strong>{t("program.statusNote", locale)}</strong>{" "}
+            {pickLocalized(program.status_note_md, locale)}
+          </p>
         </section>
       )
     }
@@ -68,18 +80,20 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="fit-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Decision fit</p>
-          <h2 id="fit-heading">Who this pathway serves</h2>
+          <p class="eyebrow">{t("program.decisionFit", locale)}</p>
+          <h2 id="fit-heading">{t("program.whoServes", locale)}</h2>
         </div>
       </div>
       <div class="card-grid two">
         <article class="card">
-          <h3 class="card-title">Good fit</h3>
-          <p class="prose">{program.good_for_md.en}</p>
+          <h3 class="card-title">{t("program.goodFit", locale)}</h3>
+          <p class="prose">{pickLocalized(program.good_for_md, locale)}</p>
         </article>
         <article class="card">
-          <h3 class="card-title">Important limits</h3>
-          <p class="prose">{program.not_good_for_md?.en ?? "No separate limit summary is recorded."}</p>
+          <h3 class="card-title">{t("program.limits", locale)}</h3>
+          <p class="prose">
+            {pickLocalized(program.not_good_for_md, locale) || t("program.noLimits", locale)}
+          </p>
         </article>
       </div>
     </section>
@@ -87,47 +101,74 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="eligibility-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Minimums</p>
-          <h2 id="eligibility-heading">Eligibility</h2>
+          <p class="eyebrow">{t("program.minimums", locale)}</p>
+          <h2 id="eligibility-heading">{t("program.eligibility", locale)}</h2>
         </div>
       </div>
       <div class="card-grid">
         <article class="card">
-          <h3 class="card-title">Age</h3>
+          <h3 class="card-title">{t("program.age", locale)}</h3>
           <p>
             {
               program.eligibility.age.max !== undefined
-                ? `Maximum modeled age: under ${program.eligibility.age.max + 1}`
-                : "No hard age floor or ceiling is modeled."
+                ? `${t("program.maxAge", locale)} ${program.eligibility.age.max + 1}`
+                : t("program.noAge", locale)
             }
           </p>
-          <p class="prose muted">{program.eligibility.age.note_md?.en}</p>
+          <p class="prose muted">{pickLocalized(program.eligibility.age.note_md, locale)}</p>
         </article>
         <article class="card">
-          <h3 class="card-title">Work experience</h3>
-          <p>Minimum: {displayValue(program.eligibility.work_experience.min_years)} years</p>
-          <p class="prose muted">{program.eligibility.work_experience.note_md?.en}</p>
+          <h3 class="card-title">{t("program.work", locale)}</h3>
+          <p>
+            {t("program.minimum", locale)}:{" "}
+            {displayValue(program.eligibility.work_experience.min_years)}{" "}
+            {t("program.years", locale)}
+          </p>
+          <p class="prose muted">
+            {pickLocalized(program.eligibility.work_experience.note_md, locale)}
+          </p>
         </article>
         <article class="card">
-          <h3 class="card-title">Language</h3>
-          <p>{program.eligibility.language[0]?.minimum_level ?? "Not stated"}</p>
-          <p class="prose muted">{program.eligibility.language[0]?.note_md?.en}</p>
+          <h3 class="card-title">{t("program.language", locale)}</h3>
+          <p>{program.eligibility.language[0]?.minimum_level ?? t("program.notStated", locale)}</p>
+          <p class="prose muted">
+            {pickLocalized(program.eligibility.language[0]?.note_md, locale)}
+          </p>
         </article>
         <article class="card">
-          <h3 class="card-title">Education</h3>
-          <p>Minimum: {displayValue(program.eligibility.education.required_level)}</p>
-          <p>Assessment: {displayValue(program.eligibility.education.credential_assessment_required)}</p>
-          <p class="prose muted">{program.eligibility.education.note_md?.en}</p>
+          <h3 class="card-title">{t("program.education", locale)}</h3>
+          <p>
+            {t("program.minimum", locale)}:{" "}
+            {displayValue(program.eligibility.education.required_level)}
+          </p>
+          <p>
+            {t("program.assessment", locale)}:{" "}
+            {displayValue(program.eligibility.education.credential_assessment_required)}
+          </p>
+          <p class="prose muted">
+            {pickLocalized(program.eligibility.education.note_md, locale)}
+          </p>
         </article>
         <article class="card">
-          <h3 class="card-title">Selection threshold</h3>
-          <p>Points: {displayValue(program.eligibility.points_threshold)}</p>
-          <p>Competition: {displayValue(program.eligibility.invitation_competition_level)}</p>
+          <h3 class="card-title">{t("program.selection", locale)}</h3>
+          <p>
+            {t("program.points", locale)}: {displayValue(program.eligibility.points_threshold)}
+          </p>
+          <p>
+            {t("program.competition", locale)}:{" "}
+            {displayValue(program.eligibility.invitation_competition_level)}
+          </p>
         </article>
         <article class="card">
-          <h3 class="card-title">Health and character</h3>
-          <p>Health check: {displayValue(program.eligibility.health_check_required)}</p>
-          <p>Police certificate: {displayValue(program.eligibility.police_certificate_required)}</p>
+          <h3 class="card-title">{t("program.health", locale)}</h3>
+          <p>
+            {t("program.healthCheck", locale)}:{" "}
+            {displayValue(program.eligibility.health_check_required)}
+          </p>
+          <p>
+            {t("program.police", locale)}:{" "}
+            {displayValue(program.eligibility.police_certificate_required)}
+          </p>
         </article>
       </div>
     </section>
@@ -135,21 +176,21 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="funds-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Costs</p>
-          <h2 id="funds-heading">Funds and fees</h2>
+          <p class="eyebrow">{t("program.costs", locale)}</p>
+          <h2 id="funds-heading">{t("program.fundsFees", locale)}</h2>
         </div>
       </div>
       <div class="card-grid two">
         <article class="card">
-          <h3 class="card-title">Settlement funds</h3>
+          <h3 class="card-title">{t("program.settlement", locale)}</h3>
           {
             hasFundsTable ? (
               <div class="table-wrap">
                 <table class="table">
                   <thead>
                     <tr>
-                      <th>Family size</th>
-                      <th>Minimum funds</th>
+                      <th>{t("program.familySize", locale)}</th>
+                      <th>{t("program.minFunds", locale)}</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -157,7 +198,7 @@ const applicationFees = program.funds.application_fees ?? [];
                       <tr>
                         <td>
                           {requirement.calculation === "increment_per_additional_member"
-                            ? `Each member after ${requirement.family_size_above}`
+                            ? `${t("program.eachMemberAfter", locale)} ${requirement.family_size_above}`
                             : requirement.family_size}
                         </td>
                         <td>
@@ -169,25 +210,27 @@ const applicationFees = program.funds.application_fees ?? [];
                 </table>
               </div>
             ) : (
-              <p class="prose">No settlement-fund table is published.</p>
+              <p class="prose">{t("program.noFunds", locale)}</p>
             )
           }
-          <p class="prose muted">{program.funds.exemption_note_md?.en}</p>
+          <p class="prose muted">{pickLocalized(program.funds.exemption_note_md, locale)}</p>
         </article>
         <article class="card">
-          <h3 class="card-title">Application fees</h3>
+          <h3 class="card-title">{t("program.fees", locale)}</h3>
           {
             applicationFees.length ? (
               <ul class="detail-list">
                 {applicationFees.map((fee) => (
                   <li>
-                    <strong>{displayValue(fee.amount)} {fee.currency}</strong>
-                    <span>{fee.label?.en ?? fee.applies_to}</span>
+                    <strong>
+                      {displayValue(fee.amount)} {fee.currency}
+                    </strong>
+                    <span>{pickLocalized(fee.label, locale) || fee.applies_to}</span>
                   </li>
                 ))}
               </ul>
             ) : (
-              <p class="prose">No fee table is published.</p>
+              <p class="prose">{t("program.noFees", locale)}</p>
             )
           }
         </article>
@@ -197,29 +240,43 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="outcome-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Outcomes</p>
-          <h2 id="outcome-heading">Residence, work, and family</h2>
+          <p class="eyebrow">{t("program.outcomes", locale)}</p>
+          <h2 id="outcome-heading">{t("program.residenceWorkFamily", locale)}</h2>
         </div>
       </div>
       <div class="card-grid">
         <article class="card">
-          <h3 class="card-title">Permanent residence</h3>
-          <p class="prose">{program.pr_pathway.summary_md?.en}</p>
-          <p>Work: {displayValue(program.rights.work_allowed)} · Study: {displayValue(program.rights.study_allowed)}</p>
+          <h3 class="card-title">{t("program.pr", locale)}</h3>
+          <p class="prose">{pickLocalized(program.pr_pathway.summary_md, locale)}</p>
+          <p>
+            {t("program.workLabel", locale)}: {displayValue(program.rights.work_allowed)} ·{" "}
+            {t("program.studyLabel", locale)}: {displayValue(program.rights.study_allowed)}
+          </p>
         </article>
         <article class="card">
-          <h3 class="card-title">Family</h3>
-          <p class="prose">{program.family.note_md?.en}</p>
-          <p>Partner: {displayValue(program.family.spouse_or_partner_allowed)} · Children: {displayValue(program.family.children_allowed)}</p>
+          <h3 class="card-title">{t("program.family", locale)}</h3>
+          <p class="prose">{pickLocalized(program.family.note_md, locale)}</p>
+          <p>
+            {t("program.partner", locale)}:{" "}
+            {displayValue(program.family.spouse_or_partner_allowed)} ·{" "}
+            {t("program.children", locale)}: {displayValue(program.family.children_allowed)}
+          </p>
         </article>
         <article class="card">
-          <h3 class="card-title">Citizenship</h3>
-          <p class="prose">{program.citizenship_pathway.summary_md?.en}</p>
+          <h3 class="card-title">{t("program.citizenship", locale)}</h3>
+          <p class="prose">{pickLocalized(program.citizenship_pathway.summary_md, locale)}</p>
         </article>
         <article class="card">
-          <h3 class="card-title">Processing time</h3>
-          <p class="prose">{program.timeline.application_processing_time_md?.en}</p>
-          <p>Modeled: {displayValue(program.timeline.processing_time_months_min)}–{displayValue(program.timeline.processing_time_months_max)} months</p>
+          <h3 class="card-title">{t("program.processing", locale)}</h3>
+          <p class="prose">
+            {pickLocalized(program.timeline.application_processing_time_md, locale)}
+          </p>
+          <p>
+            {t("program.modeled", locale)}:{" "}
+            {displayValue(program.timeline.processing_time_months_min)}–
+            {displayValue(program.timeline.processing_time_months_max)}{" "}
+            {t("program.months", locale)}
+          </p>
         </article>
       </div>
     </section>
@@ -227,8 +284,8 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="sources-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Sources</p>
-          <h2 id="sources-heading">Official sources</h2>
+          <p class="eyebrow">{t("program.sources", locale)}</p>
+          <h2 id="sources-heading">{t("program.officialSources", locale)}</h2>
         </div>
       </div>
       <div class="card-grid">
@@ -238,7 +295,9 @@ const applicationFees = program.funds.application_fees ?? [];
               <p class="card-meta">{source.publisher}</p>
               <h3 class="card-title">{source.title}</h3>
               <div class="card-footer">
-                <span class="card-tag">Checked {source.last_checked_at?.slice(0, 10)}</span>
+                <span class="card-tag">
+                  {t("program.checked", locale)} {source.last_checked_at?.slice(0, 10)}
+                </span>
               </div>
             </a>
           ))
@@ -249,8 +308,8 @@ const applicationFees = program.funds.application_fees ?? [];
     <section class="section" aria-labelledby="evidence-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Citations</p>
-          <h2 id="evidence-heading">Field provenance</h2>
+          <p class="eyebrow">{t("program.citations", locale)}</p>
+          <h2 id="evidence-heading">{t("program.provenance", locale)}</h2>
         </div>
       </div>
       <div class="card-grid">
@@ -274,10 +333,11 @@ const applicationFees = program.funds.application_fees ?? [];
       </div>
     </section>
 
-    <section class="panel" aria-label="Informational disclaimer">
+    <section class="panel" aria-label={t("program.disclaimerTitle", locale)}>
       <p>
-        <strong>Information only, not legal advice.</strong> Rules, fees, and processing times change.
-        Verify the linked official pages before acting.
+        <strong>{t("program.disclaimerTitle", locale)}</strong>
+        {" "}
+        {t("program.disclaimerBody", locale)}
       </p>
     </section>
   </main>

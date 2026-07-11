@@ -5,11 +5,17 @@
       "iso2": "AU",
       "iso3": "AUS",
       "names": {
-        "en": "Australia"
+        "en": "Australia",
+        "zh-Hans": "澳大利亚"
       },
       "region": "Oceania",
       "summary_md": {
-        "en": "Australia offers points-tested permanent skilled migration pathways through SkillSelect, including the Skilled Independent visa (subclass 189). Candidates usually submit an expression of interest, meet a points threshold, and wait for an invitation before applying."
+        "en": "Australia offers points-tested permanent skilled migration pathways through SkillSelect, including the Skilled Independent visa (subclass 189). Candidates usually submit an expression of interest, meet a points threshold, and wait for an invitation before applying.",
+        "zh-Hans": "澳大利亚通过 SkillSelect 提供打分制永久技术移民路径，包括独立技术移民签证（subclass 189）。申请人通常先提交意向表达、达到分数门槛，并在受邀后再递交申请。"
+      },
+      "brand": {
+        "color": "#012169",
+        "source": "flag"
       },
       "official_source_ids": [
         "australia-home-affairs-189",
@@ -40,11 +46,17 @@
       "iso2": "CA",
       "iso3": "CAN",
       "names": {
-        "en": "Canada"
+        "en": "Canada",
+        "zh-Hans": "加拿大"
       },
       "region": "North America",
       "summary_md": {
-        "en": "Canada operates federal and provincial immigration pathways. This first verified coverage focuses on the Federal Skilled Worker Program managed through Express Entry."
+        "en": "Canada operates federal and provincial immigration pathways. This first verified coverage focuses on the Federal Skilled Worker Program managed through Express Entry.",
+        "zh-Hans": "加拿大有联邦与省级移民路径。本站首批已核验内容聚焦通过 Express Entry 管理的联邦技术工人项目（FSW）。"
+      },
+      "brand": {
+        "color": "#D52B1E",
+        "source": "flag"
       },
       "official_source_ids": [
         "canada-ircc-fsw",

@@ -1,0 +1,21 @@
+---
+import { loadCanonicalData } from "../../../lib/data";
+import { buildProgramPageModels } from "../../../lib/site-model";
+import { isLocale, nonDefaultLocales } from "../../../i18n";
+import ProgramPage from "../../programs/[program].astro";
+
+export async function getStaticPaths() {
+  const models = buildProgramPageModels(await loadCanonicalData());
+  return nonDefaultLocales.flatMap((locale) =>
+    models.map((model) => ({
+      params: { locale, program: model.program.id },
+      props: { model, locale },
+    })),
+  );
+}
+
+const { model, locale } = Astro.props;
+if (!isLocale(locale)) throw new Error(`Unsupported locale: ${locale}`);
+---
+
+<ProgramPage model={model} locale={locale} />

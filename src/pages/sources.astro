@@ -1,23 +1,31 @@
 ---
 import Layout from "../components/Layout.astro";
 import { loadCanonicalData } from "../lib/data";
+import { defaultLocale, t, type Locale } from "../i18n";
 
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
 const { sources } = await loadCanonicalData();
 ---
 
-<Layout title="Sources — World Immigrant">
+<Layout locale={locale} title={t("sources.title", locale)}>
   <main>
     <section class="hero">
-      <p class="eyebrow">Sources</p>
-      <h1>Official source registry.</h1>
-      <p>The government pages behind every pathway record, with check dates and update frequency.</p>
+      <p class="eyebrow">{t("sources.eyebrow", locale)}</p>
+      <h1>{t("sources.h1", locale)}</h1>
+      <p>{t("sources.lede", locale)}</p>
     </section>
 
     <section class="section" aria-labelledby="registry-heading">
       <div class="section-heading">
         <div>
-          <p class="eyebrow">Registry</p>
-          <h2 id="registry-heading">{sources.length} official sources</h2>
+          <p class="eyebrow">{t("sources.registry", locale)}</p>
+          <h2 id="registry-heading">
+            {sources.length} {t("sources.officialSources", locale)}
+          </h2>
         </div>
       </div>
       <div class="card-grid">
@@ -27,8 +35,13 @@ const { sources } = await loadCanonicalData();
               <p class="card-meta">{source.publisher}</p>
               <h3 class="card-title">{source.title}</h3>
               <div class="card-footer">
-                <span class="card-tag">Checked {source.last_checked_at?.slice(0, 10)}</span>
-                <span class="card-tag">Every {source.update_frequency_days} days</span>
+                <span class="card-tag">
+                  {t("sources.checked", locale)} {source.last_checked_at?.slice(0, 10)}
+                </span>
+                <span class="card-tag">
+                  {t("sources.every", locale)} {source.update_frequency_days}{" "}
+                  {t("sources.days", locale)}
+                </span>
               </div>
             </a>
           ))
@@ -36,14 +49,14 @@ const { sources } = await loadCanonicalData();
       </div>
     </section>
 
-    <section class="card-grid" aria-label="Source policy">
+    <section class="card-grid" aria-label={t("sources.registry", locale)}>
       <article class="card">
-        <h3 class="card-title">Official evidence first</h3>
-        <p class="card-description">Law and regulation text, immigration-department pages, official portals and calculators, then clearly labeled supporting sources.</p>
+        <h3 class="card-title">{t("sources.officialFirst", locale)}</h3>
+        <p class="card-description">{t("sources.officialFirstBody", locale)}</p>
       </article>
       <article class="card">
-        <h3 class="card-title">No uncited material claims</h3>
-        <p class="card-description">Active program records fail integrity validation when a material fact cannot be traced to a registered source.</p>
+        <h3 class="card-title">{t("sources.noUncited", locale)}</h3>
+        <p class="card-description">{t("sources.noUncitedBody", locale)}</p>
       </article>
     </section>
   </main>

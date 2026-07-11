@@ -84,19 +84,24 @@ World Immigrant uses a custom, lightweight i18n layer instead of a third-party i
 - **Data model**
   - Canonical facts stay locale-independent.
   - User-facing prose is stored as `LocalizedText` keyed by locale (`en`, `zh-Hans`, then `es`, `fr`, `de`, `pt`, `ja`, `ko`, etc.).
-  - UI strings live in `src/i18n/ui.ts`.
+  - Missing locale keys fall back to English via `pickLocalized`.
+  - UI chrome strings live in `src/i18n/ui.ts` and are selected with `t(key, locale)`.
 - **Routing**
-  - Each locale has its own path (`/en/countries/canada`, `/zh-Hans/countries/canada`).
-  - `en` is also served from root paths (`/countries/canada`).
-  - A locale selector island navigates between equivalent paths.
-- **Language detection**
-  - On first visit to a root path, the site reads `navigator.language`.
-  - It picks the closest supported locale and redirects to that path.
-  - Unsupported languages fall back to `en`.
+  - English is the default locale and is served from **unprefixed** root paths (`/countries/canada`).
+  - Other locales use a path prefix (`/zh-Hans/countries/canada`).
+  - Prefixed routes are generated under `src/pages/[locale]/…` for every non-default locale.
+  - `withLocale(path, locale)` builds equivalent links; `stripLocalePrefix` / `localeFromPath` parse them.
+  - A header **language switcher** links to the same bare path in every supported locale and sets `localStorage["wi-locale"]` when the user chooses.
+  - Pages emit `rel="alternate" hreflang` tags for each locale plus `x-default` → English.
+- **Language preference**
+  - Explicit user choice always wins: the switcher writes `wi-locale`, and later visits redirect to that locale’s equivalent path when the stored locale differs from the current page.
+  - On first visit to `/` only, if there is no stored preference and `navigator.language` matches a supported non-English locale (generic `zh*` → `zh-Hans`; Traditional Chinese regions are not auto-mapped), the site stores the preference and redirects once.
+  - Unsupported browser languages stay on English until the user switches.
 - **Rules**
   - Never translate source URLs or official program names unless an official localized name exists.
   - Filter/compare/eligibility logic always uses canonical fields.
   - Hermes translates only localized prose and inherits citations.
+  - Adding a locale means: extend `src/i18n/locales.ts`, add UI catalog strings, add localized data keys as available, and rebuild (prefixed routes come from `nonDefaultLocales`).
 
 Astro's file-based routing and static output make a third-party i18n library unnecessary.
 

@@ -3,11 +3,17 @@
   "iso2": "CA",
   "iso3": "CAN",
   "names": {
-    "en": "Canada"
+    "en": "Canada",
+    "zh-Hans": "加拿大"
   },
   "region": "North America",
   "summary_md": {
-    "en": "Canada operates federal and provincial immigration pathways. This first verified coverage focuses on the Federal Skilled Worker Program managed through Express Entry."
+    "en": "Canada operates federal and provincial immigration pathways. This first verified coverage focuses on the Federal Skilled Worker Program managed through Express Entry.",
+    "zh-Hans": "加拿大有联邦与省级移民路径。本站首批已核验内容聚焦通过 Express Entry 管理的联邦技术工人项目（FSW）。"
+  },
+  "brand": {
+    "color": "#D52B1E",
+    "source": "flag"
   },
   "official_source_ids": [
     "canada-ircc-fsw",

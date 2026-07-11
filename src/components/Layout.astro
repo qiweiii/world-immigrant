@@ -1,23 +1,44 @@
 ---
 import "../styles/global.css";
+import LanguageSwitcher from "./LanguageSwitcher.astro";
+import {
+  defaultLocale,
+  localeHtmlLang,
+  type Locale,
+  t,
+  withLocale,
+  alternateLocalePaths,
+  LOCALE_STORAGE_KEY,
+} from "../i18n";
 
 interface Props {
   title?: string;
   description?: string;
+  locale?: Locale;
 }
 
 const {
   title = "World Immigrant",
   description = "Source-cited global immigration pathway comparison.",
+  locale = defaultLocale,
 } = Astro.props;
 
 const siteUrl = Astro.site ?? new URL("https://world-immigrant.com");
-const canonicalUrl = new URL(Astro.url.pathname, siteUrl).href;
+const pathname = Astro.url.pathname;
+const canonicalUrl = new URL(pathname, siteUrl).href;
 const socialImageUrl = new URL("/og.png", siteUrl).href;
+const alternates = alternateLocalePaths(pathname);
+const homeHref = withLocale("/", locale);
+const countriesHref = withLocale("/countries", locale);
+const categoriesHref = withLocale("/categories", locale);
+const compareHref = withLocale("/compare", locale);
+const filterHref = withLocale("/filter", locale);
+const sourcesHref = withLocale("/sources", locale);
+const htmlLang = localeHtmlLang[locale];
 ---
 
 <!doctype html>
-<html lang="en" data-theme="light">
+<html lang={htmlLang} data-theme="light" data-locale={locale}>
   <head>
     <meta charset="UTF-8" />
     <meta name="description" content={description} />
@@ -27,8 +48,15 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
     <link rel="apple-touch-icon" href="/favicon.png?v=2" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="canonical" href={canonicalUrl} />
+    {
+      Object.entries(alternates).map(([hreflang, href]) => (
+        <link rel="alternate" hreflang={hreflang} href={new URL(href, siteUrl).href} />
+      ))
+    }
+    <link rel="alternate" hreflang="x-default" href={new URL(alternates.en, siteUrl).href} />
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="World Immigrant" />
+    <meta property="og:locale" content={htmlLang.replace("-", "_")} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:url" content={canonicalUrl} />
@@ -41,33 +69,60 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
     <meta name="twitter:description" content={description} />
     <meta name="twitter:image" content={socialImageUrl} />
     <title>{title}</title>
-    <script is:inline>
-      const saved = localStorage.getItem("theme");
-      if (saved) document.documentElement.dataset.theme = saved;
+    <script is:inline define:vars={{ storageKey: LOCALE_STORAGE_KEY, pageLocale: locale, alternates }}>
+      const savedTheme = localStorage.getItem("theme");
+      if (savedTheme) document.documentElement.dataset.theme = savedTheme;
       else if (window.matchMedia("(prefers-color-scheme: dark)").matches)
         document.documentElement.dataset.theme = "dark";
+
+      // Respect an explicit user language choice across visits.
+      try {
+        const savedLocale = localStorage.getItem(storageKey);
+        const path = window.location.pathname;
+        const search = window.location.search;
+        if (savedLocale && savedLocale !== pageLocale && alternates[savedLocale]) {
+          window.location.replace(alternates[savedLocale] + search);
+        } else if (!savedLocale && path === "/") {
+          const browser = navigator.language || (navigator.languages && navigator.languages[0]) || "";
+          const lower = String(browser).toLowerCase();
+          let matched = null;
+          if (lower === "zh-hans" || lower === "zh-cn" || lower === "zh-sg" || lower === "zh" || lower.startsWith("zh-")) {
+            // Prefer Hans for generic zh; Hant regions stay on English until explicit switch.
+            if (!(lower === "zh-hant" || lower === "zh-tw" || lower === "zh-hk" || lower === "zh-mo")) {
+              matched = "zh-Hans";
+            }
+          }
+          if (matched && alternates[matched] && matched !== pageLocale) {
+            localStorage.setItem(storageKey, matched);
+            window.location.replace(alternates[matched] + search);
+          }
+        }
+      } catch {
+        /* ignore private-mode storage errors */
+      }
     </script>
   </head>
   <body>
     <header class="appbar">
       <div class="appbar-inner">
-        <a class="wordmark" href="/" aria-label="World Immigrant home">
+        <a class="wordmark" href={homeHref} aria-label={t("nav.home", locale)}>
           <span class="wordmark-mark" aria-hidden="true"></span>
         </a>
-        <nav class="nav-links" aria-label="Primary">
-          <a href="/countries">Countries</a>
-          <a href="/categories">Categories</a>
-          <a href="/compare">Compare</a>
-          <a href="/filter">Filter</a>
-          <a href="/sources">Sources</a>
+        <nav class="nav-links" aria-label={t("nav.primary", locale)}>
+          <a href={countriesHref}>{t("nav.countries", locale)}</a>
+          <a href={categoriesHref}>{t("nav.categories", locale)}</a>
+          <a href={compareHref}>{t("nav.compare", locale)}</a>
+          <a href={filterHref}>{t("nav.filter", locale)}</a>
+          <a href={sourcesHref}>{t("nav.sources", locale)}</a>
         </nav>
         <div class="appbar-actions">
+          <LanguageSwitcher locale={locale} pathname={pathname} />
           <a
             class="nav-icon"
             href="https://github.com/qiweiii/world-immigrant"
             target="_blank"
             rel="noopener"
-            aria-label="GitHub"
+            aria-label={t("nav.github", locale)}
           >
             <img
               class="icon"
@@ -78,7 +133,7 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
               style="width:18px;height:18px;"
             />
           </a>
-          <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+          <button class="theme-toggle" id="theme-toggle" aria-label={t("nav.theme", locale)}>
             <svg
               id="icon-sun"
               width="16"
@@ -120,19 +175,24 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
           </button>
         </div>
         <details class="mobile-nav">
-          <summary aria-label="Open navigation">
+          <summary aria-label={t("nav.open", locale)}>
             <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16" /></svg>
           </summary>
-          <nav aria-label="Mobile primary navigation">
-            <a href="/countries">Countries</a>
-            <a href="/categories">Categories</a>
-            <a href="/compare">Compare pathways</a>
-            <a href="/filter">Check fit</a>
-            <a href="/sources">Source registry</a>
+          <nav aria-label={t("nav.mobile", locale)}>
+            <a href={countriesHref}>{t("nav.countries", locale)}</a>
+            <a href={categoriesHref}>{t("nav.categories", locale)}</a>
+            <a href={compareHref}>{t("nav.compare", locale)}</a>
+            <a href={filterHref}>{t("nav.filter", locale)}</a>
+            <a href={sourcesHref}>{t("nav.sources", locale)}</a>
             <div class="mobile-nav-divider"></div>
-            <a href="https://github.com/qiweiii/world-immigrant" target="_blank" rel="noopener">GitHub</a>
-            <button class="mobile-nav-theme" id="mobile-theme-toggle" aria-label="Toggle theme">
-              <span id="mobile-theme-label">Dark mode</span>
+            <div class="mobile-locale">
+              <LanguageSwitcher locale={locale} pathname={pathname} />
+            </div>
+            <a href="https://github.com/qiweiii/world-immigrant" target="_blank" rel="noopener"
+              >{t("nav.github", locale)}</a
+            >
+            <button class="mobile-nav-theme" id="mobile-theme-toggle" aria-label={t("nav.theme", locale)}>
+              <span id="mobile-theme-label">{t("nav.theme.dark", locale)}</span>
             </button>
           </nav>
         </details>
@@ -146,41 +206,41 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
       <div class="footer-inner">
         <div class="footer-grid">
           <div class="footer-col">
-            <a class="wordmark wordmark-footer" href="/" aria-label="World Immigrant home">
+            <a class="wordmark wordmark-footer" href={homeHref} aria-label={t("nav.home", locale)}>
               <span class="wordmark-mark" aria-hidden="true"></span>
             </a>
-            <p>
-              Source-cited immigration pathway information. Local-first filtering. Not legal advice.
-            </p>
+            <p>{t("footer.tagline", locale)}</p>
           </div>
           <div class="footer-col">
-            <h4>Browse</h4>
+            <h4>{t("footer.browse", locale)}</h4>
             <ul>
-              <li><a href="/countries">Countries</a></li>
-              <li><a href="/categories">Categories</a></li>
-              <li><a href="/compare">Compare</a></li>
-              <li><a href="/filter">Filter</a></li>
+              <li><a href={countriesHref}>{t("nav.countries", locale)}</a></li>
+              <li><a href={categoriesHref}>{t("nav.categories", locale)}</a></li>
+              <li><a href={compareHref}>{t("footer.compare", locale)}</a></li>
+              <li><a href={filterHref}>{t("footer.filter", locale)}</a></li>
             </ul>
           </div>
           <div class="footer-col">
-            <h4>Trust</h4>
+            <h4>{t("footer.trust", locale)}</h4>
             <ul>
-              <li><a href="/sources">Source registry</a></li>
-              <li><a href="https://github.com/qiweiii/world-immigrant">GitHub</a></li>
+              <li><a href={sourcesHref}>{t("footer.sources", locale)}</a></li>
               <li>
-                <a href="https://github.com/qiweiii/world-immigrant/issues">Report a mismatch</a>
+                <a href="https://github.com/qiweiii/world-immigrant">{t("nav.github", locale)}</a>
+              </li>
+              <li>
+                <a href="https://github.com/qiweiii/world-immigrant/issues">{t("footer.report", locale)}</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
-          <span>MIT License. Verify official sources before acting.</span>
+          <span>{t("footer.legal", locale)}</span>
           <span style="font-family:var(--font-mono);font-size:12px;">v0.1.0</span>
         </div>
       </div>
     </footer>
 
-    <script>
+    <script define:vars={{ darkLabel: t("nav.theme.dark", locale), lightLabel: t("nav.theme.light", locale) }}>
       const toggle = document.getElementById("theme-toggle");
       const sun = document.getElementById("icon-sun");
       const moon = document.getElementById("icon-moon");
@@ -195,7 +255,7 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
         const dark = isDark();
         if (sun) sun.style.display = dark ? "" : "none";
         if (moon) moon.style.display = dark ? "none" : "";
-        if (mobileLabel) mobileLabel.textContent = dark ? "Light mode" : "Dark mode";
+        if (mobileLabel) mobileLabel.textContent = dark ? lightLabel : darkLabel;
       }
 
       function switchTheme() {
@@ -225,7 +285,6 @@ const socialImageUrl = new URL("/og.png", siteUrl).href;
         [...grid.children].forEach((c, i) => c.style.setProperty("--si", String(i)));
       });
 
-      // Close mobile nav after clicking a link
       document.querySelectorAll(".mobile-nav nav a").forEach((a) => {
         a.addEventListener("click", () => {
           document.querySelector(".mobile-nav")?.removeAttribute("open");

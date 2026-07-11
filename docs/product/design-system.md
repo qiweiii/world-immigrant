@@ -52,3 +52,21 @@ Key colors:
 - Accent: `#2563eb` (light), `#8fb8ff` (dark)
 
 Typography: Outfit for UI, JetBrains Mono for code and metadata.
+
+## Country brand colors
+
+Each country record carries a decorative brand accent in `brand.color` (hex) and `brand.source` (`flag` | `official_site` | `hybrid`). See `docs/architecture/data-model.md`.
+
+UI usage:
+
+- Set `--country-color` on the country card, hero, or list row from canonical data.
+- Render a small `.country-swatch` or a thin bar using that variable.
+- Keep brand color decorative (markers, top borders, side accents). Do not use it for primary body text or as the sole focus indicator.
+- Site chrome (nav, primary buttons, links) continues to use the global accent tokens above, not country colors.
+
+Current seed values:
+
+| Country | Color | Source |
+| --- | --- | --- |
+| Canada | `#D52B1E` | Flag (maple-leaf red) |
+| Australia | `#012169` | Flag (national flag blue) |

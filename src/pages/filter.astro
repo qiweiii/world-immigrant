@@ -1,14 +1,21 @@
 ---
 import Layout from "../components/Layout.astro";
 import EligibilityFilter from "../components/islands/EligibilityFilter.astro";
+import { defaultLocale, t, type Locale } from "../i18n";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
 ---
 
-<Layout title="Filter immigration options — World Immigrant">
+<Layout locale={locale} title={t("filter.title", locale)}>
   <main>
     <section class="hero">
-      <p class="eyebrow">Filter</p>
-      <h1>Check your fit.</h1>
-      <p>Enter your details to see which pathways match. Your profile stays in your browser.</p>
+      <p class="eyebrow">{t("filter.eyebrow", locale)}</p>
+      <h1>{t("filter.h1", locale)}</h1>
+      <p>{t("filter.lede", locale)}</p>
     </section>
     <EligibilityFilter />
   </main>

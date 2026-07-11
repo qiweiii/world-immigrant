@@ -2,7 +2,13 @@
 import Layout from "../components/Layout.astro";
 import { loadCanonicalData } from "../lib/data";
 import { buildCountryPageModels } from "../lib/site-model";
+import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../i18n";
 
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
 const dataset = await loadCanonicalData();
 const { programs, countries, sources } = dataset;
 const countryModels = buildCountryPageModels(dataset);
@@ -10,42 +16,55 @@ const programCards = programs.map((program) => {
   const country = countries.find((item) => item.id === program.country_id);
   return { program, country };
 });
-const compareHref =
+const bareCompare =
   programs.length > 1 ? `/compare?programs=${programs.map(({ id }) => id).join(",")}` : "/compare";
+const compareHref = withLocale(bareCompare, locale);
 const shorten = (value: string, maxLength: number) => {
   if (value.length <= maxLength) return value;
   return `${value.slice(0, maxLength).replace(/\s+\S*$/, "")}…`;
 };
+const L = (path: string) => withLocale(path, locale);
 ---
 
-<Layout
-  title="World Immigrant — source-cited immigration pathways"
-  description="Compare immigration pathways with official sources, current coverage, and a private local fit check."
->
+<Layout locale={locale} title={t("home.title", locale)} description={t("home.description", locale)}>
   <main>
     <section class="landing-hero" aria-labelledby="home-title">
       <div class="landing-hero-copy">
         <p class="eyebrow">World Immigrant</p>
-        <h1 id="home-title">Find a route you can verify.</h1>
-        <p class="landing-lede">
-          Immigration pathways with official sources, comparison tools, and a private fit check.
-        </p>
+        <h1 id="home-title">{t("home.h1", locale)}</h1>
+        <p class="landing-lede">{t("home.lede", locale)}</p>
         <div class="action-row">
-          <a class="btn btn-primary" href="#pathways">View pathways</a>
-          <a class="text-action" href={compareHref}>Compare →</a>
+          <a class="btn btn-primary" href="#pathways">{t("home.viewPathways", locale)}</a>
+          <a class="text-action" href={compareHref}>{t("home.compareArrow", locale)}</a>
         </div>
       </div>
 
-      <aside class="coverage-panel" aria-label="Current coverage">
-        <p class="eyebrow">Coverage</p>
-        <p class="coverage-total"><strong>{programs.length}</strong> pathways</p>
+      <aside class="coverage-panel" aria-label={t("home.coverage", locale)}>
+        <p class="eyebrow">{t("home.coverage", locale)}</p>
+        <p class="coverage-total">
+          <strong>{programs.length}</strong>
+          {" "}
+          {programs.length === 1 ? t("home.pathwayCount", locale) : t("home.pathwaysCount", locale)}
+        </p>
         <div class="coverage-country-list">
           {
             countryModels.map(({ country, programs: countryPrograms }) => (
-              <a class="coverage-country" href={`/countries/${country.id}`}>
-                <span>
-                  <strong>{country.names.en}</strong>
-                  <small>{countryPrograms.length} pathway{countryPrograms.length === 1 ? "" : "s"}</small>
+              <a
+                class="coverage-country"
+                href={L(`/countries/${country.id}`)}
+                style={`--country-color: ${country.brand.color}`}
+              >
+                <span class="coverage-country-main">
+                  <span class="country-swatch" aria-hidden="true"></span>
+                  <span>
+                    <strong>{pickLocalized(country.names, locale)}</strong>
+                    <small>
+                      {countryPrograms.length}{" "}
+                      {countryPrograms.length === 1
+                        ? t("home.pathwayCount", locale)
+                        : t("home.pathwaysCount", locale)}
+                    </small>
+                  </span>
                 </span>
                 <span aria-hidden="true">→</span>
               </a>
@@ -53,25 +72,31 @@ const shorten = (value: string, maxLength: number) => {
           }
         </div>
         <div class="coverage-footnote">
-          <span>{sources.length} sources</span>
-          <a href="/sources">Source registry</a>
+          <span>{sources.length} {t("home.sourcesCount", locale)}</span>
+          <a href={L("/sources")}>{t("home.sourceRegistry", locale)}</a>
         </div>
       </aside>
     </section>
 
-    <nav class="quick-actions" aria-label="Start here">
-      <a class="quick-action" href="/countries"><span>01</span> Browse destinations</a>
-      <a class="quick-action" href={compareHref}><span>02</span> Compare pathways</a>
-      <a class="quick-action" href="/filter"><span>03</span> Check your fit</a>
+    <nav class="quick-actions" aria-label={t("home.startHere", locale)}>
+      <a class="quick-action" href={L("/countries")}
+        ><span>01</span> {t("home.browseDestinations", locale)}</a
+      >
+      <a class="quick-action" href={compareHref}
+        ><span>02</span> {t("home.comparePathways", locale)}</a
+      >
+      <a class="quick-action" href={L("/filter")}
+        ><span>03</span> {t("home.checkFit", locale)}</a
+      >
     </nav>
 
     <section class="section pathway-section" id="pathways" aria-labelledby="pathways-heading">
       <div class="section-heading section-heading-wide">
         <div>
-          <p class="eyebrow">Available now</p>
-          <h2 id="pathways-heading">Pathways</h2>
+          <p class="eyebrow">{t("home.availableNow", locale)}</p>
+          <h2 id="pathways-heading">{t("home.pathways", locale)}</h2>
         </div>
-        <a class="text-action" href="/countries">All destinations →</a>
+        <a class="text-action" href={L("/countries")}>{t("home.allDestinations", locale)}</a>
       </div>
       <div class="pathway-list">
         {
@@ -79,66 +104,103 @@ const shorten = (value: string, maxLength: number) => {
             <article class="pathway-row">
               <div class="pathway-row-main">
                 <p class="card-meta">
-                  {country?.names.en ?? program.country_id} · {program.category_ids.join(" ").replaceAll("_", " ")}
+                  {country
+                    ? pickLocalized(country.names, locale)
+                    : program.country_id} · {program.category_ids.join(" ").replaceAll("_", " ")}
                 </p>
-                <h3><a href={`/programs/${program.id}`}>{program.official_names.en}</a></h3>
-                <p>{shorten(program.summary_md.en, 155)}</p>
+                <h3>
+                  <a href={L(`/programs/${program.id}`)}
+                    >{pickLocalized(program.official_names, locale)}</a
+                  >
+                </h3>
+                <p>{shorten(pickLocalized(program.summary_md, locale), 155)}</p>
               </div>
               <dl class="pathway-facts">
                 <div>
-                  <dt>Residence</dt>
-                  <dd>{program.pr_pathway.available === true ? "Direct PR" : "See pathway"}</dd>
+                  <dt>{t("home.residence", locale)}</dt>
+                  <dd>
+                    {program.pr_pathway.available === true
+                      ? t("home.directPr", locale)
+                      : t("home.seePathway", locale)}
+                  </dd>
                 </div>
                 <div>
-                  <dt>Family</dt>
-                  <dd>{program.family.spouse_or_partner_allowed === true ? "Yes" : "See rules"}</dd>
+                  <dt>{t("home.family", locale)}</dt>
+                  <dd>
+                    {program.family.spouse_or_partner_allowed === true
+                      ? t("home.yes", locale)
+                      : t("home.seeRules", locale)}
+                  </dd>
                 </div>
                 <div>
-                  <dt>Checked</dt>
+                  <dt>{t("home.checked", locale)}</dt>
                   <dd>{program.freshness.last_checked_at.slice(0, 10)}</dd>
                 </div>
               </dl>
-              <a class="pathway-row-link" href={`/programs/${program.id}`}>Read →</a>
+              <a class="pathway-row-link" href={L(`/programs/${program.id}`)}
+                >{t("home.read", locale)}</a
+              >
             </article>
           ))
         }
       </div>
       <div class="section-actions">
-        <a class="btn" href={compareHref}>Compare both</a>
-        <a class="text-action" href="/filter">Check your fit →</a>
+        <a class="btn" href={compareHref}>{t("home.compareBoth", locale)}</a>
+        <a class="text-action" href={L("/filter")}>{t("home.checkFitArrow", locale)}</a>
       </div>
     </section>
 
     <section class="coverage-section" aria-labelledby="countries-heading">
       <div class="section-heading section-heading-wide">
         <div>
-          <p class="eyebrow">Destinations</p>
-          <h2 id="countries-heading">By country</h2>
+          <p class="eyebrow">{t("home.destinations", locale)}</p>
+          <h2 id="countries-heading">{t("home.byCountry", locale)}</h2>
         </div>
       </div>
       <div class="country-list">
         {
           countryModels.map(({ country, programs: countryPrograms }) => (
-            <article class="country-row">
+            <article class="country-row" style={`--country-color: ${country.brand.color}`}>
               <div>
-                <p class="card-meta">{country.iso2} · {country.region}</p>
-                <h3><a href={`/countries/${country.id}`}>{country.names.en}</a></h3>
+                <p class="card-meta">
+                  <span class="country-swatch" aria-hidden="true"></span>
+                  {country.iso2} · {country.region}
+                </p>
+                <h3>
+                  <a href={L(`/countries/${country.id}`)}
+                    >{pickLocalized(country.names, locale)}</a
+                  >
+                </h3>
               </div>
-              <p>{shorten(country.summary_md.en, 140)}</p>
+              <p>{shorten(pickLocalized(country.summary_md, locale), 140)}</p>
               <div class="country-row-meta">
-                <span>{countryPrograms.length} pathway{countryPrograms.length === 1 ? "" : "s"}</span>
-                <span>checked {country.freshness.last_checked_at.slice(0, 10)}</span>
+                <span>
+                  {countryPrograms.length}{" "}
+                  {countryPrograms.length === 1
+                    ? t("home.pathwayCount", locale)
+                    : t("home.pathwaysCount", locale)}
+                </span>
+                <span
+                  >{t("home.checkedLabel", locale)}{" "}
+                  {country.freshness.last_checked_at.slice(0, 10)}</span
+                >
               </div>
-              <a class="text-action" href={`/countries/${country.id}`}>Open →</a>
+              <a class="text-action" href={L(`/countries/${country.id}`)}
+                >{t("home.open", locale)}</a
+              >
             </article>
           ))
         }
       </div>
     </section>
 
-    <section class="source-note" aria-label="Source guidance">
-      <p><strong>Policy changes.</strong> Every record carries a check date and source trail.</p>
-      <a class="text-action" href="/sources">Inspect sources →</a>
+    <section class="source-note" aria-label={t("home.sourceRegistry", locale)}>
+      <p>
+        <strong>{t("home.policyChanges", locale)}</strong>
+        {" "}
+        {t("home.policyBody", locale)}
+      </p>
+      <a class="text-action" href={L("/sources")}>{t("home.inspectSources", locale)}</a>
     </section>
   </main>
 </Layout>

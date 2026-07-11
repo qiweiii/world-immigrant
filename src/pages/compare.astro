@@ -1,14 +1,21 @@
 ---
 import Layout from "../components/Layout.astro";
 import CompareBuilder from "../components/islands/CompareBuilder.astro";
+import { defaultLocale, t, type Locale } from "../i18n";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
 ---
 
-<Layout title="Compare immigration pathways — World Immigrant">
+<Layout locale={locale} title={t("compare.title", locale)}>
   <main>
     <section class="hero">
-      <p class="eyebrow">Compare</p>
-      <h1>Compare pathways side by side.</h1>
-      <p>Compare up to three programs on residence, funds, family rules, and more.</p>
+      <p class="eyebrow">{t("compare.eyebrow", locale)}</p>
+      <h1>{t("compare.h1", locale)}</h1>
+      <p>{t("compare.lede", locale)}</p>
     </section>
     <CompareBuilder />
   </main>

@@ -1,0 +1,49 @@
+---
+import {
+  localeLabels,
+  locales,
+  type Locale,
+  withLocale,
+  stripLocalePrefix,
+  LOCALE_STORAGE_KEY,
+  t,
+} from "../i18n";
+
+interface Props {
+  locale: Locale;
+  pathname: string;
+}
+
+const { locale, pathname } = Astro.props;
+const barePath = stripLocalePrefix(pathname);
+---
+
+<nav class="locale-switcher" aria-label={t("nav.language", locale)}>
+  {
+    locales.map((item) => {
+      const href = withLocale(barePath, item);
+      const active = item === locale;
+      return (
+        <a
+          class:list={["locale-option", { active }]}
+          href={href}
+          hreflang={item}
+          aria-current={active ? "page" : undefined}
+          data-locale-switch={item}
+          title={localeLabels[item].english}
+        >
+          {localeLabels[item].native}
+        </a>
+      );
+    })
+  }
+</nav>
+
+<script define:vars={{ storageKey: LOCALE_STORAGE_KEY }}>
+  document.querySelectorAll("[data-locale-switch]").forEach((node) => {
+    node.addEventListener("click", () => {
+      const value = node.getAttribute("data-locale-switch");
+      if (value) localStorage.setItem(storageKey, value);
+    });
+  });
+</script>
