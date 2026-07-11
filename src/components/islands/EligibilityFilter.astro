@@ -23,6 +23,7 @@ const { locale = defaultLocale } = Astro.props as Props;
           name="goal"
           label={t("filter.goal", locale)}
           options={[
+            { value: "temporary_stay", label: t("filter.goal.temporary", locale) },
             { value: "permanent_residence", label: t("filter.goal.pr", locale), selected: true },
             { value: "citizenship", label: t("filter.goal.citizenship", locale) },
           ]}
@@ -31,10 +32,6 @@ const { locale = defaultLocale } = Astro.props as Props;
       <div class="field">
         <label class="field-label" for="work-years">{t("filter.workYears", locale)}</label>
         <input class="input" id="work-years" name="skilled_work_years" value="3" inputmode="decimal" />
-      </div>
-      <div class="field">
-        <label class="field-label" for="language-benchmark">{t("filter.languageBenchmark", locale)}</label>
-        <input class="input" id="language-benchmark" name="language_benchmark" value="8" inputmode="numeric" />
       </div>
       <div class="field">
         <CustomDropdown
@@ -53,15 +50,11 @@ const { locale = defaultLocale } = Astro.props as Props;
       </div>
       <div class="field">
         <label class="field-label" for="program-points">{t("filter.programPoints", locale)}</label>
-        <input class="input" id="program-points" name="program_selection_points" value="72" inputmode="numeric" />
+        <input class="input" id="program-points" name="program_selection_points" value="" inputmode="numeric" />
       </div>
       <div class="field">
         <label class="field-label" for="family-size">{t("filter.familySize", locale)}</label>
         <input class="input" id="family-size" name="family_size" value="1" inputmode="numeric" />
-      </div>
-      <div class="field">
-        <label class="field-label" for="funds">{t("filter.fundsCad", locale)}</label>
-        <input class="input" id="funds" name="liquid_funds" value="20000" inputmode="decimal" />
       </div>
     </div>
 
@@ -69,20 +62,16 @@ const { locale = defaultLocale } = Astro.props as Props;
       <legend class="field-label">{t("filter.additionalFacts", locale)}</legend>
       <div class="filter-flag-list">
         <label class="filter-flag">
-          <input type="checkbox" name="has_approved_language_test" checked />
+          <input type="checkbox" name="has_approved_language_test" />
           <span>{t("filter.approvedLanguage", locale)}</span>
         </label>
         <label class="filter-flag">
-          <input type="checkbox" name="foreign_education" checked />
+          <input type="checkbox" name="foreign_education" />
           <span>{t("filter.foreignEducation", locale)}</span>
         </label>
         <label class="filter-flag">
-          <input type="checkbox" name="has_eca" checked />
-          <span>{t("filter.validEca", locale)}</span>
-        </label>
-        <label class="filter-flag">
           <input type="checkbox" name="authorized_to_work_in_country" />
-          <span>{t("filter.authorizedCanada", locale)}</span>
+          <span>{t("filter.authorizedWork", locale)}</span>
         </label>
         <label class="filter-flag">
           <input type="checkbox" name="valid_job_offer" />
@@ -128,18 +117,14 @@ const { locale = defaultLocale } = Astro.props as Props;
   function profileFromForm(): UserProfile | undefined {
     if (!form) return undefined;
     const data = new FormData(form);
-    const funds = optionalNumber(data, "liquid_funds");
     return {
       goal: String(data.get("goal")) as UserProfile["goal"],
       skilled_work_years: optionalNumber(data, "skilled_work_years"),
       has_approved_language_test: data.has("has_approved_language_test"),
-      language_benchmark: optionalNumber(data, "language_benchmark"),
       education_level: String(data.get("education_level")) as UserProfile["education_level"],
       foreign_education: data.has("foreign_education"),
-      has_eca: data.has("has_eca"),
       program_selection_points: optionalNumber(data, "program_selection_points"),
       family_size: optionalNumber(data, "family_size"),
-      liquid_funds: funds === undefined ? undefined : { amount: funds, currency: "CAD" },
       authorized_to_work_in_country: data.has("authorized_to_work_in_country"),
       valid_job_offer: data.has("valid_job_offer"),
     };
@@ -156,112 +141,132 @@ const { locale = defaultLocale } = Astro.props as Props;
         : tf("filter.ranked", locale, { count: results.length });
     resultsRoot.replaceChildren();
 
+    const groups = new Map<string, { countryName: string; results: typeof results }>();
     for (const result of results) {
       const program = programs.find(({ program_id }) => program_id === result.program_id);
       if (!program) continue;
+      const countryName = pickLocalized(program.country_names, locale);
+      const group = groups.get(program.country_id) ?? { countryName, results: [] };
+      group.results.push(result);
+      groups.set(program.country_id, group);
+    }
 
-      const article = document.createElement("article");
-      article.className = `filter-result filter-result--${result.status}`;
+    for (const group of groups.values()) {
+      const countrySection = document.createElement("section");
+      countrySection.className = "filter-country-group";
+      const countryHeading = document.createElement("h3");
+      countryHeading.className = "filter-country-heading";
+      countryHeading.textContent = group.countryName;
+      countrySection.append(countryHeading);
 
-      const header = document.createElement("div");
-      header.className = "filter-result-header";
+      for (const result of group.results) {
+        const program = programs.find(({ program_id }) => program_id === result.program_id);
+        if (!program) continue;
 
-      const badge = document.createElement("span");
-      badge.className = `filter-result-badge filter-result-badge--${result.status}`;
-      badge.textContent = statusLabels[result.status];
+        const article = document.createElement("article");
+        article.className = `filter-result filter-result--${result.status}`;
 
-      const heading = document.createElement("h3");
-      const link = document.createElement("a");
-      link.href = withLocale(`/programs/${result.program_id}`, locale);
-      link.textContent = pickLocalized(program.official_names, locale);
-      heading.append(link);
+        const header = document.createElement("div");
+        header.className = "filter-result-header";
 
-      header.append(badge, heading);
+        const badge = document.createElement("span");
+        badge.className = `filter-result-badge filter-result-badge--${result.status}`;
+        badge.textContent = statusLabels[result.status];
 
-      const positives = result.reasons.filter((reason) => reason.severity === "positive");
-      const others = result.reasons.filter((reason) => reason.severity !== "positive");
+        const heading = document.createElement("h3");
+        const link = document.createElement("a");
+        link.href = withLocale(`/programs/${result.program_id}`, locale);
+        link.textContent = `${pickLocalized(program.official_names, locale)} · ${group.countryName}`;
+        heading.append(link);
 
-      const body = document.createElement("div");
-      body.className = "filter-result-body";
+        header.append(badge, heading);
 
-      if (positives.length) {
-        const posBlock = document.createElement("div");
-        posBlock.className = "filter-reason-group filter-reason-group--positive";
-        const posTitle = document.createElement("p");
-        posTitle.className = "filter-reason-heading";
-        posTitle.textContent = t("filter.supporting", locale);
-        posBlock.append(posTitle);
-        const posList = document.createElement("ul");
-        for (const reason of positives) {
-          const item = document.createElement("li");
-          item.className = "filter-reason filter-reason--positive";
-          const msg = document.createElement("span");
-          msg.textContent = reason.message;
-          item.append(msg);
-          if (reason.citations.length) {
-            const src = document.createElement("span");
-            src.className = "filter-reason-sources";
-            const links = reason.citations.map((citation) => {
-              const a = document.createElement("a");
-              a.href = citation.url;
-              a.target = "_blank";
-              a.rel = "noopener";
-              const label = citation.section || new URL(citation.url).hostname;
-              a.textContent = label;
-              return a;
-            });
-            for (let i = 0; i < links.length; i++) {
-              if (i > 0) src.append(" · ");
-              src.append(links[i]);
+        const positives = result.reasons.filter((reason) => reason.severity === "positive");
+        const others = result.reasons.filter((reason) => reason.severity !== "positive");
+
+        const body = document.createElement("div");
+        body.className = "filter-result-body";
+
+        if (positives.length) {
+          const posBlock = document.createElement("div");
+          posBlock.className = "filter-reason-group filter-reason-group--positive";
+          const posTitle = document.createElement("p");
+          posTitle.className = "filter-reason-heading";
+          posTitle.textContent = t("filter.supporting", locale);
+          posBlock.append(posTitle);
+          const posList = document.createElement("ul");
+          for (const reason of positives) {
+            const item = document.createElement("li");
+            item.className = "filter-reason filter-reason--positive";
+            const msg = document.createElement("span");
+            msg.textContent = reason.message;
+            item.append(msg);
+            if (reason.citations.length) {
+              const src = document.createElement("span");
+              src.className = "filter-reason-sources";
+              const links = reason.citations.map((citation) => {
+                const a = document.createElement("a");
+                a.href = citation.url;
+                a.target = "_blank";
+                a.rel = "noopener";
+                const label = citation.section || new URL(citation.url).hostname;
+                a.textContent = label;
+                return a;
+              });
+              for (let i = 0; i < links.length; i++) {
+                if (i > 0) src.append(" · ");
+                src.append(links[i]);
+              }
+              item.append(src);
             }
-            item.append(src);
+            posList.append(item);
           }
-          posList.append(item);
+          posBlock.append(posList);
+          body.append(posBlock);
         }
-        posBlock.append(posList);
-        body.append(posBlock);
-      }
 
-      if (others.length) {
-        const otherBlock = document.createElement("div");
-        otherBlock.className = "filter-reason-group";
-        const otherTitle = document.createElement("p");
-        otherTitle.className = "filter-reason-heading";
-        otherTitle.textContent = t("filter.caveats", locale);
-        otherBlock.append(otherTitle);
-        const otherList = document.createElement("ul");
-        for (const reason of others) {
-          const item = document.createElement("li");
-          item.className = `filter-reason filter-reason--${reason.severity}`;
-          const msg = document.createElement("span");
-          msg.textContent = reason.message;
-          item.append(msg);
-          if (reason.citations.length) {
-            const src = document.createElement("span");
-            src.className = "filter-reason-sources";
-            const links = reason.citations.map((citation) => {
-              const a = document.createElement("a");
-              a.href = citation.url;
-              a.target = "_blank";
-              a.rel = "noopener";
-              const label = citation.section || new URL(citation.url).hostname;
-              a.textContent = label;
-              return a;
-            });
-            for (let i = 0; i < links.length; i++) {
-              if (i > 0) src.append(" · ");
-              src.append(links[i]);
+        if (others.length) {
+          const otherBlock = document.createElement("div");
+          otherBlock.className = "filter-reason-group";
+          const otherTitle = document.createElement("p");
+          otherTitle.className = "filter-reason-heading";
+          otherTitle.textContent = t("filter.caveats", locale);
+          otherBlock.append(otherTitle);
+          const otherList = document.createElement("ul");
+          for (const reason of others) {
+            const item = document.createElement("li");
+            item.className = `filter-reason filter-reason--${reason.severity}`;
+            const msg = document.createElement("span");
+            msg.textContent = reason.message;
+            item.append(msg);
+            if (reason.citations.length) {
+              const src = document.createElement("span");
+              src.className = "filter-reason-sources";
+              const links = reason.citations.map((citation) => {
+                const a = document.createElement("a");
+                a.href = citation.url;
+                a.target = "_blank";
+                a.rel = "noopener";
+                const label = citation.section || new URL(citation.url).hostname;
+                a.textContent = label;
+                return a;
+              });
+              for (let i = 0; i < links.length; i++) {
+                if (i > 0) src.append(" · ");
+                src.append(links[i]);
+              }
+              item.append(src);
             }
-            item.append(src);
+            otherList.append(item);
           }
-          otherList.append(item);
+          otherBlock.append(otherList);
+          body.append(otherBlock);
         }
-        otherBlock.append(otherList);
-        body.append(otherBlock);
-      }
 
-      article.append(header, body);
-      resultsRoot.append(article);
+        article.append(header, body);
+        countrySection.append(article);
+      }
+      resultsRoot.append(countrySection);
     }
   }
 

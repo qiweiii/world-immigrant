@@ -4,6 +4,10 @@
     {
       "program_id": "australia-skilled-independent-189",
       "country_id": "australia",
+      "country_names": {
+        "en": "Australia",
+        "zh-Hans": "澳大利亚"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -218,6 +222,10 @@
     {
       "program_id": "canada-express-entry-fsw",
       "country_id": "canada",
+      "country_names": {
+        "en": "Canada",
+        "zh-Hans": "加拿大"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -536,6 +544,10 @@
     {
       "program_id": "croatia-digital-nomad",
       "country_id": "croatia",
+      "country_names": {
+        "en": "Croatia",
+        "zh-Hans": "克罗地亚"
+      },
       "category_ids": [
         "digital_nomad"
       ],
@@ -731,6 +743,10 @@
     {
       "program_id": "estonia-digital-nomad-visa",
       "country_id": "estonia",
+      "country_names": {
+        "en": "Estonia",
+        "zh-Hans": "爱沙尼亚"
+      },
       "category_ids": [
         "digital_nomad"
       ],
@@ -925,6 +941,10 @@
     {
       "program_id": "estonia-e-residency",
       "country_id": "estonia",
+      "country_names": {
+        "en": "Estonia",
+        "zh-Hans": "爱沙尼亚"
+      },
       "category_ids": [
         "startup_entrepreneur"
       ],
@@ -1109,6 +1129,10 @@
     {
       "program_id": "germany-eu-blue-card",
       "country_id": "germany",
+      "country_names": {
+        "en": "Germany",
+        "zh-Hans": "德国"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -1302,6 +1326,10 @@
     {
       "program_id": "hong-kong-top-talent-pass",
       "country_id": "hong-kong",
+      "country_names": {
+        "en": "Hong Kong",
+        "zh-Hans": "中国香港"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -1501,6 +1529,10 @@
     {
       "program_id": "japan-engineer-specialist",
       "country_id": "japan",
+      "country_names": {
+        "en": "Japan",
+        "zh-Hans": "日本"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -1685,6 +1717,10 @@
     {
       "program_id": "malaysia-de-rantau-nomad-pass",
       "country_id": "malaysia",
+      "country_names": {
+        "en": "Malaysia",
+        "zh-Hans": "马来西亚"
+      },
       "category_ids": [
         "digital_nomad"
       ],
@@ -1871,6 +1907,10 @@
     {
       "program_id": "malaysia-employment-pass",
       "country_id": "malaysia",
+      "country_names": {
+        "en": "Malaysia",
+        "zh-Hans": "马来西亚"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -2062,6 +2102,10 @@
     {
       "program_id": "malaysia-student-pass",
       "country_id": "malaysia",
+      "country_names": {
+        "en": "Malaysia",
+        "zh-Hans": "马来西亚"
+      },
       "category_ids": [
         "study_to_pr"
       ],
@@ -2245,6 +2289,10 @@
     {
       "program_id": "netherlands-highly-skilled-migrant",
       "country_id": "netherlands",
+      "country_names": {
+        "en": "Netherlands",
+        "zh-Hans": "荷兰"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -2429,6 +2477,10 @@
     {
       "program_id": "netherlands-orientation-year",
       "country_id": "netherlands",
+      "country_names": {
+        "en": "Netherlands",
+        "zh-Hans": "荷兰"
+      },
       "category_ids": [
         "study_to_pr"
       ],
@@ -2613,6 +2665,10 @@
     {
       "program_id": "new-zealand-accredited-employer-work-visa",
       "country_id": "new-zealand",
+      "country_names": {
+        "en": "New Zealand",
+        "zh-Hans": "新西兰"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -2798,6 +2854,10 @@
     {
       "program_id": "new-zealand-skilled-migrant-category",
       "country_id": "new-zealand",
+      "country_names": {
+        "en": "New Zealand",
+        "zh-Hans": "新西兰"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -2983,6 +3043,10 @@
     {
       "program_id": "portugal-d8-digital-nomad",
       "country_id": "portugal",
+      "country_names": {
+        "en": "Portugal",
+        "zh-Hans": "葡萄牙"
+      },
       "category_ids": [
         "digital_nomad"
       ],
@@ -3182,6 +3246,10 @@
     {
       "program_id": "singapore-employment-pass",
       "country_id": "singapore",
+      "country_names": {
+        "en": "Singapore",
+        "zh-Hans": "新加坡"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -3380,6 +3448,10 @@
     {
       "program_id": "singapore-entrepass",
       "country_id": "singapore",
+      "country_names": {
+        "en": "Singapore",
+        "zh-Hans": "新加坡"
+      },
       "category_ids": [
         "startup_entrepreneur"
       ],
@@ -3575,6 +3647,10 @@
     {
       "program_id": "spain-digital-nomad",
       "country_id": "spain",
+      "country_names": {
+        "en": "Spain",
+        "zh-Hans": "西班牙"
+      },
       "category_ids": [
         "digital_nomad"
       ],
@@ -3761,6 +3837,10 @@
     {
       "program_id": "uae-free-zone-investor",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "startup_entrepreneur",
         "investor"
@@ -3948,6 +4028,10 @@
     {
       "program_id": "uae-golden-entrepreneur",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "startup_entrepreneur"
       ],
@@ -4135,6 +4219,10 @@
     {
       "program_id": "uae-golden-property-investor",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "investor"
       ],
@@ -4320,6 +4408,10 @@
     {
       "program_id": "uae-golden-talent",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -4504,6 +4596,10 @@
     {
       "program_id": "uae-green-freelancer",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -4701,6 +4797,10 @@
     {
       "program_id": "uae-remote-work",
       "country_id": "uae",
+      "country_names": {
+        "en": "United Arab Emirates",
+        "zh-Hans": "阿联酋"
+      },
       "category_ids": [
         "digital_nomad"
       ],
@@ -4894,6 +4994,10 @@
     {
       "program_id": "united-kingdom-skilled-worker",
       "country_id": "united-kingdom",
+      "country_names": {
+        "en": "United Kingdom",
+        "zh-Hans": "英国"
+      },
       "category_ids": [
         "skilled_worker"
       ],
@@ -5086,6 +5190,10 @@
     {
       "program_id": "united-states-h1b-specialty-occupations",
       "country_id": "united-states",
+      "country_names": {
+        "en": "United States",
+        "zh-Hans": "美国"
+      },
       "category_ids": [
         "skilled_worker"
       ],

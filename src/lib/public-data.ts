@@ -27,6 +27,7 @@ export function buildPublicData(dataset: CanonicalDataset, generatedAt = new Dat
     programs: programs.map((program) => ({
       program_id: program.id,
       country_id: program.country_id,
+      country_names: countryById.get(program.country_id)?.names ?? { en: program.country_id },
       category_ids: program.category_ids,
       official_names: program.official_names,
       status: program.status,

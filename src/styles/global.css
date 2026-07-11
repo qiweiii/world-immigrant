@@ -1207,6 +1207,15 @@
     display: grid;
     gap: 14px;
   }
+  .filter-country-group {
+    display: grid;
+    gap: 10px;
+  }
+  .filter-country-heading {
+    margin: 8px 0 0;
+    font-size: 16px;
+    letter-spacing: -0.02em;
+  }
   .filter-result {
     border: 1px solid var(--border);
     border-radius: calc(var(--radius) * 1.2);

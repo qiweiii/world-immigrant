@@ -69,7 +69,7 @@ const educationRank: Record<EducationLevel, number> = {
 };
 
 const FIELD_CITATION_PATHS: Record<string, string[]> = {
-  goal: ["/pr_pathway", "/citizenship_pathway", "/filter"],
+  goal: ["/filter", "/timeline", "/rights", "/pr_pathway", "/citizenship_pathway"],
   settlement_track: ["/filter", "/pathway_mechanism", "/pr_pathway"],
   pathway_mechanism: ["/pathway_mechanism", "/filter"],
   job_offer: ["/eligibility", "/filter"],
@@ -173,6 +173,8 @@ export function evaluateProgram(
     if (locale === "en") return value.replaceAll("_", " ");
     return (
       {
+        temporary_stay: "临时停留 / 灵活更换国家",
+        renewable_residence: "可续签居留",
         permanent_residence: "永久居留",
         citizenship: "公民身份",
         employer_sponsored: "雇主担保",
@@ -240,6 +242,35 @@ export function evaluateProgram(
         mechanism: enumLabel(program.pathway_mechanism),
       }),
     });
+  }
+
+  const temporaryGoalMatch =
+    program.pathway_type === "temporary_only" ||
+    program.pathway_type === "renewable_temporary" ||
+    settlementTrack === "temporary_no_pr" ||
+    settlementTrack === "temporary_may_lead_pr";
+  if (profile.goal === "temporary_stay") {
+    if (temporaryGoalMatch) {
+      add({
+        field: "goal",
+        severity: "positive",
+        message: message("filter.reason.goalTemporaryMatch"),
+      });
+    } else if (program.pathway_type === "unknown" && settlementTrack === "unknown") {
+      unknownPolicy = true;
+      add({
+        field: "goal",
+        severity: "unknown",
+        message: message("filter.reason.goalTemporaryUnknown"),
+      });
+    } else {
+      possible = true;
+      add({
+        field: "goal",
+        severity: "warning",
+        message: message("filter.reason.goalTemporaryCaveat"),
+      });
+    }
   }
 
   const pathwayValue =
@@ -623,12 +654,21 @@ export function evaluateProgram(
   return { program_id: program.program_id, status, score, reasons };
 }
 
+function isVisibleForGoal(program: FilterIndexProgram, profile: UserProfile) {
+  if (profile.goal !== "temporary_stay") return true;
+  return (
+    !["direct_pr", "direct_citizenship", "e_status_only"].includes(program.pathway_type) &&
+    !["direct_pr", "e_status_only"].includes(program.settlement_track)
+  );
+}
+
 export function evaluatePrograms(
   programs: FilterIndexProgram[],
   profile: UserProfile,
   locale: Locale = defaultLocale,
 ): FilterResult[] {
   return programs
+    .filter((program) => isVisibleForGoal(program, profile))
     .map((program) => evaluateProgram(program, profile, locale))
     .sort(
       (left, right) => right.score - left.score || left.program_id.localeCompare(right.program_id),

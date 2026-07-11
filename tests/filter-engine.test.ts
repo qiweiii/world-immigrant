@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { loadCanonicalData } from "../src/lib/data";
-import { evaluateProgram, type UserProfile } from "../src/lib/filterEngine";
+import { evaluateProgram, evaluatePrograms, type UserProfile } from "../src/lib/filterEngine";
 import { buildPublicData } from "../src/lib/public-data";
 
 const completeProfile: UserProfile = {
@@ -22,7 +22,7 @@ const completeProfile: UserProfile = {
 async function indexProgram(programId = "canada-express-entry-fsw") {
   const output = buildPublicData(await loadCanonicalData());
   const program = output.filterIndex.programs.find((item) => item.program_id === programId);
-  assert.ok(program, `missing filter index program ${programId}`);
+  if (!program) throw new Error(`missing filter index program ${programId}`);
   return program;
 }
 
@@ -102,4 +102,60 @@ test("filter attaches field-specific citations rather than one global source lis
   }).reasons.find(({ field }) => field === "settlement_funds");
   assert.ok(funds);
   assert.ok(funds.citations.some((c) => c.source_id === "canada-ircc-proof-funds"));
+});
+
+test("temporary-stay goal positively matches a temporary mobility pathway", async () => {
+  const program = structuredClone(await indexProgram("malaysia-de-rantau-nomad-pass"));
+  program.freshness.needs_human_review = false;
+
+  const result = evaluateProgram(program, { ...completeProfile, goal: "temporary_stay" });
+
+  assert.ok(
+    result.reasons.some(
+      ({ field, severity, message }) =>
+        field === "goal" && severity === "positive" && message.includes("temporary"),
+    ),
+  );
+});
+
+test("temporary-stay goal keeps settlement pathways visible with a caveat", async () => {
+  const program = structuredClone(await indexProgram());
+  program.freshness.needs_human_review = false;
+
+  const result = evaluateProgram(program, { ...completeProfile, goal: "temporary_stay" });
+
+  assert.ok(
+    result.reasons.some(({ field, severity }) => field === "goal" && severity === "warning"),
+  );
+  assert.equal(
+    result.reasons.some(({ field, severity }) => field === "goal" && severity === "blocking"),
+    false,
+  );
+});
+
+test("temporary-stay goal preserves unknown policy state", async () => {
+  const program = structuredClone(await indexProgram());
+  program.pathway_type = "unknown";
+  program.settlement_track = "unknown";
+  program.freshness.needs_human_review = false;
+
+  const result = evaluateProgram(program, { ...completeProfile, goal: "temporary_stay" });
+
+  assert.ok(
+    result.reasons.some(({ field, severity }) => field === "goal" && severity === "unknown"),
+  );
+});
+
+test("temporary-stay ranking excludes direct residence pathways", async () => {
+  const temporary = await indexProgram("malaysia-de-rantau-nomad-pass");
+  const permanent = await indexProgram();
+  const results = evaluatePrograms([temporary, permanent], {
+    ...completeProfile,
+    goal: "temporary_stay",
+  });
+
+  assert.deepEqual(
+    results.map(({ program_id }) => program_id),
+    ["malaysia-de-rantau-nomad-pass"],
+  );
 });

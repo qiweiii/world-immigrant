@@ -40,6 +40,7 @@ test("public data generation exposes one complete program through stable indexes
   assert.ok(canada);
   assert.ok(australia);
   assert.equal(canada.official_names.en, "Federal Skilled Worker Program");
+  assert.deepEqual(canada.country_names, { en: "Canada", "zh-Hans": "加拿大" });
   assert.ok(canada.field_citations["/filter"].length > 0);
   assert.equal(
     output.compareIndex.programs.find(
