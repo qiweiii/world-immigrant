@@ -365,7 +365,7 @@
         "zh-Hans": "官方信息覆盖雇主担保的认可雇主工作签证，以及技术移民类别居民签证。"
       },
       "brand": {
-        "color": "#00247D",
+        "color": "#012169",
         "source": "flag"
       },
       "official_source_ids": [
@@ -403,7 +403,7 @@
         "zh-Hans": "正在通过官方来源扩展远程工作居留信息。完整路径记录将在来源集完成审查后添加。"
       },
       "brand": {
-        "color": "#006600",
+        "color": "#046A38",
         "source": "flag"
       },
       "official_source_ids": [
@@ -526,7 +526,7 @@
         "zh-Hans": "正在通过官方来源扩展远程工作居留信息。完整路径记录将在来源集完成审查后添加。"
       },
       "brand": {
-        "color": "#00732F",
+        "color": "#00843D",
         "source": "flag"
       },
       "official_source_ids": [
@@ -615,7 +615,7 @@
         "zh-Hans": "美国的初始覆盖从面向雇主担保专业工作的 H-1B 专业职业类别开始。"
       },
       "brand": {
-        "color": "#B22234",
+        "color": "#B31942",
         "source": "flag"
       },
       "official_source_ids": [
