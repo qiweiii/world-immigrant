@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
   <title id="title">World Immigrant</title>
-  <rect width="64" height="64" rx="18" fill="#0e0f14"/>
-  <circle cx="32" cy="32" r="19" fill="none" stroke="#f7f7fb" stroke-width="3"/>
-  <path d="M13 32h38M32 13c7 6 10 13 10 19s-3 13-10 19M32 13c-7 6-10 13-10 19s3 13 10 19" fill="none" stroke="#8fb8ff" stroke-width="2.4" stroke-linecap="round"/>
-  <path d="M17 43c8-8 16-9 30-21" fill="none" stroke="#67e8a5" stroke-width="2.6" stroke-linecap="round"/>
-  <circle cx="17" cy="43" r="3.5" fill="#67e8a5"/>
-  <circle cx="47" cy="22" r="3.5" fill="#f7f7fb"/>
+  <text
+    x="32"
+    y="48"
+    text-anchor="middle"
+    font-family="Apple Color Emoji, Segoe UI Emoji, Noto Color Emoji, sans-serif"
+    font-size="52"
+  >🌍</text>
 </svg>

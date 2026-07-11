@@ -1,7 +1,10 @@
 {
   "name": "World Immigrant",
   "short_name": "World Immigrant",
-  "icons": [{"src": "/favicon.svg", "sizes": "any", "type": "image/svg+xml"}],
+  "icons": [
+    {"src": "/favicon.png?v=2", "sizes": "192x192", "type": "image/png", "purpose": "any"},
+    {"src": "/favicon.svg?v=2", "sizes": "any", "type": "image/svg+xml", "purpose": "any"}
+  ],
   "theme_color": "#0e0f14",
   "background_color": "#0e0f14",
   "display": "standalone"

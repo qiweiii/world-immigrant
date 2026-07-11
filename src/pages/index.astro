@@ -1,171 +1,145 @@
 ---
 import Layout from "../components/Layout.astro";
-import TrustBadge from "../components/TrustBadge.astro";
-import VisaCard from "../components/VisaCard.astro";
 import { loadCanonicalData } from "../lib/data";
 import { buildCountryPageModels } from "../lib/site-model";
 
 const dataset = await loadCanonicalData();
-const { categories, programs, countries, sources } = dataset;
+const { programs, countries, sources } = dataset;
 const countryModels = buildCountryPageModels(dataset);
 const programCards = programs.map((program) => {
   const country = countries.find((item) => item.id === program.country_id);
   return { program, country };
 });
+const compareHref =
+  programs.length > 1 ? `/compare?programs=${programs.map(({ id }) => id).join(",")}` : "/compare";
+const shorten = (value: string, maxLength: number) => {
+  if (value.length <= maxLength) return value;
+  return `${value.slice(0, maxLength).replace(/\s+\S*$/, "")}…`;
+};
 ---
 
 <Layout
   title="World Immigrant — source-cited immigration pathways"
-  description="Compare lawful immigration pathways across countries with citations, freshness, and local-first filtering."
+  description="Compare immigration pathways with official sources, current coverage, and a private local fit check."
 >
   <main>
-    <section class="hero">
-      <p class="eyebrow">Source-cited pathway information</p>
-      <h1>Find immigration pathways you can verify.</h1>
-      <p>
-        Browse official-source pathways by country, compare decision fields side by side, and filter
-        against a private local profile. No account. No server-side profile storage.
-      </p>
-      <div class="action-row">
-        <a class="btn btn-primary" href="/countries">Browse countries</a>
-        <a class="btn" href="/filter">Check fit locally</a>
-        <a class="btn btn-ghost" href="/compare">Compare pathways</a>
-      </div>
-      <div class="badge-row">
-        <TrustBadge label="official-source first" tone="success" />
-        <TrustBadge label="local-first profile" />
-        <TrustBadge label="not legal advice" tone="warning" />
-      </div>
-    </section>
-
-    <section class="stats-row" aria-label="Coverage summary">
-      <div class="stat">
-        <strong>{countries.length}</strong>
-        <span>countries</span>
-      </div>
-      <div class="stat">
-        <strong>{programs.length}</strong>
-        <span>programs</span>
-      </div>
-      <div class="stat">
-        <strong>{sources.length}</strong>
-        <span>official sources</span>
-      </div>
-      <div class="stat">
-        <strong>{categories.length}</strong>
-        <span>categories</span>
-      </div>
-    </section>
-
-    <section class="section" aria-labelledby="start-heading">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Start here</p>
-          <h2 id="start-heading">Three simple ways in</h2>
+    <section class="landing-hero" aria-labelledby="home-title">
+      <div class="landing-hero-copy">
+        <p class="eyebrow">World Immigrant</p>
+        <h1 id="home-title">Find a route you can check.</h1>
+        <p class="landing-lede">
+          Immigration pathways, structured around the questions that change a decision and linked
+          back to the official source.
+        </p>
+        <div class="action-row">
+          <a class="btn btn-primary" href="#pathways">View pathways</a>
+          <a class="text-action" href={compareHref}>Compare Canada and Australia →</a>
         </div>
       </div>
-      <div class="card-grid three">
-        <article class="card">
-          <p class="eyebrow">1</p>
-          <h3><a href="/countries">Browse by country</a></h3>
-          <p>Read country summaries, open a pathway page, and follow the official sources.</p>
-        </article>
-        <article class="card">
-          <p class="eyebrow">2</p>
-          <h3><a href="/compare">Compare pathways</a></h3>
-          <p>Put two or three programs side by side on funds, family, rights, and confidence.</p>
-        </article>
-        <article class="card">
-          <p class="eyebrow">3</p>
-          <h3><a href="/filter">Filter privately</a></h3>
-          <p>Your profile stays in this browser. Results explain matches with cited reasons.</p>
-        </article>
-      </div>
-    </section>
 
-    <section class="section" aria-labelledby="countries-heading">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Countries</p>
-          <h2 id="countries-heading">Where coverage exists today</h2>
-        </div>
-        <a class="btn btn-ghost" href="/countries">All countries</a>
-      </div>
-      <div class="card-grid">
-        {
-          countryModels.map(({ country, programs: countryPrograms }) => (
-            <article class="card">
-              <p class="eyebrow">
-                {country.iso2} · {country.region}
-              </p>
-              <h3 class="card-title">
-                <a href={`/countries/${country.id}`}>{country.names.en}</a>
-              </h3>
-              <p class="card-description">{country.summary_md.en}</p>
-              <div class="badge-row">
-                <span class="badge">
-                  {countryPrograms.length} program{countryPrograms.length === 1 ? "" : "s"}
+      <aside class="coverage-panel" aria-label="Current coverage">
+        <p class="eyebrow">Current coverage</p>
+        <p class="coverage-total"><strong>{programs.length}</strong> cited pathways</p>
+        <div class="coverage-country-list">
+          {
+            countryModels.map(({ country, programs: countryPrograms }) => (
+              <a class="coverage-country" href={`/countries/${country.id}`}>
+                <span>
+                  <strong>{country.names.en}</strong>
+                  <small>{countryPrograms.length} mapped pathway{countryPrograms.length === 1 ? "" : "s"}</small>
                 </span>
-                <span class="badge">checked {country.freshness.last_checked_at.slice(0, 10)}</span>
-              </div>
-              <p class="card-cta">
-                <a href={`/countries/${country.id}`}>Open country →</a>
-              </p>
-            </article>
-          ))
-        }
-      </div>
+                <span aria-hidden="true">→</span>
+              </a>
+            ))
+          }
+        </div>
+        <div class="coverage-footnote">
+          <span>{sources.length} official sources</span>
+          <a href="/sources">Source registry</a>
+        </div>
+      </aside>
     </section>
 
-    <section class="section" aria-labelledby="programs-heading">
-      <div class="section-heading">
+    <nav class="quick-actions" aria-label="Start here">
+      <a class="quick-action" href="/countries"><span>01</span> Browse destinations</a>
+      <a class="quick-action" href={compareHref}><span>02</span> Compare pathways</a>
+      <a class="quick-action" href="/filter"><span>03</span> Check fit privately</a>
+    </nav>
+
+    <section class="section pathway-section" id="pathways" aria-labelledby="pathways-heading">
+      <div class="section-heading section-heading-wide">
         <div>
-          <p class="eyebrow">Programs</p>
-          <h2 id="programs-heading">Validated pathways</h2>
+          <p class="eyebrow">Available now</p>
+          <h2 id="pathways-heading">Two pathways. Full records.</h2>
         </div>
-        <a class="btn btn-ghost" href="/compare">Compare</a>
+        <a class="text-action" href="/countries">All destinations →</a>
       </div>
-      <div class="card-grid">
+      <div class="pathway-list">
         {
           programCards.map(({ program, country }) => (
-            <VisaCard
-              title={program.official_names.en}
-              country={country?.names.en ?? program.country_id}
-              category={program.category_ids.join(", ")}
-              summary={program.summary_md.en}
-              href={`/programs/${program.id}`}
-              status={program.status}
-              needsReview={program.freshness.needs_human_review}
-              checkedAt={program.freshness.last_checked_at}
-            />
+            <article class="pathway-row">
+              <div class="pathway-row-main">
+                <p class="eyebrow">
+                  {country?.names.en ?? program.country_id} · {program.category_ids.join(" ").replaceAll("_", " ")}
+                </p>
+                <h3><a href={`/programs/${program.id}`}>{program.official_names.en}</a></h3>
+                <p>{shorten(program.summary_md.en, 155)}</p>
+              </div>
+              <dl class="pathway-facts">
+                <div>
+                  <dt>Residence</dt>
+                  <dd>{program.pr_pathway.available === true ? "Direct permanent residence" : "See pathway"}</dd>
+                </div>
+                <div>
+                  <dt>Family</dt>
+                  <dd>{program.family.spouse_or_partner_allowed === true ? "Partner and children" : "See rules"}</dd>
+                </div>
+                <div>
+                  <dt>Checked</dt>
+                  <dd>{program.freshness.last_checked_at.slice(0, 10)}</dd>
+                </div>
+              </dl>
+              <a class="pathway-row-link" href={`/programs/${program.id}`}>Read record →</a>
+            </article>
+          ))
+        }
+      </div>
+      <div class="section-actions">
+        <a class="btn" href={compareHref}>Compare both pathways</a>
+        <a class="text-action" href="/filter">Check your fit privately →</a>
+      </div>
+    </section>
+
+    <section class="coverage-section" aria-labelledby="countries-heading">
+      <div class="section-heading section-heading-wide">
+        <div>
+          <p class="eyebrow">Destinations</p>
+          <h2 id="countries-heading">Browse by country.</h2>
+        </div>
+      </div>
+      <div class="country-list">
+        {
+          countryModels.map(({ country, programs: countryPrograms }) => (
+            <article class="country-row">
+              <div>
+                <p class="eyebrow">{country.iso2} · {country.region}</p>
+                <h3><a href={`/countries/${country.id}`}>{country.names.en}</a></h3>
+              </div>
+              <p>{shorten(country.summary_md.en, 140)}</p>
+              <div class="country-row-meta">
+                <span>{countryPrograms.length} mapped pathway{countryPrograms.length === 1 ? "" : "s"}</span>
+                <span>checked {country.freshness.last_checked_at.slice(0, 10)}</span>
+              </div>
+              <a class="text-action" href={`/countries/${country.id}`}>Open →</a>
+            </article>
           ))
         }
       </div>
     </section>
 
-    <section class="section" aria-labelledby="categories-heading">
-      <div class="section-heading">
-        <div>
-          <p class="eyebrow">Categories</p>
-          <h2 id="categories-heading">Browse by pathway type</h2>
-        </div>
-        <a class="btn btn-ghost" href="/categories">All categories</a>
-      </div>
-      <div class="card-grid">
-        {
-          categories.map((cat) => (
-            <article class="card">
-              <h3 class="card-title">
-                <a href={`/categories/${cat.id}`}>{cat.names.en}</a>
-              </h3>
-              <p class="card-description">{cat.description_md.en}</p>
-              <p class="card-cta">
-                <a href={`/categories/${cat.id}`}>Open category →</a>
-              </p>
-            </article>
-          ))
-        }
-      </div>
+    <section class="source-note" aria-label="Source guidance">
+      <p><strong>Policy changes.</strong> Every record carries a check date and official source trail.</p>
+      <a class="text-action" href="/sources">Inspect sources →</a>
     </section>
   </main>
 </Layout>
