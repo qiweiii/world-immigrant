@@ -89,6 +89,26 @@ type ImmigrationCategory = {
 ## 5. Visa Program Object
 
 ```ts
+type PathwayMechanism =
+ | "employer_sponsored"
+ | "self_sponsored"
+ | "own_company"
+ | "points_invitation"
+ | "investment"
+ | "remote_income"
+ | "talent_pass"
+ | "e_residency"
+ | "other"
+ | "unknown";
+
+type SettlementTrack =
+ | "temporary_no_pr"
+ | "temporary_may_lead_pr"
+ | "residence"
+ | "direct_pr"
+ | "e_status_only"
+ | "unknown";
+
 type VisaProgram = {
  id: string;            // "canada-express-entry-fsw"
  country_id: string;        // "canada"
@@ -102,9 +122,14 @@ type VisaProgram = {
  good_for_md: LocalizedMarkdown;
  not_good_for_md?: LocalizedMarkdown;
 
+ /** How the person primarily enters the pathway (orthogonal to category). */
+ pathway_mechanism: PathwayMechanism;
+
  eligibility: EligibilityCriteria;
  funds: CostAndFunds;
  income: IncomeRequirements;
+ /** Present only for free-zone / company / EntrePass-style compound pathways. */
+ business_setup?: BusinessSetup;
  timeline: Timeline;
  fees: Fee[];
  rights: RightsAndRestrictions;
@@ -122,6 +147,13 @@ type VisaProgram = {
  changelog: ChangeLogEntry[];
 };
 ```
+
+### Pathway mechanism vs category
+
+- **Category** answers “what kind of immigration story?” (skilled, digital nomad, investor).
+- **pathway_mechanism** answers “what unlocks entry?” (job offer, points pool, remote income, own company, e-residency).
+- `filter.pathway_mechanism` must equal top-level `pathway_mechanism`.
+- `filter.settlement_track` is the preferred temporary/PR signal for new fixtures; keep `pathway_type` aligned for compatibility.
 
 ## 6. Normalized Criteria Fields
 
@@ -152,6 +184,8 @@ type EligibilityCriteria = {
  points_based?: boolean;
  points_threshold?: number | "variable" | "unknown";
  invitation_competition_level?: "low" | "medium" | "high" | "very_high" | "unknown";
+ job_offer_required?: boolean | "unknown" | "not_applicable";
+ sponsor_required?: boolean | "unknown" | "not_applicable";
 };
 ```
 
@@ -179,7 +213,7 @@ type MoneyRequirement = {
 
 ```ts
 type IncomeRequirements = {
- required: boolean | "unknown";
+ required: boolean | "unknown" | "not_applicable";
  min_income?: MoneyRequirement[];
  accepted_sources: Array<
   | "employment"
@@ -190,9 +224,40 @@ type IncomeRequirements = {
   | "passive_income"
   | "savings"
   | "pension"
+  | "saas_or_product"
+  | "freelance"
   | "unknown"
  >;
+ /** Where qualifying income must be earned (critical for remote-work routes). */
+ income_location?:
+  | "inside_destination"
+  | "outside_destination"
+  | "either"
+  | "unknown"
+  | "not_applicable";
+ proof_history_months?: number | "variable" | "unknown";
  stability_requirement_md?: LocalizedMarkdown;
+};
+```
+
+## 8b. Business setup (optional)
+
+Omit when the pathway does not require forming a local entity.
+
+```ts
+type BusinessSetup = {
+ required: boolean | "unknown" | "not_applicable";
+ entity_types?: string[]; // free_zone, private_limited, ...
+ min_setup_cost?: MoneyRequirement[];
+ min_share_capital?: MoneyRequirement[];
+ local_director_required?: boolean | "unknown" | "not_applicable";
+ renewal_milestones?: Array<{
+  after_years: number;
+  min_local_employees?: number | "variable" | "unknown";
+  min_business_spend?: MoneyRequirement;
+  note_md?: LocalizedMarkdown;
+ }>;
+ note_md?: LocalizedMarkdown;
 };
 ```
 
@@ -257,21 +322,43 @@ Score definitions must be documented and conservative. Scores are product interp
 
 ```ts
 type FilterFields = {
+ pathway_type:
+  | "temporary_only"
+  | "renewable_temporary"
+  | "residence"
+  | "direct_pr"
+  | "direct_citizenship"
+  | "unknown";
+ /** Preferred temporary/PR signal for new programs. */
+ settlement_track: SettlementTrack;
+ /** Must equal program.pathway_mechanism. */
+ pathway_mechanism: PathwayMechanism;
  min_age?: number;
  max_age?: number;
  max_age_soft?: boolean;
- min_liquid_funds_usd?: number;
- min_monthly_income_usd?: number;
- accepts_remote_income?: boolean;
- accepts_self_employment?: boolean;
- requires_degree?: boolean;
- requires_job_offer?: boolean;
- requires_investment?: boolean;
- allows_family?: boolean;
+ min_liquid_funds_usd?: number | "variable" | "unknown";
+ min_monthly_income_usd?: number | "variable" | "unknown";
+ min_annual_income_usd?: number | "variable" | "unknown";
+ min_net_worth_usd?: number | "variable" | "unknown";
+ min_investment_usd?: number | "variable" | "unknown";
+ accepts_remote_income?: boolean | "unknown" | "not_applicable";
+ accepts_self_employment?: boolean | "unknown" | "not_applicable";
+ accepts_overseas_remote_income?: boolean | "unknown" | "not_applicable";
+ requires_degree?: boolean | "unknown" | "not_applicable";
+ requires_job_offer?: boolean | "unknown" | "not_applicable";
+ requires_investment?: boolean | "unknown" | "not_applicable";
+ requires_language_test?: boolean | "unknown" | "not_applicable";
+ requires_local_entity?: boolean | "unknown" | "not_applicable";
+ allows_family?: boolean | "unknown" | "not_applicable";
+ work_allowed?: boolean | "limited" | "unknown" | "not_applicable";
+ remote_work_allowed?: boolean | "limited" | "unknown" | "not_applicable";
  leads_to_pr?: boolean | "indirect" | "unknown";
  leads_to_citizenship?: boolean | "indirect" | "unknown";
- requires_language_test?: boolean;
- notes_md?: LocalizedMarkdown;
+ processing_time_months_min?: number | "variable" | "unknown";
+ processing_time_months_max?: number | "variable" | "unknown";
+ policy_stability_score: 1 | 2 | 3 | 4 | 5;
+ source_confidence_score: 1 | 2 | 3 | 4 | 5;
+ last_checked_at: string;
 };
 ```
 

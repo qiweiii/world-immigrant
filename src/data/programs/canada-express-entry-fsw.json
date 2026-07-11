@@ -19,6 +19,7 @@
   "not_good_for_md": {
     "en": "People who cannot meet the language, skilled-work, education, admissibility, or settlement-fund rules. Passing the 67-point Federal Skilled Worker threshold does not itself guarantee an invitation because Express Entry invitations are competitive."
   },
+  "pathway_mechanism": "points_invitation",
   "eligibility": {
     "age": {
       "points_sensitive": true,
@@ -56,7 +57,9 @@
     "police_certificate_required": true,
     "points_based": true,
     "points_threshold": 67,
-    "invitation_competition_level": "high"
+    "invitation_competition_level": "high",
+    "job_offer_required": false,
+    "sponsor_required": false
   },
   "funds": {
     "proof_of_funds": [
@@ -166,6 +169,7 @@
   "income": {
     "required": false,
     "accepted_sources": [],
+    "income_location": "not_applicable",
     "stability_requirement_md": {
       "en": "The program uses settlement funds rather than a recurring-income threshold."
     }
@@ -240,13 +244,17 @@
   },
   "filter": {
     "pathway_type": "direct_pr",
+    "settlement_track": "direct_pr",
+    "pathway_mechanism": "points_invitation",
     "min_liquid_funds_usd": "variable",
     "accepts_remote_income": "not_applicable",
     "accepts_self_employment": true,
+    "accepts_overseas_remote_income": "not_applicable",
     "requires_degree": false,
     "requires_job_offer": false,
     "requires_investment": false,
     "requires_language_test": true,
+    "requires_local_entity": false,
     "allows_family": true,
     "work_allowed": true,
     "remote_work_allowed": true,
@@ -282,6 +290,15 @@
         "retrieved_at": "2026-07-10T00:00:00Z",
         "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860",
         "quote_hash": "8678a16ca7a18bd693f1440319193862dc9faac778100a27e7104b3cca958383"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "canada-ircc-fsw",
+        "url": "https://www.canada.ca/en/immigration-refugees-citizenship/services/immigrate-canada/express-entry/who-can-apply/federal-skilled-workers.html",
+        "section": "Federal Skilled Worker Program",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "59f44ebd637ebbd1404136fdc73e6ea3c220074787b3b893fbedd932cff43860"
       }
     ],
     "/summary_md": [

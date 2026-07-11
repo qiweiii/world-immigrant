@@ -19,7 +19,11 @@ test("compare engine resolves stable rows and preserves evidence metadata", asyn
   assert.deepEqual(
     view.rows.map(({ id }) => id),
     [
+      "settlement_track",
+      "pathway_mechanism",
       "pathway",
+      "job_offer",
+      "income",
       "settlement_funds",
       "processing_time",
       "work_rights",
@@ -29,8 +33,14 @@ test("compare engine resolves stable rows and preserves evidence metadata", asyn
       "last_checked",
     ],
   );
-  assert.match(view.rows[0].cells[0].display, /Direct permanent residence/);
-  assert.ok(view.rows[0].cells[0].citations.length > 0);
+  const pathwayRow = view.rows.find((row) => row.id === "pathway");
+  assert.ok(pathwayRow);
+  assert.match(pathwayRow.cells[0].display, /Direct permanent residence/);
+  assert.ok(pathwayRow.cells[0].citations.length > 0);
+  assert.match(
+    view.rows.find((row) => row.id === "pathway_mechanism")?.cells[0].display ?? "",
+    /points invitation/,
+  );
 });
 
 test("compare engine aligns a synthetic second program and displays unknown explicitly", async () => {

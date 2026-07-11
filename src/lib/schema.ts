@@ -140,6 +140,30 @@ const languageRequirementSchema = z.strictObject({
   note_md: localizedMarkdownSchema.optional(),
 });
 
+/** How a person primarily enters the pathway (orthogonal to category). */
+export const pathwayMechanismSchema = z.enum([
+  "employer_sponsored",
+  "self_sponsored",
+  "own_company",
+  "points_invitation",
+  "investment",
+  "remote_income",
+  "talent_pass",
+  "e_residency",
+  "other",
+  "unknown",
+]);
+
+/** Settlement outcome track for compare/filter (clearer temporary vs PR). */
+export const settlementTrackSchema = z.enum([
+  "temporary_no_pr",
+  "temporary_may_lead_pr",
+  "residence",
+  "direct_pr",
+  "e_status_only",
+  "unknown",
+]);
+
 const eligibilitySchema = z.strictObject({
   age: z.strictObject({
     min: z.number().int().nonnegative().optional(),
@@ -179,6 +203,8 @@ const eligibilitySchema = z.strictObject({
   invitation_competition_level: z
     .enum(["low", "medium", "high", "very_high", "unknown"])
     .optional(),
+  job_offer_required: booleanOrUnknownSchema.optional(),
+  sponsor_required: booleanOrUnknownSchema.optional(),
 });
 
 const fundsSchema = z.strictObject({
@@ -211,10 +237,40 @@ const incomeSchema = z.strictObject({
       "passive_income",
       "savings",
       "pension",
+      "saas_or_product",
+      "freelance",
       "unknown",
     ]),
   ),
+  /**
+   * Where qualifying income must be earned relative to the destination.
+   * Critical for remote-work / digital-nomad routes.
+   */
+  income_location: z
+    .enum(["inside_destination", "outside_destination", "either", "unknown", "not_applicable"])
+    .optional(),
+  proof_history_months: numericUnknownSchema.optional(),
   stability_requirement_md: localizedMarkdownSchema.optional(),
+});
+
+/** Optional block for free-zone / own-company / EntrePass-style compound pathways. */
+const businessSetupSchema = z.strictObject({
+  required: booleanOrUnknownSchema,
+  entity_types: z.array(z.string().min(1)).optional(),
+  min_setup_cost: z.array(moneyRequirementSchema).optional(),
+  min_share_capital: z.array(moneyRequirementSchema).optional(),
+  local_director_required: booleanOrUnknownSchema.optional(),
+  renewal_milestones: z
+    .array(
+      z.strictObject({
+        after_years: z.number().positive(),
+        min_local_employees: numericUnknownSchema.optional(),
+        min_business_spend: moneyRequirementSchema.optional(),
+        note_md: localizedMarkdownSchema.optional(),
+      }),
+    )
+    .optional(),
+  note_md: localizedMarkdownSchema.optional(),
 });
 
 const timelineSchema = z.strictObject({
@@ -281,6 +337,9 @@ export const programFilterSchema = z.strictObject({
     "direct_citizenship",
     "unknown",
   ]),
+  /** Prefer settlement_track for new programs; keep pathway_type for backward compatibility. */
+  settlement_track: settlementTrackSchema,
+  pathway_mechanism: pathwayMechanismSchema,
   min_age: z.number().int().nonnegative().optional(),
   max_age: z.number().int().positive().optional(),
   min_liquid_funds_usd: numericUnknownSchema.optional(),
@@ -290,10 +349,12 @@ export const programFilterSchema = z.strictObject({
   min_investment_usd: numericUnknownSchema.optional(),
   accepts_remote_income: booleanOrUnknownSchema,
   accepts_self_employment: booleanOrUnknownSchema,
+  accepts_overseas_remote_income: booleanOrUnknownSchema.optional(),
   requires_degree: booleanOrUnknownSchema,
   requires_job_offer: booleanOrUnknownSchema,
   requires_investment: booleanOrUnknownSchema,
   requires_language_test: booleanOrUnknownSchema,
+  requires_local_entity: booleanOrUnknownSchema.optional(),
   allows_family: booleanOrUnknownSchema,
   work_allowed: limitedBooleanSchema,
   remote_work_allowed: limitedBooleanSchema,
@@ -323,9 +384,12 @@ export const programSchema = z.strictObject({
   summary_md: localizedMarkdownSchema,
   good_for_md: localizedMarkdownSchema,
   not_good_for_md: localizedMarkdownSchema.optional(),
+  /** Primary entry mechanism; must stay consistent with filter.pathway_mechanism. */
+  pathway_mechanism: pathwayMechanismSchema,
   eligibility: eligibilitySchema,
   funds: fundsSchema,
   income: incomeSchema,
+  business_setup: businessSetupSchema.optional(),
   timeline: timelineSchema,
   rights: rightsSchema,
   family: familySchema,
@@ -344,6 +408,8 @@ export type Category = z.infer<typeof categorySchema>;
 export type CitationRef = z.infer<typeof citationRefSchema>;
 export type Country = z.infer<typeof countrySchema>;
 export type CountryBrand = z.infer<typeof countryBrandSchema>;
+export type PathwayMechanism = z.infer<typeof pathwayMechanismSchema>;
+export type SettlementTrack = z.infer<typeof settlementTrackSchema>;
 export type Program = z.infer<typeof programSchema>;
 export type ProgramFilter = z.infer<typeof programFilterSchema>;
 export type Source = z.infer<typeof sourceSchema>;

@@ -30,6 +30,7 @@ function validDataset() {
     status: "active",
     summary_md: { en: "A permanent residence program." },
     good_for_md: { en: "Skilled workers seeking permanent residence." },
+    pathway_mechanism: "points_invitation",
     eligibility: {
       age: { points_sensitive: true },
       education: {
@@ -46,6 +47,8 @@ function validDataset() {
       points_based: true,
       points_threshold: 67,
       invitation_competition_level: "high",
+      job_offer_required: false,
+      sponsor_required: false,
     },
     funds: {
       proof_of_funds: [
@@ -66,7 +69,11 @@ function validDataset() {
         },
       ],
     },
-    income: { required: false, accepted_sources: [] },
+    income: {
+      required: false,
+      accepted_sources: [],
+      income_location: "not_applicable",
+    },
     timeline: { renewable: false },
     rights: {
       work_allowed: true,
@@ -96,13 +103,17 @@ function validDataset() {
     },
     filter: {
       pathway_type: "direct_pr",
+      settlement_track: "direct_pr",
+      pathway_mechanism: "points_invitation",
       min_liquid_funds_usd: "variable",
       accepts_remote_income: "not_applicable",
       accepts_self_employment: true,
+      accepts_overseas_remote_income: "not_applicable",
       requires_degree: true,
       requires_job_offer: false,
       requires_investment: false,
       requires_language_test: true,
+      requires_local_entity: false,
       allows_family: true,
       work_allowed: true,
       remote_work_allowed: true,
@@ -115,6 +126,7 @@ function validDataset() {
     source_ids: ["source-one"],
     field_citations: {
       "/status": [citation()],
+      "/pathway_mechanism": [citation()],
       "/summary_md": [citation()],
       "/good_for_md": [citation()],
       "/eligibility": [citation()],

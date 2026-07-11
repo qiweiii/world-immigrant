@@ -63,6 +63,10 @@ const educationRank: Record<EducationLevel, number> = {
 
 const FIELD_CITATION_PATHS: Record<string, string[]> = {
   goal: ["/pr_pathway", "/citizenship_pathway", "/filter"],
+  settlement_track: ["/filter", "/pathway_mechanism", "/pr_pathway"],
+  pathway_mechanism: ["/pathway_mechanism", "/filter"],
+  job_offer: ["/eligibility", "/filter"],
+  income: ["/income", "/filter"],
   work_experience: ["/eligibility", "/eligibility/work_experience", "/filter"],
   language_test: ["/eligibility", "/eligibility/language", "/filter"],
   language_benchmark: ["/eligibility", "/eligibility/language", "/filter"],
@@ -159,6 +163,30 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
     });
   }
 
+  const settlementTrack = program.settlement_track ?? "unknown";
+  if (
+    (profile.goal === "permanent_residence" || profile.goal === "citizenship") &&
+    (settlementTrack === "temporary_no_pr" || settlementTrack === "e_status_only")
+  ) {
+    blocking = true;
+    add({
+      field: "settlement_track",
+      severity: "blocking",
+      message:
+        settlementTrack === "e_status_only"
+          ? "This status does not grant residence or permanent settlement rights."
+          : "This pathway is temporary and does not lead to permanent residence in the modeled rules.",
+    });
+  }
+
+  if (program.pathway_mechanism && program.pathway_mechanism !== "unknown") {
+    add({
+      field: "pathway_mechanism",
+      severity: "positive",
+      message: `Entry mechanism: ${program.pathway_mechanism.replaceAll("_", " ")}.`,
+    });
+  }
+
   const pathwayValue =
     profile.goal === "citizenship" ? program.leads_to_citizenship : program.leads_to_pr;
   if (profile.goal === "permanent_residence" || profile.goal === "citizenship") {
@@ -184,6 +212,44 @@ export function evaluateProgram(program: FilterIndexProgram, profile: UserProfil
           pathwayValue === "indirect"
             ? "The requested outcome is available through a separate later pathway."
             : "The program matches the requested pathway outcome.",
+      });
+    }
+  }
+
+  const jobOfferRequired =
+    program.criteria.job_offer_required ?? program.requires_job_offer;
+  if (jobOfferRequired === true && profile.valid_job_offer === false) {
+    blocking = true;
+    add({
+      field: "job_offer",
+      severity: "blocking",
+      message: "This pathway requires a job offer that is not present in the profile.",
+    });
+  } else if (jobOfferRequired === true && profile.valid_job_offer === undefined) {
+    possible = true;
+    add({
+      field: "job_offer",
+      severity: "warning",
+      message: "Add whether you have a qualifying job offer for this pathway.",
+    });
+  }
+
+  if (program.criteria.income_required === true) {
+    const minIncome = program.criteria.min_income?.[0];
+    if (!minIncome || typeof minIncome.amount !== "number") {
+      unknownPolicy = true;
+      add({
+        field: "income",
+        severity: "unknown",
+        message: "An income minimum applies, but the structured threshold is incomplete.",
+      });
+    } else {
+      // Profile income is not collected yet; keep the requirement visible.
+      possible = true;
+      add({
+        field: "income",
+        severity: "warning",
+        message: `This pathway models a minimum income of ${minIncome.amount} ${minIncome.currency}${minIncome.period ? ` (${minIncome.period})` : ""}. Add income details when available.`,
       });
     }
   }

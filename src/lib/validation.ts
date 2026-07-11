@@ -29,6 +29,7 @@ const MATERIAL_ROOTS = [
   "/summary_md",
   "/good_for_md",
   "/not_good_for_md",
+  "/pathway_mechanism",
   "/eligibility",
   "/funds",
   "/income",
@@ -389,6 +390,11 @@ export function validateDataset(
       else if (!source.program_ids.includes(program.id)) {
         errors.push(`Program ${program.id} is absent from source ${sourceId} program_ids`);
       }
+    }
+    if (program.pathway_mechanism !== program.filter.pathway_mechanism) {
+      errors.push(
+        `Program ${program.id} pathway_mechanism (${program.pathway_mechanism}) must match filter.pathway_mechanism (${program.filter.pathway_mechanism})`,
+      );
     }
     if (program.status === "active") {
       errors.push(...validateProgramCitations(program, sourceById));

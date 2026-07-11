@@ -39,6 +39,34 @@ function pathway(program: CompareProgram) {
   return formatPolicy(program.pr_pathway.available);
 }
 
+function mechanismLabel(value: string) {
+  return value.replaceAll("_", " ");
+}
+
+function settlementTrack(program: CompareProgram) {
+  return mechanismLabel(program.filter.settlement_track);
+}
+
+function pathwayMechanism(program: CompareProgram) {
+  return mechanismLabel(program.pathway_mechanism);
+}
+
+function incomeRow(program: CompareProgram) {
+  if (program.income.required === false || program.income.required === "not_applicable") {
+    return "No recurring income minimum in this record";
+  }
+  const first = program.income.min_income?.[0];
+  if (!first) return formatPolicy(program.income.required);
+  const location = program.income.income_location
+    ? `; income location: ${mechanismLabel(program.income.income_location)}`
+    : "";
+  return `${formatPolicy(first.amount)} ${first.currency}${first.period ? ` ${first.period}` : ""}${location}`;
+}
+
+function jobOffer(program: CompareProgram) {
+  return formatPolicy(program.filter.requires_job_offer);
+}
+
 function funds(program: CompareProgram) {
   const first = program.funds.proof_of_funds.find(
     ({ calculation, family_size }) => calculation === "minimum_total" && family_size === 1,
@@ -75,7 +103,31 @@ const rowDefinitions: Array<{
   citationPath?: string;
   render: (program: CompareProgram) => string;
 }> = [
+  {
+    id: "settlement_track",
+    label: "Settlement track",
+    citationPath: "/filter",
+    render: settlementTrack,
+  },
+  {
+    id: "pathway_mechanism",
+    label: "Entry mechanism",
+    citationPath: "/pathway_mechanism",
+    render: pathwayMechanism,
+  },
   { id: "pathway", label: "Pathway outcome", citationPath: "/pr_pathway", render: pathway },
+  {
+    id: "job_offer",
+    label: "Job offer required",
+    citationPath: "/filter",
+    render: jobOffer,
+  },
+  {
+    id: "income",
+    label: "Income threshold",
+    citationPath: "/income",
+    render: incomeRow,
+  },
   {
     id: "settlement_funds",
     label: "Settlement funds",

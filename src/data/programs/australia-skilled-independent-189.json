@@ -19,6 +19,7 @@
   "not_good_for_md": {
     "en": "People without an eligible occupation, skills assessment, English evidence, or a competitive points score. Invitation rounds are competitive and not a personal entitlement."
   },
+  "pathway_mechanism": "points_invitation",
   "eligibility": {
     "age": {
       "max": 44,
@@ -56,7 +57,9 @@
     "police_certificate_required": true,
     "points_based": true,
     "points_threshold": 65,
-    "invitation_competition_level": "high"
+    "invitation_competition_level": "high",
+    "job_offer_required": false,
+    "sponsor_required": false
   },
   "funds": {
     "proof_of_funds": [],
@@ -74,6 +77,7 @@
   "income": {
     "required": false,
     "accepted_sources": [],
+    "income_location": "not_applicable",
     "stability_requirement_md": {
       "en": "No fixed income floor is stated as a universal subclass 189 points-tested minimum."
     }
@@ -141,14 +145,18 @@
   },
   "filter": {
     "pathway_type": "direct_pr",
+    "settlement_track": "direct_pr",
+    "pathway_mechanism": "points_invitation",
     "max_age": 44,
     "min_liquid_funds_usd": "unknown",
     "accepts_remote_income": "unknown",
     "accepts_self_employment": "unknown",
+    "accepts_overseas_remote_income": "unknown",
     "requires_degree": "unknown",
     "requires_job_offer": false,
     "requires_investment": false,
     "requires_language_test": true,
+    "requires_local_entity": false,
     "allows_family": true,
     "work_allowed": true,
     "remote_work_allowed": "unknown",
@@ -177,6 +185,15 @@
         "section": "Overview",
         "retrieved_at": "2026-07-10T00:00:00Z",
         "snapshot_id": "044ab9b46892f2523ea5a6c14f400df64023d42a6d5af4db715bd4654af21248"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "australia-skillselect-eoi",
+        "url": "https://immi.homeaffairs.gov.au/visas/working-in-australia/skillselect/expression-of-interest",
+        "section": "points threshold of 65",
+        "retrieved_at": "2026-07-10T00:00:00Z",
+        "snapshot_id": "1c6541a53f81c1cad6b58ec025cb89fbd3850ccb83180f49e9ab620990df4c64"
       }
     ],
     "/summary_md": [
