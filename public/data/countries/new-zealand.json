@@ -1,0 +1,38 @@
+{
+  "id": "new-zealand",
+  "iso2": "NZ",
+  "iso3": "NZL",
+  "names": {
+    "en": "New Zealand",
+    "zh-Hans": "新西兰"
+  },
+  "region": "Oceania",
+  "summary_md": {
+    "en": "Official coverage includes employer-sponsored work through the Accredited Employer Work Visa and skilled residence through the Skilled Migrant Category.",
+    "zh-Hans": "官方信息覆盖雇主担保的认可雇主工作签证，以及技术移民类别居民签证。"
+  },
+  "brand": {
+    "color": "#00247D",
+    "source": "flag"
+  },
+  "official_source_ids": [
+    "new-zealand-inz-aewv",
+    "new-zealand-inz-aewv-family",
+    "new-zealand-inz-smc-resident"
+  ],
+  "categories": [
+    "skilled_worker"
+  ],
+  "program_ids": [
+    "new-zealand-accredited-employer-work-visa",
+    "new-zealand-skilled-migrant-category"
+  ],
+  "freshness": {
+    "created_at": "2026-07-11T06:28:54.771Z",
+    "updated_at": "2026-07-11T06:28:54.771Z",
+    "last_checked_at": "2026-07-11T06:28:54.771Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  }
+}

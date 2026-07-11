@@ -67,6 +67,38 @@ A federal permanent-residence pathway for skilled workers with foreign work expe
 - canada-ircc-medical-exams: Medical examination for permanent residence applicants — https://www.canada.ca/en/immigration-refugees-citizenship/services/application/medical-police/medical-exams/requirements-permanent-residents.html
 - canada-ircc-processing-times: Check current IRCC processing times — https://www.canada.ca/en/immigration-refugees-citizenship/services/application/check-processing-times.html
 
+## Digital Nomad Visa
+
+- ID: estonia-digital-nomad-visa
+- Country: estonia
+- Status: active
+- Last updated: 2026-07-11T06:31:30.168Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A temporary Estonian visa for location-independent workers working for a foreign employer, a foreign company, or mostly foreign clients, with a maximum D-visa stay of up to one year.
+
+### Official sources
+
+- estonia-digital-nomad-visa: Digital Nomad Visa vs e-Residency — https://www.e-resident.gov.ee/nomadvisa
+- estonia-digital-nomad-visa-faq: FAQs about Estonia's Digital Nomad Visa — https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa
+
+## e-Residency
+
+- ID: estonia-e-residency
+- Country: estonia
+- Status: active
+- Last updated: 2026-07-11T06:31:33.620Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A Republic of Estonia digital identity that lets global entrepreneurs authenticate online, sign documents, and establish or manage an Estonian company remotely; it does not grant residence or travel rights.
+
+### Official sources
+
+- estonia-e-residency-apply: Become an e-resident of Estonia — how to apply — https://www.e-resident.gov.ee/become-an-e-resident
+- estonia-digital-nomad-visa-faq: FAQs about Estonia's Digital Nomad Visa — https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa
+
 ## Top Talent Pass Scheme
 
 - ID: hong-kong-top-talent-pass
@@ -98,6 +130,38 @@ A Japan work residence status for technical, humanities, and certain foreign-cul
 
 - japan-isa-engineer-specialist: Residence status — Engineer/Specialist in Humanities/International Services — https://www.moj.go.jp/isa/applications/status/gijinkoku.html?lang=en
 - japan-isa-residence-status-list: Search by residence status — https://www.moj.go.jp/isa/applications/status/index.html
+
+## Accredited Employer Work Visa (AEWV)
+
+- ID: new-zealand-accredited-employer-work-visa
+- Country: new-zealand
+- Status: active
+- Last updated: 2026-07-11T06:31:39.112Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A New Zealand work visa for a full-time job offer from an accredited employer, with job-specific conditions, up to five years for most jobs, and possible residence options depending on the occupation.
+
+### Official sources
+
+- new-zealand-inz-aewv: Accredited Employer Work Visa — https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa
+- new-zealand-inz-aewv-family: Bringing family if you have an Accredited Employer Work Visa (AEWV) — https://www.immigration.govt.nz/process-to-apply/once-you-have-a-visa/bringing-family-to-new-zealand/bringing-family-if-you-have-a-work-visa/bringing-family-if-you-have-an-accredited-employer-work-visa-aewv
+- new-zealand-inz-smc-resident: Skilled Migrant Category Resident Visa — https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa
+
+## Skilled Migrant Category Resident Visa
+
+- ID: new-zealand-skilled-migrant-category
+- Country: new-zealand
+- Status: active
+- Last updated: 2026-07-11T06:31:40.938Z
+- Source confidence: 5/5
+- Human review flagged: yes
+
+A New Zealand resident visa for applicants aged 55 or younger with an accredited-employer skilled job or offer, six skilled-resident points, English, and the other residence requirements.
+
+### Official sources
+
+- new-zealand-inz-smc-resident: Skilled Migrant Category Resident Visa — https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa
 
 ## Temporary stay visa and residence permit for digital nomads
 

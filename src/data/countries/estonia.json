@@ -1,0 +1,33 @@
+{
+  "id": "estonia",
+  "iso2": "EE",
+  "iso3": "EST",
+  "names": {
+    "en": "Estonia",
+    "zh-Hans": "爱沙尼亚"
+  },
+  "region": "Europe",
+  "summary_md": {
+    "en": "Official coverage distinguishes Estonia e-Residency, a digital identity with no residence or travel rights, from the separate Digital Nomad Visa for temporary remote work stays.",
+    "zh-Hans": "官方信息区分爱沙尼亚电子居民身份（不提供居留或旅行权利）与面向临时远程工作停留的数字游民签证。"
+  },
+  "brand": {
+    "color": "#0072CE",
+    "source": "flag"
+  },
+  "official_source_ids": [
+    "estonia-e-residency-apply",
+    "estonia-digital-nomad-visa",
+    "estonia-digital-nomad-visa-faq"
+  ],
+  "categories": ["digital_nomad", "startup_entrepreneur"],
+  "program_ids": ["estonia-e-residency", "estonia-digital-nomad-visa"],
+  "freshness": {
+    "created_at": "2026-07-11T06:28:54.771Z",
+    "updated_at": "2026-07-11T06:28:54.771Z",
+    "last_checked_at": "2026-07-11T06:28:54.771Z",
+    "update_frequency_days": 30,
+    "confidence": "high",
+    "needs_human_review": true
+  }
+}

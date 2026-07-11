@@ -1,11 +1,11 @@
 {
   "schema_version": 1,
-  "generated_at": "2026-07-11T06:17:59.729Z",
+  "generated_at": "2026-07-11T06:31:40.938Z",
   "counts": {
     "categories": 5,
-    "countries": 8,
-    "programs": 14,
-    "sources": 47
+    "countries": 10,
+    "programs": 18,
+    "sources": 53
   },
   "endpoints": {
     "categories": "/data/categories.json",

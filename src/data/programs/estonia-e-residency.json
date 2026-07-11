@@ -1,0 +1,287 @@
+{
+  "id": "estonia-e-residency",
+  "country_id": "estonia",
+  "category_ids": ["startup_entrepreneur"],
+  "official_names": {
+    "en": "e-Residency"
+  },
+  "aliases": ["Estonia e-Residency", "Estonian e-Resident Digital ID"],
+  "status": "active",
+  "status_note_md": {
+    "en": "e-Residency is a digital identity and business-access status, not a residence permit, visa, citizenship status, or travel right."
+  },
+  "summary_md": {
+    "en": "A Republic of Estonia digital identity that lets global entrepreneurs authenticate online, sign documents, and establish or manage an Estonian company remotely; it does not grant residence or travel rights."
+  },
+  "good_for_md": {
+    "en": "Location-independent founders and operators who need secure digital access to Estonian e-services and want to establish or run a company online without relocating to Estonia."
+  },
+  "not_good_for_md": {
+    "en": "Anyone seeking a visa, physical residence, work authorization, citizenship, or travel rights in Estonia or the European Union."
+  },
+  "pathway_mechanism": "e_residency",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "The application page describes online application, document preparation, identity verification, and card pickup, but does not publish an education requirement."
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": [
+      {
+        "label": {
+          "en": "e-Residency application fee"
+        },
+        "amount": 150,
+        "currency": "EUR",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": false,
+    "accepted_sources": ["unknown"],
+    "income_location": "not_applicable",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "e-Residency is not an immigration residence route and has no published personal-income requirement in the retained application page."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The application flow shows an identity check, approximately 30 days for approval, card delivery in two to five weeks, and automatic card activation within 24 hours after pickup."
+    },
+    "initial_validity_months": "unknown",
+    "renewable": "unknown",
+    "max_stay_months": 0
+  },
+  "rights": {
+    "work_allowed": false,
+    "local_employment_allowed": false,
+    "remote_work_allowed": "unknown",
+    "study_allowed": false,
+    "business_allowed": true,
+    "tax_residency_note_md": {
+      "en": "e-Residency does not change physical or tax residency."
+    }
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "Because e-Residency does not grant residence or travel rights, the retained sources do not establish family immigration benefits."
+    }
+  },
+  "pr_pathway": {
+    "available": false,
+    "summary_md": {
+      "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no residence right."
+    }
+  },
+  "citizenship_pathway": {
+    "available": false,
+    "summary_md": {
+      "en": "The retained e-Residency FAQ explicitly states that e-Residency provides no citizenship right."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The official e-Residency application page and FAQ directly establish the digital-ID workflow, online company access, fees, processing steps, and lack of residence/citizenship/travel rights."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 2,
+    "cost_score": 2,
+    "speed_score": 3,
+    "permanence_score": 1,
+    "family_friendliness_score": 1,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "unknown",
+    "settlement_track": "e_status_only",
+    "pathway_mechanism": "e_residency",
+    "accepts_remote_income": "unknown",
+    "accepts_self_employment": "unknown",
+    "accepts_overseas_remote_income": "unknown",
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": "unknown",
+    "allows_family": "unknown",
+    "work_allowed": false,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": false,
+    "leads_to_citizenship": false,
+    "processing_time_months_min": 1,
+    "processing_time_months_max": 2,
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T06:31:33.620Z"
+  },
+  "source_ids": ["estonia-e-residency-apply", "estonia-digital-nomad-visa-faq"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "retrieved_at": "2026-07-11T06:31:30.168Z",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "estonia-e-residency-apply",
+        "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+        "section": "Application, fee, identity check, card delivery, and activation",
+        "retrieved_at": "2026-07-11T06:31:33.620Z",
+        "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "estonia-e-residency-apply",
+        "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+        "section": "Application, fee, identity check, card delivery, and activation",
+        "retrieved_at": "2026-07-11T06:31:33.620Z",
+        "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "retrieved_at": "2026-07-11T06:31:30.168Z",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "estonia-e-residency-apply",
+        "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+        "section": "Application, fee, identity check, card delivery, and activation",
+        "retrieved_at": "2026-07-11T06:31:33.620Z",
+        "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "estonia-e-residency-apply",
+        "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+        "section": "Application, fee, identity check, card delivery, and activation",
+        "retrieved_at": "2026-07-11T06:31:33.620Z",
+        "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "estonia-e-residency-apply",
+        "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+        "section": "Application, fee, identity check, card delivery, and activation",
+        "retrieved_at": "2026-07-11T06:31:33.620Z",
+        "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "estonia-e-residency-apply",
+        "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+        "section": "Application, fee, identity check, card delivery, and activation",
+        "retrieved_at": "2026-07-11T06:31:33.620Z",
+        "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "estonia-e-residency-apply",
+        "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+        "section": "Application, fee, identity check, card delivery, and activation",
+        "retrieved_at": "2026-07-11T06:31:33.620Z",
+        "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "retrieved_at": "2026-07-11T06:31:30.168Z",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "retrieved_at": "2026-07-11T06:31:30.168Z",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "retrieved_at": "2026-07-11T06:31:30.168Z",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "retrieved_at": "2026-07-11T06:31:30.168Z",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "retrieved_at": "2026-07-11T06:31:30.168Z",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T06:31:33.620Z",
+    "updated_at": "2026-07-11T06:31:33.620Z",
+    "last_checked_at": "2026-07-11T06:31:33.620Z",
+    "update_frequency_days": 30,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T06:31:33.620Z",
+      "summary": "Added Estonia e-Residency as a status-only digital identity fixture, explicitly not residence.",
+      "source_ids": ["estonia-e-residency-apply", "estonia-digital-nomad-visa-faq"]
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "id": "new-zealand-inz-smc-resident",
+  "country_id": "new-zealand",
+  "program_ids": [
+    "new-zealand-accredited-employer-work-visa",
+    "new-zealand-skilled-migrant-category"
+  ],
+  "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+  "title": "Skilled Migrant Category Resident Visa",
+  "publisher": "Immigration New Zealand",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 14,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Skilled Migrant Category Resident Visa",
+    "6 skilled resident points",
+    "Permanent Resident Visa"
+  ],
+  "expected_domains": ["immigration.govt.nz", "www.immigration.govt.nz"],
+  "last_checked_at": "2026-07-11T06:28:54.771Z",
+  "last_success_at": "2026-07-11T06:28:54.771Z",
+  "status": "active"
+}

@@ -531,6 +531,382 @@
       "last_checked_at": "2026-07-10T00:00:00Z"
     },
     {
+      "program_id": "estonia-digital-nomad-visa",
+      "country_id": "estonia",
+      "category_ids": [
+        "digital_nomad"
+      ],
+      "official_names": {
+        "en": "Digital Nomad Visa"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "none",
+        "credential_assessment_required": "not_applicable",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [
+          {
+            "amount": 4500,
+            "currency": "EUR",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total"
+          }
+        ],
+        "accepted_income_sources": [
+          "remote_employment",
+          "self_employment",
+          "freelance"
+        ],
+        "income_location": "outside_destination",
+        "proof_history_months": 6
+      },
+      "freshness": {
+        "created_at": "2026-07-11T06:31:30.168Z",
+        "updated_at": "2026-07-11T06:31:30.168Z",
+        "last_checked_at": "2026-07-11T06:31:30.168Z",
+        "update_frequency_days": 30,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "estonia-digital-nomad-visa",
+            "url": "https://www.e-resident.gov.ee/nomadvisa",
+            "section": "Digital Nomad Visa versus e-Residency",
+            "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+            "retrieved_at": "2026-07-11T06:31:27.837Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "estonia-digital-nomad-visa",
+            "url": "https://www.e-resident.gov.ee/nomadvisa",
+            "section": "Digital Nomad Visa versus e-Residency",
+            "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+            "retrieved_at": "2026-07-11T06:31:27.837Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "estonia-digital-nomad-visa",
+            "url": "https://www.e-resident.gov.ee/nomadvisa",
+            "section": "Digital Nomad Visa versus e-Residency",
+            "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+            "retrieved_at": "2026-07-11T06:31:27.837Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "estonia-digital-nomad-visa",
+            "url": "https://www.e-resident.gov.ee/nomadvisa",
+            "section": "Digital Nomad Visa versus e-Residency",
+            "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+            "retrieved_at": "2026-07-11T06:31:27.837Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "estonia-digital-nomad-visa",
+            "url": "https://www.e-resident.gov.ee/nomadvisa",
+            "section": "Digital Nomad Visa versus e-Residency",
+            "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+            "retrieved_at": "2026-07-11T06:31:27.837Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "estonia-digital-nomad-visa",
+            "url": "https://www.e-resident.gov.ee/nomadvisa",
+            "section": "Digital Nomad Visa versus e-Residency",
+            "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+            "retrieved_at": "2026-07-11T06:31:27.837Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "estonia-digital-nomad-visa",
+            "url": "https://www.e-resident.gov.ee/nomadvisa",
+            "section": "Digital Nomad Visa versus e-Residency",
+            "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+            "retrieved_at": "2026-07-11T06:31:27.837Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ]
+      },
+      "pathway_type": "temporary_only",
+      "settlement_track": "temporary_no_pr",
+      "pathway_mechanism": "remote_income",
+      "accepts_remote_income": true,
+      "accepts_self_employment": true,
+      "accepts_overseas_remote_income": true,
+      "requires_degree": false,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": true,
+      "remote_work_allowed": true,
+      "leads_to_pr": false,
+      "leads_to_citizenship": false,
+      "processing_time_months_min": 1,
+      "processing_time_months_max": 1,
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T06:31:30.168Z"
+    },
+    {
+      "program_id": "estonia-e-residency",
+      "country_id": "estonia",
+      "category_ids": [
+        "startup_entrepreneur"
+      ],
+      "official_names": {
+        "en": "e-Residency"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": false,
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable",
+        "proof_history_months": "unknown"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T06:31:33.620Z",
+        "updated_at": "2026-07-11T06:31:33.620Z",
+        "last_checked_at": "2026-07-11T06:31:33.620Z",
+        "update_frequency_days": 30,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "estonia-e-residency-apply",
+            "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+            "section": "Application, fee, identity check, card delivery, and activation",
+            "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81",
+            "retrieved_at": "2026-07-11T06:31:33.620Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "estonia-e-residency-apply",
+            "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+            "section": "Application, fee, identity check, card delivery, and activation",
+            "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81",
+            "retrieved_at": "2026-07-11T06:31:33.620Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "estonia-e-residency-apply",
+            "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+            "section": "Application, fee, identity check, card delivery, and activation",
+            "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81",
+            "retrieved_at": "2026-07-11T06:31:33.620Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "estonia-e-residency-apply",
+            "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+            "section": "Application, fee, identity check, card delivery, and activation",
+            "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81",
+            "retrieved_at": "2026-07-11T06:31:33.620Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "estonia-e-residency-apply",
+            "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+            "section": "Application, fee, identity check, card delivery, and activation",
+            "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81",
+            "retrieved_at": "2026-07-11T06:31:33.620Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "estonia-e-residency-apply",
+            "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+            "section": "Application, fee, identity check, card delivery, and activation",
+            "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81",
+            "retrieved_at": "2026-07-11T06:31:33.620Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "estonia-e-residency-apply",
+            "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+            "section": "Application, fee, identity check, card delivery, and activation",
+            "snapshot_id": "e045ff2b681b839cd8e286930331c3801941444d1d84e2e46f5b1f4855d3db81",
+            "retrieved_at": "2026-07-11T06:31:33.620Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "estonia-digital-nomad-visa-faq",
+            "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+            "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+            "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+            "retrieved_at": "2026-07-11T06:31:30.168Z"
+          }
+        ]
+      },
+      "pathway_type": "unknown",
+      "settlement_track": "e_status_only",
+      "pathway_mechanism": "e_residency",
+      "accepts_remote_income": "unknown",
+      "accepts_self_employment": "unknown",
+      "accepts_overseas_remote_income": "unknown",
+      "requires_degree": false,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": false,
+      "requires_local_entity": "unknown",
+      "allows_family": "unknown",
+      "work_allowed": false,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": false,
+      "leads_to_citizenship": false,
+      "processing_time_months_min": 1,
+      "processing_time_months_max": 2,
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T06:31:33.620Z"
+    },
+    {
       "program_id": "hong-kong-top-talent-pass",
       "country_id": "hong-kong",
       "category_ids": [
@@ -909,6 +1285,374 @@
       "policy_stability_score": 3,
       "source_confidence_score": 4,
       "last_checked_at": "2026-07-11T05:38:47.655Z"
+    },
+    {
+      "program_id": "new-zealand-accredited-employer-work-visa",
+      "country_id": "new-zealand",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Accredited Employer Work Visa (AEWV)"
+      },
+      "status": "active",
+      "criteria": {
+        "min_work_experience_years": 2,
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": true,
+        "sponsor_required": true,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "unknown",
+        "min_income": [],
+        "accepted_income_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination",
+        "proof_history_months": "unknown"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T06:31:39.112Z",
+        "updated_at": "2026-07-11T06:31:39.112Z",
+        "last_checked_at": "2026-07-11T06:31:39.112Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "new-zealand-inz-aewv-family",
+            "url": "https://www.immigration.govt.nz/process-to-apply/once-you-have-a-visa/bringing-family-to-new-zealand/bringing-family-if-you-have-a-work-visa/bringing-family-if-you-have-an-accredited-employer-work-visa-aewv",
+            "section": "Family support and conditional partner/child visa eligibility",
+            "snapshot_id": "ce0b1fefc909baa1fa43ed14151adff4e7b0462a7418c0e2452ede9093f2270c",
+            "retrieved_at": "2026-07-11T06:31:40.533Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "new-zealand-inz-aewv",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+            "section": "AEWV overview, duration, eligibility, skills, and residence option",
+            "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395",
+            "retrieved_at": "2026-07-11T06:31:39.112Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "temporary_may_lead_pr",
+      "pathway_mechanism": "employer_sponsored",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": true,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": true,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": false,
+      "leads_to_pr": "indirect",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": 1,
+      "processing_time_months_max": 2,
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T06:31:39.112Z"
+    },
+    {
+      "program_id": "new-zealand-skilled-migrant-category",
+      "country_id": "new-zealand",
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Skilled Migrant Category Resident Visa"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "min_program_selection_points": 6,
+        "job_offer_required": true,
+        "sponsor_required": true,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [],
+        "accepted_income_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination",
+        "proof_history_months": "unknown"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T06:31:40.938Z",
+        "updated_at": "2026-07-11T06:31:40.938Z",
+        "last_checked_at": "2026-07-11T06:31:40.938Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "new-zealand-inz-smc-resident",
+            "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+            "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+            "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269",
+            "retrieved_at": "2026-07-11T06:31:40.938Z"
+          }
+        ]
+      },
+      "pathway_type": "residence",
+      "settlement_track": "residence",
+      "pathway_mechanism": "points_invitation",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": true,
+      "requires_investment": false,
+      "requires_language_test": true,
+      "requires_local_entity": true,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": true,
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 5,
+      "last_checked_at": "2026-07-11T06:31:40.938Z"
     },
     {
       "program_id": "portugal-d8-digital-nomad",

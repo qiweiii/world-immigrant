@@ -1,0 +1,18 @@
+{
+  "id": "estonia-e-residency-apply",
+  "country_id": "estonia",
+  "program_ids": ["estonia-e-residency"],
+  "url": "https://www.e-resident.gov.ee/become-an-e-resident",
+  "title": "Become an e-resident of Estonia — how to apply",
+  "publisher": "Republic of Estonia e-Residency",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": ["e-resident", "Apply online", "24 hours"],
+  "expected_domains": ["e-resident.gov.ee", "www.e-resident.gov.ee"],
+  "last_checked_at": "2026-07-11T06:28:54.771Z",
+  "last_success_at": "2026-07-11T06:28:54.771Z",
+  "status": "active"
+}

@@ -1,0 +1,28 @@
+{
+  "id": "estonia-digital-nomad-visa-faq",
+  "country_id": "estonia",
+  "program_ids": [
+    "estonia-e-residency",
+    "estonia-digital-nomad-visa"
+  ],
+  "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+  "title": "FAQs about Estonia's Digital Nomad Visa",
+  "publisher": "Republic of Estonia e-Residency",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "no right of residence",
+    "€4,500",
+    "D-visa"
+  ],
+  "expected_domains": [
+    "e-resident.gov.ee",
+    "www.e-resident.gov.ee"
+  ],
+  "last_checked_at": "2026-07-11T06:28:54.771Z",
+  "last_success_at": "2026-07-11T06:28:54.771Z",
+  "status": "active"
+}

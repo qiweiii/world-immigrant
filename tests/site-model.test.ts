@@ -16,6 +16,8 @@ test("country and program page models resolve canonical relationships", async ()
   assert.ok(byId.portugal);
   assert.ok(byId.spain);
   assert.ok(byId.uae);
+  assert.ok(byId["new-zealand"]);
+  assert.ok(byId.estonia);
   assert.deepEqual(
     byId.portugal.programs.map(({ id }) => id),
     ["portugal-d8-digital-nomad"],
@@ -38,6 +40,14 @@ test("country and program page models resolve canonical relationships", async ()
   assert.deepEqual(
     byId.singapore.programs.map(({ id }) => id),
     ["singapore-employment-pass", "singapore-entrepass"],
+  );
+  assert.deepEqual(
+    byId["new-zealand"].programs.map(({ id }) => id),
+    ["new-zealand-accredited-employer-work-visa", "new-zealand-skilled-migrant-category"],
+  );
+  assert.deepEqual(
+    byId.estonia.programs.map(({ id }) => id),
+    ["estonia-e-residency", "estonia-digital-nomad-visa"],
   );
   assert.deepEqual(
     byId.canada.programs.map(({ id }) => id),

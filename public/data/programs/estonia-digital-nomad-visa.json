@@ -1,0 +1,319 @@
+{
+  "id": "estonia-digital-nomad-visa",
+  "country_id": "estonia",
+  "category_ids": [
+    "digital_nomad"
+  ],
+  "official_names": {
+    "en": "Digital Nomad Visa"
+  },
+  "aliases": [
+    "Estonia Digital Nomad Visa",
+    "Estonia DNV"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "The Digital Nomad Visa is a temporary stay visa, separate from e-Residency, and does not create a permanent-residence or citizenship route."
+  },
+  "summary_md": {
+    "en": "A temporary Estonian visa for location-independent workers working for a foreign employer, a foreign company, or mostly foreign clients, with a maximum D-visa stay of up to one year."
+  },
+  "good_for_md": {
+    "en": "Remote employees, foreign-company owners, and freelancers with mostly foreign clients who can prove location-independent work and the required income history."
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking Estonian residence, permanent residence, citizenship, local employment, or an e-Residency substitute."
+  },
+  "pathway_mechanism": "remote_income",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "none",
+      "credential_assessment_required": "not_applicable",
+      "note_md": {
+        "en": "Applicants must work location-independently and fit a foreign-employer, foreign-company, or mostly-foreign-client freelancer category. Standard visa rules also apply."
+      }
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": [
+      {
+        "label": {
+          "en": "Long-stay D visa state fee"
+        },
+        "amount": 120,
+        "currency": "EUR",
+        "applies_to": "primary"
+      },
+      {
+        "label": {
+          "en": "Short-stay C visa state fee"
+        },
+        "amount": 90,
+        "currency": "EUR",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": true,
+    "min_income": [
+      {
+        "amount": 4500,
+        "currency": "EUR",
+        "period": "monthly",
+        "applies_to": "primary",
+        "calculation": "minimum_total"
+      }
+    ],
+    "accepted_sources": [
+      "remote_employment",
+      "self_employment",
+      "freelance"
+    ],
+    "income_location": "outside_destination",
+    "proof_history_months": 6,
+    "stability_requirement_md": {
+      "en": "The FAQ states that applicants must evidence income during the six months before application and meet the monthly gross threshold."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The e-Residency programme page says DNV processing can take up to 30 days. The FAQ distinguishes a C visa of up to 90 days from a D visa of up to 365 days."
+    },
+    "initial_validity_months": "variable",
+    "renewable": false,
+    "max_stay_months": "variable"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": false,
+    "remote_work_allowed": true,
+    "study_allowed": "unknown",
+    "business_allowed": "unknown",
+    "tax_residency_note_md": {
+      "en": "The DNV is a temporary stay visa and is not a residence permit."
+    }
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown",
+    "note_md": {
+      "en": "The retained DNV pages do not establish dependant eligibility or dependant work rights."
+    }
+  },
+  "pr_pathway": {
+    "available": false,
+    "summary_md": {
+      "en": "The FAQ states that DNV stays do not provide an advantage for obtaining an Estonian residence permit and do not give permanent residence."
+    }
+  },
+  "citizenship_pathway": {
+    "available": false,
+    "summary_md": {
+      "en": "The FAQ states that DNV stays do not give a right to Estonian citizenship."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Official e-Residency programme pages directly support the foreign-work categories, income threshold, six-month evidence period, C/D visa durations, fees, and lack of residence/PR/citizenship outcome."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 2,
+    "speed_score": 3,
+    "permanence_score": 1,
+    "family_friendliness_score": 2,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "temporary_only",
+    "settlement_track": "temporary_no_pr",
+    "pathway_mechanism": "remote_income",
+    "accepts_remote_income": true,
+    "accepts_self_employment": true,
+    "accepts_overseas_remote_income": true,
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": false,
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": true,
+    "leads_to_pr": false,
+    "leads_to_citizenship": false,
+    "processing_time_months_min": 1,
+    "processing_time_months_max": 1,
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T06:31:30.168Z"
+  },
+  "source_ids": [
+    "estonia-digital-nomad-visa",
+    "estonia-digital-nomad-visa-faq"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "estonia-digital-nomad-visa",
+        "url": "https://www.e-resident.gov.ee/nomadvisa",
+        "section": "Digital Nomad Visa versus e-Residency",
+        "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+        "retrieved_at": "2026-07-11T06:31:27.837Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "estonia-digital-nomad-visa",
+        "url": "https://www.e-resident.gov.ee/nomadvisa",
+        "section": "Digital Nomad Visa versus e-Residency",
+        "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+        "retrieved_at": "2026-07-11T06:31:27.837Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "estonia-digital-nomad-visa",
+        "url": "https://www.e-resident.gov.ee/nomadvisa",
+        "section": "Digital Nomad Visa versus e-Residency",
+        "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+        "retrieved_at": "2026-07-11T06:31:27.837Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "estonia-digital-nomad-visa",
+        "url": "https://www.e-resident.gov.ee/nomadvisa",
+        "section": "Digital Nomad Visa versus e-Residency",
+        "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+        "retrieved_at": "2026-07-11T06:31:27.837Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "estonia-digital-nomad-visa",
+        "url": "https://www.e-resident.gov.ee/nomadvisa",
+        "section": "Digital Nomad Visa versus e-Residency",
+        "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+        "retrieved_at": "2026-07-11T06:31:27.837Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "estonia-digital-nomad-visa",
+        "url": "https://www.e-resident.gov.ee/nomadvisa",
+        "section": "Digital Nomad Visa versus e-Residency",
+        "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+        "retrieved_at": "2026-07-11T06:31:27.837Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "estonia-digital-nomad-visa",
+        "url": "https://www.e-resident.gov.ee/nomadvisa",
+        "section": "Digital Nomad Visa versus e-Residency",
+        "snapshot_id": "a08543a85e3178ce66aae5ae1a3c9404295fff41ae2e68b17deaab71d1a81983",
+        "retrieved_at": "2026-07-11T06:31:27.837Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+        "retrieved_at": "2026-07-11T06:31:30.168Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+        "retrieved_at": "2026-07-11T06:31:30.168Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+        "retrieved_at": "2026-07-11T06:31:30.168Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+        "retrieved_at": "2026-07-11T06:31:30.168Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+        "retrieved_at": "2026-07-11T06:31:30.168Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+        "retrieved_at": "2026-07-11T06:31:30.168Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "estonia-digital-nomad-visa-faq",
+        "url": "https://www.e-resident.gov.ee/blog/posts/faqs-about-estonias-digital-nomad-visa",
+        "section": "DNV distinction, eligibility, income threshold, visa duration, and no residence/PR outcome",
+        "snapshot_id": "9a46fbdd93a5606179e764e1ec88f6c55f46a1a6d6dca1e205e7ac4accf0526c",
+        "retrieved_at": "2026-07-11T06:31:30.168Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T06:31:30.168Z",
+    "updated_at": "2026-07-11T06:31:30.168Z",
+    "last_checked_at": "2026-07-11T06:31:30.168Z",
+    "update_frequency_days": 30,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T06:31:30.168Z",
+      "summary": "Added Estonia Digital Nomad Visa as a temporary remote-work stay route, separate from e-Residency.",
+      "source_ids": [
+        "estonia-digital-nomad-visa",
+        "estonia-digital-nomad-visa-faq"
+      ]
+    }
+  ]
+}

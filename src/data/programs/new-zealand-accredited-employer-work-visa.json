@@ -1,0 +1,297 @@
+{
+  "id": "new-zealand-accredited-employer-work-visa",
+  "country_id": "new-zealand",
+  "category_ids": ["skilled_worker"],
+  "official_names": {
+    "en": "Accredited Employer Work Visa (AEWV)"
+  },
+  "aliases": ["New Zealand AEWV"],
+  "status": "active",
+  "status_note_md": {
+    "en": "AEWV is an employer-linked temporary work visa. The Immigration New Zealand page states that it can lead to a resident visa depending on the job, but does not make residence automatic."
+  },
+  "summary_md": {
+    "en": "A New Zealand work visa for a full-time job offer from an accredited employer, with job-specific conditions, up to five years for most jobs, and possible residence options depending on the occupation."
+  },
+  "good_for_md": {
+    "en": "Skilled workers with a genuine full-time offer from an accredited New Zealand employer who can show at least two years of relevant experience or an accepted qualification."
+  },
+  "not_good_for_md": {
+    "en": "Applicants without an accredited-employer job offer, applicants seeking open work rights unrelated to the offered job, or applicants treating AEWV alone as automatic residence."
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown",
+      "note_md": {
+        "en": "The skill requirement can be met through at least two years of relevant job experience or a qualification at New Zealand Qualification Framework level 4 or higher."
+      }
+    },
+    "work_experience": {
+      "min_years": 2,
+      "note_md": {
+        "en": "Relevant experience or the alternative qualification route must be in the same field or industry as the offered job, subject to the visa rules."
+      }
+    },
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": [
+      {
+        "label": {
+          "en": "AEWV application fee from"
+        },
+        "amount": 1540,
+        "currency": "NZD",
+        "applies_to": "primary"
+      }
+    ]
+  },
+  "income": {
+    "required": "unknown",
+    "accepted_sources": ["employment"],
+    "income_location": "inside_destination",
+    "proof_history_months": "unknown",
+    "stability_requirement_md": {
+      "en": "The retained AEWV page ties eligibility to the offered job and employment agreement; it does not establish one universal personal-income threshold in this fixture."
+    }
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "Immigration New Zealand lists 80% processing within seven weeks. The visa can be up to five years based on the job; most jobs have a five-year maximum continuous stay and ANZSCO skill-level 4 or 5 jobs generally have three years."
+    },
+    "initial_validity_months": "unknown",
+    "renewable": true,
+    "max_stay_months": 60
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": false,
+    "study_allowed": "unknown",
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": true,
+    "unmarried_partner_allowed": true,
+    "children_allowed": true,
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": false,
+    "note_md": {
+      "en": "Partner and dependent-child visas may be supported, but the exact visa type depends on earnings, occupation skill level, NOL/ANZSCO status, Green List or approved transport/care-workforce status, and other conditions."
+    }
+  },
+  "pr_pathway": {
+    "available": "indirect",
+    "summary_md": {
+      "en": "The AEWV page says the visa can lead to a resident visa depending on the job and points applicants to New Zealand skilled-residence pathways."
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "AEWV alone does not establish citizenship eligibility."
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "extraction_confidence_score": 5,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "Direct Immigration New Zealand sources establish the employer link, skill evidence, duration, processing time, family conditions, and indirect residence option. Job-specific wage, occupation, and family outcomes remain conditional."
+    }
+  },
+  "comparison": {
+    "difficulty_score": 4,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 3,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 5,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "temporary_may_lead_pr",
+    "pathway_mechanism": "employer_sponsored",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": true,
+    "allows_family": true,
+    "work_allowed": true,
+    "remote_work_allowed": false,
+    "leads_to_pr": "indirect",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": 1,
+    "processing_time_months_max": 2,
+    "policy_stability_score": 3,
+    "source_confidence_score": 5,
+    "last_checked_at": "2026-07-11T06:31:39.112Z"
+  },
+  "source_ids": [
+    "new-zealand-inz-aewv",
+    "new-zealand-inz-aewv-family",
+    "new-zealand-inz-smc-resident"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "new-zealand-inz-aewv-family",
+        "url": "https://www.immigration.govt.nz/process-to-apply/once-you-have-a-visa/bringing-family-to-new-zealand/bringing-family-if-you-have-a-work-visa/bringing-family-if-you-have-an-accredited-employer-work-visa-aewv",
+        "section": "Family support and conditional partner/child visa eligibility",
+        "retrieved_at": "2026-07-11T06:31:40.533Z",
+        "snapshot_id": "ce0b1fefc909baa1fa43ed14151adff4e7b0462a7418c0e2452ede9093f2270c"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "new-zealand-inz-smc-resident",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/skilled-migrant-category-resident-visa",
+        "section": "SMC resident eligibility, points, duration, family, and permanent residence",
+        "retrieved_at": "2026-07-11T06:31:40.938Z",
+        "snapshot_id": "2c172883728961a55311ebca7b4ca6fff88c8b47fb98d66100bca6ec2ac83269"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "new-zealand-inz-aewv",
+        "url": "https://www.immigration.govt.nz/new-zealand-visas/visas/visa/accredited-employer-work-visa",
+        "section": "AEWV overview, duration, eligibility, skills, and residence option",
+        "retrieved_at": "2026-07-11T06:31:39.112Z",
+        "snapshot_id": "f3b485394dd371ee7fa0af244bc43340790a74674089b7c048430ebc7177e395"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T06:31:39.112Z",
+    "updated_at": "2026-07-11T06:31:39.112Z",
+    "last_checked_at": "2026-07-11T06:31:39.112Z",
+    "update_frequency_days": 14,
+    "confidence": "high",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T06:31:39.112Z",
+      "summary": "Added New Zealand AEWV fixture from retained Immigration New Zealand evidence.",
+      "source_ids": [
+        "new-zealand-inz-aewv",
+        "new-zealand-inz-aewv-family",
+        "new-zealand-inz-smc-resident"
+      ]
+    }
+  ]
+}

@@ -88,6 +88,45 @@
       }
     },
     {
+      "id": "estonia",
+      "iso2": "EE",
+      "iso3": "EST",
+      "names": {
+        "en": "Estonia",
+        "zh-Hans": "爱沙尼亚"
+      },
+      "region": "Europe",
+      "summary_md": {
+        "en": "Official coverage distinguishes Estonia e-Residency, a digital identity with no residence or travel rights, from the separate Digital Nomad Visa for temporary remote work stays.",
+        "zh-Hans": "官方信息区分爱沙尼亚电子居民身份（不提供居留或旅行权利）与面向临时远程工作停留的数字游民签证。"
+      },
+      "brand": {
+        "color": "#0072CE",
+        "source": "flag"
+      },
+      "official_source_ids": [
+        "estonia-e-residency-apply",
+        "estonia-digital-nomad-visa",
+        "estonia-digital-nomad-visa-faq"
+      ],
+      "categories": [
+        "digital_nomad",
+        "startup_entrepreneur"
+      ],
+      "program_ids": [
+        "estonia-e-residency",
+        "estonia-digital-nomad-visa"
+      ],
+      "freshness": {
+        "created_at": "2026-07-11T06:28:54.771Z",
+        "updated_at": "2026-07-11T06:28:54.771Z",
+        "last_checked_at": "2026-07-11T06:28:54.771Z",
+        "update_frequency_days": 30,
+        "confidence": "high",
+        "needs_human_review": true
+      }
+    },
+    {
       "id": "hong-kong",
       "iso2": "HK",
       "iso3": "HKG",
@@ -156,6 +195,44 @@
         "last_checked_at": "2026-07-11T05:36:00Z",
         "update_frequency_days": 30,
         "confidence": "medium",
+        "needs_human_review": true
+      }
+    },
+    {
+      "id": "new-zealand",
+      "iso2": "NZ",
+      "iso3": "NZL",
+      "names": {
+        "en": "New Zealand",
+        "zh-Hans": "新西兰"
+      },
+      "region": "Oceania",
+      "summary_md": {
+        "en": "Official coverage includes employer-sponsored work through the Accredited Employer Work Visa and skilled residence through the Skilled Migrant Category.",
+        "zh-Hans": "官方信息覆盖雇主担保的认可雇主工作签证，以及技术移民类别居民签证。"
+      },
+      "brand": {
+        "color": "#00247D",
+        "source": "flag"
+      },
+      "official_source_ids": [
+        "new-zealand-inz-aewv",
+        "new-zealand-inz-aewv-family",
+        "new-zealand-inz-smc-resident"
+      ],
+      "categories": [
+        "skilled_worker"
+      ],
+      "program_ids": [
+        "new-zealand-accredited-employer-work-visa",
+        "new-zealand-skilled-migrant-category"
+      ],
+      "freshness": {
+        "created_at": "2026-07-11T06:28:54.771Z",
+        "updated_at": "2026-07-11T06:28:54.771Z",
+        "last_checked_at": "2026-07-11T06:28:54.771Z",
+        "update_frequency_days": 14,
+        "confidence": "high",
         "needs_human_review": true
       }
     },
