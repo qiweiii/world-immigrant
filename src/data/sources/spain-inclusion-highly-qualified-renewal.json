@@ -1,0 +1,22 @@
+{
+  "id": "spain-inclusion-highly-qualified-renewal",
+  "country_id": "spain",
+  "program_ids": ["spain-highly-qualified-professionals"],
+  "url": "https://www.inclusion.gob.es/web/migraciones/w/67.-renovacion-de-la-autorizacion-de-residencia-temporal-y-trabajo-de-profesionales-altamente-cualificados",
+  "title": "Renewal of temporary residence and work authorisation for highly qualified professionals",
+  "publisher": "Spanish Ministry of Inclusion, Social Security and Migration",
+  "source_type": "official",
+  "language": "es",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "renovación",
+    "profesionales altamente cualificados",
+    "residencia temporal y trabajo"
+  ],
+  "expected_domains": ["www.inclusion.gob.es"],
+  "last_checked_at": "2026-07-11T12:31:40.274Z",
+  "last_success_at": "2026-07-11T12:31:40.274Z",
+  "status": "active"
+}

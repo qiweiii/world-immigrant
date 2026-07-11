@@ -1,0 +1,26 @@
+{
+  "id": "spain-inclusion-highly-qualified-initial",
+  "country_id": "spain",
+  "program_ids": [
+    "spain-highly-qualified-professionals"
+  ],
+  "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+  "title": "Initial residence and work authorisation for highly qualified professionals",
+  "publisher": "Spanish Ministry of Inclusion, Social Security and Migration",
+  "source_type": "official",
+  "language": "es",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Autorización inicial de residencia y trabajo",
+    "profesionales altamente cualificados",
+    "cualificación de enseñanza superior"
+  ],
+  "expected_domains": [
+    "www.inclusion.gob.es"
+  ],
+  "last_checked_at": "2026-07-11T12:31:38.831Z",
+  "last_success_at": "2026-07-11T12:31:38.831Z",
+  "status": "active"
+}

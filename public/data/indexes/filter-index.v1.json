@@ -3835,6 +3835,400 @@
       "last_checked_at": "2026-07-11T05:07:14.070Z"
     },
     {
+      "program_id": "spain-highly-qualified-professionals",
+      "country_id": "spain",
+      "country_names": {
+        "en": "Spain",
+        "zh-Hans": "西班牙"
+      },
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Residence authorisation for highly qualified professionals",
+        "zh-Hans": "高技能专业人士居留许可"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": true,
+        "sponsor_required": true,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [
+          {
+            "amount": "unknown",
+            "currency": "EUR",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total"
+          }
+        ],
+        "accepted_income_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T12:27:41Z",
+        "updated_at": "2026-07-11T12:27:41Z",
+        "last_checked_at": "2026-07-11T12:31:40.915Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Temporary residence-and-work authorisation and May 2025 update note",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Type of authorisation and higher-education or exceptional experience route",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Requirements for qualified employment and supporting documentation",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Route limitations and rules in force at filing",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Employer-linked highly qualified professional authorisation",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Qualification and employment requirements",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Required documentation and fees not established",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Salary threshold not established in retained extraction",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-renewal",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/67.-renovacion-de-la-autorizacion-de-residencia-temporal-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Initial authorisation and renewal procedure",
+            "snapshot_id": "f3fa8602451de3271c5ac11970a29d981bb6f2328f766e06042e74ddef27df47",
+            "retrieved_at": "2026-07-11T12:31:40.274Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Residence and work authorisation",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-renewal",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/67.-renovacion-de-la-autorizacion-de-residencia-temporal-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Family mobility application forms and eligible family classes",
+            "snapshot_id": "f3fa8602451de3271c5ac11970a29d981bb6f2328f766e06042e74ddef27df47",
+            "retrieved_at": "2026-07-11T12:31:40.274Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Permanent residence not established",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Citizenship not established",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "spain-inclusion-highly-qualified-initial",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+            "section": "Conservative highly qualified professional filter fields",
+            "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36",
+            "retrieved_at": "2026-07-11T12:31:38.831Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "residence",
+      "pathway_mechanism": "employer_sponsored",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": true,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": true,
+      "allows_family": "unknown",
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-11T12:31:40.915Z"
+    },
+    {
+      "program_id": "spain-study-stay",
+      "country_id": "spain",
+      "country_names": {
+        "en": "Spain",
+        "zh-Hans": "西班牙"
+      },
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Long-stay study authorisation",
+        "zh-Hans": "长期学习居留许可"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [
+          {
+            "amount": "unknown",
+            "currency": "EUR",
+            "period": "monthly",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "The official consular guidance states that the minimum financial means are equivalent to 100% of Spain's IPREM; the amount changes with the applicable IPREM.",
+              "zh-Hans": "官方领事指南说明，最低经济能力相当于西班牙 IPREM 的 100%；金额会随适用的 IPREM 变化。"
+            }
+          }
+        ],
+        "proof_of_funds_exemptions": [],
+        "income_required": "not_applicable",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T12:27:41Z",
+        "updated_at": "2026-07-11T12:27:41Z",
+        "last_checked_at": "2026-07-11T12:31:40.915Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Study-stay authorisation exceeding 90 days",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Eligible study, mobility, volunteering, and training activities",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Study-stay requirements and application documents",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "90-day boundary and study route limitations",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Admission to eligible study activity",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Study-stay eligibility and health documentation",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "spain-exteriores-study-visa",
+            "url": "https://www.exteriores.gob.es/Consulados/londres/en/ServiciosConsulares/Paginas/Consular/Visado-de-estudios.aspx",
+            "section": "Proof of financial means and 100% IPREM rule",
+            "snapshot_id": "e02236687966fe4d8cab98946961ee8bdcdb787d74549541abc661b84a914bb8",
+            "retrieved_at": "2026-07-11T12:31:31.782Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Study route does not use an employment-income requirement",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "spain-exteriores-study-visa",
+            "url": "https://www.exteriores.gob.es/Consulados/londres/en/ServiciosConsulares/Paginas/Consular/Visado-de-estudios.aspx",
+            "section": "Long-stay visa validity and Foreigner Identity Card timing",
+            "snapshot_id": "e02236687966fe4d8cab98946961ee8bdcdb787d74549541abc661b84a914bb8",
+            "retrieved_at": "2026-07-11T12:31:31.782Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Study purpose and work rights requiring further review",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Family visa availability and non-work condition",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Permanent residence not established",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Citizenship not established",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "spain-inclusion-study-stay",
+            "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+            "section": "Conservative study-stay filter fields",
+            "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+            "retrieved_at": "2026-07-11T12:31:40.915Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "other",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": false,
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": "unknown",
+      "remote_work_allowed": false,
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-11T12:31:40.915Z"
+    },
+    {
       "program_id": "uae-free-zone-investor",
       "country_id": "uae",
       "country_names": {

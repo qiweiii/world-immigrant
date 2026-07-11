@@ -1,0 +1,302 @@
+{
+  "id": "spain-study-stay",
+  "country_id": "spain",
+  "category_ids": [
+    "study_to_pr"
+  ],
+  "official_names": {
+    "en": "Long-stay study authorisation",
+    "zh-Hans": "长期学习居留许可"
+  },
+  "aliases": [
+    "Spain study visa",
+    "Study stay authorisation",
+    "Estancia por estudios"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "Spain distinguishes study stays exceeding 90 days from shorter study stays. The Ministry of Inclusion and the Ministry of Foreign Affairs publish the study-stay and visa requirements.",
+    "zh-Hans": "西班牙区分超过 90 天的学习停留和较短的学习停留。包容部和外交部公布学习停留及签证要求。"
+  },
+  "summary_md": {
+    "en": "A temporary study-stay route for higher education, post-compulsory secondary education, student mobility, volunteering, and specified training activities lasting more than 90 days.",
+    "zh-Hans": "面向高等教育、义务后中等教育、学生流动、志愿服务和特定培训活动的临时学习停留途径，适用于超过 90 天的项目。"
+  },
+  "good_for_md": {
+    "en": "Students accepted by an eligible Spanish programme who can show acceptance, financial means, health insurance, and the required identity, health, and criminal-record documents.",
+    "zh-Hans": "适合被西班牙合资格课程录取，并能够证明录取、经济能力、医疗保险以及所需身份、健康和犯罪记录材料的学生。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking unrestricted employment, a direct permanent-residence route, or a short stay that does not require this long-stay study authorisation.",
+    "zh-Hans": "不适合寻求不受限制就业、直接永久居留途径，或不需要长期学习居留许可的短期停留申请人。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": true,
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [
+      {
+        "amount": "unknown",
+        "currency": "EUR",
+        "period": "monthly",
+        "applies_to": "primary",
+        "calculation": "minimum_total",
+        "note_md": {
+          "en": "The official consular guidance states that the minimum financial means are equivalent to 100% of Spain's IPREM; the amount changes with the applicable IPREM.",
+          "zh-Hans": "官方领事指南说明，最低经济能力相当于西班牙 IPREM 的 100%；金额会随适用的 IPREM 变化。"
+        }
+      }
+    ],
+    "application_fees": []
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": [
+      "unknown"
+    ],
+    "income_location": "not_applicable"
+  },
+  "timeline": {
+    "application_processing_time_md": {
+      "en": "The retained sources do not establish a universal processing time. For study stays longer than six months, the consular page states that the visa is valid for one year and the student must apply for a Foreigner Identity Card within one month of entry.",
+      "zh-Hans": "保留的来源没有确认统一的处理时间。对于超过六个月的学习停留，领事页面说明签证有效期为一年，学生必须在入境后一个月内申请外国人身份证。"
+    },
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "initial_validity_months": 12,
+    "renewable": true,
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": "unknown",
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": false,
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "limited",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "limited",
+    "spouse_work_allowed": false,
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained study-stay sources do not establish a permanent-residence outcome.",
+      "zh-Hans": "保留的学习停留来源没有确认永久居留结果。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained study-stay sources do not establish citizenship eligibility.",
+      "zh-Hans": "保留的学习停留来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The route is supported by Spanish government and consular pages, but programme-specific work, renewal, and post-study outcomes require case-level review.",
+      "zh-Hans": "该途径有西班牙政府和领事页面支持，但课程特定工作、续签和毕业后结果需要按案件复核。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 4,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": false,
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "unknown",
+    "remote_work_allowed": false,
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "last_checked_at": "2026-07-11T12:31:40.915Z"
+  },
+  "source_ids": [
+    "spain-inclusion-study-stay",
+    "spain-exteriores-study-visa"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Study-stay authorisation exceeding 90 days",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Eligible study, mobility, volunteering, and training activities",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Study-stay requirements and application documents",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "90-day boundary and study route limitations",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Admission to eligible study activity",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Study-stay eligibility and health documentation",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "spain-exteriores-study-visa",
+        "url": "https://www.exteriores.gob.es/Consulados/londres/en/ServiciosConsulares/Paginas/Consular/Visado-de-estudios.aspx",
+        "section": "Proof of financial means and 100% IPREM rule",
+        "snapshot_id": "e02236687966fe4d8cab98946961ee8bdcdb787d74549541abc661b84a914bb8",
+        "retrieved_at": "2026-07-11T12:31:31.782Z"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Study route does not use an employment-income requirement",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "spain-exteriores-study-visa",
+        "url": "https://www.exteriores.gob.es/Consulados/londres/en/ServiciosConsulares/Paginas/Consular/Visado-de-estudios.aspx",
+        "section": "Long-stay visa validity and Foreigner Identity Card timing",
+        "snapshot_id": "e02236687966fe4d8cab98946961ee8bdcdb787d74549541abc661b84a914bb8",
+        "retrieved_at": "2026-07-11T12:31:31.782Z"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Study purpose and work rights requiring further review",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Family visa availability and non-work condition",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Permanent residence not established",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Citizenship not established",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "spain-inclusion-study-stay",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/estancia-por-estudios",
+        "section": "Conservative study-stay filter fields",
+        "snapshot_id": "6efe619ac199ae118355eaa42396c0b5654d1540c3ea9077bba894ddaabf1730",
+        "retrieved_at": "2026-07-11T12:31:40.915Z"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T12:27:41Z",
+    "updated_at": "2026-07-11T12:27:41Z",
+    "last_checked_at": "2026-07-11T12:31:40.915Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T12:27:41Z",
+      "summary": "Added Spain Long-stay study authorisation coverage from official government evidence.",
+      "source_ids": [
+        "spain-inclusion-study-stay",
+        "spain-exteriores-study-visa"
+      ]
+    }
+  ]
+}

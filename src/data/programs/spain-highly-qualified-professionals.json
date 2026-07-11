@@ -1,0 +1,291 @@
+{
+  "id": "spain-highly-qualified-professionals",
+  "country_id": "spain",
+  "category_ids": ["skilled_worker"],
+  "official_names": {
+    "en": "Residence authorisation for highly qualified professionals",
+    "zh-Hans": "高技能专业人士居留许可"
+  },
+  "aliases": [
+    "Spain highly qualified professional permit",
+    "UGE highly qualified professional route"
+  ],
+  "status": "active",
+  "status_note_md": {
+    "en": "The Spanish Ministry of Inclusion describes this as a temporary residence-and-work authorisation. The ministry page was last updated in May 2025 and notes that the rules in force when the application is filed control.",
+    "zh-Hans": "西班牙包容、社会保障和移民部将其描述为临时居留和工作许可。该部页面最后更新于 2025 年 5 月，并说明申请提交时有效的规则才具有决定作用。"
+  },
+  "summary_md": {
+    "en": "An employer-linked Spanish residence-and-work route for a foreign professional who will perform work requiring higher-education qualifications or, exceptionally, equivalent professional experience.",
+    "zh-Hans": "面向与雇主相关联的西班牙居留和工作途径，适用于从事需要高等教育学历，或在特殊情况下需要相当专业经验的外国专业人士。"
+  },
+  "good_for_md": {
+    "en": "Professionals with a Spanish employment arrangement and an employer able to support the mobility-international application and provide the required qualification or experience evidence.",
+    "zh-Hans": "适合拥有西班牙雇佣安排，且雇主能够支持国际流动申请并提供所需学历或经验证明的专业人士。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking self-sponsored remote work, a visitor route, or a path with a known salary threshold or direct PR outcome that is not established in the retained official pages.",
+    "zh-Hans": "不适合寻求自我担保远程工作、访问者途径，或需要已知薪资门槛和直接永久居留结果但保留官方页面尚未确认这些内容的申请人。"
+  },
+  "pathway_mechanism": "employer_sponsored",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": true,
+    "sponsor_required": true
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": true,
+    "min_income": [
+      {
+        "amount": "unknown",
+        "currency": "EUR",
+        "applies_to": "primary",
+        "period": "monthly"
+      }
+    ],
+    "accepted_sources": ["employment"],
+    "income_location": "inside_destination",
+    "stability_requirement_md": {
+      "en": "The retained official pages establish the qualified-employment route but do not expose a stable current salary threshold in the extracted evidence.",
+      "zh-Hans": "保留的官方页面确立了高技能就业途径，但提取的证据没有显示稳定的当前薪资门槛。"
+    }
+  },
+  "timeline": {
+    "renewable": true,
+    "initial_validity_months": "unknown",
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": true,
+    "local_employment_allowed": true,
+    "remote_work_allowed": "unknown",
+    "study_allowed": "unknown",
+    "business_allowed": "unknown"
+  },
+  "family": {
+    "spouse_or_partner_allowed": "limited",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "limited",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "unknown"
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained highly qualified professional sources do not establish a permanent-residence outcome.",
+      "zh-Hans": "保留的高技能专业人士来源没有确认永久居留结果。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The retained highly qualified professional sources do not establish citizenship eligibility.",
+      "zh-Hans": "保留的高技能专业人士来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "extraction_confidence_score": 4,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The route is supported by current Ministry of Inclusion pages, but the pages are orientative and detailed case requirements should be checked at filing.",
+      "zh-Hans": "该途径有当前包容部页面支持，但页面仅供指导，递交申请时应核对案件详细要求。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 4,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "residence",
+    "pathway_mechanism": "employer_sponsored",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": true,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": true,
+    "allows_family": "unknown",
+    "work_allowed": true,
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "last_checked_at": "2026-07-11T12:31:40.915Z"
+  },
+  "source_ids": [
+    "spain-inclusion-highly-qualified-initial",
+    "spain-inclusion-highly-qualified-renewal"
+  ],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Temporary residence-and-work authorisation and May 2025 update note",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Type of authorisation and higher-education or exceptional experience route",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Requirements for qualified employment and supporting documentation",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Route limitations and rules in force at filing",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Employer-linked highly qualified professional authorisation",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Qualification and employment requirements",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Required documentation and fees not established",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Salary threshold not established in retained extraction",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-renewal",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/67.-renovacion-de-la-autorizacion-de-residencia-temporal-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Initial authorisation and renewal procedure",
+        "retrieved_at": "2026-07-11T12:31:40.274Z",
+        "snapshot_id": "f3fa8602451de3271c5ac11970a29d981bb6f2328f766e06042e74ddef27df47"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Residence and work authorisation",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-renewal",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/67.-renovacion-de-la-autorizacion-de-residencia-temporal-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Family mobility application forms and eligible family classes",
+        "retrieved_at": "2026-07-11T12:31:40.274Z",
+        "snapshot_id": "f3fa8602451de3271c5ac11970a29d981bb6f2328f766e06042e74ddef27df47"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Permanent residence not established",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Citizenship not established",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "spain-inclusion-highly-qualified-initial",
+        "url": "https://www.inclusion.gob.es/web/migraciones/w/66.-autorizacion-inicial-de-residencia-y-trabajo-de-profesionales-altamente-cualificados",
+        "section": "Conservative highly qualified professional filter fields",
+        "retrieved_at": "2026-07-11T12:31:38.831Z",
+        "snapshot_id": "ad3df76bd383204a44432daeecb814c92669dda9470fb56f2df28042d3773c36"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T12:27:41Z",
+    "updated_at": "2026-07-11T12:27:41Z",
+    "last_checked_at": "2026-07-11T12:31:40.915Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T12:27:41Z",
+      "summary": "Added Spain Residence authorisation for highly qualified professionals coverage from official government evidence.",
+      "source_ids": [
+        "spain-inclusion-highly-qualified-initial",
+        "spain-inclusion-highly-qualified-renewal"
+      ]
+    }
+  ]
+}

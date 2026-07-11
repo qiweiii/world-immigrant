@@ -1,0 +1,24 @@
+{
+  "id": "spain-exteriores-study-visa",
+  "country_id": "spain",
+  "program_ids": ["spain-study-stay"],
+  "url": "https://www.exteriores.gob.es/Consulados/londres/en/ServiciosConsulares/Paginas/Consular/Visado-de-estudios.aspx",
+  "title": "Study visa",
+  "publisher": "Spanish Ministry of Foreign Affairs, European Union and Cooperation",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Study visa",
+    "Higher education",
+    "100% of Spain",
+    "Proof of acceptance",
+    "Health insurance"
+  ],
+  "expected_domains": ["www.exteriores.gob.es"],
+  "last_checked_at": "2026-07-11T12:31:31.782Z",
+  "last_success_at": "2026-07-11T12:31:31.782Z",
+  "status": "active"
+}

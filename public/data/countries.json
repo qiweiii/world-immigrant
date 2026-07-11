@@ -478,27 +478,35 @@
       },
       "region": "Europe",
       "summary_md": {
-        "en": "Coverage is being expanded with official sources for international teleworker residence. A complete pathway record will be added after the source set is reviewed.",
-        "zh-Hans": "正在通过官方来源扩展国际远程工作者居留信息。完整路径记录将在来源集完成审查后添加。"
+        "en": "Spain now has bootstrap coverage across international telework, highly qualified employment, and long-stay study, using Spanish Ministry of Inclusion and Foreign Affairs sources.",
+        "zh-Hans": "西班牙现在覆盖国际远程工作、高技能就业和长期学习停留，并使用西班牙包容部和外交部来源。"
       },
       "brand": {
         "color": "#AA151B",
         "source": "flag"
       },
       "official_source_ids": [
+        "spain-exteriores-study-visa",
+        "spain-inclusion-highly-qualified-initial",
+        "spain-inclusion-highly-qualified-renewal",
+        "spain-inclusion-study-stay",
         "spain-uge-international-teleworkers",
         "spain-uge-teleworker-faq"
       ],
       "categories": [
-        "digital_nomad"
+        "digital_nomad",
+        "skilled_worker",
+        "study_to_pr"
       ],
       "program_ids": [
-        "spain-digital-nomad"
+        "spain-digital-nomad",
+        "spain-highly-qualified-professionals",
+        "spain-study-stay"
       ],
       "freshness": {
         "created_at": "2026-07-11T04:30:43Z",
-        "updated_at": "2026-07-11T04:30:43Z",
-        "last_checked_at": "2026-07-11T04:30:43Z",
+        "updated_at": "2026-07-11T12:27:41Z",
+        "last_checked_at": "2026-07-11T12:31:40.915Z",
         "update_frequency_days": 7,
         "confidence": "medium",
         "needs_human_review": true
