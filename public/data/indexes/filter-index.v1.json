@@ -220,6 +220,614 @@
       "last_checked_at": "2026-07-10T00:00:00Z"
     },
     {
+      "program_id": "australia-skills-in-demand-482",
+      "country_id": "australia",
+      "country_names": {
+        "en": "Australia",
+        "zh-Hans": "澳大利亚"
+      },
+      "category_ids": [
+        "skilled_worker"
+      ],
+      "official_names": {
+        "en": "Skills in Demand visa (subclass 482) — Core Skills stream",
+        "zh-Hans": "技能需求签证（482 子类）- 核心技能类别"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": true,
+        "sponsor_required": true,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": true,
+        "min_income": [
+          {
+            "amount": 79423,
+            "currency": "AUD",
+            "period": "annual",
+            "applies_to": "primary",
+            "calculation": "minimum_total",
+            "note_md": {
+              "en": "For Core Skills stream nomination applications lodged between 1 July 2026 and 30 June 2027, the Department lists a Core Skills Income Threshold of AUD 79,423. The applicable threshold and market salary rate must be checked at filing.",
+              "zh-Hans": "对于 2026 年 7 月 1 日至 2027 年 6 月 30 日提交的核心技能类别提名申请，内政部列出的核心技能收入门槛为 79,423 澳元。递交时必须核对适用门槛和市场薪资。"
+            }
+          }
+        ],
+        "accepted_income_sources": [
+          "employment"
+        ],
+        "income_location": "inside_destination"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T12:44:53Z",
+        "updated_at": "2026-07-11T12:44:53Z",
+        "last_checked_at": "2026-07-11T12:49:18.318Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Core Skills stream overview",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Core Skills stream overview",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Core Skills stream overview",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Employer nomination and labour-shortage route",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Employer-nominated temporary route",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Employer nomination",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "australia-skills-in-demand-482-english",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/sufficient-english",
+            "section": "Core Skills stream requirements",
+            "snapshot_id": "a84096627e457b1f7f471ff223b6635fb885c3fdf22b021f60d699b563236bdb",
+            "retrieved_at": "2026-07-11T12:49:16.582Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Visa requirements",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "australia-skills-in-demand-482-salary",
+            "url": "https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/nominating-a-position/salary-requirements",
+            "section": "Core Skills Income Threshold",
+            "snapshot_id": "e18da664655b7a5679c36af2ae5872bb27aca5fc497b5879bf4061cd57f33021",
+            "retrieved_at": "2026-07-11T12:49:18.038Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Temporary visa route",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Visa conditions",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "australia-skills-in-demand-482-family",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/subsequent-entrant",
+            "section": "Subsequent entrant",
+            "snapshot_id": "d2a6bace552d3d59602065a86354c6ea7fb46ae1f3640a4ae618103eb5bd34ce",
+            "retrieved_at": "2026-07-11T12:49:17.980Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Temporary visa route",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Temporary visa route",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "australia-skills-in-demand-482",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+            "section": "Core Skills stream overview",
+            "snapshot_id": "1032dacd7d171e3f8a284683f8f2c12798e3cc959513f2bdfd89cf1da8de0703",
+            "retrieved_at": "2026-07-11T12:49:16.353Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "employer_sponsored",
+      "min_annual_income_usd": "unknown",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": true,
+      "requires_investment": false,
+      "requires_language_test": true,
+      "requires_local_entity": true,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-11T12:49:18.318Z"
+    },
+    {
+      "program_id": "australia-student-500",
+      "country_id": "australia",
+      "country_names": {
+        "en": "Australia",
+        "zh-Hans": "澳大利亚"
+      },
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Student visa (subclass 500)",
+        "zh-Hans": "学生签证（500 子类）"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": "unknown",
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "not_applicable",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T12:44:53Z",
+        "updated_at": "2026-07-11T12:44:53Z",
+        "last_checked_at": "2026-07-11T12:49:18.318Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Last updated 1 July 2026",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "australia-student-500",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+            "section": "Subclass 500 Student visa",
+            "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1",
+            "retrieved_at": "2026-07-11T12:49:18.090Z"
+          }
+        ]
+      },
+      "pathway_type": "renewable_temporary",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "other",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": "unknown",
+      "work_allowed": "unknown",
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-11T12:49:18.318Z"
+    },
+    {
+      "program_id": "australia-temporary-graduate-485",
+      "country_id": "australia",
+      "country_names": {
+        "en": "Australia",
+        "zh-Hans": "澳大利亚"
+      },
+      "category_ids": [
+        "study_to_pr"
+      ],
+      "official_names": {
+        "en": "Temporary Graduate visa (subclass 485)",
+        "zh-Hans": "临时毕业生签证（485 子类）"
+      },
+      "status": "active",
+      "criteria": {
+        "min_education_level": "unknown",
+        "credential_assessment_required": false,
+        "job_offer_required": false,
+        "sponsor_required": false,
+        "proof_of_funds": [],
+        "proof_of_funds_exemptions": [],
+        "income_required": "not_applicable",
+        "min_income": [],
+        "accepted_income_sources": [
+          "unknown"
+        ],
+        "income_location": "not_applicable"
+      },
+      "freshness": {
+        "created_at": "2026-07-11T12:44:53Z",
+        "updated_at": "2026-07-11T12:44:53Z",
+        "last_checked_at": "2026-07-11T12:49:18.318Z",
+        "update_frequency_days": 14,
+        "confidence": "medium",
+        "needs_human_review": true
+      },
+      "field_citations": {
+        "/status": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Temporary Graduate visa",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/status_note_md": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Temporary Graduate visa",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/summary_md": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Temporary Graduate visa",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/good_for_md": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Basic Eligibility",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/not_good_for_md": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Basic Eligibility and stream selection",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/pathway_mechanism": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Temporary Graduate visa",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/eligibility": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Basic Eligibility",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/funds": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Cost",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/income": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Temporary Graduate visa",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/timeline": [
+          {
+            "source_id": "australia-temporary-graduate-485-vocational",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-vocational-education-work",
+            "section": "Stay",
+            "snapshot_id": "515525c23bfe5ee4512f1ab458c905355fd4202ba8e802e664848885f77c7d22",
+            "retrieved_at": "2026-07-11T12:49:18.318Z"
+          },
+          {
+            "source_id": "australia-temporary-graduate-485-higher",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-higher-education-work",
+            "section": "Stay",
+            "snapshot_id": "83a7382f61c66e10b2878b930a88f346d7d4af881beecef79987ca8c7e2ef765",
+            "retrieved_at": "2026-07-11T12:49:18.255Z"
+          }
+        ],
+        "/rights": [
+          {
+            "source_id": "australia-temporary-graduate-485-vocational",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-vocational-education-work",
+            "section": "You can work in Australia",
+            "snapshot_id": "515525c23bfe5ee4512f1ab458c905355fd4202ba8e802e664848885f77c7d22",
+            "retrieved_at": "2026-07-11T12:49:18.318Z"
+          }
+        ],
+        "/family": [
+          {
+            "source_id": "australia-temporary-graduate-485-vocational",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-vocational-education-work",
+            "section": "You can bring your family with you",
+            "snapshot_id": "515525c23bfe5ee4512f1ab458c905355fd4202ba8e802e664848885f77c7d22",
+            "retrieved_at": "2026-07-11T12:49:18.318Z"
+          }
+        ],
+        "/pr_pathway": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Temporary Graduate visa",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/citizenship_pathway": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Temporary Graduate visa",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ],
+        "/filter": [
+          {
+            "source_id": "australia-temporary-graduate-485",
+            "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+            "section": "Temporary Graduate visa",
+            "snapshot_id": "37fc4d2c7409a0d0c0e058588747bab94fbf182d1f06723fb463dc5df7642cfa",
+            "retrieved_at": "2026-07-11T12:49:18.160Z"
+          }
+        ]
+      },
+      "pathway_type": "temporary_only",
+      "settlement_track": "unknown",
+      "pathway_mechanism": "other",
+      "accepts_remote_income": false,
+      "accepts_self_employment": false,
+      "accepts_overseas_remote_income": false,
+      "requires_degree": "unknown",
+      "requires_job_offer": false,
+      "requires_investment": false,
+      "requires_language_test": "unknown",
+      "requires_local_entity": false,
+      "allows_family": true,
+      "work_allowed": true,
+      "remote_work_allowed": "unknown",
+      "leads_to_pr": "unknown",
+      "leads_to_citizenship": "unknown",
+      "processing_time_months_min": "unknown",
+      "processing_time_months_max": "unknown",
+      "policy_stability_score": 3,
+      "source_confidence_score": 4,
+      "last_checked_at": "2026-07-11T12:49:18.318Z"
+    },
+    {
       "program_id": "canada-express-entry-fsw",
       "country_id": "canada",
       "country_names": {

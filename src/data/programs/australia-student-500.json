@@ -1,0 +1,279 @@
+{
+  "id": "australia-student-500",
+  "country_id": "australia",
+  "category_ids": ["study_to_pr"],
+  "official_names": {
+    "en": "Student visa (subclass 500)",
+    "zh-Hans": "学生签证（500 子类）"
+  },
+  "aliases": ["Australia Student visa", "subclass 500"],
+  "status": "active",
+  "status_note_md": {
+    "en": "The Australian Department of Home Affairs lists subclass 500 as the Student visa. The official page was last updated 1 July 2026.",
+    "zh-Hans": "澳大利亚内政部将 500 子类列为学生签证。官方页面最后更新于 2026 年 7 月 1 日。"
+  },
+  "summary_md": {
+    "en": "Australia's principal student visa for international students enrolled in an eligible Australian course. The public Home Affairs page is dynamic, so detailed requirements are kept conservative until each requirement page is captured.",
+    "zh-Hans": "澳大利亚面向就读合资格课程的国际学生的主要学生签证。由于内政部公开页面为动态页面，在逐项获取要求页面之前，详细要求保持保守。"
+  },
+  "good_for_md": {
+    "en": "International students with an eligible course enrolment and the evidence required by Home Affairs for the Student visa.",
+    "zh-Hans": "拥有合资格课程入学资格，并能够提供内政部要求的学生签证证据的国际学生。"
+  },
+  "not_good_for_md": {
+    "en": "Applicants seeking unrestricted employment, independent skilled migration, or a digital-nomad route. Australia does not have a dedicated digital-nomad visa in this record.",
+    "zh-Hans": "不适合寻求不受限制就业、独立技术移民或数字游民途径的申请人。本记录不将澳大利亚签证误称为专门的数字游民签证。"
+  },
+  "pathway_mechanism": "other",
+  "eligibility": {
+    "age": {},
+    "education": {
+      "required_level": "unknown",
+      "credential_assessment_required": "unknown"
+    },
+    "work_experience": {},
+    "language": [],
+    "health_check_required": "unknown",
+    "police_certificate_required": "unknown",
+    "points_based": false,
+    "job_offer_required": false,
+    "sponsor_required": false
+  },
+  "funds": {
+    "proof_of_funds": [],
+    "application_fees": []
+  },
+  "income": {
+    "required": "not_applicable",
+    "accepted_sources": ["unknown"],
+    "income_location": "not_applicable"
+  },
+  "timeline": {
+    "renewable": true,
+    "initial_validity_months": "unknown",
+    "max_stay_months": "unknown"
+  },
+  "rights": {
+    "work_allowed": "unknown",
+    "local_employment_allowed": "unknown",
+    "remote_work_allowed": "unknown",
+    "study_allowed": true,
+    "business_allowed": false
+  },
+  "family": {
+    "spouse_or_partner_allowed": "unknown",
+    "unmarried_partner_allowed": "unknown",
+    "children_allowed": "unknown",
+    "spouse_work_allowed": "unknown",
+    "dependent_parents_allowed": "not_applicable"
+  },
+  "pr_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The Student visa source does not establish a permanent-residence outcome.",
+      "zh-Hans": "学生签证来源没有确认永久居留结果。"
+    }
+  },
+  "citizenship_pathway": {
+    "available": "unknown",
+    "summary_md": {
+      "en": "The Student visa source does not establish citizenship eligibility.",
+      "zh-Hans": "学生签证来源没有确认公民资格。"
+    }
+  },
+  "risk": {
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "extraction_confidence_score": 2,
+    "needs_human_review": true,
+    "rationale_md": {
+      "en": "The official visa page is current but highly dynamic; detailed eligibility and conditions require a human review of the relevant Home Affairs pages.",
+      "zh-Hans": "官方签证页面是当前页面但高度动态；详细资格和条件需要人工审查相关内政部页面。"
+    }
+  },
+  "comparison": {
+    "difficulty_score": 3,
+    "cost_score": 3,
+    "speed_score": 3,
+    "permanence_score": 2,
+    "family_friendliness_score": 3,
+    "source_confidence_score": 4,
+    "policy_stability_score": 3
+  },
+  "filter": {
+    "pathway_type": "renewable_temporary",
+    "settlement_track": "unknown",
+    "pathway_mechanism": "other",
+    "accepts_remote_income": false,
+    "accepts_self_employment": false,
+    "accepts_overseas_remote_income": false,
+    "requires_degree": "unknown",
+    "requires_job_offer": false,
+    "requires_investment": false,
+    "requires_language_test": "unknown",
+    "requires_local_entity": false,
+    "allows_family": "unknown",
+    "work_allowed": "unknown",
+    "remote_work_allowed": "unknown",
+    "leads_to_pr": "unknown",
+    "leads_to_citizenship": "unknown",
+    "processing_time_months_min": "unknown",
+    "processing_time_months_max": "unknown",
+    "policy_stability_score": 3,
+    "source_confidence_score": 4,
+    "last_checked_at": "2026-07-11T12:49:18.318Z"
+  },
+  "source_ids": ["australia-student-500"],
+  "field_citations": {
+    "/status": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/status_note_md": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Last updated 1 July 2026",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/summary_md": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/good_for_md": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/not_good_for_md": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/pathway_mechanism": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/eligibility": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/funds": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/income": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/timeline": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/rights": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/family": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/pr_pathway": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/citizenship_pathway": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ],
+    "/filter": [
+      {
+        "source_id": "australia-student-500",
+        "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+        "section": "Subclass 500 Student visa",
+        "retrieved_at": "2026-07-11T12:49:18.090Z",
+        "snapshot_id": "5b493a82df4f40e0a80c73f3a7ab82e4d370e09da8fbaf35cab7f87922576be1"
+      }
+    ]
+  },
+  "freshness": {
+    "created_at": "2026-07-11T12:44:53Z",
+    "updated_at": "2026-07-11T12:44:53Z",
+    "last_checked_at": "2026-07-11T12:49:18.318Z",
+    "update_frequency_days": 14,
+    "confidence": "medium",
+    "needs_human_review": true
+  },
+  "changelog": [
+    {
+      "changed_at": "2026-07-11T12:44:53Z",
+      "summary": "Added Australia Student visa (subclass 500) coverage from official Home Affairs sources.",
+      "source_ids": ["australia-student-500"]
+    }
+  ]
+}

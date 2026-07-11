@@ -41,6 +41,56 @@ A permanent skilled visa for invited workers who do not need an employer or stat
 - australia-home-affairs-skills-assessment: Skills assessment — https://immi.homeaffairs.gov.au/visas/working-in-australia/skills-assessment
 - australia-home-affairs-citizenship: Become an Australian citizen — https://immi.homeaffairs.gov.au/citizenship/become-a-citizen
 
+## Skills in Demand visa (subclass 482) — Core Skills stream
+
+- ID: australia-skills-in-demand-482
+- Country: australia
+- Status: active
+- Last updated: 2026-07-11T12:49:18.318Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+An employer-sponsored temporary skilled visa for nominated workers in the Core Skills stream, where the employer is addressing a labour shortage and the nominated role meets the stream rules.
+
+### Official sources
+
+- australia-skills-in-demand-482: Skills in Demand visa (subclass 482) Core Skills stream — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream
+- australia-skills-in-demand-482-english: English proficiency for subclass 482 — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/sufficient-english
+- australia-skills-in-demand-482-salary: Salary requirements to nominate a worker — https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/nominating-a-position/salary-requirements
+- australia-skills-in-demand-482-family: Skills in Demand visa subsequent entrant — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/subsequent-entrant
+
+## Student visa (subclass 500)
+
+- ID: australia-student-500
+- Country: australia
+- Status: active
+- Last updated: 2026-07-11T12:49:18.318Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+Australia's principal student visa for international students enrolled in an eligible Australian course. The public Home Affairs page is dynamic, so detailed requirements are kept conservative until each requirement page is captured.
+
+### Official sources
+
+- australia-student-500: Subclass 500 Student visa — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500
+
+## Temporary Graduate visa (subclass 485)
+
+- ID: australia-temporary-graduate-485
+- Country: australia
+- Status: active
+- Last updated: 2026-07-11T12:49:18.318Z
+- Source confidence: 4/5
+- Human review flagged: yes
+
+A temporary visa allowing eligible international graduates to live, study and work in Australia after completing qualifying Australian study. The official page describes separate post-vocational and post-higher-education streams.
+
+### Official sources
+
+- australia-temporary-graduate-485: Temporary Graduate visa (subclass 485) — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485
+- australia-temporary-graduate-485-vocational: Temporary Graduate visa Post-Vocational Education Work stream — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-vocational-education-work
+- australia-temporary-graduate-485-higher: Temporary Graduate visa Post-Higher Education Work stream — https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-higher-education-work
+
 ## Federal Skilled Worker Program
 
 - ID: canada-express-entry-fsw

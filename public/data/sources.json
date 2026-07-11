@@ -161,6 +161,110 @@
       "status": "active"
     },
     {
+      "id": "australia-skills-in-demand-482",
+      "country_id": "australia",
+      "program_ids": [
+        "australia-skills-in-demand-482"
+      ],
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/core-skills-stream",
+      "title": "Skills in Demand visa (subclass 482) Core Skills stream",
+      "publisher": "Australian Government Department of Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Skills in Demand visa",
+        "Core Skills stream",
+        "labour shortages"
+      ],
+      "expected_domains": [
+        "immi.homeaffairs.gov.au"
+      ],
+      "last_checked_at": "2026-07-11T12:49:16.353Z",
+      "last_success_at": "2026-07-11T12:49:16.353Z",
+      "status": "active"
+    },
+    {
+      "id": "australia-skills-in-demand-482-english",
+      "country_id": "australia",
+      "program_ids": [
+        "australia-skills-in-demand-482"
+      ],
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/sufficient-english",
+      "title": "English proficiency for subclass 482",
+      "publisher": "Australian Government Department of Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "English proficiency",
+        "minimum standards",
+        "English language proficiency"
+      ],
+      "expected_domains": [
+        "immi.homeaffairs.gov.au"
+      ],
+      "last_checked_at": "2026-07-11T12:49:16.582Z",
+      "last_success_at": "2026-07-11T12:49:16.582Z",
+      "status": "active"
+    },
+    {
+      "id": "australia-skills-in-demand-482-family",
+      "country_id": "australia",
+      "program_ids": [
+        "australia-skills-in-demand-482"
+      ],
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/skills-in-demand-visa-subclass-482/subsequent-entrant",
+      "title": "Skills in Demand visa subsequent entrant",
+      "publisher": "Australian Government Department of Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "subsequent entrant",
+        "live, work and study",
+        "travel to and from Australia"
+      ],
+      "expected_domains": [
+        "immi.homeaffairs.gov.au"
+      ],
+      "last_checked_at": "2026-07-11T12:49:17.980Z",
+      "last_success_at": "2026-07-11T12:49:17.980Z",
+      "status": "active"
+    },
+    {
+      "id": "australia-skills-in-demand-482-salary",
+      "country_id": "australia",
+      "program_ids": [
+        "australia-skills-in-demand-482"
+      ],
+      "url": "https://immi.homeaffairs.gov.au/visas/employing-and-sponsoring-someone/sponsoring-workers/nominating-a-position/salary-requirements",
+      "title": "Salary requirements to nominate a worker",
+      "publisher": "Australian Government Department of Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Core Skills Income Threshold",
+        "AUD79,423",
+        "1 July 2026"
+      ],
+      "expected_domains": [
+        "immi.homeaffairs.gov.au"
+      ],
+      "last_checked_at": "2026-07-11T12:49:18.038Z",
+      "last_success_at": "2026-07-11T12:49:18.038Z",
+      "status": "active"
+    },
+    {
       "id": "australia-skillselect-eoi",
       "country_id": "australia",
       "program_ids": [
@@ -185,6 +289,110 @@
       ],
       "last_checked_at": "2026-07-10T00:00:00Z",
       "last_success_at": "2026-07-10T00:00:00Z",
+      "status": "active"
+    },
+    {
+      "id": "australia-student-500",
+      "country_id": "australia",
+      "program_ids": [
+        "australia-student-500"
+      ],
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/student-500",
+      "title": "Subclass 500 Student visa",
+      "publisher": "Australian Government Department of Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Subclass 500 Student visa",
+        "Student visa",
+        "Last updated"
+      ],
+      "expected_domains": [
+        "immi.homeaffairs.gov.au"
+      ],
+      "last_checked_at": "2026-07-11T12:49:18.090Z",
+      "last_success_at": "2026-07-11T12:49:18.090Z",
+      "status": "active"
+    },
+    {
+      "id": "australia-temporary-graduate-485",
+      "country_id": "australia",
+      "program_ids": [
+        "australia-temporary-graduate-485"
+      ],
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+      "title": "Temporary Graduate visa (subclass 485)",
+      "publisher": "Australian Government Department of Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Temporary Graduate visa",
+        "live, study and work",
+        "Basic Eligibility"
+      ],
+      "expected_domains": [
+        "immi.homeaffairs.gov.au"
+      ],
+      "last_checked_at": "2026-07-11T12:49:18.160Z",
+      "last_success_at": "2026-07-11T12:49:18.160Z",
+      "status": "active"
+    },
+    {
+      "id": "australia-temporary-graduate-485-higher",
+      "country_id": "australia",
+      "program_ids": [
+        "australia-temporary-graduate-485"
+      ],
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-higher-education-work",
+      "title": "Temporary Graduate visa Post-Higher Education Work stream",
+      "publisher": "Australian Government Department of Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Post-Higher Education Work stream",
+        "degree level qualification",
+        "2 and 3 years"
+      ],
+      "expected_domains": [
+        "immi.homeaffairs.gov.au"
+      ],
+      "last_checked_at": "2026-07-11T12:49:18.255Z",
+      "last_success_at": "2026-07-11T12:49:18.255Z",
+      "status": "active"
+    },
+    {
+      "id": "australia-temporary-graduate-485-vocational",
+      "country_id": "australia",
+      "program_ids": [
+        "australia-temporary-graduate-485"
+      ],
+      "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-vocational-education-work",
+      "title": "Temporary Graduate visa Post-Vocational Education Work stream",
+      "publisher": "Australian Government Department of Home Affairs",
+      "source_type": "official",
+      "language": "en",
+      "priority": 1,
+      "update_frequency_days": 30,
+      "extraction_method": "web_extract",
+      "expected_content_hints": [
+        "Post-Vocational Education Work stream",
+        "Up to 18 months",
+        "work in Australia"
+      ],
+      "expected_domains": [
+        "immi.homeaffairs.gov.au"
+      ],
+      "last_checked_at": "2026-07-11T12:49:18.318Z",
+      "last_success_at": "2026-07-11T12:49:18.318Z",
       "status": "active"
     },
     {

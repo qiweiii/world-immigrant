@@ -1,0 +1,26 @@
+{
+  "id": "australia-temporary-graduate-485",
+  "country_id": "australia",
+  "program_ids": [
+    "australia-temporary-graduate-485"
+  ],
+  "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485",
+  "title": "Temporary Graduate visa (subclass 485)",
+  "publisher": "Australian Government Department of Home Affairs",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Temporary Graduate visa",
+    "live, study and work",
+    "Basic Eligibility"
+  ],
+  "expected_domains": [
+    "immi.homeaffairs.gov.au"
+  ],
+  "last_checked_at": "2026-07-11T12:49:18.160Z",
+  "last_success_at": "2026-07-11T12:49:18.160Z",
+  "status": "active"
+}

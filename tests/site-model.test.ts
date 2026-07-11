@@ -65,7 +65,12 @@ test("country and program page models resolve canonical relationships", async ()
   );
   assert.deepEqual(
     byId.australia.programs.map(({ id }) => id),
-    ["australia-skilled-independent-189"],
+    [
+      "australia-skilled-independent-189",
+      "australia-skills-in-demand-482",
+      "australia-student-500",
+      "australia-temporary-graduate-485",
+    ],
   );
   assert.equal(programs.length, dataset.programs.length);
   const canadaProgram = programs.find((model) => model.program.id === "canada-express-entry-fsw");

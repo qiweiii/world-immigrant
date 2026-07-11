@@ -1,0 +1,22 @@
+{
+  "id": "australia-temporary-graduate-485-vocational",
+  "country_id": "australia",
+  "program_ids": ["australia-temporary-graduate-485"],
+  "url": "https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/temporary-graduate-485/post-vocational-education-work",
+  "title": "Temporary Graduate visa Post-Vocational Education Work stream",
+  "publisher": "Australian Government Department of Home Affairs",
+  "source_type": "official",
+  "language": "en",
+  "priority": 1,
+  "update_frequency_days": 30,
+  "extraction_method": "web_extract",
+  "expected_content_hints": [
+    "Post-Vocational Education Work stream",
+    "Up to 18 months",
+    "work in Australia"
+  ],
+  "expected_domains": ["immi.homeaffairs.gov.au"],
+  "last_checked_at": "2026-07-11T12:49:18.318Z",
+  "last_success_at": "2026-07-11T12:49:18.318Z",
+  "status": "active"
+}
