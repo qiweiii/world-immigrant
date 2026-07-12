@@ -1,0 +1,72 @@
+---
+import Layout from "../components/Layout.astro";
+import { glossaryTerms } from "../data/glossary";
+import { absoluteUrl, breadcrumbJsonLd } from "../lib/seo";
+import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../i18n";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
+const L = (path: string) => withLocale(path, locale);
+const structuredData = [
+  breadcrumbJsonLd([
+    { name: t("crumb.home", locale), path: L("/") },
+    { name: t("glossary.eyebrow", locale), path: L("/glossary") },
+  ]),
+  {
+    "@type": "DefinedTermSet",
+    "@id": `${absoluteUrl(L("/glossary"))}#term-set`,
+    name: t("glossary.h1", locale),
+    description: t("glossary.lede", locale),
+    inLanguage: locale,
+    hasDefinedTerm: glossaryTerms.map((term) => ({
+      "@type": "DefinedTerm",
+      "@id": `${absoluteUrl(L("/glossary"))}#${term.id}`,
+      name: pickLocalized(term.names, locale),
+      description: pickLocalized(term.definitions, locale),
+      inDefinedTermSet: { "@id": `${absoluteUrl(L("/glossary"))}#term-set` },
+    })),
+  },
+];
+---
+
+<Layout
+  locale={locale}
+  title={t("glossary.title", locale)}
+  description={t("glossary.description", locale)}
+  pageType="CollectionPage"
+  structuredData={structuredData}
+>
+  <main>
+    <nav class="breadcrumbs" aria-label={t("crumb.aria", locale)}>
+      <a href={L("/")}>{t("crumb.home", locale)}</a>
+      <span aria-hidden="true">/</span>
+      <span>{t("glossary.eyebrow", locale)}</span>
+    </nav>
+
+    <section class="hero">
+      <p class="eyebrow">{t("glossary.eyebrow", locale)}</p>
+      <h1>{t("glossary.h1", locale)}</h1>
+      <p>{t("glossary.lede", locale)}</p>
+    </section>
+
+    <section class="panel panel-note" aria-label={t("glossary.jurisdiction", locale)}>
+      <p>{t("glossary.jurisdiction", locale)}</p>
+    </section>
+
+    <section class="section" aria-label={t("glossary.eyebrow", locale)}>
+      <div class="card-grid two">
+        {
+          glossaryTerms.map((term) => (
+            <article class="card" id={term.id}>
+              <h2 class="card-title">{pickLocalized(term.names, locale)}</h2>
+              <p class="card-description">{pickLocalized(term.definitions, locale)}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+  </main>
+</Layout>

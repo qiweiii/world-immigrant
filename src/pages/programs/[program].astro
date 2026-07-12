@@ -3,6 +3,7 @@ import Layout from "../../components/Layout.astro";
 import { loadCanonicalData } from "../../lib/data";
 import { buildProgramPageModels, type ProgramPageModel } from "../../lib/site-model";
 import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../../i18n";
+import { breadcrumbJsonLd } from "../../lib/seo";
 
 interface Props {
   model: ProgramPageModel;
@@ -38,9 +39,23 @@ const applicationFees = program.funds.application_fees ?? [];
 const programName = pickLocalized(program.official_names, locale);
 const countryName = pickLocalized(country.names, locale);
 const summary = pickLocalized(program.summary_md, locale);
+const structuredData = [
+  breadcrumbJsonLd([
+    { name: t("crumb.home", locale), path: L("/") },
+    { name: t("nav.countries", locale), path: L("/countries") },
+    { name: countryName, path: L(`/countries/${country.id}`) },
+    { name: programName, path: L(`/programs/${program.id}`) },
+  ]),
+];
 ---
 
-<Layout locale={locale} title={`${programName} — World Immigrant`} description={summary}>
+<Layout
+  locale={locale}
+  title={`${programName} — World Immigrant`}
+  description={summary}
+  dateModified={program.freshness.last_checked_at}
+  structuredData={structuredData}
+>
   <main>
     <nav class="breadcrumbs" aria-label={t("crumb.aria", locale)}>
       <a href={L("/")}>{t("crumb.home", locale)}</a>

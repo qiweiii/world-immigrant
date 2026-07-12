@@ -38,7 +38,12 @@ const countryGroups = countries.map((country) => {
 });
 ---
 
-<Layout locale={locale} title={t("sources.title", locale)}>
+<Layout
+  locale={locale}
+  title={t("sources.title", locale)}
+  description={t("sources.lede", locale)}
+  pageType="CollectionPage"
+>
   <main>
     <section class="hero">
       <p class="eyebrow">{t("sources.eyebrow", locale)}</p>

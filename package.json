@@ -21,6 +21,7 @@
     "sources:verify": "tsx tools/verify-source-evidence.ts",
     "sources:annotate": "tsx tools/sync-citation-evidence.ts",
     "llms:generate": "tsx tools/generate-llms.ts",
+    "seo:audit": "tsx tools/audit-seo.ts",
     "deploy:preview": "pnpm build && wrangler deploy --dry-run",
     "deploy": "pnpm build && wrangler deploy"
   },

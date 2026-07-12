@@ -10,7 +10,11 @@ interface Props {
 const { locale = defaultLocale } = Astro.props as Props;
 ---
 
-<Layout locale={locale} title={t("compare.title", locale)}>
+<Layout
+  locale={locale}
+  title={t("compare.title", locale)}
+  description={t("compare.lede", locale)}
+>
   <main>
     <section class="hero">
       <p class="eyebrow">{t("compare.eyebrow", locale)}</p>

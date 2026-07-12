@@ -60,5 +60,17 @@ test("AI-readable output includes programs, freshness, and official sources", as
   assert.match(output.full, /2026-07-10/);
   assert.match(output.full, /canada-ircc-fsw/);
   assert.match(output.full, /australia-home-affairs-189/);
+  assert.match(
+    output.index,
+    /\[Methodology and public data\]\(https:\/\/world-immigrant\.com\/methodology\/\)/,
+  );
+  assert.match(
+    output.index,
+    /\[Immigration glossary\]\(https:\/\/world-immigrant\.com\/glossary\/\)/,
+  );
+  assert.match(
+    output.index,
+    /\[Full AI-readable data\]\(https:\/\/world-immigrant\.com\/llms-full\.txt\)/,
+  );
   assert.doesNotMatch(output.full, /No validated program records/);
 });

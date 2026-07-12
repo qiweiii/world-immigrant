@@ -1,0 +1,132 @@
+---
+import Layout from "../components/Layout.astro";
+import { loadCanonicalData } from "../lib/data";
+import { absoluteUrl, breadcrumbJsonLd } from "../lib/seo";
+import { defaultLocale, t, withLocale, type Locale } from "../i18n";
+
+interface Props {
+  locale?: Locale;
+}
+
+const { locale = defaultLocale } = Astro.props as Props;
+const L = (path: string) => withLocale(path, locale);
+const dataset = await loadCanonicalData();
+const dateModified = new Date(
+  Math.max(
+    ...dataset.countries.map(({ freshness }) => Date.parse(freshness.last_checked_at)),
+    ...dataset.programs.map(({ freshness }) => Date.parse(freshness.last_checked_at)),
+  ),
+).toISOString();
+const downloads = [
+  { name: "Data index", href: "/data/index.json", encodingFormat: "application/json" },
+  { name: "Countries", href: "/data/countries.json", encodingFormat: "application/json" },
+  { name: "Programs", href: "/data/programs.json", encodingFormat: "application/json" },
+  { name: "Sources", href: "/data/sources.json", encodingFormat: "application/json" },
+  {
+    name: "Filter index",
+    href: "/data/indexes/filter-index.v1.json",
+    encodingFormat: "application/json",
+  },
+  {
+    name: "Compare index",
+    href: "/data/indexes/compare-index.v1.json",
+    encodingFormat: "application/json",
+  },
+  { name: "AI-readable index", href: "/llms.txt", encodingFormat: "text/plain" },
+  { name: "AI-readable full data", href: "/llms-full.txt", encodingFormat: "text/plain" },
+];
+const sections = [
+  ["methodology.coverageTitle", "methodology.coverageBody"],
+  ["methodology.sourcesTitle", "methodology.sourcesBody"],
+  ["methodology.freshnessTitle", "methodology.freshnessBody"],
+  ["methodology.uncertaintyTitle", "methodology.uncertaintyBody"],
+  ["methodology.reviewTitle", "methodology.reviewBody"],
+  ["methodology.boundaryTitle", "methodology.boundaryBody"],
+] as const;
+const structuredData = [
+  breadcrumbJsonLd([
+    { name: t("crumb.home", locale), path: L("/") },
+    { name: t("methodology.eyebrow", locale), path: L("/methodology") },
+  ]),
+  {
+    "@type": "Dataset",
+    "@id": `${absoluteUrl(L("/methodology"))}#dataset`,
+    name: "World Immigrant pathway dataset",
+    description: t("methodology.dataBody", locale),
+    inLanguage: locale,
+    dateModified,
+    isAccessibleForFree: true,
+    license: "https://github.com/qiweiii/world-immigrant/blob/main/LICENSE",
+    distribution: downloads.map(({ name, href, encodingFormat }) => ({
+      "@type": "DataDownload",
+      name,
+      contentUrl: absoluteUrl(href),
+      encodingFormat,
+    })),
+  },
+];
+---
+
+<Layout
+  locale={locale}
+  title={t("methodology.title", locale)}
+  description={t("methodology.description", locale)}
+  pageType="AboutPage"
+  dateModified={dateModified}
+  structuredData={structuredData}
+>
+  <main>
+    <nav class="breadcrumbs" aria-label={t("crumb.aria", locale)}>
+      <a href={L("/")}>{t("crumb.home", locale)}</a>
+      <span aria-hidden="true">/</span>
+      <span>{t("methodology.eyebrow", locale)}</span>
+    </nav>
+
+    <section class="hero">
+      <p class="eyebrow">{t("methodology.eyebrow", locale)}</p>
+      <h1>{t("methodology.h1", locale)}</h1>
+      <p>{t("methodology.lede", locale)}</p>
+    </section>
+
+    <section class="section" aria-label={t("methodology.eyebrow", locale)}>
+      <div class="card-grid two">
+        {
+          sections.map(([titleKey, bodyKey]) => (
+            <article class="card">
+              <h2 class="card-title">{t(titleKey, locale)}</h2>
+              <p class="card-description">{t(bodyKey, locale)}</p>
+            </article>
+          ))
+        }
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="public-data-heading">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">JSON · TXT</p>
+          <h2 id="public-data-heading">{t("methodology.dataTitle", locale)}</h2>
+          <p>{t("methodology.dataBody", locale)}</p>
+        </div>
+      </div>
+      <div class="card-grid two">
+        {
+          downloads.map(({ name, href, encodingFormat }) => (
+            <a class="card card-clickable" href={href}>
+              <p class="card-meta">{encodingFormat}</p>
+              <h3 class="card-title">{name}</h3>
+              <div class="card-footer">
+                <span class="card-tag">{href}</span>
+              </div>
+            </a>
+          ))
+        }
+      </div>
+      <div class="action-row">
+        <a class="btn btn-ghost" href="https://github.com/qiweiii/world-immigrant/issues">
+          {t("methodology.report", locale)}
+        </a>
+      </div>
+    </section>
+  </main>
+</Layout>

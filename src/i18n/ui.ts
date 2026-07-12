@@ -25,6 +25,46 @@ const en = {
   "footer.legal": "MIT License. Confirm details with official sources before acting.",
   "footer.compare": "Compare",
   "footer.filter": "Filter",
+  "footer.methodology": "Methodology & data",
+  "footer.glossary": "Immigration glossary",
+  "methodology.title": "Methodology and public data — World Immigrant",
+  "methodology.description":
+    "How World Immigrant selects official sources, handles uncertainty, records freshness, and publishes immigration pathway data.",
+  "methodology.eyebrow": "Methodology & data",
+  "methodology.h1": "How the information is built.",
+  "methodology.lede":
+    "Every pathway is structured from official sources, dated, and explicit about what is unknown.",
+  "methodology.coverageTitle": "Coverage",
+  "methodology.coverageBody":
+    "World Immigrant maps immigration pathways by country and category. Coverage reflects published records, not every route available worldwide.",
+  "methodology.sourcesTitle": "Official sources first",
+  "methodology.sourcesBody":
+    "Material requirements link to government or official program sources. Citations identify the source section used for each field.",
+  "methodology.freshnessTitle": "Freshness and snapshots",
+  "methodology.freshnessBody":
+    "Last checked shows when a source was reviewed. Retained snapshots make cited evidence traceable when official pages change.",
+  "methodology.uncertaintyTitle": "Uncertainty stays visible",
+  "methodology.uncertaintyBody":
+    "Unknown means the available evidence does not support a reliable value. Not applicable is kept separate from missing information.",
+  "methodology.reviewTitle": "Human-reviewed updates",
+  "methodology.reviewBody":
+    "Automated scans detect source changes, but canonical immigration records change only after human review.",
+  "methodology.boundaryTitle": "Informational boundary",
+  "methodology.boundaryBody":
+    "This database is informational and does not determine eligibility or replace advice from an authorized professional.",
+  "methodology.dataTitle": "Public data",
+  "methodology.dataBody":
+    "The canonical dataset, comparison index, filter index, and AI-readable documents are available as static downloads.",
+  "methodology.report": "Report a mismatch",
+  "glossary.title": "Immigration glossary — World Immigrant",
+  "glossary.description":
+    "Plain-language definitions for common immigration pathway, residence, sponsorship, funds, and source terms.",
+  "glossary.eyebrow": "Glossary",
+  "glossary.h1": "Immigration terms, plainly defined.",
+  "glossary.lede":
+    "Short, country-agnostic explanations for terms used throughout the pathway database.",
+  "glossary.jurisdiction":
+    "Exact legal meanings and requirements vary by country and program. Confirm them with the linked official source.",
   "crumb.home": "Home",
   "crumb.aria": "Breadcrumb",
   "site.description": "Source-cited global immigration pathway comparison.",
@@ -422,6 +462,40 @@ const zhHans: Record<UiKey, string> = {
   "footer.legal": "MIT 许可。行动前请以官方来源为准。",
   "footer.compare": "对比",
   "footer.filter": "筛选",
+  "footer.methodology": "方法与数据",
+  "footer.glossary": "移民术语表",
+  "methodology.title": "方法与公开数据 — World Immigrant",
+  "methodology.description":
+    "了解 World Immigrant 如何选择官方来源、处理不确定性、记录更新时间并发布移民路径数据。",
+  "methodology.eyebrow": "方法与数据",
+  "methodology.h1": "这些信息如何建立。",
+  "methodology.lede": "每条路径均基于官方来源进行结构化整理，注明日期，并明确标示未知信息。",
+  "methodology.coverageTitle": "覆盖范围",
+  "methodology.coverageBody":
+    "World Immigrant 按国家和类别整理移民路径。覆盖范围代表已发布的记录，而不是全球所有可用路径。",
+  "methodology.sourcesTitle": "官方来源优先",
+  "methodology.sourcesBody":
+    "重要要求链接至政府或项目官方来源。引用会标明每个字段所依据的来源章节。",
+  "methodology.freshnessTitle": "更新时间与快照",
+  "methodology.freshnessBody":
+    "“上次检查”表示来源最近一次审核的时间。保留的快照让官方页面变化后仍可追溯引用证据。",
+  "methodology.uncertaintyTitle": "保留不确定性",
+  "methodology.uncertaintyBody":
+    "“未知”表示现有证据不足以支持可靠数值。“不适用”与缺失信息分别处理。",
+  "methodology.reviewTitle": "人工审核更新",
+  "methodology.reviewBody": "自动扫描用于发现来源变化，但规范移民记录只有在人工审核后才会更改。",
+  "methodology.boundaryTitle": "信息边界",
+  "methodology.boundaryBody":
+    "本数据库仅供信息参考，不判断申请资格，也不能替代持牌专业人士的意见。",
+  "methodology.dataTitle": "公开数据",
+  "methodology.dataBody": "规范数据集、对比索引、筛选索引以及 AI 可读文档均可作为静态文件下载。",
+  "methodology.report": "报告不一致",
+  "glossary.title": "移民术语表 — World Immigrant",
+  "glossary.description": "用简明语言解释常见的移民路径、居留、担保、资金和来源术语。",
+  "glossary.eyebrow": "术语表",
+  "glossary.h1": "用简单语言解释移民术语。",
+  "glossary.lede": "为路径数据库中常见术语提供简短、不限定国家的说明。",
+  "glossary.jurisdiction": "具体法律含义和要求因国家与项目而异，请以链接的官方来源为准。",
   "crumb.home": "首页",
   "crumb.aria": "面包屑",
   "site.description": "附有来源引用的全球移民路径对比。",

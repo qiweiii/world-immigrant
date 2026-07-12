@@ -1,6 +1,8 @@
 ---
 import "../styles/global.css";
 import LanguageSwitcher from "./LanguageSwitcher.astro";
+import StructuredData from "./StructuredData.astro";
+import { webPageJsonLd, webSiteJsonLd } from "../lib/seo";
 import {
   defaultLocale,
   localeHtmlLang,
@@ -15,12 +17,18 @@ interface Props {
   title?: string;
   description?: string;
   locale?: Locale;
+  pageType?: "WebPage" | "CollectionPage" | "AboutPage";
+  dateModified?: string;
+  structuredData?: unknown[];
 }
 
 const {
   title = "World Immigrant",
   description,
   locale = defaultLocale,
+  pageType = "WebPage",
+  dateModified,
+  structuredData = [],
 } = Astro.props;
 const resolvedDescription = description ?? t("site.description", locale);
 
@@ -35,7 +43,22 @@ const categoriesHref = withLocale("/categories", locale);
 const compareHref = withLocale("/compare", locale);
 const filterHref = withLocale("/filter", locale);
 const sourcesHref = withLocale("/sources", locale);
+const methodologyHref = withLocale("/methodology", locale);
+const glossaryHref = withLocale("/glossary", locale);
 const htmlLang = localeHtmlLang[locale];
+const alternateLocale = locale === "en" ? localeHtmlLang["zh-Hans"] : localeHtmlLang.en;
+const jsonLdGraph = [
+  webSiteJsonLd(locale, t("site.description", locale)),
+  webPageJsonLd({
+    locale,
+    path: pathname,
+    name: title,
+    description: resolvedDescription,
+    dateModified,
+    type: pageType,
+  }),
+  ...structuredData,
+];
 
 // Determine which nav section is active based on the current path
 const isActive = (href: string) => {
@@ -73,6 +96,7 @@ const navItems = [
     <meta property="og:type" content="website" />
     <meta property="og:site_name" content="World Immigrant" />
     <meta property="og:locale" content={htmlLang.replace("-", "_")} />
+    <meta property="og:locale:alternate" content={alternateLocale.replace("-", "_")} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={resolvedDescription} />
     <meta property="og:url" content={canonicalUrl} />
@@ -84,6 +108,8 @@ const navItems = [
     <meta name="twitter:title" content={title} />
     <meta name="twitter:description" content={resolvedDescription} />
     <meta name="twitter:image" content={socialImageUrl} />
+    <meta name="twitter:image:alt" content={t("site.ogAlt", locale)} />
+    <StructuredData data={{ "@context": "https://schema.org", "@graph": jsonLdGraph }} />
     <title>{title}</title>
     <script is:inline define:vars={{ storageKey: LOCALE_STORAGE_KEY, pageLocale: locale, alternates }}>
       const savedTheme = localStorage.getItem("theme");
@@ -244,6 +270,8 @@ const navItems = [
             <h4>{t("footer.trust", locale)}</h4>
             <ul>
               <li><a href={sourcesHref}>{t("footer.sources", locale)}</a></li>
+              <li><a href={methodologyHref}>{t("footer.methodology", locale)}</a></li>
+              <li><a href={glossaryHref}>{t("footer.glossary", locale)}</a></li>
               <li>
                 <a href="https://github.com/qiweiii/world-immigrant">{t("nav.github", locale)}</a>
               </li>

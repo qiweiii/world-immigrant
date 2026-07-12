@@ -10,7 +10,11 @@ interface Props {
 const { locale = defaultLocale } = Astro.props as Props;
 ---
 
-<Layout locale={locale} title={t("filter.title", locale)}>
+<Layout
+  locale={locale}
+  title={t("filter.title", locale)}
+  description={t("filter.lede", locale)}
+>
   <main>
     <section class="hero hero--compact">
       <p class="eyebrow">{t("filter.eyebrow", locale)}</p>

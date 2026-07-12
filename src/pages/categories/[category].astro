@@ -4,6 +4,7 @@ import VisaCard from "../../components/VisaCard.astro";
 import { loadCanonicalData, type CanonicalDataset } from "../../lib/data";
 import type { Category, Country, Program } from "../../lib/schema";
 import { defaultLocale, pickLocalized, t, withLocale, type Locale } from "../../i18n";
+import { breadcrumbJsonLd } from "../../lib/seo";
 
 type CategoryModel = {
   category: Category;
@@ -37,11 +38,22 @@ export async function getStaticPaths() {
 const { model, locale = defaultLocale } = Astro.props as Props;
 const L = (path: string) => withLocale(path, locale);
 const categoryName = pickLocalized(model.category.names, locale);
+const categoryDescription = pickLocalized(model.category.description_md, locale);
+const structuredData = [
+  breadcrumbJsonLd([
+    { name: t("crumb.home", locale), path: L("/") },
+    { name: t("nav.categories", locale), path: L("/categories") },
+    { name: categoryName, path: L(`/categories/${model.category.id}`) },
+  ]),
+];
 ---
 
 <Layout
   locale={locale}
   title={`${categoryName} ${t("categories.pathwaysSuffix", locale)}`}
+  description={categoryDescription}
+  pageType="CollectionPage"
+  structuredData={structuredData}
 >
   <main>
     <nav class="breadcrumbs" aria-label={t("crumb.aria", locale)}>

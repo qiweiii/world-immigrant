@@ -33,7 +33,7 @@ export function withLocale(path: string, locale: Locale): string {
   if (locale === defaultLocale) {
     localized = normalized;
   } else if (normalized === "/") {
-    localized = `/${locale}`;
+    localized = `/${locale}/`;
   } else {
     localized = `/${locale}${normalized}`;
   }

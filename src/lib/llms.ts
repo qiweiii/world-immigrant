@@ -4,15 +4,18 @@ const header = `# World Immigrant
 
 World Immigrant is a public-good, source-cited global immigration pathway database.
 
-Use these static endpoints first:
+Use these static resources first:
 
-- /data/index.json
-- /data/categories.json
-- /data/countries.json
-- /data/programs.json
-- /data/sources.json
-- /data/indexes/filter-index.v1.json
-- /data/indexes/compare-index.v1.json
+- [Methodology and public data](https://world-immigrant.com/methodology/)
+- [Immigration glossary](https://world-immigrant.com/glossary/)
+- [Data index](https://world-immigrant.com/data/index.json)
+- [Categories](https://world-immigrant.com/data/categories.json)
+- [Countries](https://world-immigrant.com/data/countries.json)
+- [Programs](https://world-immigrant.com/data/programs.json)
+- [Sources](https://world-immigrant.com/data/sources.json)
+- [Filter index](https://world-immigrant.com/data/indexes/filter-index.v1.json)
+- [Compare index](https://world-immigrant.com/data/indexes/compare-index.v1.json)
+- [Full AI-readable data](https://world-immigrant.com/llms-full.txt)
 
 Rules for AI agents:
 
