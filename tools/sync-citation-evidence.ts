@@ -1,6 +1,6 @@
 import { readdir, readFile, writeFile } from "node:fs/promises";
 import { resolve } from "node:path";
-import { normalizedIncludesQuote, sha256 } from "../src/lib/sourceMonitor";
+import { normalizedIncludesQuote, sha256 } from "../src/lib/source-monitor";
 
 const write = process.argv.includes("--write");
 const root = process.cwd();

@@ -34,7 +34,7 @@ const { locale = defaultLocale } = Astro.props as Props;
 </section>
 
 <script>
-  import { buildComparison } from "../../lib/compareEngine";
+  import { buildComparison } from "../../lib/compare-engine";
   import { defaultLocale, isLocale, pickLocalized, t, tf, withLocale } from "../../i18n";
 
   type CompareIndex = Parameters<typeof buildComparison>[0];

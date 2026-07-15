@@ -13,7 +13,7 @@ import {
   selectDueSources,
   sha256,
   sourceRunRequiresReview,
-} from "../src/lib/sourceMonitor";
+} from "../src/lib/source-monitor";
 
 type SourceState = {
   source_id: string;

@@ -236,7 +236,7 @@ Current state: page and island shells exist. Complete data-driven comparison and
 **Objective:** Normalize selected visa programs into comparison rows.
 
 **Files:**
-- Create: `src/lib/compareEngine.ts`
+- Create: `src/lib/compare-engine.ts`
 - Maintain: `src/components/islands/CompareBuilder.astro`
 - Maintain: `src/pages/compare.astro`
 
@@ -247,7 +247,7 @@ Current state: page and island shells exist. Complete data-driven comparison and
 **Objective:** Match user profile against structured criteria.
 
 **Files:**
-- Maintain: `src/lib/filterEngine.ts`
+- Maintain: `src/lib/filter-engine.ts`
 - Maintain: `src/components/islands/EligibilityFilter.astro`
 - Maintain: `src/pages/filter.astro`
 

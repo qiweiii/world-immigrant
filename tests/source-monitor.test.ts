@@ -8,7 +8,7 @@ import {
   selectDueSources,
   sha256,
   sourceRunRequiresReview,
-} from "../src/lib/sourceMonitor";
+} from "../src/lib/source-monitor";
 
 function source(overrides: Record<string, unknown> = {}) {
   return sourceSchema.parse({

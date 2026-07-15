@@ -1,7 +1,7 @@
 import assert from "node:assert/strict";
 import test from "node:test";
 import { loadCanonicalData } from "../src/lib/data";
-import { evaluateProgram, evaluatePrograms, type UserProfile } from "../src/lib/filterEngine";
+import { evaluateProgram, evaluatePrograms, type UserProfile } from "../src/lib/filter-engine";
 import { buildPublicData } from "../src/lib/public-data";
 
 const completeProfile: UserProfile = {

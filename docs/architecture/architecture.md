@@ -69,7 +69,7 @@ Pagefind indexes static HTML after build. It supports multilingual sites via `ht
 
 ### Structured Filter
 
-Eligibility logic lives in a dedicated `filterEngine.ts`:
+Eligibility logic lives in a dedicated `filter-engine.ts`:
 
 - Convert visa criteria into normalized predicates.
 - Classify result as `likely_match`, `possible_match`, `not_match`, `needs_review`, or `unknown` (internal codes; UI uses neutral labels).

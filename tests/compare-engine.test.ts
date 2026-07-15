@@ -1,6 +1,6 @@
 import assert from "node:assert/strict";
 import test from "node:test";
-import { buildComparison } from "../src/lib/compareEngine";
+import { buildComparison } from "../src/lib/compare-engine";
 import { loadCanonicalData } from "../src/lib/data";
 import { buildPublicData } from "../src/lib/public-data";
 

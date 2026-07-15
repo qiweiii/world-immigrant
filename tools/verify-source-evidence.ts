@@ -1,7 +1,7 @@
 import { readFile } from "node:fs/promises";
 import { resolve } from "node:path";
 import { loadCanonicalData } from "../src/lib/data";
-import { normalizedIncludesQuote, sha256 } from "../src/lib/sourceMonitor";
+import { normalizedIncludesQuote, sha256 } from "../src/lib/source-monitor";
 
 const args = process.argv.slice(2);
 const requireSnapshotIds = args.includes("--require-snapshot-ids");

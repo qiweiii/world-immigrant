@@ -117,7 +117,7 @@ Do not rely on Pagefind for eligibility logic.
 
 ### 5.2 Custom filter engine for eligibility
 
-Use `filterEngine.ts` for:
+Use `filter-engine.ts` for:
 
 - hard blockers;
 - soft warnings;
