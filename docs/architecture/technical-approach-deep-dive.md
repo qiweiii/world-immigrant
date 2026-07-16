@@ -27,7 +27,7 @@ The product should feel like a modern app, but the architecture should behave li
 | Filter engine | Custom TypeScript predicates | Eligibility logic is domain-specific and must produce cited reasons. |
 | Routing/state | Astro pages + URLSearchParams; optionally TanStack Router inside a heavy island if needed | Avoid SPA complexity; keep compare/filter URLs shareable. |
 | Markdown | Astro/content pipeline for server/build rendering; lightweight renderer only if dynamic snippets need Markdown client-side | Avoid shipping too much JS. |
-| Automation | Hermes cron + scripts + PRs | Fits source monitoring and human review model. |
+| Automation | Hermes on-demand scan + scripts; manual commits | Fits source monitoring and human review model without unattended cron. |
 | Hosting | Cloudflare Workers | Static, cheap/free, public-good friendly. |
 
 ## 3. Why Astro over pure Vite SPA

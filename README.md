@@ -27,7 +27,7 @@ World Immigrant helps people discover and compare lawful immigration pathways ac
 - **Search:** Pagefind (static, multilingual)
 - **Package manager:** pnpm v11
 - **Deployment:** Cloudflare Workers static assets
-- **Data updates:** Hermes Agent scheduled source scans with local evidence reports; canonical updates are manual
+- **Data updates:** Hermes Agent on-demand (maintainer-requested) source scans with local evidence reports; canonical updates are manual
 
 ## Quick start
 

@@ -142,12 +142,12 @@ The safe updater has a deterministic stage before an AI stage:
 4. Exit without a content change when normalized evidence is unchanged.
 5. Produce a bounded evidence report when evidence changes.
 6. Let Hermes produce a bounded local evidence report only.
-7. Keep canonical data and generated artifacts unchanged during the cron run.
+7. Keep canonical data and generated artifacts unchanged during the scan run.
 8. Produce no branch when semantic canonical data is unchanged.
-9. Never commit, push, open a pull request, merge, or publish from the cron run.
-10. Review and commit any canonical update manually outside the cron run.
+9. Never commit, push, open a pull request, merge, or publish from the scan run.
+10. Review and commit any canonical update manually after the scan, only when the maintainer requests a data update.
 
-Cron must operate from a dedicated clone or disposable worktree, not a human worktree. It requires a repository lock, a source cap, bounded retries, cleanup, duplicate-run detection, and no repository write credential.
+Scans run on demand when the maintainer asks—not on a Hermes cron schedule. They require a source cap, bounded retries, cleanup, duplicate-run detection, and no repository write credential.
 
 The project-level instruction requiring explicit approval for commits and pushes remains authoritative. The updater is intentionally activated only as a scan-only, local-report workflow.
 

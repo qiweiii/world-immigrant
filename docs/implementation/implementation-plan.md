@@ -2,7 +2,7 @@
 
 ## 1. Repository Setup
 
-**Tech Stack:** pnpm v11, Astro, TypeScript, Zod, Biome, Pagefind, Tailwind CSS v4, Cloudflare Workers, Hermes cron/updater scripts.
+**Tech Stack:** pnpm v11, Astro, TypeScript, Zod, Biome, Pagefind, Tailwind CSS v4, Cloudflare Workers, Hermes on-demand scan-only updater scripts.
 
 ---
 
@@ -352,7 +352,7 @@ Script:
 
 ### Task 7.3: Keep updater scan-only
 
-**Objective:** Keep scheduled source checks local and prevent unattended repository writes.
+**Objective:** Keep source checks local and prevent unattended repository writes.
 
 **Files:**
 - Maintain: `automation/hermes-policy.json`
@@ -363,17 +363,19 @@ Script:
 
 **Verification:** unchanged runs retain local snapshots and reports without modifying canonical data, creating branches, opening pull requests, or merging.
 
-### Task 7.4: Configure Hermes cron
+### Task 7.4: On-demand source scans (no cron)
 
-**Objective:** Run the scan-only updater on the configured schedule from a dedicated automation clone.
+**Objective:** Run the scan-only updater only when the maintainer asks—not on a Hermes cron schedule.
 
-Command concept:
+**How it works:**
 
-```text
-cronjob create schedule="15 6 * * *" workdir="/absolute/path/to/world-immigrant-automation" skills=["world-immigrant-updater"]
-```
+1. Maintainer asks an agent (or runs the CLI) to scan sources.
+2. Agent follows `world-immigrant-updater` and `docs/implementation/hermes-automation.md`.
+3. Run `pnpm data:validate`, then `pnpm sources:scan` (or a bounded `sources:scan:all`).
+4. Read `.source-monitor/latest.json` and report actionable changes or failures locally.
+5. Do not create or enable a recurring Hermes cron job for this project.
 
-Use the absolute path of the dedicated automation clone. Hermes uses it as the working directory so `AGENTS.md` and project instructions load automatically. Keep delivery local and inspect saved reports manually.
+**Verification:** an on-demand scan leaves canonical data unchanged; any policy edit happens only after explicit human review and a separate update request.
 
 ---
 

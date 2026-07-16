@@ -10,7 +10,7 @@ Stack:
 - **Local CSS primitives** + **Tailwind CSS v4** for design tokens and UI patterns.
 - **Frameworkless TypeScript islands** for comparison, filtering, and other interactive surfaces.
 - **Pagefind** for static multilingual full-text search.
-- **Hermes Agent** scheduled updaters that collect official sources and retain local evidence reports for manual data updates.
+- **Hermes Agent** on-demand, scan-only source checks that collect official sources and retain local evidence reports for manual data updates.
 
 Output is static HTML/CSS/JS + JSON assets, deployable to any static host without a runtime server.
 
@@ -127,7 +127,7 @@ Not used. SSR would only make sense for user accounts, saved shortlists, or real
 
 - GitHub repo is source of truth.
 - Cloudflare Workers builds and hosts the output on push to `main`.
-- Hermes cron opens PRs; human review merges.
+- Maintainer requests source scans on demand; canonical updates are manual after human review.
 
 No backend secrets are needed in frontend hosting.
 
@@ -147,7 +147,7 @@ No backend secrets are needed in frontend hosting.
 | ARCH-010 | Use JSON Pointer keys in `field_citations` as the sole factual-field provenance mechanism | One citation system avoids drift between inline and object-level citations and supports deterministic coverage checks |
 | ARCH-011 | Keep freshness reporting separate from build-blocking integrity validation | Stale data must be visible and escalated without blocking unrelated corrections; strict freshness audits run explicitly and in automation |
 | ARCH-012 | Store full source snapshots in a gitignored cache and retain hashes, retrieval metadata, and quoted evidence in canonical data | Keeps the public repository reviewable while preserving enough provenance for change detection and human review |
-| ARCH-013 | Keep source snapshots and evidence reports local | Deterministic scripts collect and validate; canonical policy changes are reviewed and committed manually outside the cron run |
+| ARCH-013 | Keep source snapshots and evidence reports local | Deterministic scripts collect and validate; canonical policy changes are reviewed and committed manually after on-demand scan evidence is reviewed |
 
 ### See also
 

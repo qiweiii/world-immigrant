@@ -15,7 +15,7 @@ required_environment_variables: []
 
 ## When to Use
 
-Use this skill for scheduled or manual checks of registered World Immigrant policy sources and evidence reports for human-reviewed updates.
+Use this skill for on-demand checks of registered World Immigrant policy sources when the maintainer asks for a scan. There is no cron schedule; evidence reports support human-reviewed updates.
 
 Do not use it to add countries without an approved scope, redesign the product, publish directly, or decide a person's legal eligibility.
 
@@ -41,7 +41,7 @@ Do not use it to add countries without an approved scope, redesign the product, 
 7. Classify each change as policy-relevant, template noise, extraction failure, domain rejection, or ambiguous.
 8. On template noise, leave canonical data unchanged and stop with a concise report.
 9. On extraction failure, domain rejection, or ambiguity, leave published policy facts unchanged and report the exact blocker.
-10. Before editing, verify the checkout is a dedicated clean automation clone or disposable worktree based on freshly fetched `origin/main`. Record the base SHA. Abort in a shared or dirty checkout.
+10. Before any non-scan write path (not used under scan_only), verify a clean checkout based on freshly fetched `origin/main`. Record the base SHA. Abort in a shared or dirty checkout.
 11. Limit candidate writes to the policy's `allowed_write_paths`. A source change may update only facts actually supported by the retained evidence.
 12. Every changed material JSON Pointer must have a registered citation with the current snapshot ID. `quote_md` must be verbatim; run `pnpm sources:annotate -- --write` to attach snapshot IDs and remove unsupported paraphrases, then inspect the resulting diff.
 13. Update `freshness`, `risk`, and changelog fields honestly. Do not turn changing invitation scores or processing estimates into guarantees.
@@ -74,7 +74,7 @@ The filter remains conservative:
 - Dynamic calculators may need browser or manual extraction and must not be guessed from surrounding text.
 - Wall-clock-only `generated_at` changes must not create an actionable change report.
 - Canonical citation `quote_md` is verbatim evidence, not a paraphrase field.
-- A clean current checkout is not sufficient if it is a person's active worktree; use a dedicated automation clone.
+- Scan-only runs must never edit tracked files; stop with a local report instead of inventing a separate automation clone workflow.
 
 ## Verification
 
@@ -85,4 +85,4 @@ A scan-only run is ready when:
 - `pnpm sources:verify -- --require-snapshot-ids` passes.
 - No tracked file changes are created by an unchanged rerun.
 
-Activation is ready only after clean-run, changed-source, fetch-failure, validation-failure, duplicate-run, stale-lock, and cleanup scenarios have all been tested in a dedicated automation clone.
+On-demand use is ready after clean-run, changed-source, fetch-failure, validation-failure, duplicate-run, stale-lock, and cleanup scenarios have been tested in this repository.
